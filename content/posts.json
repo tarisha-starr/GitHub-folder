@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "visual": "Woman over 40 sitting on the edge of a bed, soft morning light, tired and thoughtful",
+    "hook": "You're not broken. You're exhausted.",
+    "themes": ["desire", "exhaustion", "midlife"]
+  },
+  {
+    "id": 2,
+    "visual": "Woman over 40 looking in a bathroom mirror, warm light, vulnerable mood",
+    "hook": "No one told you desire could disappear this slowly.",
+    "themes": ["desire", "midlife"]
+  },
+  {
+    "id": 3,
+    "visual": "Couple over 40 sitting at opposite ends of a couch, evening light, emotional distance",
+    "hook": "You're not fighting. But something is missing.",
+    "themes": ["couples", "disconnection"]
+  },
+  {
+    "id": 4,
+    "visual": "Woman over 40 standing alone in her kitchen, soft light, feeling unseen",
+    "hook": "You miss being looked at like that.",
+    "themes": ["intimacy", "longing"]
+  },
+  {
+    "id": 5,
+    "visual": "Woman over 40 lying awake in bed, partner turned away, dim bedroom light",
+    "hook": "The loneliest place can be next to someone you love.",
+    "themes": ["long-term relationships", "loneliness"]
+  },
+  {
+    "id": 6,
+    "visual": "Woman over 40 dancing alone in her living room, warm afternoon light, joyful mood",
+    "hook": "This is how she came back to herself.",
+    "themes": ["self-connection", "embodiment"]
+  },
+  {
+    "id": 7,
+    "visual": "Couple over 40 eating dinner in silence, low warm light, tense quiet mood",
+    "hook": "Everything looks fine. That's the part that hurts.",
+    "themes": ["couples", "disconnection"]
+  },
+  {
+    "id": 8,
+    "visual": "Woman over 40 standing in front of an open wardrobe, morning light, uncertain mood",
+    "hook": "You don't hate your body. You've stopped listening to her.",
+    "themes": ["body image", "self-acceptance"]
+  },
+  {
+    "id": 9,
+    "visual": "Woman over 40 laughing in her kitchen, natural light, relaxed and alive",
+    "hook": "There is nothing wrong with wanting more.",
+    "themes": ["desire", "fulfilment"]
+  },
+  {
+    "id": 10,
+    "visual": "Woman over 40 in a bathrobe drinking tea by a window, rainy morning, reflective mood",
+    "hook": "Maybe you're not tired of sex. Maybe you're tired of performing.",
+    "themes": ["intimacy", "pressure"]
+  },
+  {
+    "id": 11,
+    "visual": "Couple over 40 holding hands on a sofa, soft evening light, tender but unsure mood",
+    "hook": "The love is still there. The closeness got buried.",
+    "themes": ["couples", "intimacy"]
+  },
+  {
+    "id": 12,
+    "visual": "Woman over 40 touching her belly gently, bedroom mirror, self-accepting mood",
+    "hook": "Your body was never the enemy.",
+    "themes": ["body image", "healing"]
+  },
+  {
+    "id": 13,
+    "visual": "Woman over 40 walking barefoot outside, sunrise light, peaceful mood",
+    "hook": "Desire doesn't come back through pressure.",
+    "themes": ["desire", "embodiment"]
+  },
+  {
+    "id": 14,
+    "visual": "Two coffee cups on a kitchen table, morning light, quiet distant mood",
+    "hook": "When did love become logistics?",
+    "themes": ["couples", "disconnection"]
+  },
+  {
+    "id": 15,
+    "visual": "Woman over 40 sitting in a car outside her house, dusk light, overwhelmed mood",
+    "hook": "You've been holding everyone together. But who's holding you?",
+    "themes": ["burnout", "emotional labour"]
+  },
+  {
+    "id": 16,
+    "visual": "Man over 40 reaching for a woman's hand at home, warm light, nervous tenderness",
+    "hook": "One honest sentence can change the whole room.",
+    "themes": ["communication", "couples"]
+  },
+  {
+    "id": 17,
+    "visual": "Woman over 40 standing near a bedroom window, evening light, sensual and introspective mood",
+    "hook": "Your sensuality didn't vanish. It went underground.",
+    "themes": ["sensuality", "self-connection"]
+  },
+  {
+    "id": 18,
+    "visual": "Couple over 40 standing in a doorway, soft shadows, guarded but hopeful mood",
+    "hook": "It's not about sex. It's about feeling wanted.",
+    "themes": ["intimacy", "longing"]
+  },
+  {
+    "id": 19,
+    "visual": "Woman over 40 smiling at herself in a mirror, natural light, relieved mood",
+    "hook": "The woman you miss is still in there.",
+    "themes": ["self-acceptance", "identity"]
+  },
+  {
+    "id": 20,
+    "visual": "Woman over 40 lying on a yoga mat in her living room, soft sunlight, grounded and calm mood",
+    "hook": "Come back to your body before you try to fix your desire.",
+    "themes": ["embodiment", "desire"]
+  }
+]
