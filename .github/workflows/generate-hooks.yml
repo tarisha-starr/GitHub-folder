@@ -1,0 +1,54 @@
+name: Generate new draft hooks
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many new hooks to generate"
+        required: false
+        default: "28"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        working-directory: automation
+        run: pip install -r requirements.txt
+
+      - name: Generate drafts and email
+        working-directory: automation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          HOOKS_TO_GENERATE: ${{ inputs.count }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python generate_hooks.py
+
+      - name: Commit drafts
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/draft_hooks.json || true
+          if git diff --staged --quiet; then
+            echo "No drafts to commit"
+          else
+            git commit -m "Generate new draft hooks"
+            git push
+          fi
