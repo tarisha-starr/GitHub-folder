@@ -2,7 +2,12 @@ name: Daily image-post email + Zapier
 
 on:
   schedule:
-    - cron: "0 13 * * *"
+    # 0:00 UTC = 12:00 NZST (winter, UTC+12) / 1:00 NZDT (summer, UTC+13)
+    # 1:00 UTC = 13:00 NZST (winter)        / 14:00 NZDT (summer)
+    # Set to 1:00 UTC = 1pm NZ during NZST (April–September).
+    # In NZDT (Oct–April) this fires at 2pm NZ — change to "0 0 * * *"
+    # if you want exactly 1pm during NZDT instead.
+    - cron: "0 1 * * *"
   workflow_dispatch:
 
 jobs:
