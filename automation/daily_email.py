@@ -18,25 +18,43 @@ from scheduler import todays_post
 
 def render_text(post: dict) -> str:
     themes = ", ".join(post.get("themes", []))
+    hashtags = " ".join(post.get("hashtags", []))
     return (
-        f"Post #{post['id']} — today's brief\n\n"
+        f"Post #{post['id']} - today's brief\n\n"
         f"Hook (overlay text):\n  {post['hook']}\n\n"
+        f"Caption:\n{post.get('caption', post['hook'])}\n\n"
+        f"Engagement question:\n  {post.get('question', '')}\n\n"
+        f"Hashtags:\n  {hashtags}\n\n"
         f"Visual prompt:\n  {post['visual']}\n\n"
+        f"Image file: {post.get('image', '(missing)')}\n"
         f"Themes: {themes}\n"
     )
 
 
 def render_html(post: dict) -> str:
     themes = ", ".join(post.get("themes", []))
+    hashtags = " ".join(post.get("hashtags", []))
+    caption_html = post.get("caption", post["hook"]).replace("\n", "<br>")
     return f"""\
 <!doctype html>
 <html>
   <body style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #222;">
-    <p style="color: #888; font-size: 13px;">Post #{post['id']} — today's brief</p>
+    <p style="color: #888; font-size: 13px;">Post #{post['id']} &mdash; today's brief</p>
     <h2 style="font-size: 22px; line-height: 1.35; margin: 0 0 24px;">{post['hook']}</h2>
+
+    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Caption</strong></p>
+    <p style="font-size: 15px; line-height: 1.55; margin: 0 0 24px;">{caption_html}</p>
+
+    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Engagement question</strong></p>
+    <p style="font-size: 16px; font-style: italic; line-height: 1.5; margin: 0 0 24px;">{post.get('question', '')}</p>
+
+    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Hashtags</strong></p>
+    <p style="font-size: 13px; color: #3a6ea5; margin: 0 0 24px;">{hashtags}</p>
+
     <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Visual prompt</strong></p>
-    <p style="font-size: 15px; line-height: 1.5; margin: 0 0 24px;">{post['visual']}</p>
-    <p style="font-size: 13px; color: #888;">Themes: {themes}</p>
+    <p style="font-size: 15px; line-height: 1.5; margin: 0 0 12px;">{post['visual']}</p>
+
+    <p style="font-size: 13px; color: #888;">Image file: {post.get('image', '(missing)')} &middot; Themes: {themes}</p>
   </body>
 </html>
 """

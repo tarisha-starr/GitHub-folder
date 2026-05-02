@@ -1,122 +1,423 @@
 [
   {
     "id": 1,
+    "image": "images/image-1.jpg",
     "visual": "Woman over 40 sitting on the edge of a bed, soft morning light, tired and thoughtful",
     "hook": "You're not broken. You're exhausted.",
-    "themes": ["desire", "exhaustion", "midlife"]
+    "caption": "You're not broken. You're exhausted.\n\nThere's a difference, and it matters.\n\nWhen did you last feel rested in your own body?",
+    "question": "When did you last feel rested in your own body?",
+    "hashtags": [
+      "#WomenOver40",
+      "#Midlife",
+      "#BurnoutRecovery",
+      "#InvisibleLoad",
+      "#EmotionalLabor",
+      "#SelfReclamation",
+      "#MidlifeWomen"
+    ],
+    "themes": [
+      "desire",
+      "exhaustion",
+      "midlife"
+    ]
   },
   {
     "id": 2,
+    "image": "images/image-2.jpg",
     "visual": "Woman over 40 looking in a bathroom mirror, warm light, vulnerable mood",
     "hook": "No one told you desire could disappear this slowly.",
-    "themes": ["desire", "midlife"]
+    "caption": "No one told you desire could disappear this slowly.\n\nIt doesn't leave in one day. It leaves in a thousand small ones.\n\nDid anyone warn you?",
+    "question": "Did anyone warn you?",
+    "hashtags": [
+      "#DesireAfter40",
+      "#WomenOver40",
+      "#Perimenopause",
+      "#Midlife",
+      "#SexAfter40",
+      "#MidlifeWomen",
+      "#LowDesire"
+    ],
+    "themes": [
+      "desire",
+      "midlife"
+    ]
   },
   {
     "id": 3,
+    "image": "images/image-3.jpg",
     "visual": "Couple over 40 sitting at opposite ends of a couch, evening light, emotional distance",
     "hook": "You're not fighting. But something is missing.",
-    "themes": ["couples", "disconnection"]
+    "caption": "You're not fighting. But something is missing.\n\nThe quiet kind of distance is the hardest to name.\n\nDo you feel it too?",
+    "question": "Do you feel it too?",
+    "hashtags": [
+      "#LongTermLove",
+      "#MarriageAfter40",
+      "#CouplesGoals",
+      "#EmotionalIntimacy",
+      "#RelationshipGoals",
+      "#WomenOver40",
+      "#Midlife"
+    ],
+    "themes": [
+      "couples",
+      "disconnection"
+    ]
   },
   {
     "id": 4,
+    "image": "images/image-4.jpg",
     "visual": "Woman over 40 standing alone in her kitchen, soft light, feeling unseen",
     "hook": "You miss being looked at like that.",
-    "themes": ["intimacy", "longing"]
+    "caption": "You miss being looked at like that.\n\nNot the staring. The seeing.\n\nWhen were you last truly seen?",
+    "question": "When were you last truly seen?",
+    "hashtags": [
+      "#WomenOver40",
+      "#Midlife",
+      "#EmotionalIntimacy",
+      "#FeminineEnergy",
+      "#Sensuality",
+      "#MidlifeWomen",
+      "#LongTermLove"
+    ],
+    "themes": [
+      "intimacy",
+      "longing"
+    ]
   },
   {
     "id": 5,
+    "image": "images/image-5.jpg",
     "visual": "Woman over 40 lying awake in bed, partner turned away, dim bedroom light",
     "hook": "The loneliest place can be next to someone you love.",
-    "themes": ["long-term relationships", "loneliness"]
+    "caption": "The loneliest place can be next to someone you love.\n\nLove doesn't always reach across a bed.\n\nIs this true for you?",
+    "question": "Is this true for you?",
+    "hashtags": [
+      "#LongTermLove",
+      "#MarriageAfter40",
+      "#EmotionalIntimacy",
+      "#WomenOver40",
+      "#Midlife",
+      "#RelationshipGoals",
+      "#Loneliness"
+    ],
+    "themes": [
+      "long-term relationships",
+      "loneliness"
+    ]
   },
   {
     "id": 6,
+    "image": "images/image-6.jpg",
     "visual": "Woman over 40 dancing alone in her living room, warm afternoon light, joyful mood",
     "hook": "This is how she came back to herself.",
-    "themes": ["self-connection", "embodiment"]
+    "caption": "This is how she came back to herself.\n\nNot through fixing. Through moving. Through choosing.\n\nWhat helped you come back?",
+    "question": "What helped you come back?",
+    "hashtags": [
+      "#ComeBackToYourself",
+      "#Embodiment",
+      "#FeminineEnergy",
+      "#WomenOver40",
+      "#SelfReclamation",
+      "#MidlifeWomen",
+      "#SacredFeminine"
+    ],
+    "themes": [
+      "self-connection",
+      "embodiment"
+    ]
   },
   {
     "id": 7,
+    "image": "images/image-7.jpg",
     "visual": "Couple over 40 eating dinner in silence, low warm light, tense quiet mood",
     "hook": "Everything looks fine. That's the part that hurts.",
-    "themes": ["couples", "disconnection"]
+    "caption": "Everything looks fine. That's the part that hurts.\n\nThe silence between you isn't peace. It's avoidance.\n\nIs yours fine on the outside?",
+    "question": "Is yours fine on the outside?",
+    "hashtags": [
+      "#MarriageAfter40",
+      "#LongTermLove",
+      "#CouplesGoals",
+      "#EmotionalIntimacy",
+      "#WomenOver40",
+      "#RelationshipGoals",
+      "#Midlife"
+    ],
+    "themes": [
+      "couples",
+      "disconnection"
+    ]
   },
   {
     "id": 8,
+    "image": "images/image-8.jpg",
     "visual": "Woman over 40 standing in front of an open wardrobe, morning light, uncertain mood",
     "hook": "You don't hate your body. You've stopped listening to her.",
-    "themes": ["body image", "self-acceptance"]
+    "caption": "You don't hate your body. You've stopped listening to her.\n\nShe's been talking the whole time.\n\nWhat is she trying to tell you?",
+    "question": "What is she trying to tell you?",
+    "hashtags": [
+      "#BodyAcceptance",
+      "#BodyWisdom",
+      "#WomenOver40",
+      "#SomaticHealing",
+      "#Embodiment",
+      "#MidlifeWomen",
+      "#SelfLove"
+    ],
+    "themes": [
+      "body image",
+      "self-acceptance"
+    ]
   },
   {
     "id": 9,
+    "image": "images/image-9.jpg",
     "visual": "Woman over 40 laughing in her kitchen, natural light, relaxed and alive",
     "hook": "There is nothing wrong with wanting more.",
-    "themes": ["desire", "fulfilment"]
+    "caption": "There is nothing wrong with wanting more.\n\nMore pleasure. More closeness. More you.\n\nWhat is the more you want?",
+    "question": "What is the more you want?",
+    "hashtags": [
+      "#WomenOver40",
+      "#DesireAfter40",
+      "#FeminineEnergy",
+      "#Midlife",
+      "#Sensuality",
+      "#MidlifeWomen",
+      "#SelfReclamation"
+    ],
+    "themes": [
+      "desire",
+      "fulfilment"
+    ]
   },
   {
     "id": 10,
+    "image": "images/image-10.jpg",
     "visual": "Woman over 40 in a bathrobe drinking tea by a window, rainy morning, reflective mood",
     "hook": "Maybe you're not tired of sex. Maybe you're tired of performing.",
-    "themes": ["intimacy", "pressure"]
+    "caption": "Maybe you're not tired of sex. Maybe you're tired of performing.\n\nThere's a difference between low desire and quiet exhaustion.\n\nDo you relate?",
+    "question": "Do you relate?",
+    "hashtags": [
+      "#SexAfter40",
+      "#DesireAfter40",
+      "#LowDesire",
+      "#WomenOver40",
+      "#IntimacyMatters",
+      "#Midlife",
+      "#MidlifeWomen"
+    ],
+    "themes": [
+      "intimacy",
+      "pressure"
+    ]
   },
   {
     "id": 11,
+    "image": "images/image-11.jpg",
     "visual": "Couple over 40 holding hands on a sofa, soft evening light, tender but unsure mood",
     "hook": "The love is still there. The closeness got buried.",
-    "themes": ["couples", "intimacy"]
+    "caption": "The love is still there. The closeness got buried.\n\nUnder kids. Under work. Under being useful.\n\nWhere did the closeness go?",
+    "question": "Where did the closeness go?",
+    "hashtags": [
+      "#LongTermLove",
+      "#MarriageAfter40",
+      "#EmotionalIntimacy",
+      "#CouplesGoals",
+      "#WomenOver40",
+      "#RelationshipGoals",
+      "#Midlife"
+    ],
+    "themes": [
+      "couples",
+      "intimacy"
+    ]
   },
   {
     "id": 12,
+    "image": "images/image-12.jpg",
     "visual": "Woman over 40 touching her belly gently, bedroom mirror, self-accepting mood",
     "hook": "Your body was never the enemy.",
-    "themes": ["body image", "healing"]
+    "caption": "Your body was never the enemy.\n\nShe's been holding you the whole time.\n\nWhen did you start seeing her that way?",
+    "question": "When did you start seeing her that way?",
+    "hashtags": [
+      "#BodyAcceptance",
+      "#SelfLove",
+      "#WomenOver40",
+      "#BodyWisdom",
+      "#Embodiment",
+      "#MidlifeWomen",
+      "#SomaticHealing"
+    ],
+    "themes": [
+      "body image",
+      "healing"
+    ]
   },
   {
     "id": 13,
+    "image": "images/image-13.jpg",
     "visual": "Woman over 40 walking barefoot outside, sunrise light, peaceful mood",
     "hook": "Desire doesn't come back through pressure.",
-    "themes": ["desire", "embodiment"]
+    "caption": "Desire doesn't come back through pressure.\n\nIt comes back through safety. Through slowness. Through being met.\n\nWhat if you stopped pushing?",
+    "question": "What if you stopped pushing?",
+    "hashtags": [
+      "#DesireAfter40",
+      "#WomenOver40",
+      "#Embodiment",
+      "#FeminineEnergy",
+      "#SacredFeminine",
+      "#Midlife",
+      "#MidlifeWomen"
+    ],
+    "themes": [
+      "desire",
+      "embodiment"
+    ]
   },
   {
     "id": 14,
+    "image": "images/image-14.jpg",
     "visual": "Two coffee cups on a kitchen table, morning light, quiet distant mood",
     "hook": "When did love become logistics?",
-    "themes": ["couples", "disconnection"]
+    "caption": "When did love become logistics?\n\nSchedules. Pickups. Lists. Where did the wanting go?\n\nIs this what your love feels like now?",
+    "question": "Is this what your love feels like now?",
+    "hashtags": [
+      "#MarriageAfter40",
+      "#LongTermLove",
+      "#CouplesGoals",
+      "#EmotionalIntimacy",
+      "#WomenOver40",
+      "#Midlife",
+      "#RelationshipGoals"
+    ],
+    "themes": [
+      "couples",
+      "disconnection"
+    ]
   },
   {
     "id": 15,
+    "image": "images/image-15.jpg",
     "visual": "Woman over 40 sitting in a car outside her house, dusk light, overwhelmed mood",
     "hook": "You've been holding everyone together. But who's holding you?",
-    "themes": ["burnout", "emotional labour"]
+    "caption": "You've been holding everyone together.\n\nBut who's holding you?\n\nWhen is your time?",
+    "question": "When is your time?",
+    "hashtags": [
+      "#InvisibleLoad",
+      "#EmotionalLabor",
+      "#BurnoutRecovery",
+      "#WomenOver40",
+      "#MidlifeWomen",
+      "#Midlife",
+      "#SelfReclamation"
+    ],
+    "themes": [
+      "burnout",
+      "emotional labour"
+    ]
   },
   {
     "id": 16,
+    "image": "images/image-16.jpg",
     "visual": "Man over 40 reaching for a woman's hand at home, warm light, nervous tenderness",
     "hook": "One honest sentence can change the whole room.",
-    "themes": ["communication", "couples"]
+    "caption": "One honest sentence can change the whole room.\n\nThe one you've been swallowing for months.\n\nWhat sentence are you holding back?",
+    "question": "What sentence are you holding back?",
+    "hashtags": [
+      "#EmotionalIntimacy",
+      "#LongTermLove",
+      "#MarriageAfter40",
+      "#CouplesGoals",
+      "#WomenOver40",
+      "#RelationshipGoals",
+      "#Midlife"
+    ],
+    "themes": [
+      "communication",
+      "couples"
+    ]
   },
   {
     "id": 17,
+    "image": "images/image-17.jpg",
     "visual": "Woman over 40 standing near a bedroom window, evening light, sensual and introspective mood",
     "hook": "Your sensuality didn't vanish. It went underground.",
-    "themes": ["sensuality", "self-connection"]
+    "caption": "Your sensuality didn't vanish. It went underground.\n\nShe's still there. Waiting to be invited back.\n\nHave you lost yourself?",
+    "question": "Have you lost yourself?",
+    "hashtags": [
+      "#Sensuality",
+      "#FeminineEnergy",
+      "#SacredFeminine",
+      "#WomenOver40",
+      "#DesireAfter40",
+      "#MidlifeWomen",
+      "#Embodiment"
+    ],
+    "themes": [
+      "sensuality",
+      "self-connection"
+    ]
   },
   {
     "id": 18,
+    "image": "images/image-18.jpg",
     "visual": "Couple over 40 standing in a doorway, soft shadows, guarded but hopeful mood",
     "hook": "It's not about sex. It's about feeling wanted.",
-    "themes": ["intimacy", "longing"]
+    "caption": "It's not about sex. It's about feeling wanted.\n\nThe ache underneath the ask.\n\nWhen did you last feel wanted?",
+    "question": "When did you last feel wanted?",
+    "hashtags": [
+      "#IntimacyMatters",
+      "#EmotionalIntimacy",
+      "#LongTermLove",
+      "#MarriageAfter40",
+      "#WomenOver40",
+      "#Midlife",
+      "#RelationshipGoals"
+    ],
+    "themes": [
+      "intimacy",
+      "longing"
+    ]
   },
   {
     "id": 19,
+    "image": "images/image-19.jpg",
     "visual": "Woman over 40 smiling at herself in a mirror, natural light, relieved mood",
     "hook": "The woman you miss is still in there.",
-    "themes": ["self-acceptance", "identity"]
+    "caption": "The woman you miss is still in there.\n\nShe didn't leave. She got buried under being everything to everyone.\n\nDo you miss her?",
+    "question": "Do you miss her?",
+    "hashtags": [
+      "#ComeBackToYourself",
+      "#SelfReclamation",
+      "#WomenOver40",
+      "#MidlifeWomen",
+      "#FeminineEnergy",
+      "#Midlife",
+      "#SacredFeminine"
+    ],
+    "themes": [
+      "self-acceptance",
+      "identity"
+    ]
   },
   {
     "id": 20,
+    "image": "images/image-20.jpg",
     "visual": "Woman over 40 lying on a yoga mat in her living room, soft sunlight, grounded and calm mood",
     "hook": "Come back to your body before you try to fix your desire.",
-    "themes": ["embodiment", "desire"]
+    "caption": "Come back to your body before you try to fix your desire.\n\nDesire lives in a body that feels safe.\n\nWhen did you last feel at home in your body?",
+    "question": "When did you last feel at home in your body?",
+    "hashtags": [
+      "#Embodiment",
+      "#SomaticHealing",
+      "#DesireAfter40",
+      "#WomenOver40",
+      "#BodyWisdom",
+      "#MidlifeWomen",
+      "#SacredFeminine"
+    ],
+    "themes": [
+      "embodiment",
+      "desire"
+    ]
   }
 ]
