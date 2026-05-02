@@ -1,0 +1,8 @@
+{
+  "phase": "list_folder",
+  "status": 400,
+  "reason": "Bad Request",
+  "body": "Error in call to API function \"files/list_folder\": Your app (ID: 7009043) is not permitted to access this endpoint because it does not have the required scope 'files.metadata.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console.",
+  "folder_url_set": true,
+  "token_set": true
+}
