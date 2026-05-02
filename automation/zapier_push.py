@@ -1,9 +1,9 @@
 """POST today's post to a Zapier webhook.
 
 Zapier handles the Buffer OAuth dance — this script just sends a JSON
-payload (caption, question, hashtags, image_url) to the webhook URL.
-The Zap then has a Buffer "Add to Queue" action that consumes the
-fields.
+payload (caption, question, hashtags, image_url, video_url) to the
+webhook URL. The Zap can then have multiple Buffer actions (one per
+channel) consuming whichever fields each channel needs.
 
 Required env vars:
   ZAPIER_WEBHOOK_URL    the Catch Hook URL Zapier gives you
@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -21,9 +22,19 @@ import urllib.request
 from scheduler import todays_post
 
 
+def derive_video_url(image_path: str, raw_base: str) -> str:
+    """images/image-N.jpg → <raw_base>/videos/video-N.mp4"""
+    name = image_path.split("/")[-1] if image_path else ""
+    m = re.match(r"image-(\d+)\.jpg$", name, re.IGNORECASE)
+    if not m:
+        return ""
+    return f"{raw_base.rstrip('/')}/videos/video-{m.group(1)}.mp4"
+
+
 def build_payload(post: dict, raw_base: str) -> dict:
     image_path = post.get("image", "")
     image_url = f"{raw_base.rstrip('/')}/{image_path}" if image_path else ""
+    video_url = derive_video_url(image_path, raw_base)
     return {
         "post_id": post["id"],
         "hook": post["hook"],
@@ -32,6 +43,7 @@ def build_payload(post: dict, raw_base: str) -> dict:
         "hashtags": " ".join(post.get("hashtags", [])),
         "hashtags_list": post.get("hashtags", []),
         "image_url": image_url,
+        "video_url": video_url,
         "visual_prompt": post.get("visual", ""),
         "themes": post.get("themes", []),
     }
