@@ -24,6 +24,7 @@ jobs:
         run: ffmpeg -version | head -1
 
       - name: Build videos for new/missing images
+        continue-on-error: true
         run: python automation/build_videos.py
 
       - name: Commit videos

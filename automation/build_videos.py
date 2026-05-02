@@ -1,17 +1,19 @@
 """Convert each images/image-N.jpg into videos/video-N.mp4.
 
-Uses ffmpeg to create a 7-second 1080x1920 (9:16) clip with a slow
-center-crop zoom-in (Ken Burns effect) and a silent stereo audio track.
-The vertical 9:16 aspect ratio is what Reels and TikTok expect.
+Uses ffmpeg to build a 7-second 1080x1920 (9:16) Reels/TikTok clip with:
+- The original image scaled to fit (no cropping or distortion)
+- A blurred copy of the same image filling the 9:16 background bars
+- A slow Ken Burns zoom-in effect
+- A silent stereo audio track (TikTok requires audio)
 
-The script is idempotent — videos that already exist are skipped, so
-you can run it after each new batch of images is downloaded.
-
-Requires: ffmpeg in PATH (ubuntu-latest runners have it pre-installed).
+Idempotent: skips images whose video already exists. On any ffmpeg
+failure, writes videos/_diagnostic.json with the error so it can be
+read directly from the repo without log inspection.
 """
 
 from __future__ import annotations
 
+import json
 import re
 import subprocess
 import sys
@@ -20,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
 VIDEOS_DIR = ROOT / "videos"
+DIAGNOSTIC_PATH = VIDEOS_DIR / "_diagnostic.json"
 
 DURATION_SEC = 7
 FPS = 30
@@ -28,19 +31,32 @@ HEIGHT = 1920
 ZOOM_END = 1.18  # final zoom factor; 1.0 = no zoom
 
 
-def build_video(image_path: Path, video_path: Path) -> None:
-    """Render a 9:16 zoom-in MP4 from a still image with a silent track."""
+def write_diagnostic(payload: dict) -> None:
+    VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
+    DIAGNOSTIC_PATH.write_text(
+        json.dumps(payload, indent=2, default=str), encoding="utf-8"
+    )
+
+
+def build_video(image_path: Path, video_path: Path) -> tuple[bool, str]:
+    """Render a 9:16 zoom-in MP4. Returns (ok, stderr_tail)."""
     frames = DURATION_SEC * FPS
     zoom_step = (ZOOM_END - 1.0) / frames
 
-    # Pre-scale the image to a large canvas so the zoompan crop is sharp,
-    # then center-crop and zoom into the requested 9:16 frame.
-    vf = (
-        f"scale=2160:-1:force_original_aspect_ratio=increase,"
-        f"crop=2160:3840,"
+    filter_complex = (
+        # Split the input so we can use it twice
+        "[0:v]split=2[bg][fg];"
+        # Background: scale to FILL 9:16 (cropping if needed) then blur
+        f"[bg]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
+        f"crop={WIDTH}:{HEIGHT},boxblur=24:3[blurred];"
+        # Foreground: scale to FIT inside 9:16 without cropping
+        f"[fg]scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=decrease[scaled];"
+        # Composite scaled image onto blurred background
+        f"[blurred][scaled]overlay=(W-w)/2:(H-h)/2,"
+        # Slow zoom-in over the whole duration
         f"zoompan=z='min(zoom+{zoom_step:.6f},{ZOOM_END})':"
         f"d={frames}:s={WIDTH}x{HEIGHT}:fps={FPS},"
-        f"format=yuv420p"
+        "format=yuv420p"
     )
 
     cmd = [
@@ -56,8 +72,8 @@ def build_video(image_path: Path, video_path: Path) -> None:
         "lavfi",
         "-i",
         "anullsrc=channel_layout=stereo:sample_rate=44100",
-        "-vf",
-        vf,
+        "-filter_complex",
+        filter_complex,
         "-c:v",
         "libx264",
         "-preset",
@@ -75,7 +91,10 @@ def build_video(image_path: Path, video_path: Path) -> None:
         "+faststart",
         str(video_path),
     ]
-    subprocess.run(cmd, check=True)
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        return False, proc.stderr[-2000:] if proc.stderr else "(no stderr)"
+    return True, ""
 
 
 def discover_images() -> list[tuple[int, Path]]:
@@ -91,31 +110,50 @@ def discover_images() -> list[tuple[int, Path]]:
 def main() -> int:
     if not IMAGES_DIR.exists():
         print("images/ directory not found", file=sys.stderr)
+        write_diagnostic({"error": "images/ directory not found"})
         return 1
     VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
 
     images = discover_images()
     if not images:
-        print("No image-N.jpg files found in images/", file=sys.stderr)
+        msg = "No image-N.jpg files found in images/"
+        print(msg, file=sys.stderr)
+        write_diagnostic({"error": msg})
         return 1
 
     built = 0
     skipped = 0
+    failures: list[dict] = []
     for n, src in images:
         dest = VIDEOS_DIR / f"video-{n}.mp4"
         if dest.exists() and dest.stat().st_size > 0:
             skipped += 1
             continue
         print(f"Building {dest.name} from {src.name}…")
-        try:
-            build_video(src, dest)
-            built += 1
-        except subprocess.CalledProcessError as e:
-            print(f"ffmpeg failed for {src.name}: {e}", file=sys.stderr)
-            return 1
+        ok, stderr_tail = build_video(src, dest)
+        if not ok:
+            failures.append({"image": src.name, "stderr": stderr_tail})
+            print(f"FAILED {src.name}: {stderr_tail[:300]}", file=sys.stderr)
+            # Remove any half-written file
+            if dest.exists():
+                dest.unlink()
+            continue
+        built += 1
 
-    print(f"Built {built} video(s); skipped {skipped} existing")
-    return 0
+    write_diagnostic(
+        {
+            "built": built,
+            "skipped": skipped,
+            "failed": len(failures),
+            "failures": failures,
+            "ffmpeg_filter_summary": (
+                f"split → blur+crop {WIDTH}x{HEIGHT} bg, "
+                f"fit-scale fg, overlay, zoompan to {ZOOM_END}x"
+            ),
+        }
+    )
+    print(f"Built {built}; skipped {skipped}; failed {len(failures)}")
+    return 0 if not failures else 1
 
 
 if __name__ == "__main__":
