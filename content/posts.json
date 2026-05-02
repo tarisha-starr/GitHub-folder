@@ -4,7 +4,7 @@
     "image": "images/image-1.jpg",
     "visual": "Brunette woman in kitchen with a mug, looking out the window",
     "hook": "you miss being wanted",
-    "caption": "Is this you?\n\nDo you relate?",
+    "caption": "Is this you?",
     "question": "Is this you?",
     "hashtags": ["#WomenOver40", "#Midlife", "#Sensuality", "#LongTermLove", "#IntimacyMatters", "#FeminineEnergy", "#DesireAfter40"],
     "themes": ["intimacy", "longing"]
@@ -14,7 +14,7 @@
     "image": "images/image-2.jpg",
     "visual": "Brunette woman in kitchen, laughing, holding a mug",
     "hook": "There is nothing wrong with wanting more.",
-    "caption": "What is the more you want?\n\nTell me below.",
+    "caption": "What is the more you want?",
     "question": "What is the more you want?",
     "hashtags": ["#WomenOver40", "#DesireAfter40", "#FeminineEnergy", "#Midlife", "#Sensuality", "#MidlifeWomen", "#SelfReclamation"],
     "themes": ["desire", "fulfilment"]
@@ -24,8 +24,8 @@
     "image": "images/image-3.jpg",
     "visual": "Older blonde woman in bedroom, arms crossed, lamp lit",
     "hook": "It's not that you don't care.",
-    "caption": "Is this true?\n\nDo you relate?",
-    "question": "Do you relate?",
+    "caption": "Is this true?",
+    "question": "Is this true?",
     "hashtags": ["#LowDesire", "#SexAfter40", "#WomenOver40", "#Midlife", "#IntimacyMatters", "#MidlifeWomen", "#Perimenopause"],
     "themes": ["desire", "shutdown"]
   },
@@ -44,7 +44,7 @@
     "image": "images/image-5.jpg",
     "visual": "Brunette woman looking in a bathroom mirror",
     "hook": "no one told you desire can disappear",
-    "caption": "Did anyone warn you?\n\nIs this true?",
+    "caption": "Did anyone warn you?",
     "question": "Did anyone warn you?",
     "hashtags": ["#DesireAfter40", "#WomenOver40", "#Perimenopause", "#Midlife", "#SexAfter40", "#MidlifeWomen", "#LowDesire"],
     "themes": ["desire", "midlife"]
@@ -54,7 +54,7 @@
     "image": "images/image-6.jpg",
     "visual": "Brunette woman in kitchen with a mug, wistful",
     "hook": "I miss feeling wanted.",
-    "caption": "Do you relate?\n\nWhen did you last feel wanted?",
+    "caption": "When did you last feel wanted?",
     "question": "When did you last feel wanted?",
     "hashtags": ["#IntimacyMatters", "#WomenOver40", "#LongTermLove", "#FeminineEnergy", "#Midlife", "#MidlifeWomen", "#EmotionalIntimacy"],
     "themes": ["intimacy", "longing"]
@@ -64,7 +64,7 @@
     "image": "images/image-7.jpg",
     "visual": "Woman dancing alone in a sunlit living room",
     "hook": "This is how she came back to herself.",
-    "caption": "What helped you come back?\n\nTell me below.",
+    "caption": "What helped you come back?",
     "question": "What helped you come back?",
     "hashtags": ["#ComeBackToYourself", "#Embodiment", "#FeminineEnergy", "#WomenOver40", "#SelfReclamation", "#MidlifeWomen", "#SacredFeminine"],
     "themes": ["self-connection", "embodiment"]
@@ -84,7 +84,7 @@
     "image": "images/image-9.jpg",
     "visual": "Woman lying awake in bed, partner turned away",
     "hook": "The loneliest place can be next to someone you love.",
-    "caption": "Is this true for you?\n\nDo you relate?",
+    "caption": "Is this true for you?",
     "question": "Is this true for you?",
     "hashtags": ["#LongTermLove", "#MarriageAfter40", "#EmotionalIntimacy", "#WomenOver40", "#Midlife", "#Loneliness", "#RelationshipGoals"],
     "themes": ["long-term relationships", "loneliness"]
@@ -94,7 +94,7 @@
     "image": "images/image-10.jpg",
     "visual": "Brunette short-hair woman on a couch, hand on chin",
     "hook": "You can love him and still feel lonely.",
-    "caption": "Is this you?\n\nDo you relate?",
+    "caption": "Is this you?",
     "question": "Is this you?",
     "hashtags": ["#LongTermLove", "#MarriageAfter40", "#EmotionalIntimacy", "#WomenOver40", "#Midlife", "#Loneliness", "#RelationshipGoals"],
     "themes": ["long-term relationships", "loneliness"]
@@ -114,7 +114,7 @@
     "image": "images/image-12.jpg",
     "visual": "Woman alone at a kitchen table with a coffee cup",
     "hook": "This is what disconnection looks like.",
-    "caption": "Is this you?\n\nDo you relate?",
+    "caption": "Is this you?",
     "question": "Is this you?",
     "hashtags": ["#MarriageAfter40", "#LongTermLove", "#EmotionalIntimacy", "#CouplesGoals", "#WomenOver40", "#Midlife", "#RelationshipGoals"],
     "themes": ["couples", "disconnection"]
@@ -144,7 +144,7 @@
     "image": "images/image-15.jpg",
     "visual": "Woman in bathrobe by a rainy window, holding a mug",
     "hook": "Maybe you're not tired of sex. Maybe you're tired of performing.",
-    "caption": "Is this you?\n\nDo you relate?",
+    "caption": "Is this you?",
     "question": "Is this you?",
     "hashtags": ["#SexAfter40", "#DesireAfter40", "#LowDesire", "#WomenOver40", "#IntimacyMatters", "#Midlife", "#MidlifeWomen"],
     "themes": ["intimacy", "pressure"]
@@ -154,8 +154,8 @@
     "image": "images/image-16.jpg",
     "visual": "Brunette woman at a bathroom mirror, longer hook overlay",
     "hook": "no one told you one day you'll stop wanting sex with your partner",
-    "caption": "Is this true?\n\nDid anyone warn you?",
-    "question": "Is this true?",
+    "caption": "Did anyone warn you?",
+    "question": "Did anyone warn you?",
     "hashtags": ["#LowDesire", "#SexAfter40", "#WomenOver40", "#Midlife", "#LongTermLove", "#MarriageAfter40", "#Perimenopause"],
     "themes": ["desire", "long-term relationships"]
   },
@@ -164,7 +164,7 @@
     "image": "images/image-17.jpg",
     "visual": "Couple eating dinner in low warm light, quiet",
     "hook": "Everything looks fine. That's the part that hurts.",
-    "caption": "Is yours fine on the outside?\n\nDo you relate?",
+    "caption": "Is yours fine on the outside?",
     "question": "Is yours fine on the outside?",
     "hashtags": ["#MarriageAfter40", "#LongTermLove", "#CouplesGoals", "#EmotionalIntimacy", "#WomenOver40", "#RelationshipGoals", "#Midlife"],
     "themes": ["couples", "disconnection"]
@@ -174,7 +174,7 @@
     "image": "images/image-18.jpg",
     "visual": "Woman on a couch in golden light, smiling softly",
     "hook": "This version of you? She's just beginning.",
-    "caption": "Who is she becoming?\n\nTell me below.",
+    "caption": "Who is she becoming?",
     "question": "Who is she becoming?",
     "hashtags": ["#WomenOver40", "#Midlife", "#ComeBackToYourself", "#MidlifeWomen", "#SelfReclamation", "#FeminineEnergy", "#SacredFeminine"],
     "themes": ["identity", "midlife"]
@@ -224,7 +224,7 @@
     "image": "images/image-23.jpg",
     "visual": "Brunette woman in kitchen, square variant",
     "hook": "When did you stop choosing yourself?",
-    "caption": "When is your time?\n\nTell me below.",
+    "caption": "When is your time?",
     "question": "When is your time?",
     "hashtags": ["#SelfReclamation", "#InvisibleLoad", "#WomenOver40", "#BurnoutRecovery", "#MidlifeWomen", "#Midlife", "#EmotionalLabor"],
     "themes": ["burnout", "identity"]
@@ -234,7 +234,7 @@
     "image": "images/image-24.jpg",
     "visual": "Brunette woman in kitchen laughing, square variant",
     "hook": "There is nothing wrong with wanting more.",
-    "caption": "Is this you?\n\nWhat do you want more of?",
+    "caption": "What do you want more of?",
     "question": "What do you want more of?",
     "hashtags": ["#WomenOver40", "#DesireAfter40", "#FeminineEnergy", "#Midlife", "#Sensuality", "#MidlifeWomen", "#SelfReclamation"],
     "themes": ["desire", "fulfilment"]
@@ -244,7 +244,7 @@
     "image": "images/image-25.jpg",
     "visual": "Brunette woman on couch, alternate angle",
     "hook": "You can love him and still feel lonely.",
-    "caption": "Is this true?\n\nDo you feel this?",
+    "caption": "Is this true?",
     "question": "Is this true?",
     "hashtags": ["#LongTermLove", "#MarriageAfter40", "#EmotionalIntimacy", "#WomenOver40", "#Midlife", "#Loneliness", "#RelationshipGoals"],
     "themes": ["long-term relationships", "loneliness"]
@@ -254,8 +254,8 @@
     "image": "images/image-26.jpg",
     "visual": "Brunette woman in kitchen with mug, vertical variant",
     "hook": "When did you stop choosing yourself?",
-    "caption": "Tell me below.",
-    "question": "When is your time?",
+    "caption": "Are you choosing yourself now?",
+    "question": "Are you choosing yourself now?",
     "hashtags": ["#SelfReclamation", "#InvisibleLoad", "#WomenOver40", "#BurnoutRecovery", "#MidlifeWomen", "#Midlife", "#EmotionalLabor"],
     "themes": ["burnout", "identity"]
   },
@@ -274,7 +274,7 @@
     "image": "images/image-28.jpg",
     "visual": "Brunette woman on couch, larger format variant",
     "hook": "You can love him and still feel lonely.",
-    "caption": "Do you feel this?\n\nIs this you?",
+    "caption": "Do you feel this?",
     "question": "Do you feel this?",
     "hashtags": ["#LongTermLove", "#MarriageAfter40", "#EmotionalIntimacy", "#WomenOver40", "#Midlife", "#Loneliness", "#RelationshipGoals"],
     "themes": ["long-term relationships", "loneliness"]

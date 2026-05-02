@@ -15,7 +15,7 @@
   },
   {
     "hook": "You learned to want less.",
-    "caption": "Is this true?\n\nDo you relate?",
+    "caption": "Is this true?",
     "question": "Is this true?",
     "hashtags": ["#WomenOver40", "#SelfReclamation", "#DesireAfter40", "#Midlife", "#MidlifeWomen", "#FeminineEnergy", "#InvisibleLoad"],
     "themes": ["desire", "self-betrayal"]
@@ -36,14 +36,14 @@
   },
   {
     "hook": "You're not too late.",
-    "caption": "Drop a yes if you needed to hear this.",
+    "caption": "Did you need to hear this?",
     "question": "Did you need to hear this?",
     "hashtags": ["#WomenOver40", "#Midlife", "#SelfReclamation", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
     "themes": ["identity", "hope"]
   },
   {
     "hook": "She stopped performing.",
-    "caption": "Imagine.",
+    "caption": "What would it feel like?",
     "question": "What would it feel like?",
     "hashtags": ["#WomenOver40", "#FeminineEnergy", "#SelfReclamation", "#Midlife", "#MidlifeWomen", "#Sensuality", "#SacredFeminine"],
     "themes": ["sensuality", "self-acceptance"]
@@ -71,7 +71,7 @@
   },
   {
     "hook": "You poured. No one filled you.",
-    "caption": "Is this you?\n\nWhen is your turn?",
+    "caption": "When is your turn?",
     "question": "When is your turn?",
     "hashtags": ["#InvisibleLoad", "#EmotionalLabor", "#BurnoutRecovery", "#WomenOver40", "#MidlifeWomen", "#Midlife", "#SelfReclamation"],
     "themes": ["burnout", "emotional labour"]
@@ -92,14 +92,14 @@
   },
   {
     "hook": "Soft is not weak.",
-    "caption": "Reclaim her.",
+    "caption": "Have you been hard for too long?",
     "question": "Have you been hard for too long?",
     "hashtags": ["#FeminineEnergy", "#WomenOver40", "#SacredFeminine", "#Midlife", "#MidlifeWomen", "#Embodiment", "#Sensuality"],
     "themes": ["feminine", "softness"]
   },
   {
     "hook": "You're allowed to start over.",
-    "caption": "Is this you?\n\nWhat would you start?",
+    "caption": "What would you start?",
     "question": "What would you start?",
     "hashtags": ["#WomenOver40", "#Midlife", "#SelfReclamation", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
     "themes": ["identity", "midlife"]
