@@ -1,16 +1,16 @@
 """Generate new hook + caption + question + hashtag sets in your brand voice.
 
 Reads content/posts.json as style examples, then calls the OpenAI API to
-generate N new posts that match the existing pain-hook + emotional-truth
-formula without repeating any hook already in the file.
+generate N new posts that match the SHORT-PUNCHY pain-hook + emotional-
+truth formula without repeating any hook already in the file.
 
-Outputs to content/draft_hooks.json AND emails the list so you can pick
-which ones to make images for in Canva.
+Outputs to content/draft_hooks.json AND emails the list (along with the
+ChatGPT image prompt) so you can generate images and add to rotation.
 
 Required env vars:
   OPENAI_API_KEY                 OpenAI API key
   SMTP_*, EMAIL_FROM, EMAIL_TO   for the email digest
-  HOOKS_TO_GENERATE              optional, defaults to 28
+  HOOKS_TO_GENERATE              optional, defaults to 30
   OPENAI_MODEL                   optional, defaults to gpt-4o-mini
 """
 
@@ -29,44 +29,45 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 POSTS_PATH = ROOT / "content" / "posts.json"
 DRAFT_PATH = ROOT / "content" / "draft_hooks.json"
+PROMPT_PATH = ROOT / "content" / "image_prompt.md"
 
 DEFAULT_MODEL = "gpt-4o-mini"
-DEFAULT_COUNT = 28
+DEFAULT_COUNT = 30
 
 
 SYSTEM_PROMPT = """\
-You write short, emotionally honest social-media hooks for women over 40.
+You write SHORT, PUNCHY social-media hooks for women over 40.
 
 Themes: desire, intimacy, sex after 40, long-term relationships, midlife
 identity, body acceptance, perimenopause, embodiment, burnout, emotional
-labour, sensuality.
+labour, sensuality, reclaiming.
+
+CRITICAL: Hooks must be SHORT. Maximum 8 words. Aim for 3-6.
+The shorter the harder the punch. Examples that work:
+- "You're not done."
+- "You're not broken."
+- "Desire isn't dead. It's hiding."
+- "She came home to her body."
+- "I miss feeling wanted."
+- "You learned to want less."
+- "The good girl is exhausted."
 
 Voice rules:
-- Sound like something she would whisper to herself at 11pm.
+- Sound like something she'd whisper to herself at 11pm.
 - Never advice voice ("you should", "try"). Never clinical voice
   ("research shows"). Never performative empathy ("I see you, queen").
-- Use the formula: pain hook + emotional truth. Two short sentences.
-  No qualifiers. No softening. The truth lands harder than comfort.
-- Examples of voice that works:
-  - "You're not broken. You're exhausted."
-  - "You don't hate sex. You hate pressure."
-  - "You can love him and still feel lonely."
-  - "The spark didn't die. It got buried under years of being useful."
+- Use the formula: pain hook + emotional truth. Two short sentences
+  if needed. No qualifiers. No softening.
 
 Caption rules:
 - The caption is what appears under the post on Instagram. The image
   already shows the hook. So the caption is JUST a short engagement
-  question or two. 1-3 short lines maximum.
+  question or two. 1-3 short lines max.
 - Examples: "Is this you?", "Do you relate?", "Is this true?",
-  "When did you last feel wanted?", "What helped you come back?",
-  "Tell me below."
+  "When did you last feel wanted?", "Tell me below."
 
 Hashtag rules:
-- 6-8 hashtags per post. Mix big tags (#WomenOver40, #Midlife) with
-  niche (#DesireAfter40, #ComeBackToYourself). Use only tags from
-  the established pool below; do not invent new ones unless required.
-
-Established hashtag pool:
+- 6-8 hashtags per post from this established pool only:
 #WomenOver40 #MidlifeWomen #Midlife #DesireAfter40 #SexAfter40
 #LowDesire #LongTermLove #MarriageAfter40 #CouplesGoals
 #RelationshipGoals #EmotionalIntimacy #IntimacyMatters
@@ -77,19 +78,72 @@ Established hashtag pool:
 """
 
 USER_PROMPT_TEMPLATE = """\
-Generate {n} new posts in this exact JSON structure. Return ONLY a JSON
-array, no prose. Each entry needs: hook, caption, question, hashtags
-(array of 6-8 tags), themes (array of 1-3 short tags).
+Generate {n} new posts as a JSON object with key "posts" containing
+an array. Each entry: hook, caption, question, hashtags (array of
+6-8 tags), themes (array of 1-3 short tags).
 
-The hook is what will be burned into the image. The caption is the
-short engagement prompt under the post. The question is the single
-strongest engagement prompt (often the same as the last line of caption).
+CRITICAL: hook must be 3-8 words. NO LONG HOOKS.
 
 Do NOT repeat any of these existing hooks (case-insensitive):
 {existing_hooks}
 
 Existing posts as style examples:
 {examples}
+"""
+
+
+IMAGE_PROMPT_TEMPLATE = """\
+Create a single photorealistic 4:5 portrait social media image
+(1024x1280) for the brand "Sexual Empowerment for Women".
+
+STYLE
+- Photorealistic, cinematic, natural skin tones (NOT over-processed)
+- Warm soft lighting (golden hour or soft indoor lamp)
+- Lived-in, real, intimate — not stock-photo, not posed
+- Premium calm aesthetic; soft depth of field; uncluttered background
+
+SUBJECT
+- Woman aged 45-60
+- Vary across the series: ethnicities (Latina, Black, white, Asian,
+  Indigenous, mixed), body sizes (include curvy and plus-size),
+  hair (gray, brown, blonde; short, long)
+- Natural beauty: minimal makeup, real skin, real hair
+- Match her expression and posture to the emotional weight of the
+  hook below
+
+SCENE
+- Everyday intimate spaces: kitchen window, bedroom edge, couch,
+  bathroom mirror, doorway, garden, yoga mat, walking outdoors
+- Natural posture: sitting, leaning, standing, walking
+
+TEXT OVERLAY (CRITICAL — render exactly)
+- Render the hook text EXACTLY as written. Use straight apostrophes (').
+- Font: elegant serif, Lora-style or Cormorant Garamond
+- Large, left-aligned, easy to read on mobile
+- Color rule:
+  * On LIGHT/warm scenes: deep burgundy (#6E1A2E) body, warm gold
+    (#C2A46D) on emotionally-weighted words
+  * On DARK scenes: cream/white (#F4EFE6) body, warm gold (#C2A46D)
+    accent words
+- Include small gold ornamental flourishes (filigree dividers)
+  between text blocks
+
+HOOK TEXT
+"<HOOK GOES HERE>"
+
+BRANDING
+- Solid footer bar at bottom: deep navy (#1F2A44), full width
+- Footer text: SEXUALEMPOWERMENTFORWOMEN.COM
+- Footer font: serif, ALL CAPS, large, cream/white or warm gold
+- Center the footer text inside the bar
+
+LOGO
+- Circular gold "S" monogram in TOP RIGHT corner (~80px on 1280px height)
+
+DO NOT
+- Combine multiple images, include numbers/labels/watermarks
+  (other than the brand footer), distort skin tones, use bright
+  saturated colors, add any text other than the hook and footer
 """
 
 
@@ -105,7 +159,7 @@ def call_openai(api_key: str, model: str, system: str, user: str) -> str:
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
-        "temperature": 0.9,
+        "temperature": 0.95,
         "response_format": {"type": "json_object"},
     }
     req = urllib.request.Request(
@@ -134,13 +188,24 @@ def parse_drafts(raw: str) -> list[dict]:
     raise ValueError("Could not find a list of drafts in the model response")
 
 
-def render_email(drafts: list[dict]) -> str:
+def render_email_text(drafts: list[dict]) -> str:
     lines = [
-        f"You have {len(drafts)} new draft hooks ready for review.",
+        "*** IMAGES REQUIRED ***",
         "",
-        "Pick the ones you want, make images in Canva, upload to Dropbox.",
-        "Then update content/posts.json + images/mapping.json with the new entries.",
+        f"You have {len(drafts)} new draft hooks below.",
+        "Each one needs an image generated in ChatGPT.",
+        "Then upload the images to your Dropbox folder.",
+        "The fetch workflow will pull them in next time it runs.",
         "",
+        "=" * 60,
+        "STEP 1 — Use this ChatGPT prompt for each image",
+        "(swap the HOOK GOES HERE line per post)",
+        "=" * 60,
+        "",
+        IMAGE_PROMPT_TEMPLATE,
+        "",
+        "=" * 60,
+        f"STEP 2 — Generate one image per hook below ({len(drafts)} total)",
         "=" * 60,
         "",
     ]
@@ -152,7 +217,49 @@ def render_email(drafts: list[dict]) -> str:
         lines.append(f"Question: {d.get('question', '').strip()}")
         lines.append(f"Tags:     {hashtags}")
         lines.append("")
+    lines.append("=" * 60)
+    lines.append("STEP 3 — When images are ready")
+    lines.append("=" * 60)
+    lines.append("")
+    lines.append("1. Upload images to Dropbox (any filename works)")
+    lines.append("2. Run the 'Fetch Dropbox images' workflow")
+    lines.append("3. Look at images/raw/ and update images/mapping.json")
+    lines.append("   to map each new file to its post id")
+    lines.append("4. Append these draft entries to content/posts.json")
+    lines.append("")
     return "\n".join(lines)
+
+
+def render_email_html(drafts: list[dict]) -> str:
+    parts = [
+        '<div style="font-family: Georgia, serif; max-width: 640px; margin: 0 auto; color: #222;">',
+        '<div style="background:#6E1A2E; color:#fff; padding:16px; text-align:center; font-size:18px; letter-spacing:2px;">IMAGES REQUIRED</div>',
+        f'<p style="font-size:15px;">You have <b>{len(drafts)} new draft hooks</b> below. Each one needs an image generated in ChatGPT, then uploaded to your Dropbox folder.</p>',
+        '<h3 style="border-bottom:2px solid #C2A46D; padding-bottom:8px;">Step 1 &mdash; ChatGPT image prompt</h3>',
+        '<p style="font-size:13px; color:#666;">Paste this into ChatGPT once per image, swapping the hook line.</p>',
+        f'<pre style="background:#f6f3ee; padding:12px; font-size:12px; white-space:pre-wrap; border-left:3px solid #C2A46D;">{IMAGE_PROMPT_TEMPLATE}</pre>',
+        f'<h3 style="border-bottom:2px solid #C2A46D; padding-bottom:8px;">Step 2 &mdash; Generate {len(drafts)} images</h3>',
+    ]
+    for i, d in enumerate(drafts, start=1):
+        hashtags = " ".join(d.get("hashtags", []))
+        parts.append(
+            f'<div style="margin:20px 0; padding:16px; background:#fafafa; border-left:3px solid #6E1A2E;">'
+            f'<p style="color:#888; font-size:12px; margin:0;">#{i}</p>'
+            f'<p style="font-size:18px; font-weight:bold; margin:6px 0;">{d.get("hook", "")}</p>'
+            f'<p style="font-size:14px; color:#555; margin:6px 0;"><b>Caption:</b> {d.get("caption", "").replace(chr(10), "<br>")}</p>'
+            f'<p style="font-size:14px; color:#555; margin:6px 0;"><b>Question:</b> {d.get("question", "")}</p>'
+            f'<p style="font-size:12px; color:#3a6ea5; margin:6px 0;">{hashtags}</p>'
+            f"</div>"
+        )
+    parts.append('<h3 style="border-bottom:2px solid #C2A46D; padding-bottom:8px;">Step 3 &mdash; When images are ready</h3>')
+    parts.append('<ol style="font-size:14px; line-height:1.6;">')
+    parts.append("<li>Upload images to your Dropbox folder (any filename works)</li>")
+    parts.append("<li>Run the <b>Fetch Dropbox images</b> workflow</li>")
+    parts.append("<li>Update <code>images/mapping.json</code> to map each new file to its post id</li>")
+    parts.append("<li>Append these draft entries to <code>content/posts.json</code></li>")
+    parts.append("</ol>")
+    parts.append("</div>")
+    return "\n".join(parts)
 
 
 def email_drafts(drafts: list[dict]) -> None:
@@ -164,10 +271,11 @@ def email_drafts(drafts: list[dict]) -> None:
     recipients = [r.strip() for r in recipients_raw.split(",") if r.strip()]
 
     msg = EmailMessage()
-    msg["Subject"] = f"{len(drafts)} new draft hooks ready ({date.today().isoformat()})"
+    msg["Subject"] = f"[ACTION] {len(drafts)} new hooks ready - images required ({date.today().isoformat()})"
     msg["From"] = sender
     msg["To"] = ", ".join(recipients)
-    msg.set_content(render_email(drafts))
+    msg.set_content(render_email_text(drafts))
+    msg.add_alternative(render_email_html(drafts), subtype="html")
 
     host = os.environ["SMTP_HOST"]
     port = int(os.environ.get("SMTP_PORT", "587"))
@@ -216,7 +324,7 @@ def main() -> int:
         n=count, existing_hooks=existing_hooks, examples=examples
     )
 
-    print(f"Calling {model} for {count} new hooks…")
+    print(f"Calling {model} for {count} new short punchy hooks…")
     raw = call_openai(api_key, model, SYSTEM_PROMPT, user_prompt)
     drafts = parse_drafts(raw)
     print(f"Parsed {len(drafts)} drafts")
@@ -225,6 +333,8 @@ def main() -> int:
         json.dumps(drafts, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     print(f"Wrote {DRAFT_PATH.relative_to(ROOT)}")
+
+    PROMPT_PATH.write_text(IMAGE_PROMPT_TEMPLATE, encoding="utf-8")
 
     try:
         email_drafts(drafts)

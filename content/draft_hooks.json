@@ -1,0 +1,212 @@
+[
+  {
+    "hook": "You're not done.",
+    "caption": "Is this you?",
+    "question": "Is this you?",
+    "hashtags": ["#WomenOver40", "#Midlife", "#SelfReclamation", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
+    "themes": ["identity", "midlife"]
+  },
+  {
+    "hook": "Desire isn't dead. It's hiding.",
+    "caption": "Where did yours go?",
+    "question": "Where did yours go?",
+    "hashtags": ["#DesireAfter40", "#WomenOver40", "#Midlife", "#SexAfter40", "#FeminineEnergy", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["desire", "midlife"]
+  },
+  {
+    "hook": "You learned to want less.",
+    "caption": "Is this true?\n\nDo you relate?",
+    "question": "Is this true?",
+    "hashtags": ["#WomenOver40", "#SelfReclamation", "#DesireAfter40", "#Midlife", "#MidlifeWomen", "#FeminineEnergy", "#InvisibleLoad"],
+    "themes": ["desire", "self-betrayal"]
+  },
+  {
+    "hook": "The good girl is exhausted.",
+    "caption": "Is she tired in you too?",
+    "question": "Is she tired in you too?",
+    "hashtags": ["#BurnoutRecovery", "#EmotionalLabor", "#WomenOver40", "#InvisibleLoad", "#MidlifeWomen", "#Midlife", "#SelfReclamation"],
+    "themes": ["burnout", "identity"]
+  },
+  {
+    "hook": "She came home to her body.",
+    "caption": "Have you?",
+    "question": "Have you?",
+    "hashtags": ["#Embodiment", "#BodyAcceptance", "#SomaticHealing", "#WomenOver40", "#ComeBackToYourself", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["embodiment", "self-connection"]
+  },
+  {
+    "hook": "You're not too late.",
+    "caption": "Drop a yes if you needed to hear this.",
+    "question": "Did you need to hear this?",
+    "hashtags": ["#WomenOver40", "#Midlife", "#SelfReclamation", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
+    "themes": ["identity", "hope"]
+  },
+  {
+    "hook": "She stopped performing.",
+    "caption": "Imagine.",
+    "question": "What would it feel like?",
+    "hashtags": ["#WomenOver40", "#FeminineEnergy", "#SelfReclamation", "#Midlife", "#MidlifeWomen", "#Sensuality", "#SacredFeminine"],
+    "themes": ["sensuality", "self-acceptance"]
+  },
+  {
+    "hook": "You're not tired. You're depleted.",
+    "caption": "Is this you?",
+    "question": "Is this you?",
+    "hashtags": ["#BurnoutRecovery", "#InvisibleLoad", "#EmotionalLabor", "#WomenOver40", "#MidlifeWomen", "#Midlife", "#SelfReclamation"],
+    "themes": ["burnout", "exhaustion"]
+  },
+  {
+    "hook": "Pleasure is your birthright.",
+    "caption": "Have you forgotten?",
+    "question": "Have you forgotten?",
+    "hashtags": ["#WomenOver40", "#DesireAfter40", "#Sensuality", "#FeminineEnergy", "#Midlife", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["desire", "pleasure"]
+  },
+  {
+    "hook": "He doesn't know who you are now.",
+    "caption": "Does he know?",
+    "question": "Does he know?",
+    "hashtags": ["#LongTermLove", "#MarriageAfter40", "#EmotionalIntimacy", "#WomenOver40", "#Midlife", "#RelationshipGoals", "#MidlifeWomen"],
+    "themes": ["long-term relationships", "identity"]
+  },
+  {
+    "hook": "You poured. No one filled you.",
+    "caption": "Is this you?\n\nWhen is your turn?",
+    "question": "When is your turn?",
+    "hashtags": ["#InvisibleLoad", "#EmotionalLabor", "#BurnoutRecovery", "#WomenOver40", "#MidlifeWomen", "#Midlife", "#SelfReclamation"],
+    "themes": ["burnout", "emotional labour"]
+  },
+  {
+    "hook": "Her body remembered everything.",
+    "caption": "What does yours remember?",
+    "question": "What does yours remember?",
+    "hashtags": ["#SomaticHealing", "#BodyWisdom", "#Embodiment", "#WomenOver40", "#MidlifeWomen", "#SacredFeminine", "#SelfLove"],
+    "themes": ["body wisdom", "healing"]
+  },
+  {
+    "hook": "You stopped wanting yourself first.",
+    "caption": "Is this true?",
+    "question": "Is this true?",
+    "hashtags": ["#SelfReclamation", "#WomenOver40", "#DesireAfter40", "#Midlife", "#FeminineEnergy", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["self-betrayal", "desire"]
+  },
+  {
+    "hook": "Soft is not weak.",
+    "caption": "Reclaim her.",
+    "question": "Have you been hard for too long?",
+    "hashtags": ["#FeminineEnergy", "#WomenOver40", "#SacredFeminine", "#Midlife", "#MidlifeWomen", "#Embodiment", "#Sensuality"],
+    "themes": ["feminine", "softness"]
+  },
+  {
+    "hook": "You're allowed to start over.",
+    "caption": "Is this you?\n\nWhat would you start?",
+    "question": "What would you start?",
+    "hashtags": ["#WomenOver40", "#Midlife", "#SelfReclamation", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
+    "themes": ["identity", "midlife"]
+  },
+  {
+    "hook": "She wants to be touched, not handled.",
+    "caption": "Do you relate?",
+    "question": "Do you relate?",
+    "hashtags": ["#IntimacyMatters", "#SexAfter40", "#WomenOver40", "#LongTermLove", "#Sensuality", "#FeminineEnergy", "#MidlifeWomen"],
+    "themes": ["intimacy", "sensuality"]
+  },
+  {
+    "hook": "She's done apologizing.",
+    "caption": "Are you?",
+    "question": "Are you?",
+    "hashtags": ["#WomenOver40", "#SelfReclamation", "#FeminineEnergy", "#Midlife", "#MidlifeWomen", "#SacredFeminine", "#InvisibleLoad"],
+    "themes": ["identity", "reclaiming"]
+  },
+  {
+    "hook": "Tired of shrinking.",
+    "caption": "Is this you?",
+    "question": "Is this you?",
+    "hashtags": ["#WomenOver40", "#SelfReclamation", "#FeminineEnergy", "#Midlife", "#MidlifeWomen", "#SacredFeminine", "#BodyAcceptance"],
+    "themes": ["identity", "body image"]
+  },
+  {
+    "hook": "Your silence isn't peace.",
+    "caption": "Is this true for you?",
+    "question": "Is this true for you?",
+    "hashtags": ["#MarriageAfter40", "#LongTermLove", "#EmotionalIntimacy", "#CouplesGoals", "#WomenOver40", "#RelationshipGoals", "#Midlife"],
+    "themes": ["couples", "disconnection"]
+  },
+  {
+    "hook": "She forgot how to receive.",
+    "caption": "Do you relate?",
+    "question": "Do you relate?",
+    "hashtags": ["#InvisibleLoad", "#EmotionalLabor", "#WomenOver40", "#FeminineEnergy", "#MidlifeWomen", "#Midlife", "#SacredFeminine"],
+    "themes": ["receiving", "emotional labour"]
+  },
+  {
+    "hook": "You were never too much.",
+    "caption": "Did you need to hear this?",
+    "question": "Did you need to hear this?",
+    "hashtags": ["#WomenOver40", "#SelfLove", "#FeminineEnergy", "#Midlife", "#MidlifeWomen", "#SelfReclamation", "#SacredFeminine"],
+    "themes": ["identity", "self-acceptance"]
+  },
+  {
+    "hook": "Wanting is not a problem.",
+    "caption": "Were you taught it was?",
+    "question": "Were you taught it was?",
+    "hashtags": ["#DesireAfter40", "#WomenOver40", "#FeminineEnergy", "#Midlife", "#MidlifeWomen", "#Sensuality", "#SacredFeminine"],
+    "themes": ["desire", "shame"]
+  },
+  {
+    "hook": "She remembered she was a woman.",
+    "caption": "Have you?",
+    "question": "Have you?",
+    "hashtags": ["#FeminineEnergy", "#WomenOver40", "#Sensuality", "#ComeBackToYourself", "#Midlife", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["feminine", "reclaiming"]
+  },
+  {
+    "hook": "Your body is not a project.",
+    "caption": "Is this you?",
+    "question": "Is this you?",
+    "hashtags": ["#BodyAcceptance", "#BodyWisdom", "#WomenOver40", "#SelfLove", "#Embodiment", "#MidlifeWomen", "#SomaticHealing"],
+    "themes": ["body image", "self-acceptance"]
+  },
+  {
+    "hook": "She used to be wild.",
+    "caption": "Is she still in you?",
+    "question": "Is she still in you?",
+    "hashtags": ["#FeminineEnergy", "#WomenOver40", "#Sensuality", "#ComeBackToYourself", "#Midlife", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["identity", "reclaiming"]
+  },
+  {
+    "hook": "This isn't a crisis. It's a wake-up.",
+    "caption": "Is this you?",
+    "question": "Is this you?",
+    "hashtags": ["#WomenOver40", "#Midlife", "#SelfReclamation", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
+    "themes": ["midlife", "awakening"]
+  },
+  {
+    "hook": "You don't owe him your body.",
+    "caption": "Is this true?",
+    "question": "Is this true?",
+    "hashtags": ["#SexAfter40", "#WomenOver40", "#MarriageAfter40", "#IntimacyMatters", "#LowDesire", "#MidlifeWomen", "#SacredFeminine"],
+    "themes": ["intimacy", "boundaries"]
+  },
+  {
+    "hook": "She's not done becoming.",
+    "caption": "Who are you becoming?",
+    "question": "Who are you becoming?",
+    "hashtags": ["#WomenOver40", "#Midlife", "#ComeBackToYourself", "#SelfReclamation", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
+    "themes": ["identity", "midlife"]
+  },
+  {
+    "hook": "You're not lost. You're listening.",
+    "caption": "Is this you?",
+    "question": "Is this you?",
+    "hashtags": ["#WomenOver40", "#Midlife", "#ComeBackToYourself", "#SelfReclamation", "#MidlifeWomen", "#SacredFeminine", "#FeminineEnergy"],
+    "themes": ["identity", "intuition"]
+  },
+  {
+    "hook": "She left the version of herself.",
+    "caption": "Have you?",
+    "question": "Have you?",
+    "hashtags": ["#WomenOver40", "#SelfReclamation", "#Midlife", "#ComeBackToYourself", "#MidlifeWomen", "#FeminineEnergy", "#SacredFeminine"],
+    "themes": ["identity", "transformation"]
+  }
+]
