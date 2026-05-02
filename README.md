@@ -15,6 +15,7 @@ The image stops the scroll. The hook makes her feel caught.
 - `automation/scheduler.py` — picks today's post deterministically by date
 - `automation/daily_email.py` — sends today's brief via SMTP
 - `automation/buffer_push.py` — queues today's post in Buffer via the Buffer API
+- `automation/fetch_outliers.py` — pulls outlier videos from the YouTube Data API into `content/outliers.csv` (used by the `find-outliers` Level 1 skill)
 - `.github/workflows/daily-email.yml` — runs both jobs daily on cron
 
 ## Quick start
