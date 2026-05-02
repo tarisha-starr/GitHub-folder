@@ -61,27 +61,3 @@ jobs:
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
         run: python zapier_push.py
-
-  push-reel-to-zapier:
-    runs-on: ubuntu-latest
-    if: ${{ vars.ZAPIER_REEL_ENABLED == 'true' }}
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install deps
-        working-directory: automation
-        run: pip install -r requirements.txt
-
-      - name: Send today's video to Reels Zapier webhook
-        working-directory: automation
-        env:
-          ZAPIER_REEL_WEBHOOK_URL: ${{ secrets.ZAPIER_REEL_WEBHOOK_URL }}
-          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
-          POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
-        run: python zapier_push_reel.py
