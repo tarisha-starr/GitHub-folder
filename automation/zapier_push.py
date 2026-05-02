@@ -58,6 +58,9 @@ def main() -> int:
         return 1
 
     post = todays_post()
+    if post is None:
+        print("No post for today (out of inventory or before launch). Skipping Zapier.", file=sys.stderr)
+        return 0
     payload = build_payload(post, raw_base)
     try:
         result = post_to_zapier(webhook_url, payload)
