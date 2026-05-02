@@ -1,0 +1,7 @@
+{
+  "built": 28,
+  "skipped": 0,
+  "failed": 0,
+  "failures": [],
+  "ffmpeg_filter_summary": "split \u2192 blur+crop 1080x1920 bg, fit-scale fg, overlay, zoompan to 1.18x"
+}
