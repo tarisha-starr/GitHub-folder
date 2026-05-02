@@ -21,6 +21,10 @@ not the URL extension, so this is safe even for sources that were PNG.
 Required env vars:
   DROPBOX_ACCESS_TOKEN   long-lived OAuth token with files.content.read
   DROPBOX_FOLDER_URL     shared link URL to the folder
+
+Diagnostics: any error from the Dropbox API is also written to
+images/_diagnostic.json so it can be inspected without reading workflow
+logs.
 """
 
 from __future__ import annotations
@@ -29,6 +33,7 @@ import json
 import os
 import shutil
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -39,8 +44,16 @@ ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
 RAW_DIR = IMAGES_DIR / "raw"
 MAPPING_PATH = IMAGES_DIR / "mapping.json"
+DIAGNOSTIC_PATH = IMAGES_DIR / "_diagnostic.json"
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
+
+
+def write_diagnostic(payload: dict) -> None:
+    IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+    DIAGNOSTIC_PATH.write_text(
+        json.dumps(payload, indent=2, default=str), encoding="utf-8"
+    )
 
 
 def post_json(url: str, token: str, body: dict) -> dict:
@@ -91,7 +104,23 @@ def download_file(token: str, folder_url: str, path_in_folder: str, dest: Path) 
 
 def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
-    entries = list_files(token, folder_url)
+    try:
+        entries = list_files(token, folder_url)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        write_diagnostic(
+            {
+                "phase": "list_folder",
+                "status": e.code,
+                "reason": e.reason,
+                "body": body,
+                "folder_url_set": bool(folder_url),
+                "token_set": bool(token),
+            }
+        )
+        print(f"list_folder failed: {e.code} {e.reason}\n{body}", file=sys.stderr)
+        raise
+
     image_entries = [
         e
         for e in entries
@@ -99,6 +128,15 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
         and Path(e["name"]).suffix.lower() in IMAGE_EXTS
     ]
     image_entries.sort(key=lambda e: e["name"].lower())
+
+    write_diagnostic(
+        {
+            "phase": "list_folder_ok",
+            "total_entries": len(entries),
+            "image_entries": len(image_entries),
+            "names": [e["name"] for e in image_entries],
+        }
+    )
 
     if not image_entries:
         print("No image files found in shared folder", file=sys.stderr)
@@ -109,7 +147,21 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
     for entry in image_entries:
         name = entry["name"]
         dest = RAW_DIR / name
-        download_file(token, folder_url, "/" + name, dest)
+        try:
+            download_file(token, folder_url, "/" + name, dest)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            write_diagnostic(
+                {
+                    "phase": "download_file",
+                    "name": name,
+                    "status": e.code,
+                    "reason": e.reason,
+                    "body": body,
+                }
+            )
+            print(f"download {name} failed: {e.code} {e.reason}\n{body}", file=sys.stderr)
+            raise
         saved.append(name)
         print(f"  {name}  ({entry.get('size', '?')} bytes)")
     return saved
@@ -144,6 +196,14 @@ def main() -> int:
     token = os.environ.get("DROPBOX_ACCESS_TOKEN")
     folder_url = os.environ.get("DROPBOX_FOLDER_URL")
     if not token or not folder_url:
+        write_diagnostic(
+            {
+                "phase": "config",
+                "token_set": bool(token),
+                "folder_url_set": bool(folder_url),
+                "error": "DROPBOX_ACCESS_TOKEN and DROPBOX_FOLDER_URL must both be set",
+            }
+        )
         print(
             "DROPBOX_ACCESS_TOKEN and DROPBOX_FOLDER_URL must be set",
             file=sys.stderr,
