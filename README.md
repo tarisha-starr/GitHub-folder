@@ -55,7 +55,7 @@ The GitHub Action runs every day at 13:00 UTC. There are two jobs:
 | Variable | Used by | Notes |
 |---|---|---|
 | `BUFFER_ENABLED` | workflow gate | set to `true` to enable Buffer job |
-| `GITHUB_RAW_BASE` | buffer | e.g. `https://raw.githubusercontent.com/tarisha-starr/GitHub-folder/main` |
+| `IMAGE_RAW_BASE` | buffer | e.g. `https://raw.githubusercontent.com/tarisha-starr/GitHub-folder/main` |
 
 ## Adding the images
 

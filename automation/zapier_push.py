@@ -7,7 +7,7 @@ fields.
 
 Required env vars:
   ZAPIER_WEBHOOK_URL    the Catch Hook URL Zapier gives you
-  GITHUB_RAW_BASE       e.g. https://raw.githubusercontent.com/<owner>/<repo>/main
+  IMAGE_RAW_BASE       e.g. https://raw.githubusercontent.com/<owner>/<repo>/main
 """
 
 from __future__ import annotations
@@ -49,10 +49,10 @@ def post_to_zapier(url: str, payload: dict) -> dict:
 
 def main() -> int:
     webhook_url = os.environ.get("ZAPIER_WEBHOOK_URL")
-    raw_base = os.environ.get("GITHUB_RAW_BASE", "").rstrip("/")
+    raw_base = os.environ.get("IMAGE_RAW_BASE", "").rstrip("/")
     if not webhook_url or not raw_base:
         print(
-            "ZAPIER_WEBHOOK_URL and GITHUB_RAW_BASE must be set",
+            "ZAPIER_WEBHOOK_URL and IMAGE_RAW_BASE must be set",
             file=sys.stderr,
         )
         return 1

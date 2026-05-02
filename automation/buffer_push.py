@@ -7,7 +7,7 @@ hashtags from posts.json.
 Requires:
   BUFFER_ACCESS_TOKEN   - personal access token (https://buffer.com/developers/apps)
   BUFFER_PROFILE_IDS    - comma-separated profile (channel) IDs
-  GITHUB_RAW_BASE       - public raw URL to the repo's main branch, e.g.
+  IMAGE_RAW_BASE       - public raw URL to the repo's main branch, e.g.
                           https://raw.githubusercontent.com/tarisha-starr/GitHub-folder/main
                           (used so Buffer can fetch the image by URL)
 """
@@ -56,9 +56,9 @@ def schedule(post: dict, token: str, profile_ids: list[str], image_url: str) -> 
 def main() -> int:
     token = os.environ.get("BUFFER_ACCESS_TOKEN")
     profile_ids_raw = os.environ.get("BUFFER_PROFILE_IDS", "")
-    raw_base = os.environ.get("GITHUB_RAW_BASE", "").rstrip("/")
+    raw_base = os.environ.get("IMAGE_RAW_BASE", "").rstrip("/")
     if not token or not profile_ids_raw or not raw_base:
-        print("BUFFER_ACCESS_TOKEN, BUFFER_PROFILE_IDS, and GITHUB_RAW_BASE must be set", file=sys.stderr)
+        print("BUFFER_ACCESS_TOKEN, BUFFER_PROFILE_IDS, and IMAGE_RAW_BASE must be set", file=sys.stderr)
         return 1
 
     profile_ids = [p.strip() for p in profile_ids_raw.split(",") if p.strip()]

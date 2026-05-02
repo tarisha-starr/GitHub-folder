@@ -52,5 +52,5 @@ jobs:
         working-directory: automation
         env:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
-          GITHUB_RAW_BASE: ${{ vars.GITHUB_RAW_BASE }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
         run: python zapier_push.py
