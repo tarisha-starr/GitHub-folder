@@ -7,11 +7,11 @@ The image stops the scroll. The hook makes her feel caught.
 
 ## Contents
 
-- `content/image-posts.md` — 20 ready-to-use image prompts paired with hooks
+- `content/image-posts.md` — ready-to-use image prompts paired with hooks
 - `content/hooks.md` — reusable hook bank by theme
 - `content/formula.md` — the pain-hook + emotional-truth formula
 - `content/posts.json` — structured data: hook, caption, question, hashtags, image path
-- `images/` — actual post images, named `post-01.jpg` … `post-20.jpg`
+- `images/` — actual post images, named `image-1.jpg` … `image-28.jpg`
 - `automation/scheduler.py` — picks today's post deterministically by date
 - `automation/daily_email.py` — sends today's brief via SMTP
 - `automation/buffer_push.py` — queues today's post in Buffer via the Buffer API
@@ -59,9 +59,10 @@ The GitHub Action runs every day at 13:00 UTC. There are two jobs:
 
 ## Adding the images
 
-Drop the 20 images into `images/` named `post-01.jpg` through `post-20.jpg`.
-See `images/README.md` for the full mapping. PNGs work too — just update the
-`image` field in `content/posts.json` to match the extension.
+Drop the 28 images into `images/` named `image-1.jpg` through `image-28.jpg`,
+matching the `image` field in `content/posts.json`. See `images/README.md`
+for the full mapping. PNGs work too — just update the `image` field in
+`content/posts.json` to match the extension.
 
 The Buffer job pulls each image from its public GitHub raw URL, so the
 images must be committed to `main` for Buffer to find them.
