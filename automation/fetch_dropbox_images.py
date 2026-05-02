@@ -1,11 +1,22 @@
-"""Fetch post images from a Dropbox shared folder.
+"""Fetch post images from a Dropbox shared folder, in two phases.
 
-Lists the shared folder, sorts files by name, takes the first 20 image
-files, and saves them as images/post-01.jpg .. images/post-20.jpg.
+Phase 1 (always runs): downloads every image in the shared folder to
+images/raw/<original-name>. This lets you see what's there before
+deciding which image goes with which post.
 
-The destination extension is forced to .jpg so the filenames match the
-`image` field in content/posts.json. Buffer detects the actual MIME from
-the file bytes, not the URL extension, so this is safe.
+Phase 2 (runs if images/mapping.json exists): reads the mapping and
+creates images/image-N.jpg copies for each entry, matching the `image`
+field in content/posts.json.
+
+mapping.json format:
+  {
+    "Original Filename From Dropbox.jpg": 1,
+    "Another File.png": 2,
+    ...
+  }
+The value is the post id (1..20). The destination extension is forced
+to .jpg so it matches posts.json. Buffer detects MIME from file bytes,
+not the URL extension, so this is safe even for sources that were PNG.
 
 Required env vars:
   DROPBOX_ACCESS_TOKEN   long-lived OAuth token with files.content.read
@@ -16,6 +27,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import sys
 import urllib.request
 from pathlib import Path
@@ -23,7 +35,11 @@ from pathlib import Path
 API = "https://api.dropboxapi.com/2"
 CONTENT = "https://content.dropboxapi.com/2"
 
-IMAGES_DIR = Path(__file__).resolve().parent.parent / "images"
+ROOT = Path(__file__).resolve().parent.parent
+IMAGES_DIR = ROOT / "images"
+RAW_DIR = IMAGES_DIR / "raw"
+MAPPING_PATH = IMAGES_DIR / "mapping.json"
+
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
 
 
@@ -73,6 +89,57 @@ def download_file(token: str, folder_url: str, path_in_folder: str, dest: Path) 
             f.write(chunk)
 
 
+def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    entries = list_files(token, folder_url)
+    image_entries = [
+        e
+        for e in entries
+        if e.get(".tag") == "file"
+        and Path(e["name"]).suffix.lower() in IMAGE_EXTS
+    ]
+    image_entries.sort(key=lambda e: e["name"].lower())
+
+    if not image_entries:
+        print("No image files found in shared folder", file=sys.stderr)
+        return []
+
+    print(f"Phase 1: downloading {len(image_entries)} image(s) to images/raw/")
+    saved: list[str] = []
+    for entry in image_entries:
+        name = entry["name"]
+        dest = RAW_DIR / name
+        download_file(token, folder_url, "/" + name, dest)
+        saved.append(name)
+        print(f"  {name}  ({entry.get('size', '?')} bytes)")
+    return saved
+
+
+def phase_two_apply_mapping(saved: list[str]) -> None:
+    if not MAPPING_PATH.exists():
+        print(
+            "\nPhase 2 skipped: images/mapping.json not present yet.\n"
+            "Inspect images/raw/, then create images/mapping.json mapping each\n"
+            "original filename to a post id (1..20), and re-run the workflow."
+        )
+        return
+
+    with MAPPING_PATH.open(encoding="utf-8") as f:
+        mapping: dict[str, int] = json.load(f)
+
+    print(f"\nPhase 2: applying mapping for {len(mapping)} entries")
+    saved_lookup = {s.lower(): s for s in saved}
+    for original, post_id in mapping.items():
+        match = saved_lookup.get(original.lower())
+        if not match:
+            print(f"  SKIP {original} -> image-{post_id}.jpg (not in raw/)")
+            continue
+        src = RAW_DIR / match
+        dest = IMAGES_DIR / f"image-{int(post_id)}.jpg"
+        shutil.copyfile(src, dest)
+        print(f"  {match} -> {dest.name}")
+
+
 def main() -> int:
     token = os.environ.get("DROPBOX_ACCESS_TOKEN")
     folder_url = os.environ.get("DROPBOX_FOLDER_URL")
@@ -83,37 +150,10 @@ def main() -> int:
         )
         return 1
 
-    IMAGES_DIR.mkdir(exist_ok=True)
-
-    entries = list_files(token, folder_url)
-    files = [
-        e
-        for e in entries
-        if e.get(".tag") == "file"
-        and Path(e["name"]).suffix.lower() in IMAGE_EXTS
-    ]
-    files.sort(key=lambda e: e["name"].lower())
-
-    if not files:
-        print("No image files found in shared folder", file=sys.stderr)
+    saved = phase_one_download_raw(token, folder_url)
+    if not saved:
         return 1
-
-    print(f"Found {len(files)} image file(s) in Dropbox folder")
-    if len(files) < 20:
-        print(
-            f"Warning: only {len(files)} of 20 expected images present",
-            file=sys.stderr,
-        )
-
-    for i, entry in enumerate(files[:20], start=1):
-        dest = IMAGES_DIR / f"post-{i:02d}.jpg"
-        path_in_folder = "/" + entry["name"]
-        download_file(token, folder_url, path_in_folder, dest)
-        print(f"  {entry['name']} -> {dest.name}")
-
-    if len(files) > 20:
-        print(f"Skipped {len(files) - 20} extra file(s) beyond post 20")
-
+    phase_two_apply_mapping(saved)
     return 0
 
 

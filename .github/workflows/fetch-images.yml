@@ -2,6 +2,9 @@ name: Fetch Dropbox images
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'images/mapping.json'
 
 jobs:
   fetch:
