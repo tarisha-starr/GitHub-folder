@@ -35,7 +35,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "=== pwd / repo root ==="
+          pwd
+          echo "=== top-level listing ==="
+          ls -la
+          echo "=== videos/ listing ==="
+          ls -la videos/ 2>&1 || echo "no videos directory"
+          echo "=== file sizes ==="
+          du -sh videos/* 2>&1 || true
+          echo "=== git status ==="
+          git status
           git add videos/ || true
+          echo "=== git status after add ==="
+          git status
           if git diff --staged --quiet; then
             echo "No video changes to commit"
           else
