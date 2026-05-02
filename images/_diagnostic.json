@@ -1,8 +1,7 @@
 {
-  "phase": "list_folder",
+  "phase": "download_file",
+  "name": "07D078A5-EBBE-4ACC-8A14-2D2229360EF9.PNG",
   "status": 400,
   "reason": "Bad Request",
-  "body": "Error in call to API function \"files/list_folder\": Your app (ID: 7009043) is not permitted to access this endpoint because it does not have the required scope 'files.metadata.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console.",
-  "folder_url_set": true,
-  "token_set": true
+  "body": "Error in call to API function \"sharing/get_shared_link_file\": Your app (ID: 7009043) is not permitted to access this endpoint because it does not have the required scope 'sharing.read'. The owner of the app can enable the scope for the app using the Permissions tab on the App Console."
 }
