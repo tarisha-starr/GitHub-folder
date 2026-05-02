@@ -1,0 +1,5 @@
+{
+  "error": "HTTP Error 401: Unauthorized",
+  "status": 401,
+  "body": "{\"error\":\"OIDC tokens are not accepted for direct API access\",\"code\":401}"
+}
