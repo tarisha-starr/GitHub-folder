@@ -68,8 +68,13 @@ Branding:
 - Solid footer bar at bottom in deep navy #1F2A44, full width.
 - Footer text "SEXUALEMPOWERMENTFORWOMEN.COM" in serif ALL CAPS,
   cream/white #F4EFE6, centered in the bar.
-- Circular gold "S" monogram in TOP RIGHT corner, ~80px on a 1536px-tall
-  image.
+- Circular monogram in TOP RIGHT corner.
+- Circle background: deep burgundy / wine #6E1A2E (NOT gold).
+- Inside: stylised letter "S" in white #F4EFE6, hand-painted
+  brush-stroke calligraphy style (NOT a typed letter), organic
+  flowing curves like a single ink stroke.
+- Subtle thin black outline around the outer edge of the circle.
+- ~80px diameter on a 1536px-tall image.
 
 DO NOT include: any photograph or person, any text other than the
 prompt and footer URL, any numbers/labels/watermarks, multiple cards

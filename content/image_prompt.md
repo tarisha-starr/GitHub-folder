@@ -48,7 +48,16 @@ BRANDING
 - Center the footer text inside the bar
 
 LOGO
-- Circular gold "S" monogram in TOP RIGHT corner (~80px on 1280px height)
+- Circular monogram in TOP RIGHT corner.
+- Circle background: deep burgundy / wine #6E1A2E (matches the brand
+  burgundy used elsewhere).
+- Inside the circle: a stylised letter "S" rendered in white #F4EFE6,
+  hand-painted brush-stroke calligraphy style (NOT a typed serif S).
+  The S has organic flowing curves, like a single ink stroke.
+- Subtle thin black outline around the outer edge of the circle.
+- ~80px diameter on a 1280px tall image.
+- Do not draw any other letter, do not use gold inside the circle,
+  do not make the S look typed or geometric.
 
 DO NOT
 - Combine multiple images, include numbers/labels/watermarks
