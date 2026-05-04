@@ -1,159 +1,76 @@
 {
-  "model": "",
-  "quality": "",
+  "model": "gpt-image-1",
+  "quality": "high",
   "size": "1024x1536",
-  "built": [],
+  "built": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
   "skipped": [],
   "failed": [
     {
-      "id": 1,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 2,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 3,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 4,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 5,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 6,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 7,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 8,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 9,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 10,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 11,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 12,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 13,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 14,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 15,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 16,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 17,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 18,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 19,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 20,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
-      "id": 21,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
-    },
-    {
       "id": 22,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 23,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 24,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 25,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 26,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 27,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 28,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 29,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     },
     {
       "id": 30,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
     }
   ]
 }
