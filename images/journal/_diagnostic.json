@@ -1,0 +1,159 @@
+{
+  "model": "",
+  "quality": "",
+  "size": "1024x1536",
+  "built": [],
+  "skipped": [],
+  "failed": [
+    {
+      "id": 1,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 2,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 3,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 4,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 5,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 6,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 7,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 8,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 9,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 10,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 11,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 12,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 13,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 14,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 15,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 16,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 17,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 18,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 19,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 20,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 21,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 22,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 23,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 24,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 25,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 26,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 27,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 28,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 29,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    },
+    {
+      "id": 30,
+      "status": 400,
+      "body": "{\n  \"error\": {\n    \"message\": \"The model '' does not exist.\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": \"model\",\n    \"code\": \"invalid_value\"\n  }\n}"
+    }
+  ]
+}
