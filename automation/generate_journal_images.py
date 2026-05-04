@@ -7,16 +7,22 @@ and saves each result as images/journal/journal-N.jpg.
 Idempotent: skips prompts whose image already exists. Set FORCE=1 in
 the env to regenerate everything.
 
+If images/brand/logo.png exists, the real brand logo is composited on
+top of the AI-generated image (top-right corner) so every card has a
+pixel-perfect logo. Set SKIP_LOGO=1 to disable.
+
 Required env vars:
   OPENAI_API_KEY        OpenAI API key
   OPENAI_IMAGE_MODEL    optional, defaults to gpt-image-1
   IMAGE_QUALITY         optional, defaults to "high" (text renders best)
   FORCE                 optional, set to "1" to regenerate existing
+  SKIP_LOGO             optional, set to "1" to skip logo overlay
 """
 
 from __future__ import annotations
 
 import base64
+import io
 import json
 import os
 import sys
@@ -28,12 +34,15 @@ ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_PATH = ROOT / "content" / "journal_prompts.json"
 OUT_DIR = ROOT / "images" / "journal"
 DIAGNOSTIC_PATH = OUT_DIR / "_diagnostic.json"
+LOGO_PATH = ROOT / "images" / "brand" / "logo.png"
 
 DEFAULT_MODEL = "gpt-image-1"
 DEFAULT_QUALITY = "high"
-SIZE = "1024x1536"  # 4:5-ish portrait; gpt-image-1 supports this preset
+SIZE = "1024x1536"
 
-# Rotated brand colors so cards aren't all the same shade across the set.
+LOGO_WIDTH_FRACTION = 0.10  # logo width as fraction of canvas width
+LOGO_MARGIN_FRACTION = 0.025  # margin from edges as fraction of canvas width
+
 BRAND_COLORS = [
     {"name": "cream", "bg": "#F4EFE6", "text": "#6E1A2E", "accent": "#C2A46D"},
     {"name": "burgundy", "bg": "#6E1A2E", "text": "#F4EFE6", "accent": "#C2A46D"},
@@ -45,7 +54,7 @@ BRAND_COLORS = [
 
 PROMPT_TEMPLATE = """\
 A single 4:5 portrait social-media card (1024x1536) for the brand
-"Sexual Empowerment for Women" — a journaling prompt card.
+"Sexual Empowerment for Women", a journaling prompt card.
 
 Style: solid {color_name} background, hex {bg}. NOT photorealistic.
 NOT a photograph. Premium calm aesthetic, very subtle paper grain
@@ -68,17 +77,15 @@ Branding:
 - Solid footer bar at bottom in deep navy #1F2A44, full width.
 - Footer text "SEXUALEMPOWERMENTFORWOMEN.COM" in serif ALL CAPS,
   cream/white #F4EFE6, centered in the bar.
-- Circular monogram in TOP RIGHT corner.
-- Circle background: deep burgundy / wine #6E1A2E (NOT gold).
-- Inside: stylised letter "S" in white #F4EFE6, hand-painted
-  brush-stroke calligraphy style (NOT a typed letter), organic
-  flowing curves like a single ink stroke.
-- Subtle thin black outline around the outer edge of the circle.
-- ~80px diameter on a 1536px-tall image.
+
+IMPORTANT: Leave the TOP-RIGHT corner of the image visually clean and
+empty. Do NOT draw any logo, monogram, letter, or graphic in the
+top-right area. A real logo will be placed there in post-production.
 
 DO NOT include: any photograph or person, any text other than the
 prompt and footer URL, any numbers/labels/watermarks, multiple cards
-in a grid, saturated colors outside the brand palette.
+in a grid, saturated colors outside the brand palette, any logo or
+S monogram.
 """
 
 
@@ -116,6 +123,28 @@ def call_openai_image(api_key: str, model: str, quality: str, prompt: str) -> by
     return base64.b64decode(b64)
 
 
+def composite_logo(img_bytes: bytes, logo_path: Path) -> bytes:
+    """Overlay the real brand logo (PNG with transparency) on the top-right."""
+    from PIL import Image  # type: ignore
+
+    base = Image.open(io.BytesIO(img_bytes)).convert("RGBA")
+    logo = Image.open(logo_path).convert("RGBA")
+
+    target_w = int(base.width * LOGO_WIDTH_FRACTION)
+    ratio = target_w / logo.width
+    target_h = int(logo.height * ratio)
+    logo_resized = logo.resize((target_w, target_h), Image.LANCZOS)
+
+    margin = int(base.width * LOGO_MARGIN_FRACTION)
+    pos = (base.width - target_w - margin, margin)
+
+    base.paste(logo_resized, pos, logo_resized)
+
+    out = io.BytesIO()
+    base.convert("RGB").save(out, format="JPEG", quality=92, optimize=True)
+    return out.getvalue()
+
+
 def main() -> int:
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
@@ -126,6 +155,14 @@ def main() -> int:
     model = os.environ.get("OPENAI_IMAGE_MODEL") or DEFAULT_MODEL
     quality = os.environ.get("IMAGE_QUALITY") or DEFAULT_QUALITY
     force = os.environ.get("FORCE") == "1"
+    skip_logo = os.environ.get("SKIP_LOGO") == "1"
+
+    use_logo = LOGO_PATH.exists() and not skip_logo
+    if not use_logo:
+        if skip_logo:
+            print("SKIP_LOGO=1 set; not compositing logo")
+        else:
+            print(f"Logo not found at {LOGO_PATH.relative_to(ROOT)}; skipping overlay")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     prompts = load_prompts()
@@ -163,6 +200,12 @@ def main() -> int:
             print(f"FAILED journal-{idx}: {e}", file=sys.stderr)
             continue
 
+        if use_logo:
+            try:
+                img_bytes = composite_logo(img_bytes, LOGO_PATH)
+            except Exception as e:
+                print(f"Logo overlay failed for journal-{idx}: {e}", file=sys.stderr)
+
         dest.write_bytes(img_bytes)
         built.append(idx)
 
@@ -171,6 +214,7 @@ def main() -> int:
             "model": model,
             "quality": quality,
             "size": SIZE,
+            "logo_applied": use_logo,
             "built": built,
             "skipped": skipped,
             "failed": failed,

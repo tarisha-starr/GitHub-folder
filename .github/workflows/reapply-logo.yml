@@ -1,0 +1,40 @@
+name: Re-apply brand logo to all images
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'images/brand/logo.png'
+
+jobs:
+  reapply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: pip install Pillow
+
+      - name: Re-apply logo
+        run: python automation/reapply_logo.py
+
+      - name: Commit re-stamped images
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/journal/ images/image-*.jpg || true
+          if git diff --staged --quiet; then
+            echo "No image changes to commit"
+          else
+            git commit -m "Re-apply brand logo to existing images"
+            git push
+          fi
