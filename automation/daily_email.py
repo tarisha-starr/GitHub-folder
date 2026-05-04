@@ -1,10 +1,12 @@
-"""Send today's image post brief by email.
+"""Send today's image post by email — clean copy-paste format.
 
-Picks today's post via scheduler.todays_post(). If no post for today
-(out of inventory or before launch date), sends an inventory alert
-instead. After a successful daily send, also fires a "create more
-posts" warning email when remaining inventory drops to ALERT_THRESHOLD
-or below.
+The body of the email IS the caption itself (no labels, no headings).
+A single line at the bottom links to the image file. Subject is the
+hook so it's scannable in the inbox.
+
+When inventory drops to ALERT_THRESHOLD or below, sends a separate
+'create more posts' email after the daily send. When inventory is
+exhausted, sends a single 'no post' alert instead.
 """
 
 from __future__ import annotations
@@ -18,59 +20,53 @@ from email.message import EmailMessage
 from scheduler import ALERT_THRESHOLD, remaining_count, todays_post
 
 
-def render_text(post: dict, remaining: int) -> str:
-    themes = ", ".join(post.get("themes", []))
-    hashtags = " ".join(post.get("hashtags", []))
-    return (
-        f"Post #{post['id']} - today's brief\n\n"
-        f"Hook (overlay text):\n  {post['hook']}\n\n"
-        f"Caption:\n{post.get('caption', post['hook'])}\n\n"
-        f"Engagement question:\n  {post.get('question', '')}\n\n"
-        f"Hashtags:\n  {hashtags}\n\n"
-        f"Visual prompt:\n  {post['visual']}\n\n"
-        f"Image file: {post.get('image', '(missing)')}\n"
-        f"Themes: {themes}\n\n"
-        f"Posts remaining after today: {remaining}\n"
-    )
+def image_url(post: dict) -> str:
+    raw_base = os.environ.get("IMAGE_RAW_BASE", "").rstrip("/")
+    image_path = post.get("image", "")
+    if not raw_base or not image_path:
+        return ""
+    return f"{raw_base}/{image_path}"
 
 
-def render_html(post: dict, remaining: int) -> str:
-    themes = ", ".join(post.get("themes", []))
+def render_text(post: dict) -> str:
+    caption = post.get("caption", post["hook"])
     hashtags = " ".join(post.get("hashtags", []))
+    img = image_url(post)
+    parts = [caption]
+    if hashtags:
+        parts.append("")
+        parts.append(hashtags)
+    if img:
+        parts.append("")
+        parts.append(img)
+    return "\n".join(parts) + "\n"
+
+
+def render_html(post: dict) -> str:
     caption_html = post.get("caption", post["hook"]).replace("\n", "<br>")
+    hashtags = " ".join(post.get("hashtags", []))
+    img = image_url(post)
     return f"""\
 <!doctype html>
 <html>
-  <body style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #222;">
-    <p style="color: #888; font-size: 13px;">Post #{post['id']} &mdash; today's brief</p>
-    <h2 style="font-size: 22px; line-height: 1.35; margin: 0 0 24px;">{post['hook']}</h2>
-
-    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Caption</strong></p>
-    <p style="font-size: 15px; line-height: 1.55; margin: 0 0 24px;">{caption_html}</p>
-
-    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Engagement question</strong></p>
-    <p style="font-size: 16px; font-style: italic; line-height: 1.5; margin: 0 0 24px;">{post.get('question', '')}</p>
-
-    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Hashtags</strong></p>
-    <p style="font-size: 13px; color: #3a6ea5; margin: 0 0 24px;">{hashtags}</p>
-
-    <p style="font-size: 14px; color: #555; margin: 0 0 6px;"><strong>Visual prompt</strong></p>
-    <p style="font-size: 15px; line-height: 1.5; margin: 0 0 12px;">{post['visual']}</p>
-
-    <p style="font-size: 13px; color: #888;">Image file: {post.get('image', '(missing)')} &middot; Themes: {themes}</p>
-    <p style="font-size: 12px; color: #aaa; margin-top: 24px;">Posts remaining after today: {remaining}</p>
+  <body style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #222; padding: 24px;">
+    <div style="font-size: 16px; line-height: 1.6; white-space: pre-wrap;">{caption_html}</div>
+    <p style="font-size: 13px; color: #3a6ea5; margin: 24px 0 0 0;">{hashtags}</p>
+    <p style="font-size: 12px; color: #888; margin: 24px 0 0 0;">
+      <a href="{img}" style="color: #888;">{img}</a>
+    </p>
   </body>
 </html>
 """
 
 
-def build_message(post: dict, remaining: int, sender: str, recipients: list[str]) -> EmailMessage:
+def build_message(post: dict, sender: str, recipients: list[str]) -> EmailMessage:
     msg = EmailMessage()
-    msg["Subject"] = f"Daily post #{post['id']}: {post['hook']}"
+    msg["Subject"] = post["hook"]
     msg["From"] = sender
     msg["To"] = ", ".join(recipients)
-    msg.set_content(render_text(post, remaining))
-    msg.add_alternative(render_html(post, remaining), subtype="html")
+    msg.set_content(render_text(post))
+    msg.add_alternative(render_html(post), subtype="html")
     return msg
 
 
@@ -141,7 +137,7 @@ def main() -> int:
         print("No post for today; sent inventory-empty alert")
         return 0
 
-    send(build_message(post, remaining, sender, recipients))
+    send(build_message(post, sender, recipients))
     print(f"Sent post #{post['id']} to {len(recipients)} recipient(s); {remaining} remaining")
 
     if 0 < remaining <= ALERT_THRESHOLD:
