@@ -1,0 +1,33 @@
+name: Daily journal prompt to Zapier
+
+on:
+  schedule:
+    # 6:00 UTC = 18:00 NZST (winter, UTC+12) = 5 hours after 1pm NZ image post.
+    # In NZDT (Oct-April, UTC+13) this fires at 19:00 NZ. Adjust if needed.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  push-journal:
+    runs-on: ubuntu-latest
+    if: ${{ vars.ZAPIER_ENABLED == 'true' }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        working-directory: automation
+        run: pip install -r requirements.txt
+
+      - name: Send today's journal prompt to Zapier webhook
+        working-directory: automation
+        env:
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+          POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+        run: python zapier_push_journal.py
