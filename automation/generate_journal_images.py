@@ -118,8 +118,8 @@ def main() -> int:
         write_diagnostic({"error": "OPENAI_API_KEY not set"})
         return 1
 
-    model = os.environ.get("OPENAI_IMAGE_MODEL", DEFAULT_MODEL)
-    quality = os.environ.get("IMAGE_QUALITY", DEFAULT_QUALITY)
+    model = os.environ.get("OPENAI_IMAGE_MODEL") or DEFAULT_MODEL
+    quality = os.environ.get("IMAGE_QUALITY") or DEFAULT_QUALITY
     force = os.environ.get("FORCE") == "1"
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
