@@ -1,0 +1,47 @@
+name: Generate infographic images
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Set to '1' to regenerate existing images"
+        required: false
+        default: "0"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: pip install Pillow
+
+      - name: Generate infographic images
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
+          IMAGE_QUALITY: ${{ vars.IMAGE_QUALITY }}
+          FORCE: ${{ inputs.force }}
+        run: python automation/generate_infographic_images.py
+
+      - name: Commit infographic images
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/infographics/ || true
+          if git diff --staged --quiet; then
+            echo "No infographic image changes to commit"
+          else
+            git commit -m "Generate infographic images"
+            git push
+          fi

@@ -53,8 +53,8 @@ BRAND_COLORS = [
 
 
 PROMPT_TEMPLATE = """\
-A single 4:5 portrait social-media card (1024x1536) for the brand
-"Sexual Empowerment for Women", a journaling prompt card.
+A single 4:5 portrait social-media card (1024x1536), an elegant
+journaling prompt card.
 
 Style: solid {color_name} background, hex {bg}. NOT photorealistic.
 NOT a photograph. Premium calm aesthetic, very subtle paper grain
