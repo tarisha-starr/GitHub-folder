@@ -221,7 +221,9 @@ def main() -> int:
         }
     )
     print(f"Built {len(built)}; skipped {len(skipped)}; failed {len(failed)}")
-    return 0 if not failed else 1
+    if failed and not built and not skipped:
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
