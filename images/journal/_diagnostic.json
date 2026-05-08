@@ -2,7 +2,18 @@
   "model": "gpt-image-1",
   "quality": "high",
   "size": "1024x1536",
+  "logo_applied": true,
   "built": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    30
+  ],
+  "skipped": [
     1,
     2,
     3,
@@ -25,52 +36,11 @@
     20,
     21
   ],
-  "skipped": [],
   "failed": [
-    {
-      "id": 22,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 23,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 24,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 25,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 26,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 27,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 28,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
     {
       "id": 29,
       "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
-    },
-    {
-      "id": 30,
-      "status": 400,
-      "body": "{\n  \"error\": {\n    \"message\": \"Billing hard limit has been reached.\",\n    \"type\": \"billing_limit_user_error\",\n    \"param\": null,\n    \"code\": \"billing_hard_limit_reached\"\n  }\n}"
+      "body": "{\n  \"error\": {\n    \"message\": \"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_e547d283928d4bef98617833e9c878db. safety_violations=[sexual].\",\n    \"type\": \"image_generation_user_error\",\n    \"param\": null,\n    \"code\": \"moderation_blocked\"\n  }\n}"
     }
   ]
 }
