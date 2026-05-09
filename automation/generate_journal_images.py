@@ -124,8 +124,15 @@ def call_openai_image(api_key: str, model: str, quality: str, prompt: str) -> by
 
 
 def composite_logo(img_bytes: bytes, logo_path: Path) -> bytes:
-    """Overlay the real brand logo (PNG with transparency) on the top-right."""
-    from PIL import Image  # type: ignore
+    """Overlay the real brand logo on the top-right.
+
+    Before placing the logo, sample the background colour from a clean
+    region (top-left corner, far from text and from any AI-drawn logo
+    attempt) and paint a rectangle of that colour over the top-right.
+    This wipes out any logo the AI drew despite our instruction not to,
+    so the real logo lands on a clean background.
+    """
+    from PIL import Image, ImageDraw  # type: ignore
 
     base = Image.open(io.BytesIO(img_bytes)).convert("RGBA")
     logo = Image.open(logo_path).convert("RGBA")
@@ -137,6 +144,22 @@ def composite_logo(img_bytes: bytes, logo_path: Path) -> bytes:
 
     margin = int(base.width * LOGO_MARGIN_FRACTION)
     pos = (base.width - target_w - margin, margin)
+
+    sample_box = (10, 10, 60, 60)
+    sample = base.crop(sample_box).resize((1, 1), Image.LANCZOS)
+    bg = sample.getpixel((0, 0))
+    if isinstance(bg, tuple) and len(bg) == 4:
+        bg = bg[:3]
+
+    cover_pad = max(20, int(target_w * 0.30))
+    cover_box = [
+        max(0, pos[0] - cover_pad),
+        max(0, pos[1] - cover_pad),
+        min(base.width, pos[0] + target_w + cover_pad),
+        min(base.height, pos[1] + target_h + cover_pad),
+    ]
+    draw = ImageDraw.Draw(base)
+    draw.rectangle(cover_box, fill=bg)
 
     base.paste(logo_resized, pos, logo_resized)
 
