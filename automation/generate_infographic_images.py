@@ -166,7 +166,9 @@ def draw_footer(img):
 
 
 def overlay_logo(img, logo_path: Path):
-    from PIL import Image  # type: ignore
+    """Wipe any AI-drawn logo with sampled bg colour, then overlay the
+    real logo cleanly on top."""
+    from PIL import Image, ImageDraw  # type: ignore
 
     logo = Image.open(logo_path).convert("RGBA")
     target_w = int(img.width * LOGO_WIDTH_FRACTION)
@@ -176,6 +178,23 @@ def overlay_logo(img, logo_path: Path):
 
     margin = int(img.width * LOGO_MARGIN_FRACTION)
     pos = (img.width - target_w - margin, margin)
+
+    sample_box = (10, 10, 60, 60)
+    sample = img.crop(sample_box).resize((1, 1), Image.LANCZOS)
+    bg = sample.getpixel((0, 0))
+    if isinstance(bg, tuple) and len(bg) == 4:
+        bg = bg[:3]
+
+    cover_pad = max(20, int(target_w * 0.30))
+    cover_box = [
+        max(0, pos[0] - cover_pad),
+        max(0, pos[1] - cover_pad),
+        min(img.width, pos[0] + target_w + cover_pad),
+        min(img.height, pos[1] + target_h + cover_pad),
+    ]
+    draw = ImageDraw.Draw(img)
+    draw.rectangle(cover_box, fill=bg)
+
     img.paste(logo_resized, pos, logo_resized)
     return img
 
