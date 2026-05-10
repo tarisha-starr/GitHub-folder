@@ -5,7 +5,7 @@ Reads content/infographics.json. For each entry:
    prompt that uses the entry's title and layout description.
 2. Pillow draws the brand footer bar with the website URL at the bottom
    of the result (guaranteed correct, no AI text errors).
-3. Pillow overlays the real logo (images/brand/logo.png) on the top-right.
+3. Pillow overlays the real burgundy logo on the top-right.
 4. Saves to images/infographics/infographic-N.jpg.
 
 Idempotent: skips entries whose image already exists. Set FORCE=1 to
@@ -34,7 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 INFOGRAPHICS_PATH = ROOT / "content" / "infographics.json"
 OUT_DIR = ROOT / "images" / "infographics"
 DIAGNOSTIC_PATH = OUT_DIR / "_diagnostic.json"
-LOGO_PATH = ROOT / "images" / "brand" / "logo.png"
+BRAND_DIR = ROOT / "images" / "brand"
 
 DEFAULT_MODEL = "gpt-image-1"
 DEFAULT_QUALITY = "high"
@@ -42,10 +42,14 @@ SIZE = "1024x1536"
 
 WEBSITE = "sexualempowermentforwomen.com"
 
+# Match the journal generator: brand burgundy sampled from the actual
+# logo file (#74224F is the wine/burgundy of logo-burgundy.png).
+BRAND_BURGUNDY = "#74224F"
+
 LOGO_WIDTH_FRACTION = 0.10
 LOGO_MARGIN_FRACTION = 0.025
 
-FOOTER_HEIGHT_FRACTION = 0.06  # navy footer bar height
+FOOTER_HEIGHT_FRACTION = 0.06
 FOOTER_BG = (31, 42, 68)       # #1F2A44 deep navy
 FOOTER_TEXT = (244, 239, 230)  # #F4EFE6 cream
 
@@ -67,11 +71,12 @@ STYLE
 - Hand-drawn illustration accents allowed (small simple figures, hearts, shields).
 - Strict palette only:
   * Deep navy #1F2A44 for headings and main body text.
-  * Deep burgundy #6E1A2E for section labels and accent words.
+  * Brand burgundy {brand_burgundy} for section labels and accent words
+    (this is the wine/burgundy of the brand logo).
   * Warm gold #C2A46D for highlights, dividers, key phrases.
   * Soft teal/green for shield icons.
 - Elegant serif font (Lora-style or Cormorant Garamond).
-- Small heart icon (burgundy) for sections about her.
+- Small heart icon (in brand burgundy {brand_burgundy}) for sections about her.
 - Small shield icon (teal) for sections about him.
 - Gold ornamental flourishes (filigree dividers) between sections.
 
@@ -107,6 +112,16 @@ def write_diagnostic(payload: dict) -> None:
 def load_entries() -> list[dict]:
     with INFOGRAPHICS_PATH.open(encoding="utf-8") as f:
         return json.load(f)
+
+
+def burgundy_logo_path() -> Path | None:
+    primary = BRAND_DIR / "logo-burgundy.png"
+    if primary.exists():
+        return primary
+    fallback = BRAND_DIR / "logo.png"
+    if fallback.exists():
+        return fallback
+    return None
 
 
 def call_openai_image(api_key: str, model: str, quality: str, prompt: str) -> bytes:
@@ -199,13 +214,13 @@ def overlay_logo(img, logo_path: Path):
     return img
 
 
-def post_process(raw_bytes: bytes, use_logo: bool) -> bytes:
+def post_process(raw_bytes: bytes, logo_path: Path | None) -> bytes:
     from PIL import Image  # type: ignore
 
     base = Image.open(io.BytesIO(raw_bytes)).convert("RGBA")
     base = draw_footer(base)
-    if use_logo and LOGO_PATH.exists():
-        base = overlay_logo(base, LOGO_PATH)
+    if logo_path is not None and logo_path.exists():
+        base = overlay_logo(base, logo_path)
 
     out = io.BytesIO()
     base.convert("RGB").save(out, format="JPEG", quality=92, optimize=True)
@@ -223,7 +238,7 @@ def main() -> int:
     quality = os.environ.get("IMAGE_QUALITY") or DEFAULT_QUALITY
     force = os.environ.get("FORCE") == "1"
     skip_logo = os.environ.get("SKIP_LOGO") == "1"
-    use_logo = LOGO_PATH.exists() and not skip_logo
+    logo_path = None if skip_logo else burgundy_logo_path()
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     entries = load_entries()
@@ -242,6 +257,7 @@ def main() -> int:
         full_prompt = PROMPT_TEMPLATE.format(
             title=entry.get("title", ""),
             layout=entry.get("layout", ""),
+            brand_burgundy=BRAND_BURGUNDY,
         )
 
         print(f"Generating infographic-{idx}.jpg ({entry.get('title', '')})…")
@@ -258,7 +274,7 @@ def main() -> int:
             continue
 
         try:
-            final = post_process(raw, use_logo)
+            final = post_process(raw, logo_path)
         except Exception as e:
             failed.append({"id": idx, "error": f"post-process: {e}"})
             print(f"Post-process failed for infographic-{idx}: {e}", file=sys.stderr)
@@ -272,7 +288,8 @@ def main() -> int:
             "model": model,
             "quality": quality,
             "size": SIZE,
-            "logo_applied": use_logo,
+            "burgundy_hex": BRAND_BURGUNDY,
+            "logo_applied": logo_path.name if logo_path else None,
             "footer_url": WEBSITE,
             "built": built,
             "skipped": skipped,
