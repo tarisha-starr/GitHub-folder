@@ -90,20 +90,117 @@ def wrap_text(draw, text: str, font, max_width: int) -> list[str]:
     return lines
 
 
-def draw_heart(draw, cx: int, cy: int, size: int, color):
-    r = size // 2
-    draw.ellipse([cx - r, cy - r // 2, cx, cy + r // 2], fill=color)
-    draw.ellipse([cx, cy - r // 2, cx + r, cy + r // 2], fill=color)
-    draw.polygon(
-        [(cx - r + 2, cy + r // 2 - 2), (cx + r - 2, cy + r // 2 - 2), (cx, cy + r + r // 2)],
-        fill=color,
-    )
+def _supersample_paste(canvas, cx: int, cy: int, size: int, draw_fn, color, scale: int = 4):
+    """Render a small icon at scale x then downsample for smooth edges."""
+    from PIL import Image, ImageDraw
+    big = Image.new("RGBA", (size * scale, size * scale), (0, 0, 0, 0))
+    big_draw = ImageDraw.Draw(big)
+    draw_fn(big_draw, size * scale, color)
+    small = big.resize((size, size), Image.LANCZOS)
+    canvas.paste(small, (cx - size // 2, cy - size // 2), small)
 
 
-def draw_shield(draw, cx: int, cy: int, size: int, color):
-    r = size // 2
-    draw.pieslice([cx - r, cy - r, cx + r, cy + r], 180, 360, fill=color)
-    draw.polygon([(cx - r, cy), (cx + r, cy), (cx, cy + r + r // 2)], fill=color)
+def _heart_polygon(s: int):
+    """Polygon points for a smooth heart filling an s x s box."""
+    import math
+    pts = []
+    lx_l, lx_r, ly = s * 0.30, s * 0.70, s * 0.32
+    radius = s * 0.22
+    # Left lobe: top arc from rightmost (centre dip) sweeping left
+    for deg in range(0, 181, 8):
+        rad = math.radians(180 - deg)
+        pts.append((lx_l + radius * math.cos(rad), ly - radius * math.sin(rad)))
+    # Left side curve down to tip via quadratic bezier
+    left_top = (lx_l - radius, ly)
+    p_left_ctrl = (s * 0.04, s * 0.55)
+    p_tip = (s * 0.5, s * 0.96)
+    for t in [i / 14 for i in range(1, 15)]:
+        x = (1 - t) ** 2 * left_top[0] + 2 * (1 - t) * t * p_left_ctrl[0] + t ** 2 * p_tip[0]
+        y = (1 - t) ** 2 * left_top[1] + 2 * (1 - t) * t * p_left_ctrl[1] + t ** 2 * p_tip[1]
+        pts.append((x, y))
+    # Right side back up to right lobe
+    right_top = (lx_r + radius, ly)
+    p_right_ctrl = (s * 0.96, s * 0.55)
+    for t in [i / 14 for i in range(1, 15)]:
+        x = (1 - t) ** 2 * p_tip[0] + 2 * (1 - t) * t * p_right_ctrl[0] + t ** 2 * right_top[0]
+        y = (1 - t) ** 2 * p_tip[1] + 2 * (1 - t) * t * p_right_ctrl[1] + t ** 2 * right_top[1]
+        pts.append((x, y))
+    # Right lobe arc
+    for deg in range(0, 181, 8):
+        rad = math.radians(deg)
+        pts.append((lx_r + radius * math.cos(rad), ly - radius * math.sin(rad)))
+    return [(int(round(x)), int(round(y))) for x, y in pts]
+
+
+def _flame_polygon(s: int):
+    """Smooth flame: pointed at top, rounded base, slight asymmetric flicker."""
+    import math
+    pts = []
+    tip = (s * 0.5, s * 0.04)
+    left_w = (s * 0.16, s * 0.62)
+    right_w = (s * 0.84, s * 0.62)
+    bottom_l = (s * 0.30, s * 0.94)
+    bottom_r = (s * 0.70, s * 0.94)
+    # Left side: tip → left_w (bezier with inward control near top, outward midway)
+    ctrl_l1 = (s * 0.42, s * 0.20)
+    ctrl_l2 = (s * 0.20, s * 0.42)
+    for t in [i / 18 for i in range(0, 19)]:
+        # cubic bezier
+        x = ((1 - t) ** 3 * tip[0]
+             + 3 * (1 - t) ** 2 * t * ctrl_l1[0]
+             + 3 * (1 - t) * t ** 2 * ctrl_l2[0]
+             + t ** 3 * left_w[0])
+        y = ((1 - t) ** 3 * tip[1]
+             + 3 * (1 - t) ** 2 * t * ctrl_l1[1]
+             + 3 * (1 - t) * t ** 2 * ctrl_l2[1]
+             + t ** 3 * left_w[1])
+        pts.append((x, y))
+    # Left bottom curve
+    ctrl_lb = (s * 0.10, s * 0.86)
+    for t in [i / 12 for i in range(1, 13)]:
+        x = (1 - t) ** 2 * left_w[0] + 2 * (1 - t) * t * ctrl_lb[0] + t ** 2 * bottom_l[0]
+        y = (1 - t) ** 2 * left_w[1] + 2 * (1 - t) * t * ctrl_lb[1] + t ** 2 * bottom_l[1]
+        pts.append((x, y))
+    # Bottom rounded arc (squashed half-ellipse)
+    cx_b = (bottom_l[0] + bottom_r[0]) / 2
+    cy_b = (bottom_l[1] + bottom_r[1]) / 2
+    rx = (bottom_r[0] - bottom_l[0]) / 2
+    ry = rx * 0.45
+    for deg in range(180, 361, 10):
+        rad = math.radians(deg)
+        pts.append((cx_b + rx * math.cos(rad), cy_b - ry * math.sin(rad)))
+    # Right bottom curve
+    ctrl_rb = (s * 0.90, s * 0.86)
+    for t in [i / 12 for i in range(1, 13)]:
+        x = (1 - t) ** 2 * bottom_r[0] + 2 * (1 - t) * t * ctrl_rb[0] + t ** 2 * right_w[0]
+        y = (1 - t) ** 2 * bottom_r[1] + 2 * (1 - t) * t * ctrl_rb[1] + t ** 2 * right_w[1]
+        pts.append((x, y))
+    # Right side back to tip
+    ctrl_r1 = (s * 0.80, s * 0.42)
+    ctrl_r2 = (s * 0.58, s * 0.20)
+    for t in [i / 18 for i in range(1, 19)]:
+        x = ((1 - t) ** 3 * right_w[0]
+             + 3 * (1 - t) ** 2 * t * ctrl_r1[0]
+             + 3 * (1 - t) * t ** 2 * ctrl_r2[0]
+             + t ** 3 * tip[0])
+        y = ((1 - t) ** 3 * right_w[1]
+             + 3 * (1 - t) ** 2 * t * ctrl_r1[1]
+             + 3 * (1 - t) * t ** 2 * ctrl_r2[1]
+             + t ** 3 * tip[1])
+        pts.append((x, y))
+    return [(int(round(x)), int(round(y))) for x, y in pts]
+
+
+def draw_heart(canvas, cx: int, cy: int, size: int, color):
+    def _do(d, s, c):
+        d.polygon(_heart_polygon(s), fill=c)
+    _supersample_paste(canvas, cx, cy, size, _do, color)
+
+
+def draw_flame(canvas, cx: int, cy: int, size: int, color):
+    def _do(d, s, c):
+        d.polygon(_flame_polygon(s), fill=c)
+    _supersample_paste(canvas, cx, cy, size, _do, color)
 
 
 def draw_flourish(draw, cx: int, cy: int, width: int, color):
@@ -243,21 +340,31 @@ def render_compare(entry: dict, dest: Path) -> None:
 
     # ---- Icons ----
     icon_y = body_top + icon_size // 2
-    if left.get("icon") == "heart":
-        draw_heart(draw, left_x + col_w // 2, icon_y, icon_size, BURGUNDY)
-    elif left.get("icon") == "shield":
-        draw_shield(draw, left_x + col_w // 2, icon_y, icon_size, TEAL)
-    if right.get("icon") == "shield":
-        draw_shield(draw, right_x + col_w // 2, icon_y, icon_size, TEAL)
-    elif right.get("icon") == "heart":
-        draw_heart(draw, right_x + col_w // 2, icon_y, icon_size, BURGUNDY)
+
+    def _icon_color(icon_name: str):
+        # heart → burgundy; flame → teal (or BURGUNDY fallback)
+        if icon_name == "flame":
+            return TEAL
+        return BURGUNDY
+
+    def _draw_icon(icon_name: str, cx: int, cy: int):
+        if icon_name == "heart":
+            draw_heart(canvas, cx, cy, icon_size, _icon_color(icon_name))
+        elif icon_name == "flame":
+            draw_flame(canvas, cx, cy, icon_size, _icon_color(icon_name))
+
+    _draw_icon(left.get("icon", ""), left_x + col_w // 2, icon_y)
+    _draw_icon(right.get("icon", ""), right_x + col_w // 2, icon_y)
+
+    # canvas was paste()'d into; refresh draw handle in case
+    draw = ImageDraw.Draw(canvas)
 
     label_y = icon_y + icon_size // 2 + icon_gap_below
 
     # ---- Headers ----
     for col, x_center, color in [
-        (left, left_x + col_w // 2, BURGUNDY),
-        (right, right_x + col_w // 2, TEAL if right.get("icon") == "shield" else BURGUNDY),
+        (left, left_x + col_w // 2, _icon_color(left.get("icon", ""))),
+        (right, right_x + col_w // 2, _icon_color(right.get("icon", ""))),
     ]:
         label = col.get("label", "").upper()
         bbox = draw.textbbox((0, 0), label, font=header_font)
@@ -289,8 +396,8 @@ def render_compare(entry: dict, dest: Path) -> None:
     # ---- Body bullets ----
     col_end_ys: list[int] = []
     for col, x_start, bullet_color in [
-        (left, left_x, BURGUNDY),
-        (right, right_x, TEAL if right.get("icon") == "shield" else BURGUNDY),
+        (left, left_x, _icon_color(left.get("icon", ""))),
+        (right, right_x, _icon_color(right.get("icon", ""))),
     ]:
         cur_y = items_y
         items = col.get("items", [])
