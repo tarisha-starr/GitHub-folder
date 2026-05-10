@@ -2,14 +2,13 @@
   "model": "gpt-image-1",
   "quality": "high",
   "size": "1024x1536",
+  "burgundy_hex": "#74224F",
   "burgundy_logo": "logo-burgundy.png",
   "gold_logo": "logo-gold.png",
   "built": [
-    2,
-    3
-  ],
-  "skipped": [
     1,
+    2,
+    3,
     4,
     5,
     6,
@@ -38,5 +37,6 @@
     29,
     30
   ],
+  "skipped": [],
   "failed": []
 }
