@@ -4,6 +4,32 @@
     "title": "Difference between Arousal & Desire",
     "caption": "Do you know the difference?",
     "image": "images/infographics/infographic-1.jpg",
+    "layout_type": "compare",
+    "structured": {
+      "left": {
+        "label": "Arousal",
+        "subtitle": "a physical response",
+        "icon": "heart",
+        "items": [
+          "Physiological response (like increased heart rate)",
+          "Genital and body focus",
+          "Felt in the moment",
+          "Often involuntary and reactive"
+        ]
+      },
+      "right": {
+        "label": "Desire",
+        "subtitle": "a mental and emotional yearning",
+        "icon": "shield",
+        "items": [
+          "Subjective and emotional",
+          "Cognitive and deep-seated",
+          "Felt over time and in anticipation",
+          "Often proactive and intentional"
+        ]
+      },
+      "bottom_band": "Arousal can spark Desire. Desire can shape Arousal. Understanding both is key to intimacy."
+    },
     "layout": "Two-column comparison. LEFT (heart icon, burgundy header 'AROUSAL', italic subtitle 'a physical response'): bullet list — Physiological response (like increased heart rate); Genital and body focus; Felt in the moment; Often involuntary and reactive. RIGHT (shield icon, teal header 'DESIRE', italic subtitle 'a mental and emotional yearning'): bullets — Subjective and emotional; Cognitive and deep-seated; Felt over time and in anticipation; Often proactive and intentional. Bottom band 'LOVEMAKING' in burgundy: Arousal can spark Desire / Desire can shape Arousal / Understanding both is key to intimacy."
   },
   {
