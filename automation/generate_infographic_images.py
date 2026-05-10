@@ -17,6 +17,9 @@ Required env vars:
   IMAGE_QUALITY         optional, defaults to "high"
   FORCE                 optional, "1" to regenerate existing
   SKIP_LOGO             optional, "1" to skip logo overlay
+  ONLY_ID               optional, integer 1..30. If set, only that one
+                        infographic is generated. Useful for testing
+                        a single card cheaply (~$0.17).
 """
 
 from __future__ import annotations
@@ -41,17 +44,14 @@ DEFAULT_QUALITY = "high"
 SIZE = "1024x1536"
 
 WEBSITE = "sexualempowermentforwomen.com"
-
-# Match the journal generator: brand burgundy sampled from the actual
-# logo file (#74224F is the wine/burgundy of logo-burgundy.png).
 BRAND_BURGUNDY = "#74224F"
 
 LOGO_WIDTH_FRACTION = 0.10
 LOGO_MARGIN_FRACTION = 0.025
 
 FOOTER_HEIGHT_FRACTION = 0.06
-FOOTER_BG = (31, 42, 68)       # #1F2A44 deep navy
-FOOTER_TEXT = (244, 239, 230)  # #F4EFE6 cream
+FOOTER_BG = (31, 42, 68)
+FOOTER_TEXT = (244, 239, 230)
 
 FONT_CANDIDATES = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
@@ -181,8 +181,6 @@ def draw_footer(img):
 
 
 def overlay_logo(img, logo_path: Path):
-    """Wipe any AI-drawn logo with sampled bg colour, then overlay the
-    real logo cleanly on top."""
     from PIL import Image, ImageDraw  # type: ignore
 
     logo = Image.open(logo_path).convert("RGBA")
@@ -240,8 +238,23 @@ def main() -> int:
     skip_logo = os.environ.get("SKIP_LOGO") == "1"
     logo_path = None if skip_logo else burgundy_logo_path()
 
+    only_id_raw = os.environ.get("ONLY_ID", "").strip()
+    only_id: int | None = None
+    if only_id_raw and only_id_raw not in ("0", "all"):
+        try:
+            only_id = int(only_id_raw)
+        except ValueError:
+            print(f"Ignoring invalid ONLY_ID: {only_id_raw}", file=sys.stderr)
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     entries = load_entries()
+    if only_id is not None:
+        entries = [e for e in entries if int(e["id"]) == only_id]
+        if not entries:
+            print(f"No infographic with id={only_id}", file=sys.stderr)
+            write_diagnostic({"error": f"No entry with id={only_id}"})
+            return 1
+        print(f"ONLY_ID={only_id} set; generating just this one card.")
 
     built: list[int] = []
     skipped: list[int] = []
@@ -291,6 +304,7 @@ def main() -> int:
             "burgundy_hex": BRAND_BURGUNDY,
             "logo_applied": logo_path.name if logo_path else None,
             "footer_url": WEBSITE,
+            "only_id": only_id,
             "built": built,
             "skipped": skipped,
             "failed": failed,
