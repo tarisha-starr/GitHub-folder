@@ -38,6 +38,8 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DRAFTS_PARENT_PAGE_ID: ${{ vars.NOTION_DRAFTS_PARENT_PAGE_ID }}
         run: python automation/check_inventory.py
 
       - name: Commit and push drafts (with rebase retry)
