@@ -47,12 +47,17 @@ SIZE = "1024x1536"
 LOGO_WIDTH_FRACTION = 0.10
 LOGO_MARGIN_FRACTION = 0.025
 
+# Brand burgundy (#74224F) sampled from logo-burgundy.png — matches the
+# real wine/burgundy of the logo. Used for body text on light cards and
+# as the bg colour for the burgundy card so everything matches.
+BRAND_BURGUNDY = "#74224F"
+
 BRAND_COLORS = [
-    {"name": "cream", "bg": "#F4EFE6", "text": "#6E1A2E", "accent": "#C2A46D"},
-    {"name": "burgundy", "bg": "#6E1A2E", "text": "#F4EFE6", "accent": "#C2A46D"},
-    {"name": "gold", "bg": "#C2A46D", "text": "#6E1A2E", "accent": "#1F2A44"},
+    {"name": "cream", "bg": "#F4EFE6", "text": BRAND_BURGUNDY, "accent": "#C2A46D"},
+    {"name": "burgundy", "bg": BRAND_BURGUNDY, "text": "#F4EFE6", "accent": "#C2A46D"},
+    {"name": "gold", "bg": "#C2A46D", "text": BRAND_BURGUNDY, "accent": "#1F2A44"},
     {"name": "navy", "bg": "#1F2A44", "text": "#F4EFE6", "accent": "#C2A46D"},
-    {"name": "blush", "bg": "#E8D5CE", "text": "#6E1A2E", "accent": "#C2A46D"},
+    {"name": "blush", "bg": "#E8D5CE", "text": BRAND_BURGUNDY, "accent": "#C2A46D"},
 ]
 
 LOGO_FOR_BG = {
@@ -275,6 +280,7 @@ def main() -> int:
             "model": model,
             "quality": quality,
             "size": SIZE,
+            "burgundy_hex": BRAND_BURGUNDY,
             "burgundy_logo": str(burgundy.name) if burgundy else None,
             "gold_logo": str(gold.name) if gold else None,
             "built": built,
