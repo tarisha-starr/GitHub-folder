@@ -1,0 +1,65 @@
+name: Daily inventory check + auto-draft
+
+on:
+  schedule:
+    # 21:00 UTC = 09:00 NZST (next morning local time)
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      always_email:
+        description: "Set to '1' to email even when nothing is low (test mode)"
+        required: false
+        default: "0"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run inventory check
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          ALERT_THRESHOLD: ${{ vars.ALERT_THRESHOLD }}
+          ALWAYS_EMAIL: ${{ inputs.always_email }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python automation/check_inventory.py
+
+      - name: Commit and push drafts (with rebase retry)
+        if: always()
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/drafts/ || true
+          if git diff --staged --quiet; then
+            echo "No drafts to commit"
+            exit 0
+          fi
+          git commit -m "Update inventory drafts"
+          for attempt in 1 2 3 4 5; do
+            if git push origin main; then
+              echo "Push succeeded on attempt $attempt"
+              exit 0
+            fi
+            echo "Push rejected on attempt $attempt — rebasing"
+            git pull --rebase origin main
+            sleep 3
+          done
+          echo "Push failed after 5 attempts" >&2
+          exit 1
