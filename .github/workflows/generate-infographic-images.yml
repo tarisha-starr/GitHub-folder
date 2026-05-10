@@ -7,6 +7,10 @@ on:
         description: "Set to '1' to regenerate existing images"
         required: false
         default: "0"
+      only_id:
+        description: "Only generate this single infographic id (1-30). Leave empty for all."
+        required: false
+        default: ""
 
 jobs:
   generate:
@@ -31,6 +35,7 @@ jobs:
           OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
           IMAGE_QUALITY: ${{ vars.IMAGE_QUALITY }}
           FORCE: ${{ inputs.force }}
+          ONLY_ID: ${{ inputs.only_id }}
         run: python automation/generate_infographic_images.py
 
       - name: Commit and push (with rebase retry)
@@ -45,7 +50,6 @@ jobs:
             exit 0
           fi
           git commit -m "Generate infographic images"
-          # Push with rebase retry to handle concurrent commits to main
           for attempt in 1 2 3 4 5; do
             if git push origin main; then
               echo "Push succeeded on attempt $attempt"
