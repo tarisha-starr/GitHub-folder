@@ -1,28 +1,31 @@
-"""Daily inventory alert across all 3 content streams.
+"""Daily inventory alert + auto-draft + Notion review.
 
-Reads:
-- content/posts.json          (image posts / hooks)
-- content/journal_prompts.json (journal cards)
-- content/infographics.json    (infographics)
+For each of the 3 content streams (image hooks, journal prompts,
+infographics):
+1. Counts remaining posts based on POSTS_LAUNCH_DATE.
+2. If remaining <= ALERT_THRESHOLD (default 7), calls OpenAI to draft
+   30 fresh entries in Tarisha's voice (no em-dashes, contractions,
+   British/NZ spelling, no duplicates).
+3. Saves drafts to content/drafts/{stream}_drafts.json.
+4. If NOTION_TOKEN is set, posts the drafts as a new sub-page in Notion
+   under NOTION_DRAFTS_PARENT_PAGE_ID. Tarisha reviews and edits there.
+5. Emails Tarisha a digest with the Notion link (if any) plus the full
+   draft text inline.
 
-For each stream:
-1. Computes how many posts remain after today (based on POSTS_LAUNCH_DATE).
-2. If remaining <= ALERT_THRESHOLD (7 by default), calls OpenAI to draft
-   30 new entries in Tarisha's voice.
-3. Writes drafts to content/drafts/{stream}_drafts.json (versioned by date).
+HARD RULE: drafts must be reviewed in Notion BEFORE running any image
+generator. The image generators are workflow_dispatch only, so they
+cannot fire automatically — Tarisha controls when, after Notion review.
 
-Emails ONE digest to EMAIL_TO summarising:
-- Current remaining per stream
-- Any drafts that were generated (full text inline, ready to read or copy
-  into Notion / the live JSON file).
+Required env:
+  OPENAI_API_KEY, SMTP_HOST/PORT/USER/PASS, EMAIL_FROM, EMAIL_TO
 
-Required env vars:
-  OPENAI_API_KEY                    OpenAI API key (for text generation)
-  SMTP_HOST/PORT/USER/PASS, EMAIL_FROM, EMAIL_TO
-  POSTS_LAUNCH_DATE                 optional, YYYY-MM-DD
-  ALERT_THRESHOLD                   optional, defaults to 7
-  ALWAYS_EMAIL                      optional, "1" to email even when
-                                    nothing is low (status digest only)
+Optional env:
+  POSTS_LAUNCH_DATE              YYYY-MM-DD
+  ALERT_THRESHOLD                int, default 7
+  ALWAYS_EMAIL                   "1" to email even when nothing low
+  NOTION_TOKEN                   Notion internal integration token
+  NOTION_DRAFTS_PARENT_PAGE_ID   Notion page ID under which to post drafts
+  OPENAI_MODEL                   default "gpt-4o-mini"
 """
 
 from __future__ import annotations
@@ -44,6 +47,9 @@ DRAFTS_DIR = ROOT / "content" / "drafts"
 DEFAULT_LAUNCH = date(2026, 5, 3)
 DEFAULT_THRESHOLD = 7
 DEFAULT_MODEL = "gpt-4o-mini"
+
+NOTION_API = "https://api.notion.com/v1"
+NOTION_VERSION = "2022-06-28"
 
 
 STREAMS = [
@@ -147,7 +153,6 @@ def remaining_for(data_path: Path) -> int:
 
 
 def existing_titles(data_path: Path, key: str) -> list[str]:
-    """Return existing key values for de-dup. Keys: 'hook', 'prompt', 'title'."""
     try:
         with data_path.open(encoding="utf-8") as f:
             data = json.load(f)
@@ -212,22 +217,176 @@ def write_draft_file(stream: dict, drafts: list[dict]) -> Path:
     return path
 
 
-def render_email(report: list[dict]) -> tuple[str, str]:
+# ----- Notion posting -------------------------------------------------------
+
+def notion_request(method: str, path: str, token: str, body: dict | None = None) -> dict:
+    data = json.dumps(body).encode("utf-8") if body is not None else None
+    req = urllib.request.Request(
+        f"{NOTION_API}{path}",
+        data=data,
+        method=method,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Notion-Version": NOTION_VERSION,
+            "Content-Type": "application/json",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def notion_text(content: str, bold: bool = False) -> dict:
+    return {
+        "type": "text",
+        "text": {"content": content[:2000]},
+        "annotations": {"bold": bold},
+    }
+
+
+def notion_blocks_for_drafts(stream_name: str, drafts: list[dict]) -> list[dict]:
+    blocks: list[dict] = []
+    for i, d in enumerate(drafts, 1):
+        # Heading per item
+        if stream_name == "image_posts":
+            heading = f"{i}. {d.get('hook', '').strip()}"
+        elif stream_name == "journal_prompts":
+            heading = f"{i}. {d.get('prompt', '').strip()}"
+        else:
+            heading = f"{i}. {d.get('title', '').strip()}"
+
+        blocks.append({
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {"rich_text": [notion_text(heading, bold=True)]},
+        })
+
+        # Body
+        if stream_name == "image_posts":
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [
+                        notion_text("Caption: ", bold=True),
+                        notion_text(d.get("caption", "") or ""),
+                    ]
+                },
+            })
+            tags = " ".join(d.get("hashtags", []))
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {"rich_text": [notion_text(tags)]},
+            })
+        elif stream_name == "journal_prompts":
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {"rich_text": [notion_text(d.get("caption_tail", "") or "")]},
+            })
+        else:  # infographics
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [
+                        notion_text("Caption: ", bold=True),
+                        notion_text(d.get("caption", "") or ""),
+                    ]
+                },
+            })
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [
+                        notion_text("Layout: ", bold=True),
+                        notion_text(d.get("layout", "") or ""),
+                    ]
+                },
+            })
+
+        blocks.append({"object": "block", "type": "divider", "divider": {}})
+
+    # Notion limits: 100 blocks per page-create call. Truncate if needed.
+    return blocks[:99]
+
+
+def post_drafts_to_notion(token: str, parent_page_id: str, stream: dict, drafts: list[dict]) -> str | None:
+    title = f"{stream['label']} drafts ({date.today().isoformat()})"
+    body = {
+        "parent": {"page_id": parent_page_id},
+        "properties": {
+            "title": [{"type": "text", "text": {"content": title}}],
+        },
+        "icon": {"type": "emoji", "emoji": "📝"},
+        "children": [
+            {
+                "object": "block",
+                "type": "callout",
+                "callout": {
+                    "icon": {"type": "emoji", "emoji": "⚠️"},
+                    "rich_text": [
+                        notion_text(
+                            "HARD RULE: review and edit these drafts here BEFORE running "
+                            "any image generator. The image generators only run when you click "
+                            "Run workflow in GitHub.",
+                            bold=True,
+                        ),
+                    ],
+                    "color": "red_background",
+                },
+            },
+            {
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [
+                        notion_text(
+                            f"Auto-generated because {stream['label']} dropped to inventory low. "
+                            f"{len(drafts)} drafts below."
+                        ),
+                    ]
+                },
+            },
+        ] + notion_blocks_for_drafts(stream["name"], drafts),
+    }
+    try:
+        result = notion_request("POST", "/pages", token, body=body)
+        return result.get("url")
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode("utf-8", errors="replace")
+        print(f"Notion API error {e.code}: {err_body[:500]}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"Notion post failed: {e}", file=sys.stderr)
+        return None
+
+
+# ----- Email rendering ------------------------------------------------------
+
+def render_email(report: list[dict]) -> str:
     text_parts: list[str] = []
     has_drafts = any(s.get("drafts") for s in report)
 
     if has_drafts:
         text_parts.append("*** ACTION NEEDED: One or more streams running low ***\n")
+        text_parts.append("HARD RULE: review the drafts in Notion BEFORE running")
+        text_parts.append("any image generator. Image generators are manual-trigger only.\n")
     else:
         text_parts.append("Daily inventory check (no action needed)\n")
 
     for s in report:
         text_parts.append(f"-- {s['label']} --")
         text_parts.append(f"Remaining: {s['remaining']} day(s)")
+        if s.get("notion_url"):
+            text_parts.append(f"Notion review page: {s['notion_url']}")
         if s.get("drafts"):
             text_parts.append(
-                f"BELOW threshold ({s['threshold']}) -- {len(s['drafts'])} fresh drafts generated:"
+                f"BELOW threshold ({s['threshold']}) -- {len(s['drafts'])} fresh drafts generated."
             )
+            text_parts.append("Review and edit in Notion (link above).")
+            text_parts.append("Full text included below for reference:")
             text_parts.append("")
             for i, d in enumerate(s["drafts"], 1):
                 if s["name"] == "image_posts":
@@ -247,18 +406,14 @@ def render_email(report: list[dict]) -> tuple[str, str]:
         text_parts.append("")
 
     text_parts.append("---")
-    text_parts.append("Drafts also saved to content/drafts/*.json in the repo.")
-    text_parts.append("")
-    text_parts.append("To use them:")
-    text_parts.append("1. Review (this email or content/drafts/*.json)")
-    text_parts.append("2. Edit any in Notion or the JSON files")
-    text_parts.append("3. Copy approved entries into the live content/*.json")
-    text_parts.append("4. Run the matching generator workflow:")
+    text_parts.append("Workflow:")
+    text_parts.append("1. Open the Notion link(s) above and edit drafts")
+    text_parts.append("2. Copy approved entries into the live content/*.json")
+    text_parts.append("3. Trigger the matching image generator workflow:")
     text_parts.append("   - journal:     generate-journal-images.yml (force=1 to remake all)")
     text_parts.append("   - infographic: generate-infographic-images.yml")
     text_parts.append("   - image hook:  you make images yourself in ChatGPT, drop in Dropbox")
-    text = "\n".join(text_parts)
-    return text, text  # plain text both for body and html-fallback
+    return "\n".join(text_parts)
 
 
 def send_email(subject: str, body: str) -> None:
@@ -297,6 +452,8 @@ def main() -> int:
     model = os.environ.get("OPENAI_MODEL") or DEFAULT_MODEL
     threshold = alert_threshold()
     always_email = os.environ.get("ALWAYS_EMAIL") == "1"
+    notion_token = os.environ.get("NOTION_TOKEN")
+    notion_parent = os.environ.get("NOTION_DRAFTS_PARENT_PAGE_ID")
 
     report: list[dict] = []
     any_low = False
@@ -309,6 +466,7 @@ def main() -> int:
             "remaining": remaining,
             "threshold": threshold,
             "drafts": [],
+            "notion_url": None,
         }
 
         if remaining <= threshold:
@@ -325,6 +483,18 @@ def main() -> int:
                     entry["drafts"] = drafts
                     path = write_draft_file(stream, drafts)
                     print(f"Wrote {len(drafts)} drafts to {path.relative_to(ROOT)}")
+
+                    if notion_token and notion_parent:
+                        url = post_drafts_to_notion(notion_token, notion_parent, stream, drafts)
+                        if url:
+                            entry["notion_url"] = url
+                            print(f"Posted to Notion: {url}")
+                    elif notion_token or notion_parent:
+                        print(
+                            "Notion posting skipped: need both NOTION_TOKEN and "
+                            "NOTION_DRAFTS_PARENT_PAGE_ID.",
+                            file=sys.stderr,
+                        )
                 except Exception as e:
                     print(
                         f"Failed to generate drafts for {stream['name']}: {e}",
@@ -339,11 +509,9 @@ def main() -> int:
             print(f"  {s['label']}: {s['remaining']} remaining")
         return 0
 
-    subject_prefix = (
-        "[ACTION] Inventory low" if any_low else "Inventory check"
-    )
+    subject_prefix = "[ACTION] Inventory low" if any_low else "Inventory check"
     subject = f"{subject_prefix} - {date.today().isoformat()}"
-    body, _ = render_email(report)
+    body = render_email(report)
     try:
         send_email(subject, body)
         print(f"Sent inventory email: {subject}")
