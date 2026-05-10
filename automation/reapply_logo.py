@@ -1,27 +1,50 @@
 """Re-apply the real brand logo to existing images.
 
-For each image, opens it, optionally clears the top-right area with
-sampled background colour (only for solid-bg cards: journal,
-infographics), then overlays images/brand/logo.png on top-right.
+For solid-bg cards (journal, infographics): clears the top-right with
+sampled bg colour, then overlays the appropriate logo variant.
+- Journal cards rotate through 5 brand colours (cream, burgundy, gold,
+  navy, blush). Burgundy and navy backgrounds get the gold-circle logo
+  (logo-gold.png). The other three get the burgundy logo (logo.png).
+- Infographic cards have a single blush bg, always burgundy logo.
 
-For photo posts (images/image-*.jpg), only the logo overlay runs —
-no background paint, since photo backgrounds vary.
+For photo posts (images/image-*.jpg), only the burgundy logo is
+overlaid — no bg paint, since photo backgrounds vary.
 """
 
 from __future__ import annotations
 
 import io
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-LOGO_PATH = ROOT / "images" / "brand" / "logo.png"
+LOGO_DARK_PATH = ROOT / "images" / "brand" / "logo.png"        # burgundy circle
+LOGO_LIGHT_PATH = ROOT / "images" / "brand" / "logo-gold.png"  # gold circle
 JOURNAL_DIR = ROOT / "images" / "journal"
 INFOGRAPHIC_DIR = ROOT / "images" / "infographics"
 IMAGES_DIR = ROOT / "images"
 
 LOGO_WIDTH_FRACTION = 0.10
 LOGO_MARGIN_FRACTION = 0.025
+
+# Same rotation as in generate_journal_images.py
+JOURNAL_BG_ROTATION = ["cream", "burgundy", "gold", "navy", "blush"]
+LOGO_FOR_BG = {
+    "cream": "dark",
+    "gold": "dark",
+    "blush": "dark",
+    "burgundy": "light",
+    "navy": "light",
+}
+
+
+def journal_logo_for(idx: int) -> Path:
+    bg_name = JOURNAL_BG_ROTATION[(idx - 1) % len(JOURNAL_BG_ROTATION)]
+    variant = LOGO_FOR_BG.get(bg_name, "dark")
+    if variant == "light" and LOGO_LIGHT_PATH.exists():
+        return LOGO_LIGHT_PATH
+    return LOGO_DARK_PATH
 
 
 def composite_logo(image_path: Path, logo_path: Path, clear_bg: bool) -> None:
@@ -62,42 +85,55 @@ def composite_logo(image_path: Path, logo_path: Path, clear_bg: bool) -> None:
     image_path.write_bytes(out.getvalue())
 
 
+def journal_index(path: Path) -> int | None:
+    m = re.match(r"^journal-(\d+)\.jpg$", path.name, re.IGNORECASE)
+    return int(m.group(1)) if m else None
+
+
 def main() -> int:
-    if not LOGO_PATH.exists():
-        print(f"Logo not found at {LOGO_PATH.relative_to(ROOT)}", file=sys.stderr)
+    if not LOGO_DARK_PATH.exists():
+        print(f"Logo not found at {LOGO_DARK_PATH.relative_to(ROOT)}", file=sys.stderr)
         return 1
+    if not LOGO_LIGHT_PATH.exists():
+        print(
+            f"Note: logo-gold.png not found; dark-bg journal cards will fall "
+            f"back to the burgundy logo."
+        )
 
-    solid_bg_targets: list[Path] = []
-    photo_targets: list[Path] = []
+    journal_targets: list[Path] = sorted(JOURNAL_DIR.glob("journal-*.jpg")) if JOURNAL_DIR.exists() else []
+    infographic_targets: list[Path] = sorted(INFOGRAPHIC_DIR.glob("infographic-*.jpg")) if INFOGRAPHIC_DIR.exists() else []
+    photo_targets: list[Path] = sorted(IMAGES_DIR.glob("image-*.jpg")) if IMAGES_DIR.exists() else []
 
-    if JOURNAL_DIR.exists():
-        solid_bg_targets.extend(sorted(JOURNAL_DIR.glob("journal-*.jpg")))
-    if INFOGRAPHIC_DIR.exists():
-        solid_bg_targets.extend(sorted(INFOGRAPHIC_DIR.glob("infographic-*.jpg")))
-    if IMAGES_DIR.exists():
-        photo_targets.extend(sorted(IMAGES_DIR.glob("image-*.jpg")))
-
-    total = len(solid_bg_targets) + len(photo_targets)
+    total = len(journal_targets) + len(infographic_targets) + len(photo_targets)
     if total == 0:
         print("No images found to re-apply logo on")
         return 0
 
     print(
-        f"Re-applying logo: {len(solid_bg_targets)} solid-bg "
-        f"(paint+overlay), {len(photo_targets)} photos (overlay only)"
+        f"Re-applying logos: {len(journal_targets)} journal, "
+        f"{len(infographic_targets)} infographics, {len(photo_targets)} photos"
     )
 
-    for path in solid_bg_targets:
+    for path in journal_targets:
+        idx = journal_index(path)
+        logo_path = journal_logo_for(idx) if idx is not None else LOGO_DARK_PATH
         try:
-            composite_logo(path, LOGO_PATH, clear_bg=True)
-            print(f"  {path.relative_to(ROOT)} ✓")
+            composite_logo(path, logo_path, clear_bg=True)
+            print(f"  {path.relative_to(ROOT)} ({logo_path.name}) ✓")
+        except Exception as e:
+            print(f"  {path.relative_to(ROOT)} FAILED: {e}", file=sys.stderr)
+
+    for path in infographic_targets:
+        try:
+            composite_logo(path, LOGO_DARK_PATH, clear_bg=True)
+            print(f"  {path.relative_to(ROOT)} (logo.png) ✓")
         except Exception as e:
             print(f"  {path.relative_to(ROOT)} FAILED: {e}", file=sys.stderr)
 
     for path in photo_targets:
         try:
-            composite_logo(path, LOGO_PATH, clear_bg=False)
-            print(f"  {path.relative_to(ROOT)} ✓")
+            composite_logo(path, LOGO_DARK_PATH, clear_bg=False)
+            print(f"  {path.relative_to(ROOT)} (logo.png) ✓")
         except Exception as e:
             print(f"  {path.relative_to(ROOT)} FAILED: {e}", file=sys.stderr)
 
