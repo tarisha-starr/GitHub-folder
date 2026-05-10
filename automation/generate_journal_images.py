@@ -8,12 +8,12 @@ Idempotent: skips prompts whose image already exists. Set FORCE=1 in
 the env to regenerate everything.
 
 Two logo variants are supported. Place these in images/brand/:
-- logo.png         — burgundy circle, white S (used on light backgrounds:
-                     cream, gold, blush)
-- logo-gold.png    — gold circle, dark S (used on dark backgrounds:
-                     burgundy, navy)
-
-If logo-gold.png is missing, dark-background cards fall back to logo.png.
+- logo-burgundy.png — burgundy circle, white S (used on light backgrounds:
+                      cream, gold, blush). Falls back to logo.png if
+                      logo-burgundy.png is not present.
+- logo-gold.png     — gold circle, dark S (used on dark backgrounds:
+                      burgundy, navy). Falls back to the burgundy logo
+                      if logo-gold.png is not present.
 
 Required env vars:
   OPENAI_API_KEY        OpenAI API key
@@ -38,8 +38,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_PATH = ROOT / "content" / "journal_prompts.json"
 OUT_DIR = ROOT / "images" / "journal"
 DIAGNOSTIC_PATH = OUT_DIR / "_diagnostic.json"
-LOGO_DARK_PATH = ROOT / "images" / "brand" / "logo.png"        # burgundy circle, white S
-LOGO_LIGHT_PATH = ROOT / "images" / "brand" / "logo-gold.png"  # gold circle, dark S
+BRAND_DIR = ROOT / "images" / "brand"
 
 DEFAULT_MODEL = "gpt-image-1"
 DEFAULT_QUALITY = "high"
@@ -56,16 +55,42 @@ BRAND_COLORS = [
     {"name": "blush", "bg": "#E8D5CE", "text": "#6E1A2E", "accent": "#C2A46D"},
 ]
 
-# Which logo to use per bg name.
-# "dark" = burgundy logo (logo.png) — good on light backgrounds.
-# "light" = gold logo (logo-gold.png) — good on dark backgrounds.
 LOGO_FOR_BG = {
-    "cream": "dark",
-    "gold": "dark",
-    "blush": "dark",
-    "burgundy": "light",
-    "navy": "light",
+    "cream": "burgundy",
+    "gold": "burgundy",
+    "blush": "burgundy",
+    "burgundy": "gold",
+    "navy": "gold",
 }
+
+
+def burgundy_logo_path() -> Path | None:
+    """Prefer logo-burgundy.png; fall back to logo.png; None if neither."""
+    primary = BRAND_DIR / "logo-burgundy.png"
+    if primary.exists():
+        return primary
+    fallback = BRAND_DIR / "logo.png"
+    if fallback.exists():
+        return fallback
+    return None
+
+
+def gold_logo_path() -> Path | None:
+    primary = BRAND_DIR / "logo-gold.png"
+    if primary.exists():
+        return primary
+    return None
+
+
+def pick_logo_path(bg_name: str) -> Path | None:
+    """Return the logo file matching this bg colour, with sensible fallbacks."""
+    variant = LOGO_FOR_BG.get(bg_name, "burgundy")
+    if variant == "gold":
+        gold = gold_logo_path()
+        if gold:
+            return gold
+        return burgundy_logo_path()
+    return burgundy_logo_path()
 
 
 PROMPT_TEMPLATE = """\
@@ -139,15 +164,6 @@ def call_openai_image(api_key: str, model: str, quality: str, prompt: str) -> by
     return base64.b64decode(b64)
 
 
-def pick_logo_path(bg_name: str) -> Path:
-    """Return the logo file matching this bg colour. Falls back to the
-    burgundy logo if the gold variant doesn't exist yet."""
-    variant = LOGO_FOR_BG.get(bg_name, "dark")
-    if variant == "light" and LOGO_LIGHT_PATH.exists():
-        return LOGO_LIGHT_PATH
-    return LOGO_DARK_PATH
-
-
 def composite_logo(img_bytes: bytes, logo_path: Path) -> bytes:
     """Wipe top-right with sampled bg colour, then overlay the logo cleanly."""
     from PIL import Image, ImageDraw  # type: ignore
@@ -198,17 +214,14 @@ def main() -> int:
     force = os.environ.get("FORCE") == "1"
     skip_logo = os.environ.get("SKIP_LOGO") == "1"
 
-    use_logo = LOGO_DARK_PATH.exists() and not skip_logo
-    if not use_logo:
-        if skip_logo:
-            print("SKIP_LOGO=1 set; not compositing logo")
-        else:
-            print(f"Logo not found at {LOGO_DARK_PATH.relative_to(ROOT)}; skipping overlay")
-    if not LOGO_LIGHT_PATH.exists():
-        print(
-            f"Note: logo-gold.png not found at {LOGO_LIGHT_PATH.relative_to(ROOT)}; "
-            "dark-bg cards will fall back to the burgundy logo."
-        )
+    burgundy = burgundy_logo_path()
+    gold = gold_logo_path()
+    use_logo = (burgundy is not None) and not skip_logo
+
+    if not use_logo and not skip_logo:
+        print(f"No burgundy logo found in {BRAND_DIR.relative_to(ROOT)}; skipping overlay")
+    if gold is None:
+        print("Note: logo-gold.png not found; dark-bg cards will use the burgundy logo.")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     prompts = load_prompts()
@@ -248,10 +261,11 @@ def main() -> int:
 
         if use_logo:
             logo_path = pick_logo_path(color["name"])
-            try:
-                img_bytes = composite_logo(img_bytes, logo_path)
-            except Exception as e:
-                print(f"Logo overlay failed for journal-{idx}: {e}", file=sys.stderr)
+            if logo_path:
+                try:
+                    img_bytes = composite_logo(img_bytes, logo_path)
+                except Exception as e:
+                    print(f"Logo overlay failed for journal-{idx}: {e}", file=sys.stderr)
 
         dest.write_bytes(img_bytes)
         built.append(idx)
@@ -261,8 +275,8 @@ def main() -> int:
             "model": model,
             "quality": quality,
             "size": SIZE,
-            "logo_applied": use_logo,
-            "logo_gold_present": LOGO_LIGHT_PATH.exists(),
+            "burgundy_logo": str(burgundy.name) if burgundy else None,
+            "gold_logo": str(gold.name) if gold else None,
             "built": built,
             "skipped": skipped,
             "failed": failed,
