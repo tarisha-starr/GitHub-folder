@@ -103,3 +103,20 @@ Rules:
 One clear hero object, black background, high contrast, thumbnail style, easy to understand in one second, no clutter, no tiny icons.
 
 Pick the strongest concept and write the full image prompt.
+
+---
+
+## 8. Repurpose prompt
+
+Paste this after the post is done:
+
+Turn this post into 6 formats:
+
+1. Facebook text post
+2. Carousel outline
+3. Reel script
+4. Tweet thread
+5. LinkedIn post
+6. Story sequence
+
+Keep the same idea but change the format for each platform.
