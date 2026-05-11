@@ -1,15 +1,17 @@
 """Re-apply the right brand logo to existing images.
 
-For solid-bg cards (journal, infographics): clears the top-right with
-sampled bg colour, then overlays the appropriate logo variant.
+Scope: ONLY the cards we generate ourselves and need to logo on the
+fly — journal cards and infographic cards. Both are solid-bg, so we
+clear the top-right with sampled bg colour and overlay the right logo.
+
 - Journal cards rotate through 5 brand colours (cream, burgundy, gold,
   navy, blush). Burgundy and navy backgrounds get the gold-circle logo
   (logo-gold.png). The other three get the burgundy logo
   (logo-burgundy.png, falling back to logo.png).
 - Infographic cards have a single blush bg, always burgundy logo.
 
-For photo posts (images/image-*.jpg), only the burgundy logo is
-overlaid — no bg paint, since photo backgrounds vary.
+Daily photo posts (images/image-*.jpg) are NOT touched: those are
+finished designs synced from Dropbox with the logo already baked in.
 """
 
 from __future__ import annotations
@@ -23,7 +25,6 @@ ROOT = Path(__file__).resolve().parent.parent
 BRAND_DIR = ROOT / "images" / "brand"
 JOURNAL_DIR = ROOT / "images" / "journal"
 INFOGRAPHIC_DIR = ROOT / "images" / "infographics"
-IMAGES_DIR = ROOT / "images"
 
 LOGO_WIDTH_FRACTION = 0.10
 LOGO_MARGIN_FRACTION = 0.025
@@ -121,16 +122,15 @@ def main() -> int:
 
     journal_targets = sorted(JOURNAL_DIR.glob("journal-*.jpg")) if JOURNAL_DIR.exists() else []
     infographic_targets = sorted(INFOGRAPHIC_DIR.glob("infographic-*.jpg")) if INFOGRAPHIC_DIR.exists() else []
-    photo_targets = sorted(IMAGES_DIR.glob("image-*.jpg")) if IMAGES_DIR.exists() else []
 
-    total = len(journal_targets) + len(infographic_targets) + len(photo_targets)
+    total = len(journal_targets) + len(infographic_targets)
     if total == 0:
         print("No images found to re-apply logo on")
         return 0
 
     print(
         f"Re-applying logos: {len(journal_targets)} journal, "
-        f"{len(infographic_targets)} infographics, {len(photo_targets)} photos"
+        f"{len(infographic_targets)} infographics"
     )
     print(f"  burgundy: {burgundy.name}, gold: {gold.name if gold else '(missing)'}")
 
@@ -149,13 +149,6 @@ def main() -> int:
     for path in infographic_targets:
         try:
             composite_logo(path, burgundy, clear_bg=True)
-            print(f"  {path.relative_to(ROOT)} ({burgundy.name}) ✓")
-        except Exception as e:
-            print(f"  {path.relative_to(ROOT)} FAILED: {e}", file=sys.stderr)
-
-    for path in photo_targets:
-        try:
-            composite_logo(path, burgundy, clear_bg=False)
             print(f"  {path.relative_to(ROOT)} ({burgundy.name}) ✓")
         except Exception as e:
             print(f"  {path.relative_to(ROOT)} FAILED: {e}", file=sys.stderr)
