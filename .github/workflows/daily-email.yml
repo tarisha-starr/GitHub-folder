@@ -1,4 +1,4 @@
-name: Daily image-post email + Zapier
+name: Daily 1pm post (testimonial / image) — email + Zapier
 
 on:
   schedule:
@@ -36,6 +36,7 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          REPURPOSE_LAUNCH_DATE: ${{ vars.REPURPOSE_LAUNCH_DATE }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
         run: python daily_email.py
 
@@ -55,10 +56,19 @@ jobs:
         working-directory: automation
         run: pip install -r requirements.txt
 
-      - name: Send today's post to Zapier webhook
+      - name: Send today's image post to Zapier (odd days)
         working-directory: automation
         env:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          REPURPOSE_LAUNCH_DATE: ${{ vars.REPURPOSE_LAUNCH_DATE }}
         run: python zapier_push.py
+
+      - name: Send today's testimonial to Zapier (even days)
+        working-directory: automation
+        env:
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+          REPURPOSE_LAUNCH_DATE: ${{ vars.REPURPOSE_LAUNCH_DATE }}
+        run: python zapier_push_testimonial.py
