@@ -120,3 +120,19 @@ Turn this post into 6 formats:
 6. Story sequence
 
 Keep the same idea but change the format for each platform.
+
+---
+
+## 9. Brutal editor prompt
+
+Paste this before posting:
+
+Act like a brutal content editor.
+
+Review this post:
+
+[paste post]
+
+Tell me what is boring, what is confusing, what should be cut, and what would make it more shareable.
+
+Then rewrite it better.
