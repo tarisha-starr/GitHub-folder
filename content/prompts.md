@@ -136,3 +136,13 @@ Review this post:
 Tell me what is boring, what is confusing, what should be cut, and what would make it more shareable.
 
 Then rewrite it better.
+
+---
+
+## 10. The full system
+
+Use Claude in this order:
+
+Strategy → angles → hooks → captions → comments → visuals → repurpose → edit.
+
+That is how one idea becomes a full content system instead of one random post.
