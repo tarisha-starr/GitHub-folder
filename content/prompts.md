@@ -88,3 +88,18 @@ Each comment should teach one practical idea.
 Make it simple, useful, and ready to paste.
 
 Include prompts, steps, or examples only when needed.
+
+---
+
+## 7. Visual prompt
+
+Paste this:
+
+Give me 3 visual concepts for this post:
+
+[insert caption]
+
+Rules:
+One clear hero object, black background, high contrast, thumbnail style, easy to understand in one second, no clutter, no tiny icons.
+
+Pick the strongest concept and write the full image prompt.
