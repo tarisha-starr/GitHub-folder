@@ -1,8 +1,8 @@
-# Script 01 — Loved But Not Met
+# Script 01 — Married But Lonely
 
 **Title:** We Don't Fight... So Why Am I So Lonely?
 **Length:** 8 minutes
-**Channel:** Loved But Not Met
+**Channel:** Married But Lonely
 **Audience:** Women 40 to 60, long marriages, "we don't fight but I'm lonely" pain point
 
 ---
@@ -204,7 +204,7 @@
 
 ## 5. Thumbnail brief
 
-> YouTube thumbnail, 1280x720, painterly watercolour. Sarah in soft focus on the left, sitting on the edge of a bed in the moonlight, her hand hovering above her sleeping husband's back. Bold hand-lettered serif text: "MARRIED. AND LONELY." Small subtext: "Loved But Not Met." Warm muted palette. Emotional, sophisticated.
+> YouTube thumbnail, 1280x720, painterly watercolour. Sarah in soft focus on the left, sitting on the edge of a bed in the moonlight, her hand hovering above her sleeping husband's back. Bold hand-lettered serif text: "MARRIED. AND LONELY." Small subtext: "Married But Lonely." Warm muted palette. Emotional, sophisticated.
 
 ---
 
@@ -219,7 +219,7 @@
 7. Why Lonely Wives Stay in Marriages That Look Fine
 8. The Conversation 11 Years of Silence Was Hiding
 9. She Hadn't Been Touched in 4 Years. Married the Whole Time.
-10. Loved... But Not Met. The Truth About Long Marriages.
+10. Married But Lonely. The Truth About Long Marriages Nobody's Saying.
 
 ---
 
@@ -229,7 +229,7 @@
 ```
 Sarah has been married to David for 27 years. They don't fight. They never fight. And every morning, she sits across from a man she used to know, and she feels like she's disappearing.
 
-This is what it means to be loved but not met. The marriage that looks fine from the outside while one of you is slowly going invisible.
+This is what it means to be married and lonely. The marriage that looks fine from the outside while one of you is slowly going invisible.
 
 In this animated story, Sarah finds her way out of 11 years of silence with one conversation, one truth, and one reach across the sofa.
 
@@ -237,12 +237,12 @@ Comment "lonely" if this is you. I'll send you the next part of the love adventu
 
 The Love Adventure with Tarisha Starr supports women 40+ to come home to their bodies, reclaim eros, and build the marriages they actually want.
 
-#lovedbutnotmet #marriedbutlonely #marriageadvice #midlifemarriage #thelovedventure
+#marriedbutlonely #marriageadvice #midlifemarriage #thelovedventure #lonelyinmarriage
 ```
 
 ### 20 Tags
 ```
-married but lonely, lonely in marriage, midlife marriage, marriage advice for women, animated love story, animated relationship, loved but not met, married women over 40, lonely wife, why am i lonely in my marriage, marriage problems, dead marriage, emotional disconnection, midlife awakening, the love adventure, tarisha starr, animated story for women, marriage truth, long marriage struggles, modern marriage
+married but lonely, lonely in marriage, midlife marriage, marriage advice for women, animated love story, animated relationship, married and disconnected, married women over 40, lonely wife, why am i lonely in my marriage, marriage problems, dead marriage, emotional disconnection, midlife awakening, the love adventure, tarisha starr, animated story for women, marriage truth, long marriage struggles, modern marriage
 ```
 
 ---

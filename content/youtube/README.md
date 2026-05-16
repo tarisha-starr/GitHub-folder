@@ -13,7 +13,7 @@ Audience: women 40+ in long-term partnerships and marriages. Couples-only.
 
 1. **The Love Adventure** — Midlife desire reclamation. Flagship.
 2. **The Polarity Adventure** — Armstrong + Deida frameworks on male/female differences.
-3. **Loved But Not Met** — Married but lonely.
+3. **Married But Lonely** — Married but lonely.
 4. **Ask Her How She's Doing** — Body wisdom stories.
 5. **Things She's Never Said Out Loud** — Coaching room confessions.
 
@@ -22,7 +22,7 @@ Audience: women 40+ in long-term partnerships and marriages. Couples-only.
 ```
 The Polarity Adventure  ->  she understands HIM
         v
-Loved But Not Met       ->  she understands the MARRIAGE
+Married But Lonely      ->  she understands the MARRIAGE
         v
 Ask Her How She's Doing ->  she understands her BODY
         v

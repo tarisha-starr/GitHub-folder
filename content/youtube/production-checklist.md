@@ -39,7 +39,7 @@ For each character in the video, generate a 4-pose reference sheet in Nano Banan
 - [ ] Lisa reference sheet saved as `refs/lisa-ref.jpg`
 - [ ] Tom reference sheet saved as `refs/tom-ref.jpg`
 
-### Loved But Not Met cast
+### Married But Lonely cast
 - [ ] Sarah reference sheet saved as `refs/sarah-ref.jpg`
 - [ ] David reference sheet saved as `refs/david-ref.jpg`
 - [ ] Maggie reference sheet saved as `refs/maggie-ref.jpg`
