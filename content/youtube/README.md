@@ -13,7 +13,7 @@ Audience: women 40+ in long-term partnerships and marriages. Couples-only.
 
 1. **The Love Adventure** — Midlife desire reclamation. Flagship.
 2. **The Polarity Adventure** — Armstrong + Deida frameworks on male/female differences.
-3. **The Quiet Lonely** — Married but lonely.
+3. **Loved But Not Met** — Married but lonely.
 4. **Ask Her How She's Doing** — Body wisdom stories.
 5. **Things She's Never Said Out Loud** — Coaching room confessions.
 
@@ -22,7 +22,7 @@ Audience: women 40+ in long-term partnerships and marriages. Couples-only.
 ```
 The Polarity Adventure  ->  she understands HIM
         v
-The Quiet Lonely        ->  she understands the MARRIAGE
+Loved But Not Met       ->  she understands the MARRIAGE
         v
 Ask Her How She's Doing ->  she understands her BODY
         v
@@ -60,7 +60,7 @@ For each of the 20 scenes:
 
 ### Step 6. Voiceover, music, edit
 - **ElevenLabs** for VO. Warm mid-50s female voice. Use the `[pause]` `[slower]` `[whisper]` markers from the script.
-- **CapCut** (free) for editing. Drop clips in storyboard order, layer VO on top, add music bed (Epidemic Sound "Tender Hours" or "Quiet Comfort"), always-on subtitles.
+- **CapCut** (free) for editing. Drop clips in storyboard order, layer VO on top, add music bed (Epidemic Sound "Tender Hours" or "Late Night Cello"), always-on subtitles.
 - Always end with a teaser for the next episode (end-card thumbnails).
 
 ### Step 7. Upload and optimise

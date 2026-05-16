@@ -51,8 +51,8 @@ Ranked by income potential (RPM x view volume x funnel value to Tarisha's coachi
 
 ---
 
-## #3. The Quiet Lonely
-**Concept:** Married but lonely. Animated relationship truths for the "we don't fight but I'm lonely" audience.
+## #3. Loved But Not Met
+**Concept:** Married but lonely. Animated relationship truths for the "we don't fight but I'm lonely" audience. Name pulls directly from Tarisha's coaching language: "Loving someone is NOT the same as being met by them."
 **Target audience:** Women 40 to 60 in long marriages.
 **Estimated RPM:** $14 to $26.
 **Why it gets watch time:** Strongest DM-to-client conversion. Pain point recognition is instant. Comment-driven CTAs ("comment 'lonely'") convert heavily.
@@ -117,6 +117,6 @@ Ranked by income potential (RPM x view volume x funnel value to Tarisha's coachi
 |------|---------|-----|
 | 1 | The Love Adventure | Highest RPM demo, flagship brand, direct funnel feeder |
 | 2 | The Polarity Adventure | Premium RPM, viral share-ability, evergreen Deida/Armstrong SEO, couples-watching |
-| 3 | The Quiet Lonely | Strongest DM-to-client conversion, deepest pain point |
+| 3 | Loved But Not Met | Strongest DM-to-client conversion, deepest pain point |
 | 4 | Ask Her How She's Doing | Unique angle, evergreen SEO, premium wellness ads |
 | 5 | Things She's Never Said Out Loud | Authority builder, highest per-view funnel value |

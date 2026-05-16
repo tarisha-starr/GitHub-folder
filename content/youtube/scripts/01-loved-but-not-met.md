@@ -1,8 +1,8 @@
-# Script 01 — The Quiet Lonely
+# Script 01 — Loved But Not Met
 
 **Title:** We Don't Fight... So Why Am I So Lonely?
 **Length:** 8 minutes
-**Channel:** The Quiet Lonely
+**Channel:** Loved But Not Met
 **Audience:** Women 40 to 60, long marriages, "we don't fight but I'm lonely" pain point
 
 ---
@@ -10,10 +10,10 @@
 ## 1. Art style + consistency boilerplate
 
 **Locked art style:**
-> Soft painterly watercolour animation in the style of Studio Ghibli meets storybook illustration. Warm muted palette: cream, dusty rose, sage, amber. Gentle film grain. Cinematic 16:9.
+> Soft painterly watercolour animation in the style of Studio Ghibli meets storybook illustration. Warm muted palette: cream, dusty rose, sage, amber. Fine film grain. Cinematic 16:9.
 
 **Append to EVERY scene image prompt:**
-> Maintain exact character consistency with the reference sheet. Same face shape, same eye colour, same hair, same body proportions. Soft painterly watercolour animation in the style of Studio Ghibli meets storybook illustration. Warm muted palette of cream, dusty rose, sage and amber. Gentle film grain. Cinematic 16:9. High quality, painterly lines, emotional intimacy. No text in image unless specified.
+> Maintain exact character consistency with the reference sheet. Same face shape, same eye colour, same hair, same body proportions. Soft painterly watercolour animation in the style of Studio Ghibli meets storybook illustration. Warm muted palette of cream, dusty rose, sage and amber. Fine film grain. Cinematic 16:9. High quality, painterly lines, emotional intimacy. No text in image unless specified.
 
 ---
 
@@ -23,7 +23,7 @@
 > Character reference sheet, 16:9, four poses. A 54-year-old woman: shoulder-length chestnut hair greying at the temples, hazel eyes, soft warm features, faint smile lines, dressed in earthy linens and creams. Four angles: front, three-quarter, profile, three-quarter back. Soft painterly watercolour animation, Studio Ghibli meets storybook illustration.
 
 ### David (husband)
-> Character reference sheet, 16:9, four poses. A 56-year-old man: salt-and-pepper hair, kind tired eyes, slightly weathered, dressed in soft greys and navy. Four angles: front, three-quarter, profile, three-quarter back.
+> Character reference sheet, 16:9, four poses. A 56-year-old man: salt-and-pepper hair, kind tired eyes, slightly weathered, dressed in soft greys and navy. Four angles.
 
 ### Maggie (best friend)
 > Character reference sheet, 16:9, four poses. A 55-year-old woman with silver bob, warm brown skin, gold earrings, expressive dark eyes, wearing soft sage and amber tones. Four angles.
@@ -46,18 +46,18 @@
 
 ### ACT 1 — The Marriage That Looks Fine (0:30 to 2:00)
 **VO:**
-> From the outside? Beautiful. Three grown kids. A paid-off house. Anniversary photos every September. The kind of marriage friends call "goals."
+> From the outside? Picture-perfect. Three grown kids. A paid-off house. Anniversary photos every September. The kind of marriage friends call "goals."
 >
 > [slower] Solid. That was the word everyone used. Solid like a wall. Solid like a stone. Solid like something you can't get through.
 >
-> She used to talk to him about everything. Now she has full conversations in her head and never says any of it out loud. [softer] She didn't decide to stop. It just... happened. Slowly. Like a tap that drips so quietly you stop hearing it.
+> She used to talk to him about everything. Now she has full conversations in her head and never says any of it out loud. [softer] She didn't decide to stop. It just... happened. Slowly. Like a tap that drips so softly you stop hearing it.
 >
 > She started crying in the supermarket last Tuesday. She didn't know why. [pause] She did know why. She just couldn't say it.
 
 ### ACT 2 — The Slow Realisation (2:00 to 4:00)
 **Maggie:** How's David?
 **Sarah:** He's fine. We're fine. Everything's fine.
-**Maggie [pause, really looking]:** Sarah. How are *you*?
+**Maggie [really looking]:** Sarah. How are *you*?
 
 **VO:**
 > Three words. "How are you." [pause] And the floodgate she'd been holding for 11 years cracked right there in a cafe over a flat white.
@@ -82,7 +82,7 @@
 **VO:**
 > She didn't leave him. That's not what this story is. She came home. To her body. To her desire. To the woman who'd been waiting underneath the wife and the mother and the manager of everyone else's feelings.
 >
-> And David? David showed up too. Not perfectly. Not all at once. But he started asking different questions. Not "how was your day" but "how are you, really." [slower] That's a love adventure most couples never take.
+> David showed up too. Not perfectly. Not all at once. But he started asking different questions. Not "how was your day" but "how are you, really." [slower] That's a love adventure most couples never take.
 >
 > [softer] She touched him. She hadn't done that in 4 years.
 
@@ -90,11 +90,11 @@
 **Visual:** Sarah at her mirror, brushing her hair. Smiling at herself. Just for her.
 
 **VO [direct, warm]:**
-> If you're watching this and something in your chest just went tight... [pause] that's her, darling. Your body. She's been calling you home. The absence of conflict isn't presence. The quiet in your marriage isn't peace. It's a question waiting to be asked.
+> If you're watching this and something in your chest just went tight... [pause] that's her, darling. Your body. She's been calling you home. The absence of conflict isn't presence. The silence in your marriage isn't peace. It's a question waiting to be asked.
 >
 > Comment "lonely" if this is you. I'll send you the next part of the love adventure. Because Sarah's story... isn't where it ends. It's where it begins.
 
-**End card teaser:** "The Conversation Every Wife Over 45 Needs to Have" and "Why Your Body Goes Quiet (And How She Comes Back)."
+**End card teaser:** "The Conversation Every Wife Over 45 Needs to Have" and "Why Your Body Stops Speaking (And How She Comes Back)."
 
 ---
 
@@ -106,9 +106,9 @@
 - **Motion prompt:** Sarah's hand hovers, trembles, slowly pulls back and disappears off frame. 4 seconds. Camera locked.
 
 ### Scene 2 — Title Card
-- **Image prompt:** Hand-lettered serif title centred: "We Don't Fight... So Why Am I So Lonely?" Background dusty rose bleeding into warm cream, gentle watercolour blooms, faint paper texture, subtle gold leaf accent under the title.
+- **Image prompt:** Hand-lettered serif title centred: "We Don't Fight... So Why Am I So Lonely?" Background dusty rose bleeding into warm cream, soft watercolour blooms, faint paper texture, subtle gold leaf accent under the title.
 - **Animator:** Seedance 2.0
-- **Motion prompt:** Title fades in, watercolour bleeds outward gently. Hold 2 seconds. 4 seconds total.
+- **Motion prompt:** Title fades in, watercolour bleeds outward softly. Hold 2 seconds. 4 seconds total.
 
 ### Scene 3 — Breakfast Table Silence
 - **Image prompt:** Wide shot of a 54-year-old woman with chestnut hair greying at temples sitting across an oak breakfast table from her 56-year-old husband with salt-and-pepper hair. He scrolls a phone, expression neutral. She watches him over her ceramic mug. A vase of slightly wilted tulips between them. Golden morning light from a window on the left. [+ consistency boilerplate]
@@ -153,7 +153,7 @@
 ### Scene 11 — Her Body Beside Her
 - **Image prompt:** Sarah sits on the edge of a linen-sheeted bed in dusk light. Beside her sits a soft glowing translucent feminine figure made of warm amber light, the visual personification of her body. Both turned slightly toward each other. The body looks tired but alive. Sarah looks at her with wonder. [+ consistency boilerplate]
 - **Animator:** Seedance 2.0
-- **Motion prompt:** The glowing figure breathes softly, the glow pulses gently, Sarah turns her head to see her, the moment of recognition. 5 seconds.
+- **Motion prompt:** The glowing figure breathes softly, the glow pulses, Sarah turns her head to see her, the moment of recognition. 5 seconds.
 
 ### Scene 12 — The Mute Button
 - **Image prompt:** Sarah on a linen sofa next to David, throw blanket over their laps. She has just lifted the TV remote and pressed mute, her expression resolute and vulnerable. He turns to her with mild confusion, phone still in hand. The TV's cool blue glow on their faces, a single warm amber lamp on the side table. [+ consistency boilerplate]
@@ -198,13 +198,13 @@
 ### Scene 20 — End Card
 - **Image prompt:** Warm dusty rose bleeding into cream watercolour background. Top text in elegant hand-lettered serif: "Comment 'lonely' if this is you." Two square video thumbnails side by side. Subscribe icon bottom right.
 - **Animator:** Seedance 2.0
-- **Motion prompt:** Thumbnails gently breathe (subtle scale 99% to 100%), text fades in. 5 seconds.
+- **Motion prompt:** Thumbnails breathe softly (subtle scale 99% to 100%), text fades in. 5 seconds.
 
 ---
 
 ## 5. Thumbnail brief
 
-> YouTube thumbnail, 1280x720, painterly watercolour. Sarah in soft focus on the left, sitting on the edge of a bed in the moonlight, her hand hovering above her sleeping husband's back. Bold hand-lettered serif text: "MARRIED. AND LONELY." Small subtext: "The Quiet Lonely." Warm muted palette. Emotional, sophisticated.
+> YouTube thumbnail, 1280x720, painterly watercolour. Sarah in soft focus on the left, sitting on the edge of a bed in the moonlight, her hand hovering above her sleeping husband's back. Bold hand-lettered serif text: "MARRIED. AND LONELY." Small subtext: "Loved But Not Met." Warm muted palette. Emotional, sophisticated.
 
 ---
 
@@ -214,12 +214,12 @@
 2. The Marriage That Looked Perfect on Instagram
 3. She Slept Next to Him Every Night and Felt More Alone Than Ever
 4. Roommates With Rings... When Did We Become This?
-5. The Quiet Loneliness of a "Good Marriage"
+5. The Silent Loneliness of a "Good Marriage"
 6. He's a Good Man. That's Not the Same as Being Met.
 7. Why Lonely Wives Stay in Marriages That Look Fine
 8. The Conversation 11 Years of Silence Was Hiding
 9. She Hadn't Been Touched in 4 Years. Married the Whole Time.
-10. Why "We Don't Fight" Isn't a Good Thing
+10. Loved... But Not Met. The Truth About Long Marriages.
 
 ---
 
@@ -229,20 +229,20 @@
 ```
 Sarah has been married to David for 27 years. They don't fight. They never fight. And every morning, she sits across from a man she used to know, and she feels like she's disappearing.
 
-This is the quiet lonely. The kind nobody talks about. The marriage that looks fine from the outside while one of you is slowly going invisible.
+This is what it means to be loved but not met. The marriage that looks fine from the outside while one of you is slowly going invisible.
 
 In this animated story, Sarah finds her way out of 11 years of silence with one conversation, one truth, and one reach across the sofa.
 
 Comment "lonely" if this is you. I'll send you the next part of the love adventure.
 
-The Love Adventure with Tarisha Starr supports women 40+ to come home to their bodies, their desire, and the marriages they actually want.
+The Love Adventure with Tarisha Starr supports women 40+ to come home to their bodies, reclaim eros, and build the marriages they actually want.
 
-#thequietlonely #marriedbutlonely #marriageadvice #midlifemarriage #thelovedventure
+#lovedbutnotmet #marriedbutlonely #marriageadvice #midlifemarriage #thelovedventure
 ```
 
 ### 20 Tags
 ```
-married but lonely, lonely in marriage, midlife marriage, marriage advice for women, animated love story, animated relationship, the quiet lonely, married women over 40, lonely wife, why am i lonely in my marriage, marriage problems, dead marriage, emotional disconnection, midlife awakening, the love adventure, tarisha starr, animated story for women, marriage truth, long marriage struggles, modern marriage
+married but lonely, lonely in marriage, midlife marriage, marriage advice for women, animated love story, animated relationship, loved but not met, married women over 40, lonely wife, why am i lonely in my marriage, marriage problems, dead marriage, emotional disconnection, midlife awakening, the love adventure, tarisha starr, animated story for women, marriage truth, long marriage struggles, modern marriage
 ```
 
 ---
@@ -250,8 +250,8 @@ married but lonely, lonely in marriage, midlife marriage, marriage advice for wo
 ## 8. CapCut edit notes
 
 - **Pacing:** 3 to 5 seconds per scene. Hold emotional beats.
-- **Transitions:** Soft cross-dissolves throughout. Hard cut on the mute button (scene 12) and the hand reaching across (scene 14).
-- **Music bed:** Epidemic Sound "Quiet Comfort" or "Tender Hours." Piano + cello. Drop music entirely during Maggie's "how are *you*" (scene 8) for impact.
-- **Sound design:** Mug clink on table (scene 3), single page turn for the journal (scene 10), TV mute click (scene 12), water lapping (bath if added), morning birds (scene 19).
+- **Transitions:** Soft cross-dissolves throughout. Hard cuts on the mute button (scene 12) and the hand reaching across (scene 14).
+- **Music bed:** Epidemic Sound "Late Night Cello" or "Tender Hours." Piano + cello. Drop music entirely during Maggie's "how are *you*" (scene 8) for impact.
+- **Sound design:** Mug clink on table (scene 3), single page turn for the journal (scene 10), TV mute click (scene 12), morning birds (scene 19).
 - **Subtitles:** Always on, warm cream serif, dusty rose highlight on LONELY, DISAPPEARED, MET, DARLING.
 - **Total runtime target:** 8:00 +/- 10 seconds.
