@@ -1,0 +1,34 @@
+name: Daily book + practice post (Zapier)
+
+on:
+  schedule:
+    # 19:30 UTC = 7:30am NZST (winter UTC+12) / 8:30am NZDT (summer UTC+13)
+    # The Python scheduler matches today's date against book-posts.json /
+    # practices.json — so the workflow runs every day but only fires when
+    # there's a scheduled post for today (Mon/Wed/Fri themed, Sat practice).
+    - cron: "30 19 * * *"
+  workflow_dispatch:
+
+jobs:
+  push-book-to-zapier:
+    runs-on: ubuntu-latest
+    if: ${{ vars.BOOK_ZAPIER_ENABLED == 'true' }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        working-directory: automation
+        run: pip install -r requirements.txt
+
+      - name: Send today's book/practice post to Zapier
+        working-directory: automation
+        env:
+          ZAPIER_BOOK_WEBHOOK_URL: ${{ secrets.ZAPIER_BOOK_WEBHOOK_URL }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+        run: python zapier_push_book.py
