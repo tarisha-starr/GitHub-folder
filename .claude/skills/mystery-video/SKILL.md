@@ -94,7 +94,14 @@ Run this prompt with the case from STEP 2 pasted in:
 
 ---
 
-## STEP 4 — Turn the script into scenes
+## STEP 4 — (placeholder)
+
+(Prompt template not yet provided by the user. Sits between the script and the scene
+breakdown. Skip cleanly to STEP 5 until the user supplies this step.)
+
+---
+
+## STEP 5 — Turn the script into scenes
 
 Every scene does one job: reveal a clue, create tension, show danger, or move the viewer closer to the answer.
 
@@ -120,13 +127,6 @@ Run this prompt with the approved script:
 > Use the same main character and same visual world across the full video.
 
 **Output:** a scene-by-scene storyboard the user can paste straight into an AI video tool.
-
----
-
-## STEP 5 — (placeholder)
-
-(Prompt template not yet provided by the user. Likely covers voiceover / image / video
-generation. Skip cleanly to STEP 6 until the user supplies this step.)
 
 ---
 
