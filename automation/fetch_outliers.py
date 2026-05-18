@@ -65,12 +65,33 @@ CSV_COLUMNS = [
 ISO8601_DURATION = re.compile(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?")
 
 
+class YouTubeAPIError(Exception):
+    def __init__(self, status: int, reason: str, message: str):
+        self.status = status
+        self.reason = reason
+        self.message = message
+        super().__init__(f"HTTP {status} {reason}: {message}")
+
+
 def api_get(path: str, params: dict, api_key: str) -> dict:
     params = {**params, "key": api_key}
     qs = urllib.parse.urlencode(params)
     url = f"{API_BASE}/{path}?{qs}"
-    with urllib.request.urlopen(url) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(url) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        reason = "unknown"
+        message = body[:200]
+        try:
+            err = json.loads(body).get("error", {})
+            errors = err.get("errors") or [{}]
+            reason = errors[0].get("reason", reason)
+            message = err.get("message", message)
+        except (ValueError, KeyError, IndexError, AttributeError):
+            pass
+        raise YouTubeAPIError(e.code, reason, message) from None
 
 
 def search_videos(query: str, max_results: int, api_key: str) -> list[str]:
@@ -113,7 +134,7 @@ def videos_details(video_ids: list[str], api_key: str) -> list[dict]:
                 },
                 api_key,
             )
-        except urllib.error.HTTPError as e:
+        except (urllib.error.HTTPError, YouTubeAPIError) as e:
             print(f"videos.list failed for {len(chunk)} ids: {e}", file=sys.stderr)
             continue
         out.extend(data.get("items", []))
@@ -143,7 +164,7 @@ def channel_baselines(channel_ids: list[str], api_key: str) -> dict[str, int]:
                 {"part": "contentDetails", "id": ",".join(chunk)},
                 api_key,
             )
-        except urllib.error.HTTPError as e:
+        except (urllib.error.HTTPError, YouTubeAPIError) as e:
             print(f"channels.list failed for {len(chunk)} ids: {e}", file=sys.stderr)
             continue
         for item in data.get("items", []):
@@ -163,7 +184,7 @@ def channel_baselines(channel_ids: list[str], api_key: str) -> dict[str, int]:
                 },
                 api_key,
             )
-        except urllib.error.HTTPError as e:
+        except (urllib.error.HTTPError, YouTubeAPIError) as e:
             print(f"playlistItems.list failed for {channel_id}: {e}", file=sys.stderr)
             continue
         recent_video_ids = [
@@ -279,7 +300,7 @@ def main(argv: list[str] | None = None) -> int:
     for q in queries:
         try:
             video_ids = search_videos(q, args.per_query, api_key)
-        except urllib.error.HTTPError as e:
+        except (urllib.error.HTTPError, YouTubeAPIError) as e:
             print(f"search failed for {q!r}: {e}", file=sys.stderr)
             continue
         new_ids = [vid for vid in video_ids if vid not in seen_video_ids]

@@ -51,7 +51,7 @@ jobs:
           if [ "${{ inputs.mode }}" = "shorts" ]; then
             ARGS="$ARGS --shorts"
           fi
-          python fetch_outliers.py $ARGS
+          python fetch_outliers.py $ARGS 2>&1 | tee /tmp/outliers.log
 
       - name: Check if CSV changed
         id: diff
@@ -82,9 +82,22 @@ jobs:
             --head "$BRANCH"
 
       - name: Summary
+        if: always()
         run: |
-          if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
-            echo "Added ${{ steps.diff.outputs.added }} new rows to content/outliers.csv (PR opened)" >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "No new outliers met the threshold." >> "$GITHUB_STEP_SUMMARY"
-          fi
+          {
+            echo "## Fetch outliers run"
+            echo ""
+            echo "**Inputs:** mode=\`${{ inputs.mode }}\`, per_query=\`${{ inputs.per_query }}\`, multiplier=\`${{ inputs.multiplier }}\`"
+            echo ""
+            if [ "${{ steps.diff.outputs.changed }}" = "true" ]; then
+              echo "Added **${{ steps.diff.outputs.added }}** new rows to \`content/outliers.csv\` (PR opened)."
+            else
+              echo "No new outliers met the threshold."
+            fi
+            echo ""
+            echo "### Script output"
+            echo ""
+            echo '```'
+            cat /tmp/outliers.log 2>/dev/null || echo "(no output captured)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
