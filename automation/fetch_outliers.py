@@ -1,9 +1,9 @@
 """Fetch YouTube outliers in the niche and append them to content/outliers.csv.
 
-An "outlier" is a video where view count is at least N x the channel's all-time
-average views per video (default N = 10, set by --multiplier). The channel
-average is `totalViews / videoCount` from channels.list — cheap on quota and a
-reasonable baseline for spotting 10x outperformers.
+An "outlier" is a video where view count is at least N x the median view
+count of its channel's most recent ~50 uploads (default N = 10, set by
+--multiplier). Recent-uploads median is sharper than the channel's all-time
+mean for spotting videos that punched above their channel's normal traction.
 
 Requires:
   YOUTUBE_API_KEY  - YouTube Data API v3 key
@@ -15,11 +15,15 @@ Usage:
   YOUTUBE_API_KEY=... python fetch_outliers.py --shorts
   YOUTUBE_API_KEY=... python fetch_outliers.py --queries my_queries.json --per-query 50
 
-The script is idempotent: rows whose URL already exists in the CSV are skipped.
+The script is idempotent: rows whose URL already exists in the CSV are
+skipped. When no candidate crosses the threshold, the top 10 candidates
+are printed with their actual multipliers so you can re-run with a
+calibrated --multiplier.
 
-Quota cost (default config): ~20 queries x 100 (search.list) + 10 batched
-videos.list calls (1 unit each) + 3 batched channels.list calls (1 unit each)
-= roughly 2,015 units, well inside the 10,000/day free quota.
+Quota cost (default config): ~20 queries x 100 units (search.list) + a
+few batched channels.list / videos.list / playlistItems.list calls at 1
+unit each. A typical run is ~2,200 units, well inside the 10,000/day
+free quota.
 """
 
 from __future__ import annotations
@@ -116,32 +120,64 @@ def videos_details(video_ids: list[str], api_key: str) -> list[dict]:
     return out
 
 
-def channel_averages(channel_ids: list[str], api_key: str) -> dict[str, int]:
-    """Return {channel_id: avg_views_per_video} for up to 50 IDs per call.
+def channel_baselines(channel_ids: list[str], api_key: str) -> dict[str, int]:
+    """Return {channel_id: median_recent_views} for up to 50 IDs per call.
 
-    Uses channels.list (1 unit per call, batched 50 IDs at a time) instead of
-    search.list (100 units per channel), so this stays inside the daily quota.
-    Returns the all-time average (totalViews / videoCount), not the recent
-    median — a good-enough baseline for spotting 10x outliers.
+    Uses channels.list to get each channel's uploads playlist ID
+    (1 unit per batched call), then playlistItems.list to pull the most
+    recent ~50 uploads (1 unit per channel), then videos.list to get
+    those videos' view counts (1 unit per 50). Median of those is the
+    baseline — much sharper than the channel's all-time mean for spotting
+    outliers, and still cheap on quota (~1 unit per channel vs ~100 for
+    a per-channel search.list).
     """
     out: dict[str, int] = {}
     unique = list(dict.fromkeys(channel_ids))
+    uploads_playlists: dict[str, str] = {}
+
     for i in range(0, len(unique), 50):
         chunk = unique[i : i + 50]
         try:
             data = api_get(
                 "channels",
-                {"part": "statistics", "id": ",".join(chunk)},
+                {"part": "contentDetails", "id": ",".join(chunk)},
                 api_key,
             )
         except urllib.error.HTTPError as e:
             print(f"channels.list failed for {len(chunk)} ids: {e}", file=sys.stderr)
             continue
         for item in data.get("items", []):
-            stats = item.get("statistics", {})
-            views = int(stats.get("viewCount", 0))
-            count = int(stats.get("videoCount", 0))
-            out[item["id"]] = (views // count) if count > 0 else 0
+            playlists = item.get("contentDetails", {}).get("relatedPlaylists", {})
+            uploads = playlists.get("uploads")
+            if uploads:
+                uploads_playlists[item["id"]] = uploads
+
+    for channel_id, playlist_id in uploads_playlists.items():
+        try:
+            data = api_get(
+                "playlistItems",
+                {
+                    "part": "contentDetails",
+                    "playlistId": playlist_id,
+                    "maxResults": 50,
+                },
+                api_key,
+            )
+        except urllib.error.HTTPError as e:
+            print(f"playlistItems.list failed for {channel_id}: {e}", file=sys.stderr)
+            continue
+        recent_video_ids = [
+            item["contentDetails"]["videoId"]
+            for item in data.get("items", [])
+            if item.get("contentDetails", {}).get("videoId")
+        ]
+        if not recent_video_ids:
+            continue
+        details = videos_details(recent_video_ids, api_key)
+        view_counts = [int(v.get("statistics", {}).get("viewCount", 0)) for v in details]
+        view_counts = [v for v in view_counts if v > 0]
+        if view_counts:
+            out[channel_id] = int(statistics.median(view_counts))
     return out
 
 
@@ -262,31 +298,52 @@ def main(argv: list[str] | None = None) -> int:
                 continue
             candidates.append(v)
 
-    # Phase 2: one batched channels.list call covers all unique channels.
+    # Phase 2: pull each channel's recent-uploads median for the baseline.
     channel_ids = [v["snippet"]["channelId"] for v in candidates]
-    avg_views = channel_averages(channel_ids, api_key)
+    baselines = channel_baselines(channel_ids, api_key)
 
-    # Phase 3: filter to outliers and build rows.
+    # Phase 3: filter to outliers and build rows. Also collect diagnostics so
+    # we can show the top candidates even when nothing crosses the threshold.
+    scored: list[tuple[float, dict, int]] = []
     for v in candidates:
-        url = f"https://www.youtube.com/watch?v={v['id']}"
         channel_id = v["snippet"]["channelId"]
-        views = int(v.get("statistics", {}).get("viewCount", 0))
-        baseline = avg_views.get(channel_id, 0)
+        baseline = baselines.get(channel_id, 0)
         if baseline <= 0:
             continue
+        views = int(v.get("statistics", {}).get("viewCount", 0))
         ratio = views / baseline
+        scored.append((ratio, v, baseline))
+
+    scored.sort(key=lambda t: -t[0])
+
+    for ratio, v, baseline in scored:
         if ratio < args.multiplier:
             continue
+        url = f"https://www.youtube.com/watch?v={v['id']}"
         rows.append(build_row(v, baseline, ratio, content_type, row_id))
         existing_urls.add(url)
         row_id += 1
 
     if not rows:
         print(
-            f"Considered {len(candidates)} candidate videos across {len(set(channel_ids))} "
-            f"channels. None reached the {args.multiplier}x threshold. "
-            f"Try re-running with --multiplier 3 or 5."
+            f"Considered {len(candidates)} candidate videos across "
+            f"{len(set(channel_ids))} channels. None reached the "
+            f"{args.multiplier}x threshold."
         )
+        if scored:
+            print("\nTop 10 candidates by multiplier (for reference):")
+            for ratio, v, baseline in scored[:10]:
+                title = first_line(v.get("snippet", {}).get("title", ""), 80)
+                channel = v.get("snippet", {}).get("channelTitle", "")
+                views = int(v.get("statistics", {}).get("viewCount", 0))
+                print(
+                    f"  {ratio:5.2f}x  views={views:>10}  baseline={baseline:>9}  "
+                    f"{channel} :: {title}"
+                )
+            print(
+                f"\nTo capture these, re-run with "
+                f"--multiplier {max(1.5, scored[0][0] * 0.9):.1f}"
+            )
         return 0
 
     append_rows(args.output, rows)
