@@ -64,21 +64,32 @@ def main() -> int:
         )
         return 1
 
-    slot = repurposed_1pm_entry()
-    if slot is None:
-        print(
-            "1pm slot is empty (before repurpose launch or inventory exhausted). Skipping.",
-            file=sys.stderr,
-        )
-        return 0
-    if slot["kind"] != "testimonial":
-        print(
-            f"Today's 1pm slot is a regular post (id={slot['data']['id']}). "
-            "Testimonial push skipped — zapier_push.py will handle it.",
-        )
-        return 0
+    test_id = os.environ.get("TEST_TESTIMONIAL_ID", "").strip()
+    if test_id:
+        from scheduler import load_testimonials
+        testimonials = load_testimonials()
+        entry = next((t for t in testimonials if str(t["id"]) == test_id), None)
+        if entry is None:
+            print(f"No testimonial with id={test_id}", file=sys.stderr)
+            return 1
+        print(f"TEST mode: forcing testimonial #{test_id}")
+    else:
+        slot = repurposed_1pm_entry()
+        if slot is None:
+            print(
+                "1pm slot is empty (before repurpose launch or inventory exhausted). Skipping.",
+                file=sys.stderr,
+            )
+            return 0
+        if slot["kind"] != "testimonial":
+            print(
+                f"Today's 1pm slot is a regular post (id={slot['data']['id']}). "
+                "Testimonial push skipped — zapier_push.py will handle it.",
+            )
+            return 0
+        entry = slot["data"]
 
-    payload = build_payload(slot["data"], raw_base)
+    payload = build_payload(entry, raw_base)
     req = urllib.request.Request(
         webhook_url,
         data=json.dumps(payload).encode("utf-8"),
@@ -92,7 +103,7 @@ def main() -> int:
         print(f"Zapier webhook error {e.code}: {body}", file=sys.stderr)
         return 1
 
-    print(f"Sent testimonial #{slot['data']['id']} to Zapier; response: {result}")
+    print(f"Sent testimonial #{entry['id']} to Zapier; response: {result}")
     return 0
 
 
