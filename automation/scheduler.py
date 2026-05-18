@@ -19,10 +19,18 @@ import os
 from datetime import date
 from pathlib import Path
 
-POSTS_PATH = Path(__file__).resolve().parent.parent / "content" / "posts.json"
+CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
+POSTS_PATH = CONTENT_DIR / "posts.json"
+TESTIMONIALS_PATH = CONTENT_DIR / "testimonials.json"
 
 # Override with the repo variable POSTS_LAUNCH_DATE = "YYYY-MM-DD"
 DEFAULT_LAUNCH = date(2026, 5, 3)
+
+# Day 0 of the testimonial + image-post alternation at the 1pm slot.
+# Even days from this launch fire a testimonial; odd days fire the next
+# unused image post from posts.json (skipping SKIP_POSTS already used).
+DEFAULT_REPURPOSE_LAUNCH = date(2026, 5, 12)
+SKIP_POSTS = 8  # posts.json indices 0..7 already published before repurpose
 
 ALERT_THRESHOLD = 7  # warn when this many posts remain (after today)
 
@@ -60,10 +68,63 @@ def remaining_count() -> int:
     return max(0, len(posts) - n - 1)
 
 
+def repurpose_launch_date() -> date:
+    raw = os.environ.get("REPURPOSE_LAUNCH_DATE")
+    if raw:
+        try:
+            return date.fromisoformat(raw.strip())
+        except ValueError:
+            pass
+    return DEFAULT_REPURPOSE_LAUNCH
+
+
+def load_testimonials() -> list[dict]:
+    with TESTIMONIALS_PATH.open(encoding="utf-8") as f:
+        return json.load(f)
+
+
+def repurposed_1pm_entry() -> dict | None:
+    """Pick today's 1pm content under the repurposed rotation.
+
+    Returns a dict {'kind': 'testimonial'|'post', 'data': {...}} or None
+    if today is before REPURPOSE_LAUNCH or both inventories are exhausted.
+    """
+    today = date.today()
+    n = (today - repurpose_launch_date()).days
+    if n < 0:
+        return None
+    if n % 2 == 0:
+        idx = n // 2
+        testimonials = load_testimonials()
+        if idx >= len(testimonials):
+            return None
+        return {"kind": "testimonial", "data": testimonials[idx]}
+    idx = SKIP_POSTS + (n - 1) // 2
+    posts = load_posts()
+    if idx >= len(posts):
+        return None
+    return {"kind": "post", "data": posts[idx]}
+
+
+def repurposed_1pm_remaining() -> int:
+    """Total 1pm slots left AFTER today across both inventories."""
+    today = date.today()
+    n = (today - repurpose_launch_date()).days
+    if n < 0:
+        n = -1
+    used_testimonials = (n + 2) // 2 if n >= 0 else 0  # includes today if even
+    used_post_pairs = (n + 1) // 2 if n >= 0 else 0   # includes today if odd
+    total_t = len(load_testimonials())
+    total_p = max(0, len(load_posts()) - SKIP_POSTS)
+    remaining_t = max(0, total_t - used_testimonials)
+    remaining_p = max(0, total_p - used_post_pairs)
+    return remaining_t + remaining_p
+
+
 if __name__ == "__main__":
-    post = todays_post()
-    if post is None:
-        print(json.dumps({"error": "No post for today (out of inventory or before launch)"}, indent=2))
+    slot = repurposed_1pm_entry()
+    if slot is None:
+        print(json.dumps({"error": "No 1pm post today (before repurpose launch or exhausted)"}, indent=2))
     else:
-        print(json.dumps(post, indent=2, ensure_ascii=False))
-    print(f"\nRemaining after today: {remaining_count()}")
+        print(json.dumps(slot, indent=2, ensure_ascii=False))
+    print(f"\n1pm slots remaining after today: {repurposed_1pm_remaining()}")

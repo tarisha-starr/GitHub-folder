@@ -19,7 +19,7 @@ import sys
 import urllib.error
 import urllib.request
 
-from scheduler import todays_post
+from scheduler import repurposed_1pm_entry
 
 
 def derive_video_url(image_path: str, raw_base: str) -> str:
@@ -69,10 +69,17 @@ def main() -> int:
         )
         return 1
 
-    post = todays_post()
-    if post is None:
-        print("No post for today (out of inventory or before launch). Skipping Zapier.", file=sys.stderr)
+    slot = repurposed_1pm_entry()
+    if slot is None:
+        print("No 1pm post today (before repurpose launch or exhausted). Skipping.", file=sys.stderr)
         return 0
+    if slot["kind"] != "post":
+        print(
+            f"Today's 1pm slot is a {slot['kind']}; zapier_push.py skipping "
+            "(testimonial script handles those days).",
+        )
+        return 0
+    post = slot["data"]
     payload = build_payload(post, raw_base)
     try:
         result = post_to_zapier(webhook_url, payload)
