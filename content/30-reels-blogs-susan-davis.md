@@ -48,7 +48,7 @@ Your body is still speaking. The question is whether you'll listen.
 **Hook:** "Testosterone isn't the magic fix they're selling you."
 
 **Script:**
-"I know you've seen the posts. Take testosterone, get your spark back, feel alive again. But can I tell you what they actually found? The only solid evidence for testosterone in women is for one specific condition where low desire causes real distress. That's it. Not the 'feel like yourself again' they promised. Not the 'get your spark back' from the ad. If someone's telling you testosterone fixes everything... ask what data they're using. And if you want to know what actually shifts desire after 40... stay. I'm going to tell you."
+"I know you've seen the posts. Take testosterone, get your spark back, feel alive again." [BEAT] "But can I tell you what they actually found? The only solid evidence for testosterone in women is for one specific condition where low desire causes real distress. That's it. Not the 'feel like yourself again' they promised. Not the 'get your spark back' from the ad. If someone's telling you testosterone fixes everything... ask what data they're using. And if you want to know what actually shifts desire after 40... stay. I'm going to tell you."
 
 **Text on screen:** "Ask what evidence they're using."
 
@@ -765,7 +765,7 @@ I know you've done it. Lying awake, partner asleep beside you, quietly typing "w
 
 The internet will offer you a hundred answers. Low testosterone. Thyroid dysfunction. Hormonal imbalance. HSDD. And some of those might be part of it.
 
-But the research from Professor Susan Davis and colleagues consistently shows that the most common contributors to low desire in women over 40 aren't just medical. They're:
+But the evidence consistently points to the same conclusion: the most common contributors to low desire in women over 40 aren't just medical. They're:
 
 - Relationship dissatisfaction
 - Chronic stress and burnout
@@ -798,7 +798,7 @@ That's a better starting point than any search result.
 
 ### The Myth of the "Normal" Sex Drive
 
-One of the most important things Professor Susan Davis's research highlights is this: low sexual desire is only considered a disorder if it causes the woman significant personal distress.
+One of the most important distinctions in sexual health is this: low sexual desire is only considered a disorder if it causes the woman significant personal distress.
 
 Read that again.
 
@@ -823,7 +823,7 @@ Your desire is yours. It doesn't need to match anyone else's timeline.
 **Hook:** "What I wish every partner of a menopausal woman knew."
 
 **Script:**
-"What I wish every partner of a menopausal woman knew." [BEAT] "Her body is changing. That's real. But what she needs from you isn't a fix." She needs you to stop taking it personally. To touch her with curiosity, not expectation. To ask 'what do you need?' and actually listen. The research shows relationship quality predicts her desire more than her hormone levels. You're not separate from this. You're part of her healing."
+"What I wish every partner of a menopausal woman knew." [BEAT] "Her body is changing. That's real. But what she needs from you isn't a fix." She needs you to stop taking it personally. To reach for her with curiosity, not expectation. To ask 'what do you need?' and actually listen. The research shows relationship quality predicts her desire more than her hormone levels. You're not separate from this. You're part of her healing."
 
 **Text on screen:** "You're part of her healing."
 
@@ -837,7 +837,7 @@ If you're the partner of a woman going through menopause, I need you to hear thi
 
 Her body is changing. That's a biological fact. Oestrogen is declining, and it's causing real physical symptoms. She might be hot flashing, sleeping badly, and dealing with vaginal dryness that makes sex uncomfortable. Those things deserve medical attention.
 
-But here's what the research tells us about desire in midlife: relationship quality is one of the strongest predictors of sexual satisfaction. Stronger than hormone levels.
+But here's what matters most about desire in midlife: relationship quality is one of the strongest predictors of sexual satisfaction. Stronger than hormone levels.
 
 That means YOU matter. Enormously.
 
@@ -848,7 +848,7 @@ What she needs from you:
 - **Be patient.** Her body is learning a new language. Yours might need to learn it too.
 - **Educate yourself.** Read about menopause. Understanding her experience is an act of love.
 
-Professor Susan Davis's biopsychosocial model makes it clear: the partner is not separate from the equation. You're part of it. And that's not a burden. It's an opportunity.
+The biopsychosocial model of sexual health makes it clear: the partner is not separate from the equation. You're part of it. And that's not a burden. It's an opportunity.
 
 ---
 
@@ -857,7 +857,7 @@ Professor Susan Davis's biopsychosocial model makes it clear: the partner is not
 **Hook:** "We need to talk about vaginal dryness. Without the shame."
 
 **Script:**
-"We need to talk about vaginal dryness. Without the shame." [BEAT] "It affects up to 80% of postmenopausal women. It makes sex painful. And most women suffer in silence because they're too embarrassed to bring it up." Here's what I want you to know. There's a treatment. It works. It's safe. And your doctor can prescribe it today. This is not something you should push through. Your comfort matters."
+"We need to talk about vaginal dryness. Without the shame." [BEAT] "It affects up to 80% of postmenopausal women. It makes sex painful. And most women suffer in silence because they're too embarrassed to bring it up." Here's what I want you to know. There's a treatment. It works. It's safe. And your doctor can prescribe it today. This isn't something you should push through. Your comfort matters."
 
 **Text on screen:** "Don't push through pain. Ask for help."
 
@@ -873,7 +873,7 @@ Vaginal dryness is incredibly common after menopause. Some estimates suggest up 
 
 It's caused by declining oestrogen levels, which thin the vaginal tissue and reduce natural lubrication. It's called genitourinary syndrome of menopause (GSM), and it's a recognised medical condition.
 
-Professor Susan Davis and other leading experts recommend low-dose local vaginal oestrogen as the first-line treatment. It's applied directly to the vaginal tissue, works locally (not systemically), and is considered safe even for women who can't take systemic HRT.
+Leading experts recommend low-dose local vaginal oestrogen as the first-line treatment. It's applied directly to the vaginal tissue, works locally (not systemically), and is considered safe even for women who can't take systemic HRT.
 
 And yet.
 
@@ -910,7 +910,7 @@ Maybe you left a marriage where you were invisible. Where intimacy felt like obl
 
 And now you're on the other side. Free. Terrified. Wondering if desire even exists for you anymore.
 
-The research supports something important here: psychosocial factors play a massive role in sexual desire. If your previous relationship was one where you felt unseen, where intimacy was disconnected from emotional closeness, where your needs came last... of COURSE your desire went quiet.
+And the science backs up what your body already knows: psychosocial factors play a massive role in sexual desire. If your previous relationship was one where you felt unseen, where intimacy was disconnected from emotional closeness, where your needs came last... of COURSE your desire went quiet.
 
 It wasn't broken. It was protecting you.
 
@@ -943,7 +943,7 @@ The menopause transition is one of the most psychologically complex periods of a
 
 Depression, anxiety, brain fog, irritability, mood swings, sleep disruption... these are all common during perimenopause and menopause. Hormonal changes play a real role. But they're not the whole story.
 
-Professor Susan Davis's research sits within a broader body of evidence that recognises menopause as a biopsychosocial event. The hormonal shifts coincide with:
+A growing body of evidence recognises menopause as a biopsychosocial event. The hormonal shifts coincide with:
 - Children leaving home (identity shift)
 - Ageing parents (caretaking burden)
 - Relationship stagnation (decades of unaddressed patterns)
@@ -976,7 +976,7 @@ The mistake is treating menopause as only medical. Or only psychological. It's a
 
 This is one of the most important findings in women's sexual health research, and hardly anyone talks about it.
 
-Studies connected to Professor Susan Davis's work have shown that sexual self-image dysfunction, meaning how a woman feels about herself as a sexual, desirable person, is one of the strongest predictors of sexual distress. Stronger than hormone levels.
+Multiple studies have found that sexual self-image dysfunction, meaning how a woman feels about herself as a sexual, desirable person, is one of the strongest predictors of sexual distress. Stronger than hormone levels.
 
 Let that sink in.
 
@@ -1013,7 +1013,7 @@ Your body is still capable of desire. She's just been waiting for you to see her
 
 I need to push back against the story that menopause is decline.
 
-Yes, hormones change. Professor Susan Davis's research documents this clearly. Oestrogen drops. Testosterone continues its gradual decline. Symptoms emerge. And they deserve treatment.
+Yes, hormones change. The evidence documents this clearly. Oestrogen drops. Testosterone continues its gradual decline. Symptoms emerge. And they deserve treatment.
 
 But the medical story is not the whole story.
 
@@ -1046,7 +1046,7 @@ Menopause isn't the end. It's a threshold. And what's on the other side can be e
 
 I want to bring together everything I believe about women's health at midlife.
 
-You deserve evidence-based medicine. Professor Susan Davis and her colleagues have spent decades building the research base for women's health. That research says:
+You deserve evidence-based medicine. Decades of research have built a clear foundation for women's health. And the evidence says:
 - MHT is effective for menopausal symptoms and safe when timed right
 - Testosterone has evidence only for HSDD
 - Compounded hormones are not proven safer than regulated ones
