@@ -19,11 +19,11 @@
 **Hook:** "You don't have a low sex drive. You have a different one."
 
 **Script:**
-"Most women have what's called responsive desire. It means you don't just randomly feel horny out of nowhere. Your desire shows up AFTER you start being touched, kissed, warmed up. That's not broken. That's normal. The problem is, we've been told that spontaneous desire, the kind that appears out of thin air, is the only 'real' kind. So you've spent years thinking something is wrong with you. Nothing is wrong. You just have a different engine. And once you understand it, everything changes."
+"Most women have what's called responsive desire. It means you don't just randomly feel horny out of nowhere. Your desire shows up AFTER you start being touched, kissed, warmed up. That's not broken. That's normal. But wait... why did nobody tell you this? The problem is, we've been told that spontaneous desire, the kind that appears out of thin air, is the only 'real' kind. Nothing is wrong with you. You just have a different engine. And once you understand it? Everything you thought about yourself starts to shift."
 
 **Text on screen:** "Responsive desire isn't broken desire."
 
-**CTA:** "Comment 'different' if this just changed everything."
+**CTA:** "Save this and send it to the woman who needs to hear it tonight."
 
 ---
 
@@ -32,11 +32,11 @@
 **Hook:** "She never initiates. But it's not what you think."
 
 **Script:**
-"He thinks she doesn't want him. She thinks something is wrong with her. But here's what's actually happening: she has responsive desire. Her body needs warmth, connection, and touch BEFORE desire shows up. She's not going to feel it sitting on the couch scrolling. But if he starts with a hand on her back, eye contact, a real conversation... her body wakes up. She's not avoiding you. She's waiting to be invited in."
+"He thinks she doesn't want him. She thinks something is wrong with her. But here's what's actually happening... she has responsive desire. Her body needs warmth, connection, and touch BEFORE desire shows up. She's not going to feel it sitting on the couch scrolling. But what does she actually need? A hand on her back. Eye contact. Her body wakes up. She's not avoiding you. She's waiting to be invited in."
 
 **Text on screen:** "She's not avoiding. She's waiting to be invited."
 
-**CTA:** "Send this to your partner."
+**CTA:** "Send this to your partner. Tonight."
 
 ---
 
@@ -45,11 +45,11 @@
 **Hook:** "You don't have a sex drive problem. You have a communication problem."
 
 **Script:**
-"Almost every couple I work with thinks they're sexually incompatible because one wants it more than the other. But here's the truth: mismatched desire is the NORM, not the exception. The problem isn't that you want different amounts. It's that you've never had an honest conversation about what desire looks like for each of you. When you understand each other's desire style, the mismatch becomes a conversation instead of a crisis."
+"Almost every couple I work with thinks they're sexually incompatible because one wants it more than the other. But here's the truth... mismatched desire is the NORM, not the exception. The problem isn't that you want different amounts. It's that you've never had an honest conversation about what desire looks like for each of you. When you understand each other's desire style, the mismatch becomes a conversation instead of a crisis. And that conversation? It's awkward. It's uncomfortable. And it's the most important one you'll ever have."
 
 **Text on screen:** "Mismatch isn't incompatibility. It's a conversation."
 
-**CTA:** "Comment 'conversation' if you need to have this talk."
+**CTA:** "Save this for the night you're finally ready to have the talk."
 
 ---
 
@@ -58,24 +58,24 @@
 **Hook:** "Stop waiting to 'feel like' having sex."
 
 **Script:**
-"I know this sounds counterintuitive. But if you have responsive desire, waiting until you feel spontaneously turned on might mean waiting forever. Instead, try saying yes to warmth. Yes to closeness. Yes to being touched. Not because you owe anyone anything. But because your desire might be waiting on the other side of that first touch. You're not forcing yourself. You're giving your body a chance to respond."
+"I know this sounds counterintuitive. But if you have responsive desire? Waiting until you feel spontaneously turned on might mean waiting forever. Instead, try saying yes to warmth. Yes to closeness. Because your desire might be waiting on the other side of that first touch. You're not forcing yourself. You're giving your body a chance to respond. And what happens on the other side of that yes? You might surprise yourself."
 
 **Text on screen:** "Desire might be on the other side of 'yes.'"
 
-**CTA:** "Save this. Sit with it."
+**CTA:** "Save this. Come back when you need the reminder."
 
 ---
 
 ### Reel 5: "The Five Conversations Every Couple Needs"
 
-**Hook:** "Five conversations that will transform your sex life. Here's the first one."
+**Hook:** "Five conversations that will transform your sex life. But there's one nobody wants to have."
 
 **Script:**
-"Conversation one: Acknowledge that sex is a thing and you have it. Sounds obvious? Most couples have NEVER had a direct, honest conversation about their sex life. They hint. They avoid. They hope the other person reads their mind. But sex therapist Vanessa Marin says the first step is simply acknowledging: this is part of our relationship, and it matters. One honest sentence can unlock everything."
+"Conversation three is the one nobody wants to have. It's the one where you say what isn't working. Not what you wish was different... what actively isn't working. Here's how it starts: 'I need to tell you something, and I need you to just listen.' That's it. That's the opening line. Most couples never get past hinting. They hope the other person reads their mind. But this conversation, the uncomfortable one, is where everything unlocks. Want to know the other four? Tell me."
 
-**Text on screen:** "'Sex is a thing, and we have it.' Start there."
+**Text on screen:** "'I need to tell you something. Just listen.'"
 
-**CTA:** "Want all five? Comment 'five' and I'll share them."
+**CTA:** "Save this. You'll need it when you're ready for that conversation."
 
 ---
 
@@ -84,11 +84,11 @@
 **Hook:** "She faked it. Not because she wanted to. Because nobody taught her to ask."
 
 **Script:**
-"Women have been taught that sex is about HIS pleasure. That a good partner makes him feel good. That her experience is secondary. So she performed. She faked orgasms. She said it was great when it wasn't. Not because she's dishonest. Because she was never given permission to say what she actually needs. The orgasm gap is real. And it starts with a conversation, not a technique."
+"You were taught that sex is about HIS pleasure. That a good partner makes him feel good. That your experience is secondary. So you performed. You faked orgasms. You said it was great when it wasn't. Not because you're dishonest... but because you were never given permission to say what you actually need. And here's the part nobody tells you: the orgasm gap is real. And it starts with a conversation, not a technique."
 
 **Text on screen:** "The orgasm gap starts with silence."
 
-**CTA:** "Comment 'permission' if you're ready to be honest."
+**CTA:** "Save this. Share it with the woman who's been faking it and hating herself for it."
 
 ---
 
@@ -97,11 +97,11 @@
 **Hook:** "Scheduling sex isn't unromantic. It's honest."
 
 **Script:**
-"You schedule date night. You schedule workouts. You schedule the dentist. But sex? That's supposed to just 'happen.' Here's the problem: when you're exhausted, carrying the mental load, and running on empty... spontaneous sex doesn't happen. It just doesn't. Scheduling intimacy isn't killing the spark. It's protecting it. It says: this matters enough to make time for."
+"You schedule date night. You schedule workouts. But sex? That's supposed to just 'happen.' Here's the problem... when you're exhausted, carrying the mental load, and running on empty, spontaneous sex doesn't happen. It just doesn't. Scheduling intimacy isn't killing the spark. It's protecting it. It says: you still matter to me. And isn't that what you've been wanting to hear?"
 
 **Text on screen:** "You schedule what matters."
 
-**CTA:** "Comment 'schedule' if this takes the pressure off."
+**CTA:** "Tag your partner. Let this start the conversation tonight."
 
 ---
 
@@ -110,11 +110,11 @@
 **Hook:** "Here's the cycle that slowly kills intimacy in long-term relationships."
 
 **Script:**
-"He initiates. She's not in the mood. She says no. He feels rejected. He stops trying. She feels relieved but also guilty. The gap widens. Neither talks about it. Years pass. And now they're roommates. Sound familiar? The fix isn't more initiation or less rejection. It's understanding each other's desire style and talking about what 'no' actually means. Sometimes 'not tonight' means 'I need a different approach,' not 'I don't want you.'"
+"He initiates. She's not in the mood. She says no. He feels rejected. He stops trying. She feels relieved but also guilty. The gap widens. Neither talks about it. Years pass. And now they're roommates. But here's what nobody tells you about this cycle... The fix isn't more initiation or less rejection. It's understanding each other's desire style and talking about what 'no' actually means. Sometimes 'not tonight' means 'I need a different approach,' not 'I don't want you.'"
 
 **Text on screen:** "'Not tonight' might mean 'not like this.'"
 
-**CTA:** "Tag someone who needs to hear this. Both of you."
+**CTA:** "Send this to your partner. It could change how you hear each other tonight."
 
 ---
 
@@ -123,11 +123,11 @@
 **Hook:** "Your pleasure is not selfish. It's essential."
 
 **Script:**
-"Women have been taught that sex is something you give. That his orgasm is the goal. That your pleasure is a bonus, not a priority. But here's what I know: when she prioritises her own pleasure, everything shifts. She's more present. More connected. More alive. It's not selfish to say 'this is what I need.' It's the most generous thing you can do for your relationship."
+"You were taught that sex is something you give. That his orgasm is the goal. That your pleasure is a bonus, not a priority. But here's what I know... when you prioritise your own pleasure, everything shifts. You're more present. More alive. But why does that feel so hard to do? It's not selfish to say 'this is what I need.' It's the most generous thing you can do. Full stop."
 
-**Text on screen:** "Her pleasure changes everything."
+**Text on screen:** "Your pleasure changes everything."
 
-**CTA:** "Comment 'essential' if you're done putting yourself last."
+**CTA:** "Save this for the day you forget that your body deserves to feel good too."
 
 ---
 
@@ -136,11 +136,11 @@
 **Hook:** "Couples who have great sex after 20 years do ONE thing differently."
 
 **Script:**
-"They talk about it. That's it. Not dirty talk. Not performative openness. Just honest, awkward, real conversations about what feels good, what doesn't, what they want more of, what they're curious about. Sex therapist Vanessa Marin says if you can't talk about sex, you can't improve your sex life. And the couples who keep talking? They keep growing."
+"They talk about it. That's it. Not dirty talk. Not performative openness. Just honest, awkward, real conversations about what feels good and what doesn't. And I know that sounds boring. But it's the truth. The couples who keep talking are the couples who keep touching. If you can't talk about sex, you can't improve your sex life. So what's the one thing you haven't said yet?"
 
 **Text on screen:** "They talk about it. That's the secret."
 
-**CTA:** "What's the one thing you wish you could say? Comment below."
+**CTA:** "Drop the one thing you wish you could say. You might not be the only one thinking it."
 
 ---
 
@@ -151,11 +151,11 @@
 **Hook:** "Your pleasure is your power. And you've been giving it away."
 
 **Script:**
-"For years, you've put everyone else's needs first. Your body became a workhorse, not a source of joy. Pleasure became a luxury you couldn't afford. But your body knows something your mind forgot: pleasure isn't earned. It's your birthright. When you come back to pleasure, not performance, something ancient wakes up. Your body is wise. Start listening."
+"For years, you've put everyone else's needs first. Your body became a workhorse, not a source of joy. Pleasure became a luxury you couldn't afford. But your body knows something your mind forgot... pleasure isn't earned. It's yours. It always was. When you come back to pleasure, not performance, something honest wakes up. Something that doesn't perform. And it's been waiting for you. Are you ready to meet her?"
 
-**Text on screen:** "Pleasure isn't earned. It's your birthright."
+**Text on screen:** "Pleasure isn't earned. It's yours."
 
-**CTA:** "Comment 'power' if you're reclaiming it."
+**CTA:** "Save this for the moment you forget you're allowed to feel good."
 
 ---
 
@@ -164,9 +164,9 @@
 **Hook:** "Your body holds the map to everything you've been looking for."
 
 **Script:**
-"You've been in your head for decades. Thinking your way through problems. Analysing your feelings instead of feeling them. But your body has been keeping score. The tension in your shoulders. The tightness in your belly. The shutdown in your pelvis. Those aren't just symptoms. They're directions. Your body is showing you exactly where the healing needs to happen. Stop thinking. Start feeling."
+"You've been in your head for decades. Thinking your way through problems. Analysing your feelings instead of feeling them. But your body has been keeping score. The tension in your shoulders. The tightness in your belly. Those aren't just symptoms. They're directions. But here's the question nobody asks... what happens when you actually listen? You've been trying to think your way out of this. Your body already knows the way."
 
-**Text on screen:** "Stop thinking. Start feeling."
+**Text on screen:** "Your body already knows the way."
 
 **CTA:** "Save this. Come back to it when your body is loud."
 
@@ -177,9 +177,9 @@
 **Hook:** "The most intimate thing you can do isn't sexual. It's this."
 
 **Script:**
-"Breathe. Slowly. Deeply. Into your belly. Into your pelvis. Into the parts of your body you've been ignoring for years. Breath is how your nervous system knows it's safe. And safety is how desire comes home. Before you try to fix your sex life, try breathing into your body for 60 seconds. That's where everything starts."
+"Breathe. Slowly. Deeply. Into your belly. Into your pelvis. Into the parts of your body you've been ignoring for years. But why does something so simple feel so hard? Breath is how your nervous system knows it's safe. And safety is how desire finds you again. Before you try to fix your sex life, try breathing into your body for 60 seconds. That's where desire lives. And she's been waiting for you to breathe into her."
 
-**Text on screen:** "Breathe into your body. That's where it starts."
+**Text on screen:** "Breathe into your body. That's where desire lives."
 
 **CTA:** "Try it right now. 4 counts in. 6 counts out. Tell me what shifts."
 
@@ -190,11 +190,11 @@
 **Hook:** "You've been performing intimacy. What if you just... felt it?"
 
 **Script:**
-"The sounds you think you should make. The way you think you should move. The timeline you think sex should follow. All of that is performance. What if you stripped it all away and asked: what does my body actually want right now? Not what he expects. Not what the movies taught you. What does SHE want? That question is the beginning of real intimacy."
+"The sounds you think you should make. The way you think you should move. All of that is performance. But what if you stripped it all away? What if you asked: what does my body actually want right now? Not what he expects. Not what the movies taught you. What does SHE want? That question... that's the beginning of real intimacy. And it might terrify you."
 
 **Text on screen:** "What does SHE want?"
 
-**CTA:** "Comment 'real' if you're done performing."
+**CTA:** "Save this for the next time you catch yourself performing instead of feeling."
 
 ---
 
@@ -203,24 +203,24 @@
 **Hook:** "When was the last time you touched your own body like she matters?"
 
 **Script:**
-"Not in the shower rushing to get clean. Not checking for lumps. Not sucking in your stomach. I mean touching your skin with tenderness. Running your hand down your arm. Placing your palm on your belly and saying 'I'm here.' Your body has been waiting for you to come home. You don't need a partner for this. You need you."
+"Not in the shower rushing to get clean. Not checking for lumps. I mean touching your skin with tenderness. Placing your palm on your belly and saying 'I'm here.' But when was the last time you did that? Your body has been waiting for you to hear her. You don't need a partner for this. You need you."
 
-**Text on screen:** "She's been waiting for you."
+**Text on screen:** "She's been waiting for you to hear her."
 
 **CTA:** "Try this tonight. One hand. One breath. One whisper: 'I'm here.'"
 
 ---
 
-### Reel 16: "Sacred Doesn't Mean Serious"
+### Reel 16: "Intimacy Doesn't Have to Be Serious"
 
-**Hook:** "Sacred intimacy doesn't mean candles and chanting."
+**Hook:** "Intimacy doesn't have to be serious to mean something."
 
 **Script:**
-"You can make intimacy sacred and still laugh. Still be messy. Still be imperfect. Sacred means present. It means 'I'm here, with you, in my body, right now.' That's it. Not perfect. Not spiritual. Just real. The most sacred moments I've witnessed between couples aren't choreographed. They're clumsy, vulnerable, and completely human."
+"You can make intimacy meaningful and still laugh. Still be messy. Present means 'I'm here, with you, in my body, right now.' That's it. Not perfect. Not spiritual. Just real. But what does that actually look like? The most meaningful moments I've witnessed between couples aren't choreographed. They're clumsy and completely human. And that's exactly what makes them matter."
 
-**Text on screen:** "Sacred means present. Not perfect."
+**Text on screen:** "Present means here. Not perfect."
 
-**CTA:** "Comment 'present' if this takes the pressure off."
+**CTA:** "Save this for the next time you think intimacy needs to look a certain way."
 
 ---
 
@@ -229,7 +229,7 @@
 **Hook:** "Your body contracts to protect you. But she also contracts to hide."
 
 **Script:**
-"Tight jaw. Held breath. Clenched pelvis. Raised shoulders. These are your body's way of saying 'it's not safe.' Maybe from old trauma. Maybe from years of overriding what you needed. Maybe from intimacy that felt like obligation. Before you can open to pleasure, you have to acknowledge the contraction. Put your hand where it's tight and say: 'I feel you. You can let go.'"
+"Tight jaw. Held breath. Clenched pelvis. These are your body's way of saying 'it's not safe.' Maybe from something you don't even remember. Maybe from years of overriding what you needed. But here's what most people miss... before you can open to pleasure, you have to acknowledge the contraction. Put your hand where it's tight and say: 'I feel you. You can let go.'"
 
 **Text on screen:** "'I feel you. You can let go.'"
 
@@ -239,10 +239,10 @@
 
 ### Reel 18: "Embodiment Is Not a Trend"
 
-**Hook:** "Embodiment isn't a wellness trend. It's how you come home."
+**Hook:** "Embodiment isn't a wellness trend. It's how you meet yourself."
 
 **Script:**
-"I see 'embodiment' everywhere now. Like it's the new yoga. The new breathwork. The new thing to buy a course on. But real embodiment is simpler than that. It's feeling your feet on the floor. It's noticing your breath without changing it. It's asking your body 'how are you?' and actually waiting for the answer. It's not a practice you add to your life. It's the foundation under everything else."
+"Embodiment isn't a course you buy. It's feeling your feet on the floor right now. That's it. But why does something so simple feel so radical? It's noticing your breath without changing it. It's asking your body 'how are you?' and actually waiting for the answer. It's not a practice you add to your life. It's the foundation under everything else. And you can start in the next three seconds."
 
 **Text on screen:** "Feel your feet. That's embodiment."
 
@@ -255,11 +255,11 @@
 **Hook:** "Healing doesn't just happen inside you. It happens in the space between two people."
 
 **Script:**
-"You can do all the inner work. The therapy. The journaling. The breathwork. And it matters. But some healing only happens when another person sees you. Really sees you. In your mess, your fear, your desire. And doesn't look away. That's what conscious intimacy is. Not fixing. Not performing. Just two people brave enough to be honest in the same room."
+"You can do all the inner work you want. And it matters. But some healing only happens when another person sees you. Really sees you. In your mess, your fear, your desire. And doesn't look away. But here's the part that scares people... that's what conscious intimacy is. Not fixing. Not performing. Just two people brave enough to be honest in the same room."
 
 **Text on screen:** "Two people. Honest. In the same room."
 
-**CTA:** "Comment 'brave' if you know this kind of intimacy."
+**CTA:** "Save this. Share it with the person you're brave enough to be honest with."
 
 ---
 
@@ -268,26 +268,26 @@
 **Hook:** "You've been looking for desire in your head. She lives in your body."
 
 **Script:**
-"You've been trying to think your way back to desire. Reading articles. Watching videos. Analysing what went wrong. But desire doesn't live in your thoughts. She lives in your hips, your breath, your skin. In the way your body softens when it finally feels safe. Stop trying to think yourself turned on. Come into your body instead."
+"You've been trying to think your way back to desire. Reading articles at midnight. Trying to THINK yourself back to wanting. But desire doesn't live in your thoughts. She lives in your hips, your breath, your skin. In the way your body softens when it finally feels safe. So why do you keep looking in the wrong place? Stop trying to think yourself turned on. Meet her where she is instead."
 
 **Text on screen:** "Desire lives in your hips, not your head."
 
-**CTA:** "Comment 'body' if you're ready to come home."
+**CTA:** "Save this for the next time you're Googling at 2am instead of breathing."
 
 ---
 
 ## BLENDED: Evidence + Embodiment + Communication
 
-### Reel 21: "Three Things Every Woman Over 40 Needs to Know About Sex"
+### Reel 21: "Three Things Every Woman Over 40 Needs to Know About Sex (Part 1 of 3)"
 
-**Hook:** "Three things every woman over 40 needs to know about sex. Nobody taught you these."
+**Hook:** "One thing every woman over 40 needs to know about sex. Part 1 of 3."
 
 **Script:**
-"One. Most women have responsive desire. You're not broken for not wanting sex spontaneously. Two. Your body image affects your desire more than your hormones. How you feel about yourself in your body matters more than any blood test. Three. Pleasure is a skill, not a gift. You can learn it at any age. These three facts would save millions of women years of shame."
+"Most women have responsive desire. That means you don't just randomly feel turned on out of nowhere. Your desire shows up AFTER connection, touch, warmth. Not before. You're not broken for not wanting sex spontaneously. You never were. But nobody told you this... and so you spent years thinking something was wrong with you. This single fact would save millions of women years of shame. Part 2 drops tomorrow."
 
-**Text on screen:** "1. Responsive desire is normal. 2. Body image > hormones. 3. Pleasure is a skill."
+**Text on screen:** "Responsive desire is normal. You're not broken."
 
-**CTA:** "Which one surprised you? Drop the number."
+**CTA:** "Follow for Part 2. And send this to a woman who needs to hear it tonight."
 
 ---
 

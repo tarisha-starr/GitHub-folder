@@ -11,11 +11,11 @@
 **Hook (first 3 seconds):** "Your desire didn't break at menopause."
 
 **Script:**
-"Everyone's telling you menopause killed your sex drive. But here's what the research actually shows... testosterone decline is age-related, not menopause-related. It's been dropping since your twenties. So if desire shifted, it's not because menopause broke you. It's because your body, your relationships, and your sense of self have all changed. And nobody taught you how to navigate that."
+"Your desire didn't break at menopause." [BEAT] "I know. Everyone says it did. Even you believe it." [BEAT] "But the leading researcher in the world on this says something different. And it changes everything." Your desire has been shifting since your twenties. Slowly. Quietly. Menopause just happened to be when you finally noticed. So what actually changed? It's not menopause. It's everything. The exhaustion. The invisibility. The years of 'I'm fine' when you weren't. And nobody taught you how to navigate that."
 
 **Text on screen:** "Menopause didn't kill your desire."
 
-**CTA:** "Comment 'truth' if you needed to hear this."
+**CTA:** "Comment 'finally' if this just clicked."
 
 **Blog:**
 
@@ -39,7 +39,7 @@ The good news? If your desire wasn't broken by one event, it can't be fixed by o
 
 That's actually more hopeful than "your hormones are gone and so is your desire."
 
-Does this reframe land for you?
+Your body is still speaking. The question is whether you'll listen.
 
 ---
 
@@ -48,7 +48,7 @@ Does this reframe land for you?
 **Hook:** "Testosterone isn't the magic fix they're selling you."
 
 **Script:**
-"I know you've seen the posts. Take testosterone, get your spark back, feel alive again. But the world's leading researcher on this, Professor Susan Davis, says the only solid evidence for testosterone in women is for one specific condition: HSDD, hypoactive sexual desire disorder. That's it. Not energy. Not mood. Not anti-ageing. If someone is telling you testosterone fixes everything... ask what data they're using."
+"I know you've seen the posts. Take testosterone, get your spark back, feel alive again. But can I tell you what they actually found? The only solid evidence for testosterone in women is for one specific condition where low desire causes real distress. That's it. Not the 'feel like yourself again' they promised. Not the 'get your spark back' from the ad. If someone's telling you testosterone fixes everything... ask what data they're using. And if you want to know what actually shifts desire after 40... stay. I'm going to tell you."
 
 **Text on screen:** "Ask what evidence they're using."
 
@@ -80,10 +80,10 @@ Your body isn't waiting for a prescription. She's waiting for your attention.
 
 ## Reel 3: "Menopause Doesn't Mean You're Done"
 
-**Hook:** "Menopause doesn't mean you're done."
+**Hook:** "Everyone's telling you menopause isn't the end. I want to tell you something more honest than that."
 
 **Script:**
-"Somewhere along the way, women started believing that menopause means the end. End of desire. End of relevance. End of feeling alive in your body. But the research tells a different story. Hormone therapy effectively manages symptoms like hot flashes and night sweats. But the spark? The aliveness? That was never just about hormones. It's about how you relate to your body, your pleasure, and your sense of self."
+"Everyone's telling you menopause isn't the end. I want to tell you something more honest than that." [BEAT] "You're not who you were. And that's not a tragedy. It's a reckoning." Somewhere along the way, you started believing that desire had an expiry date. That relevance fades with oestrogen. And the numbers tell a different story. But that spark? The aliveness? She doesn't live in a bottle. She lives in how you relate to your body, your pleasure, and your sense of self. And she's still there. Waiting."
 
 **Text on screen:** "You're not done. You're different."
 
@@ -111,10 +111,10 @@ Menopause changes the landscape. But you still get to choose where you walk.
 
 ## Reel 4: "The Menopause Misinformation Problem"
 
-**Hook:** "Social media is lying to you about menopause."
+**Hook:** "You've seen the posts that scared you into ordering something at 2am."
 
 **Script:**
-"Every day I see posts telling women they MUST be on hormones or they'll die early. That natural hormones are safe and synthetic ones are toxic. That testosterone fixes everything. Professor Susan Davis calls this what it is: misleading. Compounded hormones marketed as 'bioidentical' and 'natural' have been linked to endometrial cancer. They lack the testing of regulated medications. You deserve evidence, not marketing."
+"You've seen the posts that scared you into ordering something at 2am. Let's talk about what they got wrong." [BEAT] "Every day I see posts telling women they MUST be on hormones or they'll die early. That natural hormones are safe and synthetic ones are toxic. That testosterone fixes everything. Want to know what a world-leading researcher calls this? Misleading. Compounded hormones marketed as 'bioidentical' and 'natural' have been linked to endometrial cancer. They lack the testing of regulated medications. You deserve evidence, not marketing."
 
 **Text on screen:** "You deserve evidence. Not marketing."
 
@@ -149,7 +149,7 @@ And you need to be able to trust that the people giving you advice are working f
 **Hook:** "Low desire isn't just a hormone problem."
 
 **Script:**
-"I see this every day. Women who think something is medically wrong with them because their desire dropped. And the research backs this up. Professor Susan Davis's work shows that psychosocial factors... your relationship, your stress, your self-image, how seen you feel... play a massive role in desire. Sometimes the biggest shift isn't a prescription. It's a conversation."
+"Low desire isn't just a hormone problem." [BEAT] "Sometimes the biggest shift isn't a prescription. It's a conversation." I see this every day. Women who think something is medically wrong with them because their desire dropped. And what the data says might surprise you. The research shows that what matters most is how you feel about yourself. And how seen you feel in your relationship. So before you chase the next blood test... ask yourself when the last time someone really looked at you was."
 
 **Text on screen:** "Sometimes the fix isn't medical. It's relational."
 
@@ -179,10 +179,10 @@ The other two thirds? Those are where the real work, and the real transformation
 
 ## Reel 6: "What the Science Actually Says About Hormone Therapy"
 
-**Hook:** "Let me tell you what hormone therapy actually does. And what it doesn't."
+**Hook:** "They checked your bloods. They checked your hormones. They checked your thyroid."
 
 **Script:**
-"Hormone therapy is brilliant at treating hot flashes, night sweats, and vaginal dryness. It's the gold standard. But it doesn't prevent heart disease. It doesn't prevent dementia. It doesn't reverse ageing. And it's not something every woman must take. It's a tool. A good one. But it's not the only one. And your body deserves a more complete answer than 'just take hormones.'"
+"They checked your bloods. They checked your hormones. They checked your thyroid. But nobody checked..." [beat] "...how you're actually doing." [BEAT] "Hormone therapy is brilliant at treating hot flashes, night sweats, and vaginal dryness. It's the gold standard. But it doesn't prevent heart disease. It doesn't prevent dementia. It doesn't reverse ageing. And your body deserves a more complete answer than 'just take hormones.' So let me ask you what nobody else has. How are YOU?"
 
 **Text on screen:** "Hormone therapy is a tool. Not the answer."
 
@@ -218,10 +218,10 @@ The decision is personal. It should be informed. And it should be made with a do
 
 ## Reel 7: "Compounded Hormones Aren't Safer"
 
-**Hook:** "Compounded hormones aren't safer just because they're called 'natural.'"
+**Hook:** "A world-leading hormone researcher just called something 'frankly reprehensible.'"
 
 **Script:**
-"I see women paying hundreds for compounded 'bioidentical' hormones because someone on Instagram told them they're safer and more natural. Professor Susan Davis calls this marketing 'frankly reprehensible.' These compounds haven't been through the same testing as regulated hormones. Some have been linked to endometrial cancer. 'Natural' is a marketing word, not a safety guarantee."
+"A world-leading hormone researcher just called something 'frankly reprehensible.' And you might be buying it." [BEAT] "I see women paying hundreds for compounded 'bioidentical' hormones because someone on Instagram told them they're safer and more natural. But here's what's actually happening. These compounds haven't been through the same testing as regulated hormones. Some have been linked to endometrial cancer. 'Natural' is a marketing word, not a safety guarantee. And that word might be costing you more than money."
 
 **Text on screen:** "'Natural' is marketing. Not evidence."
 
@@ -253,10 +253,10 @@ Talk to your doctor. Ask about regulated options. Your body is worth more than m
 
 ## Reel 8: "Your Body Isn't Broken at 50"
 
-**Hook:** "Your body isn't broken at 50. She's been adapting for decades."
+**Hook:** "You keep asking 'what's wrong with me?' Wrong question."
 
 **Script:**
-"Testosterone has been declining since your twenties. Your oestrogen shifts at menopause. Your nervous system has absorbed decades of stress. None of that is breakdown. All of it is adaptation. The question isn't 'what's wrong with me?' The question is 'what does my body need from me NOW?'"
+"You keep asking 'what's wrong with me?'" [BEAT] "Wrong question." Testosterone has been declining since your twenties. Your oestrogen shifts at menopause. Your nervous system has absorbed decades of stress. None of that is breakdown. All of it is adaptation. "The question is: 'what does my body need from me right now?'" And when you start asking that instead... everything shifts."
 
 **Text on screen:** "Not broken. Adapting."
 
@@ -286,10 +286,10 @@ The question isn't "what's wrong with me?" It's "what does my body need from me 
 
 ## Reel 9: "Not Every Woman Needs Hormones"
 
-**Hook:** "Not every woman needs hormones. And that's okay."
+**Hook:** "Not every woman needs hormones. And I know saying that on Instagram is almost illegal right now."
 
 **Script:**
-"There's a message going around that says every menopausal woman should be on HRT or she's putting her health at risk. That's not what the evidence says. Hormone therapy is brilliant for managing symptoms. But if your symptoms are manageable, or you have risk factors, or you simply don't want them... that's a valid choice. Your menopause. Your body. Your decision."
+"Not every woman needs hormones." [BEAT] "And I know saying that on Instagram is almost illegal right now." But the evidence hasn't changed just because the algorithm did. Hormone therapy is brilliant for managing symptoms. But if your symptoms are manageable, or you have risk factors, or you simply don't want them... that's a valid choice. Your menopause. Your body. Your decision. Not the internet's."
 
 **Text on screen:** "It's YOUR decision."
 
@@ -322,7 +322,7 @@ You deserve a decision made with your doctor, based on YOUR body, not someone el
 **Hook:** "The real reason she lost her desire isn't what you think."
 
 **Script:**
-"Everyone looks at hormones first. But the research says something different. The biggest predictors of sexual distress in women aren't hormone levels. They're relationship quality, body image, stress, and how she feels about herself as a sexual being. I see this every day. Her desire didn't leave. It went into hiding because nothing around her felt safe enough to come out."
+"The real reason she lost her desire isn't what you think." [BEAT] "I see this every day in my practice." The biggest predictors of sexual distress in women aren't hormone levels. They're relationship quality, body image, stress, and how she feels about herself as a sexual being. Her desire didn't leave. It went into hiding... because nothing around her felt safe enough to come out. And until that changes, no prescription will bring her back."
 
 **Text on screen:** "Desire needs safety, not just hormones."
 
@@ -354,10 +354,10 @@ And that work? It doesn't happen in a pharmacy. It happens in the body, in the r
 
 ## Reel 11: "You're Being Sold a Menopause Fix"
 
-**Hook:** "You're being sold a menopause fix. But are you being told the truth?"
+**Hook:** "Last week a woman told me she'd spent $400 on a supplement because an influencer said it'd bring her desire back."
 
 **Script:**
-"The menopause market is booming. Supplements, hormones, programmes, promises. And some of it is genuinely helpful. But some of it preys on your fear. Before you buy anything, ask: what's the evidence? Is this regulated? Who profits? Professor Susan Davis says we need to be honest with women about what data actually supports. You deserve honesty. Not hope dressed as science."
+"Last week a woman told me she'd spent $400 on a supplement because an influencer said it'd bring her desire back. It didn't." [BEAT] "Here's why." The menopause market is booming. And some of it preys on your fear. Before you buy anything, ask: what's the evidence? Is this regulated? Who profits from you believing this? Because hope dressed as science is still just marketing. And you deserve better than that."
 
 **Text on screen:** "Ask: what's the evidence?"
 
@@ -391,7 +391,7 @@ You're smart. You're discerning. And your body deserves better than hope dressed
 **Hook:** "What she actually needs at menopause. It's not what you've been told."
 
 **Script:**
-"She needs symptoms managed. Evidence-based HRT can do that. But she also needs... to be asked how she's doing. To feel seen in her relationship. To reconnect with her body without fear. To stop performing and start being honest. To know she's allowed to want more. Medicine handles one part. The rest? That's the work we do in the body."
+"What she actually needs at menopause." [BEAT] "It's not what you've been told." She needs to be asked how she's doing. Not her symptoms. Her. She needs to feel seen in her relationship, not managed. She needs to reconnect with her body without fear. To stop performing and start being honest. To know she's allowed to want more. Not more hormones. More life. And nobody's prescribing that."
 
 **Text on screen:** "Medicine handles one part. The body holds the rest."
 
@@ -431,14 +431,14 @@ One without the other isn't enough.
 
 ## Reel 13: "Hot Take: Desire Is Not Just Physical"
 
-**Hook:** "Hot take: if you think desire is just a physical thing, you're missing most of the picture."
+**Hook:** "Everyone's treating your desire like a physical problem. It's not."
 
 **Script:**
-"The biopsychosocial model of sexual health says desire is biological, psychological, AND relational. All three. Equally. So when someone tells you 'just take hormones' and your desire will come back... they're addressing one third of the picture. What about the relationship that feels like logistics? The body image that took a hit? The years of not being asked what YOU want?"
+"Everyone's treating your desire like a physical problem. It's not." [BEAT] "A woman sat across from me last month. She'd had every test. Every blood panel. Every hormone checked. Everything came back 'normal.' And she cried. Because she still didn't want to be touched. You know what had changed? Her partner hadn't asked her a real question in three years. She hadn't felt beautiful since her forties. And nobody, not one doctor, had asked how she felt about herself. Desire isn't just biological. It's psychological. It's relational. Treat one without the others and nothing moves."
 
 **Text on screen:** "Desire is bio + psycho + social."
 
-**CTA:** "Which third needs the most work for you?"
+**CTA:** "Which part needs the most work for you?"
 
 **Blog:**
 
@@ -469,7 +469,7 @@ The real work is holistic. Body, mind, and the space between two people.
 **Hook:** "Things your menopause doctor might not have time to tell you."
 
 **Script:**
-"Your hot flashes are real. Here's HRT. But also... your relationship might need attention. Your nervous system might need regulation. Your body might need to be touched with tenderness, not just examined. Your desire might need more than a prescription. It might need permission. Medicine is essential. But it's not the whole story."
+"Things your menopause doctor might not have time to tell you." [BEAT] "Your hot flashes are real. Here's HRT. But also... your relationship might need attention. Your nervous system might need regulation. Your body might need to be touched with tenderness, not just examined." [BEAT] "Your desire might need more than a prescription. It might need permission. Medicine is essential. But it's not the whole story. And someone should have told you that a long time ago."
 
 **Text on screen:** "Medicine is essential. But it's not the whole story."
 
@@ -497,10 +497,10 @@ Your doctor handles the medical piece. And they should. But you deserve someone 
 
 ## Reel 15: "She Doesn't Need Fixing"
 
-**Hook:** "She doesn't need fixing. She needs understanding."
+**Hook:** "Of course you feel this way. Everything you're experiencing makes sense."
 
 **Script:**
-"A woman comes to me and says something is wrong. I look at her life. She's carrying the mental load. She hasn't been touched with tenderness in months. She's exhausted. And she thinks the problem is her hormones. Maybe partly. But what she really needs isn't a fix. It's someone to say: of course you feel this way. Everything you're experiencing makes sense."
+"Of course you feel this way. Everything you're experiencing makes sense." [BEAT] "I need you to hear that before anything else." A woman comes to me and says something is wrong. I look at her life. She's carrying the mental load. She hasn't been touched with tenderness in months. She's exhausted. And she thinks the problem is her hormones. Maybe partly. But what she really needs isn't a fix. It's someone to finally say: you're not broken. You're overwhelmed. And there's a difference."
 
 **Text on screen:** "Of course you feel this way."
 
@@ -528,10 +528,10 @@ That's where the real healing begins.
 
 ## Reel 16: "Hormones Are Real. So Is Everything Else."
 
-**Hook:** "Hormones are real. But so is everything else."
+**Hook:** "They checked your bloods. They checked your hormones. They checked your thyroid."
 
 **Script:**
-"Yes, oestrogen drops at menopause. Yes, that causes real symptoms. Yes, HRT helps. AND... your relationship changed. Your identity shifted. Your body feels unfamiliar. Your nervous system is fried. Hormones are one chapter. But your story has twenty. Don't let anyone reduce you to a blood test."
+"They checked your bloods. They checked your hormones. They checked your thyroid." [BEAT] "But nobody checked... how you're actually doing." Yes, oestrogen drops at menopause. Yes, that causes real symptoms. Yes, HRT helps. AND... your relationship changed. Your identity shifted. Your nervous system is fried. Hormones are one chapter. But your story has twenty. Don't let anyone reduce you to a blood test."
 
 **Text on screen:** "Don't let anyone reduce you to a blood test."
 
@@ -565,10 +565,12 @@ Don't let anyone, not a doctor, not an influencer, not a supplement company, red
 
 ## Reel 17: "What 'Bioidentical' Actually Means"
 
-**Hook:** "Let me tell you what 'bioidentical' actually means. And what it doesn't."
+**Hook:** "You've been paying hundreds for something called 'natural.' Let me tell you what that word actually means."
 
 **Script:**
-"Bioidentical means the hormone molecule is structurally identical to what your body makes. That's it. It doesn't mean safer. It doesn't mean natural. It doesn't mean unregulated is better than regulated. Regulated bioidentical hormones exist. They've been tested. They're the ones with evidence behind them. Don't let a marketing word replace medical evidence."
+"You've been paying hundreds for something called 'natural.'" [BEAT] "Let me tell you what that word actually means." Bioidentical means the hormone molecule is structurally identical to what your body makes. That's it. It doesn't mean safer. It doesn't mean unregulated is better than regulated. Regulated bioidentical hormones exist. They've been tested. They're the ones with evidence behind them. Don't let a marketing word replace medical evidence."
+
+**Note:** This works better as a carousel.
 
 **Text on screen:** "Bioidentical is a molecule. Not a safety promise."
 
@@ -603,7 +605,7 @@ Words matter. Especially when they're being used to sell you something.
 **Hook:** "Before you Google 'menopause and low desire,' try this first."
 
 **Script:**
-"Put your hand on your belly. Close your eyes. And ask: 'What do you need?' Not what the internet says you need. Not what the supplement ad says. What does YOUR body, right now, actually need? Sometimes the answer is rest. Sometimes it's honesty. Sometimes it's a conversation you've been avoiding. Start there."
+"Before you Google 'menopause and low desire,' try this first." [BEAT] "Put your hand on your belly. Close your eyes. And ask: 'What do you need?'" Not what the internet says you need. Not what the supplement ad says. What does YOUR body, right now, actually need? Sometimes the answer is a conversation you've been avoiding for years. Start there. She already knows."
 
 **Text on screen:** "Ask HER first."
 
@@ -641,10 +643,10 @@ Your body has been talking to you the whole time. She's smarter than any algorit
 
 ## Reel 19: "The Timing Window for HRT"
 
-**Hook:** "There's a timing window for hormone therapy. Here's what the science says."
+**Hook:** "There's a window for hormone therapy. And it closes."
 
 **Script:**
-"Evidence shows that menopause hormone therapy is safest and most effective when started within 10 years of menopause, ideally before age 60. Starting later may increase cardiovascular and other risks. This isn't about urgency. It's about having the conversation with your doctor while the window is open. Don't let fear delay it. Don't let hype rush it."
+"There's a window for hormone therapy. And it closes." [BEAT] "Within 10 years of menopause. Talk to your doctor while it's open." Don't let fear delay it. Don't let hype rush it. Just have the conversation. While you still can."
 
 **Text on screen:** "Have the conversation. Within the window."
 
@@ -681,7 +683,7 @@ The decision is personal. But it should be timely and informed. Not fear-driven.
 **Hook:** "Her desire speaks a different language after 40."
 
 **Script:**
-"At 20, desire was spontaneous. It showed up uninvited. After 40? It's responsive. It needs context. Safety. Presence. A touch that says 'I see you,' not 'I want something.' This isn't dysfunction. It's evolution. And when she understands it, everything changes."
+"Her desire speaks a different language after 40." [BEAT] "And almost nobody's learned it." At 20, desire was spontaneous. It showed up uninvited. After 40? It's responsive. It needs a touch that says 'I see you' before it says 'I want you.' This isn't dysfunction. It's evolution. And when she understands it... everything changes."
 
 **Text on screen:** "Not dysfunction. Evolution."
 
@@ -714,7 +716,7 @@ It's not about getting back what she had. It's about discovering what she has no
 **Hook:** "One conversation can change everything in your relationship after menopause."
 
 **Script:**
-"She says: 'I don't feel like myself.' He hears: 'I don't want you.' What if she said instead: 'My body is changing. I need you to be patient with me. I need you to touch me like you're curious, not like you're owed something.' That one honest sentence. That's where reconnection starts."
+"One conversation can change everything in your relationship after menopause." [BEAT] "She says: 'I don't feel like myself.' He hears: 'I don't want you.'" What if she said instead: 'My body is changing. I need you to be patient with me. I need you to touch me like you're curious, not like you're owed something.'"
 
 **Text on screen:** "Curious. Not owed."
 
@@ -749,7 +751,7 @@ Start with one honest sentence. See what opens up.
 **Hook:** "If you're Googling 'why don't I want sex anymore' at 2am... stop. Listen."
 
 **Script:**
-"The internet will tell you it's your hormones. Your thyroid. A deficiency. A disorder. But the most common reason a woman over 40 loses desire? She's exhausted, unseen, and disconnected from herself. That's not a diagnosis. That's a life. And it can change."
+"If you're Googling 'why don't I want sex anymore' at 2am... stop." [BEAT] "Listen." The internet will tell you it's your hormones. Your thyroid. But the most common reason a woman over 40 loses desire? She's exhausted and unseen. That's not a diagnosis. That's a life. And it can change."
 
 **Text on screen:** "It's not a diagnosis. It's a life. And it can change."
 
