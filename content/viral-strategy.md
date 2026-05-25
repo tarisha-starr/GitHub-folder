@@ -1,4 +1,4 @@
-# Instagram Viral Growth Strategy — Tarisha Starr
+# Instagram Viral Growth Strategy ... Tarisha Starr
 
 **Niche:** Women over 40 | Desire, intimacy, body reconnection, midlife relationships
 **Goal:** Maximum reach, shares, saves, retention, and fast follower growth
@@ -19,16 +19,16 @@
 
 ### Repeating hook patterns that drive millions of views
 
-1. **"No one talks about..."** — frames your content as the secret everyone needs
-2. **"I tell my clients this and they cry..."** — authority + emotional proof
-3. **"You're not [surface story]. You're [deeper truth]."** — the reframe hook
-4. **"The real reason you..."** — curiosity + shame removal
-5. **"Stop doing this if you want..."** — contrarian + actionable
-6. **"Things I wish I knew at 40..."** — age-specific relatability
-7. **"This is what [pain] actually looks like..."** — normalisation hook
-8. **"One thing that changed my [marriage/desire/body]..."** — transformation hook
-9. **"If you [common behaviour], read this..."** — self-selection hook
-10. **"She said '...' and I said '...'"** — dialogue hook (story format)
+1. **"No one talks about..."**, frames your content as the secret everyone needs
+2. **"I tell my clients this and they cry..."**, authority + emotional proof
+3. **"You're not [surface story]. You're [deeper truth]."**, the reframe hook
+4. **"The real reason you..."**, curiosity + shame removal
+5. **"Stop doing this if you want..."**, contrarian + actionable
+6. **"Things I wish I knew at 40..."**, age-specific relatability
+7. **"This is what [pain] actually looks like..."**, normalisation hook
+8. **"One thing that changed my [marriage/desire/body]..."**, transformation hook
+9. **"If you [common behaviour], read this..."**, self-selection hook
+10. **"She said '...' and I said '...'"**, dialogue hook (story format)
 
 ---
 
@@ -72,7 +72,7 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 
 ### Pillar 1: THE MIRROR (40% of content)
 **Purpose:** Reach + shares + saves
-**What it is:** You name her exact experience. She feels caught.
+**What it's about:** You name her exact experience. She feels caught.
 **Format:** Text-on-image, talking head with hook overlay, or carousel
 **Examples:**
 - "The loneliest place can be next to someone you love."
@@ -80,7 +80,7 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 
 ### Pillar 2: THE REFRAME (25% of content)
 **Purpose:** Authority + saves + comments
-**What it is:** Take a belief she holds ("I'm broken," "I've lost my desire") and replace it with a deeper truth.
+**What it's about:** Take a belief she holds ("I'm broken," "I've lost my desire") and replace it with a deeper truth.
 **Format:** Short Reel (15-30s), carousel with before/after belief, or single image
 **Examples:**
 - "You don't hate your body. You've stopped listening to her."
@@ -88,7 +88,7 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 
 ### Pillar 3: THE STORY (15% of content)
 **Purpose:** Watch time + retention + trust
-**What it is:** A client story (anonymised), a personal story, or a "things I see in my work" narrative.
+**What it's about:** A client story (anonymised), a personal story, or a "things I see in my work" narrative.
 **Format:** Talking head Reel (30-60s), multi-slide carousel, or caption-heavy image post
 **Examples:**
 - "A client came to me and said 'I think I want more'... like it was a confession."
@@ -96,7 +96,7 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 
 ### Pillar 4: THE PRACTICE (10% of content)
 **Purpose:** Saves + DMs + email leads
-**What it is:** A micro-practice, prompt, or exercise she can do right now.
+**What it's about:** A micro-practice, prompt, or exercise she can do right now.
 **Format:** Carousel (step-by-step), Reel with guided instruction, or journal prompt image
 **Examples:**
 - "Tonight, put your hand on your belly and ask: 'How are you doing, darling?'"
@@ -104,7 +104,7 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 
 ### Pillar 5: THE SPARK (10% of content)
 **Purpose:** Shares + reach + new audience
-**What it is:** A short, polarising, or trending-format post that introduces your world to new people.
+**What it's about:** A short, polarising, or trending-format post that introduces your world to new people.
 **Format:** Trending audio Reel, meme-style text post, or hot take
 **Examples:**
 - Trending audio + text: "Things that are normal but shouldn't be: ignoring your body for 20 years and wondering why she shut down"
@@ -196,9 +196,9 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 ## 8. Comment and DM Strategy
 
 ### Comment triggers (baked into every post)
-- **Keyword CTAs:** "Comment 'me' if this is you" — drives comment count AND enables DM automation
-- **This-or-that questions:** "Body or head... where do you live most?" — low barrier, high engagement
-- **Confession prompts:** "When did you stop choosing yourself?" — vulnerable answers = longer comments = algorithm boost
+- **Keyword CTAs:** "Comment 'me' if this is you", drives comment count AND enables DM automation
+- **This-or-that questions:** "Body or head... where do you live most?", low barrier, high engagement
+- **Confession prompts:** "When did you stop choosing yourself?", vulnerable answers = longer comments = algorithm boost
 
 ### DM funnel
 1. Keyword comment triggers automated DM (via ManyChat or similar)
@@ -217,11 +217,11 @@ Post from these five pillars in rotation. Each one serves a different algorithmi
 - **Comment on 20 accounts daily** in adjacent niches. Not spam. Real, thoughtful comments that make people tap your profile.
 
 ### Algorithm signals to prioritise
-1. **Saves** — the #1 signal for reach in 2025-2026. Design for saves.
-2. **Shares** — sends your content to new audiences. Design for "send to a friend."
-3. **Watch time** — for Reels. Keep them short and re-watchable.
-4. **Comments** — longer comments signal deep engagement. Ask questions that require real answers.
-5. **Profile visits** — strong hooks + curiosity gaps drive profile taps.
+1. **Saves**, the #1 signal for reach in 2025-2026. Design for saves.
+2. **Shares**, sends your content to new audiences. Design for "send to a friend."
+3. **Watch time**, for Reels. Keep them short and re-watchable.
+4. **Comments**, longer comments signal deep engagement. Ask questions that require real answers.
+5. **Profile visits**, strong hooks + curiosity gaps drive profile taps.
 
 ---
 

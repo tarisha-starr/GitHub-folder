@@ -1,4 +1,4 @@
-# Instagram Growth Audit & Optimization — Tarisha Starr
+# Instagram Growth Audit & Optimisation ... Tarisha Starr
 
 **Niche:** Women over 40 | Desire, intimacy, body, midlife
 **Objective:** Identify what's limiting reach and deliver specific improvements
@@ -77,12 +77,12 @@
 
 ### Hook improvements
 
-**Current hooks (strong):** "You're not broken. You're exhausted." — This works. Keep it.
+**Current hooks (strong):** "You're not broken. You're exhausted.", This works. Keep it.
 
 **Hooks to add:**
-- More question hooks: "When did love become logistics?" — Questions create mental engagement.
-- More "stop" hooks: "Stop trying to fix your desire." — Pattern interrupts stop the scroll.
-- More numbered hooks: "3 things your body..." — Numbers create completion drive.
+- More question hooks: "When did love become logistics?", Questions create mental engagement.
+- More "stop" hooks: "Stop trying to fix your desire.", Pattern interrupts stop the scroll.
+- More numbered hooks: "3 things your body...", Numbers create completion drive.
 - More "unpopular opinion" hooks: Forces engagement (agree/disagree).
 
 ### Caption structure improvements
@@ -105,7 +105,7 @@
 
 ---
 
-## Posting Schedule Optimization
+## Posting Schedule Optimisation
 
 ### Current: Unknown frequency
 ### Recommended: 7 posts/week + daily Stories
@@ -144,29 +144,29 @@
 
 ### Tier 1: Near-certain viral (based on niche data)
 
-1. **"The hidden cost of being the strong one"** — list build Reel. Every woman over 40 identifies as "the strong one." Universal emotional trigger + list format + comment-driving CTA.
+1. **"The hidden cost of being the strong one"**, list build Reel. Every woman over 40 identifies as "the strong one." Universal emotional trigger + list format + comment-driving CTA.
 
-2. **"Everything looks fine. That's the part that hurts."** — Text-on-screen Reel with domestic b-roll. Names the invisible pain of functional-but-disconnected relationships. Extremely shareable.
+2. **"Everything looks fine. That's the part that hurts."**, Text-on-screen Reel with domestic b-roll. Names the invisible pain of functional-but-disconnected relationships. Extremely shareable.
 
-3. **"You can love him and still feel lonely."** — Single-line image post. Seven words that summarise what millions of women feel. Screenshot-and-share format.
+3. **"You can love him and still feel lonely."**, Single-line image post. Seven words that summarise what millions of women feel. Screenshot-and-share format.
 
-4. **"The woman you miss is still in there."** — 15s Reel. Hope is the most shareable emotion. Simple, warm, re-watchable.
+4. **"The woman you miss is still in there."**, 15s Reel. Hope is the most shareable emotion. Simple, warm, re-watchable.
 
 ### Tier 2: High potential (strong patterns)
 
-5. **"Stop trying to fix your sex life. Start listening to your body."** — Pattern interrupt Reel. Contrarian + practical.
+5. **"Stop trying to fix your sex life. Start listening to your body."**, Pattern interrupt Reel. Contrarian + practical.
 
-6. **"3 things your body is telling you that you've been ignoring"** — Carousel. Numbered format + body-awareness content + save-driving.
+6. **"3 things your body is telling you that you've been ignoring"**, Carousel. Numbered format + body-awareness content + save-driving.
 
-7. **"Unpopular opinion: most low desire isn't low desire. It's a smart body protecting herself."** — Hot take Reel. Debate-worthy + reframe.
+7. **"Unpopular opinion: most low desire isn't low desire. It's a smart body protecting herself."**, Hot take Reel. Debate-worthy + reframe.
 
-8. **"One honest sentence can change the whole room."** — Carousel with example sentences. Practical + hopeful.
+8. **"One honest sentence can change the whole room."**, Carousel with example sentences. Practical + hopeful.
 
 ### Tier 3: Growth accelerators
 
-9. **"This page is for the woman who loves deeply but has forgotten how to receive."** — Community-defining Reel. Post at growth milestones. Drives follows and shares.
+9. **"This page is for the woman who loves deeply but has forgotten how to receive."**, Community-defining Reel. Post at growth milestones. Drives follows and shares.
 
-10. **"Things I wish someone had told me at 40"** — List Reel with trending audio. Age-specific content always performs in this demo.
+10. **"Things I wish someone had told me at 40"**, List Reel with trending audio. Age-specific content always performs in this demo.
 
 ---
 

@@ -1,4 +1,4 @@
-# Caption & Comment Strategy — Tarisha Starr
+# Caption & Comment Strategy ... Tarisha Starr
 
 **Niche:** Women over 40 | Desire, intimacy, body, midlife
 **Designed for:** Watch time, comments, shares, saves
@@ -31,9 +31,9 @@ When was the last time someone asked what YOU need?
 ### Template 2: The "She Said / I Said" (Story format)
 
 ```
-[Client quote — make it raw and specific]
+[Client quote, make it raw and specific]
 
-[Your response — the reframe, the truth, the permission]
+[Your response, the reframe, the truth, the permission]
 
 [What happened next or what it means]
 
@@ -58,7 +58,7 @@ Does this resonate? Comment 'me' if you're searching too.
 
 [Explain it. Keep it to 2-3 sentences.]
 
-[Soften with empathy — one sentence]
+[Soften with empathy, one sentence]
 
 [CTA]
 ```
@@ -90,7 +90,7 @@ You don't hate your body. You've just stopped listening to her.
 
 She's been sending signals for years. The tension. The exhaustion. The numbness. Those aren't failures. They're messages.
 
-What is she trying to tell you?
+What's she trying to tell you?
 
 ---
 
@@ -145,9 +145,9 @@ How many did you check off? Drop the number.
 ### Template 7: The "Practice" (Save-worthy)
 
 ```
-[Invitation — gentle, warm]
+[Invitation, gentle, warm]
 
-[The practice — step by step, simple]
+[The practice, step by step, simple]
 
 [What might come up]
 
@@ -274,7 +274,7 @@ Use keyword CTAs to drive both comments AND DM automation.
 | 'exhausted' | Burnout, emotional labour | "3 things your body needs when you're running on empty" |
 | 'connection' | Relationship, intimacy | "The one question that shifts disconnected couples" |
 | 'honest' | Desire, performing, truth | "A short guide to honest intimacy" |
-| 'enough' | Self-worth, body image | "You are enough. Here's how to start believing it" |
+| 'enough' | Self-worth, body image | "You're enough. Here's how to start believing it" |
 | 'waiting' | Self-reclamation, hope | "She's still in there. Here's how to find her" |
 | 'body' | Somatic, embodiment | "3 body practices you can do tonight" |
 | 'more' | Desire, wanting, permission | "You're allowed to want more. Start here" |

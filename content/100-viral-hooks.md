@@ -1,4 +1,4 @@
-# 100 Viral Hooks — Tarisha Starr
+# 100 Viral Hooks ... Tarisha Starr
 
 **Niche:** Women over 40 | Desire, intimacy, body, midlife relationships
 **Designed for:** Maximum views, retention, shares, saves

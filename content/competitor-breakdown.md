@@ -1,4 +1,4 @@
-# Competitor Content Breakdown — Tarisha Starr
+# Competitor Content Breakdown ... Tarisha Starr
 
 **Niche:** Women over 40 | Desire, intimacy, body, midlife relationships
 **Purpose:** Reverse engineer what works, then build a stronger version
@@ -15,8 +15,8 @@
 - Never give advice directly. They reframe so the insight feels self-discovered.
 
 **Best performing content patterns:**
-- "Things I tell my clients" — 15-20s talking head, one idea, mic-drop ending
-- Client dialogue format: "She said... I said..." — creates a mini-story
+- "Things I tell my clients", 15-20s talking head, one idea, mic-drop ending
+- Client dialogue format: "She said... I said...", creates a mini-story
 - Controversial reframes: "The problem isn't communication. It's that you're communicating with the wrong person... yourself."
 
 **Why it goes viral:**
@@ -48,8 +48,8 @@
 - Content themes: menopause, hormones, fatigue, identity shift, empty nest
 
 **Best performing content patterns:**
-- "Things I wish I knew at 40/45/50" — list format, text on screen
-- "This is normal" posts — naming symptoms she's been googling at 2am
+- "Things I wish I knew at 40/45/50", list format, text on screen
+- "This is normal" posts, naming symptoms she's been googling at 2am
 - Before/after identity posts: who she was vs who she's becoming
 
 **Why it goes viral:**
@@ -82,7 +82,7 @@
 
 **Best performing content patterns:**
 - Guided micro-practices: "put your hand here, breathe, ask your body..."
-- "This is what it looks like when she comes back to herself" — aspirational
+- "This is what it looks like when she comes back to herself", aspirational
 - Dance/movement Reels with a vulnerability overlay
 
 **Why it goes viral:**
@@ -114,9 +114,9 @@
 - Normalise conflict, repair, and the un-glamorous parts of long-term love
 
 **Best performing content patterns:**
-- "The real reason couples stop having sex" — curiosity hook + taboo topic
+- "The real reason couples stop having sex", curiosity hook + taboo topic
 - POV Reels: "POV: you finally said what you've been holding back"
-- "What she means when she says 'I'm fine'" — decode emotional language
+- "What she means when she says 'I'm fine'", decode emotional language
 
 **Why it goes viral:**
 - Partners share these with each other: "watch this"
@@ -147,9 +147,9 @@
 - Position themselves against mainstream advice
 
 **Best performing content patterns:**
-- "Unpopular opinion: [reframe]" — debate trigger
-- "I'm going to say something that might upset you..." — open loop + controversy
-- "The lie you've been told about [topic]" — myth-busting
+- "Unpopular opinion: [reframe]", debate trigger
+- "I'm going to say something that might upset you...", open loop + controversy
+- "The lie you've been told about [topic]", myth-busting
 
 **Why it goes viral:**
 - Controversy drives comments, comments drive reach

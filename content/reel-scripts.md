@@ -1,16 +1,16 @@
-# Reel Scripts — Tarisha Starr
+# Reel Scripts ... Tarisha Starr
 
 **Designed for:** High watch time, retention, shares, and saves
 **Voice:** Conversational, direct, raw, warm. Coach talking to a friend.
 
 ---
 
-## Script 1: "You're Not Broken" (15s — The Signature Reframe)
+## Script 1: "You're Not Broken" (15s, The Signature Reframe)
 
-**[HOOK — First 3 seconds, text on screen immediately]**
+**[HOOK: First 3 seconds, text on screen immediately]**
 "You're not broken."
 
-**[BEAT — 1 second pause, eye contact]**
+**[BEAT: 1 second pause, eye contact]**
 
 **[BUILD]**
 "You're exhausted. From holding everything together. From being needed by everyone and chosen by no one. Including yourself."
@@ -24,18 +24,18 @@
 
 ---
 
-## Script 2: "The Confession" (30s — The Story Hook)
+## Script 2: "The Confession" (30s, The Story Hook)
 
-**[HOOK — Text on screen + spoken]**
+**[HOOK: Text on screen + spoken]**
 "A client said something last week that stopped me cold."
 
-**[OPEN LOOP — 3 seconds]**
+**[OPEN LOOP: 3 seconds]**
 "She whispered it. Like she was admitting something dangerous."
 
 **[REVEAL]**
 "She said... 'I think I want more.'"
 
-**[BEAT — Let it land]**
+**[BEAT: Let it land]**
 
 **[REFRAME]**
 "More pleasure. More closeness. More of herself. And she said it like a confession. Like wanting more made her selfish."
@@ -49,9 +49,9 @@
 
 ---
 
-## Script 3: "Everything Looks Fine" (20s — The Mirror)
+## Script 3: "Everything Looks Fine" (20s, The Mirror)
 
-**[HOOK — Text appears first, then voice]**
+**[HOOK: Text appears first, then voice]**
 "Everything looks fine."
 
 **[BEAT]**
@@ -71,12 +71,12 @@
 
 ---
 
-## Script 4: "Stop Fixing" (15s — The Pattern Interrupt)
+## Script 4: "Stop Fixing" (15s, The Pattern Interrupt)
 
-**[HOOK — Bold, direct, text + voice simultaneously]**
+**[HOOK: Bold, direct, text + voice simultaneously]**
 "Stop trying to fix your sex life."
 
-**[BEAT — 2 seconds. Let the discomfort land.]**
+**[BEAT: 2 seconds. Let the discomfort land.]**
 
 **[REFRAME]**
 "Start listening to your body instead. She's not broken. She's been screaming. And no one listened."
@@ -90,23 +90,23 @@
 
 ---
 
-## Script 5: "When Did You Stop?" (25s — The Question That Haunts)
+## Script 5: "When Did You Stop?" (25s, The Question That Haunts)
 
-**[HOOK — Whispered, close to camera]**
+**[HOOK: Whispered, close to camera]**
 "I ask my clients one question that makes almost all of them cry."
 
-**[OPEN LOOP — Hold eye contact]**
+**[OPEN LOOP: Hold eye contact]**
 "It's not about sex. It's not about their partner."
 
-**[REVEAL — Slower pace]**
+**[REVEAL: Slower pace]**
 "I ask: 'When did you stop choosing yourself?'"
 
-**[BEAT — 3 full seconds of silence]**
+**[BEAT: 3 full seconds of silence]**
 
 **[BUILD]**
 "And the answer is always the same. 'Years ago.' And the worst part? No one noticed. Not even her."
 
-**[CLOSE — Gentle]**
+**[CLOSE: Gentle]**
 "If you're watching this, I notice. And it's not too late."
 
 **[TEXT ON SCREEN]** Say with me: "I choose me."
@@ -115,9 +115,9 @@
 
 ---
 
-## Script 6: "Performing" (20s — The Uncomfortable Truth)
+## Script 6: "Performing" (20s, The Uncomfortable Truth)
 
-**[HOOK — Text on screen, direct delivery]**
+**[HOOK: Text on screen, direct delivery]**
 "Maybe you're not tired of sex."
 
 **[BEAT]**
@@ -137,12 +137,12 @@
 
 ---
 
-## Script 7: "The Strong One" (35s — The Emotional Build)
+## Script 7: "The Strong One" (35s, The Emotional Build)
 
-**[HOOK — Calm but loaded]**
+**[HOOK: Calm but loaded]**
 "Can we talk about the hidden cost of being the strong one?"
 
-**[BUILD — Each line a separate beat, text appears line by line]**
+**[BUILD: Each line a separate beat, text appears line by line]**
 "You carry the mental load."
 "You manage everyone's feelings."
 "You solve the problems no one sees."
@@ -150,7 +150,7 @@
 "You hold your relationship together."
 "You hold yourself together."
 
-**[TURN — Voice drops]**
+**[TURN: Voice drops]**
 "And somewhere along the way, you stopped asking for help. Not because you didn't need it. Because you forgot you were allowed to."
 
 **[CLOSE]**
@@ -162,9 +162,9 @@
 
 ---
 
-## Script 8: "Your Body Remembers" (20s — The Somatic Truth)
+## Script 8: "Your Body Remembers" (20s, The Somatic Truth)
 
-**[HOOK — Low voice, close to camera]**
+**[HOOK: Low voice, close to camera]**
 "Your body remembers everything you pretend to forget."
 
 **[BUILD]**
@@ -176,15 +176,15 @@
 **[CLOSE]**
 "And the only way through... is to start listening."
 
-**[TEXT ON SCREEN]** What is your body trying to tell you?
+**[TEXT ON SCREEN]** What's your body trying to tell you?
 
 **Format notes:** This one needs stillness. Slow zoom in. Minimal music. The content is heavy enough. Let the words do the work.
 
 ---
 
-## Script 9: "Still In There" (15s — The Hope Shot)
+## Script 9: "Still In There" (15s, The Hope Shot)
 
-**[HOOK — Warm, full eye contact, small smile]**
+**[HOOK: Warm, full eye contact, small smile]**
 "The woman you miss?"
 
 **[BEAT]**
@@ -192,7 +192,7 @@
 **[REVEAL]**
 "She's still in there. Under the to-do lists. Under the exhaustion. Under the years of putting herself last."
 
-**[CLOSE — Leaning in]**
+**[CLOSE: Leaning in]**
 "She didn't leave. She's just been waiting for you to come find her."
 
 **[TEXT ON SCREEN]** Comment 'still here' if you know she's in there.
@@ -201,12 +201,12 @@
 
 ---
 
-## Script 10: "The Page Is For You" (30s — The Community Builder)
+## Script 10: "The Page Is For You" (30s, The Community Builder)
 
-**[HOOK — Direct, grounded]**
+**[HOOK: Direct, grounded]**
 "This page is for a very specific woman."
 
-**[BUILD — Each line layers]**
+**[BUILD: Each line layers]**
 "She loves deeply but has forgotten how to receive."
 "She takes care of everyone but hasn't been taken care of in years."
 "She's loyal. Tired. Invisible. And still showing up."
@@ -214,7 +214,7 @@
 **[TURN]**
 "She's been told she's too sensitive, too needy, too much. When the truth is... she's been too quiet about what she actually needs."
 
-**[CLOSE — Invitation]**
+**[CLOSE: Invitation]**
 "If that's you... you're home now. Follow this page. Share it with someone who needs it."
 
 **[TEXT ON SCREEN]** Tag a woman who needs to hear this.
