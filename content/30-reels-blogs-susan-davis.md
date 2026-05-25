@@ -23,9 +23,9 @@
 
 I hear this all the time. "I hit menopause and lost my sex drive."
 
-And I get it. It FEELS like that's what happened. But here's what the science actually tells us.
+And I get it. It FEELS like that's what happened. But the science tells a different story.
 
-Professor Susan Davis, one of the world's leading researchers on women's hormones, has spent decades studying this. Her research shows that testosterone, the hormone everyone talks about when it comes to desire, doesn't suddenly drop at menopause. It declines gradually from your twenties onwards.
+Professor Susan Davis, one of the world's leading researchers on women's hormones, has spent decades studying this. Her findings are clear: testosterone, the hormone everyone talks about when it comes to desire, doesn't suddenly drop at menopause. It declines gradually from your twenties onwards.
 
 So what actually changed?
 
@@ -270,11 +270,11 @@ I want to reframe something that I hear from almost every woman I work with.
 
 "Something is wrong with my body."
 
-But here's what the research shows. Your testosterone has been gradually declining since your twenties. That's not a menopause event. That's a lifespan pattern. Your oestrogen does shift more dramatically at menopause, and that brings real symptoms that deserve real treatment.
+But the data paints a different picture. Your testosterone has been gradually declining since your twenties. That's not a menopause event. That's a lifespan pattern. Your oestrogen does shift more dramatically at menopause, and that brings real symptoms that deserve real treatment.
 
 But the narrative that your body "broke" at menopause? That's not science. That's a story. And it's one that makes you feel powerless.
 
-Professor Susan Davis's research shows that the hormonal changes of midlife are part of a complex picture that includes ageing, lifestyle, stress, relationship dynamics, and mental health. It's never just one thing.
+Professor Susan Davis's research confirms that the hormonal changes of midlife are part of a complex picture that includes ageing, lifestyle, stress, relationship dynamics, and mental health. It's never just one thing.
 
 Your body at 50 isn't the same body you had at 30. She shouldn't be. She's adapted to decades of living, of stress, of birth, of caregiving, of grief, of joy. She's not broken. She's experienced.
 
@@ -336,7 +336,7 @@ When a woman comes to me and says "I've lost my desire," the first thing I don't
 
 Not because hormones don't matter. They do. But because the research is very clear that they're not the whole picture, and they're often not even the main picture.
 
-Professor Susan Davis's research shows that psychosocial factors play a massive role in sexual desire. Relationship quality. Body image. Stress. Self-image as a sexual being. Mental health.
+Professor Susan Davis's research makes this unmistakable: psychosocial factors play a massive role in sexual desire. Relationship quality. Body image. Stress. Self-image as a sexual being. Mental health.
 
 One study found that sexual self-image dysfunction, how she feels about herself as a desirable, sexual person, was the strongest predictor of sexual distress. Not hormone levels.
 
@@ -411,7 +411,7 @@ A woman at menopause might need:
 - Screening for cardiovascular risk factors
 - Evaluation for HSDD if desire loss causes significant distress
 
-Professor Susan Davis's research supports all of this. Regulated, evidence-based, personalised.
+The evidence supports all of this. Regulated, evidence-based, personalised.
 
 **But she also needs:**
 - Someone to ask how she's actually doing. Not "how are your hot flashes?" but "how are YOU?"
@@ -450,7 +450,7 @@ There's a model in sexual health called the biopsychosocial model. It says that 
 2. **Psychological:** Stress, depression, anxiety, body image, sexual self-concept
 3. **Social/relational:** Relationship quality, communication, feeling seen, history of intimacy
 
-Professor Susan Davis and her colleagues have championed this approach. Their research consistently shows that you can't isolate one factor and expect the whole picture to change.
+Leading researchers, including Professor Susan Davis, have championed this approach. The evidence is consistent: you can't isolate one factor and expect the whole picture to change.
 
 And yet that's exactly what most of the menopause conversation does. It focuses almost exclusively on hormones.
 
@@ -483,7 +483,7 @@ Your doctor is probably doing their best. A 15-minute appointment isn't enough t
 
 So here's what they might not have time to say.
 
-**They might not say:** "Your relationship dynamics affect your desire as much as your hormones do." The research from Professor Susan Davis and others shows that relationship quality is a major predictor of sexual satisfaction. If you feel invisible, unappreciated, or emotionally alone in your relationship... hormones alone won't fix that.
+**They might not say:** "Your relationship dynamics affect your desire as much as your hormones do." The data is clear: relationship quality is a major predictor of sexual satisfaction. If you feel invisible, unappreciated, or emotionally alone in your relationship... hormones alone won't fix that.
 
 **They might not say:** "Your nervous system needs attention too." Decades of stress, emotional labour, and hypervigilance put your nervous system in a state where desire simply can't emerge. Safety comes first. Always.
 
@@ -518,7 +518,7 @@ Because the piece that's missing isn't medical. It's this: nobody has said to he
 
 She's not broken. She's exhausted from carrying an invisible load. She's disconnected from her body because nobody taught her to stay connected through decades of giving. She's lost touch with desire because desire needs safety, attention, and a sense of self, all things that got buried under years of being needed.
 
-Professor Susan Davis's biopsychosocial approach to sexual health validates this. It's never just biology. It's always biology AND psychology AND relationship AND context.
+The biopsychosocial approach to sexual health validates this. It's never just biology. It's always biology AND psychology AND relationship AND context.
 
 When a woman hears "you're not broken, you make sense," something shifts. The shame lifts. The self-blame softens. And for the first time in years, she starts listening to her body instead of fighting her.
 
@@ -543,7 +543,7 @@ That's where the real healing begins.
 
 I'm not anti-hormone. Let me be clear about that.
 
-Oestrogen declines at menopause. That's a biological fact. It causes real symptoms, hot flashes, night sweats, vaginal dryness, sleep disruption, and those symptoms deserve evidence-based treatment. MHT works. Professor Susan Davis's research supports it.
+Oestrogen declines at menopause. That's a biological fact. It causes real symptoms, hot flashes, night sweats, vaginal dryness, sleep disruption, and those symptoms deserve evidence-based treatment. MHT works. The evidence is solid.
 
 But.
 
@@ -588,7 +588,7 @@ Here's what it DOESN'T mean: safer, more natural, or better than other options.
 
 The confusion comes from compounding pharmacies and wellness brands that use "bioidentical" to market unregulated hormone formulations as superior to regulated medications. They imply that regulated hormones are "synthetic" and "unnatural" while their products are "personalised to your body."
 
-Professor Susan Davis has called this misleading. Compounded hormones lack the quality control, batch consistency, and clinical testing of regulated medications. Some formulations have been linked to endometrial cancer because they don't always include adequate progesterone.
+Leading endocrinologists have called this misleading. Compounded hormones lack the quality control, batch consistency, and clinical testing of regulated medications. Some formulations have been linked to endometrial cancer because they don't always include adequate progesterone.
 
 Here's the bottom line:
 - Bioidentical refers to the hormone structure. Many regulated products are bioidentical.
@@ -621,7 +621,7 @@ So you Google it. And Google gives you 47 possible hormone deficiencies, 12 supp
 
 But here's what Google can't do: listen to YOUR body.
 
-The evidence-based approach to women's health is biopsychosocial. That means biology matters, but so does your psychology and your relational world. Professor Susan Davis's research consistently shows that psychosocial factors are powerful drivers of sexual health.
+The evidence-based approach to women's health is biopsychosocial. That means biology matters, but so does your psychology and your relational world. The data consistently confirms that psychosocial factors are powerful drivers of sexual health.
 
 So before you spiral into WebMD, try this.
 
@@ -672,7 +672,7 @@ Starting AFTER this window (more than 10 years post-menopause or after age 60) m
 
 This doesn't mean you should panic and rush to get a prescription. It means you should have the conversation with your doctor while the window is open.
 
-Professor Susan Davis and other experts recommend that transdermal oestradiol (patches, gels) at low to moderate doses is generally preferred when cardiovascular or blood clot risk is a concern.
+Leading experts recommend that transdermal oestradiol (patches, gels) at low to moderate doses is generally preferred when cardiovascular or blood clot risk is a concern.
 
 The decision is personal. But it should be timely and informed. Not fear-driven. Not hype-driven. Just honest.
 
@@ -699,7 +699,7 @@ At 20, desire was largely spontaneous. It showed up without being asked. Hormone
 
 After 40, desire shifts. For most women, it becomes responsive. It doesn't just appear. It needs to be invited. Through safety. Through presence. Through touch that feels like connection, not obligation.
 
-This isn't a disorder. It's a well-documented shift in how desire operates across the lifespan. Professor Susan Davis's research supports this understanding: desire in midlife is complex, influenced by hormones, relationship quality, stress, and self-image.
+This isn't a disorder. It's a well-documented shift in how desire operates across the lifespan. The research is clear: desire in midlife is complex, influenced by hormones, relationship quality, stress, and self-image.
 
 The problem isn't that her desire changed. The problem is that nobody told her it would. So she compares herself to who she was at 25 and assumes something broke.
 
@@ -726,7 +726,7 @@ It's not about getting back what she had. It's about discovering what she has no
 
 ### One Conversation That Changes Everything
 
-The research is clear that relationship quality is one of the strongest predictors of sexual satisfaction in midlife. But most couples never have the conversation that could shift everything.
+Relationship quality is one of the strongest predictors of sexual satisfaction in midlife. The data on this is unambiguous. But most couples never have the conversation that could shift everything.
 
 Here's how it usually goes:
 
@@ -740,7 +740,7 @@ And what if he could hear that without making it about him?
 
 That one conversation, honest, vulnerable, specific, is often the turning point. Not hormones. Not therapy. Just two people being brave enough to say what's actually happening.
 
-Professor Susan Davis's biopsychosocial framework validates this: the relational piece is as important as the biological one. You can optimise every hormone in her body, but if the relationship dynamic doesn't shift, desire often stays dormant.
+The biopsychosocial framework validates this: the relational piece is as important as the biological one. You can optimise every hormone in her body, but if the relationship dynamic doesn't shift, desire often stays dormant.
 
 Start with one honest sentence. See what opens up.
 
@@ -785,14 +785,14 @@ That's a better starting point than any search result.
 
 ## Reel 23: "The Myth of the 'Normal' Sex Drive"
 
-**Hook:** "There's no such thing as a 'normal' sex drive."
+**Hook:** "There's no 'normal' sex drive."
 
 **Script:**
-"High desire is normal. Low desire is normal. Fluctuating desire is normal. Desire that changes with age, relationships, and stress is normal. What's NOT normal is a world that tells you there's one right way to want. If your low desire doesn't cause you distress... it's not a disorder. It's just you, right now."
+"There's no 'normal' sex drive." [BEAT] "There's YOUR sex drive. And she changes." She changes with age. With relationships. With stress. With how safe you feel in your own skin. What's NOT normal is a world that tells you there's one right way to want. If your low desire doesn't cause you distress... it's not a disorder. It's just you, right now. And that's allowed."
 
 **Text on screen:** "If it doesn't distress you, it's not a disorder."
 
-**CTA:** "Comment 'normal' if you needed permission."
+**CTA:** "Comment 'allowed' if you needed permission."
 
 **Blog:**
 
@@ -823,7 +823,7 @@ Your desire is yours. It doesn't need to match anyone else's timeline.
 **Hook:** "What I wish every partner of a menopausal woman knew."
 
 **Script:**
-"Her body is changing. That's real. But what she needs from you isn't a fix. She needs you to stop taking it personally. To touch her with curiosity. To ask 'what do you need?' and actually listen. The research shows relationship quality predicts her desire more than her hormone levels. You are part of her healing."
+"What I wish every partner of a menopausal woman knew." [BEAT] "Her body is changing. That's real. But what she needs from you isn't a fix." She needs you to stop taking it personally. To touch her with curiosity, not expectation. To ask 'what do you need?' and actually listen. The research shows relationship quality predicts her desire more than her hormone levels. You're not separate from this. You're part of her healing."
 
 **Text on screen:** "You're part of her healing."
 
@@ -857,7 +857,7 @@ Professor Susan Davis's biopsychosocial model makes it clear: the partner is not
 **Hook:** "We need to talk about vaginal dryness. Without the shame."
 
 **Script:**
-"Vaginal dryness affects up to 80% of postmenopausal women. It's caused by oestrogen decline. It makes sex painful. And most women suffer in silence because they're too embarrassed to bring it up. Low-dose local vaginal oestrogen is safe, effective, and can be life-changing. Talk to your doctor. This is not something you should push through."
+"We need to talk about vaginal dryness. Without the shame." [BEAT] "It affects up to 80% of postmenopausal women. It makes sex painful. And most women suffer in silence because they're too embarrassed to bring it up." Here's what I want you to know. There's a treatment. It works. It's safe. And your doctor can prescribe it today. This is not something you should push through. Your comfort matters."
 
 **Text on screen:** "Don't push through pain. Ask for help."
 
@@ -894,7 +894,7 @@ Your comfort matters. Your pleasure matters. And no one should suffer in silence
 **Hook:** "Desire after divorce at 50 looks different. And that's beautiful."
 
 **Script:**
-"She left a marriage where she was invisible. Now she's terrified to try again. Her body feels unfamiliar. Her desire feels rusty. But here's what I see: women who rebuild desire after 50 often build something deeper than they ever had. Because this time, they build it for themselves first."
+"Desire after divorce at 50 looks different." [BEAT] "And that's beautiful." She left a marriage where she was invisible. Now she's terrified to try again. She hasn't been touched by someone new in 20 years. And that terrifies her. But here's what I see: women who rebuild desire after 50 often build something deeper than they ever had. Because this time, they build it for themselves first."
 
 **Text on screen:** "This time, build it for yourself first."
 
@@ -929,7 +929,7 @@ That's not a consolation prize. That's the real thing.
 **Hook:** "Nobody connects menopause and mental health the way they should."
 
 **Script:**
-"Depression. Anxiety. Brain fog. Irritability. These are common during the menopause transition. And they overlap with relationship distress, burnout, and identity loss. When a woman says 'I don't feel like myself,' she might need HRT. Or she might need someone to say 'tell me what's really going on.' Often, she needs both."
+"Nobody connects menopause and mental health the way they should." [BEAT] "So let me." When a woman says 'I don't feel like myself,' she's not just describing hormones. She's describing an entire identity in transition. The woman she was, the roles that defined her, the body she recognised... all shifting at once. She might need HRT. But she also might need someone to finally ask: 'Tell me what's really going on.' And mean it."
 
 **Text on screen:** "What's really going on?"
 
@@ -964,9 +964,9 @@ The mistake is treating menopause as only medical. Or only psychological. It's a
 **Hook:** "Your body image might be affecting your desire more than your hormones."
 
 **Script:**
-"Research shows that sexual self-image, how you feel about yourself as a desirable person, is one of the strongest predictors of sexual distress. Stronger than hormone levels. So if you've been avoiding the mirror, avoiding being seen, avoiding pleasure... the work isn't just medical. It's about coming home to the body you have."
+"Your body image might be affecting your desire more than your hormones." [BEAT] "If you can't look at yourself in the mirror without flinching... if you turn the lights off before he sees you... that's not a hormone problem." Research shows that sexual self-image, how you feel about yourself as a desirable person, is one of the strongest predictors of sexual distress. Stronger than hormone levels. The work isn't just medical. It's about learning to live in the body you have. With tenderness. Not war."
 
-**Text on screen:** "Come home to the body you have."
+**Text on screen:** "Learn to live in the body you have."
 
 **CTA:** "Comment 'home' if you're ready to start."
 
@@ -998,14 +998,14 @@ Your body is still capable of desire. She's just been waiting for you to see her
 
 ## Reel 29: "The Midlife Woman Isn't Disappearing"
 
-**Hook:** "The midlife woman isn't disappearing. She's becoming."
+**Hook:** "The midlife woman isn't disappearing. She's getting dangerous."
 
 **Script:**
-"Society tells her she's past her prime. That her best years are behind her. That her body is declining. But the women I work with who come through menopause with awareness? They're not less. They're more. More honest. More grounded. More alive. The research says her hormones change. I say she changes too. And it can be extraordinary."
+"The midlife woman isn't disappearing. She's getting dangerous." [BEAT] "And I mean that as a compliment." Dangerous means honest. Uncompromising. Done performing. The women I work with who come through menopause with awareness? They stop apologising. They start saying what they actually need. They leave what doesn't serve them or they rebuild it on their terms. The research says her hormones change. I say she changes too. And it can be extraordinary."
 
 **Text on screen:** "Not less. More."
 
-**CTA:** "Comment 'becoming' if this is your truth."
+**CTA:** "Comment 'dangerous' if this is your truth."
 
 **Blog:**
 
@@ -1031,14 +1031,14 @@ Menopause isn't the end. It's a threshold. And what's on the other side can be e
 
 ## Reel 30: "Evidence + Embodiment: The Full Picture"
 
-**Hook:** "You deserve evidence AND embodiment. Here's why you need both."
+**Hook:** "Tonight. Try this one thing."
 
 **Script:**
-"See your doctor for the science. Get your symptoms assessed. Consider evidence-based HRT if it's right for you. AND... come back to your body. Have the honest conversations. Rebuild your relationship with pleasure. Stop performing. Start listening. Medicine handles the biology. The body holds the rest. You deserve both."
+"Tonight. One hand on your belly. One breath. One honest question:" [BEAT] "'What do I actually want?'" Not what your partner wants. Not what the internet says you should want. What do YOU want? That's where everything begins. Not in a blood test. Not in a supplement. In that one quiet, honest moment with yourself."
 
-**Text on screen:** "You deserve both."
+**Text on screen:** "What do I actually want?"
 
-**CTA:** "Follow if you want evidence AND embodiment."
+**CTA:** "Try this tonight. Tell me what comes up."
 
 **Blog:**
 

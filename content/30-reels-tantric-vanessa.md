@@ -118,9 +118,9 @@
 
 ---
 
-### Reel 9: "Pleasure Is Not Selfish"
+### Reel 9: "Pleasure Isn't Selfish"
 
-**Hook:** "Your pleasure is not selfish. It's essential."
+**Hook:** "Your pleasure isn't selfish. It's essential."
 
 **Script:**
 "You were taught that sex is something you give. That his orgasm is the goal. That your pleasure is a bonus, not a priority. But here's what I know... when you prioritise your own pleasure, everything shifts. You're more present. More alive. But why does that feel so hard to do? It's not selfish to say 'this is what I need.' It's the most generous thing you can do. Full stop."
@@ -237,7 +237,7 @@
 
 ---
 
-### Reel 18: "Embodiment Is Not a Trend"
+### Reel 18: "Embodiment Isn't a Trend"
 
 **Hook:** "Embodiment isn't a wellness trend. It's how you meet yourself."
 
@@ -296,11 +296,11 @@
 **Hook:** "The conversation you keep avoiding is the one that will change everything."
 
 **Script:**
-"You know the one. The one about what you actually want. About what isn't working. About the distance that's grown between you. About the fact that sex has become a source of stress instead of connection. That conversation. The one you've rehearsed in the shower and swallowed at dinner. Have it. Not perfectly. Just honestly."
+"You know the one. The one about what you actually want. About what isn't working. About the fact that sex has become a source of stress instead of connection. That conversation. The one you've rehearsed in the shower and swallowed at dinner. But what if tonight was the night you stopped swallowing it? Have it tonight. Not perfectly. Just honestly."
 
 **Text on screen:** "Not perfectly. Just honestly."
 
-**CTA:** "What's the one thing you need to say? Comment below."
+**CTA:** "Drop the one thing you've been swallowing. This is a safe place to practise saying it."
 
 ---
 
@@ -309,11 +309,11 @@
 **Hook:** "Foreplay doesn't start in the bedroom. It starts at 7am."
 
 **Script:**
-"How he spoke to you at breakfast. Whether he noticed you were tired. If he took something off your plate without being asked. Whether you laughed together. Whether you felt SEEN. By the time you get to the bedroom, your body has already decided whether it feels safe enough to open. Foreplay isn't a physical act. It's how your nervous system has been treated all day."
+"How he spoke to you at breakfast. Whether he noticed you were tired. If he took something off your plate without being asked. He made you tea without asking. But here's the part most people miss... whether you felt SEEN. By the time you get to the bedroom, your body has already decided whether it feels safe enough to open. Foreplay isn't a physical act. It's how your nervous system has been treated all day."
 
 **Text on screen:** "Foreplay is how she was treated all day."
 
-**CTA:** "Send this to your partner. Seriously."
+**CTA:** "Send this to your partner. Not as a hint. As a gift."
 
 ---
 
@@ -322,11 +322,11 @@
 **Hook:** "You don't need to be fixed. You need to be felt."
 
 **Script:**
-"She doesn't need a hormone prescription to want you. She doesn't need a supplement to feel alive. She doesn't need a course to remember who she is. She needs you to look at her like she's the most interesting person in the room. She needs your hand on her back with no agenda. She needs to feel, in her body, that she matters. That's not a diagnosis. That's a relationship."
+"She doesn't need a prescription to feel alive. She needs you to look at her like she's the most interesting person in the room. She needs your hand on her back with no agenda. But do you know what she needs most? She needs to feel, in her body, that she matters. That's not a diagnosis. That's a relationship."
 
 **Text on screen:** "Look at her like she matters."
 
-**CTA:** "Comment 'felt' if this is what you've been needing."
+**CTA:** "Save this. Read it the next time you think something is wrong with her."
 
 ---
 
@@ -335,24 +335,24 @@
 **Hook:** "What happens when she stops performing in bed?"
 
 **Script:**
-"She stops making sounds she doesn't feel. She stops moving the way she thinks she should. She stops pretending it's working when it isn't. And for a moment, it's terrifying. Because what's left is her. Real. Vulnerable. Honest. And that... that is where real intimacy begins. The performance was protecting her. But it was also keeping her from being truly seen."
+"She stops making sounds she doesn't feel. She stops pretending it's working when it isn't. And for a moment, it's terrifying. Because what's left is her. Real. Vulnerable. Honest. But here's what nobody tells you about that moment... that is where real intimacy begins. The performance was protecting her from the one thing she actually needed: being seen."
 
 **Text on screen:** "When the performance stops, intimacy begins."
 
-**CTA:** "Comment 'honest' if you're ready."
+**CTA:** "Save this. Share it with a woman who's been performing and is exhausted by it."
 
 ---
 
-### Reel 26: "Desire After Kids Is Not Dead"
+### Reel 26: "Desire After Kids Isn't Dead"
 
 **Hook:** "Your desire didn't die when you had kids. It got buried."
 
 **Script:**
-"Under the night feeds. The school runs. The mental load. The 'touched out' feeling at the end of every day. Your body went from source of pleasure to milk machine, taxi service, and everyone's safe place. And somewhere in there, your own desire went underground. She's not dead. She's just been waiting for a gap in the schedule. For someone to say: 'your turn.'"
+"Under the night feeds. The mental load. The 'touched out' feeling at the end of every day. Your body went from source of pleasure to milk machine, taxi service, and everyone's safe place. And somewhere in there, your own desire went underground. But is she gone? She's not dead. She's buried under everyone else's needs. And she's waiting for someone to say: 'Your turn.'"
 
 **Text on screen:** "Her desire is waiting for: 'your turn.'"
 
-**CTA:** "Tag a mum who needs to hear this."
+**CTA:** "Tag a mum who needs to hear this. She won't say it herself."
 
 ---
 
@@ -361,11 +361,11 @@
 **Hook:** "In heterosexual relationships, he orgasms 95% of the time. She orgasms 65%. Let's talk about it."
 
 **Script:**
-"The orgasm gap isn't about anatomy. It's about attention. It's about a culture that centred his pleasure and made hers optional. It's about women who were never taught that clitoral stimulation is essential, not extra. And it's about couples who've never had a direct conversation about what actually feels good. This gap closes with communication. With curiosity. With the radical idea that her pleasure matters equally."
+"The orgasm gap isn't about anatomy. It's about attention. It's about a culture that centred his pleasure and made hers optional. It's about couples who've never had a direct conversation about what actually feels good. But here's the part nobody wants to say out loud... this gap closes the moment she feels safe enough to say 'that's not working.' That's it. Safety to speak. That's where it starts."
 
 **Text on screen:** "Her pleasure matters equally."
 
-**CTA:** "Comment 'equally' if you agree."
+**CTA:** "Save this. Share it with the partner who needs to hear 'that's not working' without flinching."
 
 ---
 
@@ -374,11 +374,11 @@
 **Hook:** "Your nervous system decides whether you want sex before your mind does."
 
 **Script:**
-"If your body is in fight or flight, if you're stressed, hypervigilant, carrying the emotional load, desire can't emerge. Your nervous system has a hierarchy. Safety first. Then connection. Then desire. You can't skip steps. So before you worry about wanting sex, ask: does my body feel safe? Does she feel held? Does she feel like she can let go? Start there."
+"If your body is in fight or flight, if you're stressed, hypervigilant, carrying the emotional load... desire can't emerge. Your nervous system has a hierarchy. Safety first. Then connection. Then desire. You can't skip steps. Right now, close your eyes for one second. Does your body feel safe? That answer tells you everything. Start there."
 
 **Text on screen:** "Safety first. Connection second. Desire third."
 
-**CTA:** "Where are you stuck? Safety, connection, or desire? Comment below."
+**CTA:** "Tell me what you felt when you closed your eyes. That's your starting point."
 
 ---
 
@@ -387,22 +387,22 @@
 **Hook:** "Intimacy is a muscle. And you haven't used it in years."
 
 **Script:**
-"You wouldn't go to the gym after 10 years off and expect to bench press your max. So why do you expect desire to show up at full strength when you haven't practised intimacy in ages? Start small. Eye contact over dinner. A genuine question. A hand held without agenda. A compliment that isn't about how she looks but about who she IS. Intimacy is built. One small, brave moment at a time."
+"You wouldn't go to the gym after 10 years off and expect to bench press your max. So why do you expect desire to show up at full strength when you haven't practised intimacy in ages? Start small. Eye contact over dinner. A hand held without agenda. But here's the one that changes everything... instead of 'you look nice,' say 'I love how your face changes when you talk about that thing you love.' Intimacy is built. One small, brave moment at a time."
 
 **Text on screen:** "Intimacy is built. Not found."
 
-**CTA:** "What's one small thing you could do tonight? Tell me."
+**CTA:** "Try that compliment tonight. Come back and tell me what happened."
 
 ---
 
 ### Reel 30: "This Is Your Invitation"
 
-**Hook:** "This is your invitation to come back to your body. To your desire. To yourself."
+**Hook:** "This is your invitation to stop long enough to feel her."
 
 **Script:**
-"You've been reading. Watching. Thinking about all of this. And that matters. But at some point, the work moves from the screen to your body. To one honest conversation. To one breath into your belly. To one moment of touching your own skin with tenderness. You don't have to do it perfectly. You just have to start. Your body has been waiting. Your desire has been waiting. YOU have been waiting. This is the invitation. Come home."
+"You've been reading. Watching. Thinking about all of this. And that matters. But at some point, the work moves from the screen to your body. To one honest conversation. To one breath into your belly. So here's your challenge... Tonight. One hand on your belly. One breath. One honest question: 'What do I actually want?' That's where everything begins. You don't have to do it perfectly. You just have to start."
 
-**Text on screen:** "Come home."
+**Text on screen:** "What do I actually want?"
 
 **CTA:** "Follow if you're ready. Share if you know someone who is."
 
