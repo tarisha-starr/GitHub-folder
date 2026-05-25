@@ -18,7 +18,7 @@ Read these files to internalise the voice, strategy, and standards:
 3. `content/hooks.md` — The hook bank for pairing and inspiration.
 4. `content/curiosity-loops-guide.md` — The 5 curiosity tools (open loops, delayed payoff, micro questions, pattern interrupts, momentum transitions), the 3-touch rule, and the non-clickbait test.
 5. `content/reel-differentiation-viral-guide.md` — 2026 algorithm data, the Tarisha reel template, production upgrades, and the DM-send formula.
-6. `content/retention-prompts.md` — The 6 audit prompts (pacing, payoff, format, MrBeast review, curiosity check, voice consistency).
+6. `content/retention-prompts.md` — 10 audit prompts: pacing audit (1), payoff audit (2), format optimisation (3), MrBeast retention review (4), curiosity loop check (5), voice consistency (6), improve pacing (7), strengthen payoff with 5 ending types (8), one idea into 5 formats (9), final MrBeast-style rewrite (10).
 7. `content/hooks-10-angles.md` — 200 hook variations across 10 angles for A/B testing inspiration.
 
 ## The improvement process
