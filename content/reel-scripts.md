@@ -14,23 +14,23 @@
 **[BEAT: 1 second pause, eye contact]**
 
 **[MICRO QUESTION]**
-"You know that voice? The one that says something is wrong with you because you don't feel the way you used to?"
+"You know that voice?"
 
 **[PATTERN INTERRUPT: Voice drops softer]**
 "That voice is lying."
 
 **[BUILD]**
-"You're not broken. You're exhausted. From holding everything together. From being needed by everyone and chosen by no one. Including yourself."
+"You're exhausted. From holding everything together. From being needed by everyone and chosen by no one. Including yourself."
 
 **[OPEN LOOP INTO CLOSE]**
 "And the woman you miss? She's not gone. She's closer than you think."
 
 **[CLOSE: Lean in]**
-"She's just been waiting for you to stop fixing and start listening."
+"She's been waiting for you to sit still long enough to hear her."
 
 **[TEXT ON SCREEN]** Comment 'waiting' if this is you.
 
-**Format notes:** Direct to camera. Soft light. No music or very soft ambient. The micro question at 3 seconds resets her attention and makes it personal. The "closer than you think" delays the payoff just enough to keep her through the close.
+**Format notes:** Direct to camera. Soft light. No music or very soft ambient. "You know that voice?" is enough. She already knows which one. Don't over-explain. Second "you're not broken" removed. She heard it in the hook. The close is now visceral ("sit still long enough to hear her") instead of the generic "stop fixing and start listening."
 
 ---
 
@@ -51,13 +51,13 @@
 **[BEAT: Let it land]**
 
 **[MICRO QUESTION]**
-"Four words. But do you hear what's underneath them?"
+"Four words. And every woman watching this just felt them."
 
 **[REFRAME]**
-"More pleasure. More closeness. More of herself. And she said it like a confession. Like wanting more made her selfish."
+"More of herself. That's all. Just... more of herself. And she said it like a confession. Like wanting more made her selfish."
 
 **[CLOSE: Voice warms]**
-"I told her: wanting more doesn't make you selfish. It makes you honest. And honest? That's the first step back to yourself."
+"I told her: wanting more doesn't make you selfish. It makes you honest. And honest? That's the door most women are too afraid to open."
 
 **[OPEN LOOP TO CAPTION]**
 "But here's what happened next that really changed things..."
@@ -82,15 +82,15 @@
 "So why does something feel so... off?"
 
 **[TURN]**
-"Because you can't name what's wrong when nothing is technically wrong. And that's the part no one talks about."
+"Because you can't name what's wrong when nothing is technically wrong."
 
 **[PATTERN INTERRUPT: Sudden stillness]**
 
 **[CLOSE: Almost whispered]**
-"But your body knows. She always knows. She's been trying to tell you for years."
+"But your body knows. She always knows. She's saying: I'm still here. Come find me."
 
 **[OPEN LOOP TO CAPTION]**
-"And what she's saying might surprise you."
+"And what happens when you do might surprise you."
 
 **[TEXT ON SCREEN]** Comment 'fine' if you live this.
 
@@ -109,10 +109,10 @@
 "What if the problem was never your sex life?"
 
 **[REFRAME]**
-"What if it's that you stopped listening to your body? She's not broken. She's been screaming for years. And no one... not even you... listened."
+"What if it's that you stopped listening to your body? She's been screaming for years. And the person who should've listened first?" [BEAT] "You."
 
 **[DELAYED PAYOFF]**
-"Ask her what she needs. I promise you... the answer isn't what you think."
+"Tonight, put your hand on your belly and ask her one question. Just one."
 
 **[TEXT ON SCREEN]** Save this. Come back to it tonight.
 
@@ -126,7 +126,7 @@
 "I ask my clients one question. Just one. And almost all of them cry."
 
 **[OPEN LOOP: Hold eye contact]**
-"It's not about sex. It's not about their partner. It's not even about their body."
+"It's not about sex. It's not about their partner."
 
 **[DELAYED PAYOFF: Slower pace, one more beat of tension]**
 "It's something much simpler than that. And much harder to hear."
@@ -134,45 +134,42 @@
 **[REVEAL: Even slower]**
 "I ask: 'When did you stop choosing yourself?'"
 
-**[BEAT: 3 full seconds of silence]**
+**[BEAT: 2 full seconds of silence]**
 
 **[BUILD]**
-"And the answer is always the same. 'Years ago.' And here's the part that breaks me... no one noticed. Not her partner. Not her friends. Not even her."
+"And the answer is always the same. 'Years ago.' And the part I can't stop thinking about? No one noticed. Not her partner. Not her friends. Not even her."
 
 **[CLOSE: Gentle, leaning in]**
-"But if you're watching this right now? I notice. And it's not too late."
+"But you're still here. Still watching. And she doesn't need you to fix it. She needs you to finally see it."
 
-**[TEXT ON SCREEN]** Say with me: "I choose me."
+**[TEXT ON SCREEN]** Comment 'years ago' if you know exactly when.
 
-**Format notes:** Three layers of "it's not about X" before the reveal create escalating curiosity. Each one eliminates what she expects, so the actual question lands harder. "Here's the part that breaks me" is a transition that invests the viewer emotionally before the final truth. The 3-second silence after the reveal is the re-watch trigger.
+**Format notes:** Two eliminations, not three. Gets to the reveal faster. "The part I can't stop thinking about" ties back to the confession energy and feels personal, not performed. The CTA meets her where she is ("years ago") instead of asking her to make a declaration she's not ready for. Silence reduced to 2 seconds to reach the emotional peak sooner.
 
 ---
 
 ## Script 6: "Performing" (20s, The Uncomfortable Truth)
 
 **[HOOK: Text on screen, direct delivery]**
-"Maybe you're not tired of sex."
+"You're not tired of sex."
 
-**[BEAT: Hold eye contact. Let her wonder where this is going.]**
-
-**[MICRO QUESTION]**
-"Have you ever thought about that? Like, really thought about it?"
+**[BEAT: Hold eye contact. 1 second.]**
 
 **[TURN: Voice builds]**
-"Maybe you're tired of performing. Of pretending you want what he wants. Of making the sounds, doing the things, playing the part."
+"You're tired of performing. Of pretending you want what he wants. Of making the sounds, of finishing when he finishes."
 
 **[PATTERN INTERRUPT: Sudden quiet]**
 "What if you just... stopped?"
 
 **[DELAYED PAYOFF]**
-"What if you let yourself be honest about what your body actually wants? Not what she's supposed to want. What she ACTUALLY wants."
+"What if you let yourself be honest about what your body wants when no one is watching?"
 
 **[CLOSE]**
 "That's not the end of intimacy. That's where the real kind begins."
 
 **[TEXT ON SCREEN]** Comment 'honest' if you're ready.
 
-**Format notes:** Medium shot. Natural lighting. No filters. The "have you ever really thought about it?" micro question turns a statement into a personal inquiry. "What if you just... stopped?" is a pattern interrupt disguised as a dare. The double emphasis on "actually wants" creates a micro loop (she asks herself the question internally).
+**Format notes:** Medium shot. Natural lighting. No filters. "Maybe" removed from hook, full certainty stops the scroll harder. Filler micro question cut, straight to the turn. "Doing the things" replaced with "finishing when he finishes" (specific, unsaid truth). "When no one is watching" creates a private moment in a public reel.
 
 ---
 
@@ -184,9 +181,7 @@
 **[BUILD: Each line a separate beat, text appears line by line]**
 "You carry the mental load."
 "You manage everyone's feelings."
-"You solve the problems no one even sees."
 "You hold the family together."
-"You hold your relationship together."
 "You hold yourself together."
 
 **[MICRO QUESTION: Breaking the rhythm]**
@@ -195,10 +190,10 @@
 **[BEAT: 2 seconds silence]**
 
 **[TURN: Voice drops]**
-"Somewhere along the way, you stopped asking for help. Not because you didn't need it. Because you forgot you were allowed to."
+"Somewhere along the way, you stopped asking for help. Not because you didn't need it. Because asking started to feel like failing."
 
 **[DELAYED PAYOFF: The sentence she doesn't expect]**
-"And here's what no one tells you about being strong... it was never supposed to be your only option. You were supposed to have soft too."
+"And the thing about being the strong one?" [beat] "Nobody asks if you want to be."
 
 **[TEXT ON SCREEN]** Comment 'me' if you're tired of being strong.
 
@@ -214,13 +209,13 @@
 **[BEAT: Let the weight land]**
 
 **[MICRO QUESTION]**
-"You know those nights? Where you lie there and feel... nothing?"
+"You know those moments when your body goes still? Not calm. Still. Like she's holding something she can't say."
 
 **[BUILD: Each line lands separately]**
-"The times you said yes when you meant no. The moments you swallowed your own needs to keep the peace. All of it. She kept it all."
+"The times you said yes when you meant no. The moments you swallowed your own needs to keep the peace."
 
 **[PATTERN INTERRUPT: Tone shifts from heavy to tender]**
-"But here's the part that changes everything..."
+"But here's what she's actually doing..."
 
 **[REFRAME]**
 "She's not shutting down to punish you. She's shutting down to protect you."
@@ -229,7 +224,7 @@
 "And the only way through... is to stop overriding her and start listening."
 
 **[OPEN LOOP TO CAPTION]**
-"I'm going to share the first step in the caption."
+"The first step is in the caption. It takes 60 seconds."
 
 **[TEXT ON SCREEN]** What's your body trying to tell you?
 
@@ -239,26 +234,26 @@
 
 ## Script 9: "Still In There" (15s, The Hope Shot)
 
-**[HOOK: Warm, full eye contact, small smile]**
-"The woman you miss?"
+**[HOOK: Direct, warm, text on screen first]**
+"She's still in there."
 
-**[BEAT: Hold it. Don't rush.]**
+**[BEAT: 1 second]**
+
+**[BUILD: Voice softens]**
+"The woman who used to laugh louder. Who used to feel things. She didn't leave."
 
 **[MICRO QUESTION]**
-"The one who used to laugh louder? Who used to feel things? Who used to look in the mirror and like what she saw?"
-
-**[OPEN LOOP: Voice drops to intimate]**
-"I need to tell you something about her."
+"You know where she is?"
 
 **[REVEAL]**
-"She's still in there. Under the to-do lists. Under the exhaustion. Under the years of putting herself last."
+"Under years of 'I'm fine.' Under the putting herself last."
 
 **[CLOSE: Leaning in]**
-"She didn't leave. She's just been waiting for you to come find her."
+"She's been waiting for you to sit still long enough to find her. And she's angrier than you think."
 
 **[TEXT ON SCREEN]** Comment 'still here' if you know she's in there.
 
-**Format notes:** "I need to tell you something about her" is a micro open loop. It's only 2 seconds, but it creates a tiny gap between the question and the answer that makes her lean in. The three specific memories (laugh louder, feel things, like what she saw) make the "woman you miss" concrete instead of abstract.
+**Format notes:** Opens with the reveal ("She's still in there") instead of building to it. Proves it backwards. "Under years of 'I'm fine'" is specific and vivid. "She's angrier than you think" is the unexpected twist that triggers re-watches. Nobody expects anger in a hope reel. That emotional texture makes it memorable.
 
 ---
 
@@ -268,25 +263,24 @@
 "This page is for a very specific woman. And I think she might be you."
 
 **[BUILD: Each line layers, pace slows with each one]**
-"She loves deeply but has forgotten how to receive."
-"She takes care of everyone but hasn't been taken care of in years."
+"She runs the whole house. And no one's asked her how she's doing since 2019."
 "She's loyal. Tired. Invisible. And still showing up."
 
 **[MICRO QUESTION]**
 "Does that sound like someone you know?"
 
 **[PATTERN INTERRUPT: Tone shifts from describing to challenging]**
-"She's been told she's too sensitive, too needy, too much."
+"She's been told she asks for too much."
 
 **[TURN]**
-"But here's what nobody ever told her... she's not too much. She's been too quiet about what she actually needs. And there's a difference."
+"But she can't remember the last time she asked for anything."
 
 **[CLOSE: Invitation, voice softens completely]**
-"If that's you... you're home now."
+"If that's you... you don't have to explain yourself here."
 
 **[OPEN LOOP TO NEXT CONTENT]**
-"Follow this page. I'm going to say the things no one else will."
+"Stay. I'll say what you've been thinking."
 
 **[TEXT ON SCREEN]** Tag a woman who needs to hear this.
 
-**Format notes:** "I think she might be you" in the hook creates immediate self-questioning (is she talking about me?). "Does that sound like someone you know?" at the midpoint is a micro question that re-engages attention AND triggers the share reflex (she thinks of a friend). "I'm going to say the things no one else will" is an open loop that drives the follow.
+**Format notes:** "I think she might be you" in the hook creates immediate self-questioning. "No one's asked how she's doing since 2019" is a specific image that breaks through generic pain lists. "She asks for too much / can't remember the last time she asked for anything" inverts the accusation with evidence, a knife. "You don't have to explain yourself here" creates genuine safety (more specific than "you're home"). "I'll say what you've been thinking" is intimate and drives the follow without hype.
