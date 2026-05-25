@@ -1,4 +1,4 @@
-name: Daily image-post email + Zapier
+name: Daily 1pm post (testimonial / image) — email + Zapier
 
 on:
   schedule:
@@ -9,6 +9,11 @@ on:
     # if you want exactly 1pm during NZDT instead.
     - cron: "0 1 * * *"
   workflow_dispatch:
+    inputs:
+      test_testimonial_id:
+        description: "TEST: force-push this testimonial id (e.g. 1). Leave empty for normal date-based rotation."
+        required: false
+        default: ""
 
 jobs:
   send-email:
@@ -36,6 +41,7 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          REPURPOSE_LAUNCH_DATE: ${{ vars.REPURPOSE_LAUNCH_DATE }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
         run: python daily_email.py
 
@@ -55,10 +61,20 @@ jobs:
         working-directory: automation
         run: pip install -r requirements.txt
 
-      - name: Send today's post to Zapier webhook
+      - name: Send today's image post to Zapier (odd days)
         working-directory: automation
         env:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          REPURPOSE_LAUNCH_DATE: ${{ vars.REPURPOSE_LAUNCH_DATE }}
         run: python zapier_push.py
+
+      - name: Send today's testimonial to Zapier (even days)
+        working-directory: automation
+        env:
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+          REPURPOSE_LAUNCH_DATE: ${{ vars.REPURPOSE_LAUNCH_DATE }}
+          TEST_TESTIMONIAL_ID: ${{ inputs.test_testimonial_id }}
+        run: python zapier_push_testimonial.py

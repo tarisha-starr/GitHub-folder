@@ -17,35 +17,36 @@ import ssl
 import sys
 from email.message import EmailMessage
 
-from scheduler import ALERT_THRESHOLD, remaining_count, todays_post
+from scheduler import (
+    ALERT_THRESHOLD,
+    repurposed_1pm_entry,
+    repurposed_1pm_remaining,
+)
 
 
-def image_url(post: dict) -> str:
+def image_url(image_path: str) -> str:
     raw_base = os.environ.get("IMAGE_RAW_BASE", "").rstrip("/")
-    image_path = post.get("image", "")
     if not raw_base or not image_path:
         return ""
     return f"{raw_base}/{image_path}"
 
 
-def render_text(post: dict) -> str:
+def render_text_post(post: dict) -> str:
     caption = post.get("caption", post["hook"])
     hashtags = " ".join(post.get("hashtags", []))
-    img = image_url(post)
+    img = image_url(post.get("image", ""))
     parts = [caption]
     if hashtags:
-        parts.append("")
-        parts.append(hashtags)
+        parts += ["", hashtags]
     if img:
-        parts.append("")
-        parts.append(img)
+        parts += ["", img]
     return "\n".join(parts) + "\n"
 
 
-def render_html(post: dict) -> str:
+def render_html_post(post: dict) -> str:
     caption_html = post.get("caption", post["hook"]).replace("\n", "<br>")
     hashtags = " ".join(post.get("hashtags", []))
-    img = image_url(post)
+    img = image_url(post.get("image", ""))
     return f"""\
 <!doctype html>
 <html>
@@ -60,13 +61,61 @@ def render_html(post: dict) -> str:
 """
 
 
-def build_message(post: dict, sender: str, recipients: list[str]) -> EmailMessage:
+def testimonial_caption(entry: dict) -> str:
+    text = entry["text"]
+    attribution = entry.get("attribution", "").strip()
+    hashtags = " ".join(entry.get("hashtags", []))
+    parts = [f"“{text}”"]
+    if attribution:
+        parts += ["", f"— {attribution}"]
+    if hashtags:
+        parts += ["", hashtags]
+    return "\n".join(parts)
+
+
+def render_text_testimonial(entry: dict) -> str:
+    img = image_url(entry.get("image", ""))
+    body = testimonial_caption(entry)
+    if img:
+        body += "\n\n" + img
+    return body + "\n"
+
+
+def render_html_testimonial(entry: dict) -> str:
+    caption_html = testimonial_caption(entry).replace("\n", "<br>")
+    img = image_url(entry.get("image", ""))
+    return f"""\
+<!doctype html>
+<html>
+  <body style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #222; padding: 24px;">
+    <div style="font-size: 16px; line-height: 1.6; white-space: pre-wrap;">{caption_html}</div>
+    <p style="font-size: 12px; color: #888; margin: 24px 0 0 0;">
+      <a href="{img}" style="color: #888;">{img}</a>
+    </p>
+  </body>
+</html>
+"""
+
+
+def build_message_post(post: dict, sender: str, recipients: list[str]) -> EmailMessage:
     msg = EmailMessage()
     msg["Subject"] = post["hook"]
     msg["From"] = sender
     msg["To"] = ", ".join(recipients)
-    msg.set_content(render_text(post))
-    msg.add_alternative(render_html(post), subtype="html")
+    msg.set_content(render_text_post(post))
+    msg.add_alternative(render_html_post(post), subtype="html")
+    return msg
+
+
+def build_message_testimonial(entry: dict, sender: str, recipients: list[str]) -> EmailMessage:
+    msg = EmailMessage()
+    name = entry.get("attribution", "").strip()
+    subject_tail = f" — {name}" if name else ""
+    msg["Subject"] = f"Testimonial #{entry['id']}{subject_tail}"
+    msg["From"] = sender
+    msg["To"] = ", ".join(recipients)
+    msg.set_content(render_text_testimonial(entry))
+    msg.add_alternative(render_html_testimonial(entry), subtype="html")
     return msg
 
 
@@ -129,16 +178,22 @@ def main() -> int:
         return 1
 
     recipients = [r.strip() for r in recipients_raw.split(",") if r.strip()]
-    post = todays_post()
-    remaining = remaining_count()
+    slot = repurposed_1pm_entry()
+    remaining = repurposed_1pm_remaining()
 
-    if post is None:
+    if slot is None:
         send(build_alert_empty(sender, recipients))
-        print("No post for today; sent inventory-empty alert")
+        print("No 1pm post today; sent inventory-empty alert")
         return 0
 
-    send(build_message(post, sender, recipients))
-    print(f"Sent post #{post['id']} to {len(recipients)} recipient(s); {remaining} remaining")
+    if slot["kind"] == "testimonial":
+        entry = slot["data"]
+        send(build_message_testimonial(entry, sender, recipients))
+        print(f"Sent testimonial #{entry['id']} to {len(recipients)} recipient(s); {remaining} remaining")
+    else:
+        post = slot["data"]
+        send(build_message_post(post, sender, recipients))
+        print(f"Sent post #{post['id']} to {len(recipients)} recipient(s); {remaining} remaining")
 
     if 0 < remaining <= ALERT_THRESHOLD:
         send(build_alert_low(remaining, sender, recipients))
