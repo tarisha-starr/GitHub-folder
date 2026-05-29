@@ -1,112 +1,137 @@
 [
   {
-    "title": "The Stages of Reclaiming Your Body",
-    "caption": "Are you ready to embrace your body's journey?",
-    "layout": "4-stage progression: Start with 'Awareness', then move to 'Acceptance', followed by 'Exploration', and end with 'Embodiment'. Each stage includes a brief description and a key action step."
+    "title": "The Emotional Load of Relationships",
+    "caption": "Are you feeling emotionally drained by your partner?",
+    "layout": "2-column compare. Left side lists signs of emotional fatigue (e.g., withdrawal, resentment, feeling overwhelmed), while the right side highlights signs of emotional fulfilment (e.g., joy, support, laughter). A footnote section with tips on how to shift from fatigue to fulfilment."
   },
   {
-    "title": "Passion vs. Routine in Relationships",
-    "caption": "Is your relationship in a passionate phase or a predictable routine?",
-    "layout": "2-column compare: One side for 'Passion' with traits like excitement and spontaneity, and the other for 'Routine' highlighting stability and predictability, along with tips for revitalising passion."
+    "title": "Intimacy Redefined",
+    "caption": "What does intimacy really mean to you now?",
+    "layout": "Cycle diagram. Each segment represents a new aspect of intimacy (emotional, physical, spiritual, playful), with brief descriptions. Arrows show how they feed into each other."
   },
   {
-    "title": "Emotional Intimacy Check-In",
-    "caption": "How connected do you truly feel in your relationship?",
-    "layout": "2x2 grid: One axis for 'High/Low Emotional Intimacy' and the other for 'Open/Closed Communication'. Each section contains scenarios to recognise your relationship's state."
+    "title": "The Journey to Self-Discovery",
+    "caption": "Are you ready to meet your true self?",
+    "layout": "4-stage progression. Each stage (Awakening, Exploration, Embodiment, Integration) includes a brief description and key takeaways that mirror the journey women experience in midlife."
   },
   {
-    "title": "The Wheel of Desire",
-    "caption": "Have you unlocked your full potential for pleasure?",
-    "layout": "Cycle diagram: Inner circle for 'Core Desires' and outer rings for 'Barriers', 'Exploration', and 'Expression', each filled with actionable insights and prompts."
+    "title": "The Power of Pleasure Lists",
+    "caption": "Do you know what really brings you pleasure?",
+    "layout": "2x2 grid. Top two sections list ‘Active Pleasures’ (e.g., dancing, running) and ‘Passive Pleasures’ (e.g., reading, spa days). Bottom two sections list ‘Solo Pleasures’ and ‘Partnered Pleasures’ with a few examples for each."
   },
   {
-    "title": "Communication Styles in Midlife",
-    "caption": "Are you speaking the same language as your partner?",
-    "layout": "2-column compare: One side lists 'Assertive Communication' with benefits, and the other 'Passive Communication' detailing pitfalls, ending with strategies for improvement."
+    "title": "Rebuilding Trust in Relationships",
+    "caption": "Have you lost trust with your partner?",
+    "layout": "2-column compare. Left highlights signs of broken trust (deceit, avoidance, hostility) and right shows rebuilding steps (open communication, transparency, accountability)."
   },
   {
-    "title": "Rediscovering Self-Love",
-    "caption": "How often do you put yourself first?",
-    "layout": "4-stage progression: Stages include 'Self-Recognition', 'Self-Care', 'Self-Expression', and 'Self-Connection', with activities for each stage to enhance love for self."
+    "title": "The Sexual Exploration Timeline",
+    "caption": "Are you ready to explore new dimensions of pleasure?",
+    "layout": "Cycle diagram outlining the phases of sexual exploration (Curiosity, Experimentation, Acceptance, Integration) with anecdotes and quotes at each phase."
   },
   {
-    "title": "Sensual vs. Sexual Touch",
-    "caption": "Do you know the difference between these types of intimacy?",
-    "layout": "2-column compare: 'Sensual Touch' lists benefits like relaxation and connection, while 'Sexual Touch' focuses on arousal and intimacy, accompanied by practical advice."
+    "title": "Emotional Intelligence for Midlife Women",
+    "caption": "Do you trust your emotional instincts?",
+    "layout": "4-stage progression. Each stage (Awareness, Understanding, Regulation, Expression) includes scenarios and tips that guide through enhancing emotional intelligence."
   },
   {
-    "title": "The Cycle of Attraction",
-    "caption": "Do you feel the spark in your relationship?",
-    "layout": "Cycle diagram: Stages include 'Initial Attraction', 'Emotional Connection', 'Intimacy Growth', and 'Maintenance', with tips for nurturing attraction at each phase."
+    "title": "Connecting Through Vulnerability",
+    "caption": "Do you feel safe being vulnerable with your partner?",
+    "layout": "2-column compare. Left lists barriers to vulnerability (fear, past trauma) while the right showcases benefits (deep connection, trust, intimacy)."
   },
   {
-    "title": "Sustaining Connection Through Conflict",
-    "caption": "Can conflict strengthen your relationship?",
-    "layout": "2x2 grid: One axis for 'Constructive/Destructive Conflict' and the other for 'Resolved/Unresolved', illustrating positive versus negative outcomes and solutions."
+    "title": "Midlife Self-Care Essentials",
+    "caption": "Are you prioritising self-care in your life?",
+    "layout": "Cycle diagram illustrating key self-care essentials (Physical, Mental, Emotional, Spiritual) with actionable ideas within each segment."
   },
   {
-    "title": "The Art of Asking",
-    "caption": "Are you clear about what you need?",
-    "layout": "4-stage progression: Stages include 'Identify Needs', 'Communicate Effectively', 'Set Boundaries', and 'Embrace Vulnerability', with practical exercises for each."
+    "title": "Embodied Movement for Midlife",
+    "caption": "Are you moving in a way that feels good to your body?",
+    "layout": "2x2 grid. Sections highlight ‘Gentle Movement’ (yoga, walking) and ‘Dynamic Movement’ (dance, cardio) with tips on how both promote body positivity."
   },
   {
-    "title": "Awakening Your Feminine Energy",
-    "caption": "Are you tapping into your inner goddess?",
-    "layout": "Cycle diagram: Steps include 'Self-Reflection', 'Nurturing', 'Creativity', and 'Empowerment', with insights on fostering each energy aspect."
+    "title": "Navigating Sexual Health After 40",
+    "caption": "Do you know the changes in your sexual health?",
+    "layout": "4-stage progression outlining the key changes (Hormonal Changes, Body Changes, Mental Changes, Relationship Changes) with health tips at each stage."
   },
   {
-    "title": "Healthy Boundaries 101",
-    "caption": "Do you struggle with saying 'no'?",
-    "layout": "2-column compare: 'Strong Boundaries' with benefits like respect and clarity, and 'Weak Boundaries' highlighting confusion and resentment, with strategies for improvement."
+    "title": "Communicating Needs: The Art of Asking",
+    "caption": "Are you clear about your needs in relationships?",
+    "layout": "2-column compare. One side lists common communication pitfalls (passive, aggressive) while the other showcases effective communication strategies (assertive, clear)."
   },
   {
-    "title": "The Mind-Body Connection",
-    "caption": "Do you listen to what your body’s telling you?",
-    "layout": "4-stage progression: Stages include 'Awareness', 'Listening', 'Integration', and 'Embodiment', with reflective prompts for each stage."
+    "title": "The Joy of Sibling Relationships",
+    "caption": "Are you nurturing your sibling bonds?",
+    "layout": "Cycle diagram illustrating the stages of sibling relationships (Childhood, Adolescence, Adulthood, Middle Age) with reflections on how these bonds evolve."
   },
   {
-    "title": "Revitalising Romance",
-    "caption": "When was the last time you felt butterflies?",
-    "layout": "Cycle diagram: Stages include 'Spontaneous Acts', 'Thoughtful Surprises', 'Quality Time', and 'Physical Affection', with creative suggestions for sparking romance."
+    "title": "The Balance Between Independence and Togetherness",
+    "caption": "Are you striking the right balance in your relationship?",
+    "layout": "2-column compare. One side highlights the signs of over-dependence (loss of identity, resentment) while the other side shows healthy interdependence signs (support, individuality)."
   },
   {
-    "title": "The Energetic Shift in Midlife",
-    "caption": "Are you tuned into your energy shifts?",
-    "layout": "2x2 grid: 'Low Energy/High Energy' and 'Positive/Negative Outlook', showing how to navigate energy states and fostering positivity."
+    "title": "Reinventing Romance in Midlife",
+    "caption": "Are you redefining romance with your partner?",
+    "layout": "4-stage progression that captures the evolution of romance (Initial Spark, Building Connection, Navigating Routine, Fresh Adventures) with reflections and suggestions at each stage."
   },
   {
-    "title": "The Cycle of Self-Discovery",
-    "caption": "Are you re-discovering yourself after 40?",
-    "layout": "Cycle diagram: Stages include 'Questioning', 'Exploring', 'Defining', and 'Embracing', with tips and questions to guide your journey."
+    "title": "Understanding Your Body’s Signals",
+    "caption": "Are you listening to your body’s cues?",
+    "layout": "2-column compare. Left side lists common body signals (tension, fatigue, excitement) and the right side provides suggested responses (rest, mindfulness, explore pleasure)."
   },
   {
-    "title": "The Impact of Life Transitions",
-    "caption": "How do life's changes shape your intimacy?",
-    "layout": "2-column compare: 'Positive Transitions' driving growth and connection versus 'Challenging Transitions' causing distance and stress, with ways to navigate these changes."
+    "title": "Embracing Change in Relationships",
+    "caption": "Are you open to change within your partnership?",
+    "layout": "Cycle diagram that showcases the process of embracing change (Acknowledgement, Acceptance, Adaptation, Flourishing) with supportive quotes."
   },
   {
-    "title": "Secrets of Lasting Love",
-    "caption": "What keeps your love alive?",
-    "layout": "2-column compare: 'Healthy Practices' that nourish relationships alongside 'Destructive Patterns' that drain connections, ending with revitalisation tips."
+    "title": "Creating Space for Connection",
+    "caption": "Is your space conducive to intimacy and connection?",
+    "layout": "2-column compare. One side lists cluttered habits (distractions, noise) while the other suggests creating a connected environment (tranquillity, intimacy-focused spaces)."
   },
   {
-    "title": "The Emotional Checklist",
-    "caption": "Are your emotions in check?",
-    "layout": "4-stage progression: Stages include 'Awareness', 'Validation', 'Expression', and 'Integration', filled with actionable steps for emotional health."
+    "title": "The Importance of Emotional Boundaries",
+    "caption": "Do you know how to set healthy emotional boundaries?",
+    "layout": "2-column compare. Left highlights signs of boundary overload (emotional drain, resentment), while the right showcases healthy boundary traits (clarity, respect)."
   },
   {
-    "title": "Navigating New Relationships",
-    "caption": "Are you ready to date again?",
-    "layout": "2x2 grid: 'Ready/Not Ready' by 'Open/Closed', exploring feelings around dating and tips for being open to new experiences."
+    "title": "Cultivating Gratitude in Relationships",
+    "caption": "Are you expressing gratitude in your connection?",
+    "layout": "Cycle diagram that illustrates gratitude stages (Recognition, Expression, Impact, Reflection) with examples of how gratitude enhances relationships."
   },
   {
-    "title": "Intimacy Red Flags",
-    "caption": "Are there warning signs in your relationship?",
-    "layout": "2-column compare: 'Healthy Intimacy' showcasing connection and trust versus 'Unhealthy Intimacy' showing distance and dysfunction, accompanied by supportive insights."
+    "title": "Rediscovering Your Partner",
+    "caption": "When was the last time you saw your partner differently?",
+    "layout": "2-column compare. One side lists typical perceptions (taken for granted, predictable) while the other highlights fresh perspectives (curiosity, admiration)."
   },
   {
-    "title": "Balancing Independence and Togetherness",
-    "caption": "Do you know how to strike the right balance?",
-    "layout": "Cycle diagram: Elements include 'Personal Space', 'Shared Experiences', 'Communication', and 'Support', with thoughtful prompts for relationship harmony."
+    "title": "Defining Your Relationship Goals",
+    "caption": "Are you setting clear goals for your relationship?",
+    "layout": "4-stage progression listing the process (Identifying Needs, Setting Goals, Creating Plans, Evaluating Progress) with tips and insights for each step."
+  },
+  {
+    "title": "Intimacy and the Mind-Body Connection",
+    "caption": "Do you understand how your mind affects your intimacy?",
+    "layout": "Cycle diagram illustrating the mind-body connection in intimacy (Thoughts, Feelings, Body Responses, Actions) each part explained with tips for awareness."
+  },
+  {
+    "title": "Navigating Love Languages in Midlife",
+    "caption": "Have your love languages changed over time?",
+    "layout": "2x2 grid showing evolving love languages (Words of Affirmation, Acts of Service, Physical Touch, Quality Time) with anecdotes to illustrate the changes."
+  },
+  {
+    "title": "Celebrating Your Sexual Identity",
+    "caption": "Have you embraced your sexual identity fully?",
+    "layout": "4-stage progression from Acknowledgement to Empowerment showcasing the journey with reflections and affirmations at each stage."
+  },
+  {
+    "title": "Finding Your Voice in Relationships",
+    "caption": "Do you feel heard and understood by your partner?",
+    "layout": "2-column compare. Left section highlights signs of voicelessness (silence, resentment) while the right showcases ways to cultivate voice (assertiveness, clarity)."
+  },
+  {
+    "title": "Grief and Love: A Dual Journey",
+    "caption": "Are you processing grief while fostering love?",
+    "layout": "Cycle diagram depicting interwoven journeys of grief (Denial, Anger, Bargaining, Acceptance) and their impact on nurturing love, illustrated with heartwarming quotes."
   }
 ]
