@@ -1,232 +1,251 @@
-# The 7-Day Reconnection Reset
+# The 7-Day Desire Reset
 
-*One small move a night to go from roommates to lovers again — no big talk, no
-therapy, no dragging anyone anywhere.*
+*Come home to your body and your desire — so intimacy stops feeling like one
+more thing on the list, and starts feeling like yours again.*
+
+> **For women.** This is about reconnecting with your *own* sexual desire and
+> aliveness first — through embodiment — and then bringing that fuller version of
+> you into intimacy. You don't start by trying to fix the relationship. You start
+> by coming back to yourself.
 
 ---
 
 ## ⚡ Quick-Start Page
 
-**What this is:** Seven nights. One tiny, doable move each night, with the exact
-words to say. By the end of the week you'll have created real moments of warmth
-and desire that haven't been happening — and proof that *you* can restart this.
+**What this is:** Seven days of short embodiment and desire practices. Each day is
+one gentle, private practice — 10–15 minutes — that reconnects you with your body,
+your senses, and your own wanting. By the end of the week, desire feels less like
+a duty you've lost access to and more like something alive in you again.
 
-**The one rule:** You don't need a conversation, a confession, or his
-permission. You don't announce a "relationship project." You just do tonight's
-move tonight. Small is the point. Small is what's repeatable.
+**The one rule:** This week is *for you.* Not for your partner, not to perform, not
+to "get back to" who you were at 25. You're not fixing anything. You're listening
+to a part of you that got buried under roles, responsibilities, and noise — and
+inviting her back.
 
 **How to use it:**
-1. Do one day per night, in order. ~10–15 minutes.
-2. When there's a script, use the words — tweak them to sound like you.
-3. Press play on the audio days.
-4. Jot one line at night: *what happened, what shifted.*
-5. Don't skip ahead. The order matters (warmth before desire).
+1. One practice per day, in order. ~10–15 minutes, somewhere private.
+2. Where there's a body practice, actually do it — reading about embodiment isn't embodiment.
+3. Press play on the audio practices.
+4. Each night, write one line: *what did I notice in my body today?*
+5. Don't rush to "the bedroom." Desire returns when the body feels safe and awake — that's what these seven days build.
 
-**Before you start — read this:** This is for ordinary drift and distance. If
-your relationship involves abuse, addiction, or betrayal, you deserve a licensed
-professional, not a 7-day guide. This supports a healthy relationship that's
-gone quiet; it doesn't treat a relationship that's unsafe.
+**Before you start — read this:** This supports a woman reconnecting with her own
+desire within a safe life and relationship. If you're dealing with trauma, pain
+with intimacy, or a relationship that's unsafe, you deserve a licensed
+professional (a somatic therapist or pelvic-health specialist) alongside or
+instead of this. Embodiment work can surface big feelings — go gently, and stop
+if anything feels unsafe.
 
 ---
 
 ## Table of Contents
-1. Day 1 — Warmth (the thaw)
-2. Day 2 — Appreciation out loud
-3. Day 3 — Touch that isn't a transaction
-4. Day 4 — Play & flirt
-5. Day 5 — Curiosity (turn toward him)
-6. Day 6 — Desire (let yourself want)
-7. Day 7 — The vision + your next 30 days
+1. Day 1 — Come back to your body
+2. Day 2 — Desire is yours (not a duty)
+3. Day 3 — Wake up your senses
+4. Day 4 — Make peace with your body
+5. Day 5 — Reclaim your own pleasure
+6. Day 6 — Bring desire into intimacy
+7. Day 7 — Your ongoing practice + vision
 8. Completion checklist
 9. What to do next
 
 ---
 
-## Day 1 — Warmth (The Thaw)
+## Day 1 — Come Back to Your Body
 
-**The idea:** Before anything physical or deep, the freeze has to crack. Roommate
-mode is *neutral* — polite, transactional, cool. You're not aiming for passion
-tonight. You're aiming for one degree warmer than logistics.
+**The idea:** You can't reconnect with desire from inside your head. Most of us
+live from the neck up — managing, planning, worrying. Desire lives in the body,
+and the body has been on mute. Step one isn't sexy; it's *sensation.* You're
+re-opening the channel.
 
-**Today's move:** Give him one warm, specific greeting and one unhurried goodbye
-or goodnight — with eye contact and a real smile. That's it.
+**Today's practice:** Sit or lie down somewhere private. For 5 minutes, slowly
+scan your body from feet to crown. You're not trying to feel anything in
+particular — just *noticing*: warmth, tension, tingling, numbness, breath. Where
+do you feel alive? Where do you feel nothing? No judgment. Just attention.
+
+**Embodiment cue:** Place one hand on your belly, one on your chest. Breathe so
+the lower hand moves first. This drops you out of your head and into your body.
+
+**Why it works:** Desire follows attention and safety. When the nervous system
+settles and you can actually feel your body again, there's somewhere for arousal
+to live. You're rebuilding the signal before you ask for the message.
+
+**Tonight's note:** Where in your body did you feel most *alive* today? Most absent?
+
+---
+
+## Day 2 — Desire Is Yours (Not a Duty)
+
+**The idea:** Somewhere along the way, sex became something you *do* — for him,
+for the relationship, to keep the peace, off the list. When desire becomes an
+obligation, it disappears. Today you take it back as *yours* — something you're
+allowed to feel for your own sake.
+
+**Today's practice:** Journal on three prompts (5–10 min):
+- When in my life did I feel most alive in my body and my desire? What was true then?
+- Where have I been treating intimacy as a task instead of a pleasure?
+- If my desire were only for *me* — not to please anyone — what would I want more of?
+
+**Reframe to keep:** *"My desire is not a service I provide. It's a part of me I
+get to enjoy."*
+
+**Why it works:** You can't reclaim something you experience as a chore. Shifting
+desire from duty to *yours* removes the resentment and pressure that shut it
+down — and that shift is the real turning point, not any technique.
+
+**Tonight's note:** What's one belief about sex/desire you're ready to put down?
+
+---
+
+## Day 3 — Wake Up Your Senses
+
+**The idea:** Sensuality is the on-ramp to sexuality. A woman who feels pleasure
+in her ordinary day — taste, touch, warmth, music, scent — has a body that's
+*awake* and ready to want. Numbness in life becomes numbness in bed.
+
+**Today's practice:** Choose one ordinary moment and make it deliberately sensual.
+The first sip of coffee with your eyes closed. A shower where you actually feel
+the water. Lotion on your skin with full attention. Stretch like a cat. Two slow
+minutes of really *tasting* something. Let yourself enjoy it with no rush and no
+guilt.
+
+**Embodiment cue:** As you do it, silently name the sensation: *warm, soft,
+smooth, alive.* Naming pulls you into presence.
+
+**Why it works:** Pleasure is a capacity you train. Letting yourself savor small
+sensory pleasures rebuilds the body's "yes" — and that capacity carries directly
+into the bedroom.
+
+**Tonight's note:** What's one sensory pleasure you'd forgotten you loved?
+
+---
+
+## Day 4 — Make Peace With Your Body
+
+**The idea:** It's hard to want, or to be wanted, while you're at war with your
+body. The inner critic — about your stomach, your age, your changes — is a desire
+killer. You don't have to love every inch today. You just have to stop fighting
+long enough to feel.
+
+**Today's practice:** Stand or sit and place your hands somewhere you usually
+criticize. Breathe. Instead of judgment, offer one honest, kind truth: *"This
+body carried me here." "This body can feel pleasure." "This body is allowed to
+take up space."* Then do one thing that makes you feel good *in* your body, not
+just *about* it — a song you move to, clothing that feels good on skin.
+
+**Embodiment cue:** Notice the urge to criticize, then redirect attention to a
+neutral sensation (feet on floor, breath). You're training presence over judgment.
+
+**Why it works:** Self-consciousness pulls you out of your body and out of the
+moment — the exact opposite of arousal. Making a truce with your body lets you
+*stay present* long enough for desire to build.
+
+**Tonight's note:** What did your body do for you today that you usually overlook?
+
+---
+
+## Day 5 — Reclaim Your Own Pleasure
+
+**The idea:** You can't share what you've lost touch with. Knowing your own body
+and what feels good — privately, with zero pressure and no audience — is how you
+come back online. This is self-knowledge, not selfishness.
+
+**Today's practice (private, your pace):** Give yourself unhurried, pressure-free
+time to explore pleasure in your own body — touch that's for *curiosity and
+enjoyment*, not a goal. Notice what feels good, what you'd want more of, what your
+body responds to now (it may have changed — that's okay). There's no performance
+and no finish line here.
+
+**Embodiment cue:** Keep breathing low and slow; if you float up into your head,
+come back to sensation and breath.
+
+**Why it works:** Reconnecting with your own pleasure rebuilds desire at the
+source and gives you the self-knowledge to later show, rather than hope, your
+partner understands. Wanting starts with *you.*
+
+**Tonight's note:** What did you learn about what your body enjoys now?
+
+> If this day brings up discomfort or numbness, that's information, not failure.
+> Go gently; this is exactly the kind of thing the membership helps you work
+> through over time.
+
+---
+
+## Day 6 — Bring Desire Into Intimacy
+
+**The idea:** Now — only now, after five days of coming home to yourself — you
+bring this fuller, more awake version of you *into* connection. Not as a
+performance. As an expression of a woman who actually wants.
+
+**Today's practice (relationship skill):** Create one moment of embodied,
+present-with-him connection and let your desire be *visible.* Stay in your body
+(breath low, senses on) instead of your head. Then practice one piece of erotic
+honesty — telling or showing him one thing you'd enjoy.
 
 **The exact words (pick one):**
-- "Hey — I'm actually really glad you're home."
-- "Come here for a sec, I just want to look at you." *(then a 5-second hug)*
-- At night: "I'm glad it's you next to me." 
+- "I've been reconnecting with something in myself this week. I want to share it with you."
+- "Come here. I want to be close — slowly."
+- "I've figured out something I really like. Can I show you?"
 
-**Why it works:** Connection rebuilds in small everyday moments of "turning
-toward" each other, not grand gestures. One degree of warmth signals *safe* —
-and safety has to come before desire.
+**Why it works:** Presence and honest expression are the relationship skills that
+turn private aliveness into shared intimacy. He's not a mind reader — your
+embodied "yes" and your words are the bridge. You lead from desire, not duty.
 
-**Tonight's note:** What did his face do when you were warm with him?
-
----
-
-## Day 2 — Appreciation Out Loud
-
-**The idea:** In roommate mode we narrate complaints in our heads and say the
-appreciation never. He's stopped feeling *seen* by you, and you by him. Today you
-break the silence on the good stuff.
-
-**Today's move:** Tell him one specific thing you appreciate — about *him*, not a
-chore. Specific, not generic ("you're a good guy" = noise).
-
-**The exact words:**
-- "I noticed how patient you were with [x] today. It's one of my favorite things about you."
-- "I don't say it enough — I really respect how you [specific thing]."
-- "Thank you for [specific]. I saw it. It mattered."
-
-**Why it works:** Appreciation is the fastest way to make someone feel safe
-enough to reach back. It also retrains *your* brain to notice what's good — which
-is where your own attraction starts to wake up.
-
-**Tonight's note:** How did naming it out loud feel in your body?
+**Tonight's note:** What felt different when you stayed in your body with him?
 
 ---
 
-## Day 3 — Touch That Isn't a Transaction
+## Day 7 — Your Ongoing Practice + Vision
 
-**The idea:** In roommate mode, touch either stops or only happens as a
-prelude/request. That makes touch loaded, so you both avoid it. Today touch means
-*nothing* except "I like being near you."
+**The idea:** One week wakes desire up. A practice keeps it awake. Aliveness isn't
+a destination you arrive at once — it's a relationship with yourself you keep
+choosing.
 
-**Today's move:** Initiate 20–30 seconds of non-goal touch with zero agenda — a
-hand on his back, fingers in his hair, a real hug held 3 seconds past normal.
+**Today's practice (two parts):**
+1. Write your vision: *"The woman I'm becoming feels ____ in her body and her
+   desire."* Name how you want to relate to your own aliveness from here.
+2. Choose **one** practice from Days 1–6 to keep doing daily — your keystone.
+   (Most women keep the body scan or the daily sensual moment.)
 
-**The exact words (optional):**
-- "I just wanted to touch you. No reason."
-- *(hand on his back, in passing)* "Hi, you." 
+**Why it works:** Lasting change is small practices repeated, not one heroic week.
+A kept ritual beats a perfect week that fades by Friday.
 
-**Why it works:** Non-sexual touch — holding hands, a lingering hug — almost
-always returns *first* and paves the way for deeper intimacy when you're both
-ready. Removing the agenda removes the pressure that shut touch down.
-
-**Tonight's note:** Did he lean in, freeze, or reach back? No judgment — just notice.
-
----
-
-## Day 4 — Play & Flirt
-
-**The idea:** Couples who feel like roommates have usually lost *play.* Everything
-is logistics and tone-policing. Flirting says: *I still see you as more than my
-co-manager.*
-
-**Today's move:** Send one flirty/playful text during the day, or one teasing
-in-person line tonight. Light, fun, a little spark.
-
-**The exact words:**
-- *(text)* "Just thought about you. Not telling you what I was thinking 😏"
-- *(text)* "Reminder that I picked you. Still would."
-- *(in person)* "You're kind of distractingly good-looking when you do that."
-
-**Why it works:** Novelty and play interrupt the brain's habituation — the thing
-that makes a familiar partner fade into the background. A little charge resets
-attention toward each other.
-
-**Tonight's note:** What did the playfulness change in the room?
-
----
-
-## Day 5 — Curiosity (Turn Toward Him)
-
-**The idea:** You stopped being curious about each other somewhere along the way.
-You assume you know everything he thinks. Curiosity is intimacy's quiet engine.
-
-**Today's move:** Ask one real question that isn't about logistics — and actually
-listen, no fixing, no rushing.
-
-**The exact words:**
-- "What's something you've been thinking about lately that I don't know about?"
-- "When did you last feel really proud of yourself?"
-- "Is there anything you've been wanting more of from us?"
-
-**Why it works:** Asking beyond logistics — "How are you *really*?" — is the
-documented on-ramp back to emotional intimacy. Feeling known is its own kind of
-desire.
-
-**Tonight's note:** What did you learn that surprised you?
-
----
-
-## Day 6 — Desire (Let Yourself Want)
-
-**The idea:** You've spent days making it safe and warm. Now — gently — invite
-desire back. Not performance. Not obligation. Permission.
-
-**Today's move:** Create one moment that's *charged* on purpose: a longer kiss
-with intention, telling him something you find attractive about him, or naming
-(out loud) that you want to be close tonight.
-
-**The exact words:**
-- "I've been thinking about you all day. Come here."
-- "I miss this version of us. Can we have tonight?"
-- "I want you. That's all."
-
-**Why it works:** After safety, warmth, touch, and curiosity, desire has somewhere
-to land. You're not forcing a spark from cold — you're lighting it on ground
-you've spent five days warming.
-
-**Tonight's note:** What made it easier (or harder) to let yourself want?
-
-> If tonight doesn't go where you hoped, that's information, not failure. Warmth
-> compounds. Keep going.
-
----
-
-## Day 7 — The Vision + Your Next 30 Days
-
-**The idea:** One good week is a spark. A spark left alone goes out. Today you
-decide what you're building and how you keep it lit.
-
-**Today's move (two parts):**
-1. Share a tiny vision out loud: "I loved this week with you. I want more of *us.*"
-2. Pick **one** move from Days 1–6 to keep doing daily. That's your keystone habit.
-
-**The exact words:**
-- "This week reminded me how much I like you, not just love you. Let's keep going."
-
-**Why it works:** Lasting change is small actions repeated, not a one-time push.
-One kept ritual beats a heroic week that fizzles.
-
-**Tonight's note:** Which day moved the needle most? *That's your keystone.*
+**Tonight's note:** Which day woke you up the most? *That's your keystone.*
 
 ---
 
 ## ✅ Completion Checklist
-- [ ] Day 1 — Warm greeting + goodnight
-- [ ] Day 2 — One specific appreciation, out loud
-- [ ] Day 3 — 20–30s of no-agenda touch
-- [ ] Day 4 — One flirt/playful moment
-- [ ] Day 5 — One real, non-logistics question
-- [ ] Day 6 — One charged, desire-on-purpose moment
-- [ ] Day 7 — Shared the vision + chose my keystone habit
+- [ ] Day 1 — Body scan + belly/chest breath
+- [ ] Day 2 — Desire-is-mine journaling
+- [ ] Day 3 — One deliberately sensual moment
+- [ ] Day 4 — Made a truce with my body
+- [ ] Day 5 — Reconnected with my own pleasure
+- [ ] Day 6 — Brought embodied desire into intimacy
+- [ ] Day 7 — Wrote my vision + chose my keystone practice
 - [ ] Listened to the 3 audio practices
-- [ ] Wrote my nightly one-line notes
-- [ ] Chose my next 30 days
+- [ ] Wrote my nightly "what did I notice in my body" line
+- [ ] Chose how I'll keep this going
 
 ---
 
 ## ➡️ What To Do Next
 
-You just proved something: **you** can restart connection — without a big talk,
-without therapy, without waiting for him to change first. That's the whole game.
+Here's what you just proved: your desire didn't disappear. It got buried — under
+roles, stress, self-criticism, and years of treating it as a duty. And *you* can
+dig it back out, on your own terms, in your own body.
 
-But Day 7 isn't the finish line. It's Day 1 of the rest of it. Week one breaks the
-freeze; weeks two through eight are where roommates actually become lovers again —
-through repetition, deeper tools, and not letting life crowd it back out.
+But Day 7 isn't the finish line. One week wakes desire up; staying awake — and
+deepening into real erotic confidence and intimacy — is the work of weeks and
+months, not days. That's exactly what the **Roommates to Lovers membership** is
+for: a women-only space where each month you go deeper into embodiment, desire,
+and the relationship skills that turn private aliveness into the intimacy you
+actually want — for **$97/month**, cancel anytime.
 
-That's exactly what the **Roommates to Lovers membership** is for. Every month you
-get a fresh reconnection focus, new scripts and practices, the deeper work
-(resentment, desire, the harder conversations), and a private space so you never
-stall out alone — for **$97/month**, cancel anytime.
-
-> **Keep the spark you just lit. Join Roommates to Lovers → [link]**
+> **Keep coming home to yourself. Join Roommates to Lovers → [link]**
 
 ---
 
-### Audio practices (record these 3 — 3–6 min each)
-1. **The 2-Minute Thaw** (use with Day 1): a short grounding + "soften toward him" practice.
-2. **Touch Without Agenda** (Day 3): a guided way to give and receive pressure-free touch.
-3. **Letting Yourself Want** (Day 6): a permission practice to reconnect with her own desire.
+### Audio practices (record these 3 — 4–7 min each)
+1. **Drop Into Your Body** (Day 1): guided body scan + belly breath to settle the nervous system and re-open sensation.
+2. **The Sensual Reset** (Day 3): a short practice to wake the senses and rebuild the body's capacity for pleasure.
+3. **Coming Home to Desire** (Day 5): a gentle embodiment + permission practice to reconnect with your own wanting.

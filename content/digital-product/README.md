@@ -1,32 +1,34 @@
-# Roommates to Lovers — Digital Product System
+# Roommates to Lovers / Radiant Woman — Product & Launch Docs
 
-A complete launch system for a digital product that funnels buyers into the
-**Roommates to Lovers** membership ($97/month).
+Working docs for launching the renamed **Radiant Woman Circle** membership
+($97/month, women over 40) via a free **5-Day Challenge**.
 
-**Buyer:** Women 40+ in long-term relationships who feel more like roommates
-than lovers and want to feel desired, close, and connected again.
+Brand: **A Radiant Woman** (Tarisha Tourok). All customer-facing copy follows the
+brand voice guide: **no dashes as punctuation, never the word "real", UK English,
+women-over-40 with no single/coupled split, girlfriend not coach.**
 
-**Flagship product carried through every step:** *The 7-Day Reconnection Reset* —
-a short, done-for-you daily reset (prompts + exact scripts + audio) that creates
-a felt result in one week and opens the door to the monthly membership.
+## Start here
 
-## The 7 steps
+| File | Status | What it is |
+|------|--------|------------|
+| `5-day-challenge.md` | ✅ **Live deliverable, on brand** | The Come Home Challenge: 5-day launch challenge → $97/mo membership, positioned so it doesn't compete with SERW or Find Each Other Again |
 
-| # | File | What it gives you |
-|---|------|-------------------|
-| 1 | `01-product-ideas.md` | 10 fast-to-build product ideas, ranked by speed/demand/simplicity |
-| 2 | `02-validation.md` | Brutally honest validation of the #1 idea (verified facts vs. assumptions) |
-| 3 | `03-mvp-design.md` | The smallest useful version you can launch this week |
-| 4 | `04-the-product.md` | The full first version of the product, ready to use |
-| 5 | `05-packaging.md` | Names, promise, benefits, cover brief, voice |
-| 6 | `06-sales-page.md` | A clean, non-scammy direct-response sales page |
-| 7 | `07-launch-plan.md` | A 7-day launch plan + hooks, posts, DM replies |
+## The offer ladder (women's / A Radiant Woman side)
 
-## How to use it
+- **Free 5-Day Challenge** → felt taste, opens toward intimacy → feeds the membership.
+- **The membership** ($97/mo, renamed Circle) → ongoing **relational** practice (desire in relationship, intimacy, connection). Includes self/body work but kept at practice depth. Existing Circle members roll in.
+- **Find Each Other Again** ($97 self-paced) → the *map* of your desire (Matrix, Blueprints, Desire Map).
+- **SERW** (3-month) → the **deep solo transformation of the woman herself**. The depth destination. The membership must never compete with this.
 
-1. Skim `01` and confirm the flagship pick (or swap in another idea).
-2. Read `02` so you know exactly why it sells and where the risk is.
-3. Build from `04` (the product is already written — paste, edit your voice in).
-4. Package with `05`, publish the page from `06`, and run the plan in `07`.
+## Reference only (generic first pass)
 
-Everything points back to the $97/month membership as the continuity offer.
+Files `01`–`07` below were drafted early, before the brand context above was
+known. They use the wrong voice (em-dashes, banned words) and a 7-day product that
+overlaps the existing tripwire. **Keep for the strategy structure only; do not ship
+their copy.** Superseded by `5-day-challenge.md`.
+
+- `01-product-ideas.md` · `02-validation.md` · `03-mvp-design.md` ·
+  `04-the-product.md` · `05-packaging.md` · `06-sales-page.md` · `07-launch-plan.md`
+
+A reusable `digital-product-launch` skill (in `.claude/skills/`) runs the same
+7-step idea-to-launch system for any future product.

@@ -1,69 +1,73 @@
 # Step 5 — Packaging & Product Identity
 
-**Product summary:** A 7-day, done-for-you reset that takes a woman 40+ from
-feeling like roommates to feeling like lovers again — one small move a night with
-the exact words to say, plus 3 short audio practices. Low-friction, startable
-solo, opens into the $97/mo membership.
+**Product summary:** A women-only 7-day reset that helps a woman 40+ reconnect
+with her own sexual desire and aliveness through embodiment practices, then bring
+that into intimacy with relationship skills — one short, private practice a day,
+plus 3 guided embodiment audios. Low-friction, deeply personal, opens into the
+$97/mo membership.
 
 ## 1. Ten product name ideas
-1. **The 7-Day Reconnection Reset** *(recommended — clear, time-bound, benefit-led)*
-2. From Roommates to Lovers: The 7-Day Reset
-3. The Reignite Reset
-4. 7 Nights Back to Us
-5. The Spark Reset
-6. The Closeness Reset
-7. Come Back to Bed: A 7-Day Reset
-8. The Turn-Toward Reset
-9. Warm Again: 7 Nights to Reconnect
-10. The Lovers Reset
+1. **The 7-Day Desire Reset** *(recommended — clear, time-bound, benefit-led)*
+2. Come Home to Your Desire
+3. The Awakening Reset
+4. 7 Days Back to Your Body
+5. The Embodied Desire Reset
+6. Reclaim: 7 Days to Your Aliveness
+7. The Desire Is Yours Reset
+8. Wake Her Up: A 7-Day Embodiment Reset
+9. The Sensual Reset
+10. Back to Wanting
 
 ## 2. Strongest subtitle
-*One small move a night to go from roommates to lovers again — no big talk, no
-therapy, no dragging him anywhere.*
+*Reconnect with your own desire and come home to your body in 7 days — so intimacy
+feels like yours again, not one more thing on the list.*
 
 ## 3. The main promise
-In 7 nights, create real moments of warmth and desire again — without a
-confrontation, and without waiting for him to change first.
+In 7 days, feel desire and aliveness in your own body again — on your own terms —
+and get the embodiment and relationship skills to carry it into intimacy.
 
 ## 4. Target buyer in one sentence
-Women 40+ who still love their partner but feel more like roommates than lovers,
-and want to feel wanted and close again — privately, gently, and starting tonight.
+A woman 40+ who has lost touch with her own sexual desire and feels disconnected
+from her body, and wants to feel alive, sensual, and wanting again — for herself
+first, then in her relationship.
 
 ## 5. The 5 biggest benefits
-1. A felt result in a week, not a 90-day course you won't finish.
-2. The **exact words** to say, so you never freeze up.
-3. You can start tonight, alone — no awkward "we need to talk."
-4. Gentle and pressure-free (warmth first, desire last).
-5. A clear path to keep it going inside the membership.
+1. Feel desire as *yours* again — not a duty you perform for someone else.
+2. Come home to your body through simple, private embodiment practices.
+3. A felt shift in a week, not a 90-day course you won't finish.
+4. Gentle, shame-free, and entirely your own — no partner required.
+5. The skills (and a clear path) to bring your aliveness into real intimacy.
 
 ## 6. Best product cover concept
-A warm, intimate, cinematic image: two coffee mugs and two hands almost touching
-on a softly lit kitchen counter at dawn — *closeness about to happen.* Title set
-large and confident; subtitle small beneath. Implies tenderness and a turning
-point, not sex or clinical self-help.
+A warm, soft-focus image evoking a woman at ease in her own body and senses — a
+woman's silhouette in morning light by a window, eyes closed, hand resting over
+her heart or stomach; or a sensual still life (silk, peony, warm skin tones).
+Implies *coming home to herself,* sensual and tender — not explicit, not clinical.
 
 ## 7. Visual style
-Warm, editorial, premium-but-soft. Generous white space, one emotive photo,
-elegant restraint. Think high-end candle brand, not loud info-product. Matches
-the existing brand: emotionally resonant, midlife, intimate.
+Warm, editorial, sensual-but-tasteful, premium. Generous white space, one evocative
+image, elegant restraint. Think high-end wellness/intimacy brand for grown women.
+Matches the existing brand: emotionally resonant, midlife, body, desire.
 
 ## 8. Color direction
-Warm neutrals + a deep romantic accent: soft cream / oat background, warm
-charcoal or espresso text, one accent of dusty rose, terracotta, or deep wine.
-Avoid neon, harsh red, or clinical blue.
+Warm neutrals + a sensual accent: soft cream / oat / blush background, warm
+charcoal text, accents of dusty rose, terracotta, or deep wine/plum. Avoid neon,
+harsh red, or clinical blue.
 
 ## 9. Tone of voice
-The warm, blunt, slightly cheeky best friend who's been there — direct, tender,
-zero shame, zero hype. Permission-giving, never preachy or clinical.
+The warm, wise, slightly bold older sister/guide — direct, sensual, permission-
+giving, zero shame, zero hype. She normalizes desire for grown women and treats
+it as a birthright, not a problem. Tender but unflinching.
 
 ## 10. Final product description
-> **The 7-Day Reconnection Reset**
-> You don't hate each other. You're not falling apart. You've just... drifted —
-> into logistics, schedules, and two people who feel more like roommates than
-> lovers. The Reset is seven nights of one small, doable move — with the exact
-> words to say — to thaw the distance and feel close again. No big confrontation.
-> No therapy. No waiting for him to go first. Just press play, do tonight's move,
-> and watch the warmth come back. Then keep it going inside Roommates to Lovers.
+> **The 7-Day Desire Reset**
+> Your desire didn't disappear. It got buried — under roles, exhaustion,
+> self-criticism, and years of treating intimacy as one more thing to manage. The
+> Reset is seven days of short, private embodiment and desire practices to bring
+> you home to your body and your own wanting — for *you* first. Then it gives you
+> the relationship skills to carry that aliveness into real intimacy. No
+> performing. No fixing anyone. Just coming back to a part of you that's still very
+> much alive. Then keep going inside Roommates to Lovers.
 
 ---
 
@@ -73,22 +77,23 @@ zero shame, zero hype. Permission-giving, never preachy or clinical.
 1080×1080 for social.
 
 **Prompt for an image tool:**
-> A warm, cinematic, softly backlit photo of a cozy kitchen at golden hour. Two
-> coffee mugs on a counter; a man's and a woman's hands resting near each other,
-> almost touching. Shallow depth of field, film grain, intimate and hopeful mood,
-> warm cream and terracotta tones, no faces visible. Editorial, premium,
-> emotionally tender. Leave clean negative space in the upper third for a title.
+> A warm, soft-focus, cinematic photo of a woman (40s, any ethnicity) in golden
+> morning light by a window, eyes closed, a soft peaceful expression, one hand
+> resting gently over her heart. Shallow depth of field, film grain, sensual and
+> serene mood, warm cream and blush and terracotta tones, tasteful and intimate
+> (not explicit). Editorial, premium. Leave clean negative space in the upper
+> third for a title.
 
 **Layout:**
-- Upper third: title **The 7-Day Reconnection Reset** (large, warm serif).
+- Upper third: title **The 7-Day Desire Reset** (large, warm serif).
 - Beneath: subtitle in small clean sans-serif.
 - Lower corner: "Roommates to Lovers" wordmark.
 
 **Type:** Warm serif for the title (e.g. Canela, Cormorant, Playfair); clean
 sans-serif for subtitle/body (e.g. Inter, Mont, Avenir).
 
-**Palette:** `#F4ECE2` cream · `#3A2E2A` espresso · `#B5654A` terracotta accent ·
-`#9A5B5B` dusty wine (optional).
+**Palette:** `#F4ECE2` cream · `#EBD3CC` blush · `#3A2E2A` espresso · `#B5654A`
+terracotta accent · `#7A4A55` deep wine (optional).
 
-**Avoid:** stock-photo cheesiness, fake couples laughing at salad, neon, hype
-badges, clip-art hearts.
+**Avoid:** explicit imagery, stock-photo cheesiness, neon, hype badges, clip-art
+hearts, anything clinical or medical-looking.
