@@ -1,35 +1,130 @@
 [
-  "One dream I've put on hold for too long is... Tell me yours.",
-  "The last time I felt truly seen was... Tell me yours.",
-  "Today, I embraced my imperfections by... Tell me yours.",
-  "One belief I want to challenge is... Tell me yours.",
-  "A conversation I wish I could have again is... Tell me yours.",
-  "The quality in myself I want to celebrate is... Tell me yours.",
-  "One thing I've learned about love is... Tell me yours.",
-  "Today, I found strength in... Tell me yours.",
-  "The last time I felt a burst of joy was... Tell me yours.",
-  "One piece of advice I wish I could give my younger self is... Tell me yours.",
-  "The part of my life I'm ready to let go of is... Tell me yours.",
-  "Today, I noticed my resilience when... Tell me yours.",
-  "The moment I felt most at peace was... Tell me yours.",
-  "One thing I want to explore about myself is... Tell me yours.",
-  "A risk I’m considering taking is... Tell me yours.",
-  "The last time I felt truly confident was... Tell me yours.",
-  "One way I’ve been nurturing my creativity is... Tell me yours.",
-  "Today, I connected with my inner child when... Tell me yours.",
-  "The last time I felt free was... Tell me yours.",
-  "What I need to be kinder about is... Tell me yours.",
-  "The lesson I’m currently learning is... Tell me yours.",
-  "A goal I've set for myself that feels exciting is... Tell me yours.",
-  "One moment I savoured today was... Tell me yours.",
-  "The last compliment I received that meant a lot was... Tell me yours.",
-  "A change I’m making for my mental health is... Tell me yours.",
-  "One way I’ve been feeding my soul lately is... Tell me yours.",
-  "The last time I felt a deep connection with someone was... Tell me yours.",
-  "What I really wish for my future is... Tell me yours.",
-  "Today, I remembered to honour my needs by... Tell me yours.",
-  "One thing I want to learn more about is... Tell me yours.",
-  "A memory that makes me smile is... Tell me yours.",
-  "The part of me that deserves more love is... Tell me yours.",
-  "Today, I chose to say no when I really wanted to by... Tell me yours."
+  {
+    "prompt": "One dream I've tucked away is...",
+    "caption_tail": "I'd love to hear about yours!"
+  },
+  {
+    "prompt": "The last time I felt truly seen was...",
+    "caption_tail": "What about you?"
+  },
+  {
+    "prompt": "A belief I want to rewrite is...",
+    "caption_tail": "Share your thoughts with me!"
+  },
+  {
+    "prompt": "Today I discovered a new joy in...",
+    "caption_tail": "What brought you joy today?"
+  },
+  {
+    "prompt": "One way I want to embrace my age is...",
+    "caption_tail": "How do you feel about it?"
+  },
+  {
+    "prompt": "The one thing I’m ready to let go of is...",
+    "caption_tail": "What’s holding you back?"
+  },
+  {
+    "prompt": "A habit I want to cultivate is...",
+    "caption_tail": "What do you want to nurture?"
+  },
+  {
+    "prompt": "The part of me that feels most empowered is...",
+    "caption_tail": "What empowers you?"
+  },
+  {
+    "prompt": "The last time I surprised myself was...",
+    "caption_tail": "Have you surprised yourself recently?"
+  },
+  {
+    "prompt": "One way I want to connect with my intuition is...",
+    "caption_tail": "What about you?"
+  },
+  {
+    "prompt": "What I wish I could say to my younger self is...",
+    "caption_tail": "What would you tell yours?"
+  },
+  {
+    "prompt": "How I want to celebrate myself this month is...",
+    "caption_tail": "What’s your celebration plan?"
+  },
+  {
+    "prompt": "The part of my story I want to embrace is...",
+    "caption_tail": "What part are you embracing?"
+  },
+  {
+    "prompt": "The qualities I appreciate most in myself are...",
+    "caption_tail": "What do you appreciate about you?"
+  },
+  {
+    "prompt": "A moment of vulnerability I experienced recently was...",
+    "caption_tail": "Have you had a moment of vulnerability?"
+  },
+  {
+    "prompt": "The legacy I want to create is...",
+    "caption_tail": "What legacy do you wish to leave?"
+  },
+  {
+    "prompt": "What brings me peace in chaos is...",
+    "caption_tail": "What brings you peace?"
+  },
+  {
+    "prompt": "One way I’m nurturing my spirit this week is...",
+    "caption_tail": "What’s your spirit-nurturing practice?"
+  },
+  {
+    "prompt": "The change I’m ready to make is...",
+    "caption_tail": "What change are you ready for?"
+  },
+  {
+    "prompt": "One thing I've learned about love is...",
+    "caption_tail": "What have you learned about love?"
+  },
+  {
+    "prompt": "What I want to embody more is...",
+    "caption_tail": "What do you wish to embody?"
+  },
+  {
+    "prompt": "The relationship I want to nurture is...",
+    "caption_tail": "Which relationship matters most to you?"
+  },
+  {
+    "prompt": "The last time I felt a spark of creativity was...",
+    "caption_tail": "When did you feel creative?"
+  },
+  {
+    "prompt": "A risk I'm willing to take is...",
+    "caption_tail": "What risks are you considering?"
+  },
+  {
+    "prompt": "What I appreciate about my friendships is...",
+    "caption_tail": "What do you value in friendship?"
+  },
+  {
+    "prompt": "The childhood dream I still hold close is...",
+    "caption_tail": "Do you have a childhood dream?"
+  },
+  {
+    "prompt": "One lesson I’m learning about forgiveness is...",
+    "caption_tail": "What have you learned about forgiveness?"
+  },
+  {
+    "prompt": "A compliment I’d love to hear is...",
+    "caption_tail": "What compliment would light you up?"
+  },
+  {
+    "prompt": "The way I want to express my creativity is...",
+    "caption_tail": "How do you express yourself creatively?"
+  },
+  {
+    "prompt": "One piece of advice I’d give my daughter is...",
+    "caption_tail": "What advice would you share?"
+  },
+  {
+    "prompt": "The values that guide my life are...",
+    "caption_tail": "What values guide you?"
+  },
+  {
+    "prompt": "An adventure I’m dreaming of is...",
+    "caption_tail": "What’s your dream adventure?"
+  }
 ]
