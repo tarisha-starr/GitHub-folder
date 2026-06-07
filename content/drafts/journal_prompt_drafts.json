@@ -1,130 +1,35 @@
 [
-  {
-    "prompt": "One dream I've tucked away that I'm ready to revisit is...",
-    "caption_tail": "I'd love to hear about your dreams."
-  },
-  {
-    "prompt": "Today, I noticed I felt most myself when...",
-    "caption_tail": "What about you? When do you feel like yourself?"
-  },
-  {
-    "prompt": "The piece of advice I wish I could give my younger self is...",
-    "caption_tail": "What's something you’d tell your younger self?"
-  },
-  {
-    "prompt": "One boundary I’m learning to set is...",
-    "caption_tail": "What boundary are you working on?"
-  },
-  {
-    "prompt": "The last thing that made me burst out laughing was...",
-    "caption_tail": "Share your last laugh with me!"
-  },
-  {
-    "prompt": "The part of my past that still holds me back is...",
-    "caption_tail": "What about your past still lingers?"
-  },
-  {
-    "prompt": "One thing I wish I had more patience with is...",
-    "caption_tail": "What about you? What tests your patience?"
-  },
-  {
-    "prompt": "I’m learning to embrace the uncertainty of...",
-    "caption_tail": "What uncertainties are you embracing?"
-  },
-  {
-    "prompt": "The compliment I’m still holding onto from someone is...",
-    "caption_tail": "What compliment are you cherishing?"
-  },
-  {
-    "prompt": "One lesson I’ve learned about love is...",
-    "caption_tail": "What’s your love lesson?"
-  },
-  {
-    "prompt": "Something I’m curious about exploring next is...",
-    "caption_tail": "What are you curious about these days?"
-  },
-  {
-    "prompt": "The person I admire most right now is...",
-    "caption_tail": "Who inspires you at this moment?"
-  },
-  {
-    "prompt": "One thing I’m letting go of is...",
-    "caption_tail": "What are you ready to release?"
-  },
-  {
-    "prompt": "A conversation I wish I could have is...",
-    "caption_tail": "What’s your dream conversation?"
-  },
-  {
-    "prompt": "The quality I appreciate most in myself today is...",
-    "caption_tail": "What do you appreciate in yourself?"
-  },
-  {
-    "prompt": "One thing I’m ready to declutter from my life is...",
-    "caption_tail": "What’s holding you back that you want to declutter?"
-  },
-  {
-    "prompt": "Today, I felt a spark of creativity when I...",
-    "caption_tail": "What sparked your creativity recently?"
-  },
-  {
-    "prompt": "Something I want to learn more about is...",
-    "caption_tail": "What’s on your learning list?"
-  },
-  {
-    "prompt": "The truth I’m beginning to accept about myself is...",
-    "caption_tail": "What truth are you accepting?"
-  },
-  {
-    "prompt": "One change I’m considering making is...",
-    "caption_tail": "What change are you contemplating?"
-  },
-  {
-    "prompt": "The moment today when I felt truly connected was...",
-    "caption_tail": "Tell me about your moment of connection."
-  },
-  {
-    "prompt": "One way I want to nurture my spirit this week is...",
-    "caption_tail": "How will you nurture your spirit?"
-  },
-  {
-    "prompt": "The thing I wish others understood about me is...",
-    "caption_tail": "What do you want others to know?"
-  },
-  {
-    "prompt": "Something I’m proud of overcoming is...",
-    "caption_tail": "What hurdle are you proud of conquering?"
-  },
-  {
-    "prompt": "Today, I felt a wave of nostalgia when I...",
-    "caption_tail": "What brought on your nostalgia?"
-  },
-  {
-    "prompt": "One thing I want to say 'yes' to this month is...",
-    "caption_tail": "What are you saying yes to?"
-  },
-  {
-    "prompt": "The way I want to express my creativity this week is...",
-    "caption_tail": "How do you plan to get creative?"
-  },
-  {
-    "prompt": "The part of myself I’m embracing fully is...",
-    "caption_tail": "What part of you are you embracing?"
-  },
-  {
-    "prompt": "One song that resonates deeply with me right now is...",
-    "caption_tail": "What song speaks to your soul?"
-  },
-  {
-    "prompt": "The best decision I’ve made for myself lately is...",
-    "caption_tail": "What decision are you celebrating?"
-  },
-  {
-    "prompt": "The last time I felt truly relaxed was...",
-    "caption_tail": "When was the last time you felt relaxed?"
-  },
-  {
-    "prompt": "One perspective I want to shift is...",
-    "caption_tail": "What perspective are you looking to change?"
-  }
+  "What I wish I'd learned earlier in life is... | Tell me yours.",
+  "The last time I felt truly free was... | Tell me yours.",
+  "One thing I want to reclaim from my past is... | Tell me yours.",
+  "The dream I keep pushing aside is... | Tell me yours.",
+  "The way I want to connect with others is... | Tell me yours.",
+  "One thing I want to celebrate about myself is... | Tell me yours.",
+  "What I need to embrace in my life right now is... | Tell me yours.",
+  "The blessing I’m thankful for that I take for granted is... | Tell me yours.",
+  "One nagging doubt I’m ready to release is... | Tell me yours.",
+  "The change I want to make in my daily routine is... | Tell me yours.",
+  "The person I want to apologise to is... | Tell me yours.",
+  "What I wish would happen if I followed my heart is... | Tell me yours.",
+  "The thing that energised me today was... | Tell me yours.",
+  "One way I want to challenge myself this month is... | Tell me yours.",
+  "What I really admire about my closest friend is... | Tell me yours.",
+  "The self-care ritual I need to revisit is... | Tell me yours.",
+  "What I’m learning to accept about my journey is... | Tell me yours.",
+  "The last time I felt heard was... | Tell me yours.",
+  "What I need to say 'yes' to more often is... | Tell me yours.",
+  "The part of my life I want to approach with more curiosity is... | Tell me yours.",
+  "One question I want to ask myself regularly is... | Tell me yours.",
+  "What keeps me up at night is... | Tell me yours.",
+  "The way I want to nurture my creativity is... | Tell me yours.",
+  "The best advice I've ever received was... | Tell me yours.",
+  "One mistake I’ve learned from is... | Tell me yours.",
+  "What I want to do to celebrate my next birthday is... | Tell me yours.",
+  "The relationship I want to work on is... | Tell me yours.",
+  "What I wish I could tell my younger self is... | Tell me yours.",
+  "One thing I’m proud of that surprised me is... | Tell me yours.",
+  "What I want my legacy to be is... | Tell me yours.",
+  "The biggest risk I’m considering taking is... | Tell me yours.",
+  "One way I want to express my feelings more openly is... | Tell me yours.",
+  "What I'm learning to let go of is... | Tell me yours."
 ]
