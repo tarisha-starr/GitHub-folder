@@ -27,9 +27,9 @@ Now we live it.
 **Subhead:**
 The monthly room for women who did the 5 days, met themselves again, and refuse to let it fade by Friday.
 
-**CTA:** Join us, $97/month
+**CTA:** Join as a founding member, $97/month
 
-*Instant access. 14-day Lightbulb Guarantee. Cancel any time.*
+*Founding member price, locked in for life. 14-day Lightbulb Guarantee. Cancel any time.*
 
 ---
 
@@ -81,7 +81,7 @@ You bring your stuck places. Your questions. Your wins. We work them live. Hot-s
 
 Tarisha holds the room. Clinical depth, somatic practice, and the voice you already trust from the 5 days.
 
-90 minutes. Twice a month. First and third Thursday, 7pm NZT. Replay posted the next morning.
+90 minutes. Twice a month. First and third Thursday, 6pm NZT. Replay posted the next morning.
 
 ### A new practice every month
 
@@ -102,7 +102,7 @@ New practice on the 1st of every month. Every past practice stays in your archiv
 
 Other women in the same season. No social-media posturing. No comparison. A room where "I had a hard week" is as welcome as "something incredible happened".
 
-Hosted on Circle. Not Facebook. Private. Searchable. Yours.
+Hosted on Signal. Off the social-media grid. End-to-end encrypted. Private the way private should be.
 
 ### Full archive from day one
 
@@ -110,7 +110,7 @@ Every past practice, every call recording. You're not behind. You start where yo
 
 ### First access to retreat applications
 
-Members get the first 7 days of every Radiant Woman retreat intake before it opens publicly. If that's where you're heading, this is the inside lane.
+Members get the first 7 days of every Reclaim Your Erotic Power retreat intake before it opens publicly. If that's where you're heading, this is the inside lane.
 
 ---
 
@@ -194,9 +194,19 @@ Put it next to what you already know.
 
 $97 a month. Two coffees a week. For the part of your life that holds the rest of it up.
 
-## **\[CTA BUTTON: Join us, $97/month\]**
+---
 
-*Instant access. 14-day Lightbulb Guarantee. Cancel any time.*
+## SECTION 9b, FOUNDING MEMBER PRICE
+
+This is the founding window.
+
+$97/month is the founding member price, locked in for life. Once the room is full and we open this to cold traffic, the price moves to $147. The women who join now keep $97 forever. No tricks. The price will rise. The lock is the lock.
+
+If you've been on the fence, this is the only time the maths is this gentle.
+
+## **\[CTA BUTTON: Join as a founding member, $97/month\]**
+
+*Founding member price, locked in for life. 14-day Lightbulb Guarantee. Cancel any time.*
 
 ---
 
@@ -241,6 +251,15 @@ The map is yours, first. The practices work regardless of partnership status. Yo
 **How long do I have access?**
 For as long as you're a member. The archive grows. Your past practices stay yours while you're in. The day you cancel, you stop paying. Simple.
 
+**What does "founding member" actually mean?**
+You're in the room the day it opens. You lock in $97/month for life. When the price moves to $147 for new joiners, your rate doesn't change for as long as you stay. If you cancel and re-join later, you join at the current rate, so the lock holds while you're in.
+
+**I'm already in the $47/mo Club. What happens to me?**
+The Club is closing. You're invited in as a founding member at $97/month. The new room has more (two live calls instead of one, the Signal community, the Reclaim Your Erotic Power retreat first-access). You'll get a separate email walking you through it, no action needed today.
+
+**Do I need Signal? I've never used it.**
+Free app, two-minute install, works on any phone. We pick Signal because the conversations in this room aren't for Facebook to see. We'll walk you through setup on day one.
+
 **What if sex hurts, or I have trauma?**
 The membership is practice, not therapy. If anything in a session activates you, pause and prioritise support. If you have unresolved sexual trauma, please work with a trauma-trained therapist alongside the membership.
 
@@ -273,9 +292,9 @@ She's not a project. She's the part of you that never let go.
 
 Don't lose her by Friday.
 
-**$97/month. Cancel any time. 14-day Lightbulb Guarantee.**
+**$97/month, locked in for life as a founding member. Cancel any time. 14-day Lightbulb Guarantee.**
 
-## **\[CTA BUTTON: Join us, $97/month\]**
+## **\[CTA BUTTON: Join as a founding member, $97/month\]**
 
 ---
 
@@ -306,15 +325,17 @@ Now we live it.
 Before launching, these need to exist:
 
 - [ ] Founder photo (warm, casual, daylight, eye contact)
-- [ ] Circle space provisioned, intro post and three starter threads pinned
-- [ ] First live call date scheduled and on the page (e.g. "Next call: first Thursday")
+- [ ] Signal group created, welcome message and three starter prompts pinned
+- [ ] Signal install walkthrough drafted (one-pager for day-one welcome email)
+- [ ] First live call date scheduled and on the page (next first or third Thursday, 6pm NZT)
 - [ ] First monthly practice recorded (Desire pillar) and uploaded to archive
 - [ ] Payment flow tested: $97/month recurring, cancel-in-two-clicks confirmed in HighLevel (or chosen platform)
+- [ ] Founding-member rate flagged in the billing system so the lock survives a future price change
 - [ ] 14-day Lightbulb Guarantee refund process documented internally
-- [ ] Post-purchase email: welcome, calendar invite for next call, Circle invite, first practice
+- [ ] Post-purchase email: welcome, calendar invite for next call, Signal invite, first practice
 - [ ] Cancellation flow: one-line exit survey ("what stopped working?")
-- [ ] $47/mo Club: existing members migrated to $97 (or grandfathered, per your call), Club page redirected to /membership
-- [ ] CTA button styled identically in all four placements
+- [ ] $47/mo Club closed: existing members invited in as founding members at $97/mo with a personal email, Club page redirected to /membership
+- [ ] CTA button styled identically in all five placements
 - [ ] Mobile preview check on iPhone and Android
 
 ---
@@ -333,6 +354,12 @@ Before launching, these need to exist:
 | Vivid 3-months-from-now scene added | Same conversion lever used on the $97 5-day page |
 | FAQ adapted for women-solo concerns (peri/menopause, partner doesn't know, trauma) | Matches the $97 5-day page FAQ pattern |
 | All Mark references and couples-only framing scrubbed | Per audience pivot |
+| Calls at 6pm NZT (was 7pm) | Confirmed |
+| Signal community (was Circle) | Confirmed; reframed as a privacy feature |
+| Reclaim Your Erotic Power retreat (was Radiant Woman) | Confirmed |
+| Founding member price added: $97/mo locked in for life, rises to $147 when room is full | Confirmed; all CTAs rewritten to "Join as a founding member" |
+| $47 Club closing, existing members invited in at the $97 founding rate | Confirmed |
+| FAQ extended: founding member meaning, Club migration, Signal install | New material covers the new mechanics |
 | Voice swept: no dashes, no banned words, contractions throughout | ME.md hard rules |
 
 ---
@@ -341,8 +368,8 @@ Before launching, these need to exist:
 
 These don't block shipping but should land before launch:
 
-1. **Call schedule:** I've put "first and third Thursday, 7pm NZT". Confirm or change.
-2. **Community platform:** I've put Circle. Confirm.
-3. **Retreat name on the page:** I've put "Radiant Woman retreat" since the audience is women-solo. The funnel-build doc has the Wanaka couples retreat. Is there a women-only retreat to point to here?
-4. **Founding-rate price lock:** any "$97/mo locked in for life for the first 100 members" mechanic? (Optional, but a known booster.)
-5. **The 47/mo Club existing members:** migrate to $97 with a grace window, or grandfather at $47? (Affects the migration email, not the page.)
+1. **Days of the week for calls:** defaulted to first and third Thursday at 6pm NZT. Confirm Thursdays specifically, or pick different days.
+2. **Founding window trigger:** I've written "until the room is full". If you want a date or a member cap to make the urgency more concrete (e.g. "first 100 founding members" or "until 31 July"), pick one and I'll wire it in.
+3. **Post-rise price:** I've used $147. Confirm or change.
+4. **Founder photo:** still needed for the page.
+5. **Club migration email:** copy needed (separate file) for the existing $47/mo members who get invited in at $97.
