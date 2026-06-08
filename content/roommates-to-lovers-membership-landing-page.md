@@ -29,7 +29,7 @@ The monthly room for women who did the 5 days, met themselves again, and refuse 
 
 **CTA:** Join as a founding member, $97/month
 
-*Founding member price, locked in for life. 14-day Lightbulb Guarantee. Cancel any time.*
+*Founding member price (first 50 members), locked in for life. 14-day Lightbulb Guarantee. Cancel any time.*
 
 ---
 
@@ -198,15 +198,15 @@ $97 a month. Two coffees a week. For the part of your life that holds the rest o
 
 ## SECTION 9b, FOUNDING MEMBER PRICE
 
-This is the founding window.
+This is the founding window. **First 50 members only.**
 
-$97/month is the founding member price, locked in for life. Once the room is full and we open this to cold traffic, the price moves to $147. The women who join now keep $97 forever. No tricks. The price will rise. The lock is the lock.
+$97/month is the founding member price, locked in for life. Once we hit 50, the price moves to $147 for everyone after. The 50 women who join now keep $97 forever. No tricks. The cap is the cap. The lock is the lock.
 
 If you've been on the fence, this is the only time the maths is this gentle.
 
 ## **\[CTA BUTTON: Join as a founding member, $97/month\]**
 
-*Founding member price, locked in for life. 14-day Lightbulb Guarantee. Cancel any time.*
+*Founding member price (first 50 members), locked in for life. 14-day Lightbulb Guarantee. Cancel any time.*
 
 ---
 
@@ -252,7 +252,7 @@ The map is yours, first. The practices work regardless of partnership status. Yo
 For as long as you're a member. The archive grows. Your past practices stay yours while you're in. The day you cancel, you stop paying. Simple.
 
 **What does "founding member" actually mean?**
-You're in the room the day it opens. You lock in $97/month for life. When the price moves to $147 for new joiners, your rate doesn't change for as long as you stay. If you cancel and re-join later, you join at the current rate, so the lock holds while you're in.
+You're one of the first 50 women in the room. You lock in $97/month for life. Once we hit 50, the price moves to $147 for everyone after. Your rate doesn't change for as long as you stay. If you cancel and re-join later, you join at the current rate, so the lock holds while you're in.
 
 **I'm already in the $47/mo Club. What happens to me?**
 The Club is closing. You're invited in as a founding member at $97/month. The new room has more (two live calls instead of one, the Signal community, the Reclaim Your Erotic Power retreat first-access). You'll get a separate email walking you through it, no action needed today.
@@ -357,7 +357,7 @@ Before launching, these need to exist:
 | Calls at 6pm NZT (was 7pm) | Confirmed |
 | Signal community (was Circle) | Confirmed; reframed as a privacy feature |
 | Reclaim Your Erotic Power retreat (was Radiant Woman) | Confirmed |
-| Founding member price added: $97/mo locked in for life, rises to $147 when room is full | Confirmed; all CTAs rewritten to "Join as a founding member" |
+| Founding member price added: $97/mo locked in for life, first 50 members, rises to $147 after | Confirmed; all CTAs rewritten to "Join as a founding member" |
 | $47 Club closing, existing members invited in at the $97 founding rate | Confirmed |
 | FAQ extended: founding member meaning, Club migration, Signal install | New material covers the new mechanics |
 | Voice swept: no dashes, no banned words, contractions throughout | ME.md hard rules |
@@ -369,7 +369,6 @@ Before launching, these need to exist:
 These don't block shipping but should land before launch:
 
 1. **Days of the week for calls:** defaulted to first and third Thursday at 6pm NZT. Confirm Thursdays specifically, or pick different days.
-2. **Founding window trigger:** I've written "until the room is full". If you want a date or a member cap to make the urgency more concrete (e.g. "first 100 founding members" or "until 31 July"), pick one and I'll wire it in.
-3. **Post-rise price:** I've used $147. Confirm or change.
-4. **Founder photo:** still needed for the page.
-5. **Club migration email:** copy needed (separate file) for the existing $47/mo members who get invited in at $97.
+2. **Live member counter on the page:** consider showing "37 of 50 founding spots taken" once joins start. Adds urgency without manufacturing it.
+3. **Founder photo of Tarisha** for Section 6, Why Me: warm, casual, daylight, eye contact (matches the brief from the v2 5-day sales page so the brand stays consistent across the funnel).
+4. **Club migration email:** copy needed (separate file) for the existing $47/mo members who get invited in at $97.
