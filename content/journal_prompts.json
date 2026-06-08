@@ -28,5 +28,20 @@
   { "id": 27, "prompt": "Someone I want to thank in my heart is...", "caption_tail": "Tell me who below." },
   { "id": 28, "prompt": "The last time I laughed deeply was...", "caption_tail": "Tell me yours below." },
   { "id": 29, "prompt": "The question I'd love him to ask is...", "caption_tail": "Tell me yours below." },
-  { "id": 30, "prompt": "The soft thing I'm letting myself feel is...", "caption_tail": "Tell me yours below." }
+  { "id": 30, "prompt": "The soft thing I'm letting myself feel is...", "caption_tail": "Tell me yours below." },
+  {"id": 31, "prompt": "A moment this week I almost said how I really felt was...", "caption_tail": "What would you have said if you didn't stop yourself?"},
+  {"id": 32, "prompt": "The story I've been telling myself about my body is...", "caption_tail": "Notice whose voice the story is in. Is it yours, or someone else judging you?"},
+  {"id": 33, "prompt": "The desire that scared me most as a young woman was...", "caption_tail": "Write to her like you'd write to a daughter. What does she need to hear from you now?"},
+  {"id": 34, "prompt": "What my partner doesn't know I wish for is...", "caption_tail": "Can you be honest enough with yourself and at least write it down?"},
+  {"id": 35, "prompt": "The first time I remember swallowing my voice was...", "caption_tail": "Notice how old you were, where you were, who was there. What did your body learn that day?"},
+  {"id": 36, "prompt": "What my body has been trying to tell me lately is...", "caption_tail": "Don't just have a talk in your head, speak this one out loud or write it down. Are you willing to listen?"},
+  {"id": 37, "prompt": "A version of me I've outgrown but haven't grieved is...", "caption_tail": "Name her. Thank her. Let yourself feel what's underneath... Yes, it can be painful. But also freeing. We're supposed to grow and change."},
+  {"id": 38, "prompt": "The pleasure I stopped letting myself feel is...", "caption_tail": "Is it having a bath because there is no time? Or being lazy and enjoying the sun? Or having a Monday off?"},
+  {"id": 39, "prompt": "If I trusted myself completely, today I would...", "caption_tail": "Finish the sentence three times. What happens? Do share!"},
+  {"id": 40, "prompt": "The conversation I keep avoiding is...", "caption_tail": "Write what you'd actually say if there were no consequences. Then notice what you're afraid of."},
+  {"id": 41, "prompt": "Today the people-pleaser in me took the wheel when...", "caption_tail": "No judgement, just notice and be honest with yourself. I know it's not pleasant. What did she think she was protecting?"},
+  {"id": 42, "prompt": "What enough actually looks like for me now is...", "caption_tail": "Not the version someone else would approve of. But what's enough for you? Let it be smaller or wilder than expected."},
+  {"id": 43, "prompt": "The boundary I almost set this week was...", "caption_tail": "What stopped you, and what would you say differently next time?"},
+  {"id": 44, "prompt": "The moment in childhood that taught me not to ask was...", "caption_tail": "Let the memory come. What did that little girl decide that day?"},
+  {"id": 45, "prompt": "If I trusted life completely, today I would...", "caption_tail": "Finish the sentence three times. What happens? Do share!"}
 ]

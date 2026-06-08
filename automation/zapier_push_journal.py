@@ -32,13 +32,11 @@ ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_PATH = ROOT / "content" / "journal_prompts.json"
 
 DEFAULT_HASHTAGS = [
-    "#WomenOver40",
-    "#MidlifeWomen",
-    "#JournalPrompt",
-    "#SelfReclamation",
-    "#FeminineEnergy",
-    "#SacredFeminine",
-    "#Midlife",
+    "#midlifewoman",
+    "#womenover40",
+    "#journaling",
+    "#innerwork",
+    "#selfreflection",
 ]
 
 
