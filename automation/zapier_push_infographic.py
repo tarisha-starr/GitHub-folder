@@ -87,6 +87,15 @@ def main() -> int:
         )
         return 0
 
+    image_rel = entry.get("image", "")
+    if image_rel and not (ROOT / image_rel).exists():
+        print(
+            f"Infographic #{entry['id']} image not generated yet ({image_rel}). "
+            "Skipping post so Zapier doesn't receive a broken URL.",
+            file=sys.stderr,
+        )
+        return 0
+
     payload = build_payload(entry, raw_base)
     req = urllib.request.Request(
         webhook_url,
