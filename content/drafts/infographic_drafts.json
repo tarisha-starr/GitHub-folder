@@ -1,122 +1,127 @@
 [
   {
+    "title": "Navigating Desire Through the Decades",
+    "caption": "How’s your desire changed from your 30s to your 40s?",
+    "layout": "A two-column compare structure highlighting changes in desire across three decades. The left column lists characteristics and feelings in your 30s, while the right column shows contrasts in your 40s. Include examples like increased self-awareness and shifting priorities."
+  },
+  {
+    "title": "Intimacy Builders: The Key Ingredients",
+    "caption": "What helps you feel more connected with your partner?",
+    "layout": "A cycle diagram illustrating six key ingredients for intimacy. Each section represents elements such as trust, communication, fun, vulnerability, shared experiences, and physical touch, demonstrating how they support and reinvigorate intimacy."
+  },
+  {
+    "title": "The Evolution of Sexual Confidence",
+    "caption": "How confident do you feel in your sexuality now compared to ten years ago?",
+    "layout": "A four-stage progression showing stages of sexual confidence: discovery, embracing sexuality, reclaiming desire, and celebrating self. Brief narratives accompany each stage that reflect common experiences."
+  },
+  {
+    "title": "The Passion Palette: Colours of Intimacy",
+    "caption": "What shades are dominating your intimate life?",
+    "layout": "A 2x2 grid representing different types of intimacy: emotional, physical, intellectual, and spiritual. Each quadrant provides tips and examples on how to foster that specific type of intimacy."
+  },
+  {
+    "title": "The Midlife Sex Toolbox",
+    "caption": "What tools do you have to enhance your sexual life?",
+    "layout": "A toolbox graphic showcasing essential tools for sexual wellness and pleasure, like communication techniques, self-exploration methods, sensual activities, and education resources, with short descriptions of each."
+  },
+  {
+    "title": "Desire vs. Obligation",
+    "caption": "Is your intimacy driven by genuine desire or obligation?",
+    "layout": "A two-column compare structure that contrasts what desire looks like against what obligation entails. Each side includes traits, feelings, and outcomes associated with both aspects of relationships."
+  },
+  {
+    "title": "The 5 Stages of Relationship Growth",
+    "caption": "Where's your relationship on the growth spectrum?",
+    "layout": "A cycle diagram highlighting the five stages of relationship growth: initial spark, deepening connection, facing challenges, evolving dynamics, and sustained partnership, with insights on navigating each stage."
+  },
+  {
+    "title": "The Sensual Self-Care Checklist",
+    "caption": "Which self-care practices could amp up your sensuality?",
+    "layout": "A four-section checklist format covering body, mind, emotions, and spirit. Each section contains practical tips, affirmations, or activities that enhance self-care aimed at boosting sensuality."
+  },
+  {
+    "title": "Emotional Blocks to Intimacy",
+    "caption": "Which emotional blocks are standing in your way?",
+    "layout": "A flowchart illustrating common emotional blocks like fear, trust issues, and past trauma that can hinder intimacy. Each block leads to potential solutions or actions to overcome them."
+  },
+  {
+    "title": "Boundaries: The Art of Saying No",
+    "caption": "Are you honouring your own boundaries?",
+    "layout": "A two-column format comparing healthy vs unhealthy boundaries. The left side depicts traits of healthy boundaries, while the right side presents signs of unhealthy boundaries, providing actionable tips for improvement."
+  },
+  {
+    "title": "The Cycle of Connection and Disconnection",
+    "caption": "Did you notice patterns in how you connect or disconnect with your partner?",
+    "layout": "A cyclical diagram illustrating the stages of connection (engagement, intimacy, communication) and disconnection (withdrawal, misunderstanding, conflict), with tips for breaking the cycle."
+  },
+  {
+    "title": "The 4 Pillars of Lasting Relationships",
+    "caption": "Which pillars are strong in your relationship?",
+    "layout": "A two-by-two grid representing the four pillars: trust, communication, respect, and shared values, along with suggestions for strengthening each pillar that supports relationship longevity."
+  },
+  {
+    "title": "From Routine to Ritual: Enhancing Intimacy",
+    "caption": "How can you turn everyday moments into intimate rituals?",
+    "layout": "A flowchart detailing steps to convert mundane activities into meaningful rituals, such as setting date nights or personalised touches, leading to deeper intimacy."
+  },
+  {
+    "title": "The Passionate 'Yes' vs. Reluctant 'Yes'",
+    "caption": "When’s the last time you said 'yes' with excitement?",
+    "layout": "A two-column comparison showcasing the difference between a passionate 'yes' and a reluctant 'yes', detailing emotions, motivations, and the impact on intimacy."
+  },
+  {
+    "title": "The Body's Wisdom at Midlife",
+    "caption": "How in tune are you with your body's signals?",
+    "layout": "A circular diagram featuring key body signals to listen to, such as tension, energy levels, and changes in sensation, along with tips on how to interpret and honour these signals."
+  },
+  {
+    "title": "Rekindling Romance: The 5-Step Guide",
+    "caption": "What steps will you take to reignite the flame?",
+    "layout": "A sequential infographic outlining the five steps to rekindle romance: recognising routines, planning surprises, improving communication, exploring new experiences, and prioritising intimacy, with brief descriptions."
+  },
+  {
+    "title": "Navigating Change in Relationships",
+    "caption": "How have you adapted to changes in your relationship?",
+    "layout": "A cycle diagram illustrating the phases of adapting to changes: recognition, reaction, reflection, and reinvention, offering insights on managing shifts in relationships effectively."
+  },
+  {
+    "title": "What Would Your Younger Self Think?",
+    "caption": "How might your younger self view your current life choices?",
+    "layout": "A split graphic comparing perspectives of your younger self versus your current self regarding intimacy, desires, and expectations, prompting self-reflection."
+  },
+  {
+    "title": "The Love Languages of Midlife",
+    "caption": "Which love language speaks to your heart now?",
+    "layout": "A four-section layout representing The Five Love Languages, with notes on how they manifest differently at midlife, such as prioritising acts of service over gifts."
+  },
+  {
+    "title": "Trust Building Toolkit",
+    "caption": "What tools do you use to build trust in your relationship?",
+    "layout": "A toolbox illustration featuring essential tools for establishing trust, including honesty, transparency, reliability, and consistency, with tips on how to implement each in daily life."
+  },
+  {
+    "title": "Navigating Sex After 40: Myths Debunked",
+    "caption": "What myths about midlife intimacy have you believed?",
+    "layout": "A two-column comparison that debunks common myths about sex and intimacy after 40 on one side, while the other side presents the truths regarding sexual health and desire."
+  },
+  {
+    "title": "Embracing the New You",
+    "caption": "How do you feel about the woman you’re becoming?",
+    "layout": "A circular diagram outlining steps in embracing a new self: acknowledgment, acceptance, exploration, and celebration, with prompts for each stage to encourage self-discovery."
+  },
+  {
     "title": "The Power of Touch",
-    "caption": "Do you underestimate the role of touch in intimacy?",
-    "layout": "Two-column comparison. On the left, list benefits of physical touch (closeness, oxytocin release, reduced stress). On the right, list lack of touch effects (detachment, increased anxiety, lower intimacy)."
+    "caption": "How often do you prioritise physical touch in your relationships?",
+    "layout": "A visual representation of the benefits of physical touch in relationships, including emotional bonding, stress relief, and improved communication, with statistics and tips to incorporate more touch."
   },
   {
-    "title": "Redefining Confidence",
-    "caption": "How does your confidence change after 40?",
-    "layout": "4-stage progression. Stages: 1. Before 40: societal expectations, 2. Entering midlife: questioning norms, 3. Embracing self: body positivity, 4. Living boldly: confidence through experience."
+    "title": "Stress & Intimacy: The Connection",
+    "caption": "How does stress impact your intimate life?",
+    "layout": "A flowchart illustrating the relationship between stress factors (work, family, health) and intimacy, detailing how stress can diminish connection and suggesting coping strategies."
   },
   {
-    "title": "Emotional Safety in Relationships",
-    "caption": "Do you feel emotionally safe in your relationship?",
-    "layout": "Cycle diagram. Stages of emotional safety: 1. Trust, 2. Vulnerability, 3. Communication, 4. Connection. Arrows show the process as a continual cycle."
-  },
-  {
-    "title": "What Do You Really Want?",
-    "caption": "Are you clear on your desires?",
-    "layout": "2x2 grid. Quadrants include: 1. Known desires: personal pleasure, 2. Unknown desires: exploring fantasies, 3. Unwanted desires: societal expectations, 4. Conflicting desires: partner’s wishes."
-  },
-  {
-    "title": "The Cycle of Intimacy",
-    "caption": "Is your intimacy cycle thriving or dwindling?",
-    "layout": "Circular cycle diagram. Stages: 1. Connection, 2. Intimacy, 3. Passion, 4. Vulnerability. Each stage includes a brief description and arrows illustrating growth or decline."
-  },
-  {
-    "title": "Awakening Your Senses",
-    "caption": "Are you tuning into your bodily sensations?",
-    "layout": "Two-column comparison. Left side lists blocked senses (numbness, disconnection), right side lists awakened senses (heightened pleasure, emotional presence)."
-  },
-  {
-    "title": "Balancing Independence & Togetherness",
-    "caption": "How do you balance your independence in relationships?",
-    "layout": "4-stage progression. Stages: 1. Total independence, 2. Over-dependence, 3. Finding balance, 4. Thriving together while being apart."
-  },
-  {
-    "title": "Emotional Baggage: Let's Unpack It",
-    "caption": "Do you carry emotional baggage that weighs you down?",
-    "layout": "2x2 grid. Quadrants include: 1. Personal baggage: self-doubt, 2. Relational baggage: past traumas, 3. Societal baggage: stereotypes, 4. How to release: journaling, therapy, etc."
-  },
-  {
-    "title": "Communicating Needs Effectively",
-    "caption": "Are you truly being heard in your relationship?",
-    "layout": "2-column comparison. Left side: effective communication techniques (active listening, 'I' statements); Right side: ineffective techniques (blame, criticism)."
-  },
-  {
-    "title": "Self-Care for Your Soul",
-    "caption": "Are you prioritizing your soul's needs?",
-    "layout": "Circular diagram with sectors representing different self-care practices: Nature, Creativity, Rest, Connection. Each section has a brief description."
-  },
-  {
-    "title": "The Journey of Self-Discovery",
-    "caption": "How has your self-discovery journey evolved?",
-    "layout": "4-stage progression. Stages: 1. Lost in identity, 2. Questioning self, 3. Embracing change, 4. Living authentically."
-  },
-  {
-    "title": "Navigating Sexual Stigma",
-    "caption": "Do you feel societal expectations affect your sexuality?",
-    "layout": "Two-column comparison. Left side: common stigmas faced (taboos, ageism), Right side: positive narratives (embracing sexuality, body confidence)."
-  },
-  {
-    "title": "Trust in Relationships: Building Blocks",
-    "caption": "Do you have a solid foundation of trust?",
-    "layout": "Cycle diagram with stages: 1. Honesty, 2. Reliability, 3. Vulnerability, 4. Commitment."
-  },
-  {
-    "title": "Connecting with Your Inner Wisdom",
-    "caption": "Do you listen to your inner wisdom?",
-    "layout": "2x2 grid. Quadrants include: 1. Overthinking, 2. Ignoring intuition, 3. Embracing intuition, 4. Trusting inner voice."
-  },
-  {
-    "title": "Reviving Passion",
-    "caption": "Is your passion still alive in your relationship?",
-    "layout": "4-stage progression. Stages: 1. Honeymoon phase, 2. Routine sets in, 3. Identifying triggers, 4. Reigniting the spark."
-  },
-  {
-    "title": "Managing Expectations in Relationships",
-    "caption": "Are your expectations realistic?",
-    "layout": "Two-column comparison. Left side: realistic expectations (communication, support), Right side: unrealistic expectations (mind reading, constant romance)."
-  },
-  {
-    "title": "The Dance of Desire",
-    "caption": "Is your desire a dance or a battle?",
-    "layout": "Cycle diagram. Stages: 1. Attraction, 2. Uncertainty, 3. Negotiation, 4. Connection."
-  },
-  {
-    "title": "Exploring Sensuality",
-    "caption": "When was the last time you explored your sensuality?",
-    "layout": "2-column comparison. Left side: barriers to sensuality (busy life, self-doubt), Right side: pathways to exploration (mindfulness, dedicated time)."
-  },
-  {
-    "title": "The Importance of Emotional Check-Ins",
-    "caption": "How often do you check in with your feelings?",
-    "layout": "4-stage progression. Stages: 1. Ignoring emotions, 2. Recognising feelings, 3. Sharing with partner, 4. Building deeper connections."
-  },
-  {
-    "title": "Accepting Change in Relationships",
-    "caption": "How do you embrace change in your relationships?",
-    "layout": "2x2 grid. Quadrants: 1. Resisting change, 2. Fear of loss, 3. Growth mindset, 4. Celebrating evolution."
-  },
-  {
-    "title": "The Intersection of Motherhood & Midlife",
-    "caption": "How has motherhood shaped your midlife experience?",
-    "layout": "Cycle diagram showing the interaction between stages: 1. Nurturing, 2. Self-discovery, 3. Reclaiming self, 4. Empowerment."
-  },
-  {
-    "title": "Feeling Seen and Heard",
-    "caption": "Do you feel truly seen and heard by your partner?",
-    "layout": "Two-column comparison. Left side: signs of being seen (active listening, affirmations), Right side: signs of being overlooked (distractions, dismissiveness)."
-  },
-  {
-    "title": "Creating a Relationship Vision",
-    "caption": "What’s your vision for a fulfilling relationship?",
-    "layout": "4-stage progression. Stages: 1. Visualising desires, 2. Setting goals, 3. Taking action, 4. Reflecting and adjusting."
-  },
-  {
-    "title": "Cultural Influences on Relationships",
-    "caption": "Are cultural expectations shaping your relationship dynamics?",
-    "layout": "Two-column comparison. Left side: cultural pressures (gender roles), Right side: cultural liberation (diversity, modern perspectives)."
+    "title": "Midlife Awakening: Your Empowerment Journey",
+    "caption": "What does empowerment look like for you now?",
+    "layout": "A cycle diagram capturing the stages of empowerment in midlife: recognising your worth, reclaiming desires, taking action, and inspiring others, with insights on thriving in each stage."
   }
 ]
