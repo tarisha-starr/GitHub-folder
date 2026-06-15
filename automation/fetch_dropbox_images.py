@@ -46,12 +46,22 @@ ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
 RAW_DIR = IMAGES_DIR / "raw"
 INFOGRAPHIC_DIR = IMAGES_DIR / "infographics"
+VIDEOS_DIR = ROOT / "videos"
+INFOGRAPHIC_VIDEO_DIR = VIDEOS_DIR / "infographics"
 MAPPING_PATH = IMAGES_DIR / "mapping.json"
 DIAGNOSTIC_PATH = IMAGES_DIR / "_diagnostic.json"
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
+VIDEO_EXTS = {".mp4", ".mov", ".m4v", ".webm"}
+ALL_EXTS = IMAGE_EXTS | VIDEO_EXTS
 
-INFOGRAPHIC_RE = re.compile(r"^infographic-(\d+)\.(jpg|jpeg|png|webp|heic)$", re.IGNORECASE)
+INFOGRAPHIC_IMAGE_RE = re.compile(r"^infographic-(\d+)\.(jpg|jpeg|png|webp|heic)$", re.IGNORECASE)
+INFOGRAPHIC_VIDEO_RE = re.compile(
+    r"^infographic[-_]?(?:reel[-_]?)?(\d+)(?:[-_]reel)?\.(mp4|mov|m4v|webm)$",
+    re.IGNORECASE,
+)
+# Back-compat alias used elsewhere in the file
+INFOGRAPHIC_RE = INFOGRAPHIC_IMAGE_RE
 
 
 def write_diagnostic(payload: dict) -> None:
@@ -130,7 +140,7 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
         e
         for e in entries
         if e.get(".tag") == "file"
-        and Path(e["name"]).suffix.lower() in IMAGE_EXTS
+        and Path(e["name"]).suffix.lower() in ALL_EXTS
     ]
     image_entries.sort(key=lambda e: e["name"].lower())
 
@@ -193,37 +203,59 @@ def _save_as_jpeg(src: Path, dest: Path) -> None:
 
 
 def phase_three_route_infographics(saved: list[str]) -> None:
-    """Route any infographic-N.* files in raw/ to images/infographics/.
+    """Route any infographic-N.* files in raw/ to the right place.
 
-    The user drops finished infographic images (named infographic-1.jpg
-    through infographic-30.jpg, or the same with .png/.webp/.heic) into
-    the Dropbox folder alongside their daily photo posts. This phase
-    spots them in raw/ and copies them to images/infographics/ where
-    the daily Zapier push expects them.
+    Images (infographic-N.{jpg,png,webp,heic}) go to images/infographics/.
+    Videos / Reels (infographic-N.{mp4,mov,m4v,webm}, with optional
+    "-reel" or "reel-" in the name) go to videos/infographics/.
+
+    The user drops finished infographics and their matching Reels into
+    the same Dropbox folder as daily photo posts. This phase moves them
+    where the daily Zapier push expects to find them.
     """
     INFOGRAPHIC_DIR.mkdir(parents=True, exist_ok=True)
-    routed = 0
+    INFOGRAPHIC_VIDEO_DIR.mkdir(parents=True, exist_ok=True)
+    routed_images = 0
+    routed_videos = 0
     skipped: list[str] = []
+
     for name in saved:
-        m = INFOGRAPHIC_RE.match(name)
-        if not m:
+        m_img = INFOGRAPHIC_IMAGE_RE.match(name)
+        if m_img:
+            idx = int(m_img.group(1))
+            src = RAW_DIR / name
+            dest = INFOGRAPHIC_DIR / f"infographic-{idx}.jpg"
+            try:
+                _save_as_jpeg(src, dest)
+                print(f"  {name} -> {dest.relative_to(ROOT)}")
+                routed_images += 1
+            except Exception as e:
+                skipped.append(f"{name}: {e}")
             continue
-        idx = int(m.group(1))
-        src = RAW_DIR / name
-        dest = INFOGRAPHIC_DIR / f"infographic-{idx}.jpg"
-        try:
-            _save_as_jpeg(src, dest)
-            print(f"  {name} -> {dest.relative_to(ROOT)}")
-            routed += 1
-        except Exception as e:
-            skipped.append(f"{name}: {e}")
-    if routed == 0 and not skipped:
+
+        m_vid = INFOGRAPHIC_VIDEO_RE.match(name)
+        if m_vid:
+            idx = int(m_vid.group(1))
+            src = RAW_DIR / name
+            dest = INFOGRAPHIC_VIDEO_DIR / f"infographic-{idx}.mp4"
+            try:
+                shutil.copyfile(src, dest)
+                print(f"  {name} -> {dest.relative_to(ROOT)}")
+                routed_videos += 1
+            except Exception as e:
+                skipped.append(f"{name}: {e}")
+            continue
+
+    if routed_images == 0 and routed_videos == 0 and not skipped:
         print(
             "\nPhase 3: no infographic-N.* files found in raw/. "
             "Skip (this is fine if you only uploaded daily photos)."
         )
         return
-    print(f"\nPhase 3: routed {routed} infographic image(s) to images/infographics/")
+    print(
+        f"\nPhase 3: routed {routed_images} infographic image(s) to images/infographics/, "
+        f"{routed_videos} reel(s) to videos/infographics/"
+    )
     for line in skipped:
         print(f"  SKIPPED {line}", file=sys.stderr)
 

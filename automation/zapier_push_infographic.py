@@ -53,6 +53,10 @@ def todays_infographic() -> dict | None:
 def build_payload(entry: dict, raw_base: str) -> dict:
     base = raw_base.rstrip("/")
     image_url = f"{base}/{entry['image']}"
+    video_rel = f"videos/infographics/infographic-{entry['id']}.mp4"
+    video_url = ""
+    if (ROOT / video_rel).exists():
+        video_url = f"{base}/{video_rel}"
     hashtags = " ".join(DEFAULT_HASHTAGS)
     return {
         "post_type": "infographic",
@@ -64,7 +68,8 @@ def build_payload(entry: dict, raw_base: str) -> dict:
         "hashtags_list": DEFAULT_HASHTAGS,
         "image_url": image_url,
         "infographic_image_url": image_url,
-        "video_url": "",
+        "video_url": video_url,
+        "infographic_video_url": video_url,
         "themes": ["infographic", "education"],
     }
 
