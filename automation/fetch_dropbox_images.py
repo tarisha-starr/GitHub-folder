@@ -29,8 +29,10 @@ logs.
 
 from __future__ import annotations
 
+import io
 import json
 import os
+import re
 import shutil
 import sys
 import urllib.error
@@ -43,10 +45,13 @@ CONTENT = "https://content.dropboxapi.com/2"
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
 RAW_DIR = IMAGES_DIR / "raw"
+INFOGRAPHIC_DIR = IMAGES_DIR / "infographics"
 MAPPING_PATH = IMAGES_DIR / "mapping.json"
 DIAGNOSTIC_PATH = IMAGES_DIR / "_diagnostic.json"
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
+
+INFOGRAPHIC_RE = re.compile(r"^infographic-(\d+)\.(jpg|jpeg|png|webp|heic)$", re.IGNORECASE)
 
 
 def write_diagnostic(payload: dict) -> None:
@@ -167,6 +172,62 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
     return saved
 
 
+def _save_as_jpeg(src: Path, dest: Path) -> None:
+    """Copy src to dest. If src isn't already JPEG, try Pillow re-encode;
+    fall back to a plain copy if Pillow isn't available (Buffer/Zapier
+    sniff MIME from bytes, so a PNG renamed to .jpg still works for
+    most consumers, but a true JPEG is preferred)."""
+    if src.suffix.lower() in {".jpg", ".jpeg"}:
+        shutil.copyfile(src, dest)
+        return
+    try:
+        from PIL import Image  # type: ignore
+    except ImportError:
+        shutil.copyfile(src, dest)
+        return
+    with Image.open(src) as im:
+        rgb = im.convert("RGB")
+        out = io.BytesIO()
+        rgb.save(out, format="JPEG", quality=92, optimize=True)
+        dest.write_bytes(out.getvalue())
+
+
+def phase_three_route_infographics(saved: list[str]) -> None:
+    """Route any infographic-N.* files in raw/ to images/infographics/.
+
+    The user drops finished infographic images (named infographic-1.jpg
+    through infographic-30.jpg, or the same with .png/.webp/.heic) into
+    the Dropbox folder alongside their daily photo posts. This phase
+    spots them in raw/ and copies them to images/infographics/ where
+    the daily Zapier push expects them.
+    """
+    INFOGRAPHIC_DIR.mkdir(parents=True, exist_ok=True)
+    routed = 0
+    skipped: list[str] = []
+    for name in saved:
+        m = INFOGRAPHIC_RE.match(name)
+        if not m:
+            continue
+        idx = int(m.group(1))
+        src = RAW_DIR / name
+        dest = INFOGRAPHIC_DIR / f"infographic-{idx}.jpg"
+        try:
+            _save_as_jpeg(src, dest)
+            print(f"  {name} -> {dest.relative_to(ROOT)}")
+            routed += 1
+        except Exception as e:
+            skipped.append(f"{name}: {e}")
+    if routed == 0 and not skipped:
+        print(
+            "\nPhase 3: no infographic-N.* files found in raw/. "
+            "Skip (this is fine if you only uploaded daily photos)."
+        )
+        return
+    print(f"\nPhase 3: routed {routed} infographic image(s) to images/infographics/")
+    for line in skipped:
+        print(f"  SKIPPED {line}", file=sys.stderr)
+
+
 def phase_two_apply_mapping(saved: list[str]) -> None:
     if not MAPPING_PATH.exists():
         print(
@@ -214,6 +275,7 @@ def main() -> int:
     if not saved:
         return 1
     phase_two_apply_mapping(saved)
+    phase_three_route_infographics(saved)
     return 0
 
 
