@@ -18,8 +18,16 @@ The value is the post id (1..20). The destination extension is forced
 to .jpg so it matches posts.json. Buffer detects MIME from file bytes,
 not the URL extension, so this is safe even for sources that were PNG.
 
-Required env vars:
-  DROPBOX_ACCESS_TOKEN   long-lived OAuth token with files.content.read
+Auth (in order of preference):
+  1. DROPBOX_REFRESH_TOKEN + DROPBOX_APP_KEY + DROPBOX_APP_SECRET
+     The script exchanges the refresh token for a fresh access token
+     on every run, so nothing ever expires.
+  2. DROPBOX_ACCESS_TOKEN
+     Short-lived access tokens work but expire after ~4 hours; you'll
+     have to update the secret each time. Use option 1 to make this
+     hands-off.
+
+Always required:
   DROPBOX_FOLDER_URL     shared link URL to the folder
 
 Diagnostics: any error from the Dropbox API is also written to
@@ -36,11 +44,13 @@ import re
 import shutil
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
 API = "https://api.dropboxapi.com/2"
 CONTENT = "https://content.dropboxapi.com/2"
+OAUTH_TOKEN_URL = "https://api.dropbox.com/oauth2/token"
 
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
@@ -69,6 +79,85 @@ def write_diagnostic(payload: dict) -> None:
     DIAGNOSTIC_PATH.write_text(
         json.dumps(payload, indent=2, default=str), encoding="utf-8"
     )
+
+
+def refresh_access_token(refresh_token: str, app_key: str, app_secret: str) -> str:
+    """Exchange a Dropbox refresh token for a short-lived access token.
+
+    Raises urllib.error.HTTPError on failure (handled by caller's
+    diagnostic block).
+    """
+    import base64
+
+    creds = base64.b64encode(f"{app_key}:{app_secret}".encode("ascii")).decode("ascii")
+    body = urllib.parse.urlencode(
+        {"grant_type": "refresh_token", "refresh_token": refresh_token}
+    ).encode("ascii")
+    req = urllib.request.Request(
+        OAUTH_TOKEN_URL,
+        data=body,
+        headers={
+            "Authorization": f"Basic {creds}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+    )
+    with urllib.request.urlopen(req) as resp:
+        payload = json.loads(resp.read().decode("utf-8"))
+    return payload["access_token"]
+
+
+def resolve_access_token() -> str | None:
+    """Return a usable access token: prefer the refresh flow, fall back
+    to a plain DROPBOX_ACCESS_TOKEN. Returns None and writes diagnostic
+    if nothing usable is configured or the refresh exchange fails."""
+    refresh = os.environ.get("DROPBOX_REFRESH_TOKEN")
+    app_key = os.environ.get("DROPBOX_APP_KEY")
+    app_secret = os.environ.get("DROPBOX_APP_SECRET")
+    if refresh and app_key and app_secret:
+        try:
+            token = refresh_access_token(refresh, app_key, app_secret)
+            print("Auth: minted a fresh access token via refresh flow.")
+            return token
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            write_diagnostic(
+                {
+                    "phase": "refresh_token",
+                    "status": e.code,
+                    "reason": e.reason,
+                    "body": body,
+                }
+            )
+            print(
+                f"refresh_token exchange failed: {e.code} {e.reason}\n{body}",
+                file=sys.stderr,
+            )
+            # fall through to legacy access token
+
+    legacy = os.environ.get("DROPBOX_ACCESS_TOKEN")
+    if legacy:
+        print(
+            "Auth: using DROPBOX_ACCESS_TOKEN directly "
+            "(consider switching to the refresh-token flow to avoid expirations).",
+            file=sys.stderr,
+        )
+        return legacy
+
+    write_diagnostic(
+        {
+            "phase": "config",
+            "error": (
+                "No usable Dropbox credentials. Set either "
+                "DROPBOX_REFRESH_TOKEN + DROPBOX_APP_KEY + DROPBOX_APP_SECRET, "
+                "or DROPBOX_ACCESS_TOKEN."
+            ),
+            "refresh_token_set": bool(refresh),
+            "app_key_set": bool(app_key),
+            "app_secret_set": bool(app_secret),
+            "access_token_set": bool(legacy),
+        }
+    )
+    return None
 
 
 def post_json(url: str, token: str, body: dict) -> dict:
@@ -286,19 +375,21 @@ def phase_two_apply_mapping(saved: list[str]) -> None:
 
 
 def main() -> int:
-    token = os.environ.get("DROPBOX_ACCESS_TOKEN")
     folder_url = os.environ.get("DROPBOX_FOLDER_URL")
-    if not token or not folder_url:
+    if not folder_url:
         write_diagnostic(
             {
                 "phase": "config",
-                "token_set": bool(token),
-                "folder_url_set": bool(folder_url),
-                "error": "DROPBOX_ACCESS_TOKEN and DROPBOX_FOLDER_URL must both be set",
+                "error": "DROPBOX_FOLDER_URL must be set",
             }
         )
+        print("DROPBOX_FOLDER_URL must be set", file=sys.stderr)
+        return 1
+
+    token = resolve_access_token()
+    if not token:
         print(
-            "DROPBOX_ACCESS_TOKEN and DROPBOX_FOLDER_URL must be set",
+            "No usable Dropbox credentials. See images/_diagnostic.json.",
             file=sys.stderr,
         )
         return 1
