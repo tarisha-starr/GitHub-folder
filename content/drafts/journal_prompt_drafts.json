@@ -1,36 +1,130 @@
 [
-  "One way I celebrated my achievements today was... | Tell me yours.",
-  "The part of me that's blooming right now is... | Tell me yours.",
-  "What I need to let go of this week is... | Tell me yours.",
-  "The wisdom I’ve gained from my struggles is... | Tell me yours.",
-  "One conversation I've been longing to have is... | Tell me yours.",
-  "Today, I caught myself daydreaming about... | Tell me yours.",
-  "The last time I felt truly at peace was... | Tell me yours.",
-  "One thing I’m learning to appreciate about myself is... | Tell me yours.",
-  "What I wish I could say to my younger self is... | Tell me yours.",
-  "A fear I’ve faced this month is... | Tell me yours.",
-  "The last time I felt exhilarated was... | Tell me yours.",
-  "One compliment I wish I received more often is... | Tell me yours.",
-  "A book that changed my perspective recently is... | Tell me yours.",
-  "The thing I most admire in other women is... | Tell me yours.",
-  "If I could write a letter to my future self, I’d say... | Tell me yours.",
-  "One way I’ve surprised myself this year is... | Tell me yours.",
-  "What I’m reclaiming about my past is... | Tell me yours.",
-  "The last time I embraced vulnerability was... | Tell me yours.",
-  "Today, I remembered a dream I had about... | Tell me yours.",
-  "One thing I wish I had more time for is... | Tell me yours.",
-  "The way I’ve changed my self-talk recently is... | Tell me yours.",
-  "A lesson I’m learning through this phase of life is... | Tell me yours.",
-  "The support I wish I could lean on more is... | Tell me yours.",
-  "One emotional risk I’m willing to take this week is... | Tell me yours.",
-  "A phrase that’s been resonating with me lately is... | Tell me yours.",
-  "Today, I felt my inner strength when... | Tell me yours.",
-  "What I truly want from my friendships is... | Tell me yours.",
-  "The last time I felt beautiful was... | Tell me yours.",
-  "If I had an entire day just for me, I’d... | Tell me yours.",
-  "One thing I want to explore more deeply is... | Tell me yours.",
-  "What I’m most proud of this year is... | Tell me yours.",
-  "The truth I’m finally embracing about ageing is... | Tell me yours.",
-  "A dream I’d love to explore in my 40s is... | Tell me yours.",
-  "What I want my life to feel like in five years is... | Tell me yours."
+  {
+    "prompt": "One thing I've been avoiding is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "A dream I’ve been carrying since I was young is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The part of my past I’m ready to release is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "Something I’ve accomplished that I’m proud of is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The relationship I wish to nurture more is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The moment I felt most connected to my intuition was...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The belief I’m ready to let go of is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "A place in my life where I crave more honesty is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The way I want to express my creativity is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "A piece of advice I wish I could share with my younger self is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The thing I most admire in others but struggle to see in myself is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The last time I felt truly free was...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The way I want to celebrate my body today is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "Something that keeps me up at night is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "What I want to do differently in my relationships is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The little voice in my head that I need to silence is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "One habit I’d like to cultivate is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The last time I felt proud of my strength was...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The quality I want to embrace more is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "A truth about myself that I’ve been avoiding is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "What makes me feel most at peace is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The last time I stood up for myself was...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "A lesson I learned the hard way is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The thing I miss about my younger self is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The gratitude I haven’t voiced yet is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "What I need to prioritise in my life right now is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The way I want to experience joy this week is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The area of my life where I seek more adventure is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "My favourite way to recharge my spirit is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "What I really want to ask for in my life is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "A change I want to embrace within myself is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "One truth about love that I've come to know is...",
+    "caption_tail": "Tell me yours."
+  }
 ]
