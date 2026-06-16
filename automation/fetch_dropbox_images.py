@@ -33,9 +33,9 @@ Always required:
 Optional:
   DROPBOX_INFOGRAPHIC_FOLDER_URL     second shared folder containing
                                      finished infographic-N.png and
-                                     reel-N.mp4 files. Fetched
-                                     recursively so reels in a
-                                     sub-folder are also picked up.
+                                     reel-N.mp4 files. Subfolders
+                                     are walked manually so reels in
+                                     a sub-folder are also picked up.
 
 Diagnostics: any error from the Dropbox API is also written to
 images/_diagnostic.json so it can be inspected without reading workflow
@@ -180,12 +180,8 @@ def post_json(url: str, token: str, body: dict) -> dict:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def list_files(token: str, folder_url: str, recursive: bool = False) -> list[dict]:
-    body = {
-        "path": "",
-        "shared_link": {"url": folder_url},
-        "recursive": recursive,
-    }
+def _list_one_folder(token: str, folder_url: str, path: str) -> list[dict]:
+    body = {"path": path, "shared_link": {"url": folder_url}}
     result = post_json(f"{API}/files/list_folder", token, body)
     entries = list(result.get("entries", []))
     while result.get("has_more"):
@@ -196,25 +192,6 @@ def list_files(token: str, folder_url: str, recursive: bool = False) -> list[dic
         )
         entries.extend(result.get("entries", []))
     return entries
-
-
-def download_file(token: str, folder_url: str, path_in_folder: str, dest: Path) -> None:
-    req = urllib.request.Request(
-        f"{CONTENT}/sharing/get_shared_link_file",
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Dropbox-API-Arg": json.dumps(
-                {"url": folder_url, "path": path_in_folder}
-            ),
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
-        while True:
-            chunk = resp.read(65536)
-            if not chunk:
-                break
-            f.write(chunk)
 
 
 def compute_shared_root(entries: list[dict]) -> str:
@@ -240,6 +217,64 @@ def compute_shared_root(entries: list[dict]) -> str:
     if len(paths) == 1 and common:
         common = common[:-1]
     return "/".join(common)
+
+
+def list_files(token: str, folder_url: str, recursive: bool = False) -> list[dict]:
+    """List files in the shared folder. Dropbox does not support the
+    `recursive` flag on shared links, so when recursive=True we walk
+    subfolders manually (BFS), one list_folder call per subfolder."""
+    entries = _list_one_folder(token, folder_url, "")
+    if not recursive:
+        return entries
+
+    shared_root = compute_shared_root(entries)
+    root_len = len(shared_root)
+
+    def relative_path(folder_entry: dict) -> str:
+        display = folder_entry.get("path_display") or ""
+        if root_len and display.lower().startswith(shared_root):
+            rel = display[root_len:]
+        else:
+            rel = display
+        if not rel.startswith("/"):
+            rel = "/" + rel
+        return rel
+
+    queue: list[dict] = [e for e in entries if e.get(".tag") == "folder"]
+    while queue:
+        folder = queue.pop(0)
+        rel = relative_path(folder)
+        try:
+            sub_entries = _list_one_folder(token, folder_url, rel)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            print(
+                f"  WARN: could not list sub-folder {rel}: {e.code} {body}",
+                file=sys.stderr,
+            )
+            continue
+        entries.extend(sub_entries)
+        queue.extend([e for e in sub_entries if e.get(".tag") == "folder"])
+    return entries
+
+
+def download_file(token: str, folder_url: str, path_in_folder: str, dest: Path) -> None:
+    req = urllib.request.Request(
+        f"{CONTENT}/sharing/get_shared_link_file",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Dropbox-API-Arg": json.dumps(
+                {"url": folder_url, "path": path_in_folder}
+            ),
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req) as resp, open(dest, "wb") as f:
+        while True:
+            chunk = resp.read(65536)
+            if not chunk:
+                break
+            f.write(chunk)
 
 
 def phase_one_download_raw(
