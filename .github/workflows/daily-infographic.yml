@@ -5,6 +5,11 @@ on:
     # 20:00 UTC = 08:00 NZST (winter, UTC+12) = morning in NZ
     - cron: "0 20 * * *"
   workflow_dispatch:
+    inputs:
+      force_id:
+        description: "Force-post this infographic id (1..30). Leave empty for today's schedule."
+        required: false
+        default: ""
 
 jobs:
   push-infographic:
@@ -29,4 +34,6 @@ jobs:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          INFOGRAPHIC_LAUNCH_DATE: ${{ vars.INFOGRAPHIC_LAUNCH_DATE }}
+          FORCE_INFOGRAPHIC_ID: ${{ inputs.force_id }}
         run: python zapier_push_infographic.py

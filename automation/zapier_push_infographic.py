@@ -6,9 +6,19 @@ used once). Builds a payload with image_url + caption + hashtags and
 sends to ZAPIER_WEBHOOK_URL.
 
 Required env vars:
-  ZAPIER_WEBHOOK_URL    same Catch Hook URL as the image push
-  IMAGE_RAW_BASE        public raw URL base of the repo
-  POSTS_LAUNCH_DATE     optional, YYYY-MM-DD
+  ZAPIER_WEBHOOK_URL          same Catch Hook URL as the image push
+  IMAGE_RAW_BASE              public raw URL base of the repo
+
+Optional env vars:
+  INFOGRAPHIC_LAUNCH_DATE     YYYY-MM-DD. Day 0 of the infographic
+                              rollout. Lets you restart the
+                              infographic series without touching the
+                              daily-photo POSTS_LAUNCH_DATE.
+  POSTS_LAUNCH_DATE           fallback when INFOGRAPHIC_LAUNCH_DATE
+                              is unset.
+  FORCE_INFOGRAPHIC_ID        skip the date math and send the
+                              infographic with this id (1..30). Useful
+                              for one-off manual testing.
 """
 
 from __future__ import annotations
@@ -42,9 +52,43 @@ def load_infographics() -> list[dict]:
         return json.load(f)
 
 
+def infographic_launch_date() -> date:
+    raw = os.environ.get("INFOGRAPHIC_LAUNCH_DATE")
+    if raw:
+        try:
+            return date.fromisoformat(raw.strip())
+        except ValueError:
+            print(
+                f"Invalid INFOGRAPHIC_LAUNCH_DATE={raw!r}; "
+                "expected YYYY-MM-DD. Falling back to POSTS_LAUNCH_DATE.",
+                file=sys.stderr,
+            )
+    return launch_date()
+
+
 def todays_infographic() -> dict | None:
     items = load_infographics()
-    n = (date.today() - launch_date()).days
+
+    force_id = os.environ.get("FORCE_INFOGRAPHIC_ID", "").strip()
+    if force_id:
+        try:
+            idx = int(force_id)
+        except ValueError:
+            print(
+                f"Invalid FORCE_INFOGRAPHIC_ID={force_id!r}; expected integer.",
+                file=sys.stderr,
+            )
+            return None
+        for item in items:
+            if int(item.get("id", 0)) == idx:
+                return item
+        print(
+            f"FORCE_INFOGRAPHIC_ID={idx} not found in content/infographics.json.",
+            file=sys.stderr,
+        )
+        return None
+
+    n = (date.today() - infographic_launch_date()).days
     if n < 0 or n >= len(items):
         return None
     return items[n]
