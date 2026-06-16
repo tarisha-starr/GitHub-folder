@@ -2,11 +2,10 @@ name: Daily book + practice post (Zapier)
 
 on:
   schedule:
-    # 19:30 UTC = 7:30am NZST (winter UTC+12) / 8:30am NZDT (summer UTC+13)
-    # The Python scheduler matches today's date against book-posts.json /
-    # practices.json — so the workflow runs every day but only fires when
-    # there's a scheduled post for today (Mon/Wed/Fri themed, Sat practice).
-    - cron: "30 19 * * *"
+    # 21:00 UTC = 09:00 NZST (winter UTC+12) / 10:00 NZDT (summer UTC+13).
+    # Scheduler uses NZ-local today (UTC+12) to match the post_date in
+    # content/practices.json. Fires only when today is a scheduled date.
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 jobs:
