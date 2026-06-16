@@ -47,6 +47,8 @@ def main() -> int:
 
     image_path = post.get("image", "").lstrip("/")
     image_url = f"{raw_base}/{image_path}" if image_path else ""
+    video_path = post.get("video", "").lstrip("/")
+    video_url = f"{raw_base}/{video_path}" if video_path else ""
 
     payload = {
         "kind": kind,
@@ -59,6 +61,8 @@ def main() -> int:
         "question": post.get("question"),
         "hashtags": post.get("hashtags") or [],
         "image_url": image_url,
+        "video_url": video_url,
+        "platforms": post.get("platforms", []),
         "notion_url": post.get("notion_url", ""),
         "remaining_after_today": remaining_count(),
     }

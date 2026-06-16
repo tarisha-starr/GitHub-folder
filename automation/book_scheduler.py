@@ -17,6 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BOOK_PATH = ROOT / "content" / "book-posts.json"
 PRACTICES_PATH = ROOT / "content" / "practices.json"
+REELS_PATH = ROOT / "content" / "reels.json"
 
 # NZST is UTC+12 (May–Sep). NZDT is UTC+13 (Oct–Apr).
 # We use +12 since the daily cron runs at 21:00 UTC = 09:00 NZST.
@@ -42,6 +43,9 @@ def todays_entry() -> tuple[str, dict] | tuple[None, None]:
     for post in _load(BOOK_PATH):
         if post.get("post_date") == today:
             return ("book", post)
+    for post in _load(REELS_PATH):
+        if post.get("post_date") == today:
+            return ("reel", post)
     for post in _load(PRACTICES_PATH):
         if post.get("post_date") == today:
             return ("practice", post)
@@ -49,10 +53,10 @@ def todays_entry() -> tuple[str, dict] | tuple[None, None]:
 
 
 def remaining_count() -> int:
-    """Future-dated posts AFTER today (NZ), across both files."""
+    """Future-dated posts AFTER today (NZ), across all files."""
     today = nz_today()
     n = 0
-    for post in _load(BOOK_PATH) + _load(PRACTICES_PATH):
+    for post in _load(BOOK_PATH) + _load(PRACTICES_PATH) + _load(REELS_PATH):
         pd = post.get("post_date")
         if pd and pd > today:
             n += 1
