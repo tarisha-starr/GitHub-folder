@@ -4,7 +4,7 @@ Mirrors the structure of zapier_push.py but reads from book-posts.json /
 practices.json via book_scheduler.
 
 Required env vars:
-  ZAPIER_BOOK_WEBHOOK_URL   the Catch Hook URL Zapier gives you for book content
+  ZAPIER_WEBHOOK_URL   the Catch Hook URL Zapier gives you for book content
   IMAGE_RAW_BASE            e.g. https://raw.githubusercontent.com/tarisha-starr/GitHub-folder/main
 """
 
@@ -31,10 +31,10 @@ def build_caption(post: dict) -> str:
 
 
 def main() -> int:
-    webhook = os.environ.get("ZAPIER_BOOK_WEBHOOK_URL", "").strip()
+    webhook = os.environ.get("ZAPIER_WEBHOOK_URL", "").strip()
     raw_base = os.environ.get("IMAGE_RAW_BASE", "").strip().rstrip("/")
     if not webhook:
-        print("ZAPIER_BOOK_WEBHOOK_URL is not set", file=sys.stderr)
+        print("ZAPIER_WEBHOOK_URL is not set", file=sys.stderr)
         return 1
     if not raw_base:
         print("IMAGE_RAW_BASE is not set", file=sys.stderr)

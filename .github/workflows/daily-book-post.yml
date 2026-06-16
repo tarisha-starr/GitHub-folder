@@ -12,7 +12,7 @@ on:
 jobs:
   push-book-to-zapier:
     runs-on: ubuntu-latest
-    if: ${{ vars.BOOK_ZAPIER_ENABLED == 'true' }}
+    if: ${{ vars.ZAPIER_ENABLED == 'true' }}
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
@@ -29,6 +29,6 @@ jobs:
       - name: Send today's book/practice post to Zapier
         working-directory: automation
         env:
-          ZAPIER_BOOK_WEBHOOK_URL: ${{ secrets.ZAPIER_BOOK_WEBHOOK_URL }}
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
         run: python zapier_push_book.py
