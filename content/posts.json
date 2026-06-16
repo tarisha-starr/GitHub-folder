@@ -278,5 +278,305 @@
     "question": "Comment 'me' to learn how to shift this.",
     "hashtags": ["#LongTermLove", "#MarriageAfter40", "#EmotionalIntimacy", "#WomenOver40", "#Midlife", "#Loneliness", "#RelationshipGoals"],
     "themes": ["long-term relationships", "loneliness"]
+  },
+  {
+    "id": 29,
+    "image": "images/image-29.jpg",
+    "visual": "Editorial card, cream/plum/gold; two figures back-to-back with a gold 'the cycle' loop",
+    "hook": "The cycle is the enemy — not your partner.",
+    "caption": "When it all goes wrong between you, it feels like you're fighting each other. You're not. You're both caught in the same old loop — you reach and sharpen, they go quiet and disappear, and round it goes. The loop is the problem, not the person you love. The night you can finally point at the pattern instead of at each other is the night you stop being enemies and start being a team again.\n\nWhat's the loop the two of you keep falling into?",
+    "question": "What's the loop the two of you keep falling into?",
+    "hashtags": ["#relationships", "#marriagehelp", "#emotionalconnection", "#midlifewomen", "#intimacyafter40"],
+    "themes": ["couples", "the cycle"]
+  },
+  {
+    "id": 30,
+    "image": "images/image-30.jpg",
+    "visual": "Iceberg card, cream/plum/gold; small tip 'anger' above the waterline, large mass 'fear · loneliness · longing' below",
+    "hook": "What's under the anger?",
+    "caption": "The anger isn't the whole story. Under the sharp words and the slammed cupboard there's something softer you haven't said out loud — I'm scared, I'm lonely, I need to know I still matter to you. Anger is the armour. Underneath is the wanting. They can't answer a need they never get to see, beautiful.\n\nWhat's the softer thing sitting under your last fight?",
+    "question": "What's the softer thing sitting under your last fight?",
+    "hashtags": ["#emotionalhonesty", "#relationships", "#innerwork", "#marriagehelp", "#midlifewomen"],
+    "themes": ["emotions", "vulnerability"]
+  },
+  {
+    "id": 31,
+    "image": "images/image-31.jpg",
+    "visual": "Two figures with a gold footprint loop; 'I push, I get louder' / 'I go quiet, I disappear'",
+    "hook": "The more I reach, the more you pull away.",
+    "caption": "It looks like a fight about the dishes. It isn't. The more you push to be heard, the more they pull away — and the more they pull away, the louder you have to get just to feel them there. It's not nagging. It's a woman reaching for someone who's drifting. You're not too much. You're frightened of losing the connection.\n\nWhat are you really reaching for when you push?",
+    "question": "What are you really reaching for when you push?",
+    "hashtags": ["#marriagehelp", "#relationships", "#emotionalconnection", "#midlifewomen", "#relationshipadvice"],
+    "themes": ["couples", "pursue-withdraw"]
+  },
+  {
+    "id": 32,
+    "image": "images/image-32.jpg",
+    "visual": "Two figures pointing across a gold crack; 'your fault' / 'no, yours'",
+    "hook": "Find the bad guy: a loop with no winner.",
+    "caption": "Somewhere along the way it became a courtroom. You attack so you don't end up the guilty one; they attack back for the same reason. Round and round, both of you defending, neither of you safe enough to soften. Nobody wins find-the-bad-guy. You just both leave the room a little lonelier.\n\nWhat if there's no villain here — just two tired people bracing for the next blow?",
+    "question": "What if there's no villain here — just two tired people bracing for the next blow?",
+    "hashtags": ["#relationships", "#marriagehelp", "#emotionalhonesty", "#innerwork", "#relationshipadvice"],
+    "themes": ["couples", "conflict"]
+  },
+  {
+    "id": 33,
+    "image": "images/image-33.jpg",
+    "visual": "One figure curled and faded, another stepping through a doorway, a grey hush between",
+    "hook": "When love goes quiet.",
+    "caption": "The dangerous part isn't the shouting. It's the quiet that comes after years of nobody answering. One of you goes numb, the other checks out, and the house gets very polite and very cold. That silence isn't peace — it's a love gone to sleep. And the thing about sleeping love is that it can be woken.\n\nHas it gone quiet between you, or has it gone to sleep?",
+    "question": "Has it gone quiet between you, or has it gone to sleep?",
+    "hashtags": ["#marriagehelp", "#relationships", "#emotionalconnection", "#midlifewomen", "#midlifeawakening"],
+    "themes": ["couples", "disconnection"]
+  },
+  {
+    "id": 34,
+    "image": "images/image-34.jpg",
+    "visual": "Three pillars 'Accessible / Responsive / Engaged'; two figures reaching, a gold spark between",
+    "hook": "Are you there for me?",
+    "caption": "Underneath almost every argument is one small, trembling question: are you there for me? Can I reach you. Can I count on you to turn up. Do I still matter to you when it's hard. When the answer feels like yes, your whole body settles. When it feels like no, everything else catches fire. You're not needy for asking it. You're human.\n\nWho do you most need to hear 'yes' from right now?",
+    "question": "Who do you most need to hear 'yes' from right now?",
+    "hashtags": ["#intimacy", "#relationships", "#emotionalconnection", "#marriagehelp", "#womenshealth"],
+    "themes": ["attachment", "couples"]
+  },
+  {
+    "id": 35,
+    "image": "images/image-35.jpg",
+    "visual": "Plum heart with tender gold-ringed raw spots; a gentle gold hand cups one",
+    "hook": "Old bruises, pressed today.",
+    "caption": "Sometimes your reaction is far bigger than the moment, and afterwards you wonder where that came from. It came from a raw spot — an old bruise from long before this person, that they pressed without meaning to. You're not overreacting. You're touching something tender that never quite healed. Knowing where your bruises live is how you ask to be handled gently.\n\nWhich old bruise keeps getting pressed?",
+    "question": "Which old bruise keeps getting pressed?",
+    "hashtags": ["#innerwork", "#somatichealing", "#relationships", "#healing", "#midlifewomen"],
+    "themes": ["healing", "triggers"]
+  },
+  {
+    "id": 36,
+    "image": "images/image-36.jpg",
+    "visual": "Figure with a gold heart-rate line spiking past 'flooded'; a gold clock '20 minutes'",
+    "hook": "When the body pulls the alarm.",
+    "caption": "There's a point in a fight where you stop being able to hear a word. Heart pounding, chest tight, every sense screaming danger — that's not you being dramatic, that's your nervous system pulling the alarm. You can't repair anything from in there. Walking away to breathe isn't running. It's giving your body the twenty minutes it needs to come back to itself.\n\nWhat does your body do when it's had too much?",
+    "question": "What does your body do when it's had too much?",
+    "hashtags": ["#nervoussystem", "#somatichealing", "#womenshealth", "#relationships", "#bodywisdom"],
+    "themes": ["nervous system", "conflict"]
+  },
+  {
+    "id": 37,
+    "image": "images/image-37.jpg",
+    "visual": "Before/after: jagged 'You never listen!' / soft 'I feel invisible, and I miss you'; a gold arrow-bridge",
+    "hook": "Say the softer thing.",
+    "caption": "'You never listen' is rarely the truth. It's the armoured version of something far more naked: I feel invisible, and I miss you. The sharp line is safer to say — it doesn't leave you exposed. But it also doesn't get you held. The softer, truer thing is the one that actually invites them closer.\n\nWhat would you say tonight if you let yourself be that honest?",
+    "question": "What would you say tonight if you let yourself be that honest?",
+    "hashtags": ["#emotionalhonesty", "#relationships", "#marriagehelp", "#intimacy", "#midlifewomen"],
+    "themes": ["communication", "vulnerability"]
+  },
+  {
+    "id": 38,
+    "image": "images/image-38.jpg",
+    "visual": "A gold 'reach' icon; three paths 'turn towards / turn away / turn against'",
+    "hook": "Every little reach asks: are we okay?",
+    "caption": "It's rarely the grand gestures that hold a marriage together. It's the tiny reaches — 'look at this', a hand on your back, a sigh you hoped they'd ask about. Every one is a small question: are we okay? Turn towards the little reaches and the bond quietly grows. Miss them for years and it quietly starves.\n\nWhich of their small reaches have you been too tired to catch?",
+    "question": "Which of their small reaches have you been too tired to catch?",
+    "hashtags": ["#marriagehelp", "#relationships", "#emotionalconnection", "#intimacy", "#midlifewomen"],
+    "themes": ["couples", "connection"]
+  },
+  {
+    "id": 39,
+    "image": "images/image-39.jpg",
+    "visual": "Two figures inside a soft gold halo, foreheads almost touching; 'I need you', 'come closer'",
+    "hook": "Hold me tight.",
+    "caption": "There's a conversation most couples never quite have. Not the logistics, not the row about the calendar — the bare one. 'I need to know you want me.' 'Come closer, I'm scared.' It feels enormous to say out loud. But it's the one that changes everything, because a need spoken plainly and met with tenderness is how two people find their way back.\n\nWhat would you say if you let yourself be that simple?",
+    "question": "What would you say if you let yourself be that simple?",
+    "hashtags": ["#intimacy", "#relationships", "#marriagehelp", "#emotionalconnection", "#emotionalhonesty"],
+    "themes": ["attachment", "intimacy"]
+  },
+  {
+    "id": 40,
+    "image": "images/image-40.jpg",
+    "visual": "Two columns, plum 'If you chase…' / navy 'If you retreat…'; two figures turning towards each other",
+    "hook": "Change your own step.",
+    "caption": "You can't change how they move. You can only change your own step. If you're the one who chases, lead with the longing instead of the sharp edge — ask, don't demand. If you're the one who retreats, stay in the room a moment longer and let them know you're not leaving. Two small shifts, and the whole dance changes.\n\nWhich step is yours to soften first?",
+    "question": "Which step is yours to soften first?",
+    "hashtags": ["#marriagehelp", "#relationships", "#relationshipadvice", "#emotionalconnection", "#innerwork"],
+    "themes": ["couples", "change"]
+  },
+  {
+    "id": 41,
+    "image": "images/image-41.jpg",
+    "visual": "Bold plum bubble 'You don't care!' with a faint gold bubble nested inside",
+    "hook": "Under the sharp words, a longing.",
+    "caption": "'You don't care' almost never means you don't care. It means: I'm frightened I've lost you, and I don't know how to say it gently. Criticism is a clumsy flare sent up by someone who feels alone. When you can hear the longing underneath the complaint, you stop firing back and start answering the real question.\n\nWhat's the cry hiding inside your sharpest line?",
+    "question": "What's the cry hiding inside your sharpest line?",
+    "hashtags": ["#emotionalhonesty", "#relationships", "#marriagehelp", "#innerwork", "#emotionalintelligence"],
+    "themes": ["communication", "attachment"]
+  },
+  {
+    "id": 42,
+    "image": "images/image-42.jpg",
+    "visual": "Soft headboard silhouette; one figure reaching, one turned away; a gold loop between",
+    "hook": "The same dance, in bed.",
+    "caption": "The same dance shows up in the bedroom. One of you reaches and starts to feel like a nuisance; the other pulls back to feel safe, and it lands as rejection. Both of you are just trying not to get hurt — and both of you end up lonelier under the same roof. It isn't really about how much sex. It's about two people who've stopped feeling wanted.\n\nWho reaches, and who retreats, in your bed?",
+    "question": "Who reaches, and who retreats, in your bed?",
+    "hashtags": ["#intimacyafter40", "#femaledesire", "#marriagehelp", "#relationships", "#intimacy"],
+    "themes": ["intimacy", "pursue-withdraw"]
+  },
+  {
+    "id": 43,
+    "image": "images/image-43.jpg",
+    "visual": "Two panels: gold lightning 'spontaneous' / slow gold sunrise 'responsive'",
+    "hook": "Two normal ways to want.",
+    "caption": "You were sold a lie: that wanting should strike like lightning, all on its own, the way it did at the start. For most of us at this stage, it doesn't arrive first anymore — it answers. Warmth, touch, feeling safe, and then the wanting turns up. That's not broken desire. That's responsive desire, and it's utterly normal.\n\nWhat helps your wanting wake up, once you stop waiting for the thunderbolt?",
+    "question": "What helps your wanting wake up, once you stop waiting for the thunderbolt?",
+    "hashtags": ["#femaledesire", "#intimacyafter40", "#womenshealth", "#midlifewomen", "#embodiment"],
+    "themes": ["desire", "education"]
+  },
+  {
+    "id": 44,
+    "image": "images/image-44.jpg",
+    "visual": "A gold dial between plum 'accelerator — what turns you on' and navy 'brake — what turns you off'",
+    "hook": "Desire runs on a gas pedal and a brake.",
+    "caption": "Your desire has an accelerator and a brake. The accelerator notices everything lovely; the brake notices every reason not to — the unwashed dishes, the unkind word, the worry about your body. For most women, low desire isn't a faulty accelerator. It's a brake pressed hard by stress and resentment. You don't need more pressure on the gas. You need to find what's pressing the brake.\n\nWhat's quietly got its foot on yours?",
+    "question": "What's quietly got its foot on yours?",
+    "hashtags": ["#femaledesire", "#womenshealth", "#nervoussystem", "#intimacyafter40", "#midlifewomen"],
+    "themes": ["desire", "education"]
+  },
+  {
+    "id": 45,
+    "image": "images/image-45.jpg",
+    "visual": "Two figures on a gold balance beam, a dotted 'the gap'; 'not too much' / 'not broken'",
+    "hook": "There's no normal amount.",
+    "caption": "One of you wants it more. Almost every couple lives with this gap, and almost every couple treats it like someone's fault — you're too much, or they're broken. Neither is true. The gap isn't a defect in either of you; it's just a difference, and differences can be talked about instead of taken personally.\n\nWhat would change if you stopped reading the gap as rejection?",
+    "question": "What would change if you stopped reading the gap as rejection?",
+    "hashtags": ["#intimacyafter40", "#femaledesire", "#marriagehelp", "#relationships", "#womenshealth"],
+    "themes": ["desire", "couples"]
+  },
+  {
+    "id": 46,
+    "image": "images/image-46.jpg",
+    "visual": "A gold circular loop with four stops 'reach / feel pressure / pull back / feel rejected'",
+    "hook": "The loop that tightens itself.",
+    "caption": "Here's how it tightens. One of you reaches, half-expecting a no. The other feels the weight of being needed and pulls back. The first feels rejected and reaches more anxiously next time — and on it spins, each move confirming the other's worst fear. You don't untangle it in the bedroom. You untangle it with your clothes on, talking about the loop itself.\n\nWhen could the two of you talk about this, gently, away from the bed?",
+    "question": "When could the two of you talk about this, gently, away from the bed?",
+    "hashtags": ["#intimacyafter40", "#marriagehelp", "#relationships", "#femaledesire", "#emotionalconnection"],
+    "themes": ["intimacy", "pursue-withdraw"]
+  },
+  {
+    "id": 47,
+    "image": "images/image-47.jpg",
+    "visual": "Two figures touching forearms in a calm gold aura; a crossed-out gold finish-line",
+    "hook": "Let touch just be touch.",
+    "caption": "What if touch didn't have to lead anywhere? No performance, no finish line, nothing to get right — just your hand on their skin and theirs on yours, paying attention to how it actually feels. When sex isn't the goal, the pressure that's been quietly switching you off has nowhere to sit. And often, that's exactly when the wanting wanders back.\n\nCould you let touch just be touch for one evening?",
+    "question": "Could you let touch just be touch for one evening?",
+    "hashtags": ["#intimacyafter40", "#pleasure", "#embodiment", "#femaledesire", "#intimacy"],
+    "themes": ["intimacy", "pleasure"]
+  },
+  {
+    "id": 48,
+    "image": "images/image-48.jpg",
+    "visual": "Two gold poles 'security: closeness' / 'desire: space, mystery'; a figure in the field between",
+    "hook": "Love wants closeness. Desire wants room.",
+    "caption": "Love wants to close the gap; desire needs a little space to cross it. That's the puzzle. The very closeness that makes you feel safe can quietly dim the spark, because wanting needs a sliver of mystery, of otherness, of not-quite-knowing. You don't have to choose between a safe home and a charged one. You learn to hold both.\n\nWhere could you let a little space back in?",
+    "question": "Where could you let a little space back in?",
+    "hashtags": ["#femaledesire", "#intimacyafter40", "#relationships", "#marriagehelp", "#femininepower"],
+    "themes": ["desire", "eroticism"]
+  },
+  {
+    "id": 49,
+    "image": "images/image-49.jpg",
+    "visual": "A greenhouse; plum plant fed by gold 'rest, feeling wanted, trust, play'; cold grey words outside the glass",
+    "hook": "Desire needs the right conditions.",
+    "caption": "The same touch can feel electric on a Saturday and unbearable on a Tuesday. You're not inconsistent — your desire is reading the room. Stress, resentment, exhaustion, whether you feel wanted or just useful; all of it sets the temperature. Tending the conditions — rest, warmth, being met — does more than any technique ever could.\n\nWhat would your body need in place before it could even think about wanting?",
+    "question": "What would your body need in place before it could even think about wanting?",
+    "hashtags": ["#femaledesire", "#womenshealth", "#nervoussystem", "#intimacyafter40", "#selfcare"],
+    "themes": ["desire", "context"]
+  },
+  {
+    "id": 50,
+    "image": "images/image-50.jpg",
+    "visual": "A figure in a tender moment with a 'watcher' self above holding a gold clipboard 'am I enough?'",
+    "hook": "Watching yourself pulls you out of the moment.",
+    "caption": "There's a version of you that floats above the bed with a clipboard — watching, scoring, asking 'is this working, am I enough?' The moment she shows up, you leave your own body, and the further you drift from the feeling, the less there is to feel. The way back isn't trying harder. It's coming home to your senses: breath, skin, warmth, them.\n\nWhere does your mind go when you wish it would stay?",
+    "question": "Where does your mind go when you wish it would stay?",
+    "hashtags": ["#intimacyafter40", "#embodiment", "#femaledesire", "#selfworth", "#womenshealth"],
+    "themes": ["intimacy", "presence"]
+  },
+  {
+    "id": 51,
+    "image": "images/image-51.jpg",
+    "visual": "Before/after: a gold ladder 'goal: pass or fail' / a gentle gold meander 'pleasure: nothing to get right'",
+    "hook": "Drop the finish line.",
+    "caption": "Somewhere we were taught sex is a test you pass or fail, with orgasm as the only mark that counts. No wonder it stops feeling like pleasure. Drop the finish line. When the point is connection and sensation instead of arriving somewhere, the pressure lifts — and good sex becomes far more likely, not less. There's nothing to achieve here, beautiful. Only something to share.\n\nWhat if there were nothing to get right tonight?",
+    "question": "What if there were nothing to get right tonight?",
+    "hashtags": ["#pleasure", "#intimacyafter40", "#femaledesire", "#embodiment", "#intimacy"],
+    "themes": ["pleasure", "education"]
+  },
+  {
+    "id": 52,
+    "image": "images/image-52.jpg",
+    "visual": "A figure, a gold 'not tonight' drifting out; a plum thought-spiral vs a softer gold 'maybe just tired'",
+    "hook": "It's not the no — it's the story.",
+    "caption": "'Not tonight' is rarely what wounds. It's the story you wrap around it — they don't want me, I'm undesirable, I'll stop trying. Meanwhile they're just tired, carrying their own quiet story that they're always letting you down. A no with a warm reason and a 'but soon' is a different thing entirely.\n\nWhat story do you tell yourself the moment you hear no?",
+    "question": "What story do you tell yourself the moment you hear no?",
+    "hashtags": ["#intimacyafter40", "#femaledesire", "#marriagehelp", "#relationships", "#emotionalhonesty"],
+    "themes": ["intimacy", "rejection"]
+  },
+  {
+    "id": 53,
+    "image": "images/image-53.jpg",
+    "visual": "A gold brake-disc with plum spokes 'resentment / exhaustion / body shame / no privacy / unspoken conflict'",
+    "hook": "What quietly switches desire off.",
+    "caption": "Before you go hunting for more desire, look at what's switching it off. Resentment you've swallowed. Bone-tiredness. The way you brace when you catch your reflection. No lock on the door, no room left in your head. Those are the brakes — and you can press the accelerator all you like, nothing moves while they're on. Naming it is where it starts to lift.\n\nWhich brake have you been ignoring?",
+    "question": "Which brake have you been ignoring?",
+    "hashtags": ["#femaledesire", "#womenshealth", "#nervoussystem", "#midlifewomen", "#intimacyafter40"],
+    "themes": ["desire", "education"]
+  },
+  {
+    "id": 54,
+    "image": "images/image-54.jpg",
+    "visual": "A warm gold spark with plum rays 'feeling desired / play / anticipation / safety / attention'",
+    "hook": "What gently switches desire on.",
+    "caption": "Wanting isn't only about technique. It's about feeling desired, a little playfulness, anticipation, the safety of being met. Those are your accelerators, and they're personal — yours won't be a copy of anyone else's. So much opens up the day you stop performing wanting and start learning what actually turns the key for you.\n\nWhat makes you feel wanted — properly wanted — these days?",
+    "question": "What makes you feel wanted — properly wanted — these days?",
+    "hashtags": ["#femaledesire", "#intimacyafter40", "#pleasure", "#femininepower", "#womenshealth"],
+    "themes": ["desire", "education"]
+  },
+  {
+    "id": 55,
+    "image": "images/image-55.jpg",
+    "visual": "A gold bridge joining two plum islands 'feeling close & safe' / 'wanting & touch'; two figures meet in the middle",
+    "hook": "The heart and the bedroom are one room.",
+    "caption": "For a lot of women, the bedroom and the heart are the same room. When you feel seen and safe with them, your body softens and desire has somewhere to land. When you feel alone — even lying right beside them — the body closes the shutters. Good sex isn't separate from feeling close. It's what becomes possible once you do.\n\nWhich comes first for you: feeling held, or wanting to be touched?",
+    "question": "Which comes first for you: feeling held, or wanting to be touched?",
+    "hashtags": ["#intimacyafter40", "#femaledesire", "#emotionalconnection", "#marriagehelp", "#intimacy"],
+    "themes": ["intimacy", "integration"]
+  },
+  {
+    "id": 56,
+    "image": "images/image-56.jpg",
+    "visual": "A calm figure in a gold halo 'safe / held / I can let go'; a faded tense inset figure 'on guard'",
+    "hook": "A safe body can open.",
+    "caption": "Your body can't open and brace at the same time. If part of you is scanning for the next criticism, the next cold shoulder, it will not let pleasure in — and that's not stubbornness, that's biology keeping you safe. Feeling truly safe with someone isn't the dull opposite of desire. It's the ground desire grows in. Safety is the foreplay no one names.\n\nDo you feel safe enough, in your own bed, to let go?",
+    "question": "Do you feel safe enough, in your own bed, to let go?",
+    "hashtags": ["#intimacyafter40", "#nervoussystem", "#femaledesire", "#somatichealing", "#womenshealth"],
+    "themes": ["safety", "desire"]
+  },
+  {
+    "id": 57,
+    "image": "images/image-57.jpg",
+    "visual": "A plum heart with a gold 'kintsugi' seam stitched by two gold hands 'turn back / own your part / reach'",
+    "hook": "Rupture is normal. Repair is everything.",
+    "caption": "Every couple ruptures — a sharp word, a clumsy night, an evening someone turns away. What sets the strong ones apart isn't never breaking; it's how they mend. Turning back. Saying 'that landed badly, can we try again.' Owning your part and reaching for their hand. Stitched often enough, the seam ends up stronger than the unbroken cloth.\n\nWhat's one rupture you could go back and gently repair?",
+    "question": "What's one rupture you could go back and gently repair?",
+    "hashtags": ["#marriagehelp", "#relationships", "#emotionalhonesty", "#intimacy", "#emotionalconnection"],
+    "themes": ["repair", "couples"]
+  },
+  {
+    "id": 58,
+    "image": "images/image-58.jpg",
+    "visual": "A warm upward gold loop between two plum figures 'I reach' / 'you turn towards me'; a small gold heart 'we're a team'",
+    "hook": "The new cycle.",
+    "caption": "There's a different loop waiting on the other side. You reach, they turn towards you. They open, you soften. Something goes wrong and you mend it fast instead of letting it fester. This is what it looks like when two people decide to guard the bond on purpose — in the kitchen and in the bedroom both. The old cycle never fully vanishes. You just learn to lead it somewhere kinder.\n\nWhat would your better loop feel like?",
+    "question": "What would your better loop feel like?",
+    "hashtags": ["#marriagehelp", "#relationships", "#emotionalconnection", "#midlifeawakening", "#intimacyafter40"],
+    "themes": ["integration", "couples"]
   }
 ]
