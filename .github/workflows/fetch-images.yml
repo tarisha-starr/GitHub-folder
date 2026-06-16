@@ -27,6 +27,7 @@ jobs:
       - name: Fetch images from Dropbox
         env:
           DROPBOX_FOLDER_URL: ${{ secrets.DROPBOX_FOLDER_URL }}
+          DROPBOX_INFOGRAPHIC_FOLDER_URL: ${{ secrets.DROPBOX_INFOGRAPHIC_FOLDER_URL }}
           DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
           DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
           DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}

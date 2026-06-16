@@ -28,7 +28,14 @@ Auth (in order of preference):
      hands-off.
 
 Always required:
-  DROPBOX_FOLDER_URL     shared link URL to the folder
+  DROPBOX_FOLDER_URL                 shared link to the daily photos folder
+
+Optional:
+  DROPBOX_INFOGRAPHIC_FOLDER_URL     second shared folder containing
+                                     finished infographic-N.png and
+                                     reel-N.mp4 files. Files from this
+                                     folder also land in images/raw/
+                                     before being routed by phase 3.
 
 Diagnostics: any error from the Dropbox API is also written to
 images/_diagnostic.json so it can be inspected without reading workflow
@@ -67,7 +74,7 @@ ALL_EXTS = IMAGE_EXTS | VIDEO_EXTS
 
 INFOGRAPHIC_IMAGE_RE = re.compile(r"^infographic-(\d+)\.(jpg|jpeg|png|webp|heic)$", re.IGNORECASE)
 INFOGRAPHIC_VIDEO_RE = re.compile(
-    r"^infographic[-_]?(?:reel[-_]?)?(\d+)(?:[-_]reel)?\.(mp4|mov|m4v|webm)$",
+    r"^(?:infographic[-_]?(?:reel[-_]?)?|reel[-_]?)(\d+)(?:[-_]reel)?\.(mp4|mov|m4v|webm)$",
     re.IGNORECASE,
 )
 # Back-compat alias used elsewhere in the file
@@ -376,6 +383,7 @@ def phase_two_apply_mapping(saved: list[str]) -> None:
 
 def main() -> int:
     folder_url = os.environ.get("DROPBOX_FOLDER_URL")
+    infographic_folder_url = os.environ.get("DROPBOX_INFOGRAPHIC_FOLDER_URL", "").strip()
     if not folder_url:
         write_diagnostic(
             {
@@ -396,7 +404,28 @@ def main() -> int:
 
     saved = phase_one_download_raw(token, folder_url)
     if not saved:
+        print("Daily-photos folder returned no images.", file=sys.stderr)
+
+    if infographic_folder_url:
+        print(
+            f"\nAlso fetching DROPBOX_INFOGRAPHIC_FOLDER_URL "
+            f"(infographics + reels) ..."
+        )
+        try:
+            extra = phase_one_download_raw(token, infographic_folder_url)
+        except Exception as e:
+            print(f"Infographic folder fetch failed: {e}", file=sys.stderr)
+            extra = []
+        # de-dup while preserving order
+        seen = set(saved)
+        for name in extra:
+            if name not in seen:
+                saved.append(name)
+                seen.add(name)
+
+    if not saved:
         return 1
+
     phase_two_apply_mapping(saved)
     phase_three_route_infographics(saved)
     return 0
