@@ -1,8 +1,9 @@
 {
-  "phase": "download_file",
-  "name": "07D078A5-EBBE-4ACC-8A14-2D2229360EF9.PNG",
-  "api_path": "/A Radiant Woman/Content Club/07D078A5-EBBE-4ACC-8A14-2D2229360EF9.PNG",
-  "status": 409,
-  "reason": "Conflict",
-  "body": "{\"error\":{\".tag\":\"shared_link_access_denied\"},\"error_summary\":\"shared_link_access_denied/\"}"
+  "phase": "list_folder",
+  "status": 400,
+  "reason": "Bad Request",
+  "body": "Error in call to API function \"files/list_folder\": Recursive list folder is not supported for shared link.",
+  "folder_url_set": true,
+  "token_set": true,
+  "recursive": true
 }
