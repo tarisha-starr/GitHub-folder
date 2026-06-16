@@ -16,7 +16,27 @@ import sys
 import urllib.error
 import urllib.request
 
-from book_scheduler import todays_entry, remaining_count
+import json as _json
+from pathlib import Path as _Path
+from book_scheduler import todays_entry, remaining_count, BOOK_PATH, PRACTICES_PATH, REELS_PATH
+
+
+def _force_entry(kind: str, _id: str):
+    """Look up an entry by kind + id, ignoring date. Used by FORCE_KIND/FORCE_ID."""
+    paths = {"book": BOOK_PATH, "practice": PRACTICES_PATH, "reel": REELS_PATH}
+    p = paths.get(kind)
+    if not p or not p.exists():
+        return None
+    with p.open(encoding="utf-8") as f:
+        data = _json.load(f)
+    try:
+        target = int(_id)
+    except (TypeError, ValueError):
+        return None
+    for entry in data:
+        if entry.get("id") == target:
+            return entry
+    return None
 
 ALERT_THRESHOLD = 7
 
@@ -40,10 +60,20 @@ def main() -> int:
         print("IMAGE_RAW_BASE is not set", file=sys.stderr)
         return 1
 
-    kind, post = todays_entry()
-    if post is None:
-        print("No book/practice post scheduled for today — skipping.")
-        return 0
+    force_kind = os.environ.get("FORCE_KIND", "").strip().lower()
+    force_id = os.environ.get("FORCE_ID", "").strip()
+    if force_kind and force_id:
+        post = _force_entry(force_kind, force_id)
+        if post is None:
+            print(f"FORCE_KIND={force_kind} FORCE_ID={force_id}: no matching entry", file=sys.stderr)
+            return 1
+        kind = force_kind
+        print(f"FORCED: kind={kind} id={force_id}")
+    else:
+        kind, post = todays_entry()
+        if post is None:
+            print("No book/practice post scheduled for today — skipping.")
+            return 0
 
     image_path = post.get("image", "").lstrip("/")
     image_url = f"{raw_base}/{image_path}" if image_path else ""

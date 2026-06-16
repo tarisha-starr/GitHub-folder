@@ -7,6 +7,15 @@ on:
     # content/practices.json. Fires only when today is a scheduled date.
     - cron: "0 21 * * *"
   workflow_dispatch:
+    inputs:
+      force_kind:
+        description: "Force a specific kind (reel, practice, book) — leave blank for normal scheduled behaviour"
+        required: false
+        default: ""
+      force_id:
+        description: "ID of the entry to send (e.g. 1)"
+        required: false
+        default: ""
 
 jobs:
   push-book-to-zapier:
@@ -30,4 +39,6 @@ jobs:
         env:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+          FORCE_KIND: ${{ inputs.force_kind }}
+          FORCE_ID: ${{ inputs.force_id }}
         run: python zapier_push_book.py
