@@ -217,6 +217,31 @@ def download_file(token: str, folder_url: str, path_in_folder: str, dest: Path) 
             f.write(chunk)
 
 
+def compute_shared_root(entries: list[dict]) -> str:
+    """Longest common prefix of path_lower across all entries, snapped
+    to directory boundaries. This is the shared-link root path in the
+    owner's account, which we need to strip to convert entries' absolute
+    path_display values back into paths relative to the shared link."""
+    paths = [e.get("path_lower") for e in entries if e.get("path_lower")]
+    if not paths:
+        return ""
+    parts_list = [p.split("/") for p in paths]
+    common = list(parts_list[0])
+    for parts in parts_list[1:]:
+        new_common: list[str] = []
+        for a, b in zip(common, parts):
+            if a == b:
+                new_common.append(a)
+            else:
+                break
+        common = new_common
+    # With a single path, the "common prefix" includes the file's own
+    # basename; the shared root is its parent directory.
+    if len(paths) == 1 and common:
+        common = common[:-1]
+    return "/".join(common)
+
+
 def phase_one_download_raw(
     token: str, folder_url: str, recursive: bool = False
 ) -> list[str]:
@@ -239,6 +264,8 @@ def phase_one_download_raw(
         print(f"list_folder failed: {e.code} {e.reason}\n{body}", file=sys.stderr)
         raise
 
+    shared_root = compute_shared_root(entries)
+
     image_entries = [
         e
         for e in entries
@@ -251,6 +278,7 @@ def phase_one_download_raw(
         {
             "phase": "list_folder_ok",
             "recursive": recursive,
+            "shared_root": shared_root,
             "total_entries": len(entries),
             "image_entries": len(image_entries),
             "names": [e.get("path_display") or e["name"] for e in image_entries],
@@ -263,13 +291,17 @@ def phase_one_download_raw(
 
     print(
         f"Phase 1: downloading {len(image_entries)} image(s) to images/raw/ "
-        f"({'recursive' if recursive else 'flat'})"
+        f"({'recursive' if recursive else 'flat'}, shared_root={shared_root!r})"
     )
     saved: list[str] = []
+    root_len = len(shared_root)
     for entry in image_entries:
         name = entry["name"]
-        # path_display includes any sub-folder prefix when recursive
-        api_path = entry.get("path_display") or ("/" + name)
+        # Strip the shared-link root from path_display to get the path
+        # relative to the shared folder, which is what
+        # sharing/get_shared_link_file's `path` parameter expects.
+        display = entry.get("path_display") or ("/" + name)
+        api_path = display[root_len:] if root_len and display.lower().startswith(shared_root) else display
         if not api_path.startswith("/"):
             api_path = "/" + api_path
         dest = RAW_DIR / name
@@ -282,6 +314,8 @@ def phase_one_download_raw(
                     "phase": "download_file",
                     "name": name,
                     "api_path": api_path,
+                    "display": display,
+                    "shared_root": shared_root,
                     "status": e.code,
                     "reason": e.reason,
                     "body": body,
