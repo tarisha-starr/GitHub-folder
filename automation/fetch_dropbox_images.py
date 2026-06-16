@@ -33,9 +33,9 @@ Always required:
 Optional:
   DROPBOX_INFOGRAPHIC_FOLDER_URL     second shared folder containing
                                      finished infographic-N.png and
-                                     reel-N.mp4 files. Files from this
-                                     folder also land in images/raw/
-                                     before being routed by phase 3.
+                                     reel-N.mp4 files. Fetched
+                                     recursively so reels in a
+                                     sub-folder are also picked up.
 
 Diagnostics: any error from the Dropbox API is also written to
 images/_diagnostic.json so it can be inspected without reading workflow
@@ -180,8 +180,12 @@ def post_json(url: str, token: str, body: dict) -> dict:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def list_files(token: str, folder_url: str) -> list[dict]:
-    body = {"path": "", "shared_link": {"url": folder_url}}
+def list_files(token: str, folder_url: str, recursive: bool = False) -> list[dict]:
+    body = {
+        "path": "",
+        "shared_link": {"url": folder_url},
+        "recursive": recursive,
+    }
     result = post_json(f"{API}/files/list_folder", token, body)
     entries = list(result.get("entries", []))
     while result.get("has_more"):
@@ -213,10 +217,12 @@ def download_file(token: str, folder_url: str, path_in_folder: str, dest: Path) 
             f.write(chunk)
 
 
-def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
+def phase_one_download_raw(
+    token: str, folder_url: str, recursive: bool = False
+) -> list[str]:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     try:
-        entries = list_files(token, folder_url)
+        entries = list_files(token, folder_url, recursive=recursive)
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
         write_diagnostic(
@@ -227,6 +233,7 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
                 "body": body,
                 "folder_url_set": bool(folder_url),
                 "token_set": bool(token),
+                "recursive": recursive,
             }
         )
         print(f"list_folder failed: {e.code} {e.reason}\n{body}", file=sys.stderr)
@@ -243,9 +250,10 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
     write_diagnostic(
         {
             "phase": "list_folder_ok",
+            "recursive": recursive,
             "total_entries": len(entries),
             "image_entries": len(image_entries),
-            "names": [e["name"] for e in image_entries],
+            "names": [e.get("path_display") or e["name"] for e in image_entries],
         }
     )
 
@@ -253,28 +261,36 @@ def phase_one_download_raw(token: str, folder_url: str) -> list[str]:
         print("No image files found in shared folder", file=sys.stderr)
         return []
 
-    print(f"Phase 1: downloading {len(image_entries)} image(s) to images/raw/")
+    print(
+        f"Phase 1: downloading {len(image_entries)} image(s) to images/raw/ "
+        f"({'recursive' if recursive else 'flat'})"
+    )
     saved: list[str] = []
     for entry in image_entries:
         name = entry["name"]
+        # path_display includes any sub-folder prefix when recursive
+        api_path = entry.get("path_display") or ("/" + name)
+        if not api_path.startswith("/"):
+            api_path = "/" + api_path
         dest = RAW_DIR / name
         try:
-            download_file(token, folder_url, "/" + name, dest)
+            download_file(token, folder_url, api_path, dest)
         except urllib.error.HTTPError as e:
             body = e.read().decode("utf-8", errors="replace")
             write_diagnostic(
                 {
                     "phase": "download_file",
                     "name": name,
+                    "api_path": api_path,
                     "status": e.code,
                     "reason": e.reason,
                     "body": body,
                 }
             )
-            print(f"download {name} failed: {e.code} {e.reason}\n{body}", file=sys.stderr)
+            print(f"download {api_path} failed: {e.code} {e.reason}\n{body}", file=sys.stderr)
             raise
         saved.append(name)
-        print(f"  {name}  ({entry.get('size', '?')} bytes)")
+        print(f"  {api_path}  ({entry.get('size', '?')} bytes)")
     return saved
 
 
@@ -409,10 +425,12 @@ def main() -> int:
     if infographic_folder_url:
         print(
             f"\nAlso fetching DROPBOX_INFOGRAPHIC_FOLDER_URL "
-            f"(infographics + reels) ..."
+            f"(infographics + reels, recursive) ..."
         )
         try:
-            extra = phase_one_download_raw(token, infographic_folder_url)
+            extra = phase_one_download_raw(
+                token, infographic_folder_url, recursive=True
+            )
         except Exception as e:
             print(f"Infographic folder fetch failed: {e}", file=sys.stderr)
             extra = []
