@@ -1,35 +1,130 @@
 [
-  "One thing I’ve learned about love at this stage of my life is... Tell me yours.",
-  "The dream I’ve been too afraid to pursue is... Tell me yours.",
-  "What I really wish I could say to my younger self is... Tell me yours.",
-  "The last time I felt truly free was... Tell me yours.",
-  "What I’m most proud of overcoming is... Tell me yours.",
-  "One way I want to nurture myself this month is... Tell me yours.",
-  "The conversation I yearn to have with a friend is... Tell me yours.",
-  "One memory that still brings me warmth is... Tell me yours.",
-  "The moment I chose to embrace my flaws was... Tell me yours.",
-  "What I want to remind myself when I feel overwhelmed is... Tell me yours.",
-  "The last time I felt connected to my intuition was... Tell me yours.",
-  "What I’m learning to let go of is... Tell me yours.",
-  "The part of my life I’d like to reinvigorate is... Tell me yours.",
-  "What my heart has been whispering to me lately is... Tell me yours.",
-  "The last time I felt really understood was... Tell me yours.",
-  "What I’m curious to explore about myself is... Tell me yours.",
-  "The joyous risk I’d like to take next is... Tell me yours.",
-  "What I treasure most about my friendships now is... Tell me yours.",
-  "The question I want to ask myself more often is... Tell me yours.",
-  "The last time I truly celebrated myself was... Tell me yours.",
-  "What I want my legacy to be is... Tell me yours.",
-  "The thing I love most about growing older is... Tell me yours.",
-  "What I'm committed to nurturing within myself is... Tell me yours.",
-  "The compliment I wish to receive more often is... Tell me yours.",
-  "What I want the world to see when they look at me is... Tell me yours.",
-  "The quality I’m ready to embody more is... Tell me yours.",
-  "What moves me to tears these days is... Tell me yours.",
-  "The wisdom I'd offer my daughter is... Tell me yours.",
-  "What I wish I could change about my daily routine is... Tell me yours.",
-  "The last time I felt completely present was... Tell me yours.",
-  "What I want to reclaim from my past is... Tell me yours.",
-  "The part of nature that soothes my soul is... Tell me yours.",
-  "What I need to hear right now is... Tell me yours."
+  {
+    "prompt": "What I've been avoiding feeling is...",
+    "caption_tail": "Tell me yours."
+  },
+  {
+    "prompt": "The most powerful lesson I've learned in my 40s is...",
+    "caption_tail": "I'd love to hear your insights."
+  },
+  {
+    "prompt": "The one thing I'd like to reclaim from my younger self is...",
+    "caption_tail": "Share your thoughts."
+  },
+  {
+    "prompt": "A risk I took recently that felt liberating was...",
+    "caption_tail": "What about you?"
+  },
+  {
+    "prompt": "One person I need to reconnect with is...",
+    "caption_tail": "Let me know your connections."
+  },
+  {
+    "prompt": "The part of my life I want to celebrate right now is...",
+    "caption_tail": "What are you celebrating?"
+  },
+  {
+    "prompt": "The habit I’ve decided to let go of this month is...",
+    "caption_tail": "What about you?"
+  },
+  {
+    "prompt": "What I cherish most about my friendships is...",
+    "caption_tail": "I'd love to hear your feelings."
+  },
+  {
+    "prompt": "The place in my life where I'm seeking more adventure is...",
+    "caption_tail": "Tell me your adventures."
+  },
+  {
+    "prompt": "The quality in myself that I'm most proud of is...",
+    "caption_tail": "What are you proud of?"
+  },
+  {
+    "prompt": "A truth I've discovered about love is...",
+    "caption_tail": "What truths do you hold?"
+  },
+  {
+    "prompt": "The biggest risk I’ve taken for my happiness is...",
+    "caption_tail": "I'd love to hear your risks."
+  },
+  {
+    "prompt": "The legacy I want to create for those I love is...",
+    "caption_tail": "What legacy do you envision?"
+  },
+  {
+    "prompt": "One belief that's been serving me well lately is...",
+    "caption_tail": "Share your beliefs."
+  },
+  {
+    "prompt": "The thing I wish I could tell my younger self is...",
+    "caption_tail": "What would you say?"
+  },
+  {
+    "prompt": "The way I most want to nourish myself this week is...",
+    "caption_tail": "What are your nourishment plans?"
+  },
+  {
+    "prompt": "The last time I felt at peace was...",
+    "caption_tail": "What brings you peace?"
+  },
+  {
+    "prompt": "The role I want to step into more is...",
+    "caption_tail": "What role do you desire?"
+  },
+  {
+    "prompt": "The fears I’m ready to release are...",
+    "caption_tail": "What fears are you letting go?"
+  },
+  {
+    "prompt": "One unsaid dream I've been nurturing is...",
+    "caption_tail": "Tell me about your dreams."
+  },
+  {
+    "prompt": "The advice I'd give my past self about career is...",
+    "caption_tail": "What would you share?"
+  },
+  {
+    "prompt": "A defining moment in my 40s was...",
+    "caption_tail": "What moments define you?"
+  },
+  {
+    "prompt": "The way I want to treat myself better is...",
+    "caption_tail": "How do you plan to treat yourself?"
+  },
+  {
+    "prompt": "The belief I’ve outgrown is...",
+    "caption_tail": "What beliefs have you shed?"
+  },
+  {
+    "prompt": "The memory that brings me the most joy is...",
+    "caption_tail": "What joyful memories do you hold?"
+  },
+  {
+    "prompt": "The one thing I wish I had the courage to do is...",
+    "caption_tail": "What do you wish for courage to pursue?"
+  },
+  {
+    "prompt": "The lesson I’m still learning is...",
+    "caption_tail": "What's your current lesson?"
+  },
+  {
+    "prompt": "What makes me feel truly powerful is...",
+    "caption_tail": "What empowers you?"
+  },
+  {
+    "prompt": "The way I want to embrace my femininity is...",
+    "caption_tail": "How do you celebrate your femininity?"
+  },
+  {
+    "prompt": "One thing I want to explore more deeply is...",
+    "caption_tail": "What areas are you exploring?"
+  },
+  {
+    "prompt": "The last time I felt truly seen was...",
+    "caption_tail": "What moments made you feel seen?"
+  },
+  {
+    "prompt": "Something I’m learning to accept about myself is...",
+    "caption_tail": "What are you learning to accept?"
+  }
 ]
