@@ -1,134 +1,34 @@
 [
-  {
-    "prompt": "One thing I feel proud of today is...",
-    "caption_tail": "I'd love to hear what makes you proud."
-  },
-  {
-    "prompt": "The last time I felt truly seen was...",
-    "caption_tail": "Share your moments of connection with me."
-  },
-  {
-    "prompt": "What I wish I could say to my younger self is...",
-    "caption_tail": "What would you say to yours?"
-  },
-  {
-    "prompt": "The lesson I’ve learnt about love lately is...",
-    "caption_tail": "I'd love to know your insights on love."
-  },
-  {
-    "prompt": "Today I embraced my imperfections by...",
-    "caption_tail": "How do you embrace yours?"
-  },
-  {
-    "prompt": "The part of my heart that needs more attention is...",
-    "caption_tail": "What part of your heart is asking for kindness?"
-  },
-  {
-    "prompt": "A moment I felt empowered today was...",
-    "caption_tail": "Tell me about your moments of strength."
-  },
-  {
-    "prompt": "The belief I’m ready to let go of is...",
-    "caption_tail": "What’s holding you back?"
-  },
-  {
-    "prompt": "One way I nurtured my spirit today was...",
-    "caption_tail": "How do you care for your spirit?"
-  },
-  {
-    "prompt": "A part of me that still feels like a child is...",
-    "caption_tail": "What do you still nurture from your childhood?"
-  },
-  {
-    "prompt": "What I want to remember about this season of my life is...",
-    "caption_tail": "What memories do you hold dear?"
-  },
-  {
-    "prompt": "The dream I’ve been hesitant to pursue is...",
-    "caption_tail": "What dreams have you been holding back?"
-  },
-  {
-    "prompt": "Today, I honoured my needs by...",
-    "caption_tail": "How did you honour your needs today?"
-  },
-  {
-    "prompt": "The last compliment I received that touched me was...",
-    "caption_tail": "What compliments resonate with you?"
-  },
-  {
-    "prompt": "One thing I want to reclaim in my life is...",
-    "caption_tail": "What do you wish to reclaim?"
-  },
-  {
-    "prompt": "Today, I connected with nature by...",
-    "caption_tail": "How do you find connection with the natural world?"
-  },
-  {
-    "prompt": "The voice in my head that criticises me is saying...",
-    "caption_tail": "What does your inner critic whisper?"
-  },
-  {
-    "prompt": "A secret I’ve kept from myself is...",
-    "caption_tail": "What truths are you hiding?"
-  },
-  {
-    "prompt": "The kind of joy I want to cultivate more of is...",
-    "caption_tail": "What brings you joy?"
-  },
-  {
-    "prompt": "The habit I’m ready to release is...",
-    "caption_tail": "What habits are you ready to let go of?"
-  },
-  {
-    "prompt": "A quality I've admired in others that I want to embody is...",
-    "caption_tail": "What qualities inspire you?"
-  },
-  {
-    "prompt": "The last time I felt a wave of gratitude was...",
-    "caption_tail": "What moments fill you with gratitude?"
-  },
-  {
-    "prompt": "What I’d tell my future self is...",
-    "caption_tail": "What wisdom do you want to pass on?"
-  },
-  {
-    "prompt": "The self-care practice I want to establish is...",
-    "caption_tail": "What self-care rituals nourish you?"
-  },
-  {
-    "prompt": "The last time I took a risk was...",
-    "caption_tail": "When did you step outside your comfort zone?"
-  },
-  {
-    "prompt": "One belief I want to challenge is...",
-    "caption_tail": "What beliefs do you want to question?"
-  },
-  {
-    "prompt": "Today, I felt most at peace when...",
-    "caption_tail": "Where do you find your peace?"
-  },
-  {
-    "prompt": "The part of my story I’m ready to rewrite is...",
-    "caption_tail": "What chapters do you want to change?"
-  },
-  {
-    "prompt": "The laughter I need to invite into my life is...",
-    "caption_tail": "What makes you laugh?"
-  },
-  {
-    "prompt": "One thing I wish I knew about love is...",
-    "caption_tail": "What truths have you gathered about love?"
-  },
-  {
-    "prompt": "The part of me that needs adventure is...",
-    "caption_tail": "What adventures are calling you?"
-  },
-  {
-    "prompt": "Today, I slowed down by...",
-    "caption_tail": "How do you make space for slowing down?"
-  },
-  {
-    "prompt": "The wisdom I want to share with others is...",
-    "caption_tail": "What do you want to share?"
-  }
+  "The one thing that surprised me about myself today was... Tell me yours.",
+  "Today, I felt a spark of inspiration when... What triggered yours?",
+  "The last time I truly listened to my intuition was when... What about you?",
+  "One thing I'm learning to let go of is... What are you working on releasing?",
+  "The person I want to reconnect with is... Who's on your mind?",
+  "What I wish I had more time for is... How do you spend your precious moments?",
+  "A belief about myself that I’m ready to shift is... What change are you embracing?",
+  "Today, I honoured my boundaries by... Share how you've been protecting yourself.",
+  "The adventure I dream of taking next is... What journey calls to you?",
+  "One compliment I wish to hear more often is... What words warm your heart?",
+  "The part of my life I want to refocus on is... Where are you directing your energy?",
+  "A song that resonates with my current mood is... What melody speaks to you?",
+  "The last time I felt truly free was... When did you last feel that way?",
+  "The moment I felt most proud of myself today was... When do you celebrate you?",
+  "What I need to say no to more often is... What boundaries are you setting?",
+  "One thing I admire in others and wish to cultivate in myself is... How do you hope to grow?",
+  "The tradition I want to start for myself is... What new ritual are you keen to create?",
+  "Today, I honoured my feelings by... How did you embrace your emotions?",
+  "The desire I’ve been suppressing is... What are you yearning for?",
+  "The lesson I'm taking from a recent challenge is... What wisdom have you gained?",
+  "The best piece of advice I've ever received is... What do you cherish most?",
+  "Today, I took a step towards my passion by... What small action are you taking?",
+  "One thing that's been weighing on my mind is... What thoughts are circling for you?",
+  "I felt a deep connection with nature today when... When did you last feel at one with the earth?",
+  "A way I'm nurturing my creativity this week is... How do you express your artistic side?",
+  "Something I want to learn more about is... What piques your curiosity?",
+  "The way I want to show kindness to myself today is... How do you practice self-love?",
+  "One dream I've shelved for too long is... What aspiration are you rediscovering?",
+  "The part of my routine I want to shake up is... Where do you feel stagnant?",
+  "The last compliment I received that truly touched me was... What warms your heart?",
+  "Something I love about my life right now is... What brings you joy?",
+  "If I could have a conversation with my younger self, I’d say... What wisdom would you share?"
 ]
