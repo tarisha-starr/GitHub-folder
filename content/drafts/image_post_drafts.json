@@ -1,301 +1,337 @@
 [
   {
-    "hook": "You're not invisible, just overlooked.",
-    "caption": "When was the last time you felt seen?",
-    "question": "Do you feel noticed?",
+    "hook": "Your spark isn't gone.",
+    "caption": "What's igniting your passion?",
+    "question": "What fuels your fire?",
     "hashtags": [
       "#WomenOver40",
-      "#EmotionalHealth",
-      "#SelfLove",
-      "#ReignitePassion",
-      "#PersonalGrowth",
-      "#Empowerment"
-    ]
-  },
-  {
-    "hook": "Desire's not just for the young.",
-    "caption": "What makes you feel alive?",
-    "question": "When do you feel vibrant?",
-    "hashtags": [
-      "#Desire",
-      "#Confidence",
-      "#WomenEmpowerment",
-      "#SexyAtAnyAge",
-      "#AuthenticSelf",
-      "#Ageless"
-    ]
-  },
-  {
-    "hook": "Loneliness can wear a smile.",
-    "caption": "How do you show your true feelings?",
-    "question": "What do you hide behind?",
-    "hashtags": [
-      "#Loneliness",
-      "#EmotionalHonesty",
-      "#Connection",
-      "#WomenSupportingWomen",
-      "#HeartOpen",
-      "#Feelings"
-    ]
-  },
-  {
-    "hook": "You're tired of being polite.",
-    "caption": "What's your biggest unspoken desire?",
-    "question": "When do you hold back?",
-    "hashtags": [
-      "#Authenticity",
-      "#SpeakYourTruth",
-      "#BoldWomen",
-      "#AgeIsJustANumber",
-      "#SelfExpress",
-      "#Empowered"
-    ]
-  },
-  {
-    "hook": "Your heart's still beating for passion.",
-    "caption": "What ignites your fire?",
-    "question": "What makes you feel passionate?",
-    "hashtags": [
       "#Passion",
+      "#Desire",
+      "#Empowerment",
       "#LifeAfter40",
-      "#IgniteTheFlame",
-      "#DesireAwakening",
-      "#HeartAndSoul",
-      "#LivingFully"
+      "#RediscoverYou",
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "You're not meant to fit the mold.",
-    "caption": "What rule do you want to break?",
-    "question": "Are you ready to rebel?",
+    "hook": "You've forgotten your own voice.",
+    "caption": "When's the last time you spoke up?",
+    "question": "Are you being heard?",
     "hashtags": [
-      "#BreakTheMold",
-      "#BeYourself",
-      "#RebelWomen",
-      "#CreativeSpirit",
-      "#EmbraceUniqueness",
-      "#Fearless"
-    ]
-  },
-  {
-    "hook": "You’re craving adventure, not routine.",
-    "caption": "What spontaneous thing have you done lately?",
-    "question": "When did you last feel wild?",
-    "hashtags": [
-      "#AdventureAwaits",
-      "#LiveFully",
-      "#Spontaneity",
-      "#FearlessLiving",
-      "#BreakTheRoutine",
-      "#WomenAdventurers"
-    ]
-  },
-  {
-    "hook": "Your voice deserves to be heard.",
-    "caption": "What's your biggest unvoiced opinion?",
-    "question": "Are you sharing your thoughts?",
-    "hashtags": [
+      "#FindYourVoice",
+      "#WomenEmpowerment",
+      "#Confidence",
       "#SpeakUp",
-      "#EmpoweredVoices",
-      "#WomenSpeak",
-      "#FreeYourVoice",
-      "#AuthenticExpression",
-      "#FearlessWomen"
+      "#LifeAfter40",
+      "#RediscoverYou",
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "You’re more than just a caretaker.",
-    "caption": "What do you do for yourself?",
-    "question": "When do you prioritise you?",
+    "hook": "You can rewrite your story.",
+    "caption": "What's the next chapter?",
+    "question": "Ready for a plot twist?",
+    "hashtags": [
+      "#RewriteYourStory",
+      "#WomenOver40",
+      "#NewBeginnings",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#Journey",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You're not just a mother.",
+    "caption": "What else makes you, you?",
+    "question": "What's your identity now?",
+    "hashtags": [
+      "#MoreThanAMother",
+      "#WomenOver40",
+      "#Identity",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#RediscoverYou",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "Your desires matter, too.",
+    "caption": "Are you prioritising yourself?",
+    "question": "What do you truly want?",
     "hashtags": [
       "#SelfCare",
-      "#Balance",
-      "#WomenWhoCare",
-      "#NurtureYourself",
-      "#EmotionalWellbeing",
-      "#PrioritiseYou"
+      "#WomenOver40",
+      "#Desire",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#PrioritiseYou",
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "Love isn’t meant to fade away.",
-    "caption": "What sparks your romantic side?",
-    "question": "Is love still alive for you?",
+    "hook": "Confidence waits for no one.",
+    "caption": "What's holding you back?",
+    "question": "Ready to take the leap?",
     "hashtags": [
-      "#LoveAfter40",
-      "#Romance",
-      "#RelationshipGoals",
-      "#PassionateLove",
-      "#RekindleTheFlame",
-      "#ConnectionMatters"
+      "#Confidence",
+      "#WomenOver40",
+      "#Fearless",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#TakeTheLeap",
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "You’re not too old for change.",
-    "caption": "What change are you dreaming of?",
-    "question": "Are you ready to transform?",
+    "hook": "You deserve adventure.",
+    "caption": "What's on your bucket list?",
+    "question": "Are you ready to explore?",
+    "hashtags": [
+      "#AdventureAwaits",
+      "#WomenOver40",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#RediscoverYou",
+      "#DreamBig",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You've still got dreams.",
+    "caption": "What's been on your mind?",
+    "question": "What do you dream of?",
+    "hashtags": [
+      "#DreamBig",
+      "#WomenOver40",
+      "#Goals",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#FollowYourDreams",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "It's okay to be selfish.",
+    "caption": "When did you last prioritise you?",
+    "question": "Is self-care in your routine?",
+    "hashtags": [
+      "#SelfCare",
+      "#WomenOver40",
+      "#PrioritiseYou",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#BeSelfish",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "Your happiness counts.",
+    "caption": "When did you last smile genuinely?",
+    "question": "What brings you joy?",
+    "hashtags": [
+      "#Happiness",
+      "#WomenOver40",
+      "#Joy",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#ChooseJoy",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "Love can evolve.",
+    "caption": "How's your relationship grown?",
+    "question": "Is love still alive?",
+    "hashtags": [
+      "#LoveEvolves",
+      "#WomenOver40",
+      "#Relationships",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#GrowTogether",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You've got stories to tell.",
+    "caption": "What experiences shaped you?",
+    "question": "What’s your best story?",
+    "hashtags": [
+      "#Storytelling",
+      "#WomenOver40",
+      "#LifeLessons",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#YourStory",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You're more than a partner.",
+    "caption": "What's your unique journey?",
+    "question": "Who are you beyond them?",
+    "hashtags": [
+      "#WomenOver40",
+      "#Identity",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#BeyondTheRole",
+      "#SelfDiscovery",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You can feel gorgeous again.",
+    "caption": "What's your glam routine?",
+    "question": "Do you feel beautiful?",
+    "hashtags": [
+      "#FeelGorgeous",
+      "#WomenOver40",
+      "#Beauty",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#BeautyAtEveryAge",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "Your story's not over.",
+    "caption": "What’s your next step?",
+    "question": "Ready to turn the page?",
+    "hashtags": [
+      "#NextChapter",
+      "#WomenOver40",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#NewBeginnings",
+      "#YourStory",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You've still got fire.",
+    "caption": "What's igniting your spirit?",
+    "question": "What fuels your passion?",
+    "hashtags": [
+      "#FireWithin",
+      "#WomenOver40",
+      "#Passion",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#IgniteYourSpark",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You can embrace change.",
+    "caption": "What's scaring you about change?",
+    "question": "Ready to embrace newness?",
     "hashtags": [
       "#EmbraceChange",
+      "#WomenOver40",
       "#Transformation",
-      "#FearlessJourney",
-      "#WomenEvolving",
+      "#LifeAfter40",
+      "#Empowerment",
       "#NewBeginnings",
-      "#AgeWithGrace"
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "Your joy is worth pursuing.",
-    "caption": "What brings you joy today?",
-    "question": "When did you last feel joy?",
+    "hook": "You’re not too late.",
+    "caption": "What dream have you shelved?",
+    "question": "Is it time to restart?",
     "hashtags": [
-      "#JoyfulLiving",
-      "#FindYourJoy",
-      "#WomenEmpowerment",
-      "#LiveJoyfully",
-      "#Happiness",
-      "#LifeAfter40"
-    ]
-  },
-  {
-    "hook": "You’ve got stories to tell.",
-    "caption": "What story needs to be shared?",
-    "question": "When did you last share?",
-    "hashtags": [
-      "#ShareYourStory",
-      "#WomenWithStories",
-      "#VoiceOfExperience",
-      "#LifeLessons",
-      "#EmpoweredWomen",
-      "#NarrativePower"
-    ]
-  },
-  {
-    "hook": "You're not ready to settle.",
-    "caption": "What's your ideal life look like?",
-    "question": "Are you feeling complacent?",
-    "hashtags": [
-      "#NoSettling",
-      "#DreamBig",
-      "#LiveToTheFullest",
-      "#WomenWithVision",
-      "#ChaseYourDreams",
-      "#Unstoppable"
-    ]
-  },
-  {
-    "hook": "You still deserve to be cherished.",
-    "caption": "How do you show yourself love?",
-    "question": "When do you feel cherished?",
-    "hashtags": [
-      "#SelfLoveMatters",
-      "#BeLoved",
-      "#CherishYourself",
-      "#WomenDeserveLove",
-      "#LoveYourselfFirst",
-      "#EmotionalWealth"
-    ]
-  },
-  {
-    "hook": "You can redefine what’s possible.",
-    "caption": "What limits are you breaking?",
-    "question": "Ready to push boundaries?",
-    "hashtags": [
-      "#LimitlessLiving",
-      "#RedefinePossible",
+      "#NotTooLate",
       "#WomenOver40",
-      "#EmpoweredLife",
-      "#BoldMoves",
-      "#LiveWithoutLimits"
-    ]
-  },
-  {
-    "hook": "You’ve not run out of dreams.",
-    "caption": "What dream have you put aside?",
-    "question": "What do you yearn to pursue?",
-    "hashtags": [
       "#DreamAgain",
-      "#PursueYourPassion",
-      "#WomenWithDreams",
-      "#NeverStopDreaming",
-      "#LifeGoals",
-      "#Inspirational"
+      "#LifeAfter40",
+      "#Empowerment",
+      "#StartNow",
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "Your laughter deserves to be loud.",
-    "caption": "What makes you laugh out loud?",
-    "question": "When did you last laugh freely?",
+    "hook": "You deserve deep connections.",
+    "caption": "Are your friendships fulfilling?",
+    "question": "What's your support system like?",
     "hashtags": [
-      "#FindYourJoy",
-      "#LaughterIsTheBestMedicine",
-      "#WomenWhoLaugh",
-      "#JoyfulLife",
-      "#Happiness",
-      "#LiveOutLoud"
-    ]
-  },
-  {
-    "hook": "You’re not just a mum.",
-    "caption": "What brings you personal fulfilment?",
-    "question": "What’s your passion beyond parenting?",
-    "hashtags": [
-      "#MoreThanAMum",
-      "#WomenEmpowerment",
-      "#PersonalGrowth",
-      "#Fulfillment",
-      "#Identity",
-      "#LifeOutsideMotherhood"
-    ]
-  },
-  {
-    "hook": "Your heart still wants connection.",
-    "caption": "What connection do you crave?",
-    "question": "When do you feel most connected?",
-    "hashtags": [
-      "#HeartConnections",
-      "#RelationshipGoals",
-      "#WomenSupportingWomen",
-      "#Bonding",
-      "#Connection",
-      "#MeaningfulRelationships"
-    ]
-  },
-  {
-    "hook": "You can own your sexy.",
-    "caption": "What makes you feel attractive?",
-    "question": "How do you express your sexy?",
-    "hashtags": [
-      "#OwnYourSexy",
-      "#ConfidenceIsKey",
-      "#WomenEmpowerment",
-      "#Sensuality",
-      "#AttractiveAtAnyAge",
-      "#FierceAndFeminine"
-    ]
-  },
-  {
-    "hook": "You’re not too late to shine.",
-    "caption": "What are you ready to glow at?",
-    "question": "Are you embracing your light?",
-    "hashtags": [
-      "#RadiateConfidence",
-      "#ShineBright",
+      "#DeepConnections",
       "#WomenOver40",
-      "#FeminineEnergy",
-      "#ShiningStars",
-      "#AgeIsJustANumber"
+      "#Friendship",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#MeaningfulRelationships",
+      "#EmotionalTruth"
     ]
   },
   {
-    "hook": "Your beauty evolves with age.",
-    "caption": "What do you love about your looks?",
-    "question": "How do you embrace your beauty?",
+    "hook": "You're afraid to be seen.",
+    "caption": "What's holding you back?",
+    "question": "Ready to reclaim visibility?",
     "hashtags": [
-      "#TimelessBeauty",
-      "#AgeWithGrace",
-      "#WomenEmbracingAge",
-      "#SelfLove",
-      "#BeautifulAtAnyAge",
-      "#Confidence"
+      "#BeSeen",
+      "#WomenOver40",
+      "#Visibility",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#ShineBright",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "Passion's not a phase.",
+    "caption": "What fuels your heart?",
+    "question": "What's your passion project?",
+    "hashtags": [
+      "#PassionNotPhase",
+      "#WomenOver40",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#FollowYourPassion",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You’re more than your past.",
+    "caption": "How have you evolved?",
+    "question": "What defines you now?",
+    "hashtags": [
+      "#MoreThanYesterday",
+      "#WomenOver40",
+      "#Growth",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#YourJourney",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "You can start fresh.",
+    "caption": "What’s your fresh start?",
+    "question": "Are you ready to begin?",
+    "hashtags": [
+      "#FreshStart",
+      "#WomenOver40",
+      "#NewBeginnings",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#Reboot",
+      "#EmotionalTruth"
+    ]
+  },
+  {
+    "hook": "Your heart still beats for joy.",
+    "caption": "What makes you feel alive?",
+    "question": "Are you chasing joy?",
+    "hashtags": [
+      "#JoyfulHeart",
+      "#WomenOver40",
+      "#Happiness",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#ChaseJoy",
+      "#EmotionalTruth"
     ]
   }
 ]
