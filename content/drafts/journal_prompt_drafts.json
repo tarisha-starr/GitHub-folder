@@ -1,134 +1,34 @@
 [
-  {
-    "prompt": "The way I feel about aging today is...",
-    "caption_tail": "I'd love to hear your thoughts on aging."
-  },
-  {
-    "prompt": "One thing I wish I'd learned sooner is...",
-    "caption_tail": "What would you share with your younger self?"
-  },
-  {
-    "prompt": "The relationship I want to nurture right now is...",
-    "caption_tail": "Who do you want to connect with more deeply?"
-  },
-  {
-    "prompt": "My biggest dream for the next year is...",
-    "caption_tail": "What dream are you holding close?"
-  },
-  {
-    "prompt": "The part of my story I want to rewrite is...",
-    "caption_tail": "Is there a chapter in your life you'd change?"
-  },
-  {
-    "prompt": "Today, I felt most in my body when...",
-    "caption_tail": "When do you feel most connected to yourself?"
-  },
-  {
-    "prompt": "One thing I need to let go of is...",
-    "caption_tail": "What are you ready to release?"
-  },
-  {
-    "prompt": "The last time I felt truly free was...",
-    "caption_tail": "How do you define freedom for yourself?"
-  },
-  {
-    "prompt": "An unfulfilled desire that keeps whispering is...",
-    "caption_tail": "What desire keeps knocking at your heart?"
-  },
-  {
-    "prompt": "The way I currently define success is...",
-    "caption_tail": "How has your definition of success evolved?"
-  },
-  {
-    "prompt": "One belief I'm ready to challenge is...",
-    "caption_tail": "What belief are you ready to let go of?"
-  },
-  {
-    "prompt": "The most empowering thing I've done for myself lately is...",
-    "caption_tail": "What have you done that made you feel strong?"
-  },
-  {
-    "prompt": "A fun way I want to express myself is...",
-    "caption_tail": "How do you enjoy expressing yourself?"
-  },
-  {
-    "prompt": "If I could give my younger self a hug, I’d say...",
-    "caption_tail": "What would you want to tell your past self?"
-  },
-  {
-    "prompt": "The thing I want to feel more of in my life is...",
-    "caption_tail": "What feeling are you inviting into your world?"
-  },
-  {
-    "prompt": "A memory I cherish from my past is...",
-    "caption_tail": "What's a memory that warms your heart?"
-  },
-  {
-    "prompt": "Today, I honoured my needs by...",
-    "caption_tail": "How have you been prioritising your needs?"
-  },
-  {
-    "prompt": "The person I admire most right now is...",
-    "caption_tail": "Who inspires you in your life currently?"
-  },
-  {
-    "prompt": "What I wish others could see in me is...",
-    "caption_tail": "What do you wish people recognised in you?"
-  },
-  {
-    "prompt": "One moment this week I felt truly seen was...",
-    "caption_tail": "When did you feel understood recently?"
-  },
-  {
-    "prompt": "Today, I celebrated myself by...",
-    "caption_tail": "How do you honour your achievements?"
-  },
-  {
-    "prompt": "The legacy I want to leave behind is...",
-    "caption_tail": "What do you hope to be remembered for?"
-  },
-  {
-    "prompt": "A habit I want to cultivate is...",
-    "caption_tail": "What new habit are you excited to start?"
-  },
-  {
-    "prompt": "The way I want to show up for my friends is...",
-    "caption_tail": "How do you want to support your loved ones?"
-  },
-  {
-    "prompt": "The biggest lesson I've learned this year is...",
-    "caption_tail": "What valuable lesson have you taken with you?"
-  },
-  {
-    "prompt": "Today, I took a step towards my goal by...",
-    "caption_tail": "How are you moving closer to your dreams?"
-  },
-  {
-    "prompt": "One thing I want to explore about myself is...",
-    "caption_tail": "What curiosity are you leaning into?"
-  },
-  {
-    "prompt": "A compliment I’d like to give myself is...",
-    "caption_tail": "What would you like to praise yourself for?"
-  },
-  {
-    "prompt": "Today, I chose to trust myself by...",
-    "caption_tail": "How do you practice self-trust?"
-  },
-  {
-    "prompt": "What I’ve learned about love from my experiences is...",
-    "caption_tail": "What has love taught you about life?"
-  },
-  {
-    "prompt": "One belief I want to embody is...",
-    "caption_tail": "What mantra resonates with you right now?"
-  },
-  {
-    "prompt": "A piece of advice I’d give to my daughter is...",
-    "caption_tail": "What wisdom would you want to pass on?"
-  },
-  {
-    "prompt": "The way I want to prioritise my health this year is...",
-    "caption_tail": "How are you putting your health first?"
-  }
+  "One thing I'm realising about my past is...",
+  "The belief I'm ready to release today is...",
+  "A quality in myself I often overlook is...",
+  "What I need more of in my life is...",
+  "The last time I felt truly at peace was...",
+  "A gift I want to give myself this month is...",
+  "The last time I felt truly seen was...",
+  "One memory that keeps replaying in my mind is...",
+  "What excites me most about my future is...",
+  "The conversation I wish I could have with my younger self is...",
+  "A way I've grown this year is...",
+  "One thing I love about my life right now is...",
+  "What scares me about getting older is...",
+  "The one thing I wish I could change in my life is...",
+  "A habit I want to cultivate is...",
+  "The moment I felt proud of myself recently was...",
+  "What holds me back from being vulnerable is...",
+  "The thing I appreciate about my friendships is...",
+  "One lesson I've learnt from my mistakes is...",
+  "The part of me that needs more attention is...",
+  "What I wish I could say to my body is...",
+  "A dream I've had for years that I want to pursue is...",
+  "One way I practice self-care is...",
+  "What fills me with inspiration these days is...",
+  "The hardest truth I’ve had to confront lately is...",
+  "The change I'm ready to embrace is...",
+  "One thing I want to reclaim for myself is...",
+  "The type of support I long for is...",
+  "What I want to prioritise in my life is...",
+  "The part of my story I want to celebrate is...",
+  "One thing I want to let go of is...",
+  "What I value most in this stage of my life is..."
 ]
