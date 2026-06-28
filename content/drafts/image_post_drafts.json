@@ -1,276 +1,338 @@
 [
   {
-    "hook": "You're still worthy of pleasure.",
-    "caption": "What's your pleasure today?",
-    "question": "Do you feel worthy of pleasure?",
+    "hook": "Desires linger beneath the surface.",
+    "caption": "What hidden desires do you have?",
+    "question": "What do you crave?",
     "hashtags": [
       "#DesireAwakening",
-      "#SelfLoveJourney",
-      "#EmpoweredWomen",
-      "#AgeIsJustANumber",
       "#WomenOver40",
-      "#PleasureIsPower",
-      "#StrongWomen"
-    ]
-  },
-  {
-    "hook": "You don't need permission to thrive.",
-    "caption": "What would you do if you could?",
-    "question": "Who holds your permission?",
-    "hashtags": [
-      "#OwnYourDesire",
-      "#LifeAfter40",
+      "#FindYourself",
+      "#EmotionalTruth",
       "#Empowerment",
-      "#PermissionGranted",
-      "#WomenInCharge",
-      "#Thriving",
-      "#NoMoreApologies"
+      "#AuthenticLiving",
+      "#ReclaimYourLife"
     ]
   },
   {
-    "hook": "Your journey's just starting.",
-    "caption": "What excites you about this chapter?",
-    "question": "Are you ready for a new journey?",
+    "hook": "You’re more than your roles.",
+    "caption": "What role do you need to shed?",
+    "question": "Who are you beneath the labels?",
     "hashtags": [
-      "#NewBeginnings",
-      "#LifeAfter40",
-      "#Reinvention",
-      "#EmpoweredLiving",
-      "#WomenInTheirPrime",
-      "#AdventureAwaits"
-    ]
-  },
-  {
-    "hook": "You deserve more than survival.",
-    "caption": "What does thriving look like for you?",
-    "question": "Are you just surviving?",
-    "hashtags": [
-      "#ThrivingNotSurviving",
       "#WomenOver40",
-      "#DesireMore",
-      "#LivingFully",
-      "#EmpowerYourself",
-      "#LifeInFullColour"
-    ]
-  },
-  {
-    "hook": "Your voice still matters.",
-    "caption": "How do you express your needs?",
-    "question": "Is your voice being heard?",
-    "hashtags": [
-      "#SpeakYourTruth",
-      "#WomenEmpowerment",
-      "#VoicesOfWomen",
-      "#FearlessWomen",
-      "#AgeIsEmpowerment",
-      "#ExpressYourself"
-    ]
-  },
-  {
-    "hook": "You're not just a caregiver.",
-    "caption": "How do you nurture yourself?",
-    "question": "Who nurtures you?",
-    "hashtags": [
-      "#SelfCareMatters",
-      "#WomenOver40",
-      "#BeyondCaregiving",
-      "#SelfLove",
-      "#Sisterhood",
-      "#WomenSupportingWomen"
-    ]
-  },
-  {
-    "hook": "You can rewrite your story.",
-    "caption": "What's the next chapter for you?",
-    "question": "Are you ready to rewrite?",
-    "hashtags": [
-      "#RewriteYourStory",
-      "#LifeAfter40",
-      "#Empowerment",
-      "#JourneyOfSelf",
-      "#WomenInCharge",
-      "#NewChapter"
-    ]
-  },
-  {
-    "hook": "Your desires are still valid.",
-    "caption": "What desires are you ignoring?",
-    "question": "Do you honour your desires?",
-    "hashtags": [
-      "#ValidDesires",
-      "#WomenOver40",
-      "#EmbraceYourself",
+      "#Authenticity",
       "#SelfDiscovery",
+      "#Reinvention",
+      "#EmpowerWomen",
+      "#LifeAfter40",
+      "#PersonalGrowth"
+    ]
+  },
+  {
+    "hook": "Your wants don’t disappear.",
+    "caption": "What's been on your wish list?",
+    "question": "What do you secretly want?",
+    "hashtags": [
       "#DesireAwakening",
+      "#WomenEmpowerment",
+      "#LifeAfter40",
+      "#ListenToYourself",
+      "#DreamBig",
+      "#SelfLove",
+      "#ReclaimYourDesires"
+    ]
+  },
+  {
+    "hook": "You’re allowed to feel joy.",
+    "caption": "What brings you true joy?",
+    "question": "When was your last joyful moment?",
+    "hashtags": [
+      "#JoyfulLiving",
+      "#WomenOver40",
+      "#EmbraceJoy",
+      "#FindYourBliss",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#LiveFully"
+    ]
+  },
+  {
+    "hook": "The best years are still ahead.",
+    "caption": "What’s your dream for the future?",
+    "question": "What’s next for you?",
+    "hashtags": [
+      "#FutureIsBright",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#NewBeginnings",
+      "#DreamBig",
+      "#ReclaimYourLife"
+    ]
+  },
+  {
+    "hook": "Connection goes beyond the surface.",
+    "caption": "How deep is your current connection?",
+    "question": "Are you truly connected?",
+    "hashtags": [
+      "#MeaningfulConnections",
+      "#WomenOver40",
+      "#LoveAndConnection",
+      "#EmotionalIntimacy",
+      "#Relationships",
+      "#LifeAfter40",
       "#AuthenticLiving"
     ]
   },
   {
-    "hook": "Connection is still possible.",
-    "caption": "What connection do you crave?",
-    "question": "Where's your heart longing?",
+    "hook": "You’re a work in progress.",
+    "caption": "What’s one goal you’re pursuing?",
+    "question": "What progress are you proud of?",
     "hashtags": [
-      "#Reconnect",
-      "#WomenInTheirPrime",
-      "#EmotionalConnection",
-      "#DesireForConnection",
-      "#Heartfelt",
-      "#Intimacy"
-    ]
-  },
-  {
-    "hook": "You’ve got so much wisdom.",
-    "caption": "How do you share your wisdom?",
-    "question": "Are you sharing your wisdom?",
-    "hashtags": [
-      "#WisdomOfWomen",
       "#WomenOver40",
-      "#EmpoweredLiving",
-      "#LifeLessons",
-      "#StrongVoices"
-    ]
-  },
-  {
-    "hook": "Passion isn’t just for the young.",
-    "caption": "What fuels your passion now?",
-    "question": "What's your passion today?",
-    "hashtags": [
-      "#PassionAtAnyAge",
-      "#WomenInTheirPrime",
-      "#Desire",
-      "#LivePassionately",
-      "#EmpoweredWomen"
-    ]
-  },
-  {
-    "hook": "It's okay to seek joy.",
-    "caption": "How do you seek joy?",
-    "question": "What brings you joy?",
-    "hashtags": [
-      "#JoyfulLiving",
-      "#WomenOver40",
-      "#PursueJoy",
-      "#FindYourJoy",
-      "#LifeIsBeautiful"
-    ]
-  },
-  {
-    "hook": "You’re more than a role.",
-    "caption": "What’s your identity beyond roles?",
-    "question": "Who are you beyond a role?",
-    "hashtags": [
-      "#BeyondTheRole",
-      "#WomenEmpowerment",
-      "#IdentityJourney",
-      "#SelfDiscovery",
-      "#Authenticity"
-    ]
-  },
-  {
-    "hook": "Curiosity hasn't left you.",
-    "caption": "What are you curious about?",
-    "question": "What sparks your curiosity?",
-    "hashtags": [
-      "#StayCurious",
-      "#WomenOver40",
-      "#LifelongLearning",
-      "#Exploration",
-      "#EmpowerYourself"
-    ]
-  },
-  {
-    "hook": "You can have it all.",
-    "caption": "What does 'all' mean to you?",
-    "question": "Are you ready for it all?",
-    "hashtags": [
-      "#HaveItAll",
-      "#WomenInCharge",
-      "#LifeGoals",
-      "#EmpoweredWomen",
-      "#DreamBig"
-    ]
-  },
-  {
-    "hook": "Desire can ignite again.",
-    "caption": "When did you last feel desire?",
-    "question": "Is your desire sparking?",
-    "hashtags": [
-      "#DesireRevival",
-      "#WomenOver40",
-      "#ReigniteTheFire",
-      "#Passion",
-      "#EmpoweringWomen"
-    ]
-  },
-  {
-    "hook": "Your heart still beats for love.",
-    "caption": "What does love mean for you now?",
-    "question": "Do you feel love's beat?",
-    "hashtags": [
-      "#LoveAfter40",
-      "#HeartfeltConnections",
-      "#WomenInTheirPrime",
-      "#EmotionalWisdom"
-    ]
-  },
-  {
-    "hook": "You’ve earned your freedom.",
-    "caption": "How will you embrace it?",
-    "question": "Ready to step into freedom?",
-    "hashtags": [
-      "#FreeToBeYou",
-      "#WomenEmpowerment",
-      "#SelfDiscovery",
+      "#ProgressNotPerfection",
+      "#SelfGrowth",
+      "#Empowerment",
+      "#CelebrateYourJourney",
       "#LifeAfter40",
-      "#EmpoweredLiving"
+      "#BecomingYou"
     ]
   },
   {
-    "hook": "Your dreams deserve attention.",
-    "caption": "Which dream are you nurturing?",
-    "question": "Are you nurturing your dreams?",
+    "hook": "Permission to thrive, not just survive.",
+    "caption": "What does thriving look like for you?",
+    "question": "Are you thriving or just surviving?",
     "hashtags": [
-      "#DreamBig",
+      "#ThriveNotSurvive",
       "#WomenOver40",
-      "#ChaseYourDreams",
-      "#EmpoweredWomen",
-      "#GoalGetter"
-    ]
-  },
-  {
-    "hook": "Joy isn't a luxury; it's essential.",
-    "caption": "What brings you essential joy?",
-    "question": "Is joy essential for you?",
-    "hashtags": [
-      "#EssentialJoy",
-      "#WomenInTheirPrime",
-      "#SelfCare",
+      "#EmpowerWomen",
+      "#LifeAfter40",
+      "#PersonalGrowth",
       "#JoyfulLiving",
-      "#Wellbeing"
+      "#ReclaimYourLife"
     ]
   },
   {
-    "hook": "Your past doesn't define you.",
-    "caption": "What do you want to redefine?",
-    "question": "How will you redefine yourself?",
+    "hook": "Your voice matters now more than ever.",
+    "caption": "When did you last use your voice?",
+    "question": "Are you speaking your truth?",
     "hashtags": [
-      "#RedefineYourself",
+      "#SpeakYourTruth",
+      "#WomenOver40",
+      "#EmpoweredVoice",
+      "#ConfidenceAfter40",
+      "#Authenticity",
+      "#RiseUp",
+      "#ReclaimYourVoice"
+    ]
+  },
+  {
+    "hook": "You’re not alone in this journey.",
+    "caption": "Who do you lean on for support?",
+    "question": "Who’s in your corner?",
+    "hashtags": [
+      "#CommunityLove",
+      "#WomenOver40",
+      "#SupportSystem",
+      "#TogetherWeRise",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#StrengthInSisterhood"
+    ]
+  },
+  {
+    "hook": "Your passions deserve attention.",
+    "caption": "What passion are you neglecting?",
+    "question": "What do you love to do?",
+    "hashtags": [
+      "#FollowYourPassion",
+      "#WomenOver40",
+      "#ReclaimYourTime",
+      "#LiveYourPassion",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#SelfDiscovery"
+    ]
+  },
+  {
+    "hook": "Your story is still being written.",
+    "caption": "What chapter do you want next?",
+    "question": "What’s your next plot twist?",
+    "hashtags": [
+      "#WriteYourStory",
+      "#WomenOver40",
+      "#LifeAfter40",
+      "#PersonalGrowth",
+      "#NewChapters",
+      "#EmpoweredLiving",
+      "#ReclaimYourNarrative"
+    ]
+  },
+  {
+    "hook": "It's not too late for happiness.",
+    "caption": "What makes you happy now?",
+    "question": "When do you feel happiest?",
+    "hashtags": [
+      "#HappinessAfter40",
+      "#WomenOver40",
+      "#EmbraceJoy",
+      "#Empowerment",
+      "#LiveFully",
+      "#LifeAfter40",
+      "#JoyfulLiving"
+    ]
+  },
+  {
+    "hook": "You've got untapped potential.",
+    "caption": "What potential are you ready to explore?",
+    "question": "What’s holding you back?",
+    "hashtags": [
+      "#UnlockYourPotential",
       "#WomenOver40",
       "#Empowerment",
-      "#SelfGrowth",
-      "#LivingFully"
+      "#LifeAfter40",
+      "#PersonalGrowth",
+      "#DreamBig",
+      "#ReclaimYourLife"
     ]
   },
   {
-    "hook": "You're not too old to start.",
-    "caption": "What's your next adventure?",
-    "question": "Ready to start something new?",
+    "hook": "Your dreams still matter.",
+    "caption": "What dream have you set aside?",
+    "question": "What do you truly want?",
     "hashtags": [
-      "#NeverTooOld",
-      "#WomenInTheirPrime",
-      "#NewBeginnings",
-      "#EmpoweredWomen",
-      "#Adventure"
+      "#DreamsMatter",
+      "#WomenOver40",
+      "#EmpowerWomen",
+      "#LifeAfter40",
+      "#PursueYourDreams",
+      "#Authenticity",
+      "#ReclaimYourDesires"
+    ]
+  },
+  {
+    "hook": "You're more than your past.",
+    "caption": "What’s one lesson you’ve learnt?",
+    "question": "What defines you now?",
+    "hashtags": [
+      "#WomenOver40",
+      "#Resilience",
+      "#RewriteYourStory",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#PersonalGrowth",
+      "#SelfDiscovery"
+    ]
+  },
+  {
+    "hook": "You’re still finding your way.",
+    "caption": "What’s your guiding light?",
+    "question": "What inspires you now?",
+    "hashtags": [
+      "#FindingYourPath",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#SelfDiscovery",
+      "#PersonalGrowth",
+      "#ReclaimYourJourney"
+    ]
+  },
+  {
+    "hook": "Your heart deserves tenderness.",
+    "caption": "When do you show yourself kindness?",
+    "question": "How do you nurture your heart?",
+    "hashtags": [
+      "#SelfCompassion",
+      "#WomenOver40",
+      "#EmotionalWellbeing",
+      "#Tenderness",
+      "#LifeAfter40",
+      "#Empowerment",
+      "#HealingJourney"
+    ]
+  },
+  {
+    "hook": "You've survived storms, now thrive.",
+    "caption": "What’s your first step to thriving?",
+    "question": "How do you define thriving?",
+    "hashtags": [
+      "#GrowthAfterAdversity",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#Resilience",
+      "#ThriveNotSurvive",
+      "#ReclaimYourLife"
+    ]
+  },
+  {
+    "hook": "You deserve to be seen.",
+    "caption": "When do you feel truly seen?",
+    "question": "How do you seek visibility?",
+    "hashtags": [
+      "#VisibilityMatters",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#Authenticity",
+      "#SeeMe",
+      "#ReclaimYourSpace"
+    ]
+  },
+  {
+    "hook": "Self-love isn't selfish.",
+    "caption": "How do you practice self-love?",
+    "question": "What does self-love mean to you?",
+    "hashtags": [
+      "#SelfLove",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#LoveYourself",
+      "#PersonalGrowth",
+      "#ReclaimYourLife"
+    ]
+  },
+  {
+    "hook": "Your voice can spark change.",
+    "caption": "What change do you want to see?",
+    "question": "What’s your passion project?",
+    "hashtags": [
+      "#ChangeMakers",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#MakeADifference",
+      "#SpeakUp",
+      "#ReclaimYourVoice"
+    ]
+  },
+  {
+    "hook": "Your feelings are valid.",
+    "caption": "What feeling needs attention today?",
+    "question": "How do you honour your feelings?",
+    "hashtags": [
+      "#FeelingsMatter",
+      "#WomenOver40",
+      "#EmotionalAwareness",
+      "#LifeAfter40",
+      "#Authenticity",
+      "#EmbraceYourEmotions",
+      "#ReclaimYourTruth"
+    ]
+  },
+  {
+    "hook": "Life's adventures aren’t over.",
+    "caption": "What’s your next adventure?",
+    "question": "Are you ready for new experiences?",
+    "hashtags": [
+      "#NewAdventures",
+      "#WomenOver40",
+      "#Empowerment",
+      "#LifeAfter40",
+      "#ExploreMore",
+      "#EmbraceChange",
+      "#ReclaimYourJoy"
     ]
   }
 ]
