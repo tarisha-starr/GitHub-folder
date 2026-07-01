@@ -1,7 +1,11 @@
 # Radiant Women's Circle — Finding Your Needs & Wants
 
-**A 90-minute session**
+**A 90-minute session (also runs as the core of Session 1 in the two-part programme)**
 **From the "Become a Sexually Empowered Radiant Woman" course (10 weeks / 3 months)**
+
+> This runs standalone at 90 minutes, or as the heart of the 2-hour **Session 1** in
+> `00-two-part-programme-overview.md` (paired with the Zammit invisible-identity
+> teaching and breakout). See that file for the full two-session running order.
 
 > The arc of tonight: we start with what you *don't* want. Because the "no" is
 > the doorway. Then we move into what you *do* want. And then we go all the way
