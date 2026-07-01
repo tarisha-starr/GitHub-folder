@@ -145,16 +145,21 @@ add_slide(s1, "burgundy", "The invisible woman",
           body="You are not overlooked by accident.", big=True)
 
 add_slide(s1, "navy", "How we disappear",
-          body=["We hide our own thoughts and feelings.",
-                "We mirror everyone else.",
-                "We hint instead of ask.",
-                "We give from empty and call it love."])
+          eyebrow="The I'm Invisible pattern",
+          body=["My attention is on everyone but me.",
+                "I assume you can see what I never said.",
+                "I serve until I'm empty.",
+                "I wait, quietly, to be discovered."])
 
 add_slide(s1, "copper", "The loop",
           body="Believe you're invisible → disappear yourself → they don't see you → you feel invisible. The belief builds its own proof.")
 
 add_slide(s1, "cream", "The hard truth, said gently",
           body="You have taught the people around you exactly how much of you to see. A habit, not a fact. And tonight we start practising the opposite.")
+
+add_slide(s1, "gold", "I see myself. I am present.",
+          eyebrow="The shift  ·  presencing",
+          body="I stop waiting to be seen. I turn toward myself, and I make myself visible. It is my destiny to be visible.")
 
 add_slide(s1, "rust", "Breakout · How I make myself invisible",
           eyebrow="In pairs",
@@ -192,6 +197,10 @@ add_slide(s1, "rust", "Drop underneath",
 
 add_slide(s1, "gold", "Claim it",
           body="I'm a radiant woman, and I desire... The circle answers: You're allowed.")
+
+add_slide(s1, "navy", "I take my place",
+          eyebrow="The power statement",
+          body="I see myself. I am present to my own feelings, needs and desires. It is my destiny to be visible, and I take my rightful place.")
 
 add_slide(s1, "burgundy", "Claim your power",
           body="I'm powerful. I can create life. I can create the life I desire. The power is in my hands.")

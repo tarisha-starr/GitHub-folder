@@ -84,29 +84,55 @@ Here's how Zammit maps it, and how I want you to understand it tonight:
 **You are not being overlooked by accident. You have, without meaning to, taught the
 people around you exactly how much of you to see.**
 
-We do it in a hundred small ways:
-- We say "I don't mind, whatever you want" until they stop asking what we want.
-- We answer "how are you?" with "good, busy" until nobody looks closer.
-- We hint instead of ask, so no one ever practises meeting us.
-- We give and give from empty, so we become the strong one who "doesn't need much."
-- We're so tuned to everyone else's needs, reading the room, managing the mood, that
-  our own needs never even make it to the surface of our own awareness.
+In Zammit's Transformation Matrix, the "I'm Invisible" pattern has one **key
+mechanism**: you assume it's everyone else's job to see the thoughts, feelings and
+needs you're quietly holding. And so you keep them invisible, and wait to be found.
 
-That last one matters most for tonight. **You can be so focused on other people's needs
-that you genuinely don't know your own.** It's not that your needs are gone. It's that
-you've spent so long facing outward that you've never turned around to look. Zammit's
-whole point is that the numbness is not a flaw in you, it's a strategy that once kept
+Here's exactly how it shows up, and you'll recognise yourself:
+- Your first attention is always on others. They feel wonderfully seen in your presence.
+- You're exquisitely aware of what's going on for everyone else, and barely aware of
+  your own inner world.
+- You assume what you're feeling is obvious, so you don't say it, and then they don't
+  pick up the signal.
+- You do chronic selfless service, right to the edge of exhaustion, and rarely build
+  anything for your own needs.
+- You wait, passively, for someone to "discover" you.
+- And when your needs don't get met, you don't ask cleanly, you either go quiet and
+  resentful, or you finally ask in a way that comes out sharp, as if they never cared,
+  before they've even had a chance to show you they do. Or you just disappear.
+
+The limiting beliefs underneath: *I'm not seen. I don't exist. I only exist to serve
+others' needs. It's dangerous to be seen.*
+
+**You can be so focused on other people's needs that you genuinely don't know your own.**
+It's not that your needs are gone. You've spent so long facing outward you've never
+turned around to look. The numbness is not a flaw in you, it's a strategy that once kept
 you safe. And it can be undone.
 
-The shift, in Zammit's work, isn't to try harder to be seen. It's to first **get
-connected back to yourself**, to what you're actually feeling, sensing, wanting, and
-then to **take responsibility for making that visible.** To stop waiting to be
-discovered, and start choosing to show up as yourself. When you change how you show up,
-you change what becomes possible. You stop being the mirror. You let them see you.
+Zammit calls the shift **presencing**: generating your own visibility instead of waiting
+for it. Not trying harder to be seen, but first getting connected back to yourself, to
+what you actually feel, sense and want, and then taking responsibility for making it
+visible. The key shift is this: *from making others responsible for seeing you, to
+seeing and presencing yourself.*
+
+Her deeper truth, the one I want you to feel tonight:
+
+> "I came here to be seen and to have a profound impact on the world, and it is my
+> responsibility to presence my visibility wherever I go."
+
+And the fuller power statement, which we'll come back to at the close:
+
+> "I see myself. I am deeply present to my own feelings, needs and desires. I know how
+> to ask for what I want in ways that inspire others to meet me. It is my destiny to be
+> visible, and I take my rightful place by being willing to presence myself fully."
+
+Notice the line hidden in there, *ask in ways that inspire others to meet me.* That's the
+bridge to everything Alison Armstrong teaches next. First you become visible to
+yourself. Then you learn to ask so you're met.
 
 > Say this to the room, slowly: You are not invisible, my love. You've been practising
 > disappearing for so long it feels like the truth. But it's a habit, not a fact. And
-> tonight we start practising the opposite.
+> tonight we start practising being present instead.
 
 ### 2. Why you went blank when someone asked "what do you want?"
 
@@ -412,13 +438,15 @@ Then send the take-home:
 
 ## Sources & further study
 
-**Claire Zammit — Feminine Power (femininepower.com, Evolving Wisdom)**
-- The "invisible" identity and how we unconsciously disappear ourselves
-- Core negative beliefs / false identity ("I'm invisible," "I'm not enough," "I'm a
-  burden," "I'm alone," "I'm too much") and how they become a self-fulfilling reality
-- Mirroring others vs making yourself visible; from waiting to be discovered to taking
-  responsibility to show up as yourself
-- The Feminine Power trainings and Transformation of Identity work
+**Claire Zammit — Feminine Power / Woman-Centered Coaching Transformation Matrix
+(Evolving Wisdom, 2023)**
+- The "I'm Invisible" pattern (a.k.a. "I'm not seen, I don't exist"): key mechanism,
+  indicators, the ways of being that generate the evidence, and limiting beliefs
+- Companion patterns "I'm Not Enough" and "I'm Alone" as the three foundational ones
+- The shift to **presencing** (generating your own visibility) and the deeper-truth
+  power statements ("I see myself... it is my destiny to be visible")
+- Note: the Transformation Matrix is licensed coaching material (© Evolving Wisdom);
+  used here to inform Tarisha's own circle, paraphrased not reproduced
 
 **Alison Armstrong — The Queen's Code / Understanding Women & Men (alisonarmstrong.com)**
 - Diffuse awareness vs single focus, gathering vs hunting mode
