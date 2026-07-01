@@ -96,7 +96,7 @@ def add_slide(prs, bg, title, body=None, eyebrow=None, big=False, footer=True):
             run.text = (u"•  " + item) if bullet else item
             run.font.name = BODY_FONT
             run.font.size = Pt(23 if bullet else 27)
-            run.font.italic = not bullet
+            run.font.italic = False
             run.font.color.rgb = txt_col
             para.space_after = Pt(12)
 
@@ -115,7 +115,7 @@ def add_slide(prs, bg, title, body=None, eyebrow=None, big=False, footer=True):
 # =====================================================================
 s1 = new_deck()
 
-add_slide(s1, "burgundy", "Coming Home to Yourself",
+add_slide(s1, "burgundy", "Coming home to yourself",
           eyebrow="Radiant Women's Circle  ·  Session 1",
           body="Finding what you want, need and desire.", big=True, footer=True)
 
@@ -126,10 +126,10 @@ add_slide(s1, "navy", "Our circle",
           eyebrow="How we hold this space",
           body=["What's shared here stays here.",
                 "We witness. We don't fix or rescue.",
-                "You can always pass.",
+                "There's no right or wrong way.",
                 "There's no such thing as too much in this room."])
 
-add_slide(s1, "rust", "Soften your jaw.",
+add_slide(s1, "rust", "Softening practice.",
           body="Drop your shoulders. Unclench your belly. She doesn't live in the tension. She lives in the softening.")
 
 add_slide(s1, "cream", "Three words we blur together",
@@ -152,10 +152,10 @@ add_slide(s1, "navy", "How we disappear",
                 "I wait, quietly, to be discovered."])
 
 add_slide(s1, "copper", "The loop",
-          body="Believe you're invisible → disappear yourself → they don't see you → you feel invisible. The belief builds its own proof.")
+          body="Believe no-one cares or being seen is unsafe → disappear yourself while focusing on others' needs → they don't see you → you feel invisible → you become resentful → you ask with accusation and frustration → they defend and don't hear you → you feel invisible and uncared for → resentful again... The belief builds its own proof.")
 
-add_slide(s1, "cream", "The hard truth, said gently",
-          body="You have taught the people around you exactly how much of you to see. A habit, not a fact. And tonight we start practising the opposite.")
+add_slide(s1, "cream", "The hard truth",
+          body="You have taught the people around you exactly how much of you to see. And tonight we start practising the opposite.")
 
 add_slide(s1, "gold", "I see myself. I am present.",
           eyebrow="The shift  ·  presencing",
@@ -170,7 +170,7 @@ add_slide(s1, "rust", "Breakout · How I make myself invisible",
 
 add_slide(s1, "burgundy", "What I don't want",
           eyebrow="Part one",
-          body="The no is the doorway. Your body already knows it.", big=True)
+          body="The no is the doorway into your desires. Your body already knows it.", big=True)
 
 add_slide(s1, "cream", "Name the no",
           eyebrow="Journal",
@@ -188,12 +188,12 @@ add_slide(s1, "cream", "Turn it into a yes",
                 "A way I want to receive more is...",
                 "If I trusted myself completely, I would..."])
 
-add_slide(s1, "burgundy", "My deepest desire",
+add_slide(s1, "burgundy", "My deepest desire is...",
           eyebrow="Part three",
-          body="Underneath the want is the desire your whole life is organised around.", big=True)
+          body="Explore in pairs.", big=True)
 
 add_slide(s1, "rust", "Drop underneath",
-          body="And if I had that, what would it give me? Keep asking. Reach for the true answer, not the impressive one.")
+          body="And if I had that, what would it give me? Keep asking, going seven levels deep.")
 
 add_slide(s1, "gold", "Claim it",
           body="I'm a radiant woman, and I desire... The circle answers: You're allowed.")
