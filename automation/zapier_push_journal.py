@@ -57,7 +57,8 @@ def build_payload(entry: dict, raw_base: str) -> dict:
     base = raw_base.rstrip("/")
     journal_image_url = f"{base}/images/journal/journal-{entry['id']}.jpg"
     caption = f"{entry['prompt']}\n\n{entry['caption_tail']}"
-    hashtags = " ".join(DEFAULT_HASHTAGS)
+    tags_list = entry.get("hashtags") or DEFAULT_HASHTAGS
+    hashtags = " ".join(tags_list)
     return {
         "post_type": "journal",
         "post_id": entry["id"],
@@ -65,7 +66,7 @@ def build_payload(entry: dict, raw_base: str) -> dict:
         "caption": caption,
         "question": entry["caption_tail"],
         "hashtags": hashtags,
-        "hashtags_list": DEFAULT_HASHTAGS,
+        "hashtags_list": tags_list,
         "image_url": journal_image_url,
         "journal_image_url": journal_image_url,
         "video_url": "",
