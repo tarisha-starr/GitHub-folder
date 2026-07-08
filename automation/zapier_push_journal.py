@@ -11,9 +11,10 @@ just sees a different payload at each fire and routes accordingly
 (filter on `post_type` or presence of `video_url`).
 
 Required env vars:
-  ZAPIER_WEBHOOK_URL    same Catch Hook URL as the image push
-  IMAGE_RAW_BASE        public raw URL base of the repo
-  POSTS_LAUNCH_DATE     optional, YYYY-MM-DD (defaults to scheduler default)
+  ZAPIER_WEBHOOK_URL     same Catch Hook URL as the image push
+  IMAGE_RAW_BASE         public raw URL base of the repo
+  JOURNAL_LAUNCH_DATE    optional, YYYY-MM-DD; journal-specific day 0
+  POSTS_LAUNCH_DATE      fallback if JOURNAL_LAUNCH_DATE is unset
 """
 
 from __future__ import annotations
@@ -31,6 +32,19 @@ from scheduler import launch_date
 ROOT = Path(__file__).resolve().parent.parent
 PROMPTS_PATH = ROOT / "content" / "journal_prompts.json"
 
+
+def journal_launch_date() -> date:
+    """Journal-specific launch date so we can restart the journal rotation
+    without disturbing the image scheduler. Falls back to POSTS_LAUNCH_DATE
+    when JOURNAL_LAUNCH_DATE is unset."""
+    raw = os.environ.get("JOURNAL_LAUNCH_DATE")
+    if raw:
+        try:
+            return date.fromisoformat(raw.strip())
+        except ValueError:
+            pass
+    return launch_date()
+
 DEFAULT_HASHTAGS = [
     "#midlifewoman",
     "#womenover40",
@@ -47,7 +61,7 @@ def load_prompts() -> list[dict]:
 
 def todays_journal_prompt() -> dict | None:
     prompts = load_prompts()
-    n = (date.today() - launch_date()).days
+    n = (date.today() - journal_launch_date()).days
     if n < 0 or n >= len(prompts):
         return None
     return prompts[n]

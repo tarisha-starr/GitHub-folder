@@ -30,4 +30,5 @@ jobs:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           POSTS_LAUNCH_DATE: ${{ vars.POSTS_LAUNCH_DATE }}
+          JOURNAL_LAUNCH_DATE: ${{ vars.JOURNAL_LAUNCH_DATE }}
         run: python zapier_push_journal.py
