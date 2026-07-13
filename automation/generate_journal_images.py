@@ -115,9 +115,14 @@ Text styling:
 - Centered, large, easy to read on mobile.
 - Elegant serif font (Lora-style or Cormorant Garamond).
 - Body text color: {text}.
-- Trailing "..." in accent color: {accent}.
-- Small gold ornamental flourish (filigree divider, curlicue motif)
-  above and below the text, color {accent}.
+- Trailing three dots "..." rendered as plain body text in the same
+  color as the rest of the text. Not stylized.
+- The area above and below the text must be completely empty. No
+  ornament, no divider, no flourish, no filigree, no curlicue, no
+  scroll, no swirl, no leaf, no dot cluster, no symbol of any kind.
+  Pure background only above and below the text block.
+- Use straight ASCII apostrophes and straight quotes only. No curly
+  or smart typography.
 
 Branding:
 - Solid footer bar at bottom in deep navy #1F2A44, full width.
@@ -131,7 +136,10 @@ top-right area. A real logo will be placed there in post-production.
 DO NOT include: any photograph or person, any text other than the
 prompt and footer URL, any numbers/labels/watermarks, multiple cards
 in a grid, saturated colors outside the brand palette, any logo or
-S monogram.
+S monogram, any decorative flourish, filigree, ornament, curlicue,
+scrollwork, swirl, leaf motif, dot cluster, star, or any symbol
+whatsoever above or below the prompt text, any curly quotes or curly
+apostrophes.
 """
 
 
@@ -243,15 +251,25 @@ def main() -> int:
             continue
 
         color = BRAND_COLORS[(idx - 1) % len(BRAND_COLORS)]
+        prompt_text = (
+            entry["prompt"]
+            .replace("’", "'")
+            .replace("‘", "'")
+            .replace("“", '"')
+            .replace("”", '"')
+            .replace("—", ",")
+            .replace("–", ",")
+            .replace("…", "...")
+        )
         full_prompt = PROMPT_TEMPLATE.format(
             color_name=color["name"],
             bg=color["bg"],
             text=color["text"],
             accent=color["accent"],
-            prompt=entry["prompt"],
+            prompt=prompt_text,
         )
 
-        print(f"Generating journal-{idx}.jpg ({color['name']})…")
+        print(f"Generating journal-{idx}.jpg ({color['name']})...")
         try:
             img_bytes = call_openai_image(api_key, model, quality, full_prompt)
         except urllib.error.HTTPError as e:
