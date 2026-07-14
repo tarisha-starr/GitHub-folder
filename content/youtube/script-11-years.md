@@ -137,7 +137,7 @@ gave it. Quietly. Guiltily. But she gave it.
 
 ---
 
-## ACT THREE: THE TUESDAY (4:15 to 6:15) — the tension beat
+## ACT THREE: THE TUESDAY (4:15 to 6:15). The tension beat.
 
 **[SCENE: the kitchen sink again. Ordinary Tuesday. Hands in the water. The house empty for
 once. A clock ticking.]**
