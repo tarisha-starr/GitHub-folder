@@ -74,6 +74,8 @@ US_TO_NZ = {
 # Phrases the style guide explicitly rules out.
 BANNED_PHRASES = [
     "darling",  # use "beautiful" instead — hard rule
+    "gently",   # softening adverbs weaken the line, cut them
+    "quietly",
     "queen energy",
     "boss babe",
     "self-care",

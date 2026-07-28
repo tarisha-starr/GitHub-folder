@@ -98,7 +98,7 @@ If things feel deficient at home, don't start with the ask. Start with the compo
 
 This one lands hard in my work, so sit with it.
 
-You ask for something. He says no. And you go cold. You withdraw. You're quietly punishing him for three days.
+You ask for something. He says no. And you go cold. You withdraw. You're punishing him for three days.
 
 That wasn't a request, beautiful. That was a demand in nicer clothes.
 
@@ -118,7 +118,7 @@ So many women I work with are exhausted by this one. I have to earn love. I have
 
 So you look after everybody. You do more than your share. You carry the whole thing...
 
-quietly hoping someone will notice and give you what you need without you having to ask.
+hoping someone will notice and give you what you need without you having to ask.
 
 They don't notice. That's not how it works.
 
@@ -266,7 +266,7 @@ One thing. Out loud. Today.
 
 You ask for something. He says no.
 
-And you go cold. You withdraw. You're punishing him quietly for three days.
+And you go cold. You withdraw. You're punishing him for three days.
 
 That wasn't a request, beautiful.
 

@@ -75,6 +75,10 @@ losing its meaning, make it a question.
 
 ## What to avoid (sounds wrong in her voice)
 
+- ❌ **"gently" and "quietly".** Never. Softening adverbs weaken the line and
+  they don't sound like her. "She's been carrying it quietly" becomes "she's
+  been carrying it". Cut the adverb, the sentence gets stronger.
+- ❌ **"darling".** Use "beautiful".
 - ❌ Em-dashes
 - ❌ Stiff transitions: "Furthermore," "However," "Moreover"
 - ❌ Therapist-speak: "Research shows," "Studies suggest"
