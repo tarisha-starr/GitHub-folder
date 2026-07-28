@@ -73,6 +73,7 @@ US_TO_NZ = {
 
 # Phrases the style guide explicitly rules out.
 BANNED_PHRASES = [
+    "darling",  # use "beautiful" instead — hard rule
     "queen energy",
     "boss babe",
     "self-care",

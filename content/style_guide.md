@@ -35,8 +35,9 @@ that goes out as her voice must follow these rules.
   "I had a client say...", "I hear this every week."
 - Address the reader directly: "you've", "your body", "her" (for body).
 - Personify the body as "she" — "she's been calling you home,"
-  "ask her how she's doing, darling."
-- Pet names are welcome: "darling," "my love."
+  "ask her how she's doing, beautiful."
+- Pet names are welcome: "beautiful," "my love."
+- **Never use "darling".** Use "beautiful" instead. This is a hard rule.
 - Multiple short questions in a row are GOOD when they build rhythm:
   > "Are you ready? Are you willing to take the first step?"
 - Use ALL CAPS sparingly for emotional emphasis on one word:
@@ -53,7 +54,7 @@ that goes out as her voice must follow these rules.
 - "Say with me..." prompts for embodiment:
   `Say with me "I choose me"`
 - Body-conversation prompts:
-  `Ask your body "how are you doing, darling?"`
+  `Ask your body "how are you doing, beautiful?"`
 
 ## What to avoid (sounds wrong in her voice)
 
