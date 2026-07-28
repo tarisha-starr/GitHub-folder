@@ -18,6 +18,7 @@ import urllib.request
 
 import json as _json
 from pathlib import Path as _Path
+from post_text import build_post_text
 from book_scheduler import todays_entry, remaining_count, BOOK_PATH, PRACTICES_PATH, REELS_PATH
 
 
@@ -82,6 +83,7 @@ def main() -> int:
 
     payload = {
         "kind": kind,
+        "post_text": build_post_text(build_caption(post), post.get("question", ""), post.get("hashtags") or []),
         "post_date": post.get("post_date"),
         "post_id": post.get("id"),
         "theme": post.get("theme"),

@@ -19,6 +19,7 @@ import sys
 import urllib.error
 import urllib.request
 
+from post_text import build_post_text
 from scheduler import repurposed_1pm_entry
 
 
@@ -35,10 +36,17 @@ def build_payload(post: dict, raw_base: str) -> dict:
     image_path = post.get("image", "")
     image_url = f"{raw_base.rstrip('/')}/{image_path}" if image_path else ""
     video_url = derive_video_url(image_path, raw_base)
+
+    # No hook fallback for caption. It used to be post.get("caption",
+    # post["hook"]), which meant a caption-less post published its hook as the
+    # body, duplicating the hook already on the card.
+    caption = (post.get("caption") or "").strip()
+
     return {
         "post_id": post["id"],
-        "hook": post["hook"],
-        "caption": post.get("caption", post["hook"]),
+        "post_text": build_post_text(caption, post.get("question", ""), post.get("hashtags", [])),
+        "hook": post["hook"],                # on the card image, not the body
+        "caption": caption,
         "question": post.get("question", ""),
         "hashtags": " ".join(post.get("hashtags", [])),
         "hashtags_list": post.get("hashtags", []),

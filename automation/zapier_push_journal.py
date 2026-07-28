@@ -30,6 +30,8 @@ from pathlib import Path
 from scheduler import launch_date
 
 ROOT = Path(__file__).resolve().parent.parent
+from post_text import build_post_text
+
 PROMPTS_PATH = ROOT / "content" / "journal_prompts.json"
 
 
@@ -75,6 +77,7 @@ def build_payload(entry: dict, raw_base: str) -> dict:
     hashtags = " ".join(tags_list)
     return {
         "post_type": "journal",
+        "post_text": build_post_text(caption, "", hashtags),
         "post_id": entry["id"],
         "prompt": entry["prompt"],
         "caption": caption,
