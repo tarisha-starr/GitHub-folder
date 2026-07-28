@@ -5,7 +5,7 @@ Your language, with the verbal filler trimmed. Not raw transcript, not clever.
 Tick the ones you want published. Anything unticked stays in drafts and never
 goes out. **Nothing here is live.**
 
-The hook is printed on the card image, so it is not repeated in the caption.
+The hook is printed on the card image, so it's not repeated in the caption.
 
 ---
 
@@ -377,5 +377,5 @@ Your first answer is never the real one. How deep does yours go?
 
 ---
 
-*Radiant Woman circle, 16 July, 108 minutes. No participant is named and no
+*Radiant Woman circle, 16 July, 108 minutes. No participant's name appears and no
 one's situation is described identifiably. All copy passes the brand check.*
