@@ -1,0 +1,35 @@
+name: Brand check
+
+# Catches em-dashes, curly quotes, US spellings and banned phrases in
+# content before they reach a caption. The judgement half of the brand
+# review lives in the /brand-check skill.
+
+on:
+  push:
+    paths:
+      - 'content/**.json'
+      - 'content/**.md'
+      - 'automation/brand_check.py'
+  pull_request:
+    paths:
+      - 'content/**.json'
+      - 'content/**.md'
+      - 'automation/brand_check.py'
+  workflow_dispatch:
+
+jobs:
+  brand-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Warn-only for now: there are ~20 pre-existing violations in the
+      # content files. Clearing those is a voice decision, not a mechanical
+      # one, so it's Tarisha's call. Once they're clean, drop --warn-only
+      # and this becomes a real gate.
+      - name: Check content against the style guide
+        run: python3 automation/brand_check.py --warn-only

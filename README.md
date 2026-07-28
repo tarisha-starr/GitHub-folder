@@ -18,6 +18,45 @@ The image stops the scroll. The hook makes her feel caught.
 - `automation/fetch_outliers.py` — pulls outlier videos from the YouTube Data API into `content/outliers.csv` (used by the `find-outliers` Level 1 skill)
 - `.github/workflows/daily-email.yml` — runs both jobs daily on cron
 
+## Automations
+
+Two layers, built differently on purpose.
+
+**Deterministic pipeline — Python + GitHub Actions.** Date-based rotation,
+Buffer pushes, daily emails, image generation. No judgement needed. This is
+everything in `automation/*.py` and `.github/workflows/`.
+
+**Judgement work — Claude Skills** in `.claude/skills/`. These need the
+connectors (Gmail, Notion, Zoom, Xero, Drive), and **connectors live inside
+Claude, not inside GitHub Actions**. A cron job on GitHub can't read the
+inbox or a Zoom transcript, so these run as skills instead.
+
+| Skill | Does | Uses |
+|---|---|---|
+| `/brand-check` | Checks copy against the style guide before it ships | repo |
+| `/repurpose-episode` | One recording into 20+ content drafts | Zoom, repo |
+| `/call-to-actions` | Transcript into decisions, promises, next steps | Zoom, Notion |
+| `/customer-voice` | Mines buyer language for sales copy and FAQs | Zoom, Gmail, Notion |
+| `/inbox-triage` | Finds what actually needs a reply, drafts them | Gmail, Notion |
+| `/testimonial-organizer` | Social proof sorted by objection and buyer | repo, Gmail, Zoom |
+| `/money-brief` | Cash, unpaid invoices, reconciliation exceptions | Xero, Gmail |
+
+See `AUTOMATION-AUDIT.md` for why these seven and not the other 43.
+
+### Brand check
+
+```bash
+python3 automation/brand_check.py                    # all content
+python3 automation/brand_check.py --text "some copy" # one string
+python3 automation/brand_check.py --warn-only        # report, don't fail
+```
+
+Catches em-dashes, curly quotes, US spellings, uncontracted forms and banned
+phrases from `content/style_guide.md`. Runs in CI on every content change.
+
+It deliberately skips `content/testimonials.json`. Those are real women's own
+words and never get restyled.
+
 ## Quick start
 
 ```bash
