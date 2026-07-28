@@ -56,6 +56,21 @@ that goes out as her voice must follow these rules.
 - Body-conversation prompts:
   `Ask your body "how are you doing, beautiful?"`
 
+## Teach with "we", don't pronounce
+
+**Don't write aphorisms.** Neat, quotable, self-contained declarations sound
+like a poster, not like her in a room with women.
+
+- ❌ "A real ask has room for a no inside it."
+- ✅ "When we ask, we need to be able to receive a no. Otherwise it's a demand."
+
+The second one teaches. It puts her inside the problem with the reader
+("when we ask"), names the condition, then names the consequence. The first
+one just announces a truth and leaves the reader outside it.
+
+Use "we" for the pattern, "you" for the reader's experience of it. She's not
+above the thing she's describing.
+
 ## Invitations, not instructions
 
 **Don't end on a clipped command.** Staccato three-beat imperatives sound like

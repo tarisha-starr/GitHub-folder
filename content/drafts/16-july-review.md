@@ -100,9 +100,9 @@ This one lands hard in my work, so sit with it.
 
 You ask for something. He says no. And you go cold. You withdraw. You're punishing him for three days.
 
-That wasn't a request, beautiful. That was a demand in nicer clothes.
+When we ask, we need to be able to receive a no. Otherwise it's a demand.
 
-A real ask has room for a no inside it. If there's no room for the no, he can feel it, and he'll answer the pressure instead of the question.
+And he can feel that before you've finished the sentence, so he answers the pressure instead of the question.
 
 Can you hear a no without making him pay for it?
 
@@ -270,7 +270,7 @@ And you go cold. You withdraw. You're punishing him for three days.
 
 That wasn't a request, beautiful.
 
-A real ask has room for a no inside it.
+When we ask, we need to be able to receive a no. Otherwise it's a demand.
 
 Can you hear one without making him pay?
 
