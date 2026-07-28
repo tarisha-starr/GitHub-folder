@@ -1,4 +1,4 @@
-# 16 July drafts — review and edit
+# 16 July drafts, review and edit
 
 Edit these directly. Tick the box on the ones you want published. Anything you
 leave unticked stays in drafts and never goes out.

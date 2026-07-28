@@ -56,6 +56,23 @@ that goes out as her voice must follow these rules.
 - Body-conversation prompts:
   `Ask your body "how are you doing, beautiful?"`
 
+## Invitations, not instructions
+
+**Don't end on a clipped command.** Staccato three-beat imperatives sound like
+an ad, not like her.
+
+- ❌ "One thing. Out loud. Today."
+- ✅ "What is one thing you can appreciate about your partner today?"
+
+- ❌ "Say what you want. Then say what it would give you."
+- ✅ "What would it give you if you asked for the whole thing?"
+
+The close should open something, not order it. A question invites her to
+answer. A command tells her she's behind.
+
+Same for the body copy, not just the CTA. If a line can be a question without
+losing its meaning, make it a question.
+
 ## What to avoid (sounds wrong in her voice)
 
 - ❌ Em-dashes

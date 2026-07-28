@@ -31,14 +31,44 @@ def derive_video_url(image_path: str, raw_base: str) -> str:
     return f"{raw_base.rstrip('/')}/videos/video-{m.group(1)}.mp4"
 
 
+def build_post_text(post: dict) -> str:
+    """The exact text to publish, assembled here rather than in the Zap.
+
+    Deliberately excludes the hook. The hook is rendered onto the card image
+    by render_post_cards.py, so repeating it in the body shows it twice.
+
+    Map this ONE field in Zapier. If the Zap assembles the text itself from
+    hook + caption + question, the hook doubles up, and that's invisible
+    until it's live.
+    """
+    parts = []
+    caption = (post.get("caption") or "").strip()
+    if caption:
+        parts.append(caption)
+    question = (post.get("question") or "").strip()
+    if question and question.lower() not in caption.lower():
+        parts.append(question)
+    tags = post.get("hashtags", [])
+    if tags:
+        parts.append(" ".join(tags))
+    return "\n\n".join(parts)
+
+
 def build_payload(post: dict, raw_base: str) -> dict:
     image_path = post.get("image", "")
     image_url = f"{raw_base.rstrip('/')}/{image_path}" if image_path else ""
     video_url = derive_video_url(image_path, raw_base)
+
+    # No hook fallback for caption. It used to be post.get("caption",
+    # post["hook"]), which meant a caption-less post published its hook as the
+    # body, duplicating the hook already on the card.
+    caption = (post.get("caption") or "").strip()
+
     return {
         "post_id": post["id"],
-        "hook": post["hook"],
-        "caption": post.get("caption", post["hook"]),
+        "post_text": build_post_text(post),  # <-- map this one in Zapier
+        "hook": post["hook"],                # on the card image, not the body
+        "caption": caption,
         "question": post.get("question", ""),
         "hashtags": " ".join(post.get("hashtags", [])),
         "hashtags_list": post.get("hashtags", []),

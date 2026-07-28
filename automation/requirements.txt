@@ -1,3 +1,5 @@
 # daily_email.py uses only the Python standard library.
 # This file exists so CI can `pip install -r requirements.txt` cleanly
 # and so future additions (e.g. python-dotenv, requests) have a home.
+# render_post_cards.py and render_infographics.py need Pillow.
+Pillow>=10.0
