@@ -156,21 +156,69 @@ Xero already handles the volume you have.
 
 ---
 
-## What's blocking the rest
+## What's actually connected (corrected)
 
-Three gaps, each of which blocks real automations:
+An earlier version of this audit said no email list platform was reachable and
+called connecting one the highest-value next step. **That was wrong.** The
+Zapier account already has these apps enabled and reachable today:
 
-1. **No email list platform connected.** ConvertKit, Kajabi, Mailchimp, whatever
-   you actually use, isn't reachable from here. This blocks 16 (lead magnet
-   delivery), 14 (newsletter sending) and 28 (onboarding). Connecting it via
-   Zapier would unlock all three. Highest-value connection you could make.
+| App | Actions | What it unblocks |
+|---|---|---|
+| **ActiveCampaign** | 54 | 16 lead magnet delivery, 14 newsletter, 28 onboarding, 01/02 lead handling |
+| **Stripe** | 18 | real revenue data for the money brief, 44 payment reminders |
+| **TidyCal** | 8 | bookings, discovery call prep |
+| **Xperiencify** | 12 | course platform, student progress |
+| **Facebook Lead Ads** | 1 | inbound leads |
+| Buffer, Notion, Gmail, Dropbox, YouTube, WordPress | 90 | publishing and storage |
 
-2. **No analytics.** No Buffer read access, no Instagram insights, no site
+So the email-platform automations aren't blocked at all. They're buildable now
+through Zapier, without connecting anything new. That moves 16, 14 and 28 out of
+"blocked" and into "build next".
+
+### GoPlus
+
+Tarisha uses **app.usegoplus.com**. Worth being precise about what exists:
+
+- There is **no GoPlus connector** in the Claude connector directory. Checked
+  the installed list and the registry. The similarly-named connector in the
+  installed list is **GoDaddy**, which is domains, not GoPlus.
+- **Zapier has no native GoPlus app.** Searched three times; each search fell
+  back to the generic popular-apps list rather than returning a match.
+- GoPlus's own marketing claims Zapier, Make and Pabbly support plus webhooks.
+  Their site returns 403 to automated fetches, so the docs couldn't be read
+  directly. Given no native Zapier app exists, "Zapier integration" almost
+  certainly means **outbound webhooks** caught by Webhooks by Zapier.
+
+**The path that works without waiting for anyone to build a connector:**
+
+```
+GoPlus event  →  GoPlus webhook  →  Zapier Catch Hook
+              →  write row into Notion (or Google Sheets)
+              →  Claude reads it natively via the Notion connector
+```
+
+This is the same pattern already used in reverse by `automation/zapier_push.py`,
+which posts to a Zapier Catch Hook. It's proven in this stack.
+
+The GoPlus-side step (logging in and creating the webhook) has to be done by
+Tarisha. Everything downstream of the Catch Hook can be built here.
+
+Second option if GoPlus exposes a REST API with a key: pull directly from a
+Python script in `automation/` on a schedule, same as the existing workflows.
+Better for periodic pulls, worse for real-time events.
+
+## Still genuinely blocked
+
+1. **No analytics.** No Buffer read access, no Instagram insights, no site
    analytics. This blocks 15 entirely. You're publishing daily and can't see
    what worked, which also weakens the outlier strategy.
 
-3. **FMP connector needs re-authorising.** It's installed but unauthenticated.
+2. **FMP connector needs re-authorising.** It's installed but unauthenticated.
    Irrelevant to this work, but worth clearing out.
+
+3. **Which platform is the source of truth?** ActiveCampaign, Xperiencify and
+   GoPlus overlap heavily. Building list automations against the wrong one is
+   wasted work. This needs answering before 14, 16 or 28 get built.
 
 One correction worth stating plainly: your Notion is doing the job a CRM would
 do, and doing it well enough. Don't let anyone sell you a CRM off the back of
