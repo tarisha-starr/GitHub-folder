@@ -1,222 +1,243 @@
 # 16 July drafts, review and edit
 
-Edit these directly. Tick the box on the ones you want published. Anything you
-leave unticked stays in drafts and never goes out.
+Your language, with the verbal filler trimmed. Not raw transcript, not clever.
 
-**Nothing here is live.** Every Zapier and Buffer script reads only the live
-content files, never the drafts folder.
+Tick the ones you want published. Anything unticked stays in drafts and never
+goes out. **Nothing here is live.**
+
+The hook is printed on the card image, so it is not repeated in the caption.
 
 ---
 
 ## Image posts
 
-### 01. The no comes easy. It's the yes that's terrifying.
+### 01. Often the no comes easier, the yes can be scary.
 
-Every month in my circle I watch the same thing. I ask a woman what she doesn't want and she tells me in a second. I ask her what she deeply desires and the room goes quiet.
+*(on the card image, not in the caption)*
 
-Because the no is safe. There's nothing to lose in a no.
+Every month in the circle I see the same thing. I ask a woman what she doesn't want and she tells me straight away. Then I ask what she actually desires, and it goes quiet.
 
-The yes is where you're exposed. If you say the thing you actually want out loud, someone could refuse you.
+Often the no comes easier. The yes can be scary.
 
-So you stay in the no and call it knowing your mind.
+There's nothing to lose in a no. Nobody can refuse it. But when you say what you actually want out loud, there's a chance you won't get it.
 
-What's the yes hiding underneath your no?
+So we stay in the no.
 
-*CTA: What do you actually want?*
+What's the yes underneath yours?
+
+**CTA:** What's the yes underneath your no?
 
 `#WomenOver40` `#MidlifeWomen` `#Intimacy` `#DesireAfter40` `#RelationshipTruth` `#FeminineEnergy`
 
 - [ ] Approve
 
-### 02. Saying no to him is often you saying yes to yourself.
+### 02. Saying no to him is often saying yes to yourself.
 
-One of the women in my circle told me she's been practising this with a family member. Not for desire. Just to survive the visits.
+*(on the card image, not in the caption)*
 
-And that's the whole thing, beautiful.
+One of the women in the circle has been practising this with a family member. Not for desire, just to get through the visits.
 
-The no isn't a rejection of them. It's a yes to you. To the walk. To the quiet room. To going to bed instead of pushing through.
+And that's really the whole thing.
+
+The no isn't a rejection of them. It's a yes to you. To the walk, to the quiet room, to going to bed instead of pushing through one more time.
 
 Every no you say is protecting a yes somewhere.
 
 What did you say no to this week, and what were you saying yes to?
 
-*CTA: What was your no protecting?*
+**CTA:** What was your no protecting?
 
 `#WomenOver40` `#MidlifeWomen` `#Intimacy` `#DesireAfter40` `#RelationshipTruth` `#FeminineEnergy`
 
 - [ ] Approve
 
-### 03. You ask for less than you want. Then you can't enjoy what you get.
+### 03. We ask for less than we actually want.
 
-I see this constantly. You want the whole thing. But asking for the whole thing feels too dangerous, so you shave it down into something reasonable.
+*(on the card image, not in the caption)*
 
-And then he gives you the smaller version. And you can't even enjoy it.
+You want the whole thing, but asking for the whole thing feels risky. If you asked and he couldn't give it to you, that would hurt more than not asking at all.
 
-Because it was never what you wanted. You got exactly what you asked for. That's the problem.
+So you ask for less. Something more reasonable.
 
-What did you edit out of your last ask?
+Then he gives you the smaller version, and you can't quite enjoy it, because it isn't what you wanted.
 
-*CTA: What did you leave out?*
+You got what you asked for. That's the problem.
 
-`#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
+What did you leave out of your last ask?
 
-- [ ] Approve
-
-### 04. Criticism has never once made him want to give you more.
-
-I work with a lot of couples. Not one time has "you never do anything for me" made a man want to try harder.
-
-Here's what actually happens. He hears he's failed. And when a man lands in I've already failed, he stops. What's the point.
-
-Appreciation is what unlocks generosity. Not the complaint. Not the list of what's missing.
-
-Tell him one thing you appreciate today. Out loud. Watch what it does.
-
-*CTA: When did you last say it out loud?*
+**CTA:** What did you leave out?
 
 `#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
 
 - [ ] Approve
 
-### 05. Appreciation is the compost. Everything else grows on top of it.
+### 04. When we criticise, it doesn't inspire him to give more.
 
-We've just moved house and I'm building a garden. So we go on a kelp mission, a seaweed mission, we gather up the old leaves. All of it goes down first as the base.
+*(on the card image, not in the caption)*
 
-Nothing grows without that layer.
+I work with a lot of couples. I've never seen "you never do anything for me" make a man try harder.
 
-Appreciation works the same way in a relationship. It's the nourishment underneath. You put it down first, and then you can ask for what you want on top of it.
+He hears that he's failed. And when he goes there, what's the point of trying.
 
-If things feel deficient at home, don't start with the ask. Start with the compost.
+Appreciation unlocks the generosity. Not the criticism, not the list of what's missing.
 
-*CTA: What's your soil like right now?*
+What is one thing you can appreciate about your partner today?
+
+**CTA:** When did you last say it out loud?
 
 `#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
 
 - [ ] Approve
 
-### 06. If he's not allowed to say no, it was never a request.
+### 05. Appreciation is what unlocks generosity.
 
-This one lands hard in my work, so sit with it.
+*(on the card image, not in the caption)*
 
-You ask for something. He says no. And you go cold. You withdraw. You're punishing him for three days.
+We've just moved house and I'm making a garden. We go on a kelp mission, a seaweed mission, we gather up the old leaves, and all of that goes down first as the base.
+
+Nothing grows without that layer underneath.
+
+Appreciation works the same way. It's the nourishment everything else grows on top of. You put it down first, then you can ask for what you want.
+
+If things feel deficient at home, what would happen if you laid the compost down first?
+
+**CTA:** What's your soil like right now?
+
+`#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
+
+- [ ] Approve
+
+### 06. If he says no and we go cold, it wasn't a request.
+
+*(on the card image, not in the caption)*
 
 When we ask, we need to be able to receive a no. Otherwise it's a demand.
 
-And he can feel that before you've finished the sentence, so he answers the pressure instead of the question.
+You ask for something. He says no. And then you go quiet, you withdraw, you're colder for three days.
+
+He feels all of that, so he answers the pressure instead of the question.
 
 Can you hear a no without making him pay for it?
 
-*CTA: Is yours a request or a demand?*
+**CTA:** Is yours a request or a demand?
 
 `#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
 
 - [ ] Approve
 
-### 07. You think you have to deserve it first.
+### 07. So many of us feel we have to deserve love.
 
-So many women I work with are exhausted by this one. I have to earn love. I have to be good enough for it first.
+*(on the card image, not in the caption)*
 
-So you look after everybody. You do more than your share. You carry the whole thing...
+I have to deserve it. I have to earn it. I have to do something for it first.
 
-hoping someone will notice and give you what you need without you having to ask.
+So we do a lot. We look after everyone else, we carry more than our share, hoping somebody notices and gives us what we need without us asking.
 
-They don't notice. That's not how it works.
+They don't notice. It doesn't work like that.
 
-You don't have to deserve what you want. You have to ask for it.
+What are you still trying to earn?
 
-*CTA: What are you still trying to earn?*
+**CTA:** What are you still trying to earn?
 
 `#WomenOver40` `#MidlifeWomen` `#Intimacy` `#DesireAfter40` `#RelationshipTruth` `#FeminineEnergy`
 
 - [ ] Approve
 
-### 08. You've been hinting for years and calling it communication.
+### 08. When we hint, it's just noise to him.
 
-I hear it every week. But I've told him. I've said it a hundred times.
+*(on the card image, not in the caption)*
+
+I hear this every week. But I've told him. I've said it a hundred times.
 
 Have you though? Or have you hinted, sighed, gone quiet, and hoped he'd work it out?
 
-Hinting isn't asking. To him it's just noise. It doesn't register as something he's meant to do.
+Hinting doesn't register. It isn't something he knows he's meant to act on.
 
-And it isn't because he doesn't love you enough. He genuinely hasn't got a clue.
+And it isn't that he doesn't love you enough. He hasn't got a clue.
 
 What have you been hinting about?
 
-*CTA: What haven't you actually said?*
+**CTA:** What haven't you actually said?
 
 `#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
 
 - [ ] Approve
 
-### 09. You won't let yourself feel it, because you can't have it forever.
+### 09. I'd rather not have it at all than have it for a moment.
 
-A woman in my circle said something last week that stopped me.
+*(on the card image, not in the caption)*
 
-She said it's like being handed beautiful ice cream and told you can have it for one minute. So I'd rather not have it at all.
+A woman in the circle said something last week that stopped me. She said it's like being handed beautiful ice cream and told you can have it for one minute. So I'd rather not have it at all.
 
 That's how we stop ourselves.
 
-You get one moment of the softness you've been starving for, and something in you goes... no. Don't get used to this. Don't set yourself up.
+You get a moment of the softness you've been longing for, and something comes in and says don't get used to this, don't set yourself up.
 
-So you brace instead of receive.
+So you brace instead of receiving.
 
 What if you let yourself have the minute?
 
-*CTA: What are you refusing to enjoy?*
+**CTA:** What are you refusing to enjoy?
 
 `#WomenOver40` `#MidlifeWomen` `#Intimacy` `#DesireAfter40` `#RelationshipTruth` `#FeminineEnergy`
 
 - [ ] Approve
 
-### 10. Ask yourself "and what would that give me?" five times.
+### 10. What is your deepest desire, as it relates to love and intimacy?
+
+*(on the card image, not in the caption)*
 
 We did this in the circle and I watched a woman go from one word to her whole life in about four minutes.
 
-She started with peace.
+You start with the real question. What is my deepest desire, as it relates to love, to intimacy, to my relationship with myself?
 
-And what would that give you? Space. And what would that give you? Softness. And that? Hope that the next chapter is the best one.
+She said peace.
+
+Then you keep asking the second one. And if you had that, what would it give you? Space. And if you had that? Softness. And that? Hope the next chapter is the best one.
 
 And that? A life well lived.
 
-Your first answer is never the real one. Keep asking. She's underneath there.
+Your first answer is never the real one. What if you kept asking?
 
-*CTA: How deep does yours go?*
+**CTA:** What is your deepest desire?
 
 `#WomenOver40` `#MidlifeWomen` `#Intimacy` `#DesireAfter40` `#RelationshipTruth` `#FeminineEnergy`
 
 - [ ] Approve
 
-### 11. When you can't take a no, your ask stops being clean.
+### 11. When we can't take a no, the request comes out loaded.
 
-Something I said in the circle that I want you to hear again.
+*(on the card image, not in the caption)*
 
-If you can't receive a no, the request comes out loaded. And he feels the weight of it before you've finished the sentence.
+If you can't receive a no, the ask isn't clean. It's got weight on it, and he feels that before you've finished the sentence.
 
-That's why you keep not asking. Not because you don't know what you want. Because you already know what you'll do if he says no.
+That's often why we don't ask at all. Not because we don't know what we want. Because we already know what we'll do if he says no.
 
-The work isn't in the asking. It's in getting okay with the no.
+So the work isn't in the asking. It's in getting okay with the no.
 
 What happens in your body when you hear one?
 
-*CTA: How do you take a no?*
+**CTA:** How do you take a no?
 
 `#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
 
 - [ ] Approve
 
-### 12. Tell him what it'll give you. That's the part you keep leaving out.
+### 12. We forget to say what it would give us.
 
-Most asks fail because they stop halfway.
+*(on the card image, not in the caption)*
 
-You say the thing you want. You don't say what it would give you, or how it would make you feel, or what's in it for him.
+Most of our asks stop halfway.
 
-One woman in my circle reframed hers and every single person in the room said the same thing... now I want to do it for her.
+We say the thing we want, and leave out the rest of it. What it would give us. How it would make us feel. What difference it would make.
 
-That's the difference. Not the words. The invitation underneath them.
+One woman in the circle reframed hers, and afterwards everybody said the same thing. Now I want to give it to her.
 
-Say what you want. Then say what it would give you.
+It isn't the words, it's the invitation underneath them.
 
-*CTA: What would it actually give you?*
+What would it give you, if you said the whole of it?
+
+**CTA:** What would it actually give you?
 
 `#WomenOver40` `#MidlifeWomen` `#RelationshipTruth` `#Communication` `#Marriage` `#Intimacy`
 
@@ -226,19 +247,19 @@ Say what you want. Then say what it would give you.
 
 ## Reel scripts
 
-### R1. Behind every no is a yes
+### R1. The no comes easier
 
-**Hook:** The no comes easy. It's the yes that's terrifying.
+**Hook:** Often the no comes easier, the yes can be scary.
 
-Ask a woman what she doesn't want, she'll tell you in a second.
+Ask a woman what she doesn't want and she'll tell you straight away.
 
-Ask her what she deeply desires... silence.
+Ask her what she deeply desires, and it goes quiet.
 
-Because the no is safe. Nobody can refuse a no.
+Often the no comes easier. The yes can be scary.
 
-The yes is where you're exposed. Say what you actually want and he might not give it to you.
+There's nothing to lose in a no. But when you say what you actually want, there's a chance you won't get it.
 
-So you stay in the no and call it knowing your mind.
+So we stay in the no.
 
 What's the yes underneath yours?
 
@@ -246,59 +267,61 @@ What's the yes underneath yours?
 
 ### R2. Appreciation unlocks generosity
 
-**Hook:** Criticism has never once made him want to give you more.
+**Hook:** When we criticise, it doesn't inspire him to give more.
 
 I work with a lot of couples.
 
-Not once has "you never do anything for me" made a man try harder.
+I've never seen "you never do anything for me" make a man try harder.
 
-He hears he's failed. And when he lands there, he stops. What's the point.
+He hears that he's failed. And when he goes there, what's the point of trying.
 
-Appreciation is what unlocks generosity.
+Appreciation unlocks the generosity.
 
-One thing. Out loud. Today.
+What is one thing you can appreciate about your partner today?
 
 - [ ] Approve
 
 ### R3. Request or demand
 
-**Hook:** If he's not allowed to say no, it was never a request.
+**Hook:** If he says no and we go cold, it wasn't a request.
 
 You ask for something. He says no.
 
-And you go cold. You withdraw. You're punishing him for three days.
-
-That wasn't a request, beautiful.
+And then you go quiet, you withdraw, you're colder for three days.
 
 When we ask, we need to be able to receive a no. Otherwise it's a demand.
 
-Can you hear one without making him pay?
+He feels all of that, so he answers the pressure instead of the question.
+
+Can you hear a no without making him pay for it?
 
 - [ ] Approve
 
-### R4. Ask for what you actually want
+### R4. We ask for less
 
-**Hook:** You ask for less. Then you can't enjoy what you get.
+**Hook:** We ask for less than we actually want.
 
 You want the whole thing.
 
-But asking for the whole thing feels dangerous, so you shave it down to something reasonable.
+But asking for the whole thing feels risky. If you asked and he couldn't give it to you, that would hurt more.
 
-He gives you the smaller version.
+So you ask for less.
 
-And you can't enjoy it, because it was never what you wanted.
+Then he gives you the smaller version, and you can't quite enjoy it, because it isn't what you wanted.
 
-You got exactly what you asked for. That's the problem.
+You got what you asked for. That's the problem.
 
 - [ ] Approve
 
-### R5. Seven levels deep
+### R5. The deepest desire practice
 
-**Hook:** Ask yourself "and what would that give me?" five times.
+**Hook:** What is your deepest desire, as it relates to love and intimacy?
 
-She started with peace.
+Start there. What is my deepest desire, as it relates to love and intimacy?
 
-And what would that give you? Space.
+She said peace.
+
+Then you keep asking. And if you had that, what would it give you? Space.
 
 And that? Softness.
 
@@ -306,7 +329,7 @@ And that? Hope the next chapter's the best one.
 
 And that? A life well lived.
 
-Your first answer is never the real one. Keep asking.
+Your first answer is never the real one. How deep does yours go?
 
 - [ ] Approve
 
@@ -354,6 +377,5 @@ Your first answer is never the real one. Keep asking.
 
 ---
 
-*Source: Radiant Woman circle, 16 July, 108 minutes. Drawn from Tarisha's own
-teaching on the call. No participant is named and no one's situation is described
-identifiably. All copy passes the brand check, including the new pet-name rule.*
+*Radiant Woman circle, 16 July, 108 minutes. No participant is named and no
+one's situation is described identifiably. All copy passes the brand check.*

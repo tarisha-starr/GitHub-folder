@@ -56,6 +56,58 @@ that goes out as her voice must follow these rules.
 - Body-conversation prompts:
   `Ask your body "how are you doing, beautiful?"`
 
+## The rule above all the others
+
+**Normal, human, conversational language. Her language.**
+
+Not clever. Not short and punchy. Not quotable. She talks the way a woman
+talks to another woman across a table, and that means hedges, run-ons and
+thinking out loud.
+
+Her actual speech, from a recorded session:
+
+> "Quite often the no comes way easier for us somehow."
+> "It's not because they don't love us enough. They don't have a clue, it
+> doesn't register."
+> "And that's when we ask for less what we want."
+
+Look at what's in there: "quite often", "somehow", "kind of", "I think it's
+because". Those hedges are the voice. Stripping them out to make the line
+land harder is exactly the mistake.
+
+- ❌ "The no comes easy. It's the yes that's terrifying."
+- ✅ "It's so much easier to know what you don't want. Quite often the no
+  comes way easier for us somehow."
+
+The first is an epigram. It's tighter, and it's wrong, because she'd never
+say it. Length is not the enemy. Trying to be smart is.
+
+**When her own words exist, use them.** Transcripts beat invention every
+time. A line lifted from how she actually said it will always sound more
+like her than a better line written from scratch.
+
+### But edit them
+
+Raw transcript isn't the target either. Speech has filler that reads as
+mush on the page. Trim the tics, keep the register, finish the thought.
+
+> Raw: "quite often the no comes way easier for us somehow"
+> Edited: "often the no comes easier, the yes can be scary"
+
+What happened there: "quite" went, "way" went, "somehow" went, "for us" went.
+What stayed: the plain words, the comma splice, the conversational rhythm.
+What got added: the second half, which says the thing the original was
+circling.
+
+So the target sits between the two failure modes:
+
+| Too raw | Right | Too clever |
+|---|---|---|
+| "quite often the no comes way easier for us somehow" | "often the no comes easier, the yes can be scary" | "The no comes easy. It's the yes that's terrifying." |
+
+Cut the filler. Don't cut the warmth. Never trade either for a line that
+sounds quotable.
+
 ## Teach with "we", don't pronounce
 
 **Don't write aphorisms.** Neat, quotable, self-contained declarations sound
