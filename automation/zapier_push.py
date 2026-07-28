@@ -19,6 +19,7 @@ import sys
 import urllib.error
 import urllib.request
 
+from post_text import build_post_text
 from scheduler import repurposed_1pm_entry
 
 
@@ -29,29 +30,6 @@ def derive_video_url(image_path: str, raw_base: str) -> str:
     if not m:
         return ""
     return f"{raw_base.rstrip('/')}/videos/video-{m.group(1)}.mp4"
-
-
-def build_post_text(post: dict) -> str:
-    """The exact text to publish, assembled here rather than in the Zap.
-
-    Deliberately excludes the hook. The hook is rendered onto the card image
-    by render_post_cards.py, so repeating it in the body shows it twice.
-
-    Map this ONE field in Zapier. If the Zap assembles the text itself from
-    hook + caption + question, the hook doubles up, and that's invisible
-    until it's live.
-    """
-    parts = []
-    caption = (post.get("caption") or "").strip()
-    if caption:
-        parts.append(caption)
-    question = (post.get("question") or "").strip()
-    if question and question.lower() not in caption.lower():
-        parts.append(question)
-    tags = post.get("hashtags", [])
-    if tags:
-        parts.append(" ".join(tags))
-    return "\n\n".join(parts)
 
 
 def build_payload(post: dict, raw_base: str) -> dict:
@@ -66,7 +44,7 @@ def build_payload(post: dict, raw_base: str) -> dict:
 
     return {
         "post_id": post["id"],
-        "post_text": build_post_text(post),  # <-- map this one in Zapier
+        "post_text": build_post_text(caption, post.get("question", ""), post.get("hashtags", [])),
         "hook": post["hook"],                # on the card image, not the body
         "caption": caption,
         "question": post.get("question", ""),
