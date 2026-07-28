@@ -1,9 +1,10 @@
 # 16 July drafts, review and edit
 
-Your language, with the verbal filler trimmed. Not raw transcript, not clever.
+Your language, with the verbal filler trimmed. Everything has had the voice pass now,
+including the journal prompts and infographics.
 
-Tick the ones you want published. Anything unticked stays in drafts and never
-goes out. **Nothing here is live.**
+Tick the ones you want published. Anything unticked stays in drafts and never goes
+out. **Nothing here is live.**
 
 The hook is printed on the card image, so it's not repeated in the caption.
 
@@ -337,41 +338,43 @@ Your first answer is never the real one. How deep does yours go?
 
 ## Journal prompts
 
-- [ ] If I could have anything I want, in my body, in my relationship, in my life... what is it that I deeply desire? Don't think it. Let it come up.
-- [ ] What did I say no to this week, and what was the yes hiding underneath it? Tell me yours.
-- [ ] And if I had that, what would it give me? Ask it five times. Follow it all the way down.
-- [ ] What have I been hinting about instead of asking for? Tell me yours.
-- [ ] What do I want to be appreciated for? The thing I'm proud of that nobody's noticed yet.
-- [ ] Five things I appreciate about him. Little things count. Write until I run out.
-- [ ] Where am I asking for less than I actually want, because the whole thing feels too risky?
-- [ ] What happens in my body when I hear a no? Do I go cold, go quiet, or go away?
-- [ ] What am I refusing to enjoy right now, because I can't have it forever?
+*Rewritten to match your house format: a stem ending in "..." then "Tell me yours."*
+
+- [ ] What I deeply desire, when I stop editing it down, is... Tell me yours.
+- [ ] The no I said this week was really a yes to... Tell me yours.
+- [ ] And if I had that, what it would give me is... Tell me yours.
+- [ ] The thing I've been hinting about instead of asking for is... Tell me yours.
+- [ ] What I want to be appreciated for, and haven't said out loud, is... Tell me yours.
+- [ ] The small things I appreciate about him, the ones I never mention, are... Tell me yours.
+- [ ] Where I ask for less than I want, because the whole thing feels too risky, is... Tell me yours.
+- [ ] When I hear a no, what happens in my body is... Tell me yours.
+- [ ] What I won't let myself enjoy, because I can't have it forever, is... Tell me yours.
 
 ---
 
 ## Infographics
 
-### I1. Sharing vs Asking
+### I1. Sharing or asking?
 
-**Caption:** You've said it a hundred times. Have you actually asked once?
+**Caption:** We've said it a hundred times. Have we actually asked once?
 
-**Layout:** Two-column compare infographic. Left column 'Sharing' in muted tone: vague, about him, lands as criticism, no clear action, he hears 'I've failed'. Right column 'Asking' in warm tone: specific enough to picture, about me and my feelings, says what it would give me, leaves room for yes and no. Footer line: 'Sharing tells him what's wrong. Asking tells him what's possible.'
-
-- [ ] Approve
-
-### I2. The Great Ask
-
-**Caption:** Four steps. Most of us stop after the first one.
-
-**Layout:** Four stacked numbered steps down the page, each with a short line of body copy. 1. Be specific, he needs to picture it. 2. Say what it would give you and how it'd make you feel. 3. Leave room for a yes and a no. 4. Ask what he needs from you to make it happen. Footer: 'You stay responsible the whole way through.'
+**Layout brief:** Two-column compare infographic. Left column 'Sharing' in a muted tone: it's vague, it's about him, it lands as criticism, there's nothing he can act on, and what he hears is that he's failed. Right column 'Asking' in a warm tone: it's specific enough for him to picture, it's about me and how I feel, it says what it would give me, and there's room for a yes and a no. Footer line: 'Sharing tells him what's wrong. Asking tells him what we'd love.'
 
 - [ ] Approve
 
-### I3. Request or Demand?
+### I2. The great ask
 
-**Caption:** The difference isn't the words. It's what happens when he says no.
+**Caption:** There are four parts to it, and most of us stop after the first one.
 
-**Layout:** Split panel with a dividing line. Left 'Request': there's room for a no, you can hear it without withdrawing, he chooses freely. Right 'Demand': a no costs him something, you go cold or resentful, he's answering pressure not a question. Bottom band, full width: 'If he isn't allowed to say no, it was never a request.'
+**Layout brief:** Four stacked numbered steps down the page, each with a short line of body copy. 1. Be specific, he needs to be able to picture it. 2. Say what it would give you, and how it would make you feel. 3. Leave room for a yes and for a no. 4. Ask what he needs from you to make it happen. Footer: 'We stay responsible the whole way through.'
+
+- [ ] Approve
+
+### I3. Request or demand?
+
+**Caption:** It isn't the words that make the difference, it's what happens when he says no.
+
+**Layout brief:** Split panel with a dividing line. Left 'Request': there's room for a no, we can hear it without withdrawing, he's free to choose. Right 'Demand': a no costs him something, we go cold or resentful, and he ends up answering the pressure instead of the question. Bottom band, full width: 'If he says no and we go cold, it wasn't a request.'
 
 - [ ] Approve
 
