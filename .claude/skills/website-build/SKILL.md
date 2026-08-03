@@ -143,12 +143,17 @@ stylesheet already lists, leaving the deliverable untouched. Publish
 Then: commit to the working branch, push, open a draft PR, and hand the file
 over for pasting into Kadence.
 
-**Do not deploy to Vercel or Netlify.** The site is WordPress on DreamHost
-behind Cloudflare, and the whole documented plan depends on WordPress: the blog
-migration from two old domains, Fluent Forms, the membership, Stripe, the quiz,
-Yoast, and Tarisha editing pages herself. A static deploy creates a second site
-at a different URL and does not touch theloveadventure.com. If someone asks for
-it, say so plainly rather than building the wrong thing.
+**Do not deploy theloveadventure.com pages to Vercel or Netlify.** That site is
+WordPress on DreamHost behind Cloudflare, and the whole documented plan depends
+on WordPress: the blog migration from two old domains, Fluent Forms, the
+membership, Stripe, the quiz, Yoast, and Tarisha editing pages herself. A static
+deploy creates a second site at a different URL and does not touch
+theloveadventure.com. If someone asks for it, say so plainly rather than
+building the wrong thing.
+
+This applies to the WordPress site only. A standalone one-pager, a personal
+site, or a site for a different business has no WordPress to respect, and a
+static host is the right answer there. See `references/quick-builds.md`.
 
 ## Editing the live WordPress site
 
@@ -208,5 +213,8 @@ they appear on a couples page.
   and external-resource checks
 - `scripts/embed_fonts.py` — inlines Google Fonts as data URIs for previews
 - `references/conversion.md` — which pages get which conversion treatment
+- `references/quick-builds.md` — standalone sites: a personal one-pager, a site
+  for another business, rebuilding a layout from a screenshot. Different rules,
+  including deployment
 - `references/prompt-pack.md` — the ten founder prompts this skill came from,
   with what changed and why
