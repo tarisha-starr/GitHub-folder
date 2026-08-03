@@ -5,28 +5,27 @@ for another business, a rebuild of a layout you admire. They are **not** for
 theloveadventure.com. That site is WordPress and its pages get pasted into
 Kadence, so the rules in `SKILL.md` apply there instead.
 
-The difference matters most at the deploy step. For a standalone one-pager
-there is no WordPress to respect, so a static host is genuinely the right
-answer and the "no Vercel" rule in `SKILL.md` does not apply.
+What changes for these is the brand: a personal site or another business does
+not inherit the Pine Forest palette or Tarisha's voice rules, so the design
+direction is open. What does not change is how the work is delivered, which is
+covered at the bottom of this page.
 
 ## 1. One-page personal site, about 15 minutes
 
 > Build me a one-page personal website for [NAME]. Include a hero with my name
 > and a one-line bio, an about section, and links to [LINKS]. Make it look
-> designed rather than generic, pick a bold modern style, then deploy it and
-> give me the live URL.
+> designed rather than generic, pick a bold modern style.
 
 Load `artifact-design` or `/mnt/skills/public/frontend-design` first. For a
 personal site the brand is the person, so ask for or infer one concrete thing
 about them and let the design come from that, rather than reaching for a
-default. Publish an artifact preview before deploying, since it is faster to
-iterate on and needs no account.
+default. Publish an artifact preview so she can look at it on a phone.
 
 ## 2. Site for a local business, about 20 minutes
 
 > Build a modern website for a [TYPE] called [NAME]. Include hero, services,
 > testimonials, and a contact section. Make it convert with clear calls to
-> action. Deploy it live and give me the URL.
+> action.
 
 Two cautions worth raising before building:
 
@@ -46,7 +45,6 @@ action, guarantee, FAQ. It rarely wants a countdown.
 
 > Here is a screenshot of a website I love: [SCREENSHOT]. Rebuild this layout
 > and feel as my own site for [PURPOSE]. Match the quality, not the content.
-> Deploy it live.
 
 Screenshots get you a good way there. Pasted HTML and CSS get you the rest,
 so ask for the source if the result needs to be close. This environment's
@@ -58,20 +56,12 @@ hero is composed. What not to carry over: their copy, photography, logo, icon
 set, or illustrations. Those belong to someone else, and swapping in the
 user's own branding is the point of the exercise anyway.
 
-## Deploying
+## Delivering these
 
-Check the host is reachable before promising a URL:
+No Vercel, no Netlify, no static hosting. Tarisha has ruled it out for every
+build, not only the WordPress ones, so do not offer it as a shortcut.
 
-```bash
-curl -sS -o /dev/null -w "%{http_code}\n" https://vercel.com
-```
-
-A `403` from the proxy on `CONNECT` means the host is not on this
-environment's allowlist, and the deploy cannot happen from here. Say so rather
-than working around it. The fallback that always works is an artifact preview
-link, plus the HTML file committed to the repo so the user can deploy it
-themselves in a couple of minutes.
-
-When a deploy is possible, walk the user through any sign-in one click at a
-time and in plain language. Confirm it is live by loading the URL and reporting
-the status code, rather than assuming the deploy succeeded.
+Deliver the same way as everything else: an artifact preview link she can open
+on a phone, plus the single HTML file committed to the repo. If a site
+genuinely needs to be live at its own address, that is a decision for her, and
+the next step is a conversation rather than a deploy command.

@@ -43,8 +43,8 @@ Motion and hero image only. These pages build trust; pressure damages them.
 
 ## Honest urgency
 
-The brand has genuine scarcity and does not need invented scarcity. Six couples
-per retreat, fixed dates, a named month. "Six places, two remaining for March"
+The brand has genuine scarcity and does not need invented scarcity. Ten couples
+per retreat, fixed dates, a named month. "Ten places, three remaining for March"
 outperforms "only 3 slots left this week" because it is specific, and it is
 defensible if anyone asks.
 

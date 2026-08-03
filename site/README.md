@@ -27,12 +27,15 @@ deployment target and nothing here is wired to WordPress.
 
 ## Still to confirm
 
-- The stats band uses two figures that need checking before publication:
-  the 4.9 average rating, and whether every retreat is capped at six couples.
-- Testimonials are genuine quotes from `content/testimonials.json`, which came
-  from women's workshops. Attribution needs settling before they sit on a
-  couples page.
-- Founder photography is a styled placeholder block.
+- The 4.9 average rating in the stats band is still unverified. Everything
+  else on that band is confirmed: ten couples per retreat, five days, two
+  therapists.
+- Testimonials are Tarisha's own couples testimonials, attributed as "Couples
+  client" because no names were supplied. Add names or initials if consent
+  allows.
+- Founder photography is a styled placeholder block. The photos live in
+  Dropbox; `automation/fetch_dropbox_images.py` can pull them once Dropbox is
+  reachable and credentials are set.
 
 ## therapy.html
 
@@ -58,4 +61,5 @@ stats band labels.
 
 Needs doing before publication: embed the Fluent Forms block in the `#form`
 slot, supply `images/therapy-hero.jpg` and `images/tarisha.jpg`, and decide
-whether the contact address should move off deeplyinloveagain.com.
+nothing else. The contact address is now tarisha@theloveadventure.com,
+which needs to exist before the page goes live.

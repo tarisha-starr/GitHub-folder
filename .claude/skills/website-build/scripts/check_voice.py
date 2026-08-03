@@ -12,10 +12,6 @@ import re
 import sys
 
 BANNED_WORDS = [
-    # "real" as adjective or intensifier. UK spellings that merely start with
-    # the same five letters (realise, reality, realm) are different words and
-    # must not trip this, or every client testimonial fails.
-    (r"\breal(?:ly|-\w+)?\b", "the word 'real' is banned in every form"),
     (r"\bcome as you are\b", "banned phrase"),
     (r"\bqueen energy\b", "coachy cliche"),
     (r"\bboss babe\b", "coachy cliche"),
@@ -94,6 +90,14 @@ def main():
         notes.append("possible animated filter, check it is not on a hot path")
     for m in re.finditer(r"\b(\d{1,3}(?:,\d{3})*|\d+\.\d)\s*(?:\+|%|★|star)", text):
         notes.append("unverified-looking statistic: %s" % m.group(0))
+
+    # "real" is a note, not a failure. It is often filler, but sometimes it is
+    # carrying the sentence, so surface it and let Tarisha decide.
+    # UK spellings that share the first five letters (realise, reality, realm)
+    # are different words and must not appear here.
+    for m in re.finditer(r"\breal(?:ly|-\w+)?\b", text, re.I):
+        ctx = text[max(0, m.start() - 40):m.start() + 40].strip()
+        notes.append("'%s', check it is carrying weight: ...%s..." % (m.group(0), ctx))
 
     print("checked %s" % path)
     for n in notes:

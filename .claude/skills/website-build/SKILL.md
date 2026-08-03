@@ -56,10 +56,26 @@ From the brand guidelines and `content/style_guide.md`:
 - No em dashes, en dashes, or hyphens used as punctuation. Commas, full stops,
   ellipses, colons, brackets instead. Compound modifiers like "long-term" are
   fine.
-- The word "real" is banned outright, in every form.
+- The word "real" is discouraged, not banned. The guideline exists because
+  "real" gets used as filler. When it is carrying weight it stays: "the real
+  problem underneath the conflict" is Tarisha's own line and it is the point of
+  the sentence. Flag it, never strip it silently, and leave the call to her.
 - No coachy hype, no clinical jargon, no performative empowerment, no "come as
   you are".
 - Short sentences. Long sentences. Variation. Write like speech.
+
+**Hard rule: do not be poetic.** Use the words couples actually say about their
+own relationship. This is the easiest way to ruin otherwise good work, and it
+usually shows up when naming something: a session, an offer, a page. "The
+Second Spring Session" sounds lovely and no couple on earth has ever said it,
+so it fails. "Get the Love You Desire" is plain and it says what you get, so it
+works.
+
+The test before shipping any name or headline: would a woman in her fifties say
+this out loud to her husband, or to a friend over coffee? If it would only ever
+appear in a brochure, rewrite it. Prefer her existing names over anything new,
+and when a new one is genuinely needed, offer options in plain words rather
+than picking something evocative.
 
 Run `scripts/check_voice.py` over the finished HTML before showing anyone. It
 catches dashes, banned words and US spellings in the visible copy, and it will
@@ -143,17 +159,18 @@ stylesheet already lists, leaving the deliverable untouched. Publish
 Then: commit to the working branch, push, open a draft PR, and hand the file
 over for pasting into Kadence.
 
-**Do not deploy theloveadventure.com pages to Vercel or Netlify.** That site is
-WordPress on DreamHost behind Cloudflare, and the whole documented plan depends
-on WordPress: the blog migration from two old domains, Fluent Forms, the
-membership, Stripe, the quiz, Yoast, and Tarisha editing pages herself. A static
-deploy creates a second site at a different URL and does not touch
-theloveadventure.com. If someone asks for it, say so plainly rather than
-building the wrong thing.
+**Do not deploy to Vercel or Netlify. Tarisha has ruled it out.** Do not offer
+it, do not suggest it as a shortcut, and do not build towards it.
 
-This applies to the WordPress site only. A standalone one-pager, a personal
-site, or a site for a different business has no WordPress to respect, and a
-static host is the right answer there. See `references/quick-builds.md`.
+The site is WordPress on DreamHost behind Cloudflare, and the whole documented
+plan depends on WordPress: the blog migration from two old domains, Fluent
+Forms, the membership, Stripe, the quiz, Yoast, and Tarisha editing pages
+herself. A static deploy creates a second site at a different URL and does not
+touch theloveadventure.com. This environment's proxy blocks vercel.com anyway,
+so it could not happen from here even if it were wanted.
+
+The way work reaches the web is: artifact preview, then the file committed to
+the repo, then pasted into Kadence.
 
 ## Editing the live WordPress site
 
