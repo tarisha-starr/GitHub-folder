@@ -1,0 +1,320 @@
+
+<style>
+.tla-int, .tla-int * { box-sizing: border-box; }
+.tla-int { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-int img { max-width: 100%; display: block; }
+.tla-int a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-int .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-int .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-int section { padding: 96px 0; }
+.tla-int h1, .tla-int h2, .tla-int h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-int .h1 { font-size: clamp(56px, 9vw, 110px); line-height: 1.0; letter-spacing: -0.018em; }
+.tla-int .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-int .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-int .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: inline-block; margin-bottom: 24px; }
+.tla-int .eyebrow.is-light { color: #C9A07C; }
+.tla-int .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-int .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+
+.tla-int .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-int .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-int .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-int .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-int .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-int .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-int .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-int .hero { position: relative; min-height: 760px; display: flex; align-items: center; padding: 180px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.42) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/06/castaways-resort-1.webp'); background-size: cover; background-position: center; color: #FBF7EE; text-align: center; }
+.tla-int .hero-content { max-width: 1080px; margin: 0 auto; text-align: center; }
+.tla-int .hero .eyebrow { color: #B8945A; }
+.tla-int .hero h1 { color: #FBF7EE; margin-bottom: 28px; }
+.tla-int .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 30px); color: #F5EFE3; opacity: 0.92; margin: 0 auto 44px; max-width: 720px; line-height: 1.4; }
+
+.tla-int .what { background: #F5EFE3; text-align: center; }
+.tla-int .what h2 { color: #15110D; max-width: 800px; margin: 0 auto 24px; }
+.tla-int .what p { max-width: 720px; margin: 0 auto 18px; color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.7; }
+
+.tla-int .schedule { background: #FBF7EE; }
+.tla-int .schedule-head { text-align: center; margin-bottom: 64px; }
+.tla-int .schedule h2 { color: #15110D; }
+.tla-int .days-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; max-width: 820px; margin: 0 auto; }
+.tla-int .day-card { background: #F5EFE3; padding: 40px 32px; border-radius: 4px; border-top: 2px solid #B8945A; }
+.tla-int .day-card .num { font-family: 'Marcellus', serif; font-style: italic; font-size: 32px; color: #B8945A; opacity: 0.85; display: block; margin-bottom: 14px; }
+.tla-int .day-card h3 { color: #15110D; font-size: 22px; margin-bottom: 10px; }
+.tla-int .day-card p { color: #2A2520; opacity: 0.85; font-size: 15px; line-height: 1.65; }
+
+.tla-int .venue { background: #F5EFE3; }
+.tla-int .venue-head { text-align: center; margin-bottom: 56px; }
+.tla-int .venue h2 { color: #15110D; }
+.tla-int .venue-sub { font-style: italic; font-size: 18px; color: #5D6B3F; max-width: 640px; margin: 16px auto 0; }
+.tla-int .venue-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 240px 240px; gap: 16px; max-width: 1180px; margin: 0 auto; }
+.tla-int .venue-item { background-size: cover; background-position: center; border-radius: 4px; overflow: hidden; transition: transform 0.4s ease; }
+.tla-int .venue-item:hover { transform: scale(1.01); }
+.tla-int .venue-item.span-2x2 { grid-column: span 2; grid-row: span 2; }
+.tla-int .venue-item.span-2x1 { grid-column: span 2; grid-row: span 1; }
+.tla-int .venue-foot { text-align: center; margin-top: 32px; }
+.tla-int .venue-foot a { font-family: 'Lora', serif; font-style: italic; font-size: 15px; color: #5D6B3F; border-bottom: 1px solid rgba(184,148,90,0.4); padding-bottom: 2px; }
+
+.tla-int .facilitator { background: #FBF7EE; padding: 0; }
+.tla-int .facilitator-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 600px; }
+.tla-int .facilitator-photo { background-size: cover; background-position: center; min-height: 520px; }
+.tla-int .facilitator-text { padding: 96px 80px; display: flex; flex-direction: column; justify-content: center; }
+.tla-int .facilitator-text h2 { color: #15110D; margin-bottom: 24px; font-size: clamp(32px, 4vw, 44px); }
+.tla-int .facilitator-text p { color: #2A2520; opacity: 0.88; margin-bottom: 18px; font-size: 17px; line-height: 1.7; }
+
+.tla-int .pricing { background: #F5EFE3; }
+.tla-int .pricing-card { max-width: 720px; margin: 0 auto; background: #FBF7EE; border: 1px solid #B8945A; border-radius: 6px; padding: 56px 48px; text-align: center; }
+.tla-int .pricing-card h3 { font-family: 'Marcellus', serif; font-size: 32px; color: #15110D; margin-bottom: 8px; }
+.tla-int .pricing-card .price { font-family: 'Marcellus', serif; font-size: 64px; color: #15110D; line-height: 1; margin: 24px 0 8px; }
+.tla-int .pricing-card .price-sub { font-family: 'Lora', serif; font-style: italic; font-size: 18px; color: #5D6B3F; margin-bottom: 32px; }
+.tla-int .pricing-card ul { list-style: none; padding: 0; text-align: left; max-width: 480px; margin: 32px auto; }
+.tla-int .pricing-card li { padding-left: 24px; position: relative; margin-bottom: 12px; line-height: 1.55; }
+.tla-int .pricing-card li::before { content: '▸'; position: absolute; left: 0; color: #C75D3D; }
+
+.tla-int .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-int .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-int .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }
+
+.tla-int .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden; }
+.tla-int .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-int .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-int .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-int .footer-col li { margin-bottom: 12px; }
+.tla-int .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-int .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-int .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-int .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-int .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-int .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-int .socials { display: flex; gap: 16px; }
+.tla-int .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-int .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-int .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-int .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-int .footer-bottom a:hover { color: #B8945A; }
+.tla-int .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 1024px) {
+	.tla-int .days-row { grid-template-columns: 1fr; }
+	.tla-int .venue-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: 240px 240px 240px 240px; }
+	.tla-int .venue-item.span-2x2 { grid-column: span 2; grid-row: span 2; }
+	.tla-int .venue-item.span-2x1 { grid-column: span 2; grid-row: span 1; }
+	.tla-int .facilitator-inner { grid-template-columns: 1fr; }
+	.tla-int .facilitator-text { padding: 64px 40px; }
+}
+@media (max-width: 768px) {
+	.tla-int { font-size: 16px; }
+	.tla-int section { padding: 72px 0; }
+	.tla-int .container, .tla-int .container-narrow { padding: 0 24px; }
+	.tla-int .nav-menu { display: none; }
+	.tla-int .nav .btn { padding: 10px 18px; }
+	.tla-int .hero { padding: 140px 0 80px; min-height: 620px; }
+	.tla-int .hero h1 { font-size: clamp(40px, 12vw, 60px); }
+	.tla-int .footer { padding: 64px 0 32px; }
+	.tla-int .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-int .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 600px) {
+	.tla-int .venue-grid { grid-template-columns: 1fr; grid-template-rows: repeat(4, 220px); }
+	.tla-int .venue-item, .tla-int .venue-item.span-2x2, .tla-int .venue-item.span-2x1 { grid-column: span 1; grid-row: span 1; }
+}
+
+.tla-int .who-for { background: #FBF7EE; padding: 96px 0; }
+.tla-int .who-for-head { text-align: center; margin-bottom: 56px; }
+.tla-int .who-for-head h2 { color: #15110D; max-width: 720px; margin: 0 auto; }
+.tla-int .who-for-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 48px; max-width: 980px; margin: 0 auto; }
+.tla-int .who-for-item { display: flex; align-items: flex-start; gap: 16px; }
+.tla-int .who-for-item::before { content: ""; display: block; flex-shrink: 0; width: 8px; height: 8px; margin-top: 12px; border-radius: 50%; background: #C75D3D; }
+.tla-int .who-for-item p { color: #2A2520; opacity: 0.92; font-size: 17px; line-height: 1.65; margin: 0; }
+@media (max-width: 720px) { .tla-int .who-for-grid { grid-template-columns: 1fr; } }
+
+.tla-int .takehome { background: #F5EFE3; padding: 96px 0; }
+.tla-int .takehome-head { text-align: center; margin-bottom: 64px; }
+.tla-int .takehome-head h2 { color: #15110D; max-width: 720px; margin: 0 auto 18px; }
+.tla-int .takehome-sub { font-family: 'Lora', serif; font-style: italic; font-size: 19px; color: #5D6B3F; max-width: 640px; margin: 0 auto; line-height: 1.5; }
+.tla-int .takehome-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 1180px; margin: 0 auto; }
+.tla-int .takehome-item { background: #FBF7EE; padding: 36px 28px; border-radius: 4px; border-top: 2px solid #B8945A; }
+.tla-int .takehome-item .th-num { font-family: 'Marcellus', serif; font-size: 22px; color: #B8945A; display: block; margin-bottom: 14px; letter-spacing: 0.05em; }
+.tla-int .takehome-item h3 { color: #15110D; font-size: 20px; margin-bottom: 10px; line-height: 1.25; }
+.tla-int .takehome-item p { color: #2A2520; opacity: 0.88; font-size: 15px; line-height: 1.65; margin: 0; }
+@media (max-width: 980px) { .tla-int .takehome-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .tla-int .takehome-grid { grid-template-columns: 1fr; } }
+
+/* Tighter heading spacing */
+.tla-int section .eyebrow { margin-bottom: 10px !important; }
+.tla-int .what h2 { margin-bottom: 18px !important; }
+.tla-int .schedule-head, .tla-int .who-for-head, .tla-int .takehome-head, .tla-int .venue-head { margin-bottom: 36px !important; }
+.tla-int .schedule-head h2, .tla-int .who-for-head h2, .tla-int .takehome-head h2, .tla-int .venue-head h2 { margin-bottom: 10px !important; }
+.tla-int .takehome-sub, .tla-int .venue-sub { margin-top: 0 !important; }
+.tla-int .facilitator-text h2 { margin-bottom: 16px !important; }
+.tla-int .pricing-card h3 { margin-bottom: 4px !important; }
+.tla-int .pricing-card .price { margin: 16px 0 4px !important; }
+.tla-int .hero h1 { margin-bottom: 16px !important; }
+.tla-int .hero-tagline { margin: 0 auto 28px !important; }
+
+.tla-int .hero .eyebrow { margin-bottom: 4px !important; display: block !important; }
+.tla-int .hero h1 { margin-top: 0 !important; margin-bottom: 14px !important; }
+
+.tla-int .takehome-item.has-image { padding-top: 0; overflow: hidden; }
+.tla-int .takehome-item .th-image { width: calc(100% + 56px); margin: 0 -28px 24px; aspect-ratio: 4/3; background-size: contain; background-position: center; background-repeat: no-repeat; background-color: #F0E8D6; }
+</style>
+
+<div class="tla-int">
+
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a><ul class="sub"><li><a href="/together/therapy">Couples therapy</a></li><li><a href="/together/intensives">The New Chapter of Us</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a><ul class="sub"><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></li>
+				<li class="has-sub"><a href="/events">Events</a><ul class="sub"><li><a href="/connection-playground">Connection Playground</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li><li><a href="/for-her/retreats">Women&rsquo;s retreats</a></li></ul></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">A 2-day private intensive</span>
+		<h1 class="h1">The New Chapter of Us</h1>
+		<p class="hero-tagline">Two days. Just the two of you. With Tarisha. At Castaways Resort, Auckland west coast.</p>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a discovery call</a>
+	</div>
+</section>
+
+<section class="what">
+	<div class="container">
+		<span class="eyebrow">For couples who can&#8217;t wait any longer</span>
+		<h2 class="h2">Whether you&#8217;re drifting apart or in real crisis, weekly therapy can be too slow</h2>
+		<p>Maybe you&#8217;ve been drifting for years. Date nights, books, the occasional therapy session, and you keep landing back in the same place. Some weeks feel okay, some weeks you barely speak. Sex is rare or it&#8217;s been a long time. Or maybe it&#8217;s sharper than that. You&#8217;re in real crisis. One of you is one foot out the door. The fights have an edge they didn&#8217;t have a year ago. Weekly therapy feels too slow to save what you&#8217;ve built together.</p>
+		<p>Two days, just the two of you, at a beach resort an hour from Auckland. You walk in carrying the pattern you&#8217;ve been stuck in. You walk out understanding it, with the tools to step out of it together, and the felt sense of what it takes to want each other again. Concentrated, so you don&#8217;t lose any more ground while you wait between weekly sessions.</p>
+		<p>Two full days with Tarisha is the equivalent of six months of private therapy, done in one concentrated block. Emotionally Focused Couples Therapy, sex therapy, Hakomi somatic psychotherapy, breathwork, and tantric work, woven together and adapted entirely to your relationship.</p>
+	</div>
+</section>
+<section class="who-for">
+	<div class="container">
+		<div class="who-for-head">
+			<span class="eyebrow">Is this for you?</span>
+			<h2 class="h2">You&#8217;ll know it&#8217;s time to do this if</h2>
+		</div>
+		<div class="who-for-grid">
+			<div class="who-for-item"><p>You&#8217;re in real crisis. One of you is one foot out the door, and weekly therapy is moving too slowly to catch up.</p></div>
+			<div class="who-for-item"><p>You&#8217;ve been together five years or more, and you feel more like flatmates than lovers.</p></div>
+			<div class="who-for-item"><p>You keep landing in the same fight, and you can&#8217;t find your way out of it.</p></div>
+			<div class="who-for-item"><p>Sex has become rare, mechanical, or a source of conflict between you.</p></div>
+			<div class="who-for-item"><p>You&#8217;ve read the books, listened to the podcasts, and nothing has actually changed the dynamic at home.</p></div>
+			<div class="who-for-item"><p>You&#8217;re committed to each other. You&#8217;re ready to do something concentrated about it, before more time goes by.</p></div>
+		</div>
+	</div>
+</section>
+
+
+<section class="schedule">
+	<div class="container">
+		<div class="schedule-head">
+			<span class="eyebrow">What two days look like</span>
+			<h2 class="h2">Built around what your relationship actually needs</h2>
+		</div>
+		<div class="days-row">
+			<div class="day-card"><span class="num">i.</span><h3>Day one — Reconnecting hearts, rediscovering desire</h3><p>Understand and shift your emotional cycle. From arguments and distance to love and connection. EFT-led work to map the pattern you keep landing in, partnered breath and body practice, and the first opening of the sexual conversation. By the end of the day, you both know what is really going on underneath the fight.</p></div>
+			<div class="day-card"><span class="num">ii.</span><h3>Day two — Deepening connection, building your new chapter</h3><p>Understand and shift your sexual cycle. From sex as a chore to passionate lovemaking. New emotional and sexual moves, a written repair script for the next argument, sexual communication practices, and your 21-day plan to keep what you have built alive once you go home.</p></div>
+		</div>
+	</div>
+</section>
+<section class="takehome">
+	<div class="container">
+		<div class="takehome-head">
+			<span class="eyebrow">What you&#8217;ll take home</span>
+			<h2 class="h2">Real change, not a weekend high</h2>
+			<p class="takehome-sub">Two days of focused work is only worth it if it lasts. Here&#8217;s what you walk out with.</p>
+		</div>
+		<div class="takehome-grid">
+			<div class="takehome-item has-image"><div class="th-image" role="img" aria-label="EFT cycle map" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/06/eft-cycle-infinity.png');"></div><span class="th-num">01</span><h3>A clear map of your cycle</h3><p>You&#8217;ll finally see, together, the pattern you&#8217;ve been stuck in for years. The trigger, the move, the counter-move, the silence. Once you see it, you can step out of it.</p></div>
+			<div class="takehome-item"><span class="th-num">02</span><h3>Tools that work in the moment</h3><p>Not theory. Concrete moves you can use the next time the fight starts. So you don&#8217;t end up in the same place again on a Tuesday night three weeks from now.</p></div>
+			<div class="takehome-item"><span class="th-num">03</span><h3>A shared language for what&#8217;s underneath</h3><p>The words that let you say what&#8217;s really going on, instead of the surface complaint. The thing you&#8217;ve both been trying to say for years, finally said cleanly.</p></div>
+			<div class="takehome-item"><span class="th-num">04</span><h3>The felt sense of how desire returns</h3><p>Not a lecture on sex. An embodied experience of what it feels like when polarity is alive between you again. Once your body knows it, you can find your way back to it.</p></div>
+			<div class="takehome-item"><span class="th-num">05</span><h3>Structures for keeping it alive at home</h3><p>The practical agreements, rituals, and conversations that let the work outlast the weekend. So you don&#8217;t slide back into the old shape on Wednesday.</p></div>
+			<div class="takehome-item"><span class="th-num">06</span><h3>One follow-up online session</h3><p>Within 60 days. To check in, integrate what&#8217;s shifted, and adjust what isn&#8217;t quite landing yet. Built into the price.</p></div>
+		</div>
+	</div>
+</section>
+
+
+<section class="venue">
+	<div class="container">
+		<div class="venue-head">
+			<span class="eyebrow">The venue</span>
+			<h2 class="h2">Castaways Resort. Auckland&rsquo;s west coast</h2>
+			<p class="venue-sub">An hour from Auckland city, on a black-sand beach with the Tasman Sea. Private chalets above the dunes. Studio, deluxe and villa accommodation.</p>
+		</div>
+		<div class="venue-grid">
+			<div class="venue-item span-2x2" role="img" aria-label="Castaways studio with ocean views" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/castaways-studio-ocean.webp');"></div>
+			<div class="venue-item" role="img" aria-label="Two-bedroom chalet panoramic beach views" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/castaways-chalet-views.webp');"></div>
+			<div class="venue-item" role="img" aria-label="Newly upgraded deluxe chalet" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/castaways-deluxe-chalet.webp');"></div>
+			<div class="venue-item span-2x1" role="img" aria-label="Villa bedroom with ocean view from the bed" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/castaways-bedroom-view.webp');"></div>
+		</div>
+		<div class="venue-foot">
+			<a href="https://www.castaways.co.nz/accommodation-1" target="_blank" rel="noopener">More about Castaways Resort →</a>
+		</div>
+	</div>
+</section>
+
+<section class="facilitator">
+	<div class="facilitator-inner">
+		<div class="facilitator-photo" role="img" aria-label="Tarisha Tourok" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/06/tarisha-portrait-2026-scaled.jpg');"></div>
+		<div class="facilitator-text">
+			<span class="eyebrow">Your facilitator</span>
+			<h2>Tarisha holds the work, just the two of you</h2>
+			<p>Tarisha is a relationship and sex therapist with over a decade of clinical practice. She holds a Master&#8217;s in Counselling and is a member of the New Zealand Association of Counsellors (NZAC). Her training includes Emotionally Focused Therapy for couples (Levels 1 and 2), Hakomi somatic psychotherapy, Gottman method, biodynamic breathwork facilitation, somatic trauma work, and sex therapy.</p>
+			<p>Intensives are her one-on-one clinical container. Just her, you, and your relationship.</p>
+			<p style="font-family:Lora,serif;font-style:italic;font-size:16px;color:#5D6B3F;margin-top:18px">A clean, focused container. No group overhead. No other couples in the room. Just the deep work, two full days.</p>
+		</div>
+	</div>
+</section>
+
+<section class="pricing">
+	<div class="container">
+		<div class="pricing-card">
+			<span class="eyebrow">Investment</span>
+			<h3>The New Chapter of Us</h3>
+			<div class="price">NZD $3,750</div>
+			<div class="price-sub">Per couple &middot; accommodation included</div>
+			<ul>
+				<li>Two full days of private work with Tarisha</li>
+				<li>Two nights accommodation at Castaways Resort, Auckland west coast</li>
+				<li>Pre-work questionnaire and intake call</li>
+				<li>Custom intensive curriculum based on your relationship</li>
+				<li>Lunch and tea provided each day</li>
+				<li>One follow-up online session within 60 days</li>
+			</ul>
+			<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a discovery call</a>
+		</div>
+	</div>
+</section>
+
+<section class="final-cta">
+	<div class="container">
+		<h2 class="h2">Two days. The two of you. Real change</h2>
+		<p>Start with a free discovery call. Twenty minutes with Tarisha to see if an intensive is the right shape for where you are. No pressure, just clarity.</p>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a discovery call</a>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+
+</div>

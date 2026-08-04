@@ -1,0 +1,152 @@
+
+<style>
+.tla-serw, .tla-serw * { box-sizing: border-box; }
+.tla-serw { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-serw img { max-width: 100%; display: block; }
+.tla-serw a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-serw .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-serw .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-serw section { padding: 96px 0; }
+.tla-serw h1, .tla-serw h2, .tla-serw h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-serw .h1 { font-size: clamp(48px, 7vw, 80px); line-height: 1.04; letter-spacing: -0.015em; }
+.tla-serw .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-serw .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-serw .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: block; margin-bottom: 24px; }
+.tla-serw .eyebrow.is-light { color: #C9A07C; }
+.tla-serw .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-serw .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+.tla-serw .btn-ghost { display: inline-block; border: 1px solid #C9A07C; color: #FBF7EE; padding: 14px 28px; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; transition: background 0.3s ease, color 0.3s ease; }
+.tla-serw .btn-ghost:hover { background: #C9A07C; color: #15110D; }
+
+.tla-serw .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-serw .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-serw .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-serw .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-serw .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-serw .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-serw .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-serw .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden; }
+.tla-serw .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-serw .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-serw .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-serw .footer-col li { margin-bottom: 12px; }
+.tla-serw .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-serw .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-serw .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-serw .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-serw .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-serw .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-serw .socials { display: flex; gap: 16px; }
+.tla-serw .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-serw .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-serw .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-serw .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-serw .footer-bottom a:hover { color: #B8945A; }
+.tla-serw .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 768px) {
+	.tla-serw { font-size: 16px; }
+	.tla-serw section { padding: 72px 0; }
+	.tla-serw .container, .tla-serw .container-narrow { padding: 0 24px; }
+	.tla-serw .nav-menu { display: none; }
+	.tla-serw .nav .btn { padding: 10px 18px; }
+	.tla-serw .footer { padding: 64px 0 32px; }
+	.tla-serw .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-serw .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-serw .footer-grid { grid-template-columns: 1fr; }
+	.tla-serw .nav-inner { gap: 12px; }
+	.tla-serw .logo { font-size: 18px; }
+}
+
+.tla-serw .hero { position: relative; min-height: 700px; display: flex; align-items: center; padding: 160px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.40) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/06/sup-paddleboard-couple.jpg'); background-size: cover; background-position: center; color: #FBF7EE; }
+.tla-serw .hero-content { max-width: 880px; }
+.tla-serw .hero .eyebrow { color: #B8945A; }
+.tla-serw .hero h1 { color: #FBF7EE; margin-bottom: 24px; }
+.tla-serw .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin-bottom: 44px; max-width: 640px; line-height: 1.4; }
+.tla-serw .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.tla-serw .hero-link { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: #F5EFE3; text-decoration: underline; text-underline-offset: 6px; }
+.tla-serw .hero-link:hover { color: #B8945A; }
+@media (max-width: 768px) { .tla-serw .hero { padding: 130px 0 70px; min-height: 580px; } .tla-serw .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; } }
+.tla-serw .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-serw .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-serw .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }.tla-serw .body { background: #F5EFE3; }
+.tla-serw .body h2 { color: #15110D; margin-bottom: 24px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; }
+.tla-serw .body .eyebrow { text-align: center; }
+.tla-serw .body p { color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.75; margin-bottom: 22px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.tla-serw .body p.center { text-align: center; }
+
+/* tight-heading-tla-serw */
+.tla-serw .eyebrow { margin-bottom: 10px !important; }
+.tla-serw section .eyebrow { margin-bottom: 10px !important; }
+.tla-serw .hero h1, .tla-serw .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-serw section h2 { margin-bottom: 16px !important; }
+</style>
+<div class="tla-serw">
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">Sexually Empowered Radiant Woman</span>
+		<h1 class="h1">SERW. The flagship course</h1>
+		<p class="hero-tagline">Three months of group work for women coming back to their sexual self.</p>
+		<div class="hero-ctas">
+			<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Apply for the next intake</a>
+		</div>
+	</div>
+</section><section class="body">
+	<div class="container">
+		<span class="eyebrow">The course</span>
+		<h2 class="h2">Three months. Twelve weekly sessions. A small group of women</h2>
+		<p>SERW is the original work. Where most of what The Love Adventure teaches first took shape. Three months of group work for women who want to come home to their sexual self, before, after, or independent of any relationship.</p>
+		<p>Topics across the twelve weeks include: shame and the inheritance, body and sensation, voice and consent, desire (yours, not his), the erotic identity, polarity work, the inner critic, the inner woman, ritual and practice, rage and power, and the integration weeks at the end.</p>
+		<p class="center" style="font-style:italic;font-size:16px;color:#5D6B3F;margin-top:32px">SERW is the door to the membership. Most members start here.</p>
+		<p class="center"><a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Apply for the next intake</a></p>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+</div>
