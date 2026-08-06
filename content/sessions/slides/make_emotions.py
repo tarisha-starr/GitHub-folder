@@ -67,90 +67,88 @@ def add(prs,bg,title,body=None,eyebrow=None,big=False,footer=True):
     return s
 
 
-# ============ SESSION 1 - Safety & Self-Compassion ============
-s1=new_deck()
-add(s1,"navy","Master Your Emotions",eyebrow="Radiant Women's Circle  ·  Session 1",
+# ============ ONE COMBINED DECK (both sessions) ============
+# Session 1 - Safety & Self-Compassion
+d=new_deck()
+add(d,"navy","Master Your Emotions",eyebrow="Radiant Women's Circle  ·  Session 1",
     body="Safety and self-compassion.",big=True)
-add(s1,"pink","Lack of safety is the problem.",
+add(d,"pink","Lack of safety is the problem.",
     body="Not the emotions. Emotions aren't dangerous. Being flooded is.",big=True)
-add(s1,"plum","Start with safety.",
+add(d,"plum","Start with safety.",
     body="We only expand, feel more, open more, when we're not overwhelmed and not sliding into our old patterns.")
-add(s1,"navy","What safety is",
+add(d,"navy","What safety is",
     body=["I'm connected to myself.","I feel what's good for me.","I test it out.",
           "I read how the other responds.","Then I step forward, or step away."])
-add(s1,"gold","Then, no overwhelm.",
+add(d,"gold","Then, no overwhelm.",
     body="Because I never abandon myself to cope. I stay with me the whole way.")
-add(s1,"blush","Reflect",eyebrow="Before the breakout",
+add(d,"blush","Reflect",eyebrow="Before the breakout",
     body=["When do I feel safe? When do I not?","Where do I abandon myself to keep the peace?",
           "What does it feel like in my body when I leave myself?"])
-add(s1,"teal","Breakout · My safety",eyebrow="In pairs",
+add(d,"teal","Breakout · My safety",eyebrow="In pairs",
     body=["One place I feel safe is... one place I don't is...","One way I abandon myself is...",
           "Partner: just witness. Then swap."])
-add(s1,"plum","The loop",
+add(d,"plum","The loop",
     body="Stress makes emotions. Emotions make stress. So we reach for something to fill the hole.")
-add(s1,"pink","The hole can't be filled from outside",
+add(d,"pink","The hole can't be filled from outside",
     body="There's no signal that says your emotional need is met. The fix backfires, and the feeling still waits to be heard.")
-add(s1,"navy","Emotions are the messengers.",
+add(d,"navy","Emotions are the messengers.",
     body="Ignore them and they don't go away. They get louder. They start screaming until we listen.",big=True)
-add(s1,"sage","Reflection",eyebrow="One minute",
+add(d,"sage","Reflection",eyebrow="One minute",
     body="What do you reach for when a feeling gets too big?")
-add(s1,"gold","The reframe",eyebrow="Dr Linda Bacon",
+add(d,"gold","The reframe",eyebrow="Dr Linda Bacon",
     body="If you numb, you don't have a problem with food or wine or your phone. You have a problem with taking care of yourself.")
-add(s1,"blush","Self-compassion",eyebrow="Hands on heart",
+add(d,"blush","Self-compassion",eyebrow="Hands on heart",
     body=["How do you feel? What's going on for you?","I hear you feel...","I see this is difficult. I am here."])
-add(s1,"teal","Breakout · Self-compassion",eyebrow="In pairs",
+add(d,"teal","Breakout · Self-compassion",eyebrow="In pairs",
     body=["Hands on heart. Say it out loud to your partner.","Partner reflects: I hear you feel...",
           "No advice. Then swap."])
-add(s1,"navy","This week",eyebrow="Take home",
+add(d,"navy","This week",eyebrow="Take home",
     body=["Am I safe? Am I connected to myself?","Hands on heart: how do you feel?","Listen. That's the practice."])
 
-# ============ SESSION 2 - Riding the Waves & Tapping ============
-s2=new_deck()
-add(s2,"navy","Master Your Emotions",eyebrow="Radiant Women's Circle  ·  Session 2",
+# Session 2 - Riding the Waves & Tapping (its title slide is the divider)
+add(d,"navy","Master Your Emotions",eyebrow="Radiant Women's Circle  ·  Session 2",
     body="Riding the waves, and tapping.",big=True)
-add(s2,"plum","Anchor safety first.",
+add(d,"plum","Anchor safety first.",
     body="Feet on the floor. Hand on your heart. Right now, in this moment, I am here, and I am safe.")
-add(s2,"pink","Reflect",eyebrow="Before we begin",
+add(d,"pink","Reflect",eyebrow="Before we begin",
     body=["What feeling, if I let it, feels too big?","Where do I feel it in my body? Where am I braced?",
           "What brings me back to safety?"])
-add(s2,"navy","Riding the wave",
+add(d,"navy","Riding the wave",
     body="Not shutting it out. Not drowning in it. Feeling into it without being taken over.",big=True)
-add(s2,"gold","Grief comes in waves",
+add(d,"gold","Grief comes in waves",
     body="You don't feel all of it at once. It rises, it crests, it passes, for now. Then it comes again. That's grief, not you failing.")
-add(s2,"blush","Feel a little, then come back",
+add(d,"blush","Feel a little, then come back",
     body=["Go into the feeling for a breath.","Come back to safety: feet, breath, hand on heart.",
           "A little in, a little out."])
-add(s2,"sage","Keep one foot in the present",
+add(d,"sage","Keep one foot in the present",
     body="Name five things you see. Right now, I am here, and I am safe. That's how you feel it without disappearing into it.")
-add(s2,"teal","Breakout · Feel a little, come back",eyebrow="In pairs · pick a 3 or 4, not a 9",
+add(d,"teal","Breakout · Feel a little, come back",eyebrow="In pairs · pick a 3 or 4, not a 9",
     body=["A feels it for a breath, names where it is.","B guides A back to safety.",
           "A little in, a little out, three times. Swap."])
-add(s2,"plum","The body still braces",
+add(d,"plum","The body still braces",
     body="You can make peace in your head, and your body can still be holding it. It lets go through breath, tears, moving, being held.")
-add(s2,"navy","EFT · tapping",
+add(d,"navy","EFT · tapping",
     body="An easy, direct way to settle a big feeling and come back to safety in your body.")
-add(s2,"gold","Why it works",
+add(d,"gold","Why it works",
     body="Tapping calms the amygdala's alarm, so you shift into your logical brain and choose your response.")
-add(s2,"pink","Wash the laundry",
+add(d,"pink","Wash the laundry",
     body="We don't hide the feeling in the wardrobe. We take it out, wash it, and clear it. Then reframes come naturally.")
-add(s2,"navy","How to tap",
+add(d,"navy","How to tap",
     body=["Name it, be specific. Rate it 1 to 10.","Setup: even though I feel this, I love and accept myself.",
           "Tap the points, say it out loud.","Breathe, re-rate, repeat until it drops."])
-add(s2,"sage","The points",
+add(d,"sage","The points",
     body=["Top of head · eyebrow · side of eye · under eye","Under nose · chin · collarbone",
           "Under arm · wrist","Sip water as you go."])
-add(s2,"teal","Breakout · Tap together",eyebrow="In pairs",
+add(d,"teal","Breakout · Tap together",eyebrow="In pairs",
     body=["Each pick an issue, rate it 1 to 10.","Tap through the points, say your phrase out loud.",
           "Breathe, re-rate. Swap who leads."])
-add(s2,"plum","This week",eyebrow="Take home",
+add(d,"plum","This week",eyebrow="Take home",
     body=["Safety first: am I connected to myself?","Hands on heart: how do you feel?",
           "Tap when it's big. Feel a little, come back."])
-add(s2,"gold","You don't control your emotions.",
+add(d,"gold","You don't control your emotions.",
     body="You master them by feeling safe enough to finally listen.",big=True)
 
 os.makedirs("content/sessions/slides",exist_ok=True)
-p1="content/sessions/slides/Master-Your-Emotions-Session-1.pptx"
-p2="content/sessions/slides/Master-Your-Emotions-Session-2.pptx"
-s1.save(p1); s2.save(p2)
-print("saved",p1,len(s1.slides._sldIdLst),"slides")
-print("saved",p2,len(s2.slides._sldIdLst),"slides")
+out="content/sessions/slides/Master-Your-Emotions.pptx"
+d.save(out)
+print("saved",out,len(d.slides._sldIdLst),"slides")
