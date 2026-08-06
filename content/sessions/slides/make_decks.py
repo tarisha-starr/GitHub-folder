@@ -9,29 +9,29 @@ from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 import os
 
-# ---- Brand palette (locked) ----
-CREAM    = RGBColor(0xF5, 0xEF, 0xE3)
-IVORY    = RGBColor(0xFB, 0xF7, 0xEE)
-BURGUNDY = RGBColor(0x6E, 0x1A, 0x2E)
-NAVY     = RGBColor(0x1F, 0x2A, 0x44)
-RUST     = RGBColor(0x9E, 0x4A, 0x2A)
-COPPER   = RGBColor(0xC7, 0x5D, 0x3D)
-GOLD     = RGBColor(0xC2, 0xA4, 0x6D)
-NEARBLK  = RGBColor(0x15, 0x11, 0x0D)
+# ---- SEFW brand palette (locked, exact hexes) ----
+NAVY  = RGBColor(0x1D, 0x28, 0x3C)   # primary dark
+PLUM  = RGBColor(0x74, 0x23, 0x4F)   # dark accent
+BLUSH = RGBColor(0xE4, 0xBB, 0xC2)   # soft light
+PINK  = RGBColor(0xFC, 0xE8, 0xEA)   # lightest / light text on dark
+SAGE  = RGBColor(0x7C, 0xA1, 0xA5)   # mid
+TEAL  = RGBColor(0x22, 0x46, 0x52)   # dark
+GOLD  = RGBColor(0xC9, 0xA8, 0x6D)   # accent / text on dark
 
 # Fonts
 HEAD_FONT = "Marcellus"   # locked brand headline font (sexualempowermentforwomen)
 BODY_FONT = "Lora"        # locked brand body font
 
-# text colour + accent for each background
+# background key -> (bg colour, text colour, accent colour). Keys are historical
+# labels; every colour is from the SEFW palette only.
 SCHEME = {
-    "cream":    (CREAM,    NEARBLK, COPPER),
-    "ivory":    (IVORY,    NEARBLK, COPPER),
-    "burgundy": (BURGUNDY, CREAM,   GOLD),
-    "navy":     (NAVY,     CREAM,   GOLD),
-    "rust":     (RUST,     CREAM,   GOLD),
-    "copper":   (COPPER,   CREAM,   CREAM),
-    "gold":     (GOLD,     NEARBLK, BURGUNDY),
+    "cream":    (PINK,  NAVY, PLUM),   # lightest background
+    "ivory":    (BLUSH, NAVY, PLUM),   # soft light background
+    "burgundy": (PLUM,  PINK, GOLD),   # plum
+    "navy":     (NAVY,  PINK, GOLD),   # primary dark
+    "rust":     (TEAL,  PINK, GOLD),   # deep teal
+    "copper":   (SAGE,  NAVY, PLUM),   # sage
+    "gold":     (GOLD,  NAVY, PLUM),   # gold
 }
 
 EMU_W = Inches(13.333)
