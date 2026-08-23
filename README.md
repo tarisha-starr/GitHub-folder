@@ -10,6 +10,10 @@ The image stops the scroll. The hook makes her feel caught.
 - `content/image-posts.md` — ready-to-use image prompts paired with hooks
 - `content/hooks.md` — reusable hook bank by theme
 - `content/formula.md` — the pain-hook + emotional-truth formula
+- `content/facebook-growth-prompts.md` — seven Facebook page growth prompts,
+  pre-filled for this niche, with notes on the two that need rewriting first
+- `content/facebook-growth-plan.md` — what those prompts returned: niche angle,
+  page setup, a week of posts, 20 content ideas, 20 hooks
 - `content/posts.json` — structured data: hook, caption, question, hashtags, image path
 - `images/` — actual post images, named `image-1.jpg` … `image-28.jpg`
 - `automation/scheduler.py` — picks today's post deterministically by date
