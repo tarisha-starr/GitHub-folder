@@ -1,0 +1,896 @@
+<title>Piha Call Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Barlow+Condensed:wght@500;600&display=swap">
+
+<style>
+:root{
+  color-scheme: light dark;
+  --ground:#FDFBF5;
+  --surface:#F5EFE3;
+  --surface-2:#FBF7EE;
+  --ink:#2A2520;
+  --ink-soft:#6E6355;
+  --ink-faint:#8E8271;
+  --rule:#E2D8C6;
+  --rule-soft:#EDE5D7;
+  --band:#1F2C1F;
+  --band-2:#2D3E2C;
+  --band-ink:#F2EADA;
+  --band-ink-soft:#B3AE96;
+  --terracotta:#C75D3D;
+  --terracotta-ink:#A8482C;
+  --gold:#9C7A42;
+  --gold-line:#C9A579;
+  --moss:#5D6B3F;
+  --tick:#5D6B3F;
+  --shadow:0 1px 2px rgba(42,37,32,.05), 0 8px 24px -16px rgba(42,37,32,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#151D14;
+    --surface:#1F2C1F;
+    --surface-2:#243124;
+    --ink:#F1E9DA;
+    --ink-soft:#B0A791;
+    --ink-faint:#8C8471;
+    --rule:#334031;
+    --rule-soft:#293529;
+    --band:#0E140E;
+    --band-2:#1F2C1F;
+    --band-ink:#F1E9DA;
+    --band-ink-soft:#A89580;
+    --terracotta:#E07C58;
+    --terracotta-ink:#E88F6D;
+    --gold:#C9A579;
+    --gold-line:#8A7448;
+    --tick:#C9A579;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#151D14;
+  --surface:#1F2C1F;
+  --surface-2:#243124;
+  --ink:#F1E9DA;
+  --ink-soft:#B0A791;
+  --ink-faint:#8C8471;
+  --rule:#334031;
+  --rule-soft:#293529;
+  --band:#0E140E;
+  --band-2:#1F2C1F;
+  --band-ink:#F1E9DA;
+  --band-ink-soft:#A89580;
+  --terracotta:#E07C58;
+  --terracotta-ink:#E88F6D;
+  --gold:#C9A579;
+  --gold-line:#8A7448;
+  --tick:#C9A579;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:Lora, Georgia, "Times New Roman", serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:min(1140px, calc(100% - 2.5rem)); margin-inline:auto}
+h1,h2,h3{font-family:Marcellus, "Hoefler Text", Georgia, serif; font-weight:400; text-wrap:balance; margin:0}
+p{margin:0}
+
+.eyebrow{
+  font-family:"Barlow Condensed", "Arial Narrow", sans-serif;
+  font-weight:600; text-transform:uppercase; letter-spacing:.16em;
+  font-size:.82rem; color:var(--ink-faint);
+}
+
+/* ---------- masthead ---------- */
+.mast{background:var(--band); color:var(--band-ink); padding:clamp(3rem,7vw,5.5rem) 0 clamp(2.5rem,5vw,3.5rem)}
+.mast .eyebrow{color:var(--band-ink-soft)}
+.mast-grid{display:flex; flex-direction:column; gap:1.5rem}
+.mast h1{font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.02; letter-spacing:-.01em; color:var(--band-ink)}
+.mast h1 em{font-style:italic; font-family:Lora, Georgia, serif; color:var(--terracotta)}
+.mast .lede{max-width:56ch; color:var(--band-ink-soft); font-size:1.05rem}
+.mast-facts{
+  display:flex; flex-wrap:wrap; gap:0 2.25rem; margin-top:.5rem;
+  padding-top:1.5rem; border-top:1px solid rgba(201,165,121,.28);
+}
+.fact{padding:.6rem 0}
+.fact dt{font-family:"Barlow Condensed", sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.14em; font-size:.77rem; color:var(--band-ink-soft)}
+.fact dd{margin:0; font-size:.98rem; color:var(--band-ink)}
+
+/* ---------- counter bar ---------- */
+.bar{
+  position:sticky; top:0; z-index:20;
+  background:var(--band-2); color:var(--band-ink);
+  border-bottom:1px solid rgba(201,165,121,.25);
+}
+.bar-in{display:flex; flex-wrap:wrap; align-items:center; gap:.75rem 1.25rem; padding:.7rem 0}
+.count{font-family:"Barlow Condensed", sans-serif; font-weight:600; letter-spacing:.06em; font-size:1rem; font-variant-numeric:tabular-nums}
+.count b{color:var(--gold-line); font-weight:600}
+.filters{display:flex; gap:.4rem; margin-left:auto}
+.filters button{
+  font-family:"Barlow Condensed", sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.1em;
+  font-size:.8rem; color:var(--band-ink-soft); background:transparent;
+  border:1px solid rgba(201,165,121,.35); border-radius:2px; padding:.55rem .8rem; min-height:34px; cursor:pointer;
+}
+.filters button[aria-pressed="true"]{background:var(--terracotta); border-color:var(--terracotta); color:#FDFBF5}
+.filters button:focus-visible, .card:focus-visible{outline:2px solid var(--gold-line); outline-offset:2px}
+.reset{background:transparent; border:0; color:var(--band-ink-soft); font-family:"Barlow Condensed",sans-serif; text-transform:uppercase; letter-spacing:.1em; font-size:.78rem; cursor:pointer; text-decoration:underline; text-underline-offset:3px; min-height:34px; padding:.4rem .2rem}
+
+/* ---------- prose sections ---------- */
+section{padding:clamp(2.75rem,6vw,4.5rem) 0}
+.section-head{max-width:60ch; display:flex; flex-direction:column; gap:.75rem; margin-bottom:2rem}
+.section-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem); line-height:1.15}
+.section-head p{color:var(--ink-soft)}
+.prose p + p{margin-top:1rem}
+.prose{max-width:64ch}
+.prose em{color:var(--terracotta-ink)}
+
+.notes{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:3px; overflow:hidden}
+@media (min-width:760px){.notes{grid-template-columns:1fr 1fr}}
+.note{background:var(--surface-2); padding:1.35rem 1.5rem; display:flex; flex-direction:column; gap:.45rem}
+.note h3{font-size:1.06rem; letter-spacing:.01em}
+.note p{color:var(--ink-soft); font-size:.95rem; line-height:1.6}
+.note.flag{background:var(--surface)}
+.note.flag h3{color:var(--terracotta-ink)}
+
+/* ---------- blocks ---------- */
+.block{border-top:1px solid var(--rule); padding-top:1.6rem; margin-top:2.75rem}
+.block:first-of-type{margin-top:0}
+.block-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:.5rem 1.25rem; margin-bottom:.4rem}
+.block-num{
+  font-family:"Barlow Condensed", sans-serif; font-weight:600; font-size:.84rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--terracotta-ink);
+}
+.block-time{
+  font-family:"Barlow Condensed", sans-serif; font-weight:600; font-size:1.6rem; letter-spacing:.02em;
+  font-variant-numeric:tabular-nums; color:var(--ink);
+}
+.block-head h2{font-size:clamp(1.4rem,2.6vw,1.9rem)}
+.block-prog{margin-left:auto; font-family:"Barlow Condensed",sans-serif; font-weight:600; font-size:.85rem; letter-spacing:.1em; color:var(--ink-faint); font-variant-numeric:tabular-nums}
+.block-meta{display:flex; flex-wrap:wrap; gap:.35rem 1.5rem; margin-bottom:1.6rem; max-width:78ch}
+.block-meta div{font-size:.9rem; color:var(--ink-soft)}
+.block-meta b{font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.12em; font-size:.76rem; color:var(--ink-faint); display:block}
+
+.lanes{display:grid; gap:2rem}
+@media (min-width:900px){.lanes{grid-template-columns:1fr 1fr; gap:2.5rem}}
+.lane-head{
+  display:flex; align-items:center; gap:.6rem; margin-bottom:.9rem;
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.16em; font-size:.84rem;
+}
+.lane-solo .lane-head{color:var(--gold)}
+.lane-duo .lane-head{color:var(--terracotta-ink)}
+.lane-head::after{content:""; flex:1; height:1px; background:currentColor; opacity:.35}
+.cards{display:flex; flex-direction:column; gap:.6rem}
+
+.card{
+  position:relative; display:block; width:100%; text-align:left;
+  background:var(--surface-2); border:1px solid var(--rule-soft); border-left:3px solid var(--gold-line);
+  border-radius:2px; padding:.85rem 1rem .9rem 1rem; cursor:pointer; font:inherit; color:inherit;
+  transition:background .15s ease, border-color .15s ease;
+}
+.lane-duo .card{border-left-color:var(--terracotta)}
+.card:hover{background:var(--surface)}
+.card-top{display:flex; align-items:baseline; gap:.6rem}
+.id{
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; font-size:.85rem; letter-spacing:.08em;
+  color:var(--ink-faint); flex:none; min-width:2.4em; font-variant-numeric:tabular-nums;
+}
+.card h4{margin:0; font-family:Lora, Georgia, serif; font-weight:600; font-size:1rem; line-height:1.35}
+.frame{
+  margin-top:.3rem; padding-left:calc(2.4em + .6rem);
+  font-family:"Barlow Condensed",sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:.09em;
+  font-size:.79rem; color:var(--ink-faint);
+}
+.dir{margin-top:.45rem; padding-left:calc(2.4em + .6rem); font-size:.93rem; line-height:1.55; color:var(--ink-soft)}
+.for{
+  margin-top:.55rem; padding-left:calc(2.4em + .6rem);
+  font-size:.84rem; color:var(--ink-faint); font-style:italic;
+}
+.for b{font-style:normal; font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.12em; font-size:.75rem; color:var(--ink-faint)}
+.card.done{background:var(--surface); border-color:var(--rule)}
+.card.done .card-top h4{text-decoration:line-through; text-decoration-thickness:1px; opacity:.5}
+.card.done .frame, .card.done .dir, .card.done .for{opacity:.4}
+.card.done .id::after{content:" ✓"; color:var(--tick)}
+.pair{
+  margin-top:.45rem; margin-left:calc(2.4em + .6rem); padding:.35rem .6rem;
+  background:var(--surface); border-left:2px solid var(--gold-line);
+  font-size:.83rem; color:var(--ink-soft);
+}
+.lane-duo .pair{border-left-color:var(--terracotta)}
+
+body.only-solo .lane-duo, body.only-duo .lane-solo{display:none}
+body.only-solo .lanes, body.only-duo .lanes{grid-template-columns:1fr; max-width:70ch}
+
+/* ---------- index ---------- */
+.index-wrap{overflow-x:auto; border:1px solid var(--rule); border-radius:3px}
+table{border-collapse:collapse; width:100%; min-width:620px; background:var(--surface-2)}
+th,td{text-align:left; padding:.7rem 1rem; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+th{
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.13em;
+  font-size:.79rem; color:var(--ink-faint); background:var(--surface);
+}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:500; width:34%}
+td.codes{font-family:"Barlow Condensed",sans-serif; font-weight:500; letter-spacing:.05em; color:var(--terracotta-ink); white-space:nowrap}
+.tbl-note{margin-top:.75rem; font-size:.85rem; color:var(--ink-faint)}
+
+.closing{background:var(--band); color:var(--band-ink); margin-top:3rem}
+.closing h2{color:var(--band-ink)}
+.closing .section-head p, .closing li{color:var(--band-ink-soft)}
+.closing ul{margin:0; padding-left:1.1rem; max-width:64ch; display:flex; flex-direction:column; gap:.6rem}
+.closing li::marker{color:var(--gold-line)}
+.closing strong{color:var(--band-ink); font-weight:500}
+
+/* ---------- today ---------- */
+.today-sec{background:var(--surface); border-bottom:1px solid var(--rule)}
+.today-facts{display:flex; flex-wrap:wrap; gap:.75rem; margin-bottom:1.75rem}
+.tf{
+  background:var(--surface-2); border:1px solid var(--rule); border-radius:2px;
+  padding:.5rem .85rem; font-size:.95rem; font-variant-numeric:tabular-nums;
+}
+.tf b{
+  display:block; font-family:"Barlow Condensed",sans-serif; font-weight:600;
+  text-transform:uppercase; letter-spacing:.13em; font-size:.75rem; color:var(--ink-faint);
+}
+.runsheet{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0; counter-reset:none}
+.runsheet li{
+  display:grid; grid-template-columns:4.5rem 1fr; gap:.15rem .9rem;
+  padding:.85rem 0; border-top:1px solid var(--rule);
+}
+.runsheet li:last-child{border-bottom:1px solid var(--rule)}
+@media (min-width:820px){
+  .runsheet li{grid-template-columns:4.5rem 15rem 1fr; align-items:baseline; gap:.9rem}
+}
+.rt{
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; font-size:1.35rem;
+  font-variant-numeric:tabular-nums; color:var(--terracotta-ink); line-height:1.2;
+}
+.rb{font-family:Lora, Georgia, serif; font-weight:600; font-size:1rem; grid-column:2}
+.rw{color:var(--ink-soft); font-size:.93rem; line-height:1.55; grid-column:2}
+.rw b{font-family:"Barlow Condensed",sans-serif; font-weight:600; letter-spacing:.05em; color:var(--terracotta-ink); font-size:1rem}
+@media (min-width:820px){.rw{grid-column:3; grid-row:1}}
+
+@media print{
+  @page{size:A4; margin:13mm 11mm}
+  :root{
+    --ground:#fff; --surface:#F7F2E8; --surface-2:#fff; --ink:#1A1713; --ink-soft:#3B352C;
+    --ink-faint:#6B6255; --rule:#C9BFAC; --rule-soft:#DCD3C2; --band:#fff; --band-2:#fff;
+    --band-ink:#1A1713; --band-ink-soft:#4A4335; --terracotta:#A8482C; --terracotta-ink:#8E3A22;
+    --gold:#7A5F30; --gold-line:#9C8552; --tick:#4A5535;
+  }
+  body{background:#fff; color:#1A1713; font-size:9pt; line-height:1.45}
+  .wrap{width:100%}
+  .bar, .filters, .reset{display:none !important}
+
+  .mast{background:#fff; color:#1A1713; padding:0 0 6mm; border-bottom:1.5pt solid #1A1713}
+  .mast h1{font-size:30pt; line-height:1}
+  .mast .lede{font-size:9.5pt; max-width:100%; color:#3B352C}
+  .mast-facts{border-top:.5pt solid #C9BFAC; padding-top:3mm; margin-top:3mm; gap:0 8mm}
+  .fact dd{font-size:9pt}
+
+  section{padding:6mm 0 0}
+  .section-head{margin-bottom:4mm}
+  .section-head h2{font-size:15pt}
+  .prose{max-width:100%; columns:2; column-gap:8mm; font-size:8.6pt}
+  .prose p + p{margin-top:0; text-indent:1.2em}
+
+  .today-sec{break-after:page; background:#fff; border:0}
+  .today-facts{gap:2mm}
+  .tf{padding:1.5mm 3mm; font-size:8.5pt; border:.5pt solid #C9BFAC; background:#F7F2E8}
+  .runsheet li{padding:2.5mm 0; border-top:.5pt solid #C9BFAC; break-inside:avoid}
+  .rt{font-size:12pt}
+  .rw{font-size:8.4pt}
+  .rw b{font-size:8.4pt; letter-spacing:.03em}
+
+  .notes{border:0; background:transparent; gap:2mm; grid-template-columns:1fr 1fr}
+  .section-head{break-before:auto; break-after:avoid}
+  .prose{break-after:column}
+  .note{padding:3mm 4mm; break-inside:avoid; background:#fff; border:.5pt solid #C9BFAC}
+  .note.flag{background:#F7F2E8}
+  .note h3{font-size:10pt}
+  .note p{font-size:8.3pt; line-height:1.45}
+
+  .block{break-before:page; border-top:0; padding-top:0; margin-top:0}
+  .block-head{border-bottom:1pt solid #1A1713; padding-bottom:2mm; break-after:avoid}
+  .block-time{font-size:16pt}
+  .block-head h2{font-size:13pt}
+  .block-prog{display:none}
+  .block-meta{margin-bottom:4mm; gap:.5mm 6mm; break-after:avoid}
+  .block-meta div{font-size:8.3pt}
+  .lanes{grid-template-columns:1fr 1fr !important; gap:6mm}
+  .lane-head{font-size:8.5pt; margin-bottom:2mm}
+  .cards{gap:2mm}
+
+  .card{
+    background:#fff; border:.5pt solid #C9BFAC; border-left:2pt solid #9C8552;
+    padding:2mm 3mm 2.5mm; break-inside:avoid;
+  }
+  .lane-duo .card{border-left-color:#A8482C}
+  /* a box to tick with a pen, since nothing is tappable on paper */
+  .card .id::before{
+    content:""; display:inline-block; width:2.6mm; height:2.6mm;
+    border:.5pt solid #6B6255; margin-right:1.5mm; vertical-align:baseline;
+  }
+  .card.done .id::after{content:""}
+  .id{font-size:8.5pt; min-width:5.4em}
+  .card h4{font-size:9pt; line-height:1.3}
+  .frame{font-size:7.4pt; margin-top:.8mm; padding-left:0}
+  .dir{font-size:8.2pt; line-height:1.4; margin-top:1mm; padding-left:0}
+  .for{font-size:7.6pt; margin-top:1mm; padding-left:0}
+  .pair{margin-left:0; font-size:7.6pt; padding:1mm 2mm; background:#F7F2E8}
+
+  .index-wrap{border:.5pt solid #C9BFAC; overflow:visible; break-before:page}
+  table{min-width:0; font-size:8.3pt}
+  thead{display:table-header-group}
+  th,td{padding:1.5mm 2.5mm; border-bottom:.5pt solid #DCD3C2}
+  th{background:#F7F2E8}
+  tr{break-inside:avoid}
+
+  .closing{background:#fff; color:#1A1713; margin-top:0; break-before:page; border-top:1.5pt solid #1A1713}
+  .closing li{color:#3B352C; font-size:8.8pt}
+  .closing strong{color:#1A1713}
+  .tbl-note{font-size:8pt}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+
+<header class="mast">
+  <div class="wrap mast-grid">
+    <p class="eyebrow">Photo shoot · Piha, west coast Auckland · one day</p>
+    <h1>Black sand,<br><em>warm skin</em></h1>
+    <p class="lede">Eighty frames for The Love Adventure and the For Her pages. Forty of you, forty of you and Mark. The whole day is built on one contrast: the hardest, darkest landscape in Auckland, and the warmest palette in your brand.</p>
+    <dl class="mast-facts">
+      <div class="fact"><dt>Solo frames</dt><dd>40, S1 to S40</dd></div>
+      <div class="fact"><dt>Together</dt><dd>40, D1 to D40</dd></div>
+      <div class="fact"><dt>Today</dt><dd>10am to 12pm, about 35</dd></div>
+      <div class="fact"><dt>Looks</dt><dd>7 changes</dd></div>
+      <div class="fact"><dt>Shooting</dt><dd>Wed 26 August, today</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap bar-in">
+    <span class="count" id="count"><b>0</b> of 80 captured</span>
+    <button class="reset" id="reset" type="button">Clear ticks</button>
+    <div class="filters" role="group" aria-label="Filter shots">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="solo" aria-pressed="false">Just you</button>
+      <button type="button" data-filter="duo" aria-pressed="false">You and Mark</button>
+    </div>
+  </div>
+</div>
+
+<section class="today-sec">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Today, Wednesday 26 August · 10am to 12pm</p>
+      <h2>Two hours gets you about 35 frames, not 80</h2>
+      <p>Worth saying plainly before you drive: eighty frames is a full day, and you have a two hour window. What follows is the ruthless version. One wardrobe change, no falls track, everything inside two minutes of the main carpark. Shoot it in this order and you will come home with roughly 22 of the solo list and 15 of the together list, including most of the ones that matter.</p>
+    </div>
+    <div class="today-facts">
+      <div class="tf"><b>Tide</b>Dropping all window</div>
+      <div class="tf"><b>High was</b>8.40am</div>
+      <div class="tf"><b>Low is</b>2.25pm, after you go</div>
+      <div class="tf"><b>Sun</b>Northeast, climbing</div>
+      <div class="tf"><b>Sea</b>13.5 degrees</div>
+    </div>
+    <ol class="runsheet">
+      <li><span class="rt">10.10</span><span class="rb">Waterline and wet sand</span><span class="rw">A dropping tide leaves a fresh mirror band the whole time you are there, so the reflection frames are on. Follow the water down. <b>S6, S7, S9, S8. D6, D9, D10, D11.</b></span></li>
+      <li><span class="rt">10.35</span><span class="rb">Lion Rock base and the black rock</span><span class="rw">Tide is falling so the shelves keep opening up and staying safe. Hard mid morning side light, which is exactly what this block wants. <b>S12, S14, S16, S13. D14, D17, D12.</b></span></li>
+      <li><span class="rt">11.00</span><span class="rb">Dunes and wind</span><span class="rw">The haircut block. Do not skip it, it is the reason for the trip. <b>S18, S21, S24, S19. D19, D20.</b></span></li>
+      <li><span class="rt">11.20</span><span class="rb">The open sand, walking</span><span class="rw">Long lens down the beach so Lion Rock stacks up behind you. <b>S30, S31, S33. D29, D32, D33.</b></span></li>
+      <li><span class="rt">11.40</span><span class="rb">Tailgate, blanket, thermos</span><span class="rw">Ends warm and it is right next to the car, so it absorbs any overrun. <b>S29, S25, S27. D23, D24, D26, D25.</b></span></li>
+    </ol>
+    <div class="notes" style="margin-top:1.75rem">
+      <div class="note flag">
+        <h3>Turn your back on the sea for the pretty light</h3>
+        <p>Between ten and twelve the sun is in the northeast and climbing, so Piha is lit from behind the land. Facing the water means flat frontal light on faces. Every glowing backlit frame on this list needs you to turn around and shoot inland, toward Lion Rock and the bush, with the sun up beyond it. That is the opposite of what feels right on a beach, so decide it now rather than on the sand.</p>
+      </div>
+      <div class="note flag">
+        <h3>What two hours cannot buy, and how to get it</h3>
+        <p>Everything built on low sun is gone today: S33 at its best, S35 to S39, S38, S40, D31, D35 to D40. That includes D37, the signature couple frame, and S39, the strongest portrait on the list. They need one more trip, and only a short one. Forty five minutes at Piha starting at 5.10pm on any clear evening picks up all ten. Same clothes, same beach, one carpark.</p>
+      </div>
+      <div class="note">
+        <h3>Skipped on purpose, so nobody wonders</h3>
+        <p>The Kitekite falls track is thirty five minutes each way and would eat the entire window, so block 1 is out. North Piha lagoon is a separate drive, so block 2 moves to the waterline in front of the main carpark instead. Both are worth doing on the return trip if you want them.</p>
+      </div>
+      <div class="note">
+        <h3>Move fast and cut in this order</h3>
+        <p>If you are running behind, the tailgate block is the one to shorten, because it can happen anywhere on any day. Protect the dunes block and the waterline block. If you only get through two of the five, make them those two.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The direction</p>
+      <h2>Piha gives us Pine Deep for free</h2>
+    </div>
+    <div class="prose">
+      <p>Your brand anchor is Pine Deep and the rule is that cream acts as relief, not the other way round. Piha does that for us in the landscape. The iron sand, the wet rock, the water under cloud: all of it sits in that dark green black range without any help. So we do not have to build the mood. We only have to put the warm thing in the frame.</p>
+      <p>That warm thing is you. Cream, oatmeal, camel, rust and terracotta all sing off black sand in a way they never do off a studio backdrop, and terracotta stays exactly where the guidelines want it, an accent inside a dark field rather than a wash. Every frame in this list is built the same way: dark ground, warm skin, one lit person, wide horizon behind.</p>
+      <p>The haircut is the reason to shoot here <em>now</em>. Piha is windy nearly every day of the year, and long hair on that beach means a whole day of fighting it. Short hair reads the opposite way. Wind gives it shape, movement and edge light, so we shoot straight into it rather than sheltering from it. The cut appears in every block, in every light, in profile, in the turn, wet, wind pushed and still.</p>
+      <p>What we are not doing: no posed studio, no white backgrounds, no arms folded in a doorway, and on the couple frames, none of the "look how happy we are" stock posture. The couple shots that carry the site are the quiet ones. Backs turned, looking out. A hand found. A shared look across a thermos. Two people who have been together long enough that the closeness is in the shoulders, not the smile.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Before the day</p>
+      <h2>The eight things that decide whether this works</h2>
+      <p>Most of these are booked or packed before anyone picks up a camera. The tide one changes the date, so settle it first.</p>
+    </div>
+    <div class="notes">
+      <div class="note flag">
+        <h3>Pick the date off the tide, not the diary</h3>
+        <p>Book a day where low tide falls between about 3pm and 5.30pm. That is the only way the mirror sand and the long light land together, and half the strongest frames in this list need both. Check the tide tables for Manukau Heads, which is the reference port for Piha. If the tide is wrong, move the date.</p>
+      </div>
+      <div class="note flag">
+        <h3>Piha water is the most dangerous in the country</h3>
+        <p>Nobody goes past ankle depth, including for the sunset frames. Do not put anyone or a camera bag on the Taitomo rocks or near The Gap if there is any swell running. Check the surf forecast the night before. If it is big, we lose two frames and keep everyone, which is a fine trade.</p>
+      </div>
+      <div class="note">
+        <h3>Late winter light means no dead hour</h3>
+        <p>The sun barely gets above 35 degrees in Auckland at this time of year, so there is no harsh midday to hide from. That is why this plan works straight through from 7am with only a short break. Sunset is around 5.45pm, and the carpark goes properly dark fast afterwards, so pack the torch.</p>
+      </div>
+      <div class="note">
+        <h3>Black sand lies to the light meter</h3>
+        <p>A frame full of iron sand pushes the meter to overexpose, and you get grey mush where the sand should be rich. Dial in two thirds to one and a third of a stop under, expose for her skin, and let the sand sit dark. Read the histogram, not the screen. On a bright beach the screen will tell you it is fine when it is a stop hot.</p>
+      </div>
+      <div class="note">
+        <h3>Iron sand is magnetic and it is abrasive</h3>
+        <p>No lens changes anywhere on the sand. Two bodies if you have them, one long and one wide, and tape the seams. Sea spray gives free diffusion when shooting into the sun, which is a gift, but check the front element every ten frames and keep the cloth in a zip bag so it stays dry.</p>
+      </div>
+      <div class="note">
+        <h3>Wardrobe: cream and rust, never head to toe black</h3>
+        <p>Cream, oatmeal, camel, rust, terracotta and pine green all separate beautifully from black sand. Head to toe black sinks into it, so keep black for the deliberate silhouettes in block seven. No pure white, it clips before the skin does. No logos and no fine busy prints, they moire. Fabric that moves is worth more than fabric that fits.</p>
+      </div>
+      <div class="note">
+        <h3>A kit list that is mostly not camera kit</h3>
+        <p>Wool blanket that doubles as a prop, thermos, two towels, spare socks, a bin liner to sit on, a fine brush for sand in hair, a comb, texture paste, lip balm, a torch, and dry clothes for the drive home. Cold and wind will end the day early if nobody plans for them, and the last two blocks are the best two.</p>
+      </div>
+      <div class="note">
+        <h3>Ask for the crops up front</h3>
+        <p>Eighty finals graded warm, plus flat ungraded versions of the ten hero frames so the site build can crop and colour without fighting a bake. Every frame flagged for social needs 4:5 and 9:16 as well as the master. And at least twelve frames with deliberate empty space on one side, because headlines have to sit somewhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The day</p>
+      <h2>Eight blocks, following the light</h2>
+      <p>Tap any shot to tick it off on the day. Shot numbers are the names to call out loud, so S18 and D29 mean the same thing to everyone standing on the sand.</p>
+    </div>
+
+    <!-- BLOCK 1 -->
+    <div class="block" data-block="1">
+      <div class="block-head">
+        <span class="block-num">Block 1</span>
+        <span class="block-time">7.00</span>
+        <h2>Glen Esk bush and the Kitekite track</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Mist and filtered green, no wind, very soft</div>
+        <div><b>Look 1</b> Her: cream linen shirt over camel. Him: oatmeal knit, dark trousers. Boots.</div>
+        <div><b>Lens</b> 85mm mostly, 35mm for the track</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S1"><div class="card-top"><span class="id">S1</span><h4>Standing in the nikau gap</h4></div><div class="frame">Vertical · three quarter · 85mm</div><div class="dir">Stand in the break between two nikau trunks with the light behind you. Look off to camera left, not at me. Weight on the back foot so the shoulders open.</div><div class="for"><b>For</b> Meet Tarisha, About</div></button>
+            <button class="card" data-id="S2"><div class="card-top"><span class="id">S2</span><h4>Hand on the punga trunk</h4></div><div class="frame">Vertical · waist up · 85mm</div><div class="dir">Palm flat on the trunk, chin turned away so the cut reads in profile against the dark bush. Slow blink, then open.</div><div class="for"><b>For</b> Course module cards</div></button>
+            <button class="card" data-id="S3"><div class="card-top"><span class="id">S3</span><h4>Walking the track toward camera</h4></div><div class="frame">Horizontal · full length · 35mm · copy space right</div><div class="dir">Walk at me watching your feet, then look up on three. Keep walking after the look. The frame we want is the one two steps later.</div><div class="for"><b>For</b> For Her homepage hero</div></button>
+            <button class="card" data-id="S4"><div class="card-top"><span class="id">S4</span><h4>Small on the stream boulder</h4></div><div class="frame">Horizontal · very wide · 35mm</div><div class="dir">You sit, I back off until you are about a fifth of the frame. All green, one warm figure. Do nothing at all.</div><div class="for"><b>For</b> Quiet page bands, email header</div></button>
+            <button class="card" data-id="S5"><div class="card-top"><span class="id">S5</span><h4>Close portrait in the mist</h4></div><div class="frame">Vertical · head and shoulders · 135mm wide open</div><div class="dir">Eyes to lens, mouth soft, no teeth. Think about one client you actually like. This is the trust frame, so it lives or dies on the eyes.</div><div class="for"><b>For</b> Quiz opt in, podcast art</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D1"><div class="card-top"><span class="id">D1</span><h4>She leads, his hand at her back</h4></div><div class="frame">Horizontal · full length · from behind and off to the side</div><div class="dir">Walk the track, you slightly ahead, his hand resting at the small of your back. Neither of you looks back. This is the grounded and radiant shape in one frame.</div><div class="for"><b>For</b> Homepage hero, Wanaka retreat</div></button>
+            <button class="card" data-id="D2"><div class="card-top"><span class="id">D2</span><h4>The pause, foreheads touching</h4></div><div class="frame">Vertical · waist up · 85mm</div><div class="dir">Stop mid track, foreheads together, eyes closed, one slow breath in together. Hold it three breaths, I shoot all three.</div><div class="for"><b>For</b> Couples therapy hero</div></button>
+            <button class="card" data-id="D3"><div class="card-top"><span class="id">D3</span><h4>Crossing the stream stones</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">He goes first and turns back with a hand out. Both of you look at the water, not at each other and not at me. The concentration is the point.</div><div class="for"><b>For</b> Intensives page</div></button>
+            <button class="card" data-id="D4"><div class="card-top"><span class="id">D4</span><h4>On the log, same direction</h4></div><div class="frame">Horizontal · three quarter · 50mm</div><div class="dir">Sit shoulder to shoulder on the fallen log, both looking the same way at the same thing. Talk about something ordinary. I want the version where neither of you is performing.</div><div class="for"><b>For</b> About us</div></button>
+            <button class="card" data-id="D5"><div class="card-top"><span class="id">D5</span><h4>She says something, he laughs</h4></div><div class="frame">Horizontal · waist up · 85mm · burst</div><div class="dir">Tell him the thing you would actually tell him. I shoot the whole laugh and I keep the frames after the peak, because the settle is warmer than the peak.</div><div class="for"><b>For</b> Testimonials band, social</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 2 -->
+    <div class="block" data-block="2">
+      <div class="block-head">
+        <span class="block-num">Block 2</span>
+        <span class="block-time">8.30</span>
+        <h2>North Piha lagoon and the mirror sand</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Low side sun or flat cloud, both work, reflection is the subject</div>
+        <div><b>Look 2</b> Her: rust or terracotta, cream knit. Him: charcoal and camel. Bare feet.</div>
+        <div><b>Note</b> Camera almost on the sand for every reflection frame. Bring the bin liner.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S6"><div class="card-top"><span class="id">S6</span><h4>Standing in your own reflection</h4></div><div class="frame">Vertical · full length · dead centre, symmetrical</div><div class="dir">Feet in a centimetre of water. Straight to camera, arms loose, chin level. Perfectly still so the water goes glassy. Count ten seconds without moving.</div><div class="for"><b>For</b> Course sales page hero</div></button>
+            <button class="card" data-id="S7"><div class="card-top"><span class="id">S7</span><h4>The reflection alone</h4></div><div class="frame">Horizontal · camera on the sand · you cropped at the knee</div><div class="dir">Same position. I frame the upside down you and cut the actual you off above. Odd, beautiful, and it gives the site an art frame that is not a portrait.</div><div class="for"><b>For</b> Dark section art</div></button>
+            <button class="card" data-id="S8"><div class="card-top"><span class="id">S8</span><h4>Walking through the shallows, side on</h4></div><div class="frame">Horizontal · full length · panning · 1/60</div><div class="dir">Walk parallel to me through ankle water, no stopping, five passes. Skirt moving, water moving, you steady in the middle of it.</div><div class="for"><b>For</b> Reels covers, 9:16 crop</div></button>
+            <button class="card" data-id="S9"><div class="card-top"><span class="id">S9</span><h4>The turn</h4></div><div class="frame">Vertical · chest up · 135mm · burst</div><div class="dir">Face away, then turn your head to me on a count. Ten times. I shoot the middle of the turn, not the end, so the hair is still moving. This is the haircut frame.</div><div class="for"><b>For</b> Social, YouTube thumbnails</div></button>
+            <button class="card" data-id="S10"><div class="card-top"><span class="id">S10</span><h4>Arms open into the light</h4></div><div class="frame">Horizontal · three quarter · 50mm</div><div class="dir">Chin up, eyes closed, arms out low and relaxed rather than up and triumphant. Low arms read as ease. High arms read as a stock photo.</div><div class="for"><b>For</b> Course page, the after section</div></button>
+            <button class="card" data-id="S11"><div class="card-top"><span class="id">S11</span><h4>Sitting at the water line, knees up</h4></div><div class="frame">Vertical · full length · 50mm</div><div class="dir">Arms around your knees, looking out at the Tasman. Not sad, just quiet. Give it a minute before I start shooting.</div><div class="for"><b>For</b> Blog headers, page breaks</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D6"><div class="card-top"><span class="id">D6</span><h4>Two reflections closing the gap</h4></div><div class="frame">Horizontal · full length · low camera · three frames</div><div class="dir">Start ten metres apart in the mirror and walk toward each other. I take it at ten metres, at three, and at touch. Both reflections in the water the whole way.</div><div class="for"><b>For</b> Homepage hero</div></button>
+            <button class="card" data-id="D7"><div class="card-top"><span class="id">D7</span><h4>Facing each other, hands on forearms</h4></div><div class="frame">Vertical · waist up · 85mm</div><div class="dir">Hands gripping each other's forearms, eyes on eyes, nobody talks. Twenty seconds of it. The discomfort passes at about eight seconds and that is when I shoot.</div><div class="for"><b>For</b> Couples therapy page</div></button>
+            <button class="card" data-id="D8"><div class="card-top"><span class="id">D8</span><h4>He lifts her, both laughing</h4></div><div class="frame">Horizontal · full length · 50mm · fast shutter</div><div class="dir">Actual lift, actual spin, water underfoot. Do it twice. The second one is always looser than the first.</div><div class="for"><b>For</b> Events, Connection Playground</div></button>
+            <button class="card" data-id="D9"><div class="card-top"><span class="id">D9</span><h4>Backs to camera, a gap between you</h4></div><div class="frame">Horizontal · full length · small in a big frame</div><div class="dir">Both looking out at the sea, standing about thirty centimetres apart. Do not touch. This is the picture of the sentence you already use on the site.</div><div class="for"><b>For</b> Homepage dark band</div><div class="pair">Pairs with D10. Same framing, tripod locked, do not move the camera.</div></button>
+            <button class="card" data-id="D10"><div class="card-top"><span class="id">D10</span><h4>The same frame, hands found</h4></div><div class="frame">Horizontal · identical framing to D9</div><div class="dir">Nothing changes except the hands find each other. Shot from the locked off camera so the two run side by side on the page.</div><div class="for"><b>For</b> Therapy page, the before and after pair</div><div class="pair">Half of the strongest idea on this list. Do not skip it.</div></button>
+            <button class="card" data-id="D11"><div class="card-top"><span class="id">D11</span><h4>Walking away through the mirror</h4></div><div class="frame">Horizontal · very wide · 35mm</div><div class="dir">Hand in hand, walking away, footprints and two reflections trailing behind you. Keep walking until I call it. The further you get the better it works.</div><div class="for"><b>For</b> Retreat closing band, footer</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 3 -->
+    <div class="block" data-block="3">
+      <div class="block-head">
+        <span class="block-num">Block 3</span>
+        <span class="block-time">10.15</span>
+        <h2>Lion Rock and the black rock shelves</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Harder now, use it. Side light on rock, deep shadow behind.</div>
+        <div><b>Look 3</b> Her: pine green or deep charcoal coat over cream. Him: dark. Boots on, this block has climbing in it.</div>
+        <div><b>Note</b> This is the credibility block. Two therapists who know what they are doing.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S12"><div class="card-top"><span class="id">S12</span><h4>Against the black rock wall</h4></div><div class="frame">Vertical · waist up · 85mm · hard side light</div><div class="dir">Shoulders back on the rock, face lifted into the light, one hand at your side not on your hip. Let the rock be almost black behind you.</div><div class="for"><b>For</b> About, credibility band</div></button>
+            <button class="card" data-id="S13"><div class="card-top"><span class="id">S13</span><h4>Tiny on the rock shelf</h4></div><div class="frame">Horizontal · full length · 24mm · huge negative space</div><div class="dir">You stand, I get very far back and very low. The headline goes in the rock face, so leave me the whole left of the frame.</div><div class="for"><b>For</b> Hero banner with copy over</div></button>
+            <button class="card" data-id="S14"><div class="card-top"><span class="id">S14</span><h4>Arms crossed, no smile</h4></div><div class="frame">Vertical · chest up · 85mm</div><div class="dir">Straight down the lens, mouth closed, nothing softening it. You are allowed to look like an authority. Give me ten frames without apologising for any of them.</div><div class="for"><b>For</b> Podcast cover, press, speaking</div></button>
+            <button class="card" data-id="S15"><div class="card-top"><span class="id">S15</span><h4>Mid step, climbing</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">Actual effort on an actual step up, hand on rock, weight committed. Not a posed foot on a boulder. Do the move properly and I shoot it three times.</div><div class="for"><b>For</b> Intensives, the this is work section</div></button>
+            <button class="card" data-id="S16"><div class="card-top"><span class="id">S16</span><h4>Profile against sky</h4></div><div class="frame">Vertical · head and shoulders · 135mm · sky only behind</div><div class="dir">Top of the steps, pure profile, nothing behind you but light. Rim light along the jaw and the back of the cut. The cleanest possible record of the shape of the hair.</div><div class="for"><b>For</b> Section markers, the cut in profile</div></button>
+            <button class="card" data-id="S17"><div class="card-top"><span class="id">S17</span><h4>In the rock cleft, looking down</h4></div><div class="frame">Horizontal · three quarter · 50mm</div><div class="dir">Sit into the gap in the rock, coat pulled around you, eyes down. An honest frame with no performance in it. Every site needs one.</div><div class="for"><b>For</b> Blog, quiet writing</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D12"><div class="card-top"><span class="id">D12</span><h4>He stands, she leans on his leg</h4></div><div class="frame">Vertical · full length · 50mm</div><div class="dir">You sit on the shelf, back against his shin, his hand resting on your shoulder. Both looking out to sea. This is the portrait version of how you actually work together.</div><div class="for"><b>For</b> About us portrait</div></button>
+            <button class="card" data-id="D13"><div class="card-top"><span class="id">D13</span><h4>The hand up</h4></div><div class="frame">Horizontal · full length · 35mm · mid pull</div><div class="dir">He is up, you are not yet. Actual weight through the arms. Shoot the middle of the pull, not the arrival.</div><div class="for"><b>For</b> Intensives hero</div></button>
+            <button class="card" data-id="D14"><div class="card-top"><span class="id">D14</span><h4>Shoulder to shoulder, straight to lens</h4></div><div class="frame">Horizontal · waist up · 85mm</div><div class="dir">Both serious, both level, no touching. The two therapists frame. It has to be able to sit next to a price and hold its ground.</div><div class="for"><b>For</b> Credibility band, retreat page</div></button>
+            <button class="card" data-id="D15"><div class="card-top"><span class="id">D15</span><h4>Backs on the rock, heads turned in</h4></div><div class="frame">Horizontal · waist up · 85mm · hard light</div><div class="dir">Both leaning back on the wall, heads turned toward each other, almost a smile on one of you and not the other. Half a conversation.</div><div class="for"><b>For</b> Dark section, sticky bar thumbnail</div></button>
+            <button class="card" data-id="D16"><div class="card-top"><span class="id">D16</span><h4>Two of you under Lion Rock</h4></div><div class="frame">Horizontal · very wide · 24mm</div><div class="dir">Both tiny, rock enormous, sky above for the headline. Walk slowly across so I get three positions in the frame.</div><div class="for"><b>For</b> Full bleed hero</div></button>
+            <button class="card" data-id="D17"><div class="card-top"><span class="id">D17</span><h4>Her hand on his chest, his over hers</h4></div><div class="frame">Vertical · chin to waist · 85mm · no faces</div><div class="dir">Crop the heads off deliberately. Two hands, one chest, breathing. Anonymous, so it can carry any page including the ones about other people's marriages.</div><div class="for"><b>For</b> Therapy page, safe anywhere</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 4 -->
+    <div class="block" data-block="4">
+      <div class="block-head">
+        <span class="block-num">Block 4</span>
+        <span class="block-time">12.00</span>
+        <h2>The dunes, spinifex and full wind</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Midday, but low enough in winter to stay usable. Backlight where you can.</div>
+        <div><b>Look 4</b> Her: long cream or oatmeal dress with movement in it, bare feet. Him: cream shirt open over a tee.</div>
+        <div><b>Note</b> The flagship block for the course pages. No reflectors, they turn into sails.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S18"><div class="card-top"><span class="id">S18</span><h4>Standing into the wind</h4></div><div class="frame">Vertical · full length · 85mm</div><div class="dir">In the spinifex, wind full on the face, chin into it, hands down. Do not fix anything. Dress and hair pushed hard. If we only get one frame all day, it is this one.</div><div class="for"><b>For</b> Course hero, the flagship</div></button>
+            <button class="card" data-id="S19"><div class="card-top"><span class="id">S19</span><h4>Laughing at the wind</h4></div><div class="frame">Vertical · three quarter · 85mm</div><div class="dir">Same spot, but let it be funny. It is genuinely ridiculous out there. That is the warmth version of S18.</div><div class="for"><b>For</b> Social, warmth</div></button>
+            <button class="card" data-id="S20"><div class="card-top"><span class="id">S20</span><h4>Lying back in the dune hollow</h4></div><div class="frame">Horizontal · from directly above · 35mm</div><div class="dir">Out of the wind, down in the hollow, sand and grass around your face, eyes closed, one arm above your head. I shoot straight down.</div><div class="for"><b>For</b> Course, the body and rest section</div></button>
+            <button class="card" data-id="S21"><div class="card-top"><span class="id">S21</span><h4>Hands in your hair, elbows up</h4></div><div class="frame">Vertical · chest up · 85mm</div><div class="dir">Both hands back through the cut, elbows wide, eyes down and then up to me. The definitive haircut frame. Ten of these.</div><div class="for"><b>For</b> The haircut announcement, everywhere</div></button>
+            <button class="card" data-id="S22"><div class="card-top"><span class="id">S22</span><h4>Running down the dune face</h4></div><div class="frame">Horizontal · full length · 1/1000, then one at 1/30</div><div class="dir">Run properly, sand flying. Two versions: frozen, then one deliberately blurred. The blurred one usually wins.</div><div class="for"><b>For</b> Reels cover, freedom</div></button>
+            <button class="card" data-id="S23"><div class="card-top"><span class="id">S23</span><h4>Walking the dune ridge, side on</h4></div><div class="frame">Horizontal · full length · 135mm · sky behind</div><div class="dir">Along the top of the ridge with nothing but sky behind. Expose for skin or you get a silhouette by accident. Two passes.</div><div class="for"><b>For</b> Wide banners</div></button>
+            <button class="card" data-id="S24"><div class="card-top"><span class="id">S24</span><h4>Hair across the face, one eye clear</h4></div><div class="frame">Vertical · tight · 135mm · empty right third</div><div class="dir">Let the wind put hair across your face and do not clear it. One eye visible and locked on the lens. Leave the right third of the frame empty for thumbnail text.</div><div class="for"><b>For</b> YouTube thumbnails</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D18"><div class="card-top"><span class="id">D18</span><h4>In the hollow, his chin on her head</h4></div><div class="frame">Vertical · three quarter · 50mm</div><div class="dir">You sit between his legs in the hollow, out of the wind, his chin resting on top of your head, both looking the same way. Ease, not romance.</div><div class="for"><b>For</b> Homepage warmth band</div></button>
+            <button class="card" data-id="D19"><div class="card-top"><span class="id">D19</span><h4>Both on the ridge, hands linked low</h4></div><div class="frame">Horizontal · full length · 85mm</div><div class="dir">Walk the ridge together into the wind, hands linked down low rather than raised. Shirt and hair moving, nobody fixing anything.</div><div class="for"><b>For</b> Retreat hero</div></button>
+            <button class="card" data-id="D20"><div class="card-top"><span class="id">D20</span><h4>He holds her hair out of her face</h4></div><div class="frame">Vertical · chest up · 85mm</div><div class="dir">Let it actually happen, then let it be funny. The most human frame of the day and probably the one you end up loving.</div><div class="for"><b>For</b> About us, social</div></button>
+            <button class="card" data-id="D21"><div class="card-top"><span class="id">D21</span><h4>Back to back, looking opposite ways</h4></div><div class="frame">Horizontal · full length · 50mm</div><div class="dir">Sitting in the sand, spines touching, each looking a different way. Not a fight. Two people holding each other up while facing separate directions.</div><div class="for"><b>For</b> Therapy page, the honest one</div></button>
+            <button class="card" data-id="D22"><div class="card-top"><span class="id">D22</span><h4>She whispers, he closes his eyes</h4></div><div class="frame">Vertical · waist up · tight · 135mm</div><div class="dir">Say something to him quietly. Whatever it is, I do not need to hear it. I need his face when he does.</div><div class="for"><b>For</b> Intimacy section, course cross sell</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 5 -->
+    <div class="block" data-block="5">
+      <div class="block-head">
+        <span class="block-num">Block 5</span>
+        <span class="block-time">2.30</span>
+        <h2>The car boot, the blanket, the thermos</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Whatever it is doing. Shoot it documentary, no styling.</div>
+        <div><b>Look 5</b> Same clothes as block 4 plus coats and the wool blanket. Salt in the hair now, which is correct.</div>
+        <div><b>Note</b> This is lunch. Eat, and let the camera be there while you do.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S25"><div class="card-top"><span class="id">S25</span><h4>Pouring from the thermos</h4></div><div class="frame">Horizontal · waist up · 50mm · steam visible</div><div class="dir">Backlight the steam. You are not looking at me and you are not aware of me. Just pour the tea.</div><div class="for"><b>For</b> Blog, email, the ordinary woman frame</div></button>
+            <button class="card" data-id="S26"><div class="card-top"><span class="id">S26</span><h4>On the tailgate, boots swinging</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">Sit on the open boot, heels knocking the bumper, cup in both hands. Talk to me while I shoot and I will catch the between moments.</div><div class="for"><b>For</b> About, podcast episode art</div></button>
+            <button class="card" data-id="S27"><div class="card-top"><span class="id">S27</span><h4>Head back, laughing, cup in hand</h4></div><div class="frame">Vertical · chest up · 85mm · burst</div><div class="dir">Whatever makes you laugh properly, do that. I want the one where your eyes have gone completely.</div><div class="for"><b>For</b> Social, joy</div></button>
+            <button class="card" data-id="S28"><div class="card-top"><span class="id">S28</span><h4>Reading your own notebook</h4></div><div class="frame">Horizontal · three quarter · from the side · 85mm</div><div class="dir">Your actual notebook, your actual handwriting, glasses on if you wear them. This is the frame that says a decade of clinical practice without saying it.</div><div class="for"><b>For</b> Course page, credibility</div></button>
+            <button class="card" data-id="S29"><div class="card-top"><span class="id">S29</span><h4>Blanket round the shoulders, straight to lens</h4></div><div class="frame">Vertical · chest up · 85mm</div><div class="dir">Pull the wool up round your shoulders and look right at me. Cold cheeks, warm eyes. The single best frame you can put above an email sign up box.</div><div class="for"><b>For</b> Quiz opt in, newsletter</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D23"><div class="card-top"><span class="id">D23</span><h4>One cup, passed across</h4></div><div class="frame">Horizontal · waist up · 50mm</div><div class="dir">Share the one cup. The handover is the frame. Do it four or five times while you talk about something else.</div><div class="for"><b>For</b> Email header, social</div></button>
+            <button class="card" data-id="D24"><div class="card-top"><span class="id">D24</span><h4>Under one blanket, looking out</h4></div><div class="frame">Horizontal · full length · from behind · 35mm</div><div class="dir">Both on the tailgate under the same blanket, backs to me, watching the sea. Say nothing for a while. I will wait.</div><div class="for"><b>For</b> Homepage, quiet band</div></button>
+            <button class="card" data-id="D25"><div class="card-top"><span class="id">D25</span><h4>He wipes the sand off her foot</h4></div><div class="frame">Horizontal · full length · low · 35mm</div><div class="dir">Exactly what it says. Small, practical, tender, nobody performing. Care looks like this and not like a kiss on a clifftop.</div><div class="for"><b>For</b> Therapy page, the care frame</div></button>
+            <button class="card" data-id="D26"><div class="card-top"><span class="id">D26</span><h4>Both laughing at something off camera</h4></div><div class="frame">Horizontal · waist up · 85mm</div><div class="dir">Not at each other, at a third thing. The shared attention is warmer than the eye contact and it is much harder to fake.</div><div class="for"><b>For</b> About us, social</div></button>
+            <button class="card" data-id="D27"><div class="card-top"><span class="id">D27</span><h4>He turns away, she watches him</h4></div><div class="frame">Horizontal · full length · 50mm · locked off</div><div class="dir">No acting. He simply walks a few steps away and stops. You stay and watch him. That is all. The camera does not move.</div><div class="for"><b>For</b> Therapy page, the problem section</div><div class="pair">Pairs with D28. Same lens, same spot, camera locked.</div></button>
+            <button class="card" data-id="D28"><div class="card-top"><span class="id">D28</span><h4>Thirty seconds later, the repair</h4></div><div class="frame">Horizontal · identical framing to D27</div><div class="dir">He turns back. You are already reaching. Same frame, so the two sit next to each other and say the whole thing your work says.</div><div class="for"><b>For</b> Therapy page, paired with D27</div><div class="pair">The other half of the strongest idea on this list.</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 6 -->
+    <div class="block" data-block="6">
+      <div class="block-head">
+        <span class="block-num">Block 6</span>
+        <span class="block-time">3.45</span>
+        <h2>The long sweep of beach, low sun</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> The good hour. Backlit, hazy, sea spray doing the diffusion for us.</div>
+        <div><b>Look 6</b> Her: terracotta or rust knit, cream wide trousers. Him: oatmeal knit.</div>
+        <div><b>Lens</b> 135mm for nearly all of it. Compression puts Lion Rock right behind you.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S30"><div class="card-top"><span class="id">S30</span><h4>Walking at camera, Lion Rock behind</h4></div><div class="frame">Horizontal · full length · 135mm · long compression</div><div class="dir">Start a long way off and walk at me without stopping. Do not think about your face. The rock will stack up huge behind you.</div><div class="for"><b>For</b> For Her hero, the confident walk</div></button>
+            <button class="card" data-id="S31"><div class="card-top"><span class="id">S31</span><h4>Stopped, hands in pockets, half smile</h4></div><div class="frame">Vertical · three quarter · 135mm · rim lit</div><div class="dir">Stop where you are and put your hands in your pockets. Sun behind you so the edge of the cut lights up. Half a smile, not a full one.</div><div class="for"><b>For</b> Homepage portrait slot</div></button>
+            <button class="card" data-id="S32"><div class="card-top"><span class="id">S32</span><h4>On the driftwood, one knee up</h4></div><div class="frame">Horizontal · full length · 50mm</div><div class="dir">Coat open, one knee up, elbow on it. Comfortable and a bit sprawled. Not ladylike, which is rather the point of the whole brand.</div><div class="for"><b>For</b> Blog, podcast</div></button>
+            <button class="card" data-id="S33"><div class="card-top"><span class="id">S33</span><h4>Backlit close, through the spray haze</h4></div><div class="frame">Vertical · head and shoulders · 135mm wide open</div><div class="dir">Sun directly behind your head, salt haze in the air, everything glowing and soft. Eyes to lens. This is the portrait that goes at the top of the course page.</div><div class="for"><b>For</b> Course page hero portrait</div></button>
+            <button class="card" data-id="S34"><div class="card-top"><span class="id">S34</span><h4>Writing in the wet sand with a toe</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">Write whatever you like, looking down at it. Playful and unposed, and it gives the social feed something that is not a portrait.</div><div class="for"><b>For</b> Social</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D29"><div class="card-top"><span class="id">D29</span><h4>Walking at camera together, mid conversation</h4></div><div class="frame">Horizontal · full length · 135mm</div><div class="dir">Long walk straight at me, talking the whole way, never looking at the lens. Three passes. This is most likely the homepage hero, so give it the time.</div><div class="for"><b>For</b> Homepage hero, main frame</div></button>
+            <button class="card" data-id="D30"><div class="card-top"><span class="id">D30</span><h4>He spins her, sand kicking up</h4></div><div class="frame">Horizontal · full length · 50mm · fast shutter</div><div class="dir">Low sun catches the kicked sand and it turns gold. Two goes only, it is hard work in sand.</div><div class="for"><b>For</b> Events, Connection Playground</div></button>
+            <button class="card" data-id="D31"><div class="card-top"><span class="id">D31</span><h4>On the driftwood, legs over his</h4></div><div class="frame">Horizontal · full length · 85mm</div><div class="dir">Your legs across his lap, foreheads close, both talking. Twenty years of ease in the posture. Let me shoot for two full minutes without directing.</div><div class="for"><b>For</b> Retreat page</div></button>
+            <button class="card" data-id="D32"><div class="card-top"><span class="id">D32</span><h4>A kiss on the temple, backlit</h4></div><div class="frame">Vertical · chest up · 135mm · rim through the hair</div><div class="dir">Not on the mouth. On the temple, your eyes closed. Restraint reads as long love. A mouth kiss reads as an engagement shoot.</div><div class="for"><b>For</b> Homepage, the tender one</div></button>
+            <button class="card" data-id="D33"><div class="card-top"><span class="id">D33</span><h4>Both to camera, squinting into the sun</h4></div><div class="frame">Horizontal · waist up · 85mm</div><div class="dir">Arms round each other, low sun in your faces, both squinting and laughing about it. Slightly imperfect on purpose. This is the honest About us frame.</div><div class="for"><b>For</b> About us</div></button>
+            <button class="card" data-id="D34"><div class="card-top"><span class="id">D34</span><h4>The two of you and the whole beach</h4></div><div class="frame">Horizontal · very wide · 24mm · copy space</div><div class="dir">Right back. Lion Rock, the full sweep of sand, the sun, and two small figures. Leave the top half of the frame clear for a headline.</div><div class="for"><b>For</b> Full bleed banner, retreat hero</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 7 -->
+    <div class="block" data-block="7">
+      <div class="block-head">
+        <span class="block-num">Block 7</span>
+        <span class="block-time">5.00</span>
+        <h2>Sunset into the Tasman</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Straight into it. Expose for the sky and let the bodies go to shape.</div>
+        <div><b>Look 7</b> Dark now: pine, charcoal, coats. This is the one block where head to toe dark is right.</div>
+        <div><b>Note</b> Forty five minutes, no more. Work fast and keep to the plan.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S35"><div class="card-top"><span class="id">S35</span><h4>Full silhouette, sun behind your head</h4></div><div class="frame">Vertical · full length · 85mm · exposed for sky</div><div class="dir">Line the sun up directly behind your head. Stand still, arms clear of the body so the outline reads. Pure shape, no face.</div><div class="for"><b>For</b> Dark Pine sections, quote backgrounds</div></button>
+            <button class="card" data-id="S36"><div class="card-top"><span class="id">S36</span><h4>One step across, face catches</h4></div><div class="frame">Vertical · three quarter · 85mm</div><div class="dir">Step sideways so the sun sits just off your shoulder. Suddenly the face is lit and the rest stays dark. Best of both in one frame.</div><div class="for"><b>For</b> Hero</div></button>
+            <button class="card" data-id="S37"><div class="card-top"><span class="id">S37</span><h4>Sun flare through your fingers</h4></div><div class="frame">Horizontal · waist up · 50mm · stopped down for the starburst</div><div class="dir">Hand up, sun broken through the gaps in your fingers. Decorative, and it gives the designer something to layer text over.</div><div class="for"><b>For</b> Social, decorative</div></button>
+            <button class="card" data-id="S38"><div class="card-top"><span class="id">S38</span><h4>Ankle deep, back to camera, facing the sun</h4></div><div class="frame">Horizontal · full length · 85mm</div><div class="dir">Ankle deep and no further. Back to me, facing the last of it. This is the frame for the line you already use, the deepest love is still ahead of you.</div><div class="for"><b>For</b> Closing band, both sites</div></button>
+            <button class="card" data-id="S39"><div class="card-top"><span class="id">S39</span><h4>The last orange light on your face</h4></div><div class="frame">Vertical · head and shoulders · 135mm</div><div class="dir">Turn into the final few minutes of colour and look at me. Nothing else in the frame. If the day gives one great portrait, it will be this one or S33.</div><div class="for"><b>For</b> Podcast cover, press, the signature portrait</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D35"><div class="card-top"><span class="id">D35</span><h4>Two silhouettes closing to touch</h4></div><div class="frame">Horizontal · full length · three frames</div><div class="dir">Apart, closer, touching. Keep a clear gap of sky between your outlines at every stage or it turns into one blob.</div><div class="for"><b>For</b> Dark band, homepage</div></button>
+            <button class="card" data-id="D36"><div class="card-top"><span class="id">D36</span><h4>The lift, in silhouette</h4></div><div class="frame">Horizontal · full length · 85mm</div><div class="dir">He lifts, your arms go out. Read entirely as shape against the orange. Joy without a single visible face.</div><div class="for"><b>For</b> Events, joy</div></button>
+            <button class="card" data-id="D37"><div class="card-top"><span class="id">D37</span><h4>Foreheads together, sun between your chests</h4></div><div class="frame">Vertical · waist up · 135mm</div><div class="dir">Foreheads touching, bodies angled so the sun burns through the gap between your chests. Move a few centimetres at a time until the light finds the hole. Worth five minutes on its own.</div><div class="for"><b>For</b> The signature couple frame, homepage hero</div></button>
+            <button class="card" data-id="D38"><div class="card-top"><span class="id">D38</span><h4>Walking into the sun, long shadows behind</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">Backs to me, walking toward the water, shadows stretching back at the camera. Keep going until you are small.</div><div class="for"><b>For</b> Closing band, footer</div></button>
+            <button class="card" data-id="D39"><div class="card-top"><span class="id">D39</span><h4>Sitting in the wet sand, reflected</h4></div><div class="frame">Horizontal · full length · low camera · 50mm</div><div class="dir">Sit down in the wet sand, lean into each other, let the last colour reflect underneath you. You will get wet. It is the last block, it is fine.</div><div class="for"><b>For</b> Retreat page</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCK 8 -->
+    <div class="block" data-block="8">
+      <div class="block-head">
+        <span class="block-num">Block 8</span>
+        <span class="block-time">5.50</span>
+        <h2>Blue hour, then home</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Cold blue ambient, plus one warm source from the side. A torch or the car headlights will do it.</div>
+        <div><b>Look 8</b> Coats, the blanket, whatever is warm. Two frames only.</div>
+        <div><b>Note</b> Warm source at 45 degrees, low ISO discipline, then stop and go and get dinner.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S40"><div class="card-top"><span class="id">S40</span><h4>Wrapped in the blanket, blue and warm</h4></div><div class="frame">Vertical · three quarter · 50mm · warm light from camera left</div><div class="dir">Blanket round you at the water's edge, cold blue everywhere and one warm light on your face. Genuinely cold, which will show, and that is what makes it good.</div><div class="for"><b>For</b> Podcast, blog, the moody one</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D40"><div class="card-top"><span class="id">D40</span><h4>One blanket, empty beach, faces close</h4></div><div class="frame">Horizontal · waist up · 85mm</div><div class="dir">Both inside the one blanket, faces close, nobody left on the beach. The last frame of the day and the most intimate. Then we all go home.</div><div class="for"><b>For</b> Newsletter, retreat, the closing frame</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Where they go</p>
+      <h2>Every page slot, and the frames that fill it</h2>
+      <p>Built against what is live now: the homepage and Together pages on theloveadventure.com, the mini course and workshop, and the Desire Blueprint quiz opt in.</p>
+    </div>
+    <div class="index-wrap">
+      <table>
+        <thead>
+          <tr><th>Page or asset</th><th>First choice</th><th>Back ups</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>theloveadventure.com homepage hero</td><td class="codes">D29, D37</td><td class="codes">D6, D1, D34</td></tr>
+          <tr><td>Homepage dark band, the lonely line</td><td class="codes">D9</td><td class="codes">D24, D35, D38</td></tr>
+          <tr><td>About us</td><td class="codes">D33, D12</td><td class="codes">D4, D20, D26</td></tr>
+          <tr><td>Couples therapy page</td><td class="codes">D2, D7</td><td class="codes">D17, D21, D25</td></tr>
+          <tr><td>Therapy page, the problem and the repair</td><td class="codes">D27 + D28</td><td class="codes">D9 + D10</td></tr>
+          <tr><td>Intensives, The New Chapter of Us</td><td class="codes">D13, D3</td><td class="codes">D15, D22</td></tr>
+          <tr><td>Wanaka retreat</td><td class="codes">D19, D34</td><td class="codes">D1, D31, D39</td></tr>
+          <tr><td>Events and Connection Playground</td><td class="codes">D8, D30</td><td class="codes">D36, D5</td></tr>
+          <tr><td>Two therapists credibility band</td><td class="codes">D14</td><td class="codes">D12, D16</td></tr>
+          <tr><td>For Her homepage hero</td><td class="codes">S30, S3</td><td class="codes">S31, S18</td></tr>
+          <tr><td>Sexual confidence mini course, hero</td><td class="codes">S33, S18</td><td class="codes">S6, S10</td></tr>
+          <tr><td>Course module cards and inner sections</td><td class="codes">S2, S20, S28</td><td class="codes">S10, S17, S32</td></tr>
+          <tr><td>Desire Blueprint quiz, opt in</td><td class="codes">S29, S5</td><td class="codes">S27, S31</td></tr>
+          <tr><td>Workshop page</td><td class="codes">S19, S27</td><td class="codes">S26, S34</td></tr>
+          <tr><td>Podcast cover and episode art</td><td class="codes">S39, S14</td><td class="codes">S26, S40, S5</td></tr>
+          <tr><td>YouTube thumbnails</td><td class="codes">S24, S21</td><td class="codes">S9, S27</td></tr>
+          <tr><td>Reels and TikTok covers, 9:16</td><td class="codes">S8, S22</td><td class="codes">S19, S9, S18</td></tr>
+          <tr><td>Email headers and newsletter</td><td class="codes">S25, D23</td><td class="codes">S4, D40</td></tr>
+          <tr><td>Blog and quiet page breaks</td><td class="codes">S11, S17</td><td class="codes">S4, S32, S37</td></tr>
+          <tr><td>Full bleed banners with headline over</td><td class="codes">S13, D16</td><td class="codes">D34, S23, S35</td></tr>
+          <tr><td>Footer and closing bands</td><td class="codes">S38, D38</td><td class="codes">D11, D35</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">Twelve frames are deliberately built with empty space for headlines: S3, S4, S13, S23, S24, S34, D9, D11, D16, D34, D35, D38.</p>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">If the day goes sideways</p>
+      <h2>The ten frames worth losing everything else for</h2>
+      <p>Rain, a blown out forecast, a shorter day than planned. Shoot these and the sites still get built.</p>
+    </div>
+    <ul>
+      <li><strong>S18</strong> standing into the wind, and <strong>S33</strong> backlit close through the haze. One is the course, the other is the portrait everything else hangs off.</li>
+      <li><strong>S39</strong> the last light on your face. The single strongest solo portrait if the sunset shows up.</li>
+      <li><strong>S21</strong> hands through the cut. The whole reason for the day.</li>
+      <li><strong>S29</strong> blanket round the shoulders, straight to lens. It sells the opt in on its own.</li>
+      <li><strong>D29</strong> the walk toward camera. Most likely homepage hero.</li>
+      <li><strong>D37</strong> foreheads together with the sun burning between you. The signature couple frame.</li>
+      <li><strong>D9 and D10</strong> the gap and the hands found, same locked off frame. Two pictures that say what your work does.</li>
+      <li><strong>D14</strong> shoulder to shoulder, straight to lens, serious. The frame that has to sit next to a retreat price.</li>
+    </ul>
+    <p class="tbl-note" style="color:var(--band-ink-soft); max-width:64ch; margin-top:1.5rem">Rain is not a reason to cancel. Piha in rain gives wet black rock, low cloud on the ridge and an empty beach, and blocks 1, 3 and 5 all work better in it. Only wind over about 40 knots or a big swell is worth moving the date for.</p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var KEY = "piha-shots-v1";
+  var done = new Set();
+  try{
+    var saved = localStorage.getItem(KEY);
+    if(saved){ JSON.parse(saved).forEach(function(id){ done.add(id); }); }
+  }catch(e){}
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
+  var countEl = document.getElementById("count");
+
+  function save(){
+    try{ localStorage.setItem(KEY, JSON.stringify(Array.from(done))); }catch(e){}
+  }
+
+  function paintCounts(){
+    countEl.innerHTML = "<b>" + done.size + "</b> of 80 captured";
+    Array.prototype.forEach.call(document.querySelectorAll(".block"), function(block){
+      var all = block.querySelectorAll(".card");
+      var n = 0;
+      Array.prototype.forEach.call(all, function(c){ if(c.classList.contains("done")) n++; });
+      block.querySelector(".block-prog").textContent = n + " / " + all.length;
+    });
+  }
+
+  cards.forEach(function(card){
+    var id = card.getAttribute("data-id");
+    if(done.has(id)) card.classList.add("done");
+    card.setAttribute("aria-pressed", done.has(id) ? "true" : "false");
+    card.addEventListener("click", function(){
+      if(done.has(id)){ done.delete(id); card.classList.remove("done"); card.setAttribute("aria-pressed","false"); }
+      else { done.add(id); card.classList.add("done"); card.setAttribute("aria-pressed","true"); }
+      save(); paintCounts();
+    });
+  });
+
+  document.getElementById("reset").addEventListener("click", function(){
+    done.clear();
+    cards.forEach(function(c){ c.classList.remove("done"); c.setAttribute("aria-pressed","false"); });
+    save(); paintCounts();
+  });
+
+  var btns = Array.prototype.slice.call(document.querySelectorAll(".filters button"));
+  btns.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var f = btn.getAttribute("data-filter");
+      btns.forEach(function(b){ b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+      document.body.classList.remove("only-solo","only-duo");
+      if(f === "solo") document.body.classList.add("only-solo");
+      if(f === "duo") document.body.classList.add("only-duo");
+    });
+  });
+
+  paintCounts();
+})();
+</script>

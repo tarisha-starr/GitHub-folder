@@ -1,0 +1,717 @@
+<title>Piha Afternoon Call Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Barlow+Condensed:wght@500;600&display=swap">
+
+<style>
+:root{
+  color-scheme: light dark;
+  --ground:#FDFBF5;
+  --surface:#F5EFE3;
+  --surface-2:#FBF7EE;
+  --ink:#2A2520;
+  --ink-soft:#6E6355;
+  --ink-faint:#8E8271;
+  --rule:#E2D8C6;
+  --rule-soft:#EDE5D7;
+  --band:#1F2C1F;
+  --band-2:#2D3E2C;
+  --band-ink:#F2EADA;
+  --band-ink-soft:#B3AE96;
+  --terracotta:#C75D3D;
+  --terracotta-ink:#A8482C;
+  --gold:#9C7A42;
+  --gold-line:#C9A579;
+  --moss:#5D6B3F;
+  --tick:#5D6B3F;
+  --shadow:0 1px 2px rgba(42,37,32,.05), 0 8px 24px -16px rgba(42,37,32,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#151D14;
+    --surface:#1F2C1F;
+    --surface-2:#243124;
+    --ink:#F1E9DA;
+    --ink-soft:#B0A791;
+    --ink-faint:#8C8471;
+    --rule:#334031;
+    --rule-soft:#293529;
+    --band:#0E140E;
+    --band-2:#1F2C1F;
+    --band-ink:#F1E9DA;
+    --band-ink-soft:#A89580;
+    --terracotta:#E07C58;
+    --terracotta-ink:#E88F6D;
+    --gold:#C9A579;
+    --gold-line:#8A7448;
+    --tick:#C9A579;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#151D14;
+  --surface:#1F2C1F;
+  --surface-2:#243124;
+  --ink:#F1E9DA;
+  --ink-soft:#B0A791;
+  --ink-faint:#8C8471;
+  --rule:#334031;
+  --rule-soft:#293529;
+  --band:#0E140E;
+  --band-2:#1F2C1F;
+  --band-ink:#F1E9DA;
+  --band-ink-soft:#A89580;
+  --terracotta:#E07C58;
+  --terracotta-ink:#E88F6D;
+  --gold:#C9A579;
+  --gold-line:#8A7448;
+  --tick:#C9A579;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:Lora, Georgia, "Times New Roman", serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:min(1140px, calc(100% - 2.5rem)); margin-inline:auto}
+h1,h2,h3{font-family:Marcellus, "Hoefler Text", Georgia, serif; font-weight:400; text-wrap:balance; margin:0}
+p{margin:0}
+
+.eyebrow{
+  font-family:"Barlow Condensed", "Arial Narrow", sans-serif;
+  font-weight:600; text-transform:uppercase; letter-spacing:.16em;
+  font-size:.82rem; color:var(--ink-faint);
+}
+
+/* ---------- masthead ---------- */
+.mast{background:var(--band); color:var(--band-ink); padding:clamp(3rem,7vw,5.5rem) 0 clamp(2.5rem,5vw,3.5rem)}
+.mast .eyebrow{color:var(--band-ink-soft)}
+.mast-grid{display:flex; flex-direction:column; gap:1.5rem}
+.mast h1{font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.02; letter-spacing:-.01em; color:var(--band-ink)}
+.mast h1 em{font-style:italic; font-family:Lora, Georgia, serif; color:var(--terracotta)}
+.mast .lede{max-width:56ch; color:var(--band-ink-soft); font-size:1.05rem}
+.mast-facts{
+  display:flex; flex-wrap:wrap; gap:0 2.25rem; margin-top:.5rem;
+  padding-top:1.5rem; border-top:1px solid rgba(201,165,121,.28);
+}
+.fact{padding:.6rem 0}
+.fact dt{font-family:"Barlow Condensed", sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.14em; font-size:.77rem; color:var(--band-ink-soft)}
+.fact dd{margin:0; font-size:.98rem; color:var(--band-ink)}
+
+/* ---------- counter bar ---------- */
+.bar{
+  position:sticky; top:0; z-index:20;
+  background:var(--band-2); color:var(--band-ink);
+  border-bottom:1px solid rgba(201,165,121,.25);
+}
+.bar-in{display:flex; flex-wrap:wrap; align-items:center; gap:.75rem 1.25rem; padding:.7rem 0}
+.count{font-family:"Barlow Condensed", sans-serif; font-weight:600; letter-spacing:.06em; font-size:1rem; font-variant-numeric:tabular-nums}
+.count b{color:var(--gold-line); font-weight:600}
+.filters{display:flex; gap:.4rem; margin-left:auto}
+.filters button{
+  font-family:"Barlow Condensed", sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.1em;
+  font-size:.8rem; color:var(--band-ink-soft); background:transparent;
+  border:1px solid rgba(201,165,121,.35); border-radius:2px; padding:.55rem .8rem; min-height:34px; cursor:pointer;
+}
+.filters button[aria-pressed="true"]{background:var(--terracotta); border-color:var(--terracotta); color:#FDFBF5}
+.filters button:focus-visible, .card:focus-visible{outline:2px solid var(--gold-line); outline-offset:2px}
+.reset{background:transparent; border:0; color:var(--band-ink-soft); font-family:"Barlow Condensed",sans-serif; text-transform:uppercase; letter-spacing:.1em; font-size:.78rem; cursor:pointer; text-decoration:underline; text-underline-offset:3px; min-height:34px; padding:.4rem .2rem}
+
+/* ---------- prose sections ---------- */
+section{padding:clamp(2.75rem,6vw,4.5rem) 0}
+.section-head{max-width:60ch; display:flex; flex-direction:column; gap:.75rem; margin-bottom:2rem}
+.section-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem); line-height:1.15}
+.section-head p{color:var(--ink-soft)}
+.prose p + p{margin-top:1rem}
+.prose{max-width:64ch}
+.prose em{color:var(--terracotta-ink)}
+
+.notes{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:3px; overflow:hidden}
+@media (min-width:760px){.notes{grid-template-columns:1fr 1fr}}
+.note{background:var(--surface-2); padding:1.35rem 1.5rem; display:flex; flex-direction:column; gap:.45rem}
+.note h3{font-size:1.06rem; letter-spacing:.01em}
+.note p{color:var(--ink-soft); font-size:.95rem; line-height:1.6}
+.note.flag{background:var(--surface)}
+.note.flag h3{color:var(--terracotta-ink)}
+
+/* ---------- blocks ---------- */
+.block{border-top:1px solid var(--rule); padding-top:1.6rem; margin-top:2.75rem}
+.block:first-of-type{margin-top:0}
+.block-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:.5rem 1.25rem; margin-bottom:.4rem}
+.block-num{
+  font-family:"Barlow Condensed", sans-serif; font-weight:600; font-size:.84rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--terracotta-ink);
+}
+.block-time{
+  font-family:"Barlow Condensed", sans-serif; font-weight:600; font-size:1.6rem; letter-spacing:.02em;
+  font-variant-numeric:tabular-nums; color:var(--ink);
+}
+.block-head h2{font-size:clamp(1.4rem,2.6vw,1.9rem)}
+.block-prog{margin-left:auto; font-family:"Barlow Condensed",sans-serif; font-weight:600; font-size:.85rem; letter-spacing:.1em; color:var(--ink-faint); font-variant-numeric:tabular-nums}
+.block-meta{display:flex; flex-wrap:wrap; gap:.35rem 1.5rem; margin-bottom:1.6rem; max-width:78ch}
+.block-meta div{font-size:.9rem; color:var(--ink-soft)}
+.block-meta b{font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.12em; font-size:.76rem; color:var(--ink-faint); display:block}
+
+.lanes{display:grid; gap:2rem}
+@media (min-width:900px){.lanes{grid-template-columns:1fr 1fr; gap:2.5rem}}
+.lane-head{
+  display:flex; align-items:center; gap:.6rem; margin-bottom:.9rem;
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.16em; font-size:.84rem;
+}
+.lane-solo .lane-head{color:var(--gold)}
+.lane-duo .lane-head{color:var(--terracotta-ink)}
+.lane-head::after{content:""; flex:1; height:1px; background:currentColor; opacity:.35}
+.cards{display:flex; flex-direction:column; gap:.6rem}
+
+.card{
+  position:relative; display:block; width:100%; text-align:left;
+  background:var(--surface-2); border:1px solid var(--rule-soft); border-left:3px solid var(--gold-line);
+  border-radius:2px; padding:.85rem 1rem .9rem 1rem; cursor:pointer; font:inherit; color:inherit;
+  transition:background .15s ease, border-color .15s ease;
+}
+.lane-duo .card{border-left-color:var(--terracotta)}
+.card:hover{background:var(--surface)}
+.card-top{display:flex; align-items:baseline; gap:.6rem}
+.id{
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; font-size:.85rem; letter-spacing:.08em;
+  color:var(--ink-faint); flex:none; min-width:2.4em; font-variant-numeric:tabular-nums;
+}
+.card h4{margin:0; font-family:Lora, Georgia, serif; font-weight:600; font-size:1rem; line-height:1.35}
+.frame{
+  margin-top:.3rem; padding-left:calc(2.4em + .6rem);
+  font-family:"Barlow Condensed",sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:.09em;
+  font-size:.79rem; color:var(--ink-faint);
+}
+.dir{margin-top:.45rem; padding-left:calc(2.4em + .6rem); font-size:.93rem; line-height:1.55; color:var(--ink-soft)}
+.for{
+  margin-top:.55rem; padding-left:calc(2.4em + .6rem);
+  font-size:.84rem; color:var(--ink-faint); font-style:italic;
+}
+.for b{font-style:normal; font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.12em; font-size:.75rem; color:var(--ink-faint)}
+.card.done{background:var(--surface); border-color:var(--rule)}
+.card.done .card-top h4{text-decoration:line-through; text-decoration-thickness:1px; opacity:.5}
+.card.done .frame, .card.done .dir, .card.done .for{opacity:.4}
+.card.done .id::after{content:" ✓"; color:var(--tick)}
+.pair{
+  margin-top:.45rem; margin-left:calc(2.4em + .6rem); padding:.35rem .6rem;
+  background:var(--surface); border-left:2px solid var(--gold-line);
+  font-size:.83rem; color:var(--ink-soft);
+}
+.lane-duo .pair{border-left-color:var(--terracotta)}
+
+body.only-solo .lane-duo, body.only-duo .lane-solo{display:none}
+body.only-solo .lanes, body.only-duo .lanes{grid-template-columns:1fr; max-width:70ch}
+
+/* ---------- index ---------- */
+.index-wrap{overflow-x:auto; border:1px solid var(--rule); border-radius:3px}
+table{border-collapse:collapse; width:100%; min-width:620px; background:var(--surface-2)}
+th,td{text-align:left; padding:.7rem 1rem; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+th{
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.13em;
+  font-size:.79rem; color:var(--ink-faint); background:var(--surface);
+}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:500; width:34%}
+td.codes{font-family:"Barlow Condensed",sans-serif; font-weight:500; letter-spacing:.05em; color:var(--terracotta-ink); white-space:nowrap}
+.tbl-note{margin-top:.75rem; font-size:.85rem; color:var(--ink-faint)}
+
+.closing{background:var(--band); color:var(--band-ink); margin-top:3rem}
+.closing h2{color:var(--band-ink)}
+.closing .section-head p, .closing li{color:var(--band-ink-soft)}
+.closing ul{margin:0; padding-left:1.1rem; max-width:64ch; display:flex; flex-direction:column; gap:.6rem}
+.closing li::marker{color:var(--gold-line)}
+.closing strong{color:var(--band-ink); font-weight:500}
+
+/* ---------- today ---------- */
+.today-sec{background:var(--surface); border-bottom:1px solid var(--rule)}
+.today-facts{display:flex; flex-wrap:wrap; gap:.75rem; margin-bottom:1.75rem}
+.tf{
+  background:var(--surface-2); border:1px solid var(--rule); border-radius:2px;
+  padding:.5rem .85rem; font-size:.95rem; font-variant-numeric:tabular-nums;
+}
+.tf b{
+  display:block; font-family:"Barlow Condensed",sans-serif; font-weight:600;
+  text-transform:uppercase; letter-spacing:.13em; font-size:.75rem; color:var(--ink-faint);
+}
+.runsheet{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0; counter-reset:none}
+.runsheet li{
+  display:grid; grid-template-columns:4.5rem 1fr; gap:.15rem .9rem;
+  padding:.85rem 0; border-top:1px solid var(--rule);
+}
+.runsheet li:last-child{border-bottom:1px solid var(--rule)}
+@media (min-width:820px){
+  .runsheet li{grid-template-columns:4.5rem 15rem 1fr; align-items:baseline; gap:.9rem}
+}
+.rt{
+  font-family:"Barlow Condensed",sans-serif; font-weight:600; font-size:1.35rem;
+  font-variant-numeric:tabular-nums; color:var(--terracotta-ink); line-height:1.2;
+}
+.rb{font-family:Lora, Georgia, serif; font-weight:600; font-size:1rem; grid-column:2}
+.rw{color:var(--ink-soft); font-size:.93rem; line-height:1.55; grid-column:2}
+.rw b{font-family:"Barlow Condensed",sans-serif; font-weight:600; letter-spacing:.05em; color:var(--terracotta-ink); font-size:1rem}
+@media (min-width:820px){.rw{grid-column:3; grid-row:1}}
+
+@media print{
+  @page{size:A4; margin:13mm 11mm}
+  :root{
+    --ground:#fff; --surface:#F7F2E8; --surface-2:#fff; --ink:#1A1713; --ink-soft:#3B352C;
+    --ink-faint:#6B6255; --rule:#C9BFAC; --rule-soft:#DCD3C2; --band:#fff; --band-2:#fff;
+    --band-ink:#1A1713; --band-ink-soft:#4A4335; --terracotta:#A8482C; --terracotta-ink:#8E3A22;
+    --gold:#7A5F30; --gold-line:#9C8552; --tick:#4A5535;
+  }
+  body{background:#fff; color:#1A1713; font-size:9pt; line-height:1.45}
+  .wrap{width:100%}
+  .bar, .filters, .reset{display:none !important}
+
+  .mast{background:#fff; color:#1A1713; padding:0 0 6mm; border-bottom:1.5pt solid #1A1713}
+  .mast h1{font-size:30pt; line-height:1}
+  .mast .lede{font-size:9.5pt; max-width:100%; color:#3B352C}
+  .mast-facts{border-top:.5pt solid #C9BFAC; padding-top:3mm; margin-top:3mm; gap:0 8mm}
+  .fact dd{font-size:9pt}
+
+  section{padding:6mm 0 0}
+  .section-head{margin-bottom:4mm}
+  .section-head h2{font-size:15pt}
+  .prose{max-width:100%; columns:2; column-gap:8mm; font-size:8.6pt}
+  .prose p + p{margin-top:0; text-indent:1.2em}
+
+  .today-sec{break-after:page; background:#fff; border:0}
+  .today-facts{gap:2mm}
+  .tf{padding:1.5mm 3mm; font-size:8.5pt; border:.5pt solid #C9BFAC; background:#F7F2E8}
+  .runsheet li{padding:2.5mm 0; border-top:.5pt solid #C9BFAC; break-inside:avoid}
+  .rt{font-size:12pt}
+  .rw{font-size:8.4pt}
+  .rw b{font-size:8.4pt; letter-spacing:.03em}
+
+  .notes{border:0; background:transparent; gap:2mm; grid-template-columns:1fr 1fr}
+  .section-head{break-before:auto; break-after:avoid}
+  .prose{break-after:column}
+  .note{padding:3mm 4mm; break-inside:avoid; background:#fff; border:.5pt solid #C9BFAC}
+  .note.flag{background:#F7F2E8}
+  .note h3{font-size:10pt}
+  .note p{font-size:8.3pt; line-height:1.45}
+
+  .block{break-before:page; border-top:0; padding-top:0; margin-top:0}
+  .block-head{border-bottom:1pt solid #1A1713; padding-bottom:2mm; break-after:avoid}
+  .block-time{font-size:16pt}
+  .block-head h2{font-size:13pt}
+  .block-prog{display:none}
+  .block-meta{margin-bottom:4mm; gap:.5mm 6mm; break-after:avoid}
+  .block-meta div{font-size:8.3pt}
+  .lanes{grid-template-columns:1fr 1fr !important; gap:6mm}
+  .lane-head{font-size:8.5pt; margin-bottom:2mm}
+  .cards{gap:2mm}
+
+  .card{
+    background:#fff; border:.5pt solid #C9BFAC; border-left:2pt solid #9C8552;
+    padding:2mm 3mm 2.5mm; break-inside:avoid;
+  }
+  .lane-duo .card{border-left-color:#A8482C}
+  /* a box to tick with a pen, since nothing is tappable on paper */
+  .card .id::before{
+    content:""; display:inline-block; width:2.6mm; height:2.6mm;
+    border:.5pt solid #6B6255; margin-right:1.5mm; vertical-align:baseline;
+  }
+  .card.done .id::after{content:""}
+  .id{font-size:8.5pt; min-width:5.4em}
+  .card h4{font-size:9pt; line-height:1.3}
+  .frame{font-size:7.4pt; margin-top:.8mm; padding-left:0}
+  .dir{font-size:8.2pt; line-height:1.4; margin-top:1mm; padding-left:0}
+  .for{font-size:7.6pt; margin-top:1mm; padding-left:0}
+  .pair{margin-left:0; font-size:7.6pt; padding:1mm 2mm; background:#F7F2E8}
+
+  .index-wrap{border:.5pt solid #C9BFAC; overflow:visible; break-before:page}
+  table{min-width:0; font-size:8.3pt}
+  thead{display:table-header-group}
+  th,td{padding:1.5mm 2.5mm; border-bottom:.5pt solid #DCD3C2}
+  th{background:#F7F2E8}
+  tr{break-inside:avoid}
+
+  .closing{background:#fff; color:#1A1713; margin-top:0; break-before:page; border-top:1.5pt solid #1A1713}
+  .closing li{color:#3B352C; font-size:8.8pt}
+  .closing strong{color:#1A1713}
+  .tbl-note{font-size:8pt}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+<header class="mast">
+  <div class="wrap mast-grid">
+    <p class="eyebrow">Photo shoot, session two · Piha · afternoon into dark</p>
+    <h1>The long<br><em>afternoon</em></h1>
+    <p class="lede">Four and a half hours from low water to full dark. This is the half of the day the morning window could not touch, and it holds the strongest frames on the whole list. Thirty new shots, plus every outstanding frame from session one, sequenced so the light does the work.</p>
+    <dl class="mast-facts">
+      <div class="fact"><dt>New solo</dt><dd>15, S41 to S55</dd></div>
+      <div class="fact"><dt>New together</dt><dd>15, D41 to D55</dd></div>
+      <div class="fact"><dt>Outstanding</dt><dd>About 30 from session one</dd></div>
+      <div class="fact"><dt>Runs</dt><dd>2.00pm to 6.35pm</dd></div>
+      <div class="fact"><dt>New kit</dt><dd>Tripod and a warm torch</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap bar-in">
+    <span class="count" id="count"><b>0</b> of 30 captured</span>
+    <button class="reset" id="reset" type="button">Clear ticks</button>
+    <div class="filters" role="group" aria-label="Filter shots">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="solo" aria-pressed="false">Just you</button>
+      <button type="button" data-filter="duo" aria-pressed="false">You and Mark</button>
+    </div>
+  </div>
+</div>
+
+<section class="today-sec">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The runsheet</p>
+      <h2>Start at low water, finish in the dark</h2>
+      <p>Timed against today's tide and sunset, which happen to fall almost perfectly for an afternoon: low water just as you arrive, sun down as you finish. If you run this on another date instead, pick one where low tide lands between 3.30 and 5.30pm, and read the daylight saving note at the bottom.</p>
+    </div>
+    <div class="today-facts">
+      <div class="tf"><b>Low tide</b>2.25pm to 2.55pm</div>
+      <div class="tf"><b>Sunset</b>5.57pm</div>
+      <div class="tf"><b>Blue hour</b>5.57pm to 6.35pm</div>
+      <div class="tf"><b>Dark</b>About 6.40pm</div>
+      <div class="tf"><b>Sea</b>13.5 degrees</div>
+    </div>
+    <ol class="runsheet">
+      <li><span class="rt">2.00</span><span class="rb">Kitekite falls and the bush</span><span class="rw">Thirty five minutes in on foot, which is exactly why it was cut last time and exactly why it fits now. Shaded, green, cool, and the beach light is worthless at this hour anyway. Tripod goes in the pack. <b>New: S41 to S45, D41 to D44. Outstanding: S1 to S5, D1 to D5.</b></span></li>
+      <li><span class="rt">3.30</span><span class="rb">Walk out, drive to North Piha, change</span><span class="rw">Wardrobe two goes on in the carpark. Dry socks now, not later, because the next block is wet.</span></li>
+      <li><span class="rt">3.45</span><span class="rb">Mirror sand and the lagoon</span><span class="rw">Low water has just turned, so the flats are at their widest and the water is still glass. The block that got compromised in the morning, done properly. <b>New: S46, S47, D45, D46. Outstanding: S6 to S11, D6 to D11.</b></span></li>
+      <li><span class="rt">4.45</span><span class="rb">The long sweep, low sun</span><span class="rw">The sun drops into the last quarter of the sky and everything goes warm and long. Shoot down the beach at 135mm so Lion Rock stacks up behind. <b>New: S48 to S50, D47, D48. Outstanding: S30 to S34, D29 to D34.</b></span></li>
+      <li><span class="rt">5.20</span><span class="rb">Sunset</span><span class="rw">Be standing in position by 5.20, not walking toward it. Forty minutes of usable colour and it does not wait. <b>New: S51 to S53, D49 to D51. Outstanding: S35 to S39, D35 to D39.</b></span></li>
+      <li><span class="rt">6.05</span><span class="rb">Blue hour and torchlight</span><span class="rw">The half hour most people pack up for, and it is the best light of the day for this brand. Tripod out, torch on. <b>New: S54, S55, D52 to D54. Outstanding: S40, D40.</b></span></li>
+      <li><span class="rt">6.30</span><span class="rb">Headlights, then stop</span><span class="rw">One frame in the carpark with the car doing the lighting, then everyone gets warm. <b>New: D55.</b></span></li>
+    </ol>
+    <div class="notes" style="margin-top:1.75rem">
+      <div class="note flag">
+        <h3>Three pieces of kit this session cannot run without</h3>
+        <p>A tripod, because four of the new frames are half second to four second exposures and nothing handheld will hold them. A torch with a warm beam, held off to the side by Mark rather than strapped to a head, and if it is a cold white LED then tape a scrap of orange gel or a sweet wrapper over it. And spare batteries, because cold plus long exposures plus live view will flatten a battery in an hour.</p>
+      </div>
+      <div class="note flag">
+        <h3>Get off the falls track before the light goes</h3>
+        <p>Under that canopy it is properly dark well before it is dark on the beach, and the track has roots and steps. Out by 3.30 as scheduled, or carry two torches. Do not plan to come back to the falls at the end of the day.</p>
+      </div>
+      <div class="note">
+        <h3>You will get wet twice, so plan for it</h3>
+        <p>The falls pool in block one and the shorebreak in block five. Two towels, two pairs of dry socks, and a change of trousers in the car. Sea is 13.5 degrees and the air goes cold fast after the sun drops, so the difference between a great blue hour and an abandoned one is dry clothes.</p>
+      </div>
+      <div class="note">
+        <h3>If you run this after 27 September</h3>
+        <p>Daylight saving starts on the last Sunday in September, and sunset jumps from about 6pm to about 7.30pm. Shift the whole runsheet an hour and a half later: falls at 3.30, mirror sand at 5.15, sunset block at 6.50. The tide rule does not shift with the clock, so still pick a day with low water in the late afternoon.</p>
+      </div>
+      <div class="note">
+        <h3>Wardrobe, two changes</h3>
+        <p>Bush block: cream linen and camel, the same soft palette as session one, because green wants warm against it. Beach blocks: rust or terracotta knit and cream trousers for the low sun, then pull on the dark coats for sunset and after. Head to toe dark is correct from 5.20 onward and wrong before it.</p>
+      </div>
+      <div class="note">
+        <h3>What to cut if you fall behind</h3>
+        <p>The falls block, in full. It is the only one that can move to another day without losing anything, because it does not depend on the tide or the sunset. Everything from 4.45 onward is unrepeatable without another whole trip, so protect it. If the sky is flat grey at 5pm, skip the sunset frames rather than shooting them badly, and put that time into blue hour instead, which works under cloud.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">New frames</p>
+      <h2>Thirty shots the middle of the day cannot give you</h2>
+      <p>These are additions to the master list, not repeats. Every one depends on either moving water, low sun, or dark, which is why none of them appear in session one. Numbering carries on from the original list so nothing collides.</p>
+    </div>
+
+    <div class="block" data-block="9">
+      <div class="block-head">
+        <span class="block-num">Block 9</span>
+        <span class="block-time">2.00</span>
+        <h2>Kitekite falls and the bush</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Deep shade, cool green, occasional shafts through the canopy</div>
+        <div><b>Look</b> Cream linen and camel. Bare feet at the pool, boots on the track.</div>
+        <div><b>Kit</b> Tripod, and a neutral density filter if the canopy is bright</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S41"><div class="card-top"><span class="id">S41</span><h4>Still at the pool edge, water silk behind</h4></div><div class="frame">Vertical · full length · tripod · quarter second</div><div class="dir">You have to be genuinely still for this, so find something to lean on. The falls go to silk and you stay sharp. That contrast is the whole frame, and it is the only one on either list that needs a tripod in daylight.</div><div class="for"><b>For</b> Course page, the stillness section</div></button>
+            <button class="card" data-id="S42"><div class="card-top"><span class="id">S42</span><h4>In a shaft of light under the canopy</h4></div><div class="frame">Vertical · waist up · 85mm</div><div class="dir">Wait for the sun to break through the nikau. It comes and goes in seconds, so get set up and be ready rather than trying to find it. Face up into it, eyes closed.</div><div class="for"><b>For</b> Homepage warmth band, blog</div></button>
+            <button class="card" data-id="S43"><div class="card-top"><span class="id">S43</span><h4>Feet in the pool on the rock ledge</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">Sit on the ledge with your feet actually in it. It is cold and that will show on your face, which is fine, it is the honest version of a wellness photo.</div><div class="for"><b>For</b> Retreat page, blog</div></button>
+            <button class="card" data-id="S44"><div class="card-top"><span class="id">S44</span><h4>Wet hair pushed back</h4></div><div class="frame">Vertical · head and shoulders · 135mm wide open</div><div class="dir">Splash your face, push the cut straight back with both hands, water out of focus behind you. The wet version of the haircut, and it looks nothing like the wind version.</div><div class="for"><b>For</b> The cut, wet · social</div></button>
+            <button class="card" data-id="S45"><div class="card-top"><span class="id">S45</span><h4>Small on the track, huge ferns</h4></div><div class="frame">Horizontal · very wide · 24mm</div><div class="dir">Walking away up the track with punga ferns towering over you. Scale is the point, so get me a lot of fern and very little you.</div><div class="for"><b>For</b> Full bleed band with copy over</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D41"><div class="card-top"><span class="id">D41</span><h4>Both at the base, looking up</h4></div><div class="frame">Horizontal · very wide · 24mm</div><div class="dir">Stand together at the bottom of the falls and look up at it. Tiny people, enormous water. Do not look at me and do not look at each other.</div><div class="for"><b>For</b> Retreat hero, full bleed</div></button>
+            <button class="card" data-id="D42"><div class="card-top"><span class="id">D42</span><h4>He behind her, both facing the water</h4></div><div class="frame">Vertical · three quarter · 85mm</div><div class="dir">His arms round her from behind, both watching the falls. Shot from the side so it reads as two people sharing a view rather than a posed embrace.</div><div class="for"><b>For</b> Homepage, About us</div></button>
+            <button class="card" data-id="D43"><div class="card-top"><span class="id">D43</span><h4>Feet in, laughing at the cold</h4></div><div class="frame">Horizontal · full length · 35mm</div><div class="dir">Both on the ledge, feet in the pool, and it is genuinely freezing. Do not manage the reaction, just let me shoot it.</div><div class="for"><b>For</b> Social, events</div></button>
+            <button class="card" data-id="D44"><div class="card-top"><span class="id">D44</span><h4>Silhouetted in the fern tunnel</h4></div><div class="frame">Horizontal · full length · 50mm · exposed for the light beyond</div><div class="dir">Find the stretch of track where the ferns close over and there is bright green at the far end. Walk into it. You both go to shape against the light.</div><div class="for"><b>For</b> Dark section, quote background</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" data-block="10">
+      <div class="block-head">
+        <span class="block-num">Block 10</span>
+        <span class="block-time">3.45</span>
+        <h2>Mirror sand and the lagoon</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Sun getting lower and warmer, still well up. Side light across the flats.</div>
+        <div><b>Look</b> Rust or terracotta knit, cream trousers, bare feet, trousers rolled</div>
+        <div><b>Note</b> Low water has just turned, so the flats are as wide as they get today</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S46"><div class="card-top"><span class="id">S46</span><h4>Standing in the stream cut</h4></div><div class="frame">Vertical · full length · 50mm</div><div class="dir">Where the lagoon stream cuts across the beach, stand in the middle of it with the water running round your ankles. Moving water at your feet, still everything else.</div><div class="for"><b>For</b> Course page, quiz opt in</div></button>
+            <button class="card" data-id="S47"><div class="card-top"><span class="id">S47</span><h4>The compressed reflection</h4></div><div class="frame">Horizontal · full length · 135mm · camera very low</div><div class="dir">Same reflection idea as S6 but from a long way back with the long lens, so you and the mirrored you stack up tight in the middle of a huge flat plane. Very different picture from the wide version.</div><div class="for"><b>For</b> Hero banner, art frame</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D45"><div class="card-top"><span class="id">D45</span><h4>Palm to palm, both reflected</h4></div><div class="frame">Vertical · full length · symmetrical · low camera</div><div class="dir">Facing each other, hands up and pressed palm to palm, both of you doubled in the water underneath. Keep a gap between your bodies so the shape stays clean.</div><div class="for"><b>For</b> Therapy page, intensives</div></button>
+            <button class="card" data-id="D46"><div class="card-top"><span class="id">D46</span><h4>Single file up the stream cut</h4></div><div class="frame">Horizontal · full length · 85mm</div><div class="dir">Walking up the middle of the stream, you first, him following, both watching your footing. Nobody performing, two reflections trailing.</div><div class="for"><b>For</b> Wanaka retreat, homepage</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" data-block="11">
+      <div class="block-head">
+        <span class="block-num">Block 11</span>
+        <span class="block-time">4.45</span>
+        <h2>The long sweep, low sun</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> The good hour. Long, warm, low, with spray haze doing the diffusion.</div>
+        <div><b>Look</b> As block 10, coats to hand for the moment it turns cold</div>
+        <div><b>Lens</b> 135mm for almost everything, 24mm for the shadow frames</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S48"><div class="card-top"><span class="id">S48</span><h4>Your own shadow, thirty feet long</h4></div><div class="frame">Horizontal · very wide · 24mm · camera held high</div><div class="dir">Late sun throws a shadow far longer than you are tall. Compose for the shadow as the subject, with you small at the top of the frame. Odd, graphic, and nothing else on the list looks like it.</div><div class="for"><b>For</b> Blog, art frame, social</div></button>
+            <button class="card" data-id="S49"><div class="card-top"><span class="id">S49</span><h4>Hair as a halo of gold wire</h4></div><div class="frame">Vertical · head and shoulders · 135mm</div><div class="dir">Sun directly behind your head, exposed for the face so the cut lights up as a rim of gold all round. This is the frame that makes short hair look like a decision rather than a change.</div><div class="for"><b>For</b> Course hero, podcast art</div></button>
+            <button class="card" data-id="S50"><div class="card-top"><span class="id">S50</span><h4>Walking away, looking back</h4></div><div class="frame">Vertical · full length · 135mm</div><div class="dir">Coat open and moving, walking away from me, then turn and look back over the shoulder without stopping. Six or seven goes, it is a hard one to get right.</div><div class="for"><b>For</b> Homepage portrait, For Her hero</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D47"><div class="card-top"><span class="id">D47</span><h4>Two shadows merging</h4></div><div class="frame">Horizontal · very wide · 24mm · camera high</div><div class="dir">Stand a little apart and let the two long shadows overlap on the sand. Bodies right at the top of the frame, shadows filling the rest. A picture about two people becoming one shape without a single face in it.</div><div class="for"><b>For</b> Therapy page, dark band, quote background</div></button>
+            <button class="card" data-id="D48"><div class="card-top"><span class="id">D48</span><h4>He photographs her on his phone</h4></div><div class="frame">Horizontal · waist up · 85mm</div><div class="dir">Exactly what couples actually do on a beach. He takes a photo, you laugh at him taking it, I photograph both of you. The most honest frame in the session.</div><div class="for"><b>For</b> Social, About us, email</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" data-block="12">
+      <div class="block-head">
+        <span class="block-num">Block 12</span>
+        <span class="block-time">5.20</span>
+        <h2>Sunset</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Forty minutes, and it changes every five. Sunset 5.57.</div>
+        <div><b>Look</b> Dark coats on. Head to toe dark is correct from here.</div>
+        <div><b>Note</b> Be in position at 5.20, not walking toward it. Shoot fast, review later.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S51"><div class="card-top"><span class="id">S51</span><h4>Ankle deep in orange foam</h4></div><div class="frame">Horizontal · full length · 85mm</div><div class="dir">Standing in the last of the shorebreak with the whole surface of the water gone orange around you. Ankle depth and no further, and keep facing the sea so nothing surprises you.</div><div class="for"><b>For</b> Closing band, retreat page</div></button>
+            <button class="card" data-id="S52"><div class="card-top"><span class="id">S52</span><h4>Profile with the sun beside your face</h4></div><div class="frame">Vertical · head and shoulders · 135mm or longer</div><div class="dir">Line yourself up so the sun sits just beside your cheek on the horizon, like a full stop next to the profile. Move a step at a time until it lands, and shoot in the last five minutes when the disc is soft enough to look at.</div><div class="for"><b>For</b> Podcast cover, press</div></button>
+            <button class="card" data-id="S53"><div class="card-top"><span class="id">S53</span><h4>Sitting, watching it go</h4></div><div class="frame">Horizontal · very wide · 35mm · from behind</div><div class="dir">Sit down on the sand and watch it, small in a very big frame. No direction beyond that. It is the last quiet frame of the day and it should look like nobody asked you to do it.</div><div class="for"><b>For</b> Footer, closing band, email</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D49"><div class="card-top"><span class="id">D49</span><h4>He lifts her hand, she turns under it</h4></div><div class="frame">Horizontal · full length · silhouette</div><div class="dir">The shape of a slow dance rather than an actual one. He raises a hand, you turn underneath it. Keep it slow so the silhouette stays readable, and keep daylight between your bodies.</div><div class="for"><b>For</b> Events, retreat, homepage</div></button>
+            <button class="card" data-id="D50"><div class="card-top"><span class="id">D50</span><h4>Flat on your backs, heads together</h4></div><div class="frame">Horizontal · from directly above · 35mm</div><div class="dir">Both lying on the sand, crowns of your heads almost touching, bodies going opposite ways. I shoot straight down with the last colour in the sky reflected on your faces. Bring the towel to lie on.</div><div class="for"><b>For</b> About us, course cross sell, social</div></button>
+            <button class="card" data-id="D51"><div class="card-top"><span class="id">D51</span><h4>The kiss, in full silhouette</h4></div><div class="frame">Horizontal · full length · waterline · exposed for sky</div><div class="dir">This is where the actual kiss goes, and nowhere earlier. In silhouette it reads as shape and privacy. In daylight it reads as an engagement shoot. Same picture, completely different meaning.</div><div class="for"><b>For</b> Homepage hero, the tender one</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" data-block="13">
+      <div class="block-head">
+        <span class="block-num">Block 13</span>
+        <span class="block-time">6.05</span>
+        <h2>Blue hour and torchlight</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Deep blue ambient falling fast, plus one warm torch you control</div>
+        <div><b>Look</b> Coats and the blanket. Whatever is warm.</div>
+        <div><b>Kit</b> Tripod up, torch on, low ISO. Mark holds the light at 45 degrees.</div>
+      </div>
+      <div class="lanes">
+        <div class="lane lane-solo">
+          <div class="lane-head">Just you</div>
+          <div class="cards">
+            <button class="card" data-id="S54"><div class="card-top"><span class="id">S54</span><h4>Torch lit against deep blue</h4></div><div class="frame">Vertical · chest up · 85mm · warm light from camera left</div><div class="dir">Everything behind you goes cold blue and your face stays warm. Mark holds the torch out to the side and slightly above, never straight on. Move it around until the shadow under the cheekbone looks right.</div><div class="for"><b>For</b> Podcast cover, the moody portrait</div></button>
+            <button class="card" data-id="S55"><div class="card-top"><span class="id">S55</span><h4>Two seconds, the sea gone to mist</h4></div><div class="frame">Vertical · full length · tripod · two seconds</div><div class="dir">You stand completely still while the water blurs to smoke around you. Brace against something and hold your breath through the exposure. Expect to bin half of them, the keepers are worth it.</div><div class="for"><b>For</b> Art frame, dark section, blog</div></button>
+          </div>
+        </div>
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D52"><div class="card-top"><span class="id">D52</span><h4>Torch low between you, everything else blue</h4></div><div class="frame">Horizontal · waist up · 50mm</div><div class="dir">Both inside the blanket with the torch held low between your chests, lighting the two faces from underneath and nothing else. Warm faces in a cold world, which is the entire brand in one frame.</div><div class="for"><b>For</b> Newsletter, retreat, homepage</div></button>
+            <button class="card" data-id="D53"><div class="card-top"><span class="id">D53</span><h4>Four seconds, both still</h4></div><div class="frame">Horizontal · full length · tripod · four seconds</div><div class="dir">Both of you holding still while the sea turns to smoke behind. Lean into each other, it makes staying still much easier. Count it out loud so you both know when it ends.</div><div class="for"><b>For</b> Full bleed band, retreat page</div></button>
+            <button class="card" data-id="D54"><div class="card-top"><span class="id">D54</span><h4>Walking off with the torch beam showing</h4></div><div class="frame">Horizontal · full length · one second · tripod</div><div class="dir">Walking away up the beach with the torch on, so the beam draws a line through the frame. Slow shutter so the light streaks and you both go soft. Last frame on the sand.</div><div class="for"><b>For</b> Footer, closing band</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" data-block="14">
+      <div class="block-head">
+        <span class="block-num">Block 14</span>
+        <span class="block-time">6.30</span>
+        <h2>Headlights, then stop</h2>
+        <span class="block-prog"></span>
+      </div>
+      <div class="block-meta">
+        <div><b>Light</b> Car headlights as the only source. Everything outside the beam is black.</div>
+        <div><b>Look</b> Coats, blanket, thermos, cold hands</div>
+        <div><b>Note</b> One frame. Then heater on and go and get dinner.</div>
+      </div>
+      <div class="lanes" style="grid-template-columns:1fr; max-width:34rem">
+        <div class="lane lane-duo">
+          <div class="lane-head">You and Mark</div>
+          <div class="cards">
+            <button class="card" data-id="D55"><div class="card-top"><span class="id">D55</span><h4>Leaning on the car in the headlights</h4></div><div class="frame">Horizontal · waist up · 50mm · lit by headlights only</div><div class="dir">Both leaning on the bonnet with the lights on, steam coming off the thermos, nothing visible behind you but black. Cold, tired, done, and it will be one of the warmest pictures of the day.</div><div class="for"><b>For</b> About us, social, the closing frame</div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Carried over</p>
+      <h2>What session one left on the table</h2>
+      <p>Slot these into the blocks above as the runsheet indicates. If the morning went to plan you will already have most of the first two rows, so check before you re-shoot.</p>
+    </div>
+    <div class="index-wrap">
+      <table>
+        <thead>
+          <tr><th>Block it belongs in</th><th>Solo</th><th>Together</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Block 9, the falls and bush</td><td class="codes">S1, S2, S3, S4, S5</td><td class="codes">D1, D2, D3, D4, D5</td></tr>
+          <tr><td>Block 10, mirror sand</td><td class="codes">S6, S7, S8, S9, S10, S11</td><td class="codes">D6, D7, D8, D9, D10, D11</td></tr>
+          <tr><td>Block 11, the long sweep</td><td class="codes">S30, S31, S32, S33, S34</td><td class="codes">D29, D30, D31, D32, D33, D34</td></tr>
+          <tr><td>Block 12, sunset</td><td class="codes">S35, S36, S37, S38, S39</td><td class="codes">D35, D36, D37, D38, D39</td></tr>
+          <tr><td>Block 13, blue hour</td><td class="codes">S40</td><td class="codes">D40</td></tr>
+          <tr><td>Anywhere, if not already shot</td><td class="codes">S12 to S29</td><td class="codes">D12 to D28</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">The rock block, S12 to S17 and D12 to D17, needs a falling tide and should not be attempted late in this session. If it is still outstanding, do it at the start of a third trip rather than squeezing it in here.</p>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">If the light collapses</p>
+      <h2>The eight frames this session exists for</h2>
+      <p>Grey sky, a squall, a late start. Get these and the trip has paid for itself.</p>
+    </div>
+    <ul>
+      <li><strong>D37</strong> foreheads together with the sun burning between your chests. The signature couple frame, and it has been outstanding since day one.</li>
+      <li><strong>S39</strong> the last orange light on your face. The strongest solo portrait available anywhere on either list.</li>
+      <li><strong>S49</strong> the hair halo. The frame that makes the haircut look like a decision.</li>
+      <li><strong>D51</strong> the kiss in silhouette. The only place on the whole list where an actual kiss works.</li>
+      <li><strong>D47</strong> two long shadows merging. No faces, and it says more about the work than most of the portraits do.</li>
+      <li><strong>S53</strong> sitting watching it go. Your closing band and your footer, in one honest frame.</li>
+      <li><strong>D52</strong> torch low between you in the blue. Warm faces in a cold world.</li>
+      <li><strong>S41</strong> still at the falls with the water gone to silk. The only frame on either list that could not be taken on a beach.</li>
+    </ul>
+    <p class="tbl-note" style="color:var(--band-ink-soft); max-width:64ch; margin-top:1.5rem">Flat grey does not kill this session, it just moves the weight. Cloud ruins the sunset block and improves the falls, the mirror sand and the blue hour, all three of which work better without hard sun. Only rain heavy enough to threaten the camera is worth turning back for.</p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var KEY = "piha-shots-pm-v1";
+  var done = new Set();
+  try{
+    var saved = localStorage.getItem(KEY);
+    if(saved){ JSON.parse(saved).forEach(function(id){ done.add(id); }); }
+  }catch(e){}
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".card"));
+  var countEl = document.getElementById("count");
+  var TOTAL = cards.length;
+
+  function save(){
+    try{ localStorage.setItem(KEY, JSON.stringify(Array.from(done))); }catch(e){}
+  }
+
+  function paintCounts(){
+    countEl.innerHTML = "<b>" + done.size + "</b> of " + TOTAL + " captured";
+    Array.prototype.forEach.call(document.querySelectorAll(".block"), function(block){
+      var all = block.querySelectorAll(".card");
+      var n = 0;
+      Array.prototype.forEach.call(all, function(c){ if(c.classList.contains("done")) n++; });
+      block.querySelector(".block-prog").textContent = n + " / " + all.length;
+    });
+  }
+
+  cards.forEach(function(card){
+    var id = card.getAttribute("data-id");
+    if(done.has(id)) card.classList.add("done");
+    card.setAttribute("aria-pressed", done.has(id) ? "true" : "false");
+    card.addEventListener("click", function(){
+      if(done.has(id)){ done.delete(id); card.classList.remove("done"); card.setAttribute("aria-pressed","false"); }
+      else { done.add(id); card.classList.add("done"); card.setAttribute("aria-pressed","true"); }
+      save(); paintCounts();
+    });
+  });
+
+  document.getElementById("reset").addEventListener("click", function(){
+    done.clear();
+    cards.forEach(function(c){ c.classList.remove("done"); c.setAttribute("aria-pressed","false"); });
+    save(); paintCounts();
+  });
+
+  var btns = Array.prototype.slice.call(document.querySelectorAll(".filters button"));
+  btns.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var f = btn.getAttribute("data-filter");
+      btns.forEach(function(b){ b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+      document.body.classList.remove("only-solo","only-duo");
+      if(f === "solo") document.body.classList.add("only-solo");
+      if(f === "duo") document.body.classList.add("only-duo");
+    });
+  });
+
+  paintCounts();
+})();
+</script>
