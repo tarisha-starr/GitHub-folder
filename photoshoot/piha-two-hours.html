@@ -133,7 +133,7 @@ section{padding:clamp(2.75rem,6vw,4.5rem) 0}
 .prose em{color:var(--terracotta-ink)}
 
 .notes{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:3px; overflow:hidden}
-@media (min-width:760px){.notes{grid-template-columns:1fr 1fr}}
+
 .note{background:var(--surface-2); padding:1.35rem 1.5rem; display:flex; flex-direction:column; gap:.45rem}
 .note h3{font-size:1.06rem; letter-spacing:.01em}
 .note p{color:var(--ink-soft); font-size:.95rem; line-height:1.6}
@@ -278,7 +278,7 @@ td.codes{font-family:"Barlow Condensed",sans-serif; font-weight:500; letter-spac
   section{padding:6mm 0 0}
   .section-head{margin-bottom:4mm}
   .section-head h2{font-size:15pt}
-  .prose{max-width:100%; columns:2; column-gap:8mm; font-size:8.6pt}
+  .prose{max-width:100%; font-size:8.6pt}
   .prose p + p{margin-top:0; text-indent:1.2em}
 
   .today-sec{break-after:page; background:#fff; border:0}
@@ -289,7 +289,7 @@ td.codes{font-family:"Barlow Condensed",sans-serif; font-weight:500; letter-spac
   .rw{font-size:8.4pt}
   .rw b{font-size:8.4pt; letter-spacing:.03em}
 
-  .notes{border:0; background:transparent; gap:2mm; grid-template-columns:1fr 1fr}
+  .notes{border:0; background:transparent; gap:2mm; grid-template-columns:1fr}
   .section-head{break-before:auto; break-after:avoid}
   .prose{break-after:column}
   .note{padding:3mm 4mm; break-inside:avoid; background:#fff; border:.5pt solid #C9BFAC}
@@ -341,8 +341,7 @@ td.codes{font-family:"Barlow Condensed",sans-serif; font-weight:500; letter-spac
 @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 
 /* one purpose per hour, so cards go in a plain grid rather than lanes */
-.grid8{display:grid; gap:.6rem}
-@media (min-width:820px){.grid8{grid-template-columns:1fr 1fr; gap:.6rem .9rem}}
+.grid8{display:grid; grid-template-columns:1fr; gap:.6rem; max-width:52rem}
 .hour-band{background:var(--band); color:var(--band-ink); padding:clamp(2rem,4vw,2.75rem) 0; margin-top:2.5rem}
 .hour-band h2{color:var(--band-ink); font-size:clamp(1.9rem,4vw,2.8rem)}
 .hour-band .eyebrow{color:var(--gold-line)}
@@ -357,11 +356,13 @@ body.only-h1 .hour2, body.only-h2 .hour1{display:none}
   .hour-band{background:#fff; color:#1A1713; border-top:1.5pt solid #1A1713; border-bottom:.5pt solid #C9BFAC; padding:4mm 0; margin-top:0; break-before:page}
   .hour-band h2{color:#1A1713; font-size:18pt}
   .hour-band p{color:#3B352C; font-size:8.6pt}
-  .station{break-inside:avoid; border-top:.5pt solid #C9BFAC; padding-top:2.5mm; margin-top:4mm}
+  .station{break-inside:auto; border-top:.5pt solid #C9BFAC; padding-top:2.5mm; margin-top:4mm}
+  .station-head{break-after:avoid}
+  .station-sub{break-after:avoid}
   .station-clock{font-size:12pt}
   .station-head h3{font-size:12pt}
   .station-sub{font-size:8.2pt; margin-bottom:2.5mm}
-  .grid8{grid-template-columns:1fr 1fr !important; gap:2mm}
+  .grid8{grid-template-columns:1fr !important; gap:1.8mm; max-width:100%}
 }
 </style>
 <header class="mast">
