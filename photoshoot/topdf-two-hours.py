@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 import pathlib
-src = pathlib.Path("piha.html").resolve()
-out = pathlib.Path("Piha-shot-list.pdf").resolve()
+src = pathlib.Path("piha-two-hours.html").resolve()
+out = pathlib.Path("Piha-two-hours.pdf").resolve()
 chrome = "/opt/pw-browsers/chromium"
 with sync_playwright() as pw:
     b = pw.chromium.launch(executable_path=chrome if pathlib.Path(chrome).exists() else None)
@@ -19,7 +19,7 @@ with sync_playwright() as pw:
         footer_template=(
             "<div style='width:100%;font-family:Georgia,serif;font-size:7pt;color:#6B6255;"
             "padding:0 11mm;display:flex;justify-content:space-between;'>"
-            "<span>Piha shot list &middot; 26 August</span>"
+            "<span>Piha, two hours</span>"
             "<span class='pageNumber'></span></div>"
         ),
         margin={"top":"13mm","bottom":"13mm","left":"11mm","right":"11mm"},
