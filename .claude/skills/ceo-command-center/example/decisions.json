@@ -1,0 +1,60 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "decisions": [
+    {
+      "date": "2026-05-06",
+      "decision": "Raise the Intensive from 1800 to 2400",
+      "owner": "Tarisha",
+      "supporting_data": "Sold out three months running at 1800, 4.8 satisfaction",
+      "expected_outcome": "Same volume, a third more revenue per client",
+      "review_date": "2026-08-06",
+      "status": "closed",
+      "result": "Volume held at five a month, revenue per client up 33 percent",
+      "verdict": "worked"
+    },
+    {
+      "date": "2026-06-15",
+      "decision": "Keep Google search ads running through winter",
+      "owner": "Sam",
+      "supporting_data": "Cheapest cost per lead in April",
+      "expected_outcome": "Steady low-cost leads through the quiet months",
+      "review_date": "2026-08-15",
+      "status": "reviewing",
+      "result": "Cost per lead has tripled since April and one client came from it",
+      "verdict": "did_not_work"
+    },
+    {
+      "date": "2026-07-02",
+      "decision": "Move membership onboarding to a live welcome call",
+      "owner": "Sam",
+      "supporting_data": "Churn concentrated in the first 60 days",
+      "expected_outcome": "Fewer first-quarter cancellations",
+      "review_date": "2026-09-02",
+      "status": "open",
+      "result": "",
+      "verdict": null
+    },
+    {
+      "date": "2026-07-20",
+      "decision": "Book the retreat venue for twelve rather than six",
+      "owner": "Tarisha",
+      "supporting_data": "Waitlist of nine for the last one",
+      "expected_outcome": "Twelve seats sold, better cost per head",
+      "review_date": "2026-08-20",
+      "status": "reviewing",
+      "result": "Six sold. Fixed cost is now carried by half the seats",
+      "verdict": "did_not_work"
+    },
+    {
+      "date": "2026-08-11",
+      "decision": "Hand the daily image posts to the scheduler agent",
+      "owner": "Tarisha",
+      "supporting_data": "Four hours a week spent on manual scheduling",
+      "expected_outcome": "Four hours back, no drop in engagement",
+      "review_date": "2026-09-11",
+      "status": "open",
+      "result": "",
+      "verdict": null
+    }
+  ]
+}

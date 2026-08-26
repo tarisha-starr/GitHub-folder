@@ -1,0 +1,135 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "follow_up_days": 7,
+  "stage_weights": {
+    "new": 0.1,
+    "qualified": 0.25,
+    "proposal": 0.5,
+    "negotiation": 0.75,
+    "won": 1.0,
+    "lost": 0.0
+  },
+  "leads": [
+    {
+      "name": "M. Whitiora",
+      "source": "Podcast",
+      "offer": "Couples Intensive",
+      "stage": "negotiation",
+      "value": 2400,
+      "expected_close": "2026-09-04",
+      "last_touch": "2026-08-24",
+      "owner": "Tarisha",
+      "next_step": "Send payment link"
+    },
+    {
+      "name": "J. and P. Kerr",
+      "source": "Referral",
+      "offer": "Couples Intensive",
+      "stage": "proposal",
+      "value": 2400,
+      "expected_close": "2026-09-12",
+      "last_touch": "2026-08-21",
+      "owner": "Tarisha",
+      "next_step": "Answer the scheduling question"
+    },
+    {
+      "name": "A. Devlin",
+      "source": "Instagram",
+      "offer": "Multiply, AI for Business",
+      "stage": "qualified",
+      "value": 1200,
+      "expected_close": "2026-09-18",
+      "last_touch": "2026-08-09",
+      "owner": "Sam",
+      "next_step": "Book the fit call"
+    },
+    {
+      "name": "R. Osei",
+      "source": "Meta ads",
+      "offer": "Multiply, AI for Business",
+      "stage": "new",
+      "value": 1200,
+      "expected_close": "2026-10-01",
+      "last_touch": "2026-08-25",
+      "owner": "Sam",
+      "next_step": "Send the intro sequence"
+    },
+    {
+      "name": "L. Brennan",
+      "source": "Email list",
+      "offer": "Weekend Retreat",
+      "stage": "proposal",
+      "value": 890,
+      "expected_close": "2026-09-06",
+      "last_touch": "2026-08-05",
+      "owner": "Sam",
+      "next_step": "Follow up on the deposit"
+    },
+    {
+      "name": "T. Ngata",
+      "source": "Referral",
+      "offer": "Weekend Retreat",
+      "stage": "qualified",
+      "value": 890,
+      "expected_close": "2026-09-20",
+      "last_touch": "2026-08-22",
+      "owner": "Sam",
+      "next_step": "Send the retreat outline"
+    },
+    {
+      "name": "C. Mullen",
+      "source": "Podcast",
+      "offer": "Couples Intensive",
+      "stage": "new",
+      "value": 2400,
+      "expected_close": "2026-10-10",
+      "last_touch": "2026-08-02",
+      "owner": "Tarisha",
+      "next_step": "Reply to her voice note"
+    },
+    {
+      "name": "S. Halloran",
+      "source": "Google search",
+      "offer": "Radiant Woman Membership",
+      "stage": "lost",
+      "value": 564,
+      "expected_close": "2026-08-15",
+      "last_touch": "2026-08-15",
+      "owner": "Sam",
+      "next_step": "Nothing. Priced out."
+    },
+    {
+      "name": "D. Ferreira",
+      "source": "Instagram",
+      "offer": "Couples Intensive",
+      "stage": "won",
+      "value": 2400,
+      "expected_close": "2026-08-18",
+      "last_touch": "2026-08-18",
+      "owner": "Tarisha",
+      "next_step": "Onboarding sent"
+    },
+    {
+      "name": "K. Adeyemi",
+      "source": "Referral",
+      "offer": "Multiply, AI for Business",
+      "stage": "negotiation",
+      "value": 1200,
+      "expected_close": "2026-09-09",
+      "last_touch": "2026-08-26",
+      "owner": "Sam",
+      "next_step": "Confirm the payment plan"
+    },
+    {
+      "name": "H. Vasquez",
+      "source": "Email list",
+      "offer": "Radiant Woman Membership",
+      "stage": "qualified",
+      "value": 564,
+      "expected_close": "2026-09-02",
+      "last_touch": "2026-07-29",
+      "owner": "Sam",
+      "next_step": "She asked twice about the pause option"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "_help": {
+    "status": "active, paused, or retired.",
+    "responsibilities": "What the agent owns end to end.",
+    "current_assignment": "What it is working on right now.",
+    "approvals_needed": "Things waiting on a human. urgency is high, medium, or low.",
+    "quality": "rating out of 5 from your own review, reviews is how many outputs you checked, rework_rate is the share you had to redo.",
+    "time_saved_hours_week": "Your honest estimate of hours a week this agent gives back.",
+    "activity": "Recent runs, newest last.",
+    "rework_threshold": "Rework above this share means the agent needs attention."
+  },
+  "rework_threshold": 0.25,
+  "agents": [
+    {
+      "name": "",
+      "status": "active",
+      "responsibilities": [],
+      "current_assignment": "",
+      "approvals_needed": [
+        {
+          "item": "",
+          "requested": "2026-01-01",
+          "urgency": "medium"
+        }
+      ],
+      "quality": {
+        "rating": 0,
+        "scale": 5,
+        "reviews": 0,
+        "rework_rate": 0
+      },
+      "time_saved_hours_week": 0,
+      "activity": [
+        {
+          "date": "2026-01-01",
+          "summary": "",
+          "outcome": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "weeks": [
+    {
+      "week_of": "2026-08-17",
+      "wins": [
+        "Two intensives closed off the back of one podcast episode",
+        "Membership retention held steady after the welcome call change"
+      ],
+      "concerns": [
+        "Retreat seats are not moving",
+        "Cash collected is falling behind invoiced revenue"
+      ],
+      "surprises": [
+        "The quiet ad creative beat the polished one"
+      ],
+      "priorities": [
+        "Decide on the retreat before the venue deposit is non-refundable"
+      ]
+    },
+    {
+      "week_of": "2026-08-24",
+      "wins": [
+        "Best week of the month for referrals"
+      ],
+      "concerns": [
+        "Expenses are up for the third month running",
+        "Two membership cancellations in one week"
+      ],
+      "surprises": [
+        "A lead who went quiet in June came back and closed"
+      ],
+      "priorities": [
+        "Kill or fix Google search ads",
+        "Get G. Marsh booked in before she asks for a refund"
+      ]
+    }
+  ]
+}

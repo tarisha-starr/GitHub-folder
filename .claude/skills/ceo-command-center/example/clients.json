@@ -1,0 +1,129 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "onboarding_days": 14,
+  "quiet_days": 21,
+  "clients": [
+    {
+      "name": "D. Ferreira",
+      "offer": "Couples Intensive",
+      "status": "onboarding",
+      "value": 2400,
+      "start_date": "2026-08-18",
+      "renewal_date": null,
+      "last_engagement": "2026-08-24",
+      "engagement": 70,
+      "owner": "Tarisha",
+      "notes": "Intake form returned, first session not booked."
+    },
+    {
+      "name": "G. Marsh",
+      "offer": "Couples Intensive",
+      "status": "onboarding",
+      "value": 2400,
+      "start_date": "2026-07-28",
+      "renewal_date": null,
+      "last_engagement": "2026-08-01",
+      "engagement": 20,
+      "owner": "Tarisha",
+      "notes": "Paid a month ago, still has not booked. Two emails unanswered."
+    },
+    {
+      "name": "N. Kapoor",
+      "offer": "Radiant Woman Membership",
+      "status": "active",
+      "value": 47,
+      "start_date": "2026-02-11",
+      "renewal_date": "2026-09-11",
+      "last_engagement": "2026-08-25",
+      "engagement": 88,
+      "owner": "Sam",
+      "notes": ""
+    },
+    {
+      "name": "B. Toomey",
+      "offer": "Radiant Woman Membership",
+      "status": "at_risk",
+      "value": 47,
+      "start_date": "2026-01-20",
+      "renewal_date": "2026-09-20",
+      "last_engagement": "2026-07-14",
+      "engagement": 12,
+      "owner": "Sam",
+      "notes": "Has not opened a lesson since June."
+    },
+    {
+      "name": "F. Oyelaran",
+      "offer": "Multiply, AI for Business",
+      "status": "active",
+      "value": 1200,
+      "start_date": "2026-06-02",
+      "renewal_date": "2026-12-02",
+      "last_engagement": "2026-08-26",
+      "engagement": 92,
+      "owner": "Sam",
+      "notes": "Asked about the advanced track."
+    },
+    {
+      "name": "E. Rahim",
+      "offer": "Multiply, AI for Business",
+      "status": "renewing",
+      "value": 1200,
+      "start_date": "2026-03-15",
+      "renewal_date": "2026-09-15",
+      "last_engagement": "2026-08-19",
+      "engagement": 64,
+      "owner": "Sam",
+      "notes": "Renewal conversation not started."
+    },
+    {
+      "name": "P. Lindqvist",
+      "offer": "Radiant Woman Membership",
+      "status": "active",
+      "value": 47,
+      "start_date": "2026-04-08",
+      "renewal_date": "2026-10-08",
+      "last_engagement": "2026-08-20",
+      "engagement": 71,
+      "owner": "Sam",
+      "notes": ""
+    },
+    {
+      "name": "W. Achterberg",
+      "offer": "Couples Intensive",
+      "status": "active",
+      "value": 2400,
+      "start_date": "2026-05-30",
+      "renewal_date": null,
+      "last_engagement": "2026-08-12",
+      "engagement": 55,
+      "owner": "Tarisha",
+      "notes": "Two sessions left."
+    },
+    {
+      "name": "C. Nkemelu",
+      "offer": "Radiant Woman Membership",
+      "status": "churned",
+      "value": 47,
+      "start_date": "2026-02-03",
+      "renewal_date": null,
+      "last_engagement": "2026-08-04",
+      "engagement": 8,
+      "owner": "Sam",
+      "notes": "Cancelled on the 4th. Said the content was good but she never made time.",
+      "churned_on": "2026-08-04"
+    },
+    {
+      "name": "J. Ruatara",
+      "offer": "Radiant Woman Membership",
+      "status": "churned",
+      "value": 47,
+      "start_date": "2026-05-19",
+      "renewal_date": null,
+      "last_engagement": "2026-08-09",
+      "engagement": 15,
+      "owner": "Sam",
+      "notes": "Cancelled after three months, no reason given.",
+      "churned_on": "2026-08-09"
+    }
+  ]
+}

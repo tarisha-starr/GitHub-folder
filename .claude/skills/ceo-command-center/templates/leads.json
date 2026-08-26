@@ -1,0 +1,32 @@
+{
+  "_help": {
+    "stage": "One of the keys in stage_weights.",
+    "stage_weights": "Probability each stage closes. Override to match your own close rates.",
+    "value": "Full value of the deal if it closes.",
+    "expected_close": "YYYY-MM-DD. Drives the forecast.",
+    "last_touch": "YYYY-MM-DD of the last contact. Drives follow-up status.",
+    "follow_up_days": "Days of silence before a lead counts as overdue."
+  },
+  "follow_up_days": 7,
+  "stage_weights": {
+    "new": 0.1,
+    "qualified": 0.25,
+    "proposal": 0.5,
+    "negotiation": 0.75,
+    "won": 1.0,
+    "lost": 0.0
+  },
+  "leads": [
+    {
+      "name": "",
+      "source": "",
+      "offer": "",
+      "stage": "new",
+      "value": 0,
+      "expected_close": "2026-02-01",
+      "last_touch": "2026-01-01",
+      "owner": "",
+      "next_step": ""
+    }
+  ]
+}

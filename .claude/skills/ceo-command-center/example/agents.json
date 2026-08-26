@@ -1,0 +1,140 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "rework_threshold": 0.25,
+  "agents": [
+    {
+      "name": "Daily post scheduler",
+      "status": "active",
+      "responsibilities": [
+        "Pick the day's image post",
+        "Send the brief",
+        "Queue it in Buffer"
+      ],
+      "current_assignment": "Running the August image post sequence",
+      "approvals_needed": [],
+      "quality": {
+        "rating": 4.7,
+        "scale": 5,
+        "reviews": 24,
+        "rework_rate": 0.08
+      },
+      "time_saved_hours_week": 4,
+      "activity": [
+        {
+          "date": "2026-08-24",
+          "summary": "Queued post 22",
+          "outcome": "Published"
+        },
+        {
+          "date": "2026-08-25",
+          "summary": "Queued post 23",
+          "outcome": "Published"
+        },
+        {
+          "date": "2026-08-26",
+          "summary": "Queued post 24",
+          "outcome": "Published"
+        }
+      ]
+    },
+    {
+      "name": "Outlier researcher",
+      "status": "active",
+      "responsibilities": [
+        "Find outlier videos in the niche",
+        "Log them to the outlier sheet"
+      ],
+      "current_assignment": "Weekly sweep across four platforms",
+      "approvals_needed": [
+        {
+          "item": "Twelve derivative hooks ready for review",
+          "requested": "2026-08-22",
+          "urgency": "medium"
+        }
+      ],
+      "quality": {
+        "rating": 4.2,
+        "scale": 5,
+        "reviews": 16,
+        "rework_rate": 0.19
+      },
+      "time_saved_hours_week": 6,
+      "activity": [
+        {
+          "date": "2026-08-19",
+          "summary": "Added 14 outliers",
+          "outcome": "Logged"
+        },
+        {
+          "date": "2026-08-26",
+          "summary": "Added 11 outliers, 3 duplicates",
+          "outcome": "Logged with dedupe"
+        }
+      ]
+    },
+    {
+      "name": "Podcast outreach",
+      "status": "active",
+      "responsibilities": [
+        "Source guests",
+        "Draft the first email",
+        "Triage incoming pitches"
+      ],
+      "current_assignment": "Filling the October and November slots",
+      "approvals_needed": [
+        {
+          "item": "Three guest drafts waiting to send",
+          "requested": "2026-08-25",
+          "urgency": "high"
+        },
+        {
+          "item": "Decline template for off-topic pitches",
+          "requested": "2026-08-12",
+          "urgency": "low"
+        }
+      ],
+      "quality": {
+        "rating": 3.8,
+        "scale": 5,
+        "reviews": 11,
+        "rework_rate": 0.36
+      },
+      "time_saved_hours_week": 3,
+      "activity": [
+        {
+          "date": "2026-08-20",
+          "summary": "Drafted 5 outreach emails",
+          "outcome": "2 sent, 3 rewritten"
+        },
+        {
+          "date": "2026-08-25",
+          "summary": "Drafted 3 outreach emails",
+          "outcome": "Waiting on approval"
+        }
+      ]
+    },
+    {
+      "name": "Infographic renderer",
+      "status": "paused",
+      "responsibilities": [
+        "Render infographics from structured content"
+      ],
+      "current_assignment": "Paused while the brand palette is being redone",
+      "approvals_needed": [],
+      "quality": {
+        "rating": 4.5,
+        "scale": 5,
+        "reviews": 30,
+        "rework_rate": 0.1
+      },
+      "time_saved_hours_week": 0,
+      "activity": [
+        {
+          "date": "2026-07-30",
+          "summary": "Rendered 8 infographics",
+          "outcome": "Shipped"
+        }
+      ]
+    }
+  ]
+}

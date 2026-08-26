@@ -1,0 +1,32 @@
+{
+  "_help": {
+    "currency": "ISO code used for every money field in every file.",
+    "months": "One row per calendar month, oldest first, month as YYYY-MM.",
+    "revenue": "Invoiced or booked revenue for the month.",
+    "cash_collected": "Money that actually landed in the account.",
+    "expenses": "Everything paid out, including contractors and ads.",
+    "recurring_revenue": "The part of revenue that repeats next month.",
+    "new_customers": "First-time buyers in the month.",
+    "cash_on_hand": "Bank balance on the day you updated this file.",
+    "committed_future_revenue": "Signed but undelivered work, by month."
+  },
+  "currency": "NZD",
+  "cash_on_hand": 0,
+  "months": [
+    {
+      "month": "2026-01",
+      "revenue": 0,
+      "cash_collected": 0,
+      "expenses": 0,
+      "recurring_revenue": 0,
+      "new_customers": 0
+    }
+  ],
+  "committed_future_revenue": [
+    {
+      "month": "2026-02",
+      "amount": 0,
+      "note": ""
+    }
+  ]
+}

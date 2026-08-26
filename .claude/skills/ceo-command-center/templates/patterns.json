@@ -1,0 +1,18 @@
+{
+  "_help": {
+    "week_of": "YYYY-MM-DD, the Monday of the week.",
+    "wins": "What went better than expected.",
+    "concerns": "What is worrying you, whether or not a number proves it.",
+    "surprises": "What you did not see coming, in either direction.",
+    "priorities": "What you decided to do about it next week."
+  },
+  "weeks": [
+    {
+      "week_of": "2026-01-05",
+      "wins": [],
+      "concerns": [],
+      "surprises": [],
+      "priorities": []
+    }
+  ]
+}
