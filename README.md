@@ -68,6 +68,31 @@ for the full mapping. PNGs work too — just update the `image` field in
 The Buffer job pulls each image from its public GitHub raw URL, so the
 images must be committed to `main` for Buffer to find them.
 
+## CEO Command Center
+
+A business dashboard covering revenue and profit, offers, pipeline, marketing,
+client health, team capacity, decisions, weekly patterns, and the AI agents. It
+reads nine JSON files and writes one self-contained HTML page, plus a short
+brief to the terminal.
+
+```bash
+# see it on example data first
+python3 .claude/skills/ceo-command-center/scripts/render_dashboard.py \
+    --data .claude/skills/ceo-command-center/example \
+    --out dashboards/example.html --as-of 2026-08-26
+
+# then set up your own
+cp .claude/skills/ceo-command-center/templates/*.json business/command-center/
+python3 .claude/skills/ceo-command-center/scripts/render_dashboard.py
+```
+
+The real data files in `business/command-center/` and the rendered dashboards
+in `dashboards/` are gitignored, because this repository is public and those
+files hold revenue and client names. See
+`.claude/skills/ceo-command-center/SKILL.md` for how the panels work,
+`references/metrics.md` for every formula and threshold, and
+`references/weekly-review.md` for the rhythm that makes it worth keeping.
+
 ## Notion
 
 The same content is mirrored to Notion under

@@ -1,0 +1,89 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "overload_threshold": 0.9,
+  "idle_threshold": 0.6,
+  "people": [
+    {
+      "name": "Tarisha",
+      "role": "Owner, delivery",
+      "capacity_hours": 30,
+      "committed_hours": 31,
+      "responsibilities": [
+        "Intensives",
+        "Podcast",
+        "Offer strategy"
+      ],
+      "deadlines": [
+        {
+          "item": "September retreat outline",
+          "due": "2026-09-01",
+          "status": "at_risk"
+        },
+        {
+          "item": "Podcast batch, four episodes",
+          "due": "2026-09-08",
+          "status": "on_track"
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "name": "Sam",
+      "role": "Operations",
+      "capacity_hours": 25,
+      "committed_hours": 21,
+      "responsibilities": [
+        "Pipeline follow-up",
+        "Membership support",
+        "Ads reporting"
+      ],
+      "deadlines": [
+        {
+          "item": "Renewal outreach, September cohort",
+          "due": "2026-08-29",
+          "status": "at_risk"
+        }
+      ],
+      "blockers": [
+        {
+          "item": "No access to the ads account",
+          "waiting_on": "Tarisha"
+        }
+      ]
+    },
+    {
+      "name": "Mere",
+      "role": "Editor, contractor",
+      "capacity_hours": 12,
+      "committed_hours": 5,
+      "responsibilities": [
+        "Reels",
+        "Podcast audio"
+      ],
+      "deadlines": [
+        {
+          "item": "August reels batch",
+          "due": "2026-08-28",
+          "status": "on_track"
+        }
+      ],
+      "blockers": []
+    },
+    {
+      "name": "Dan",
+      "role": "Coach, contractor",
+      "capacity_hours": 10,
+      "committed_hours": 10,
+      "responsibilities": [
+        "Membership calls"
+      ],
+      "deadlines": [],
+      "blockers": [
+        {
+          "item": "Waiting on the September call schedule",
+          "waiting_on": "Sam"
+        }
+      ]
+    }
+  ]
+}

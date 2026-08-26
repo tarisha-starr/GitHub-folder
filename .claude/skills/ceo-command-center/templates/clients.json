@@ -1,0 +1,30 @@
+{
+  "_help": {
+    "status": "onboarding, active, at_risk, renewing, or churned.",
+    "value": "What this client is worth per month, or per programme if one-off.",
+    "start_date": "YYYY-MM-DD.",
+    "renewal_date": "YYYY-MM-DD, or null if there is nothing to renew.",
+    "last_engagement": "YYYY-MM-DD they last showed up or replied.",
+    "engagement": "0 to 100. Sessions attended, logins, replies, whatever you actually track.",
+    "onboarding_days": "Days an onboarding client may sit before it counts as stalled.",
+    "quiet_days": "Days of no engagement before an active client needs attention.",
+    "churned_on": "YYYY-MM-DD they cancelled. Only for churned clients."
+  },
+  "onboarding_days": 14,
+  "quiet_days": 21,
+  "clients": [
+    {
+      "name": "",
+      "offer": "",
+      "status": "onboarding",
+      "value": 0,
+      "start_date": "2026-01-01",
+      "renewal_date": null,
+      "last_engagement": "2026-01-01",
+      "engagement": 0,
+      "owner": "",
+      "notes": "",
+      "churned_on": null
+    }
+  ]
+}

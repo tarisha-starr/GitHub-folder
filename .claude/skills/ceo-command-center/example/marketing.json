@@ -1,0 +1,86 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "min_spend_for_ranking": 200,
+  "campaigns": [
+    {
+      "name": "Daily image posts",
+      "channel": "Instagram organic",
+      "period": "2026-08",
+      "spend": 0,
+      "leads": 38,
+      "customers": 3,
+      "revenue": 5364,
+      "notes": "Automated from the repo. Cost is time, not cash."
+    },
+    {
+      "name": "Intensive launch",
+      "channel": "Meta ads",
+      "period": "2026-08",
+      "spend": 1800,
+      "leads": 96,
+      "customers": 6,
+      "revenue": 7400,
+      "notes": "Two creatives, the quiet one outperformed."
+    },
+    {
+      "name": "Guest episodes",
+      "channel": "Podcast",
+      "period": "2026-08",
+      "spend": 1200,
+      "leads": 21,
+      "customers": 4,
+      "revenue": 6300,
+      "notes": "Small numbers, but they arrive already sold."
+    },
+    {
+      "name": "Sunday letter",
+      "channel": "Email list",
+      "period": "2026-08",
+      "spend": 240,
+      "leads": 44,
+      "customers": 5,
+      "revenue": 4900,
+      "notes": ""
+    },
+    {
+      "name": "Brand search",
+      "channel": "Google search",
+      "period": "2026-08",
+      "spend": 950,
+      "leads": 9,
+      "customers": 1,
+      "revenue": 620,
+      "notes": "Running since March, never made its money back."
+    },
+    {
+      "name": "Intensive launch",
+      "channel": "Meta ads",
+      "period": "2026-07",
+      "spend": 1650,
+      "leads": 88,
+      "customers": 7,
+      "revenue": 9100,
+      "notes": ""
+    },
+    {
+      "name": "Sunday letter",
+      "channel": "Email list",
+      "period": "2026-07",
+      "spend": 240,
+      "leads": 51,
+      "customers": 4,
+      "revenue": 4100,
+      "notes": ""
+    },
+    {
+      "name": "Brand search",
+      "channel": "Google search",
+      "period": "2026-07",
+      "spend": 950,
+      "leads": 15,
+      "customers": 2,
+      "revenue": 2400,
+      "notes": ""
+    }
+  ]
+}

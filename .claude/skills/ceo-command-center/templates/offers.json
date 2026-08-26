@@ -1,0 +1,29 @@
+{
+  "_help": {
+    "period": "The month this row measures, YYYY-MM.",
+    "price": "List price of one unit.",
+    "opportunities": "People who could have bought, so calls held, applications, checkout starts.",
+    "units_sold": "Units sold in the period.",
+    "delivery_cost": "Total cost to fulfil the units sold, not per unit.",
+    "refunds": "Money refunded in the period.",
+    "satisfaction": "avg_score out of scale, from responses answers.",
+    "notes": "Anything the numbers do not say."
+  },
+  "offers": [
+    {
+      "name": "",
+      "period": "2026-01",
+      "price": 0,
+      "opportunities": 0,
+      "units_sold": 0,
+      "delivery_cost": 0,
+      "refunds": 0,
+      "satisfaction": {
+        "avg_score": 0,
+        "scale": 5,
+        "responses": 0
+      },
+      "notes": ""
+    }
+  ]
+}

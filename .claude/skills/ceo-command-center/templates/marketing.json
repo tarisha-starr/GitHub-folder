@@ -1,0 +1,23 @@
+{
+  "_help": {
+    "period": "The month this campaign row measures, YYYY-MM.",
+    "spend": "Cash and ad spend. Put 0 for organic work.",
+    "leads": "Leads the campaign produced.",
+    "customers": "Leads that became paying clients.",
+    "revenue": "Revenue attributed to the campaign.",
+    "min_spend_for_ranking": "Channels below this spend are listed but not ranked, so one lucky sale does not top the table."
+  },
+  "min_spend_for_ranking": 200,
+  "campaigns": [
+    {
+      "name": "",
+      "channel": "",
+      "period": "2026-01",
+      "spend": 0,
+      "leads": 0,
+      "customers": 0,
+      "revenue": 0,
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "_help": {
+    "date": "YYYY-MM-DD the call was made.",
+    "supporting_data": "The number or evidence you leaned on. Write it down while you still remember it.",
+    "expected_outcome": "What you said would happen.",
+    "review_date": "YYYY-MM-DD you promised to check.",
+    "status": "open, reviewing, or closed.",
+    "result": "What actually happened. Empty until reviewed.",
+    "verdict": "worked, mixed, did_not_work, or null while open."
+  },
+  "decisions": [
+    {
+      "date": "2026-01-01",
+      "decision": "",
+      "owner": "",
+      "supporting_data": "",
+      "expected_outcome": "",
+      "review_date": "2026-02-01",
+      "status": "open",
+      "result": "",
+      "verdict": null
+    }
+  ]
+}

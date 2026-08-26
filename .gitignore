@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+
+# CEO Command Center: real business numbers stay out of a public repo.
+business/command-center/*.json
+dashboards/

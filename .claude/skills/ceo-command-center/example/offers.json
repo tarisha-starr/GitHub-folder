@@ -1,0 +1,65 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "offers": [
+    {
+      "name": "Couples Intensive",
+      "period": "2026-08",
+      "price": 2400,
+      "opportunities": 14,
+      "units_sold": 5,
+      "delivery_cost": 3100,
+      "refunds": 0,
+      "satisfaction": {
+        "avg_score": 4.8,
+        "scale": 5,
+        "responses": 5
+      },
+      "notes": "Waitlist forming. Held at full price all quarter."
+    },
+    {
+      "name": "Radiant Woman Membership",
+      "period": "2026-08",
+      "price": 47,
+      "opportunities": 210,
+      "units_sold": 62,
+      "delivery_cost": 1450,
+      "refunds": 94,
+      "satisfaction": {
+        "avg_score": 4.4,
+        "scale": 5,
+        "responses": 38
+      },
+      "notes": "Monthly. units_sold is active members, not new joins."
+    },
+    {
+      "name": "Multiply, AI for Business",
+      "period": "2026-08",
+      "price": 1200,
+      "opportunities": 46,
+      "units_sold": 9,
+      "delivery_cost": 2600,
+      "refunds": 1200,
+      "satisfaction": {
+        "avg_score": 4.1,
+        "scale": 5,
+        "responses": 9
+      },
+      "notes": "One refund after week two. Onboarding call is doing the work here."
+    },
+    {
+      "name": "Weekend Retreat",
+      "period": "2026-08",
+      "price": 890,
+      "opportunities": 32,
+      "units_sold": 6,
+      "delivery_cost": 4200,
+      "refunds": 0,
+      "satisfaction": {
+        "avg_score": 4.9,
+        "scale": 5,
+        "responses": 6
+      },
+      "notes": "Venue and catering booked for twelve, sold six."
+    }
+  ]
+}

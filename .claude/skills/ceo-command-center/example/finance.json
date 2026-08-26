@@ -1,0 +1,67 @@
+{
+  "_note": "EXAMPLE DATA. A fictional business used to demonstrate the dashboard. None of these numbers are real.",
+  "currency": "NZD",
+  "cash_on_hand": 41200,
+  "months": [
+    {
+      "month": "2026-03",
+      "revenue": 18400,
+      "cash_collected": 17250,
+      "expenses": 11200,
+      "recurring_revenue": 6100,
+      "new_customers": 7
+    },
+    {
+      "month": "2026-04",
+      "revenue": 21900,
+      "cash_collected": 20400,
+      "expenses": 12650,
+      "recurring_revenue": 6800,
+      "new_customers": 9
+    },
+    {
+      "month": "2026-05",
+      "revenue": 19750,
+      "cash_collected": 21100,
+      "expenses": 13100,
+      "recurring_revenue": 7250,
+      "new_customers": 6
+    },
+    {
+      "month": "2026-06",
+      "revenue": 24600,
+      "cash_collected": 22800,
+      "expenses": 13900,
+      "recurring_revenue": 8100,
+      "new_customers": 11
+    },
+    {
+      "month": "2026-07",
+      "revenue": 27300,
+      "cash_collected": 25650,
+      "expenses": 15200,
+      "recurring_revenue": 8900,
+      "new_customers": 12
+    },
+    {
+      "month": "2026-08",
+      "revenue": 23150,
+      "cash_collected": 19870,
+      "expenses": 16050,
+      "recurring_revenue": 9350,
+      "new_customers": 8
+    }
+  ],
+  "committed_future_revenue": [
+    {
+      "month": "2026-09",
+      "amount": 4800,
+      "note": "Two intensives already paid in full"
+    },
+    {
+      "month": "2026-10",
+      "amount": 2400,
+      "note": "Retreat deposits"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "_help": {
+    "capacity_hours": "Hours a week this person is actually available.",
+    "committed_hours": "Hours a week already spoken for.",
+    "responsibilities": "What they own, not what they did last week.",
+    "deadlines": "due is YYYY-MM-DD, status is on_track, at_risk, or done.",
+    "blockers": "What is stopping them, and who has to unblock it.",
+    "overload_threshold": "Utilisation above this counts as overloaded.",
+    "idle_threshold": "Utilisation below this counts as spare capacity."
+  },
+  "overload_threshold": 0.9,
+  "idle_threshold": 0.6,
+  "people": [
+    {
+      "name": "",
+      "role": "",
+      "capacity_hours": 0,
+      "committed_hours": 0,
+      "responsibilities": [],
+      "deadlines": [
+        {
+          "item": "",
+          "due": "2026-02-01",
+          "status": "on_track"
+        }
+      ],
+      "blockers": [
+        {
+          "item": "",
+          "waiting_on": ""
+        }
+      ]
+    }
+  ]
+}
