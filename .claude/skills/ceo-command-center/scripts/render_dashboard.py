@@ -98,6 +98,9 @@ nav.jump a {
   color: var(--ink-soft);
 }
 nav.jump a:hover { color: var(--rust); }
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--rust); outline-offset: 3px; border-radius: 2px;
+}
 section { margin: 0 0 40px; scroll-margin-top: 64px; }
 section > header { margin-bottom: 14px; }
 .card {
@@ -113,7 +116,10 @@ section > header { margin-bottom: 14px; }
   font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px;
   text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-soft);
 }
-.tile .value { font-size: 28px; line-height: 1.15; margin: 6px 0 4px; }
+.tile .value {
+  font-size: 28px; line-height: 1.15; margin: 6px 0 4px;
+  font-variant-numeric: tabular-nums;
+}
 .tile .note { font-size: 13px; color: var(--ink-soft); }
 .up { color: var(--moss); } .down { color: var(--rust); }
 .flag { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
@@ -132,7 +138,10 @@ section > header { margin-bottom: 14px; }
   letter-spacing: 0.08em; font-size: 10px; margin-bottom: 2px;
 }
 .scroll { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; font-size: 14px; }
+table {
+  border-collapse: collapse; width: 100%; font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
 th, td {
   text-align: right; padding: 9px 10px; border-bottom: 1px solid var(--line);
   white-space: nowrap;
@@ -806,7 +815,7 @@ def render_html(report, artifact=False):
         render_agents(report),
     ])
 
-    title = f"<title>CEO Command Center, {esc(month)}</title>"
+    title = "<title>CEO Command Center</title>"
     page = f'<div class="wrap">{body}</div>'
     if artifact:
         # The Artifact tool supplies the doctype, head and body wrapper itself.
