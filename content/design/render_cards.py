@@ -307,3 +307,11 @@ list_card(
     ["“You always...”", "“Why can’t you just...”",
      "“I shouldn’t have to ask.”",
      "“Never mind, forget it.”"], **DARK)
+
+statement_card(
+    f"{OUT}/ad-10-its-tomorrow.png", "PLATE VI", "FIG. 12  ·  DEVIATION",
+    ["It’s tomorrow."], maxsize=124,
+    tail=["Feel Wanted and Loved Again.",
+          "Wednesday 9 September, 6 to 9pm NZ.",
+          "Three hours, live on Zoom. $27.",
+          "Join us."], **LIGHT)

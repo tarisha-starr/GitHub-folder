@@ -295,18 +295,34 @@ Three hours. \$27. Wednesday 9 September, 6pm NZ.
 
 *Warm only. Retarget everyone who clicked and didn't book. Live Tuesday.*
 
-**On the card:** It's tomorrow.
+**Card:** `images/ads/ad-10-its-tomorrow.png`
+
+**On the card:**
+
+> It's tomorrow.
+>
+> Feel Wanted and Loved Again.
+> Wednesday 9 September, 6 to 9pm NZ.
+> Three hours, live on Zoom. $27.
+> Join us.
 
 **Primary text:**
 
-You've been reading these all week. Something in them keeps catching.
+It's tomorrow night.
 
-You already know the conversation you'd have if you knew he wouldn't get
-defensive. You've been carrying it around for months.
+Feel Wanted and Loved Again. Wednesday 9 September, 6 to 9pm New Zealand
+time. 4pm Sydney, Melbourne and Brisbane. 2pm Perth.
 
-Tomorrow night, three hours, and you'll have the words for it.
+Three hours, live on Zoom, with other women who've been carrying the same
+sentence around for years and never said it out loud.
 
-\$27, and it comes off the course if you decide to go deeper.
+You'll write yours down, work out what's actually underneath it, and
+practise it until it stops frightening you. Then you'll go home and say
+it to him.
+
+\$27, and you get the recording. Camera off is completely welcome.
+
+Join us.
 
 **Headline:** Last chance to join
 
