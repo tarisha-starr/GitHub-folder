@@ -66,29 +66,43 @@ Wednesday 9 September, 6pm NZ. \$27.
 
 ---
 
-## 2. Your formula
+## 2. He does WHAT?!
 
-*Warm. Pain hook plus emotional truth.*
+*Warm, and strong cold too. This is the AutoGTM formula properly: the
+shock, the plain mechanism in short sentences, then the reveal.*
 
-**Card:** `images/ads/ad-02-not-nagging.png`
+**Card:** `images/ads/ad-02-he-does-what.png`
 
-**On the card:** You're not nagging. You're begging to be let in.
+**On the card:**
+
+> I'm sorry, he does WHAT?!
+>
+> He brings her flowers once a week.
+> He takes the rubbish out. He does the dishes without being asked.
+> Her friends have no idea how she did it.
+> She didn't nag him for twenty years. She learned how to talk to him so
+> he could actually hear her.
+>
+> That's what we're doing on Wednesday. \$27.
 
 **Primary text:**
 
-I hear this every week in my office.
+You feel like you're begging all the time. And he never responds.
 
-She says "I've told him a hundred times." He says "she never stops
-criticising me."
+Meanwhile there's a woman down the road whose husband brings her flowers
+once a week. Takes the rubbish out. Does the dishes without being asked.
 
-Both of them are right. That's what makes it so lonely.
+Everyone wonders how she did it. Nobody asks her.
 
-There's a way to say the same thing so he comes towards you instead of
-walking off. That's the whole workshop.
+She didn't nag him into it and she didn't wait twenty years for him to
+change. There's a way to talk to him so he can listen to you, so he can
+give you exactly what you want.
 
-Wednesday, 6pm NZ. \$27.
+And that's what we're going to do at the workshop.
 
-**Headline:** One evening. Different conversation.
+Wednesday 9 September, 6 to 9pm NZ. Three hours, live on Zoom. \$27.
+
+**Headline:** Feel Wanted and Loved Again
 
 **CTA:** Book now
 

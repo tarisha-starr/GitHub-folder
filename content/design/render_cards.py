@@ -174,7 +174,8 @@ def wrap(d, text, f, measure):
 
 
 def statement_card(path, plate, fig, lines, bg, ink, faint, accent,
-                   quote_lead=None, hang=False, maxsize=118, tail=None):
+                   quote_lead=None, hang=False, maxsize=118, tail=None,
+                   cta=None, tail_strong=False):
     img, d = base(bg)
     furniture(d, plate, fig, ink, faint)
     measure = W - 2 * MARGIN
@@ -199,6 +200,8 @@ def statement_card(path, plate, fig, lines, bg, ink, faint, accent,
         for para in tail:
             tl.append(wrap(d, para, tf, W - 2 * MARGIN))
         tail_h = 44 * S + sum(len(b) * 44 * S + 20 * S for b in tl)
+    if cta:
+        tail_h += 78 * S
 
     block = lq_h + lead * len(lines) + tail_h
     top_b = MARGIN + 88 * S
@@ -223,11 +226,20 @@ def statement_card(path, plate, fig, lines, bg, ink, faint, accent,
 
     if tail:
         y += 26 * S
+        tc = mix(faint, ink, 0.42) if tail_strong else faint
         for blk in tl:
             for ln in blk:
-                d.text((MARGIN, y), ln, font=tf, fill=faint, anchor="ls")
+                d.text((MARGIN, y), ln, font=tf, fill=tc, anchor="ls")
                 y += 44 * S
             y += 20 * S
+
+    if cta:
+        y += 22 * S
+        cf = font("Lora-SemiBold.ttf", 30 * S)
+        d.text((MARGIN, y), cta, font=cf, fill=ink, anchor="ls")
+        wc = d.textlength(cta, font=cf)
+        d.line([(MARGIN, y + 15 * S), (MARGIN + wc, y + 15 * S)],
+               fill=accent, width=2 * S)
 
     signal(d, sig_top(), ink, faint, accent)
     img.resize((1080, 1350), Image.LANCZOS).save(path)
@@ -281,8 +293,14 @@ LIGHT = dict(bg=CREAM, ink=PINE_DEEP, faint=mix(CREAM, PINE_FOREST, 0.40),
              accent=TERRACOTTA)
 
 statement_card(
-    f"{OUT}/ad-02-not-nagging.png", "PLATE I", "FIG. 12  ·  DEVIATION",
-    ["You’re not nagging.", "You’re begging", "to be let in."], **DARK)
+    f"{OUT}/ad-02-he-does-what.png", "PLATE I", "FIG. 12  ·  DEVIATION",
+    ["I’m sorry,", "he does WHAT?!"], maxsize=104, tail_strong=True,
+    tail=["He brings her flowers once a week.",
+          "He takes the rubbish out. He does the dishes without being asked.",
+          "Her friends have no idea how she did it.",
+          "She didn’t nag him for twenty years. She learned how to talk to "
+          "him so he could actually hear her."],
+    cta="That’s what we’re doing on Wednesday. $27.", **DARK)
 
 statement_card(
     f"{OUT}/ad-03-im-fine.png", "PLATE II", "FIG. 12  ·  DEVIATION",
