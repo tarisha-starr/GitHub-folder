@@ -114,7 +114,17 @@ Wednesday 9 September, 6 to 9pm NZ. Three hours, live on Zoom. \$27.
 
 **Card:** `images/ads/ad-03-im-fine.png`
 
-**On the card:** "I said I'm fine."
+**On the card:**
+
+> "I said I'm fine."
+>
+> You weren't fine. He knew you weren't fine.
+> And you both let it go, again, because the last four times it turned
+> into a fight.
+> Twenty years of that is how two people end up living like flatmates in
+> a house they bought together.
+>
+> Wednesday we break it. \$27.
 
 **Primary text:**
 
@@ -180,8 +190,16 @@ off.
 
 **Card:** `images/ads/ad-05-costume.png`
 
-**On the card:** "I feel like you never listen" is not a feeling.
-That's why he defends himself.
+**On the card:**
+
+> "I feel like you never listen" is not a feeling.
+> That's why he defends himself.
+>
+> He hears blame. So he defends himself.
+> And then you wonder why this keeps happening.
+> There are three sentences that actually get through.
+>
+> Wednesday, 6pm NZ. \$27.
 
 **Primary text:**
 
@@ -251,6 +269,11 @@ Wednesday. You'll learn how to say it so he can actually hear you.
 > Four sentences that guarantee he stops listening:
 > "You always..." / "Why can't you just..." /
 > "I shouldn't have to ask." / "Never mind, forget it."
+>
+> I've said all four of them. They're what comes out when you're tired
+> of asking.
+>
+> Learn how to say it so he can give you what you want.
 
 **Primary text:**
 

@@ -181,32 +181,37 @@ def statement_card(path, plate, fig, lines, bg, ink, faint, accent,
     measure = W - 2 * MARGIN
     disp = "Marcellus-Regular.ttf"
     size = fit_size(d, lines, disp, measure, maxsize * S)
-    f = font(disp, size)
-    lead = round(size * 1.20)
-
-    lq_h = 0
-    lq_f = None
-    if quote_lead:
-        lq_f = font("Lora-Italic.ttf", round(size * 0.40))
-        lq_h = round(size * 0.40 * 1.34) * len(quote_lead)
-
     # Optically centre the whole group (statement + evidence) in the field
     # between the notation row and the bottom rail, biased a little high.
     tf = tl = None
     tail_h = 0
     if tail:
         tf = font("Lora-Regular.ttf", 30 * S)
-        tl = []
-        for para in tail:
-            tl.append(wrap(d, para, tf, W - 2 * MARGIN))
+        tl = [wrap(d, para, tf, W - 2 * MARGIN) for para in tail]
         tail_h = 44 * S + sum(len(b) * 44 * S + 20 * S for b in tl)
     if cta:
-        tail_h += 78 * S
+        tail_h += 116 * S
 
-    block = lq_h + lead * len(lines) + tail_h
     top_b = MARGIN + 88 * S
     bot_b = sig_top() - 64 * S
-    top = top_b + (bot_b - top_b - block) * 0.46
+    room = bot_b - top_b
+
+    # Shrink the display until the whole group clears the diagram. A card
+    # that overflows into the plate is worse than one set a size smaller.
+    def measure(sz):
+        ld = round(sz * 1.20)
+        lq = (round(sz * 0.40 * 1.34) * len(quote_lead)
+              + round(sz * 0.24)) if quote_lead else 0
+        return lq + ld * len(lines) + tail_h, ld, lq
+
+    block, lead, lq_h = measure(size)
+    while block > room and size > 52 * S:
+        size -= 2 * S
+        block, lead, lq_h = measure(size)
+    f = font(disp, size)
+    lq_f = font("Lora-Italic.ttf", round(size * 0.40)) if quote_lead else None
+
+    top = top_b + max(0, (room - block)) * 0.46
     y = top + size * 0.76
 
     if quote_lead:
@@ -246,7 +251,8 @@ def statement_card(path, plate, fig, lines, bg, ink, faint, accent,
     print("wrote", path, "| display", size // S, "px")
 
 
-def list_card(path, plate, fig, header, items, bg, ink, faint, accent):
+def list_card(path, plate, fig, header, items, bg, ink, faint, accent,
+              tail=None, cta=None):
     img, d = base(bg)
     furniture(d, plate, fig, ink, faint)
     measure = W - 2 * MARGIN
@@ -254,14 +260,30 @@ def list_card(path, plate, fig, header, items, bg, ink, faint, accent):
     hf = font("Lora-Regular.ttf", 27 * S)
     hlead = round(27 * S * 1.5)
     size = fit_size(d, items, "Marcellus-Regular.ttf", measure - 54 * S, 76 * S)
-    f = font("Marcellus-Regular.ttf", size)
-    step = round(size * 1.86)
     num = font("Lora-Regular.ttf", 15 * S)
 
-    block = hlead * len(header) + 52 * S + step * len(items)
+    tf = font("Lora-Regular.ttf", 30 * S)
+    tl = [wrap(d, para, tf, W - 2 * MARGIN) for para in (tail or [])]
+    extra = (44 * S + sum(len(b) * 44 * S + 20 * S for b in tl)) if tail else 0
+    if cta:
+        extra += 116 * S
+
     top_b = MARGIN + 88 * S
     bot_b = sig_top() - 64 * S
-    y = top_b + (bot_b - top_b - block) * 0.46 + 27 * S
+    room = bot_b - top_b
+
+    # Same rule as the statement cards: shrink rather than run into the plate.
+    def blk(sz):
+        st = round(sz * 1.72)
+        return hlead * len(header) + 52 * S + st * len(items) + extra, st
+
+    block, step = blk(size)
+    while block > room and size > 40 * S:
+        size -= 2 * S
+        block, step = blk(size)
+    f = font("Marcellus-Regular.ttf", size)
+
+    y = top_b + max(0, (room - block)) * 0.46 + 27 * S
 
     for hl in header:
         d.text((MARGIN, y), hl, font=hf, fill=faint, anchor="ls")
@@ -279,6 +301,22 @@ def list_card(path, plate, fig, header, items, bg, ink, faint, accent):
         d.line([(MARGIN + 54 * S, sy), (MARGIN + 54 * S + wln, sy)],
                fill=c, width=S)
         y += step
+
+    if tail:
+        y += 4 * S
+        tc = mix(faint, ink, 0.42)
+        for blk in tl:
+            for ln in blk:
+                d.text((MARGIN, y), ln, font=tf, fill=tc, anchor="ls")
+                y += 44 * S
+            y += 20 * S
+    if cta:
+        y += 22 * S
+        cf = font("Lora-SemiBold.ttf", 30 * S)
+        d.text((MARGIN, y), cta, font=cf, fill=ink, anchor="ls")
+        wc = d.textlength(cta, font=cf)
+        d.line([(MARGIN, y + 15 * S), (MARGIN + wc, y + 15 * S)],
+               fill=accent, width=2 * S)
 
     signal(d, sig_top(), ink, faint, accent)
     img.resize((1080, 1350), Image.LANCZOS).save(path)
@@ -304,7 +342,13 @@ statement_card(
 
 statement_card(
     f"{OUT}/ad-03-im-fine.png", "PLATE II", "FIG. 12  ·  DEVIATION",
-    ["“I said", "I’m fine.”"], hang=True, maxsize=168, **LIGHT)
+    ["“I said", "I’m fine.”"], hang=True, maxsize=132, tail_strong=True,
+    tail=["You weren’t fine. He knew you weren’t fine.",
+          "And you both let it go, again, because the last four times it "
+          "turned into a fight.",
+          "Twenty years of that is how two people end up living like "
+          "flatmates in a house they bought together."],
+    cta="Wednesday we break it. $27.", **LIGHT)
 
 statement_card(
     f"{OUT}/ad-04-what-he-hears.png", "PLATE III", "FIG. 12  ·  DEVIATION",
@@ -312,24 +356,32 @@ statement_card(
     maxsize=94,
     tail=["He hears that he’s failing you.",
           "You don’t even know that’s what he heard.",
-          "And that’s what he defends himself against."], **DARK)
+          "And that’s what he defends himself against."],
+    cta="Wednesday 9 September, 6pm NZ. $27.", **DARK)
 
 statement_card(
     f"{OUT}/ad-05-costume.png", "PLATE IV", "FIG. 12  ·  DEVIATION",
-    ["is not a feeling.", "That’s why he", "defends himself."],
-    quote_lead=["“I feel like you never listen”"], **LIGHT)
+    ["is not a feeling.", "That’s why he", "defends himself."], maxsize=104,
+    quote_lead=["“I feel like you never listen”"], tail_strong=True,
+    tail=["He hears blame. So he defends himself.",
+          "And then you wonder why this keeps happening.",
+          "There are three sentences that actually get through."],
+    cta="Wednesday, 6pm NZ. $27.", **LIGHT)
 
 list_card(
     f"{OUT}/ad-08-four-sentences.png", "PLATE V", "FIG. 12  ·  DEVIATION",
     ["Four sentences that guarantee", "he stops listening."],
     ["“You always...”", "“Why can’t you just...”",
      "“I shouldn’t have to ask.”",
-     "“Never mind, forget it.”"], **DARK)
+     "“Never mind, forget it.”"],
+    tail=["I’ve said all four of them. They’re what comes out when you’re "
+          "tired of asking."],
+    cta="Learn how to say it so he can give you what you want.", **DARK)
 
 statement_card(
     f"{OUT}/ad-10-its-tomorrow.png", "PLATE VI", "FIG. 12  ·  DEVIATION",
     ["It’s tomorrow."], maxsize=124,
     tail=["Feel Wanted and Loved Again.",
           "Wednesday 9 September, 6 to 9pm NZ.",
-          "Three hours, live on Zoom. $27.",
-          "Join us."], **LIGHT)
+          "Three hours, live on Zoom. $27."],
+    cta="Join us.", **LIGHT)
