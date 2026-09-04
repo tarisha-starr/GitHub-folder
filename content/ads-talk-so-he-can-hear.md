@@ -1,58 +1,52 @@
-# Meta Ads: "How to Talk So He Can Hear"
+# Meta Ads: Feel Wanted and Loved Again
 
-Paid workshop, Wednesday. 10 ad variations for Meta (Facebook + Instagram).
+Paid workshop, Wednesday 9 September 2026, 6:00 to 9:00pm NZ. \$27 NZD.
+Live on Zoom, recording to everyone who registers.
 
-## Before you paste these in
+Ten statement ads plus ten proof ads. Cards rendered to
+`images/ads/` and `images/ads/testimonials/`.
 
-Fill these once and find-replace across the file:
+## The offer, as it sits on the sales page
 
-- `[PRICE]`: ticket price
-- `[TIME]`: start time, NZT
-- `[LINK]`: booking page
-- `[DURATION]`: 60 min, 90 min, whatever it is
+- **Name:** Feel Wanted and Loved Again
+- **Promise:** find the words that bring him closer, instead of pushing
+  him away
+- **Format:** live 3 hour practice workshop, mostly breakout rooms
+- **Price:** \$27, credited against SERW if she goes on
+- **When:** Wed 9 Sept, 6 to 9pm NZ · 4 to 7pm Sydney, Melbourne,
+  Brisbane · 2 to 5pm Perth
+- **Link:** the WordPress sales page. Drop the URL in before these run.
 
-Two ads have a `[TESTIMONIAL]` slot. Use an actual client line, not a
-written one. If you haven't got one cleared for ads, run the other eight
-and skip those two.
+There's already a "5. Facebook Ads, cold traffic" page in the Notion
+campaign. These don't replace it. Run whichever set tests better, or
+run both and let the numbers decide.
 
-**Meta policy note.** Keep every word of this in relationship and
-communication language. The moment an ad reads as sexual content, Meta
-restricts the reach or rejects it outright, and a rejection on this
-account is not worth the click. Nothing below trips it as written.
+**Meta policy note.** Keep every word in relationship and communication
+language. The moment an ad reads as sexual content, Meta restricts the
+reach or rejects it, and a rejection on this account isn't worth the
+click. Nothing below trips it as written.
 
 ## How to run them
 
-Split into two sets.
+**Cold set (1, 3, 4, 7, 8, 9).** Broad women 42 to 60, NZ and Australia.
+Pain hook up front because she doesn't know you yet.
 
-**Cold set (1, 3, 4, 7, 8, 9).** Broad women 42 to 60, NZ. These carry
-the pain hook up front because she doesn't know you yet.
+**Warm set (2, 5, 10, and the proof ads).** Retarget your list, video
+viewers, page engagers, past challenge sign ups.
 
-**Warm set (2, 5, 6, 10).** Retarget your list, video viewers, page
-engagers, past challenge sign-ups. These assume she's already nodding.
+Run four at a time, 3 to 4 days, let the winner take the budget. Ad 10
+is the last call ad, so it only goes live Tuesday.
 
-Run four at a time, 3 to 4 days, let the winner take the budget. Ad 10 is
-the last-call ad, so it only goes live Tuesday.
-
-Each block gives you: the big text that goes ON the image, the primary
-text (the caption above the image), the headline (the short line under
-it), and a visual direction.
+Every card carries the time zone line in the rail, because half your
+audience is Australian and won't do the maths.
 
 ---
 
 ## 1. The swipe
 
-*Cold. This is the format from the AutoGTM ad, in your voice.*
+*Cold. The AutoGTM ad format, in your voice.*
 
-**Image text:**
-
-> I'M SORRY, HE CAN'T HEAR WHAT?!
->
-> You've said it three times. Calmly, even. He still heard "you're
-> failing me."
->
-> Not a him problem. Not a you problem. A delivery problem.
->
-> Wednesday. Live. [DURATION].
+**Card:** `images/ads/ad-01-*` (not rendered yet, say the word)
 
 **Primary text:**
 
@@ -60,30 +54,25 @@ You've said it three times. Calmly, even.
 
 He still heard "you're failing me."
 
-That's not a him problem or a you problem. It's a delivery problem, and
-it's fixable in one evening.
+That's not a him problem or a you problem. It's the words.
 
-Wednesday, [TIME]. [PRICE].
+And you can change the words in one evening.
 
-**Headline:** How to Talk So He Can Hear
+Wednesday 9 September, 6pm NZ. \$27.
+
+**Headline:** Feel Wanted and Loved Again
 
 **CTA:** Book now
-
-**Visual:** Flat colour block, one bold serif paragraph, no photograph.
-Border of one repeated household object instead of the bananas. Two tea
-cups, or a pair of slippers. Loud colour, deep navy text.
 
 ---
 
 ## 2. Your formula
 
-*Warm. Pain hook plus emotional truth, straight off the formula page.*
+*Warm. Pain hook plus emotional truth.*
 
-**Image text:**
+**Card:** `images/ads/ad-02-not-nagging.png`
 
-> You're not nagging.
->
-> You're begging to be let in.
+**On the card:** You're not nagging. You're begging to be let in.
 
 **Primary text:**
 
@@ -94,27 +83,24 @@ criticising me."
 
 Both of them are right. That's what makes it so lonely.
 
-There's a way to say the same thing so it lands as a reach instead of a
-hit. That's the whole workshop.
+There's a way to say the same thing so he comes towards you instead of
+walking off. That's the whole workshop.
 
-Wednesday, [TIME]. [PRICE].
+Wednesday, 6pm NZ. \$27.
 
 **Headline:** One evening. Different conversation.
 
 **CTA:** Book now
 
-**Visual:** Text-only card. White on deep colour. No face, no stock
-photo. Let the line do it.
-
 ---
 
 ## 3. The scene
 
-*Cold. Overheard dialogue. Highest scroll-stop of the ten.*
+*Cold. Highest scroll stop of the ten.*
 
-**Image text:**
+**Card:** `images/ads/ad-03-im-fine.png`
 
-> "I said I'm fine."
+**On the card:** "I said I'm fine."
 
 **Primary text:**
 
@@ -130,40 +116,43 @@ a house they bought together.
 
 Wednesday night I'm teaching the thing that breaks that loop.
 
-**Headline:** How to Talk So He Can Hear
+**Headline:** Feel Wanted and Loved Again
 
 **CTA:** Learn more
 
-**Visual:** Quote marks huge, text small, lots of empty space. Or a
-photo of two mugs on a bench, one untouched.
-
 ---
 
-## 4. The mechanism
+## 4. What he hears
 
 *Cold. For the woman who thinks she's already tried everything.*
 
-**Image text:**
+**Card:** `images/ads/ad-04-what-he-hears.png`
 
-> It isn't what you say.
+**On the card:**
+
+> It isn't what you say. It's what he hears.
 >
-> It's what he braces for.
+> He hears that he's failing you.
+> You don't even know that's what he heard.
+> And that's what he defends himself against.
 
 **Primary text:**
 
-By the time you open your mouth, he's already in the flinch.
+It isn't what you say. It's what he hears.
 
-Shoulders up. Half listening. Waiting for the part where he's the
-problem.
+He hears that he's failing you. You don't even know that's what he
+heard.
 
-So he defends. So you push harder. So he goes quieter. And you go to bed
-with the thing still unsaid.
+And that's what he defends himself against.
+
+So he defends. You push harder. He goes quieter. And you go to bed with
+the thing still unsaid.
 
 That's the cycle. It's got nothing to do with whether he loves you.
 Every couple I work with has some version of it.
 
-[DURATION] on Wednesday and I'll give you the opening line that skips
-the flinch entirely.
+Three hours on Wednesday and you'll have the words that don't set it
+off.
 
 **Headline:** The cycle, and how to step out of it
 
@@ -173,13 +162,12 @@ the flinch entirely.
 
 ## 5. The myth bust
 
-*Warm. She's read the books. She's frustrated they didn't work.*
+*Warm. She's read the books and they didn't work.*
 
-**Image text:**
+**Card:** `images/ads/ad-05-costume.png`
 
-> "I feel like you never listen" is not a feeling.
->
-> It's an accusation in a costume.
+**On the card:** "I feel like you never listen" is not a feeling.
+That's why he defends himself.
 
 **Primary text:**
 
@@ -187,8 +175,9 @@ You've done the books. You've done the "I feel" statements. He still
 shuts down.
 
 Here's why. "I feel like you never listen" isn't a feeling, darling.
-It's an accusation wearing a costume, and he can hear that from a mile
-off.
+He hears blame.
+
+So he defends himself. And then you wonder why this keeps happening.
 
 There are three sentences that actually get through. I've watched them
 change a marriage in one session.
@@ -203,37 +192,17 @@ That's Wednesday.
 
 ## 6. Proof
 
-*Warm. Only run this once you've got a line cleared for ads.*
+*Warm. Ten cards, ten different women, in `images/ads/testimonials/`.*
 
-**Image text:**
-
-> [TESTIMONIAL]
-
-**Primary text:**
-
-[TESTIMONIAL, in her words, about a conversation that finally landed]
-
-This is what I mean when I say it isn't about trying harder. She wasn't
-loving him more that night. She was saying it differently.
-
-Wednesday, [TIME]. [PRICE].
-
-**Headline:** How to Talk So He Can Hear
-
-**CTA:** Book now
-
-**Visual:** The quote as plain text on brand colour. No face unless she
-signed off on her photo being used.
+See **The proof set** below.
 
 ---
 
 ## 7. The question stack
 
-*Cold. Rhythm build. Reads like spoken word, so it holds.*
+*Cold. Reads like spoken word, so it holds.*
 
-**Image text:**
-
-> Do you rehearse conversations in the shower?
+**On the card:** Do you rehearse conversations in the shower?
 
 **Primary text:**
 
@@ -249,9 +218,9 @@ Do you shrink the ask so it sounds smaller than it is?
 You're not too much. You've just learned to make yourself easier to hear
 by making yourself smaller. And it doesn't work, does it.
 
-Wednesday. Let's fix the delivery instead of the volume.
+Wednesday. You'll learn how to say it so he can actually hear you.
 
-**Headline:** How to Talk So He Can Hear
+**Headline:** Feel Wanted and Loved Again
 
 **CTA:** Learn more
 
@@ -259,16 +228,15 @@ Wednesday. Let's fix the delivery instead of the volume.
 
 ## 8. The four sentences
 
-*Cold. Specific, useful, screenshot-able. This one gets shared.*
+*Cold. This is the one that gets screenshotted.*
 
-**Image text:**
+**Card:** `images/ads/ad-08-four-sentences.png`
+
+**On the card:**
 
 > Four sentences that guarantee he stops listening:
->
-> "You always..."
-> "Why can't you just..."
-> "I shouldn't have to ask."
-> "Never mind, forget it."
+> "You always..." / "Why can't you just..." /
+> "I shouldn't have to ask." / "Never mind, forget it."
 
 **Primary text:**
 
@@ -285,44 +253,39 @@ Four sentences that guarantee he stops listening.
 I'm not telling you off. I've said all four of them. They're what comes
 out when you're tired of asking.
 
-On Wednesday I'll give you what to say instead. Same message.
-Completely different landing.
+On Wednesday I'll give you what to say instead.
+
+Learn how to say it so he can give you what you want.
 
 **Headline:** What to say instead
 
 **CTA:** Book now
 
-**Visual:** The four lines stacked, one per row, struck through. Big
-type. Built to be screenshotted.
-
 ---
 
 ## 9. What's inside
 
-*Cold, but works warm too. The one for the woman who wants to know what
-she's buying.*
-
-**Image text:**
-
-> [DURATION]. Three things. He actually hears you.
+*Cold, works warm too. For the woman who wants to know what she's buying.*
 
 **Primary text:**
 
 On Wednesday I'm teaching three things.
 
-Why he goes defensive before you've even finished the sentence.
+Why he goes away before you've even finished the sentence.
 
-The difference between a complaint and a criticism. He can feel which
-one you've picked, even when he can't name it.
+The difference between a complaint and a longing. He can feel which one
+you've picked, even when he can't name it.
 
-The vulnerable ask hiding underneath your frustration, and how to say it
-out loud without falling apart.
+The invitation hiding underneath your frustration, and how to say it out
+loud without falling apart.
 
-You'll practise it live. You'll go home with the words.
+You'll practise it live, in small rooms with other women, until it stops
+shaking in your mouth. You'll go home with the words in your own
+handwriting.
 
-[TIME], [PRICE], [DURATION].
+Three hours. \$27. Wednesday 9 September, 6pm NZ.
 
-**Headline:** How to Talk So He Can Hear
+**Headline:** Feel Wanted and Loved Again
 
 **CTA:** Book now
 
@@ -330,12 +293,9 @@ You'll practise it live. You'll go home with the words.
 
 ## 10. Last call
 
-*Warm only. Retarget everyone who clicked and didn't book. Goes live
-Tuesday.*
+*Warm only. Retarget everyone who clicked and didn't book. Live Tuesday.*
 
-**Image text:**
-
-> It's tomorrow.
+**On the card:** It's tomorrow.
 
 **Primary text:**
 
@@ -344,10 +304,68 @@ You've been reading these all week. Something in them keeps catching.
 You already know the conversation you'd have if you knew he wouldn't get
 defensive. You've been carrying it around for months.
 
-Tomorrow night, [DURATION], and you'll have the words for it.
+Tomorrow night, three hours, and you'll have the words for it.
 
-Doors close [TIME].
+\$27, and it comes off the course if you decide to go deeper.
 
 **Headline:** Last chance to join
 
 **CTA:** Book now
+
+---
+
+# The proof set
+
+Ten cards in `images/ads/testimonials/`, one testimonial each, pulled
+from `content/testimonials.json`. Chosen for the objection this workshop
+actually has to beat, which isn't "will it work", it's "will I feel
+exposed in front of strangers".
+
+They're attributed as WORKSHOP PARTICIPANT because the source file
+carries no names. If you've got permission to use first names and cities,
+swap them in, they'll convert better.
+
+| Card | Testimonial |
+|---|---|
+| `proof-01.png` | Do it. This is what you have been yearning for... |
+| `proof-02.png` | Tarisha creates such a warm and supportive environment... |
+| `proof-03.png` | Before I felt disconnected with lack of clarity... |
+| `proof-04.png` | I've walked out with a huge understanding... |
+| `proof-05.png` | This is a very safe space. Tarisha is an experienced therapist... |
+| `proof-06.png` | Your cup will be filled if you decide to be brave and vulnerable. |
+| `proof-07.png` | I am blown away with my experience attending the workshop... |
+| `proof-08.png` | I did not know what to expect from this workshop... |
+| `proof-09.png` | I have loved all my interactions with Tarisha... |
+| `proof-10.png` | This is a must for every woman to experience, you are worthy. |
+
+**Caption to run under any of them:**
+
+This is what women say after three hours in a room with me.
+
+Wednesday night we're doing the conversation you've been avoiding. You'll
+write your sentence, work out what's actually underneath it, and practise
+it until it stops frightening you.
+
+\$27. Live on Zoom, 6pm NZ. Camera off is completely welcome.
+
+**Headline:** Feel Wanted and Loved Again
+
+**CTA:** Book now
+
+---
+
+# The cards
+
+Design system is **Quiet Signal**, written up in
+`content/design/quiet-signal-philosophy.md`.
+
+Every card carries the same diagram: two registers, SENT and HEARD. On
+the statement cards the lower register degrades and one reading marks
+*deviation* in terracotta, which is the workshop's whole premise. On the
+proof cards the two registers match and the mark reads *received*.
+Nobody has to notice that for the ads to work, but the set means
+something when you scroll it.
+
+Palette is Soft Autumn: Pine Deep ground, Cream relief, Terracotta held
+under 2 percent and spent once per card. Display is Marcellus 400,
+notation is Lora. No pure white, no pure black, no dashes.
