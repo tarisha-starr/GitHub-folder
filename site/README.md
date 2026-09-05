@@ -7,6 +7,14 @@ brand guidelines held in Notion under **Assets & Ops → Website Build →
 This is a design reference to port into WordPress + Kadence. It is not a
 deployment target and nothing here is wired to WordPress.
 
+Two companion documents:
+
+- **`CREATIVE-DIRECTION.md`** — the concept, art direction, typography, colour
+  proportion, the section by section experience, the hero spec, the motion
+  system, and the build sequence. Read this before changing the design.
+- **`AUDIT.md`** — the ranked audit of the previous version and the pre launch
+  checklist. Every P0 and P1 in it has been actioned in this build.
+
 ## What it follows
 
 - Palette, type and voice rules taken verbatim from the Notion brand docs
@@ -15,6 +23,32 @@ deployment target and nothing here is wired to WordPress.
 - Structure follows **2. Site Architecture**: five header items plus a
   persistent Book a Call CTA, the Together and For Her split, and the four
   column footer.
+
+## What changed in the cinematic rebuild
+
+- **Photography led.** Four plates wired to `images/site/`, each with a colour
+  gradient fallback so a missing file still composes. See
+  `images/site/README.md` for which frame goes where.
+- **The mesh gradient, the three blurred orbs and the frosted glass card are
+  gone.** That combination is the most recognisable machine generated look on
+  the web, and the orbs animated a 72px blur for as long as the tab was open.
+- **Colour proportion inverted.** Roughly half the page is now Pine Deep or
+  photograph, where before it was three quarters cream. No more than two light
+  sections ever run together.
+- **Nine outline icons removed.** The six pillars are a numbered editorial list
+  with a sticky heading. The three streams are hairline ruled columns.
+- **The 4.9 rating and the four column stats band are gone.** The retreats have
+  not run, so there is no average, and an unsubstantiated rating is a Fair
+  Trading Act 1986 exposure. The three facts that are true live in the hero
+  strip instead.
+- **Navigation points at the actual URLs** from the site architecture rather
+  than at on page anchors. They will 404 until those pages exist, which is the
+  correct behaviour and is visible to whoever is building.
+- **Metadata added.** Open Graph, Twitter card, canonical, JSON-LD.
+- **Motion system.** Two easing curves, 14px reveals with a 70ms stagger, a
+  header that solidifies past the hero, a scroll progress line, photographic
+  drift on desktop, and a mobile sticky Book a call bar. All of it off under
+  `prefers-reduced-motion`, and none of it required for the page to work.
 
 ## Constraints it was built under
 
@@ -27,15 +61,13 @@ deployment target and nothing here is wired to WordPress.
 
 ## Still to confirm
 
-- The 4.9 average rating in the stats band is still unverified. Everything
-  else on that band is confirmed: ten couples per retreat, five days, two
-  therapists.
+- **The four photographs.** `images/site/` has a README naming exactly which
+  frame goes where. Nothing else is blocking.
 - Testimonials are Tarisha's own couples testimonials, attributed as "Couples
   client" because no names were supplied. Add names or initials if consent
   allows.
-- Founder photography is a styled placeholder block. The photos live in
-  Dropbox; `automation/fetch_dropbox_images.py` can pull them once Dropbox is
-  reachable and credentials are set.
+- Retreat dates and pricing. The page deliberately makes no claim about either.
+- The newsletter line in the footer has no form behind it yet. Fluent Forms.
 
 ## therapy.html
 
