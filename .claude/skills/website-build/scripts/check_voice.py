@@ -66,8 +66,16 @@ def main():
     # Only resources the browser actually loads count against the one-external
     # -resource rule. An <a href> to another site is an outbound link, not a
     # dependency, and flagging it would punish ordinary citations.
+    # A <link rel="canonical"> or "alternate" is metadata, not a dependency,
+    # and it has to be absolute to do its job, so it is not a stray resource.
     loaded = set(re.findall(r'<(?:img|script|iframe|source|video|audio)[^>]+src="(https?://[^"]+)"', html))
-    loaded |= set(re.findall(r'<link[^>]+href="(https?://[^"]+)"', html))
+    for tag in re.findall(r"<link\b[^>]*>", html):
+        rel = re.search(r'rel="([^"]*)"', tag)
+        if rel and rel.group(1).strip().lower() in {"canonical", "alternate"}:
+            continue
+        href = re.search(r'href="(https?://[^"]+)"', tag)
+        if href:
+            loaded.add(href.group(1))
     loaded |= set(re.findall(r'url\((https?://[^)]+)\)', html))
     stray = [u for u in loaded
              if "fonts.googleapis.com" not in u and "fonts.gstatic.com" not in u]

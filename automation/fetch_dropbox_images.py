@@ -62,6 +62,7 @@ OAUTH_TOKEN_URL = "https://api.dropbox.com/oauth2/token"
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "images"
 RAW_DIR = IMAGES_DIR / "raw"
+SITE_DIR = IMAGES_DIR / "site"
 INFOGRAPHIC_DIR = IMAGES_DIR / "infographics"
 VIDEOS_DIR = ROOT / "videos"
 INFOGRAPHIC_VIDEO_DIR = VIDEOS_DIR / "infographics"
@@ -441,6 +442,49 @@ def phase_three_route_infographics(saved: list[str]) -> None:
         print(f"  SKIPPED {line}", file=sys.stderr)
 
 
+def fetch_site_photos(token: str, folder_url: str) -> int:
+    """Download a website photography folder straight into images/site/,
+    keeping the original filenames.
+
+    Separate from the social pipeline on purpose: these are a handful of
+    hand picked frames that site/index.html references by name, not a bulk
+    sync. See images/site/README.md for which filename goes where.
+    """
+    SITE_DIR.mkdir(parents=True, exist_ok=True)
+    entries = list_files(token, folder_url, recursive=True)
+    shared_root = compute_shared_root(entries)
+    root_len = len(shared_root)
+
+    photos = [
+        e
+        for e in entries
+        if e.get(".tag") == "file"
+        and Path(e["name"]).suffix.lower() in IMAGE_EXTS
+    ]
+    photos.sort(key=lambda e: e["name"].lower())
+    if not photos:
+        print("Site photos: shared folder held no images", file=sys.stderr)
+        return 0
+
+    print(f"\nSite photos: downloading {len(photos)} file(s) to images/site/")
+    for entry in photos:
+        display = entry.get("path_display") or ("/" + entry["name"])
+        api_path = (
+            display[root_len:]
+            if root_len and display.lower().startswith(shared_root)
+            else display
+        )
+        if not api_path.startswith("/"):
+            api_path = "/" + api_path
+        download_file(token, folder_url, api_path, SITE_DIR / entry["name"])
+        print(f"  {entry['name']}")
+    print(
+        "\nRename these to hero-piha.jpg, walking-out.jpg, tarisha-mark.jpg "
+        "and closing-beach.jpg. See images/site/README.md."
+    )
+    return len(photos)
+
+
 def phase_two_apply_mapping(saved: list[str]) -> None:
     if not MAPPING_PATH.exists():
         print(
@@ -469,14 +513,18 @@ def phase_two_apply_mapping(saved: list[str]) -> None:
 def main() -> int:
     folder_url = os.environ.get("DROPBOX_FOLDER_URL")
     infographic_folder_url = os.environ.get("DROPBOX_INFOGRAPHIC_FOLDER_URL", "").strip()
-    if not folder_url:
+    site_photos_url = os.environ.get("DROPBOX_SITE_PHOTOS_URL", "").strip()
+    if not folder_url and not site_photos_url:
         write_diagnostic(
             {
                 "phase": "config",
-                "error": "DROPBOX_FOLDER_URL must be set",
+                "error": "DROPBOX_FOLDER_URL or DROPBOX_SITE_PHOTOS_URL must be set",
             }
         )
-        print("DROPBOX_FOLDER_URL must be set", file=sys.stderr)
+        print(
+            "DROPBOX_FOLDER_URL or DROPBOX_SITE_PHOTOS_URL must be set",
+            file=sys.stderr,
+        )
         return 1
 
     token = resolve_access_token()
@@ -486,6 +534,15 @@ def main() -> int:
             file=sys.stderr,
         )
         return 1
+
+    if site_photos_url:
+        try:
+            fetch_site_photos(token, site_photos_url)
+        except Exception as e:
+            print(f"Site photo fetch failed: {e}", file=sys.stderr)
+
+    if not folder_url:
+        return 0
 
     saved = phase_one_download_raw(token, folder_url)
     if not saved:
