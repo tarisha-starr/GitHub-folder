@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" role="img" aria-labelledby="ttl desc">
+  <title id="ttl">The SHIP model</title>
+  <desc id="desc">The Sexual Health and Integrative Pleasure model, developed by Girard, Newstrom, Connor, Arenella, Vencill and Robinson (2023). An outer ring holds five philosophical foundations: systemic, bio psycho social cultural, across the lifespan, empiricism, and intersectionality. Five inner circles hold the core therapeutic components: sexual adaptation and resilience, relational intimacy, pleasure oriented positive sexuality, multidisciplinary care, and sexual literacy.</desc>
+  <defs>
+    <style>
+      .display { font-family: Marcellus, 'Cormorant Garamond', Georgia, serif; font-weight: 400; }
+      .body { font-family: Lora, Georgia, serif; font-weight: 400; }
+      .eyebrow { font-family: Lora, Georgia, serif; letter-spacing: 5px; font-size: 19px; fill: #B8945A; text-anchor: middle; }
+      .h1 { font-size: 58px; fill: #F5EFE3; text-anchor: middle; }
+      .sub { font-size: 23px; fill: #A89580; font-style: italic; text-anchor: middle; }
+      .ring { font-family: Lora, Georgia, serif; letter-spacing: 2.5px; }
+      .complbl { font-family: Lora, Georgia, serif; font-size: 17px; letter-spacing: 0.6px; text-anchor: middle; }
+      .def { font-family: Lora, Georgia, serif; font-size: 12.5px; fill: #E8DFD0; text-anchor: middle; }
+      .citelbl { font-family: Lora, Georgia, serif; letter-spacing: 4px; font-size: 15px; fill: #B8945A; text-anchor: middle; }
+      .cite { font-family: Lora, Georgia, serif; font-size: 17px; fill: #A89580; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1350" fill="#1F2C1F"/>
+  <rect x="0" y="0" width="1080" height="10" fill="#C75D3D"/>
+
+  <text class="eyebrow" x="540" y="96">THE SHIP MODEL &#183; GIRARD ET AL. 2023</text>
+  <text class="display h1" x="540" y="168">Not one broken thing.</text>
+  <text class="body sub" x="540" y="212">Five things therapy works on, and the five lenses underneath</text>
+
+    <path d="M 552.51 294.17 A 448 448 0 0 1 962.04 591.72 L 926.24 604.46 A 410 410 0 0 0 551.45 332.16 Z" fill="#5D6B3F"/>
+  <path id="ring0" fill="none" d="M 551.76 321.16 A 421.00 421.00 0 0 1 936.61 600.77"/>
+  <path d="M 969.77 615.51 A 448 448 0 0 1 813.35 1096.95 L 790.16 1066.84 A 410 410 0 0 0 933.32 626.24 Z" fill="#B8945A"/>
+  <path id="ring1" fill="none" d="M 943.87 623.13 A 421.00 421.00 0 0 1 796.87 1075.55"/>
+  <path d="M 793.11 1111.65 A 448 448 0 0 1 286.89 1111.65 L 308.36 1080.30 A 410 410 0 0 0 771.64 1080.30 Z" fill="#C75D3D"/>
+  <path id="ring2" fill="none" d="M 292.54 1103.40 A 438.00 438.00 0 0 0 787.46 1103.40"/>
+  <path d="M 266.65 1096.95 A 448 448 0 0 1 110.23 615.51 L 146.68 626.24 A 410 410 0 0 0 289.84 1066.84 Z" fill="#C9A579"/>
+  <path id="ring3" fill="none" d="M 119.82 618.33 A 438.00 438.00 0 0 0 272.76 1089.02"/>
+  <path d="M 117.96 591.72 A 448 448 0 0 1 527.49 294.17 L 528.55 332.16 A 410 410 0 0 0 153.76 604.46 Z" fill="#A89580"/>
+  <path id="ring4" fill="none" d="M 143.39 600.77 A 421.00 421.00 0 0 1 528.24 321.16"/>
+    <text class="ring" font-size="21" fill="#F5EFE3"><textPath href="#ring0" startOffset="50%" text-anchor="middle">SYSTEMIC</textPath></text>
+  <text class="ring" font-size="19" fill="#1F2C1F"><textPath href="#ring1" startOffset="50%" text-anchor="middle">BIO, PSYCHO, SOCIAL, CULTURAL</textPath></text>
+  <text class="ring" font-size="21" fill="#F5EFE3"><textPath href="#ring2" startOffset="50%" text-anchor="middle">ACROSS THE LIFESPAN</textPath></text>
+  <text class="ring" font-size="21" fill="#1F2C1F"><textPath href="#ring3" startOffset="50%" text-anchor="middle">EMPIRICISM</textPath></text>
+  <text class="ring" font-size="21" fill="#1F2C1F"><textPath href="#ring4" startOffset="50%" text-anchor="middle">INTERSECTIONALITY</textPath></text>
+
+    <circle cx="540.00" cy="550.00" r="90" fill="#2D3E2C" stroke="#5D6B3F" stroke-width="2"/>
+  <text class="def" x="540.00" y="540.00">Building and</text>
+  <text class="def" x="540.00" y="554.00">keeping a flexible</text>
+  <text class="def" x="540.00" y="568.00">sexual relationship.</text>
+  <circle cx="722.60" cy="682.67" r="90" fill="#2D3E2C" stroke="#B8945A" stroke-width="2"/>
+  <text class="def" x="722.60" y="658.67">Creating and</text>
+  <text class="def" x="722.60" y="672.67">keeping intimacy</text>
+  <text class="def" x="722.60" y="686.67">that allows</text>
+  <text class="def" x="722.60" y="700.67">positive sexual</text>
+  <text class="def" x="722.60" y="714.67">expression.</text>
+  <circle cx="652.85" cy="897.33" r="90" fill="#2D3E2C" stroke="#C75D3D" stroke-width="2"/>
+  <text class="def" x="652.85" y="873.33">A focus on</text>
+  <text class="def" x="652.85" y="887.33">pleasure,</text>
+  <text class="def" x="652.85" y="901.33">satisfaction and</text>
+  <text class="def" x="652.85" y="915.33">consent, talked</text>
+  <text class="def" x="652.85" y="929.33">about openly.</text>
+  <circle cx="427.15" cy="897.33" r="90" fill="#2D3E2C" stroke="#C9A579" stroke-width="2"/>
+  <text class="def" x="427.15" y="873.33">Care across the</text>
+  <text class="def" x="427.15" y="887.33">physical, mental,</text>
+  <text class="def" x="427.15" y="901.33">relational, social,</text>
+  <text class="def" x="427.15" y="915.33">cultural and</text>
+  <text class="def" x="427.15" y="929.33">spiritual.</text>
+  <circle cx="357.40" cy="682.67" r="90" fill="#2D3E2C" stroke="#A89580" stroke-width="2"/>
+  <text class="def" x="357.40" y="658.67">Getting accurate</text>
+  <text class="def" x="357.40" y="672.67">sexual health</text>
+  <text class="def" x="357.40" y="686.67">information and</text>
+  <text class="def" x="357.40" y="700.67">folding it into</text>
+  <text class="def" x="357.40" y="714.67">your own values.</text>
+    <text class="complbl" fill="#5D6B3F" x="540.00" y="401.50">SEXUAL ADAPTATION</text>
+  <text class="complbl" fill="#5D6B3F" x="540.00" y="424.50">AND RESILIENCE</text>
+  <text class="complbl" fill="#B8945A" x="858.60" y="632.98">RELATIONAL</text>
+  <text class="complbl" fill="#B8945A" x="858.60" y="655.98">INTIMACY</text>
+  <text class="complbl" fill="#C75D3D" x="736.91" y="1007.52">PLEASURE ORIENTED</text>
+  <text class="complbl" fill="#C75D3D" x="736.91" y="1030.52">POSITIVE SEXUALITY</text>
+  <text class="complbl" fill="#C9A579" x="343.09" y="1007.52">MULTIDISCIPLINARY</text>
+  <text class="complbl" fill="#C9A579" x="343.09" y="1030.52">CARE</text>
+  <text class="complbl" fill="#A89580" x="221.40" y="632.98">SEXUAL</text>
+  <text class="complbl" fill="#A89580" x="221.40" y="655.98">LITERACY</text>
+
+  <text class="display" x="540" y="724" font-size="46" fill="#C75D3D" text-anchor="middle">SHIP</text>
+  <text class="body" x="540" y="754" font-size="14" fill="#F5EFE3" text-anchor="middle">Sexual Health &amp;</text>
+  <text class="body" x="540" y="772" font-size="14" fill="#F5EFE3" text-anchor="middle">Integrative Pleasure</text>
+  <text class="body" x="540" y="790" font-size="14" fill="#F5EFE3" text-anchor="middle">Model</text>
+
+  <line x1="150" y1="1218" x2="930" y2="1218" stroke="#B8945A" stroke-width="1"/>
+  <text class="citelbl" x="540" y="1250">MODEL DEVELOPED BY</text>
+  <text class="cite" x="540" y="1281">Girard, A., Newstrom, N. P., Connor, J., Arenella, K., Vencill, J. &amp; Robinson, B. (2023).</text>
+  <text class="cite" x="540" y="1305">Sexual Health and Integrative Pleasure (SHIP) Model. Journal of Marital and Family Therapy, 49(2), 333 to 350.</text>
+  <text class="cite" x="540" y="1329" font-size="15" fill="#8C7E6B">Diagram redrawn for this article. The model is theirs.</text>
+</svg>

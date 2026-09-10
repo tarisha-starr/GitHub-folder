@@ -36,26 +36,28 @@ Yes. The name sounds like a filing cabinet. Stay with me anyway.
 
 What Girard and her colleagues did is genuinely useful. They took
 everything a good sex therapist is quietly holding in her head during a
-session, and they laid it out flat. Five ways of thinking that sit
-underneath the work. Five things the work actually touches.
+session, and they laid it out flat. Five lenses around the outside. Five
+things the work actually touches in the middle.
 
 Ten pieces. And when I read that list, I recognised every single woman
 who's ever cried on my couch.
 
-![The five therapeutic components of the SHIP model, developed by Girard,
-Newstrom, Connor, Arenella, Vencill and Robinson (2023): sexual literacy,
-adaptation and resilience, relational intimacy, pleasure rather than
-performance, and the right team around
-you.](../../images/infographics/ship-model-five-doors.jpg)
+![The SHIP model. An outer ring holds five foundations: systemic,
+bio psycho social cultural, across the lifespan, empiricism and
+intersectionality. Five inner circles hold the therapeutic components:
+sexual adaptation and resilience, relational intimacy, pleasure oriented
+positive sexuality, multidisciplinary care and sexual
+literacy.](../../images/infographics/ship-model-wheel.jpg)
 
-*The five doors, side by side. Model developed by Girard, Newstrom,
-Connor, Arenella, Vencill and Robinson (2023), Journal of Marital and
-Family Therapy. Full reference at the foot of this page.*
+*The SHIP model, redrawn in our colours. The model itself was developed
+by Girard, Newstrom, Connor, Arenella, Vencill and Robinson (2023),
+Journal of Marital and Family Therapy. Full reference at the foot of this
+page.*
 
-## First, the five things sitting underneath
+## First, the five lenses around the outside
 
-These are the five lenses Girard and her colleagues put underneath the
-whole model. You don't need to memorise them. You just need to notice
+These are the five foundations Girard and her colleagues put underneath
+the whole model. You don't need to memorise them. You just need to notice
 that not one of them is "what's wrong with her."
 
 **You're in a system.** You're not a problem floating in space. You're in
@@ -63,26 +65,29 @@ a relationship, a household, a family, a whole ecosystem of who does the
 washing and who apologises first.
 
 **Your life shaped what you were allowed to want.** Your culture. Your
-faith or the one you were raised in. Your race, your body size, your age,
-who you love. All of it wrote rules into you before you could read.
+faith, or the one you were raised in. Your race, your body size, your
+age, who you love. All of it wrote rules into you before you could read.
+They call this intersectionality.
 
-**Body, mind and world, all at once.** Hormones and resentment and the
-mortgage. Not one of them. All three. At the same time.
+**Body, mind, world and culture, all at once.** Hormones and resentment
+and the mortgage and what your mother's church said about pleasure. Not
+one of them. All of it. At the same time.
 
-**Your sexuality has a lifespan.** You at 51 are not a broken version of
+**Your sexuality has a lifespan.** You at 51 aren't a broken version of
 you at 25. You're a different woman with different wiring and different
 needs, and she's never been listened to properly.
 
 **And check what's actually true.** Not what everybody assumes. Not what
-your mother implied. What's true, for you, right now.
+your mother implied. What's true, for you, right now. They call that
+empiricism, which is a big word for "look, don't guess."
 
 Sit with that for a second. Five lenses, and "she's faulty" isn't one of
 them.
 
 ## Then, the five things therapy actually works on
 
-These five are the heart of what Girard, Newstrom, Connor, Arenella,
-Vencill and Robinson built. This is the part I want you to keep.
+These five sit in the middle of the circle, and they're the heart of what
+Girard, Newstrom, Connor, Arenella, Vencill and Robinson built. This is the part I want you to keep.
 
 ### 1. Sexual literacy
 
@@ -134,7 +139,8 @@ pleasure becomes a target you have to hit, your body reads it as a test,
 and no body has ever relaxed into a test.
 
 What Girard and her colleagues are naming here matters: sexuality that's oriented
-towards pleasure, not away from dysfunction. There's a difference between
+towards pleasure, satisfaction and consent, rather than away from
+dysfunction. There's a difference between
 "stop being broken" and "come home to what feels good." Only one of those
 is possible.
 
@@ -146,7 +152,8 @@ nobody warned you.
 
 Girard and her colleagues are firm about this one. Good care is a team.
 GP, pelvic floor physio, sometimes an endocrinologist, sometimes a
-therapist like me.
+therapist like me. Physical, psychological, relational, social, cultural
+and spiritual, held together rather than passed around.
 
 You deserve to be properly examined, not just talked at. And you're
 allowed to ask for more than "it's normal at your age."
@@ -199,5 +206,6 @@ Model: Using a clinical case example to guide assessment and treatment."
 *Journal of Marital and Family Therapy*, 49(2), 333 to 350.
 [doi.org/10.1111/jmft.12624](https://doi.org/10.1111/jmft.12624)
 
-Image: made by me for this post, summarising their five therapeutic
-components. Credit for the model belongs to them.
+The diagram was redrawn for this post in our own colours, from the
+structure the authors set out. Credit for the model belongs to them.
+Published at `site/blog-ship-model.html`.
