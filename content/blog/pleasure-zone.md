@@ -1,164 +1,166 @@
 ---
-title: "Your Pleasure Zone Isn't A Spot On Your Body"
+title: "The Pleasure Zone: The Book That Explains Why You Flinch At Good Feelings"
 slug: pleasure-zone
-description: "Most women go looking for their pleasure zone in the wrong place. It isn't a spot, it's a state. Here's how to find your way back into it."
+description: "Stella Resnick's The Pleasure Zone says most of us have a ceiling on how much pleasure we can tolerate. Here's what that book gets right about women over 40, and the eight pleasures she says we're missing."
 audience: "Women over 40"
-tags: [pleasure, desire, intimacy, body, midlife]
+tags: [pleasure, desire, intimacy, body, midlife, book-review]
 status: draft
+references:
+  - "Resnick, S. (1997). The Pleasure Zone: Why We Resist Good Feelings & How to Let Go and Be Happy. Berkeley, CA: Conari Press. 297pp. ISBN 978-1573240710."
+  - "Resnick, S. (2012). Body-to-Body Intimacy: Transformation Through Love, Sex, and Neurobiology. New York: McGraw-Hill."
+  - "Basson, R. (2000). The Female Sexual Response: A Different Model. Journal of Sex & Marital Therapy, 26(1), 51-65."
+  - "van der Kolk, B. (2014). The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma. New York: Viking."
+  - "Dr Stella Resnick, official book page: https://www.drstellaresnick.com/the-pleasure-zone"
 ---
 
-# Your Pleasure Zone Isn't A Spot On Your Body
+# The Pleasure Zone: The Book That Explains Why You Flinch At Good Feelings
 
-Women come into my office and ask me where it is.
+There's a book that's been on my shelf for years, and I keep handing it to
+women who tell me they've gone numb.
 
-Like it's a place on a map. The right spot. The right pressure. The right
-position that finally makes their body do the thing it used to do without
-being asked.
+*The Pleasure Zone*, by Stella Resnick. Written in 1997, which is almost thirty
+years ago now, and it's still saying something most of us haven't caught up to.
 
-I understand why. It's the way we've all been taught to think about it. Find
-the button, press the button, get the result. And if the button doesn't work,
-well, something must be wrong with the wiring.
+Her subtitle is the bit that gets people: *Why We Resist Good Feelings.*
 
-Darling, nothing is wrong with your wiring.
+Not "how to have more orgasms". Not "how to want him again". Why we resist.
+Because Resnick's whole argument is that pleasure isn't in short supply. We're
+the ones flinching away from it.
 
-Your pleasure zone isn't a spot on your body. It's a state your body has to
-feel safe enough to enter. And most of us over 40 haven't been anywhere near
-it in years.
+## The ceiling nobody told you about
 
-## The three zones
+Here's her core idea, and I've watched it land in my office more times than I
+can count.
 
-Here's what I see, week after week, in the women who sit across from me.
+Most of us carry a fixed ceiling on how much pleasure we can tolerate. Not how
+much we can access. How much we can *stand*. Go past it and something in you
+gets uncomfortable, so you cut it short. You reach for your phone. You start
+thinking about the washing. You crack a joke. You finish it quickly so it can
+be over.
 
-**The numb zone.** Nothing hurts. Nothing's happening either. You're
-functional, you're capable, you're getting through the list. Your body's on
-mute and you barely notice because the mute button's been on so long it feels
-like the factory setting. You can have sex from here. Plenty of women do. You
-just aren't in the room for it.
+Resnick says a lot of us are quietly afraid of pleasure, because pleasure
+means letting go, and letting go means not being in control. So we choose the
+proper option. The practical one. The tidy one. Every single time.
 
-**The pressure zone.** Too much, too fast, too soon. Somebody's touching you
-and you're already three steps ahead, working out how long this will take and
-whether you'll have to fake the ending. You're watching yourself from the
-ceiling. Performing. Managing. Checking if he's disappointed yet.
+Sound like anybody you know?
 
-**The pleasure zone.** Somewhere between those two. Safe enough to soften,
-awake enough to want. It's narrow at first. Ridiculously narrow. Thirty
-seconds of "oh, that's nice" before your mind grabs the wheel again.
+I see it in women who can talk for an hour about their marriage and then go
+completely still when I ask what feels good in their body. Not resistant. Not
+difficult. Just... blank. The ceiling's right there, and they've never once
+been told it exists.
 
-That thirty seconds isn't nothing. That thirty seconds is the whole door.
+## It isn't a place on your body
 
-## Why your zone got so narrow
+I'll admit I had this wrong for a long time too.
 
-It wasn't one thing. That's what makes it so hard to explain to your partner
-when he asks what changed.
+Resnick is clear that the pleasure zone isn't a spot, and it isn't a
+destination. She describes it as an active way of focusing your attention that
+puts you in the present moment. That's it. That's the zone.
 
-It was twenty years of being useful. Of being the one who remembers the
-dentist appointments and the birthday presents and which kid stopped eating
-dairy. It was a body that fed babies and then went back to work on four hours'
-sleep. It was every time you said yes when you meant no, and every time you
-went somewhere else in your head to get through it.
+Which means you can't find it by looking harder. You find it by being here.
+Breathing. Actually in the room. She's a body-oriented therapist, so the work
+in her book is breath work and body awareness, not technique.
 
-Your body noticed all of that. She kept the score.
+That reframe matters enormously for women over 40. Because if the zone were a
+spot, then a body that's changed, a body in perimenopause, a body that's
+carried children and stress and twenty years of being useful, would be a body
+that lost the spot.
 
-So now she does the sensible thing. She stays quiet. She doesn't open a door
-that's only ever led to more pressure, more obligation, more of you overriding
-her.
+It isn't. You didn't lose anything. You left the present moment somewhere
+around 2011 and nobody handed you a map back.
 
-She isn't broken. She's protecting you. There's a difference, and it changes
-everything about what you do next.
+## The eight core pleasures
 
-## Brakes and accelerators
+This is the part of the book I'd photocopy and stick on fridges if I could.
 
-Think of it like a car with two pedals.
+Resnick lays out eight core pleasures, and sexual pleasure is only one of
+them. Number seven, in fact.
 
-The accelerators are the things that turn you on. Touch, attention, a look
-across the kitchen, feeling desired, feeling free.
+1. **Primal pleasure.** Letting go. Just being. Timelessness.
+2. **Pain relief.** Releasing and resolving old hurt.
+3. **Elemental pleasures.** Play, humour, movement, sound.
+4. **Mental pleasures.** Curiosity, learning, thinking well of things.
+5. **Emotional pleasures.** Gratitude, love, courage, enthusiasm.
+6. **Sensual pleasures.** Taking delight in your senses.
+7. **Sexual pleasures.** Arousal, desire, romance, abandon.
+8. **Spiritual pleasures.** Feeling part of something good.
 
-The brakes are everything telling your body it isn't safe or free to want
-right now. The teenager awake down the hall. The unfinished work email. The
-way your stomach felt in the bathroom mirror this morning. The argument from
-Tuesday that nobody ever finished.
+Sit with that list for a second.
 
-Most of us go hunting for a better accelerator. A new toy, a new technique, a
-weekend away, a bit of lingerie that's been in the drawer since 2019.
+If a woman can't play, can't rest, hasn't laughed properly in a fortnight,
+hasn't tasted her own dinner because she ate it standing at the bench, hasn't
+felt part of anything larger than her family's logistics... and then she gets
+into bed and can't feel anything?
 
-But if your foot is flat on the brake, none of it moves you.
+That isn't a sex problem. That's a woman running on one pleasure out of eight,
+and that one carries the weight of all of them.
 
-The question isn't "what turns me on?" The question is "what's got its foot on
-my brake?" That one's harder. It's also the one that actually opens the zone.
+This is why I'll never start with the bedroom. Get the other seven moving and
+the seventh one stops having to do the impossible.
 
-## You don't have to want it before you start
+## What her book leaves for us to add
 
-Here's the thing nobody told us.
+Resnick was writing in the nineties, and the field has moved since. Two things
+I'd put beside her.
 
-Most women over 40 don't get spontaneous desire. That lightning bolt out of
-nowhere, the one they show in films, the one you used to feel at 24 when
-everything was new and nothing was on your to-do list.
+Rosemary Basson, working around 2000, put a name to what most of us over 40
+live with: responsive desire. Wanting shows up after arousal rather than
+before. So waiting to feel like it before you begin is waiting for something
+that stopped arriving unannounced years ago.
 
-What you have now is responsive desire. It shows up after arousal, not before.
-Which means waiting to feel like it before you begin is waiting for a bus that
-stopped running years ago.
+And Bessel van der Kolk gave us the language for the other half. The body keeps
+the score. Every overriding, every yes that meant no, every time you went
+somewhere else in your head to get through it. Your body filed all of it.
 
-You don't have to arrive wanting. You only have to be willing to see what
-happens if you start slowly and stay curious.
+Put the three together and you get something honest. Your ceiling isn't a
+character flaw, it's a record. Your body isn't withholding, she's protecting.
+And desire will not arrive first to prove it's safe.
 
-Willing is enough. Willing is plenty.
+## What to actually do with all this
 
-## How to widen the zone
+Resnick ends each chapter with small experiments rather than instructions, and
+I love her for it. So in that spirit.
 
-Start smaller than you think you should. Everybody wants the big breakthrough.
-The zone doesn't widen with big.
+**Find your ceiling.** Next time something feels lovely, notice the moment you
+want it to stop. Don't judge it. Just clock where the edge is. That's your
+information.
 
-**Five minutes. Alone. No goal.**
+**Stay ten seconds longer.** Not an hour. Ten seconds past the flinch. That's
+how a ceiling lifts, by tiny amounts, repeatedly.
 
-Sit somewhere warm, put a hand on your chest or your belly, and breathe out
-longer than you breathe in. Then ask her, out loud if you can: "How are you
-doing, darling?"
+**Breathe out longer than you breathe in.** Her whole approach runs on breath.
+Long exhale, and your body gets the message that nothing's coming for you.
 
-And wait. Don't fix the answer. Don't manage it. She might say tired. She
-might say angry. She might say nothing at all for the first four days. Keep
-asking.
+**Pick a pleasure that isn't sex.** One of the other seven. Play. A bath you
+don't rush. Music in the kitchen. Curiosity about something useless. Give it
+fifteen minutes this week.
 
-**Go slower than feels reasonable.**
+**Ask her how she's doing.** Hand on your chest, out loud if you can: "How are
+you doing, darling?" Then wait. Don't fix the answer.
 
-When you do touch yourself, or when he touches you, halve the speed. Then
-halve it again. Pressure lives in speed. Pleasure lives in the pause.
+## Should you read it?
 
-**Notice the thirty seconds.**
+Yes. It's not a new book and it doesn't read like a slick one, and honestly
+that's part of why I trust it. There's no hype in it. It's a therapist showing
+you the thing you've been doing your whole life without noticing.
 
-When something feels good, stay there. Don't chase it forward, don't grade it,
-don't wonder if it's building to anything. Just stay. That's how thirty
-seconds becomes two minutes becomes a body that trusts you again.
+Read it slowly. One pleasure at a time. Do the experiments, don't just nod at
+them, because nodding at pleasure work is exactly the ceiling doing its job.
 
-## Orgasm isn't the goal
+And if reading this made something ache, that ache is worth listening to. It's
+the work I do with women every week, and it's what we go into inside Sexually
+Empowered Radiant Woman. Reach out if you're ready. We can shift it.
 
-I'll say it plainly because it's the thing that frees most women in the room.
+## References
 
-The goal isn't the finish. It never was. Chasing the finish is what put your
-foot on the brake in the first place, because a goal means a way to fail, and
-your body will not open in a room where she might fail.
-
-Pleasure is the point. Presence is the point. Feeling your own skin from the
-inside on an ordinary Tuesday night is the point.
-
-The finish, when it comes, is a lovely side effect. Not the exam.
-
-## So where is it?
-
-Your pleasure zone is not somewhere you have to find.
-
-It's somewhere you have to make safe enough to return to. Slowly. On your own
-terms. With a body you've stopped arguing with.
-
-She's been waiting for you the whole time.
-
-So, ask her tonight. Hand on your chest, five minutes, no agenda.
-
-What does she say?
-
----
-
-*If reading this made something ache, you're not the only one. This is the
-work I do with women every week, and it's exactly what we go into inside
-Sexually Empowered Radiant Woman. Reach out if you're ready. We can shift it.*
+- Resnick, S. (1997). *The Pleasure Zone: Why We Resist Good Feelings & How to
+  Let Go and Be Happy.* Berkeley, CA: Conari Press. 297pp.
+  ISBN 978-1573240710. [Author's book page](https://www.drstellaresnick.com/the-pleasure-zone)
+- Resnick, S. (2012). *Body-to-Body Intimacy: Transformation Through Love, Sex,
+  and Neurobiology.* New York: McGraw-Hill.
+- Basson, R. (2000). "The Female Sexual Response: A Different Model."
+  *Journal of Sex & Marital Therapy,* 26(1), 51-65.
+- van der Kolk, B. (2014). *The Body Keeps the Score: Brain, Mind, and Body in
+  the Healing of Trauma.* New York: Viking.
 
 *With a big warm hug, Tarisha*
