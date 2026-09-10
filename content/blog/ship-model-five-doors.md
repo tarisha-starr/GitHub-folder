@@ -47,7 +47,7 @@ bio psycho social cultural, across the lifespan, empiricism and
 intersectionality. Five inner circles hold the therapeutic components:
 sexual adaptation and resilience, relational intimacy, pleasure oriented
 positive sexuality, multidisciplinary care and sexual
-literacy.](../../images/infographics/ship-model-wheel.jpg)
+literacy.](../../images/infographics/ship-model-wheel-serw.jpg)
 
 *The SHIP model, redrawn in our colours. The model itself was developed
 by Girard, Newstrom, Connor, Arenella, Vencill and Robinson (2023),
@@ -208,4 +208,5 @@ Model: Using a clinical case example to guide assessment and treatment."
 
 The diagram was redrawn for this post in our own colours, from the
 structure the authors set out. Credit for the model belongs to them.
-Published at `site/blog-ship-model.html`.
+Published to sexualempowermentforwomen.com via
+`automation/publish_post.py`.
