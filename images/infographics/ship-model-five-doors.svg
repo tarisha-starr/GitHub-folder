@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" role="img" aria-labelledby="ttl desc">
+  <title id="ttl">Five doors, not one broken thing</title>
+  <desc id="desc">The five therapeutic components of the SHIP model: sexual literacy, adaptation and resilience, relational intimacy, pleasure rather than performance, and the right team around you. Source: Girard and colleagues, 2023, Journal of Marital and Family Therapy.</desc>
+
+  <defs>
+    <style>
+      .display { font-family: Marcellus, 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 400; }
+      .body    { font-family: Lora, Georgia, 'Times New Roman', serif; font-weight: 400; }
+      .eyebrow { font-family: Lora, Georgia, serif; letter-spacing: 5px; font-size: 20px; fill: #B8945A; }
+      .h1      { font-size: 74px; fill: #F5EFE3; }
+      .sub     { font-size: 27px; fill: #A89580; font-style: italic; }
+      .num     { font-size: 40px; fill: #C75D3D; }
+      .rowttl  { font-size: 40px; fill: #F5EFE3; }
+      .rowsub  { font-size: 25px; fill: #A89580; }
+      .citelbl { font-family: Lora, Georgia, serif; letter-spacing: 4px; font-size: 16px; fill: #B8945A; }
+      .cite    { font-size: 19px; fill: #A89580; }
+      .rule    { stroke: #3C4A38; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1350" fill="#1F2C1F"/>
+  <rect x="0" y="0" width="1080" height="10" fill="#C75D3D"/>
+
+  <!-- header -->
+  <text class="eyebrow" x="90" y="118">THE SHIP MODEL &#183; GIRARD ET AL. 2023</text>
+  <text class="display h1" x="90" y="212">Five doors,</text>
+  <text class="display h1" x="90" y="292">not one broken thing.</text>
+  <text class="body sub" x="90" y="348">The five things sex therapists actually work on</text>
+
+  <line class="rule" x1="90" y1="400" x2="990" y2="400"/>
+
+  <!-- 1 -->
+  <text class="display num"   x="90"  y="475">1</text>
+  <text class="display rowttl" x="180" y="475">Sexual literacy</text>
+  <text class="body rowsub"    x="180" y="518">Nobody ever taught you. That's the whole thing.</text>
+  <line class="rule" x1="90" y1="558" x2="990" y2="558"/>
+
+  <!-- 2 -->
+  <text class="display num"   x="90"  y="633">2</text>
+  <text class="display rowttl" x="180" y="633">Adaptation and resilience</text>
+  <text class="body rowsub"    x="180" y="676">Your body changed. So the question is what works now.</text>
+  <line class="rule" x1="90" y1="716" x2="990" y2="716"/>
+
+  <!-- 3 -->
+  <text class="display num"   x="90"  y="791">3</text>
+  <text class="display rowttl" x="180" y="791">Relational intimacy</text>
+  <text class="body rowsub"    x="180" y="834">Desire lives in the fourteen hours before bed.</text>
+  <line class="rule" x1="90" y1="874" x2="990" y2="874"/>
+
+  <!-- 4 -->
+  <text class="display num"   x="90"  y="949">4</text>
+  <text class="display rowttl" x="180" y="949">Pleasure, not performance</text>
+  <text class="body rowsub"    x="180" y="992">Orgasm isn't the goal. It never was.</text>
+  <line class="rule" x1="90" y1="1032" x2="990" y2="1032"/>
+
+  <!-- 5 -->
+  <text class="display num"   x="90"  y="1107">5</text>
+  <text class="display rowttl" x="180" y="1107">The right team around you</text>
+  <text class="body rowsub"    x="180" y="1150">Sometimes it IS the hormones. Sometimes the pelvic floor.</text>
+  <line x1="90" y1="1190" x2="990" y2="1190" stroke="#B8945A" stroke-width="1"/>
+
+  <!-- who developed the model -->
+  <text class="citelbl" x="90" y="1222">MODEL DEVELOPED BY</text>
+  <text class="body cite" x="90" y="1254">Girard, A., Newstrom, N. P., Connor, J., Arenella, K., Vencill, J. &amp; Robinson, B. (2023).</text>
+  <text class="body cite" x="90" y="1280">Sexual Health and Integrative Pleasure (SHIP) Model: using a clinical case example</text>
+  <text class="body cite" x="90" y="1306">to guide assessment and treatment. Journal of Marital and Family Therapy, 49(2), 333 to 350.</text>
+</svg>

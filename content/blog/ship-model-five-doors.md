@@ -23,24 +23,40 @@ It's almost never one thing, my love.
 ## Someone finally wrote the whole list down
 
 There's a paper I keep coming back to. It came out in the Journal of
-Marital and Family Therapy in 2023, written by Abby Girard and a group
-of sex therapists and psychologists out of Minnesota. They call it the
-SHIP model. Sexual Health and Integrative Pleasure.
+Marital and Family Therapy in 2023, and it was developed by Abby Girard,
+Nicholas Newstrom, Jennifer Connor, Katherine Arenella, Jennifer Vencill
+and Beatrice "Bean" Robinson. Couple and family therapists and
+psychologists, most of them out of the Institute for Sexual and Gender
+Health in Minnesota, all of them people who treat sexual problems for a
+living.
+
+They call it the SHIP model. Sexual Health and Integrative Pleasure.
 
 Yes. The name sounds like a filing cabinet. Stay with me anyway.
 
-What they did is genuinely useful. They took everything a good sex
-therapist is quietly holding in her head during a session, and they laid
-it out flat. Five ways of thinking that sit underneath the work. Five
-things the work actually touches.
+What Girard and her colleagues did is genuinely useful. They took
+everything a good sex therapist is quietly holding in her head during a
+session, and they laid it out flat. Five ways of thinking that sit
+underneath the work. Five things the work actually touches.
 
 Ten pieces. And when I read that list, I recognised every single woman
 who's ever cried on my couch.
 
+![The five therapeutic components of the SHIP model, developed by Girard,
+Newstrom, Connor, Arenella, Vencill and Robinson (2023): sexual literacy,
+adaptation and resilience, relational intimacy, pleasure rather than
+performance, and the right team around
+you.](../../images/infographics/ship-model-five-doors.jpg)
+
+*The five doors, side by side. Model developed by Girard, Newstrom,
+Connor, Arenella, Vencill and Robinson (2023), Journal of Marital and
+Family Therapy. Full reference at the foot of this page.*
+
 ## First, the five things sitting underneath
 
-These are the lenses. You don't need to memorise them. You just need to
-notice that not one of them is "what's wrong with her."
+These are the five lenses Girard and her colleagues put underneath the
+whole model. You don't need to memorise them. You just need to notice
+that not one of them is "what's wrong with her."
 
 **You're in a system.** You're not a problem floating in space. You're in
 a relationship, a household, a family, a whole ecosystem of who does the
@@ -65,7 +81,8 @@ them.
 
 ## Then, the five things therapy actually works on
 
-This is the part I want you to keep.
+These five are the heart of what Girard, Newstrom, Connor, Arenella,
+Vencill and Robinson built. This is the part I want you to keep.
 
 ### 1. Sexual literacy
 
@@ -116,7 +133,7 @@ Orgasm isn't the goal. I'll say it as many times as it takes. The moment
 pleasure becomes a target you have to hit, your body reads it as a test,
 and no body has ever relaxed into a test.
 
-What the researchers are naming here matters: sexuality that's oriented
+What Girard and her colleagues are naming here matters: sexuality that's oriented
 towards pleasure, not away from dysfunction. There's a difference between
 "stop being broken" and "come home to what feels good." Only one of those
 is possible.
@@ -127,8 +144,9 @@ Sometimes it IS the hormones. Sometimes it's the pelvic floor. Sometimes
 it's the medication that saved your life and flattened your desire, and
 nobody warned you.
 
-The model says good care is a team. GP, pelvic floor physio, sometimes an
-endocrinologist, sometimes a therapist like me.
+Girard and her colleagues are firm about this one. Good care is a team.
+GP, pelvic floor physio, sometimes an endocrinologist, sometimes a
+therapist like me.
 
 You deserve to be properly examined, not just talked at. And you're
 allowed to ask for more than "it's normal at your age."
@@ -168,8 +186,18 @@ out.
 
 ---
 
-*The paper: Girard, A., Newstrom, N. P., Connor, J., Arenella, K.,
-Vencill, J., & Robinson, B. (2023). "Sexual Health and Integrative
-Pleasure (SHIP) Model: Using a clinical case example to guide assessment
-and treatment." Journal of Marital and Family Therapy, 49(2), 333 to 350.
-Available at [doi.org/10.1111/jmft.12624](https://doi.org/10.1111/jmft.12624).*
+## Reference
+
+The SHIP model was developed by Abby Girard, Nicholas P. Newstrom,
+Jennifer Connor, Katherine Arenella, Jennifer Vencill and Beatrice "Bean"
+Robinson. It isn't mine, and I've written about it here because it's the
+clearest map of this work I've read.
+
+Girard, A., Newstrom, N. P., Connor, J., Arenella, K., Vencill, J. &
+Robinson, B. (2023). "Sexual Health and Integrative Pleasure (SHIP)
+Model: Using a clinical case example to guide assessment and treatment."
+*Journal of Marital and Family Therapy*, 49(2), 333 to 350.
+[doi.org/10.1111/jmft.12624](https://doi.org/10.1111/jmft.12624)
+
+Image: made by me for this post, summarising their five therapeutic
+components. Credit for the model belongs to them.
