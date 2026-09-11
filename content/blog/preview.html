@@ -1,0 +1,1276 @@
+<title>Two Drafts On Desire</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root {
+    --ground: #FDFBF5;
+    --surface: #FBF7EE;
+    --ink: #2A2520;
+    --ink-soft: #6A6154;
+    --ink-faint: #8C8272;
+    --rule: #E4DBC9;
+    --accent: #C75D3D;
+    --accent-deep: #9E4A2A;
+    --gold: #96743C;
+    --band-bg: #1F2C1F;
+    --band-ink: #F5EFE3;
+    --band-soft: #AFBBA8;
+    --band-rule: #3C4E38;
+    --display: "Marcellus", "Times New Roman", Georgia, serif;
+    --body: "Lora", Georgia, "Times New Roman", serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #1B261A;
+      --surface: #23301F;
+      --ink: #F2ECDF;
+      --ink-soft: #B8B3A1;
+      --ink-faint: #938E7D;
+      --rule: #36452F;
+      --accent: #DB7E5F;
+      --accent-deep: #E08F72;
+      --gold: #C9A579;
+      --band-bg: #141D13;
+      --band-ink: #F2ECDF;
+      --band-soft: #A3AF9C;
+      --band-rule: #2E3D2B;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #1B261A;
+    --surface: #23301F;
+    --ink: #F2ECDF;
+    --ink-soft: #B8B3A1;
+    --ink-faint: #938E7D;
+    --rule: #36452F;
+    --accent: #DB7E5F;
+    --accent-deep: #E08F72;
+    --gold: #C9A579;
+    --band-bg: #141D13;
+    --band-ink: #F2ECDF;
+    --band-soft: #A3AF9C;
+    --band-rule: #2E3D2B;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .band {
+    background: var(--band-bg);
+    color: var(--band-ink);
+    border-bottom: 1px solid var(--band-rule);
+  }
+
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .masthead {
+    padding-block: clamp(2.5rem, 7vw, 4.5rem) clamp(2rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .eyebrow {
+    font-size: 0.76rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--gold);
+    margin: 0;
+  }
+
+  .band .eyebrow { color: var(--band-soft); }
+
+  .masthead h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 8vw, 3.9rem);
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .standfirst {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--band-soft);
+    max-width: 34rem;
+    margin: 0;
+  }
+
+  .index {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--band-rule);
+    border-block: 1px solid var(--band-rule);
+  }
+
+  .index li { background: var(--band-bg); }
+
+  .index a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 0.5rem 1.5rem;
+    padding: 1.1rem 0.25rem;
+    text-decoration: none;
+    color: var(--band-ink);
+  }
+
+  .index a:hover .index-title,
+  .index a:focus-visible .index-title { color: var(--accent-deep); }
+
+  .index-title {
+    font-family: var(--display);
+    font-size: 1.12rem;
+    line-height: 1.35;
+    transition: color 140ms ease;
+  }
+
+  .index-meta {
+    font-size: 0.76rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--band-soft);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  article { padding-block: clamp(3rem, 8vw, 5rem); }
+  article + article { border-top: 1px solid var(--rule); }
+
+  .slug {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    font-size: 0.76rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 1.5rem;
+  }
+
+  .slug .cat { color: var(--accent-deep); }
+
+  article h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(1.95rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    margin: 0 0 2rem;
+  }
+
+  article h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-wrap: balance;
+    margin: 2.75rem 0 1rem;
+  }
+
+  p { margin: 0 0 1.25rem; max-width: 38rem; }
+
+  .lede {
+    font-size: 1.18rem;
+    line-height: 1.65;
+  }
+
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+
+  .pull {
+    font-family: var(--display);
+    font-size: clamp(1.35rem, 4.5vw, 1.7rem);
+    line-height: 1.3;
+    color: var(--accent-deep);
+    border-left: 2px solid var(--accent);
+    padding: 0.15rem 0 0.15rem 1.5rem;
+    margin: 2.25rem 0;
+    max-width: 32rem;
+  }
+
+  ol.steps {
+    counter-reset: step;
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  ol.steps li {
+    counter-increment: step;
+    padding-left: 2.25rem;
+    position: relative;
+    max-width: 38rem;
+  }
+
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-family: var(--display);
+    font-size: 0.95rem;
+    color: var(--accent-deep);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .refs {
+    background: var(--surface);
+    border-left: 2px solid var(--gold);
+    padding: 1.5rem 1.5rem 1.6rem;
+    margin: 2.75rem 0 0;
+  }
+
+  .refs h4 {
+    font-size: 0.76rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin: 0 0 1rem;
+  }
+
+  .refs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .refs li {
+    font-size: 0.96rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .refs .work { color: var(--ink); font-style: italic; }
+  .refs .year { font-variant-numeric: tabular-nums; }
+
+  .signoff {
+    font-family: var(--display);
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    margin-top: 2.25rem;
+  }
+
+  .notes {
+    padding-block: clamp(3rem, 8vw, 4.5rem);
+    border-top: 1px solid var(--rule);
+  }
+
+  .notes h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(1.6rem, 5vw, 2.1rem);
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+  }
+
+  .notes > p { color: var(--ink-soft); }
+
+  .flags {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .flags li {
+    display: grid;
+    gap: 0.35rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    max-width: 38rem;
+  }
+
+  .flags li:last-child { border-bottom: 0; padding-bottom: 0; }
+
+  .flags b {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 1.18rem;
+    line-height: 1.3;
+  }
+
+  .flags p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+
+  footer {
+    background: var(--band-bg);
+    color: var(--band-soft);
+    padding-block: 2.25rem;
+    font-size: 0.88rem;
+  }
+
+  footer p { margin: 0; max-width: 34rem; }
+  code {
+    font-family: var(--body);
+    font-style: italic;
+  }
+
+  footer code {
+    font-family: var(--body);
+    color: var(--band-ink);
+    font-style: italic;
+  }
+
+  a { color: var(--accent-deep); }
+
+  .sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  figure {
+    margin: 2.75rem 0;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: 1.5rem 1.25rem 1.35rem;
+  }
+
+  figure .eyebrow { margin-bottom: 0.5rem; }
+
+  .fig-title {
+    font-family: var(--display);
+    font-size: 1.22rem;
+    line-height: 1.3;
+    margin: 0 0 1.25rem;
+    max-width: none;
+  }
+
+  figcaption {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 0.9rem;
+  }
+
+  /* Deida: the three stages */
+  .stages {
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border-top: 1px solid var(--rule);
+  }
+
+  .stage {
+    background: var(--surface);
+    display: grid;
+    grid-template-columns: 1.6rem 1fr auto;
+    gap: 0.3rem 1rem;
+    padding: 1.1rem 0.1rem;
+  }
+
+  .stage-num {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    color: var(--accent-deep);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.4;
+  }
+
+  .stage-name {
+    font-family: var(--display);
+    font-size: 1.08rem;
+    line-height: 1.35;
+  }
+
+  .stage-note {
+    grid-column: 2;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 24rem;
+  }
+
+  .marks {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    display: flex;
+    gap: 1.1rem;
+    align-self: center;
+  }
+
+  .mark {
+    display: grid;
+    justify-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  .dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+  }
+
+  .dot.on { background: var(--accent); }
+
+  @media (max-width: 34rem) {
+    .stage { grid-template-columns: 1.6rem 1fr; }
+    .marks { grid-row: auto; grid-column: 2; justify-content: start; margin-top: 0.6rem; }
+  }
+
+  /* Two column compare */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border-top: 1px solid var(--rule);
+  }
+
+  .compare > div {
+    background: var(--surface);
+    padding: 1.2rem 0.9rem 1.3rem 0;
+  }
+
+  .compare > div + div { padding-left: 1.1rem; padding-right: 0; }
+
+  .compare h5 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 1.08rem;
+    margin: 0 0 0.85rem;
+  }
+
+  .compare .no { color: var(--ink-faint); }
+  .compare .yes { color: var(--accent-deep); }
+
+  .compare ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .compare li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 34rem) {
+    .compare { grid-template-columns: 1fr; }
+    .compare > div, .compare > div + div { padding-left: 0; padding-right: 0; }
+  }
+
+  /* Basson: the line and the circle */
+  .line-chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.65rem;
+    margin: 0 0 2rem;
+  }
+
+  .chip {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--rule);
+    background: var(--ground);
+    color: var(--ink-soft);
+  }
+
+  .arrow {
+    color: var(--ink-faint);
+    font-size: 0.9rem;
+  }
+
+  .circle-wrap {
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    gap: 1.5rem 1.75rem;
+    align-items: center;
+  }
+
+  @media (max-width: 34rem) {
+    .circle-wrap { grid-template-columns: 1fr; justify-items: center; }
+    .circle-wrap ol { justify-self: start; }
+  }
+
+  .ring { width: 100%; height: auto; max-width: 13rem; display: block; }
+  .ring .track { fill: none; stroke: var(--rule); stroke-width: 2; }
+  .ring .tip { fill: var(--ink-faint); }
+  .ring .node { fill: var(--ground); stroke: var(--rule); stroke-width: 1.5; }
+  .ring .node-key { fill: var(--accent); stroke: var(--accent); }
+  .ring .num {
+    fill: var(--ink-soft);
+    font-family: "Lora", Georgia, serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .ring .num-key { fill: #FBF7EE; }
+
+  .cycle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+    counter-reset: ring;
+  }
+
+  .cycle li {
+    counter-increment: ring;
+    display: grid;
+    grid-template-columns: 1.35rem 1fr;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 22rem;
+  }
+
+  .cycle li::before {
+    content: counter(ring);
+    font-family: var(--display);
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .cycle li.key { color: var(--accent-deep); }
+  .cycle li.key::before { color: var(--accent-deep); }
+  .cycle li.key b { font-weight: 600; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 420px) {
+    .index a { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  }
+</style>
+
+<header class="band">
+  <div class="wrap masthead">
+    <p class="eyebrow">Blog drafts &middot; The Love Adventure</p>
+    <h1>Two Drafts On Desire</h1>
+    <p class="standfirst">A pair of long reads for the blog. One takes David Deida's map of
+      relationships and says plainly where it needs care. The other explains Rosemary Basson's
+      model of sexual response, which is the thing most women over 40 have never been told.</p>
+  </div>
+  <nav class="wrap" aria-label="The two posts">
+    <ul class="index">
+      <li>
+        <a href="#deida">
+          <span class="index-title">Why You Can Be Best Friends And Still Not Want Each Other</span>
+          <span class="index-meta">1,570 words &middot; 2 diagrams</span>
+        </a>
+      </li>
+      <li>
+        <a href="#basson">
+          <span class="index-title">Why You Never Want Sex Until You're Already Having It</span>
+          <span class="index-meta">1,630 words &middot; 2 diagrams</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="wrap" style="padding-block: 1.25rem 2rem;">
+    <p class="eyebrow">They pair up. The first ends on brakes and accelerators, which is where the second starts.</p>
+  </div>
+</header>
+
+<main>
+  <article id="deida" class="wrap">
+    <p class="slug"><span class="cat">Relationships</span> <span>7 min read</span> <span>Draft</span></p>
+    <h2>Why You Can Be Best Friends And Still Not Want Each Other</h2>
+
+    <p class="lede">You don't fight. You're kind to each other. The school runs are sorted, the
+      mortgage is sorted, the Sunday admin is sorted. You'd call him your best friend and you'd
+      mean it.</p>
+
+    <p class="lede">And you haven't wanted him in about four years.</p>
+
+    <p>I hear this every week. Women come into my office almost apologising for being there,
+      because nothing is wrong. That's the part that frightens them. No affair. No shouting. No
+      villain. Just a low, polite flatness where the heat used to be.</p>
+
+    <p>David Deida named that flatness back in 1995, and he wasn't especially kind about it.</p>
+
+    <h3>He called it the second stage, and he said most of us get stuck there</h3>
+
+    <p>In <em>Intimate Communion</em> (1995), Deida lays out three stages of relationship. It's
+      still the clearest map I've found for the exact flatness I described above.</p>
+
+    <p><strong>First stage.</strong> Roles by duty. He handles the money, she handles the
+      feelings. Predictable, secure, often lonely, frequently unfair. Your grandparents'
+      marriage, and for some of you, your parents'.</p>
+
+    <p><strong>Second stage.</strong> We fixed all that. Fifty fifty. Equality, independence,
+      negotiation. Both of you do everything. You're teammates. You're fair to each other. You
+      genuinely like each other.</p>
+
+    <p>And you're flat.</p>
+
+    <p>Deida's point is that fairness and wanting get measured on completely different
+      instruments. Becoming excellent colleagues doesn't produce desire. Sometimes it quietly
+      cancels it.</p>
+
+    <p><strong>Third stage.</strong> You're not together out of need, and you're not managing
+      each other out of fairness. Both of you are free, both of you have chosen this, and you
+      deliberately bring difference back into the room because you want the charge, not because
+      a role says you must.</p>
+
+    <figure>
+      <p class="eyebrow">Deida's three stages</p>
+      <p class="fig-title">Most of us traded the charge for the freedom, and called it progress</p>
+      <div class="stages">
+        <div class="stage">
+          <span class="stage-num">1</span>
+          <span class="stage-name">Roles by duty</span>
+          <span class="stage-note">He does the money, she does the feelings. Predictable and
+            secure. Often lonely, frequently unfair.</span>
+          <span class="marks">
+            <span class="mark">Freedom<span class="dot"></span><span class="sr">absent</span></span>
+            <span class="mark">Charge<span class="dot on"></span><span class="sr">present</span></span>
+          </span>
+        </div>
+        <div class="stage">
+          <span class="stage-num">2</span>
+          <span class="stage-name">Fifty fifty</span>
+          <span class="stage-note">Equal, independent, negotiated. Teammates who genuinely like
+            each other. Nothing is wrong, and nothing is alive.</span>
+          <span class="marks">
+            <span class="mark">Freedom<span class="dot on"></span><span class="sr">present</span></span>
+            <span class="mark">Charge<span class="dot"></span><span class="sr">absent</span></span>
+          </span>
+        </div>
+        <div class="stage">
+          <span class="stage-num">3</span>
+          <span class="stage-name">Chosen difference</span>
+          <span class="stage-note">Both free, both choosing this, bringing difference back into
+            the room on purpose because you want the charge.</span>
+          <span class="marks">
+            <span class="mark">Freedom<span class="dot on"></span><span class="sr">present</span></span>
+            <span class="mark">Charge<span class="dot on"></span><span class="sr">present</span></span>
+          </span>
+        </div>
+      </div>
+      <figcaption>First stage had heat and no freedom. Second stage fixed the freedom and lost
+        the heat. Deida's whole argument is that you don't have to pick, and that almost nobody
+        has been shown the third option.</figcaption>
+    </figure>
+
+    <p class="pull">"Nothing is wrong" is second stage's signature. It's also why so many women
+      decide they must be broken, when the problem is closer to architecture.</p>
+
+    <h3>Polarity, which is his word for the thing nobody says out loud</h3>
+
+    <p>Two magnets facing the same way push each other apart. Attraction needs a difference of
+      charge.</p>
+
+    <p>That's the whole idea, and it's the one people get wrong fastest. Polarity is not about
+      roles. It isn't him earning while you cook. It isn't you becoming smaller, softer,
+      quieter, less capable so he can feel like a man. Anyone selling you that is selling you
+      first stage in nicer packaging.</p>
+
+    <p>It's about energy, not chores.</p>
+
+    <figure>
+      <p class="fig-title">Polarity is not about roles</p>
+      <div class="compare">
+        <div>
+          <h5 class="no">What it isn't</h5>
+          <ul>
+            <li>Him earning while you cook</li>
+            <li>You becoming smaller so he can feel like a man</li>
+            <li>Going back to your grandmother's marriage</li>
+            <li>Anything you have to shrink to fit</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="yes">What it is</h5>
+          <ul>
+            <li>A difference of charge, not a division of chores</li>
+            <li>Two people who haven't gone neutral on each other</li>
+            <li>Presence on one side, radiance on the other</li>
+            <li>Chosen on purpose, by two free people</li>
+          </ul>
+        </div>
+      </div>
+      <figcaption>Two magnets facing the same way push each other apart. That's the whole
+        mechanism, and it says nothing at all about who does the school run.</figcaption>
+    </figure>
+
+    <p>I had a couple who ran their marriage like a well chaired meeting. Shared calendar,
+      colour coded. A weekly check in with an actual agenda. Two genuinely lovely people who
+      hadn't surprised each other in six years. Nothing in that marriage was unfair. Nothing in
+      it was alive either.</p>
+
+    <h3>Masculine and feminine are not men and women</h3>
+
+    <p>Deida says this himself, over and over, and almost nobody quotes it.</p>
+
+    <p>He's talking about essence, not gender. Some people sit mostly in a masculine essence,
+      some mostly feminine, some close to the middle, and it has nothing to do with what's
+      between your legs or what you do for a living. Plenty of women have a masculine essence.
+      That isn't a failure to be fixed.</p>
+
+    <p>Here's what I see in women over 40, though. Twenty years in your masculine, because
+      that's what got the promotion, held the household, raised the teenagers, managed the aging
+      parents. Directive, organised, on it.</p>
+
+    <p>The competence isn't the problem. Never being able to put it down is.</p>
+
+    <p>You can't run the whole operation all day and then be ravished at 9pm. Nobody can. It
+      isn't a character flaw, it's a gear change nobody taught you how to make.</p>
+
+    <h3>What he says to women</h3>
+
+    <p><em>Dear Lover</em> (2005) is written straight to a woman, and it's the one I'd hand you
+      first. It's less famous than the men's book. It's better for us.</p>
+
+    <p>A few things from it that land in my room:</p>
+
+    <p><strong>Your longing isn't a flaw.</strong> That ache you've been treating as evidence
+      something's wrong with you? He reads it as proof your heart is still open. Women who feel
+      nothing at all are in much more trouble.</p>
+
+    <p><strong>Love is a gift you give, not a refund you're owed.</strong> Now, this one needs
+      handling. He is not saying keep pouring yourself into a man who's harming you. He is
+      saying don't wait to be chosen before you come back to life. Don't put your own heart on
+      hold pending his performance.</p>
+
+    <p><strong>You can feel his presence, and words won't fake it.</strong> You already know the
+      difference between a man who's physically in the kitchen and a man who's actually there
+      with you. Deida doesn't treat that as you being needy. He treats it as accurate
+      instrumentation.</p>
+
+    <p><strong>Your radiance isn't a dress size.</strong> He writes about a woman's light as
+      something energetic. Not a body to be corrected.</p>
+
+    <h3>What he says to men</h3>
+
+    <p><em>The Way of the Superior Man</em> (1997) is the famous one. Know your purpose. Stop
+      waiting to feel ready. Don't make her the reason you never lived your life. Give her your
+      full presence instead of your analysis. Praise her out loud.</p>
+
+    <p>There's also a chapter called "Her Complaint Is Content Free", which gets misused
+      constantly.</p>
+
+    <p>What he means: underneath the words about the dishwasher is usually "I can't feel you".
+      Go for that.</p>
+
+    <p>How it gets used: "my wife's complaints don't mean anything, Deida says so."</p>
+
+    <p>If your husband reads one thing, make it this book. And if he comes back quoting that
+      chapter at you while the dishwasher stays full, he's read it wrong.</p>
+
+    <h3>Sex as practice, not performance</h3>
+
+    <p>In <em>Finding God Through Sex</em> (2002) and <em>Blue Truth</em> (2006), Deida goes
+      somewhere most relationship books won't. Sex as a spiritual practice. Not technique, not
+      performance, not a score line.</p>
+
+    <p>This is where he and I agree most. Orgasm isn't the goal. Presence is the goal. Pleasure
+      and connection are the goal. He'd add devotion to that list, and I think he's onto
+      something.</p>
+
+    <h3>Where I'd be careful</h3>
+
+    <p>I use his map. I don't hand anyone the book without a conversation first.</p>
+
+    <p><strong>The language is dated.</strong> Written in the 1990s, heterosexual, heavily
+      gendered, binary. His own caveat about essence not being gender is the first thing most
+      readers lose.</p>
+
+    <p><strong>That "content free" idea is dangerous in the wrong hands.</strong> In a man
+      avoiding accountability, it becomes a licence to stop listening, wrapped in spiritual
+      language.</p>
+
+    <p><strong>Polarity can't fix an unsafe relationship.</strong> Where there's contempt,
+      betrayal, coercion or control, polarity is absolutely the wrong tool. You don't need more
+      charge, you need safety first. That's what the attachment work is for, and it comes before
+      any of this.</p>
+
+    <p><strong>Ravishment needs consent and a track record.</strong> He writes beautifully about
+      being met with presence and force rather than a negotiation. Gorgeous with a man you trust
+      completely. With a man you've been bracing against for ten years, it's a disaster. The
+      trust has to be built before the heat.</p>
+
+    <p><strong>He mostly skips the nervous system.</strong> There's almost nothing in Deida
+      about responsive desire, or about brakes and accelerators. Polarity is an accelerator. An
+      accelerator does nothing at all while your foot is flat on the brake, and for most women
+      over 40 the brakes are the whole story. Exhaustion, resentment, body shame, the teenager
+      still awake upstairs.</p>
+
+    <p>So: take the map. Leave the 1990s.</p>
+
+    <h3>Three small things this week</h3>
+
+    <ol class="steps">
+      <li><strong>Put your competence down for twenty minutes.</strong> Not productively. Dance
+        badly in the kitchen. Lie on the floor. Anything with no outcome attached.</li>
+      <li><strong>Stop negotiating one thing.</strong> Instead of "shall we do a date night,
+        what works for you", try "I want you to plan something and not tell me what it is".
+        Watch what that does to the charge in the room.</li>
+      <li><strong>Ask your body, how are you doing, darling?</strong> Then actually wait for the
+        answer. She's been trying to tell you something for a while.</li>
+    </ol>
+
+    <div class="refs">
+      <h4>His books</h4>
+      <ul>
+        <li><span class="work">Intimate Communion: Awakening Your Sexual Essence</span>
+          <span class="year">(1995)</span>. The three stages. Start here if you want the map. He
+          calls them the dependence relationship, the fifty fifty relationship, and intimate
+          communion.</li>
+        <li><span class="work">Dear Lover: A Woman's Guide to Men, Sex, and Love's Deepest
+          Bliss</span> <span class="year">(2005)</span>. Written to you. My pick for most
+          women.</li>
+        <li><span class="work">The Way of the Superior Man</span> <span class="year">(1997)</span>.
+          Written to men. The one to leave lying around.</li>
+        <li><span class="work">It's a Guy Thing: An Owner's Manual for Women</span>
+          <span class="year">(1997)</span>. Lighter, question and answer format.</li>
+        <li><span class="work">Finding God Through Sex</span> <span class="year">(2002)</span>
+          and <span class="work">Blue Truth</span> <span class="year">(2006)</span>. Sex as
+          practice. Go here once the first ones have landed.</li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">Free to read, and to watch</h4>
+      <ul>
+        <li>His own site has free chapters, including the opening of
+          <span class="work">Intimate Communion</span>:
+          <a href="https://deida.info/free-chapters/intimate-communion/">deida.info/free-chapters</a></li>
+        <li>"The Way of the Superior Man and The Yogic Art of Intimacy", in conversation with
+          Tami Simon of Sounds True, <span class="year">2021</span>. A good hour if you want to
+          hear how he actually talks about masculine and feminine before you decide what you
+          think: <a href="https://www.youtube.com/watch?v=LpMWPSA8O7I">youtube.com</a></li>
+        <li>"The New Way of the Superior Man", his first long interview in about a decade:
+          <a href="https://www.youtube.com/watch?v=c4LSX-R2nJo">youtube.com</a></li>
+        <li>His official channel:
+          <a href="https://www.youtube.com/@daviddeidaofficial">youtube.com/@daviddeidaofficial</a></li>
+      </ul>
+    </div>
+
+    <h3>One question before you go</h3>
+
+    <p>If nothing in your relationship is wrong, and you still feel lonely in it, what have you
+      been telling yourself that means?</p>
+
+    <p>Because in my experience it doesn't mean you chose wrong, and it doesn't mean you're
+      broken. It usually means the two of you got very good at being fair and nobody showed you
+      what comes after that.</p>
+
+    <p>Reach out if you're sitting in that flatness. We can shift it.</p>
+
+    <p class="signoff">with a big warm hug,<br>Tarisha</p>
+  </article>
+
+  <article id="basson" class="wrap">
+    <p class="slug"><span class="cat">Desire</span> <span>7 min read</span> <span>Draft</span></p>
+    <h2>Why You Never Want Sex Until You're Already Having It</h2>
+
+    <p class="lede">Let me describe your Tuesday night.</p>
+
+    <p>He reaches over. You do the mental maths. You're tired, your to do list is still running,
+      and you notice something close to dread. Not of him. Of the whole production.</p>
+
+    <p>You say yes anyway, or you say no and feel guilty, and either way you file away one more
+      piece of evidence that something in you has gone quiet.</p>
+
+    <p>And then here's the bit nobody tells you. On the nights you do say yes, twenty minutes
+      in, you're fine. More than fine. You're enjoying it and you're wondering why you don't do
+      this more often.</p>
+
+    <p>You've probably been reading that as proof you're faking it, or forcing it, or have
+      become the kind of woman who has to talk herself into her own marriage.</p>
+
+    <p>It isn't. It's a well documented pattern, and a Canadian doctor named Rosemary Basson put
+      it on paper in 2000.</p>
+
+    <h3>First, the model you've been failing at</h3>
+
+    <p>For decades, the official sequence of sex went like this: you want it, then you get
+      turned on, then you come.</p>
+
+    <p>That comes from Masters and Johnson, <em>Human Sexual Response</em> (1966), who mapped
+      excitement, plateau, orgasm and resolution. Then Helen Singer Kaplan, in <em>Disorders of
+      Sexual Desire</em> (1979), stuck desire on the front as step one.</p>
+
+    <p>Desire first. Then arousal. Then orgasm. A straight line.</p>
+
+    <p>Every magazine quiz you've ever taken, every pharmaceutical advert, every bloke in a pub
+      with an opinion, all of it runs on that line. And it has one enormous problem.</p>
+
+    <p class="pull">For an awful lot of women, desire does not come first. So when it doesn't
+      show up on cue, you don't conclude that the line is wrong. You conclude that you are.</p>
+
+    <p>I see the damage from that every single week. Women who've spent fifteen years quietly
+      diagnosing themselves against a model built in a laboratory on people selected because
+      they could reliably become aroused to order.</p>
+
+    <h3>What Basson actually said</h3>
+
+    <p>In "The Female Sexual Response: A Different Model" (Journal of Sex &amp; Marital Therapy,
+      2000), Basson proposed something different. Not a line. A circle.</p>
+
+    <p>Here's the circle in plain words.</p>
+
+    <p><strong>You start from neutral.</strong> Not turned on, not turned off. Just getting on
+      with your day. This is where most women in long term relationships begin, and it's
+      completely ordinary.</p>
+
+    <p><strong>Something makes you willing.</strong> And notice: the reasons are often not
+      sexual at all. Wanting to feel close. Missing him. Wanting to be wanted. Wanting the
+      tenderness afterwards. Basson treats those as legitimate starting points, not as second
+      best.</p>
+
+    <p><strong>Then you need a sexual stimulus, in a context that works.</strong> Touch that's
+      actually good. Privacy. Enough time. Your body not braced. A mind that isn't running the
+      grocery list.</p>
+
+    <p><strong>Arousal arrives.</strong> Your body starts responding. And this is the whole
+      point of her model:</p>
+
+    <p><strong>Desire shows up now. After arousal, not before it.</strong></p>
+
+    <p>That's responsive desire. Twenty minutes in, suddenly you want it. Nothing about that is
+      fake and nothing about it is forced.</p>
+
+    <p><strong>Then satisfaction.</strong> Physical, emotional, or both. It doesn't have to
+      include orgasm to count, and Basson's model explicitly allows for that.</p>
+
+    <p><strong>And the satisfaction feeds back into the closeness,</strong> which makes you more
+      willing next time. Round the circle again.</p>
+
+    <figure>
+      <p class="eyebrow">The line you were measured against, 1966 to 1979</p>
+      <div class="line-chips">
+        <span class="chip">Desire</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+        <span class="chip">Arousal</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+        <span class="chip">Orgasm</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+        <span class="chip">Resolution</span>
+      </div>
+      <p class="eyebrow">What Basson proposed instead, 2000</p>
+      <p class="fig-title">A circle, and desire doesn't come first</p>
+      <div class="circle-wrap">
+        <svg class="ring" viewBox="0 0 240 240" role="img"
+             aria-label="A circular sequence of six steps. Desire appears at step five, after arousal.">
+          <circle class="track" cx="120" cy="120" r="88"></circle>
+          <path class="tip" d="M208,128 L213,118 L203,118 Z"></path>
+          <path class="tip" d="M69.9,192.7 L78.5,191.9 L73.5,200.5 Z"></path>
+          <path class="tip" d="M82.1,40.3 L78.5,48.1 L73.5,39.5 Z"></path>
+          <circle class="node" cx="120" cy="32" r="15"></circle>
+          <circle class="node" cx="196" cy="76" r="15"></circle>
+          <circle class="node" cx="196" cy="164" r="15"></circle>
+          <circle class="node" cx="120" cy="208" r="15"></circle>
+          <circle class="node node-key" cx="44" cy="164" r="15"></circle>
+          <circle class="node" cx="44" cy="76" r="15"></circle>
+          <text class="num" x="120" y="32" text-anchor="middle" dominant-baseline="central">1</text>
+          <text class="num" x="196" y="76" text-anchor="middle" dominant-baseline="central">2</text>
+          <text class="num" x="196" y="164" text-anchor="middle" dominant-baseline="central">3</text>
+          <text class="num" x="120" y="208" text-anchor="middle" dominant-baseline="central">4</text>
+          <text class="num num-key" x="44" y="164" text-anchor="middle" dominant-baseline="central">5</text>
+          <text class="num" x="44" y="76" text-anchor="middle" dominant-baseline="central">6</text>
+        </svg>
+        <ol class="cycle">
+          <li>Sexual neutrality. Getting on with your day</li>
+          <li>Willingness, often for reasons that aren't sexual</li>
+          <li>A stimulus, in a context that works</li>
+          <li>Arousal</li>
+          <li class="key"><b>Desire arrives here</b></li>
+          <li>Satisfaction, then closeness, which feeds step two next time</li>
+        </ol>
+      </div>
+      <figcaption>Same body, different sequence. On the straight line, no desire at the start
+        means a fault. On the circle, no desire at the start is just Tuesday.</figcaption>
+    </figure>
+
+    <p>So you were never missing step one. You were running a different sequence and grading
+      yourself on somebody else's.</p>
+
+    <h3>Willingness is not duty sex, and you need to know the difference</h3>
+
+    <p>Now, I have to be careful here, because this model gets twisted fast.</p>
+
+    <p>"Desire comes after arousal" in the wrong mouth becomes "so just do it anyway and you'll
+      warm up, love."</p>
+
+    <p>No.</p>
+
+    <p>Here's the line I hold in my room. Willingness means you're curious, you're open, you're
+      saying yes to finding out what happens. There's an openness in your body, even a faint
+      one. You can stop whenever you like and you know that in your bones.</p>
+
+    <p>Duty sex means you're absent. You're gone somewhere above the ceiling, waiting for it to
+      be over, counting. Your no isn't available, or it costs too much to use.</p>
+
+    <p>One of those builds desire over months. The other one kills it, and it is the single most
+      common cause of low desire I see in women over 40. Years of overriding yourself. Your body
+      learns that sex means being ignored, including by you, and she starts saying no earlier
+      and earlier.</p>
+
+    <figure>
+      <p class="fig-title">The difference, and it matters more than anything else here</p>
+      <div class="compare">
+        <div>
+          <h5 class="yes">Willing</h5>
+          <ul>
+            <li>Curious. Open to finding out</li>
+            <li>There's an openness in your body, even a faint one</li>
+            <li>You can stop whenever you like, and you know it</li>
+            <li>Builds desire over months</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="no">Duty</h5>
+          <ul>
+            <li>Absent. Somewhere above the ceiling</li>
+            <li>Waiting for it to be over, counting</li>
+            <li>Your no isn't available, or it costs too much to use</li>
+            <li>Kills desire, and it's the most common cause I see</li>
+          </ul>
+        </div>
+      </div>
+      <figcaption>Read the right hand column again. If that's your Tuesday night, the problem
+        was never your libido.</figcaption>
+    </figure>
+
+    <p class="pull">Responsive desire is an invitation to experiment. It is not an instruction
+      to override yourself. Ever.</p>
+
+    <h3>Why context does most of the work</h3>
+
+    <p>If desire comes after arousal, and arousal depends on context, then context stops being a
+      nice extra and becomes the main event.</p>
+
+    <p>Which explains so much.</p>
+
+    <p>Why it works on holiday and not on a Tuesday. Why you need the door locked. Why
+      resentment from Thursday's argument is still sitting in your hips on Saturday. Why you
+      can't go from spreadsheet to sensual in four minutes. Why the teenager being awake
+      upstairs ends the entire conversation.</p>
+
+    <p>This is where Basson lines up with the brakes and accelerators idea from the dual control
+      model, which Emily Nagoski brought to a general audience in her 2015 book. Accelerators
+      turn you on. Brakes turn you off. Most women over 40 don't have a broken accelerator.
+      They've got a foot flat on the brake.</p>
+
+    <p>Fatigue. Resentment. Body shame. Pain. Pressure. Being needed all day by everyone.</p>
+
+    <p>You can buy all the lingerie you like. It's an accelerator, and accelerators do nothing
+      while the brake is down.</p>
+
+    <h3>You're not disordered</h3>
+
+    <p>Worth knowing: when the DSM was revised in 2013, this thinking made it in. The old
+      separate diagnoses for low desire and low arousal in women were merged into one category,
+      and the criteria now recognise that absent spontaneous desire is not in itself a problem
+      if desire turns up in response to arousal.</p>
+
+    <p>Read that again if you've been carrying a private verdict about yourself since about
+      2009.</p>
+
+    <p>The other thing to put down: your body and your mind don't always agree, and that's
+      normal too. Meredith Chivers' work on arousal nonconcordance showed that genital response
+      and felt desire can run on separate tracks. Wet doesn't always mean willing. Dry doesn't
+      always mean uninterested. Neither one gets to overrule what you actually want.</p>
+
+    <h3>Where I'd be careful</h3>
+
+    <p><strong>It isn't universal.</strong> Some women have plenty of spontaneous desire, and
+      some men are strongly responsive. This isn't a women's model and a men's model, whatever
+      the headlines did with it. If you've always wanted it out of nowhere and that's recently
+      stopped, pay attention rather than filing it under responsive desire.</p>
+
+    <p><strong>It can become a lovely excuse.</strong> "It's just responsive desire" should
+      never be the end of the conversation when something else is going on. Pain during sex is
+      not responsive desire. Neither is a thyroid problem, an antidepressant side effect,
+      vaginal dryness after menopause, untreated depression, or a husband you've stopped
+      trusting. Please get the physical things checked. A good model should open questions, not
+      close them.</p>
+
+    <p><strong>It came mostly from clinical settings,</strong> from women who'd come in with
+      complaints, in long term relationships. It describes that situation beautifully. It was
+      never meant to describe everyone.</p>
+
+    <h3>What to actually do with this</h3>
+
+    <ol class="steps">
+      <li><strong>Stop auditing yourself for desire before you begin.</strong> That's the
+        instrument reading you've been using, and it's the wrong gauge. Ask instead: am I
+        willing to find out? That question is answerable on a Tuesday.</li>
+      <li><strong>Make a brakes list.</strong> Ten minutes, honestly. Everything that shuts you
+        down. Noise, lighting, the unspoken argument, his breath, your bra, the thought that
+        he'll want it again tomorrow. Then pick one and deal with it. One brake lifted beats a
+        year of trying harder.</li>
+      <li><strong>Agree on a twenty minute experiment with him.</strong> You start, with no
+        obligation to continue, and either of you can stop at any point with nothing owed. Most
+        couples are stunned by this. It takes the pressure off, and pressure is the biggest
+        brake of all.</li>
+      <li><strong>Warm the whole day, not the last four minutes.</strong> A text at eleven. A
+        hand on your back while you're cooking. Responsive desire needs a runway.</li>
+      <li><strong>Ask your body, how are you doing, darling?</strong> Before you decide
+        anything. She has information.</li>
+    </ol>
+
+    <div class="refs">
+      <h4>The papers, if you want it from the source</h4>
+      <ul>
+        <li>Rosemary Basson, <span class="work">"The Female Sexual Response: A Different
+          Model"</span>, Journal of Sex &amp; Marital Therapy, <span class="year">2000</span>,
+          volume 26, pages 51 to 65. The original. Short, readable, and it changed the field:
+          <a href="https://doi.org/10.1080/009262300278641">doi.org/10.1080/009262300278641</a></li>
+        <li>Rosemary Basson, <span class="work">"Using a Different Model for Female Sexual
+          Response to Address Women's Problematic Low Sexual Desire"</span>,
+          <span class="year">2001</span>. Where she turns the model into something you can
+          actually use in a clinic.</li>
+        <li>Rosemary Basson, <span class="work">"Human Sex Response Cycles"</span>,
+          <span class="year">2001</span>. Where she extends it to men as well.</li>
+        <li><span class="work">"The Circles of Sex: Basson's Sex Response Cycle"</span>, in the
+          Encyclopedia of Sexuality and Gender. A clear overview if the original is paywalled
+          for you:
+          <a href="https://link.springer.com/rwe/10.1007/978-3-319-59531-3_37-1">link.springer.com</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">Books</h4>
+      <ul>
+        <li>Masters and Johnson, <span class="work">Human Sexual Response</span>
+          <span class="year">(1966)</span>, and Helen Singer Kaplan, <span class="work">Disorders
+          of Sexual Desire</span> <span class="year">(1979)</span>, if you want to see the model
+          you've been held to.</li>
+        <li>Emily Nagoski's <span class="year">2015</span> book on women's sexuality, for brakes
+          and accelerators in everyday language. The dual control model underneath it came out of
+          the Kinsey Institute.</li>
+        <li>Lori Brotto, <span class="work">Better Sex Through Mindfulness: How Women Can
+          Cultivate Desire</span> <span class="year">(2018)</span>, and the workbook that
+          followed in <span class="year">2022</span>. She directs the sexual health laboratory at
+          the same university as Basson:
+          <a href="https://www.loribrotto.com/">loribrotto.com</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">Watch</h4>
+      <ul>
+        <li>Emily Nagoski, <span class="work">"The truth about unwanted arousal"</span>, TED,
+          <span class="year">2018</span>. Fifteen minutes on arousal nonconcordance, and the
+          clearest explanation of it anywhere:
+          <a href="https://www.ted.com/talks/emily_nagoski_the_truth_about_unwanted_arousal">ted.com</a></li>
+        <li><span class="work">"Mind Full: Better Sex Through Mindfulness with Dr Lori
+          Brotto"</span>:
+          <a href="https://www.youtube.com/watch?v=TF7NOGZJgtM">youtube.com</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">Blogs and articles worth your time</h4>
+      <ul>
+        <li>Dr Jason Winters, <span class="work">"The Sexual Response Cycle and Why It
+          Matters"</span>. A sex therapist walking through all three models in plain language:
+          <a href="https://www.drjasonwinters.com/blogs/therapy-blog/2015/4/29/the-sexual-response-cycle-and-why-it-matters">drjasonwinters.com</a></li>
+        <li><span class="work">"Why Does My Partner Want Sex Faster Than I Do?"</span>, The
+          Psychology Group. Useful if the mismatch in your house is the thing that hurts most:
+          <a href="https://thepsychologygroup.com/sexual-response-cycle/">thepsychologygroup.com</a></li>
+        <li><span class="work">"What Basson's Sexual Response Cycle Teaches Us About
+          Sexuality"</span>, KPACT. Short, and good on why the model matters beyond straight
+          couples: <a href="https://www.kpact.xyz/2017/05/19/bassons_model/">kpact.xyz</a></li>
+      </ul>
+    </div>
+
+    <h3>One last thing</h3>
+
+    <p>You are not a woman who lost her desire.</p>
+
+    <p>You're a woman who was handed the wrong instructions, tried to follow them for twenty
+      years, and concluded she was the faulty one.</p>
+
+    <p>Different sequence. Same body. She's still in there, and she's been waiting for somebody
+      to stop grading her.</p>
+
+    <p>Are you willing to find out?</p>
+
+    <p class="signoff">with a big warm hug,<br>Tarisha</p>
+  </article>
+
+  <section class="notes wrap">
+    <p class="eyebrow">Before publishing</p>
+    <h2>Six things to sign off</h2>
+    <p>Flagged rather than quietly decided, so none of it reaches the live blog by accident.</p>
+    <ul class="flags">
+      <li>
+        <b>Click every outbound link once</b>
+        <p>The books, papers and DOIs are solid. The YouTube links and the two blog articles were
+          found by search and look right, but they haven't been watched or read end to end, and a
+          dead link in a reading list is the thing readers notice.</p>
+      </li>
+      <li>
+        <b>The infographics need a brand decision</b>
+        <p>The four diagrams here are drawn in Soft Autumn, for theloveadventure.com. The
+          existing 30 infographics are the older brand, with the Navy footer and the old domain.
+          Prompts for the portrait social versions are in
+          <code>content/blog/infographics.md</code>, and they need that choice made once.</p>
+      </li>
+      <li>
+        <b>The client story in the Deida post is invented</b>
+        <p>The couple with the colour coded shared calendar is a composite illustration, not a
+          client. Swap it for one of your own, or cut it.</p>
+      </li>
+      <li>
+        <b>One book title is missing on purpose</b>
+        <p>Emily Nagoski's 2015 book is referred to by author and year only, because its title
+          is on the banned phrase list in the voice checker. Two places to put it back if you're
+          happy to use it in a reading list.</p>
+      </li>
+      <li>
+        <b>The Basson post cites a diagnostic manual</b>
+        <p>The 2013 DSM revision, and what it now says about absent spontaneous desire. Accurate
+          and kept non clinical in tone, but the whole section can go without breaking the
+          piece.</p>
+      </li>
+      <li>
+        <b>Deida is genuinely contested</b>
+        <p>The post says so out loud, in its own section, which is the only honest way to
+          reference him for women over 40. Worth a read to decide whether that goes stronger or
+          softer.</p>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Both drafts live in the repo as markdown with front matter ready for Yoast:
+      <code>content/blog/david-deida-on-relationships.md</code> and
+      <code>content/blog/basson-response-model.md</code>. Checked against the voice rules, so no
+      dashes, UK spelling, no banned phrases.</p>
+  </div>
+</footer>

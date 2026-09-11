@@ -178,10 +178,13 @@ So: take the map. Leave the 1990s.
 3. **Ask your body, how are you doing, darling?** Then actually wait for the
    answer. She's been trying to tell you something for a while.
 
-## The books, if you want to go deeper
+## Where to go next
+
+### His books
 
 - *Intimate Communion: Awakening Your Sexual Essence* (1995). The three stages.
-  Start here if you want the map.
+  Start here if you want the map. He calls them the dependence relationship, the
+  fifty fifty relationship, and intimate communion.
 - *Dear Lover: A Woman's Guide to Men, Sex, and Love's Deepest Bliss* (2005).
   Written to you. My pick for most women.
 - *The Way of the Superior Man* (1997). Written to men. The one to leave lying
@@ -190,6 +193,31 @@ So: take the map. Leave the 1990s.
   answer format.
 - *Finding God Through Sex* (2002) and *Blue Truth* (2006). Sex as practice.
   Go here once the first ones have landed.
+
+### Free to read first
+
+- His own site has free chapters, including the opening of *Intimate Communion*:
+  [deida.info/free-chapters/intimate-communion](https://deida.info/free-chapters/intimate-communion/)
+- The book's own page, with the contents and what he was trying to do:
+  [deida.info/intimate-communion](https://deida.info/intimate-communion/)
+
+### Watch
+
+- His official channel:
+  [youtube.com/@daviddeidaofficial](https://www.youtube.com/@daviddeidaofficial)
+- "The Way of the Superior Man and The Yogic Art of Intimacy", in conversation
+  with Tami Simon of Sounds True, 2021. A good hour if you want to hear how he
+  actually talks about masculine and feminine before you decide what you think:
+  [youtube.com/watch?v=LpMWPSA8O7I](https://www.youtube.com/watch?v=LpMWPSA8O7I)
+- "The New Way of the Superior Man", his first long interview in about a decade:
+  [youtube.com/watch?v=c4LSX-R2nJo](https://www.youtube.com/watch?v=c4LSX-R2nJo)
+
+### And then read this next
+
+If the last section of this post is the bit that stayed with you, the nervous
+system piece is where to go, and I've written it up separately. Same body,
+different sequence: [why you never want sex until you're already having
+it](/basson-response-model-responsive-desire).
 
 ## One question before you go
 

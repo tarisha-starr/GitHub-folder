@@ -192,20 +192,64 @@ your back while you're cooking. Responsive desire needs a runway.
 **Ask your body, how are you doing, darling?** Before you decide anything. She
 has information.
 
-## If you want to read further
+## Where to go next
+
+### The papers, if you want it from the source
 
 - Rosemary Basson, "The Female Sexual Response: A Different Model", Journal of
-  Sex & Marital Therapy, 2000. The original. Short, readable, and it changed the
-  field.
+  Sex & Marital Therapy, 2000, volume 26, pages 51 to 65. The original. Short,
+  readable, and it changed the field:
+  [doi.org/10.1080/009262300278641](https://doi.org/10.1080/009262300278641)
+- Rosemary Basson, "Using a Different Model for Female Sexual Response to Address
+  Women's Problematic Low Sexual Desire", Journal of Sex & Marital Therapy, 2001.
+  This is the one where she turns the model into something you can actually use
+  in a clinic.
 - Rosemary Basson, "Human Sex Response Cycles", Journal of Sex & Marital Therapy,
-  2001. Where she extends it.
+  2001. Where she extends it to men as well.
+- "The Circles of Sex: Basson's Sex Response Cycle", in the Encyclopedia of
+  Sexuality and Gender. A clear academic overview if the original paper is behind
+  a paywall for you:
+  [link.springer.com](https://link.springer.com/rwe/10.1007/978-3-319-59531-3_37-1)
+
+### Books
+
 - Masters and Johnson, *Human Sexual Response* (1966), and Helen Singer Kaplan,
   *Disorders of Sexual Desire* (1979), if you want to see the model you've been
   held to.
 - Emily Nagoski's 2015 book on women's sexuality, for brakes and accelerators in
-  everyday language.
-- Lori Brotto, *Better Sex Through Mindfulness* (2018). She runs the programme at
-  the same university as Basson, and it's the practical companion piece.
+  everyday language. The dual control model underneath it came out of the Kinsey
+  Institute.
+- Lori Brotto, *Better Sex Through Mindfulness: How Women Can Cultivate Desire*
+  (2018), and the workbook that followed in 2022. She directs the sexual health
+  laboratory at the same university as Basson, and it's the practical companion
+  piece: [loribrotto.com](https://www.loribrotto.com/)
+
+### Watch
+
+- Emily Nagoski, "The truth about unwanted arousal", TED, 2018. Fifteen minutes
+  on arousal nonconcordance, and the clearest explanation of it anywhere:
+  [ted.com](https://www.ted.com/talks/emily_nagoski_the_truth_about_unwanted_arousal)
+- "Mind Full: Better Sex Through Mindfulness with Dr Lori Brotto":
+  [youtube.com/watch?v=TF7NOGZJgtM](https://www.youtube.com/watch?v=TF7NOGZJgtM)
+
+### Blogs and articles worth your time
+
+- Dr Jason Winters, "The Sexual Response Cycle and Why It Matters". A sex
+  therapist walking through all three models in plain language:
+  [drjasonwinters.com](https://www.drjasonwinters.com/blogs/therapy-blog/2015/4/29/the-sexual-response-cycle-and-why-it-matters)
+- "Why Does My Partner Want Sex Faster Than I Do? Responsive Desire and the
+  Sexual Response Cycle", The Psychology Group. Useful if the mismatch in your
+  house is the thing that hurts most:
+  [thepsychologygroup.com](https://thepsychologygroup.com/sexual-response-cycle/)
+- "What Basson's Sexual Response Cycle Teaches Us About Sexuality", KPACT. Short,
+  and good on why the model matters beyond straight couples:
+  [kpact.xyz](https://www.kpact.xyz/2017/05/19/bassons_model/)
+
+### And then read this next
+
+If the brakes are the part that landed, the other half of this is the shape of
+the relationship itself: [why you can be best friends and still not want each
+other](/best-friends-still-dont-want-each-other).
 
 ## One last thing
 
