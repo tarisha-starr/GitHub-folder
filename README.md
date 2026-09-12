@@ -11,6 +11,7 @@ The image stops the scroll. The hook makes her feel caught.
 - `content/hooks.md` — reusable hook bank by theme
 - `content/formula.md` — the pain-hook + emotional-truth formula
 - `content/posts.json` — structured data: hook, caption, question, hashtags, image path
+- `content/blog/` — long-form blog posts, one markdown file per post, ready to paste into WordPress
 - `images/` — actual post images, named `image-1.jpg` … `image-28.jpg`
 - `automation/scheduler.py` — picks today's post deterministically by date
 - `automation/daily_email.py` — sends today's brief via SMTP
