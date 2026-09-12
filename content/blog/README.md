@@ -1,9 +1,9 @@
 # Blog drafts
 
-Long form posts, written for the WordPress blog on theloveadventure.com. One
-markdown file per post, with YAML front matter for the title, slug, meta
-description, category and tags so it can be set up in Yoast without rewriting
-anything.
+Long form posts for the Sexual Empowerment for Women blog. One markdown file per
+post, with YAML front matter for the title, slug, meta description, category and
+tags so it can be set up in Yoast without rewriting anything, plus a paste ready
+HTML body for the WordPress editor.
 
 Checked against `content/style_guide.md` and the voice rules in the
 `website-build` skill: no dashes as punctuation, UK and NZ spelling,
@@ -17,6 +17,7 @@ contractions, no banned phrases.
 | `basson-response-model.md` | Post: Why You Never Want Sex Until You're Already Having It |
 | `infographics.md` | Prompts for four portrait social graphics, two per post |
 | `preview.html` | Both posts as one designed reading page, with the diagrams drawn |
+| `wordpress/*.html` | Paste ready bodies, one per post, for the WordPress editor |
 
 These two are a natural pair. The Deida post ends on brakes and accelerators,
 which is exactly where the Basson post starts, so each one links to the other at
@@ -34,7 +35,28 @@ Four of them, two per post, already drawn in `preview.html`:
 
 `infographics.md` turns each one into a prompt for the portrait version that goes
 on Instagram and Pinterest, in the same pipeline as
-`content/chatgpt_infographic_prompts.md`.
+`content/chatgpt_infographic_prompts.md`, on the same locked brand: Cream
+background, Near-Black headlines, Rust labels, Copper accents, Navy footer.
+
+## Getting a post onto the blog
+
+Each file in `wordpress/` is one WordPress Custom HTML block. Copy the whole
+file, paste it into a new post, and put the title from the front matter in the
+title field. The block carries its own scoped stylesheet, so the four diagrams
+render without the theme knowing anything about them, and nothing leaks out to
+the rest of the page.
+
+Then fill in from the front matter: slug, meta description for Yoast, category,
+tags. Add a featured image, and drop infographic 1 or 3 in as the in post image
+if you want one above the fold.
+
+Rebuild the two files after any edit to `preview.html`:
+
+```bash
+python3 automation/build_blog_html.py
+```
+
+Edit `preview.html`, not the generated files, or your changes get overwritten.
 
 ## Things for Tarisha to decide before publishing
 
@@ -42,12 +64,6 @@ on Instagram and Pinterest, in the same pipeline as
 are solid. The YouTube links and the two blog articles in the reading lists were
 found by search and look right, but nobody has watched or read them end to end,
 and a dead link in a reading list is the thing readers notice first.
-
-**The infographics need a brand decision.** The diagrams in `preview.html` and
-the prompts in `infographics.md` use Soft Autumn and a theloveadventure.com
-footer. The existing 30 infographics use the older brand, Navy footer, old
-domain. Worth settling once, because it affects everything that goes on the new
-blog from here.
 
 **Client stories are composite placeholders.** The couple with the colour coded
 shared calendar in the Deida post is a made up illustration, not a client. Swap
