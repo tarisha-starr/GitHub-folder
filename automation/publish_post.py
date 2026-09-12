@@ -32,12 +32,11 @@ API = SITE + "/wp-json/wp/v2"
 BODY_FILE = "content/blog/ship-model-wordpress.html"
 IMAGE_FILE = "images/infographics/ship-model-wheel-serw.jpg"
 
-SLUG = "libido-problem-five-other-things"
-TITLE = "You Don't Have a Libido Problem. You Have Five Other Things Going On."
+SLUG = "low-libido-after-40-five-things"
+TITLE = "Low Libido After 40? You Have Five Other Things Going On"
 EXCERPT = (
-    "A client told me she thought something in her was broken. It is almost "
-    "never one thing. What the SHIP model gets right, and why it turns one "
-    "locked door into five."
+    "Low libido after 40 is almost never one thing. A sex therapist on the "
+    "five doors the SHIP model opens, and why nothing about you is broken."
 )
 CATEGORY_SLUGS = ["female-sexual-desire", "sexuality", "relationships", "self-help"]
 IMAGE_ALT = (
