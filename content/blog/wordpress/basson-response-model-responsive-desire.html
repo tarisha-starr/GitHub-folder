@@ -1,0 +1,421 @@
+<style>
+.serw-post{--ink:#15110D;--soft:#5C544A;--faint:#8A8071;--rule:#E2D8C4;
+  --cream:#F5EFE3;--copper:#C75D3D;--rust:#9E4A2A;--navy:#1F2A44;
+  color:var(--ink);font-family:"Lora",Georgia,serif;line-height:1.75}
+.serw-post h2{font-family:"Marcellus","Times New Roman",serif;font-weight:400;
+  font-size:1.5rem;line-height:1.3;margin:2.75rem 0 1rem;color:var(--ink)}
+.serw-post p{margin:0 0 1.25rem}
+.serw-post .lede{font-size:1.15rem;line-height:1.65}
+.serw-post strong{font-weight:600}
+.serw-post a{color:var(--rust)}
+.serw-post .pull{font-family:"Marcellus","Times New Roman",serif;
+  font-size:1.5rem;line-height:1.3;color:var(--rust);
+  border-left:2px solid var(--copper);padding:0.15rem 0 0.15rem 1.5rem;
+  margin:2.25rem 0}
+.serw-post ol.steps{counter-reset:step;list-style:none;margin:1.5rem 0 0;
+  padding:0;display:grid;gap:1.25rem}
+.serw-post ol.steps li{counter-increment:step;padding-left:2.25rem;
+  position:relative}
+.serw-post ol.steps li::before{content:counter(step);position:absolute;left:0;
+  top:0.1rem;font-family:"Marcellus",serif;font-size:0.95rem;color:var(--rust)}
+.serw-post figure{margin:2.75rem 0;background:var(--cream);
+  border:1px solid var(--rule);padding:1.5rem 1.25rem 1.35rem}
+.serw-post .eyebrow{font-size:0.76rem;letter-spacing:0.18em;
+  text-transform:uppercase;font-weight:500;color:var(--rust);margin:0 0 0.5rem}
+.serw-post .fig-title{font-family:"Marcellus",serif;font-size:1.2rem;
+  line-height:1.3;margin:0 0 1.25rem}
+.serw-post figcaption{font-size:0.92rem;line-height:1.6;color:var(--soft);
+  margin-top:1.25rem;border-top:1px solid var(--rule);padding-top:0.9rem}
+.serw-post .stages{display:grid;gap:1px;background:var(--rule);
+  border-top:1px solid var(--rule)}
+.serw-post .stage{background:var(--cream);display:grid;
+  grid-template-columns:1.6rem 1fr auto;gap:0.3rem 1rem;padding:1.1rem 0.1rem}
+.serw-post .stage-num{font-family:"Marcellus",serif;font-size:1.15rem;
+  color:var(--rust);line-height:1.4}
+.serw-post .stage-name{font-family:"Marcellus",serif;font-size:1.05rem;
+  line-height:1.35}
+.serw-post .stage-note{grid-column:2;font-size:0.95rem;line-height:1.55;
+  color:var(--soft)}
+.serw-post .marks{grid-row:1 / span 2;grid-column:3;display:flex;gap:1.1rem;
+  align-self:center}
+.serw-post .mark{display:grid;justify-items:center;gap:0.4rem;font-size:0.75rem;
+  letter-spacing:0.1em;text-transform:uppercase;color:var(--faint)}
+.serw-post .dot{width:0.7rem;height:0.7rem;border-radius:50%;
+  border:1px solid var(--copper)}
+.serw-post .dot.on{background:var(--copper)}
+.serw-post .compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--rule);border-top:1px solid var(--rule)}
+.serw-post .compare>div{background:var(--cream);padding:1.2rem 0.9rem 1.3rem 0}
+.serw-post .compare>div+div{padding-left:1.1rem;padding-right:0}
+.serw-post .compare h5{font-family:"Marcellus",serif;font-weight:400;
+  font-size:1.05rem;margin:0 0 0.85rem}
+.serw-post .compare .no{color:var(--faint)}
+.serw-post .compare .yes{color:var(--rust)}
+.serw-post .compare ul{list-style:none;margin:0;padding:0;display:grid;
+  gap:0.6rem}
+.serw-post .compare li{font-size:0.95rem;line-height:1.5;color:var(--soft)}
+.serw-post .line-chips{display:flex;flex-wrap:wrap;align-items:center;
+  gap:0.5rem 0.65rem;margin:0 0 2rem}
+.serw-post .chip{font-size:0.85rem;padding:0.35rem 0.8rem;
+  border:1px solid var(--rule);background:#FBF7EE;color:var(--soft)}
+.serw-post .arrow{color:var(--faint);font-size:0.9rem}
+.serw-post .circle-wrap{display:grid;grid-template-columns:13rem 1fr;
+  gap:1.5rem 1.75rem;align-items:center}
+.serw-post .ring{width:100%;height:auto;max-width:13rem;display:block}
+.serw-post .ring .track{fill:none;stroke:var(--rule);stroke-width:2}
+.serw-post .ring .tip{fill:var(--faint)}
+.serw-post .ring .node{fill:#FBF7EE;stroke:var(--rule);stroke-width:1.5}
+.serw-post .ring .node-key{fill:var(--copper);stroke:var(--copper)}
+.serw-post .ring .num{fill:var(--soft);font-family:"Lora",Georgia,serif;
+  font-size:14px;font-weight:500}
+.serw-post .ring .num-key{fill:var(--cream)}
+.serw-post .cycle{list-style:none;margin:0;padding:0;display:grid;gap:0.55rem;
+  counter-reset:ring}
+.serw-post .cycle li{counter-increment:ring;display:grid;
+  grid-template-columns:1.35rem 1fr;gap:0.6rem;font-size:0.95rem;
+  line-height:1.5}
+.serw-post .cycle li::before{content:counter(ring);
+  font-family:"Marcellus",serif;color:var(--faint)}
+.serw-post .cycle li.key,.serw-post .cycle li.key::before{color:var(--rust)}
+.serw-post .refs{background:var(--cream);border-left:2px solid var(--rust);
+  padding:1.5rem 1.5rem 1.6rem;margin:2.75rem 0 0}
+.serw-post .refs h4{font-size:0.76rem;letter-spacing:0.16em;
+  text-transform:uppercase;color:var(--rust);font-weight:500;margin:0 0 1rem}
+.serw-post .refs h4+h4{margin-top:1.5rem}
+.serw-post .refs ul{list-style:none;margin:0;padding:0;display:grid;gap:0.9rem}
+.serw-post .refs li{font-size:0.96rem;line-height:1.6;color:var(--soft)}
+.serw-post .refs .work{color:var(--ink);font-style:italic}
+.serw-post .signoff{font-family:"Marcellus",serif;font-size:1.1rem;
+  color:var(--soft);margin-top:2.25rem}
+.serw-post .sr{position:absolute;width:1px;height:1px;overflow:hidden;
+  clip-path:inset(50%)}
+@media (max-width:34rem){
+  .serw-post .stage{grid-template-columns:1.6rem 1fr}
+  .serw-post .marks{grid-row:auto;grid-column:2;justify-content:start;
+    margin-top:0.6rem}
+  .serw-post .compare{grid-template-columns:1fr}
+  .serw-post .compare>div,.serw-post .compare>div+div{padding-left:0;
+    padding-right:0}
+  .serw-post .circle-wrap{grid-template-columns:1fr;justify-items:center}
+  .serw-post .circle-wrap ol{justify-self:start}
+}
+</style>
+<div class="serw-post">
+<p class="lede">Let me describe your Tuesday night.</p>
+
+    <p>He reaches over. You do the mental maths. You're tired, your to do list is still running,
+      and you notice something close to dread. Not of him. Of the whole production.</p>
+
+    <p>You say yes anyway, or you say no and feel guilty, and either way you file away one more
+      piece of evidence that something in you has gone quiet.</p>
+
+    <p>And then here's the bit nobody tells you. On the nights you do say yes, twenty minutes
+      in, you're fine. More than fine. You're enjoying it and you're wondering why you don't do
+      this more often.</p>
+
+    <p>You've probably been reading that as proof you're faking it, or forcing it, or have
+      become the kind of woman who has to talk herself into her own marriage.</p>
+
+    <p>It isn't. It's a well documented pattern, and a Canadian doctor named Rosemary Basson put
+      it on paper in 2000.</p>
+
+    <h2>First, the model you've been failing at</h2>
+
+    <p>For decades, the official sequence of sex went like this: you want it, then you get
+      turned on, then you come.</p>
+
+    <p>That comes from Masters and Johnson, <em>Human Sexual Response</em> (1966), who mapped
+      excitement, plateau, orgasm and resolution. Then Helen Singer Kaplan, in <em>Disorders of
+      Sexual Desire</em> (1979), stuck desire on the front as step one.</p>
+
+    <p>Desire first. Then arousal. Then orgasm. A straight line.</p>
+
+    <p>Every magazine quiz you've ever taken, every pharmaceutical advert, every bloke in a pub
+      with an opinion, all of it runs on that line. And it has one enormous problem.</p>
+
+    <p class="pull">For an awful lot of women, desire does not come first. So when it doesn't
+      show up on cue, you don't conclude that the line is wrong. You conclude that you are.</p>
+
+    <p>I see the damage from that every single week. Women who've spent fifteen years quietly
+      diagnosing themselves against a model built in a laboratory on people selected because
+      they could reliably become aroused to order.</p>
+
+    <h2>What Basson actually said</h2>
+
+    <p>In "The Female Sexual Response: A Different Model" (Journal of Sex &amp; Marital Therapy,
+      2000), Basson proposed something different. Not a line. A circle.</p>
+
+    <p>Here's the circle in plain words.</p>
+
+    <p><strong>You start from neutral.</strong> Not turned on, not turned off. Just getting on
+      with your day. This is where most women in long term relationships begin, and it's
+      completely ordinary.</p>
+
+    <p><strong>Something makes you willing.</strong> And notice: the reasons are often not
+      sexual at all. Wanting to feel close. Missing him. Wanting to be wanted. Wanting the
+      tenderness afterwards. Basson treats those as legitimate starting points, not as second
+      best.</p>
+
+    <p><strong>Then you need a sexual stimulus, in a context that works.</strong> Touch that's
+      actually good. Privacy. Enough time. Your body not braced. A mind that isn't running the
+      grocery list.</p>
+
+    <p><strong>Arousal arrives.</strong> Your body starts responding. And this is the whole
+      point of her model:</p>
+
+    <p><strong>Desire shows up now. After arousal, not before it.</strong></p>
+
+    <p>That's responsive desire. Twenty minutes in, suddenly you want it. Nothing about that is
+      fake and nothing about it is forced.</p>
+
+    <p><strong>Then satisfaction.</strong> Physical, emotional, or both. It doesn't have to
+      include orgasm to count, and Basson's model explicitly allows for that.</p>
+
+    <p><strong>And the satisfaction feeds back into the closeness,</strong> which makes you more
+      willing next time. Round the circle again.</p>
+
+    <figure>
+      <p class="eyebrow">The line you were measured against, 1966 to 1979</p>
+      <div class="line-chips">
+        <span class="chip">Desire</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+        <span class="chip">Arousal</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+        <span class="chip">Orgasm</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+        <span class="chip">Resolution</span>
+      </div>
+      <p class="eyebrow">What Basson proposed instead, 2000</p>
+      <p class="fig-title">A circle, and desire doesn't come first</p>
+      <div class="circle-wrap">
+        <svg class="ring" viewBox="0 0 240 240" role="img"
+             aria-label="A circular sequence of six steps. Desire appears at step five, after arousal.">
+          <circle class="track" cx="120" cy="120" r="88"></circle>
+          <path class="tip" d="M208,128 L213,118 L203,118 Z"></path>
+          <path class="tip" d="M69.9,192.7 L78.5,191.9 L73.5,200.5 Z"></path>
+          <path class="tip" d="M82.1,40.3 L78.5,48.1 L73.5,39.5 Z"></path>
+          <circle class="node" cx="120" cy="32" r="15"></circle>
+          <circle class="node" cx="196" cy="76" r="15"></circle>
+          <circle class="node" cx="196" cy="164" r="15"></circle>
+          <circle class="node" cx="120" cy="208" r="15"></circle>
+          <circle class="node node-key" cx="44" cy="164" r="15"></circle>
+          <circle class="node" cx="44" cy="76" r="15"></circle>
+          <text class="num" x="120" y="32" text-anchor="middle" dominant-baseline="central">1</text>
+          <text class="num" x="196" y="76" text-anchor="middle" dominant-baseline="central">2</text>
+          <text class="num" x="196" y="164" text-anchor="middle" dominant-baseline="central">3</text>
+          <text class="num" x="120" y="208" text-anchor="middle" dominant-baseline="central">4</text>
+          <text class="num num-key" x="44" y="164" text-anchor="middle" dominant-baseline="central">5</text>
+          <text class="num" x="44" y="76" text-anchor="middle" dominant-baseline="central">6</text>
+        </svg>
+        <ol class="cycle">
+          <li>Sexual neutrality. Getting on with your day</li>
+          <li>Willingness, often for reasons that aren't sexual</li>
+          <li>A stimulus, in a context that works</li>
+          <li>Arousal</li>
+          <li class="key"><b>Desire arrives here</b></li>
+          <li>Satisfaction, then closeness, which feeds step two next time</li>
+        </ol>
+      </div>
+      <figcaption>Same body, different sequence. On the straight line, no desire at the start
+        means a fault. On the circle, no desire at the start is just Tuesday.</figcaption>
+    </figure>
+
+    <p>So you were never missing step one. You were running a different sequence and grading
+      yourself on somebody else's.</p>
+
+    <h2>Willingness is not duty sex, and you need to know the difference</h2>
+
+    <p>Now, I have to be careful here, because this model gets twisted fast.</p>
+
+    <p>"Desire comes after arousal" in the wrong mouth becomes "so just do it anyway and you'll
+      warm up, love."</p>
+
+    <p>No.</p>
+
+    <p>Here's the line I hold in my room. Willingness means you're curious, you're open, you're
+      saying yes to finding out what happens. There's an openness in your body, even a faint
+      one. You can stop whenever you like and you know that in your bones.</p>
+
+    <p>Duty sex means you're absent. You're gone somewhere above the ceiling, waiting for it to
+      be over, counting. Your no isn't available, or it costs too much to use.</p>
+
+    <p>One of those builds desire over months. The other one kills it, and it is the single most
+      common cause of low desire I see in women over 40. Years of overriding yourself. Your body
+      learns that sex means being ignored, including by you, and she starts saying no earlier
+      and earlier.</p>
+
+    <figure>
+      <p class="fig-title">The difference, and it matters more than anything else here</p>
+      <div class="compare">
+        <div>
+          <h5 class="yes">Willing</h5>
+          <ul>
+            <li>Curious. Open to finding out</li>
+            <li>There's an openness in your body, even a faint one</li>
+            <li>You can stop whenever you like, and you know it</li>
+            <li>Builds desire over months</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="no">Duty</h5>
+          <ul>
+            <li>Absent. Somewhere above the ceiling</li>
+            <li>Waiting for it to be over, counting</li>
+            <li>Your no isn't available, or it costs too much to use</li>
+            <li>Kills desire, and it's the most common cause I see</li>
+          </ul>
+        </div>
+      </div>
+      <figcaption>Read the right hand column again. If that's your Tuesday night, the problem
+        was never your libido.</figcaption>
+    </figure>
+
+    <p class="pull">Responsive desire is an invitation to experiment. It is not an instruction
+      to override yourself. Ever.</p>
+
+    <h2>Why context does most of the work</h2>
+
+    <p>If desire comes after arousal, and arousal depends on context, then context stops being a
+      nice extra and becomes the main event.</p>
+
+    <p>Which explains so much.</p>
+
+    <p>Why it works on holiday and not on a Tuesday. Why you need the door locked. Why
+      resentment from Thursday's argument is still sitting in your hips on Saturday. Why you
+      can't go from spreadsheet to sensual in four minutes. Why the teenager being awake
+      upstairs ends the entire conversation.</p>
+
+    <p>This is where Basson lines up with the brakes and accelerators idea from the dual control
+      model, which Emily Nagoski brought to a general audience in her 2015 book. Accelerators
+      turn you on. Brakes turn you off. Most women over 40 don't have a broken accelerator.
+      They've got a foot flat on the brake.</p>
+
+    <p>Fatigue. Resentment. Body shame. Pain. Pressure. Being needed all day by everyone.</p>
+
+    <p>You can buy all the lingerie you like. It's an accelerator, and accelerators do nothing
+      while the brake is down.</p>
+
+    <h2>You're not disordered</h2>
+
+    <p>Worth knowing: when the DSM was revised in 2013, this thinking made it in. The old
+      separate diagnoses for low desire and low arousal in women were merged into one category,
+      and the criteria now recognise that absent spontaneous desire is not in itself a problem
+      if desire turns up in response to arousal.</p>
+
+    <p>Read that again if you've been carrying a private verdict about yourself since about
+      2009.</p>
+
+    <p>The other thing to put down: your body and your mind don't always agree, and that's
+      normal too. Meredith Chivers' work on arousal nonconcordance showed that genital response
+      and felt desire can run on separate tracks. Wet doesn't always mean willing. Dry doesn't
+      always mean uninterested. Neither one gets to overrule what you actually want.</p>
+
+    <h2>Where I'd be careful</h2>
+
+    <p><strong>It isn't universal.</strong> Some women have plenty of spontaneous desire, and
+      some men are strongly responsive. This isn't a women's model and a men's model, whatever
+      the headlines did with it. If you've always wanted it out of nowhere and that's recently
+      stopped, pay attention rather than filing it under responsive desire.</p>
+
+    <p><strong>It can become a lovely excuse.</strong> "It's just responsive desire" should
+      never be the end of the conversation when something else is going on. Pain during sex is
+      not responsive desire. Neither is a thyroid problem, an antidepressant side effect,
+      vaginal dryness after menopause, untreated depression, or a husband you've stopped
+      trusting. Please get the physical things checked. A good model should open questions, not
+      close them.</p>
+
+    <p><strong>It came mostly from clinical settings,</strong> from women who'd come in with
+      complaints, in long term relationships. It describes that situation beautifully. It was
+      never meant to describe everyone.</p>
+
+    <h2>What to actually do with this</h2>
+
+    <ol class="steps">
+      <li><strong>Stop auditing yourself for desire before you begin.</strong> That's the
+        instrument reading you've been using, and it's the wrong gauge. Ask instead: am I
+        willing to find out? That question is answerable on a Tuesday.</li>
+      <li><strong>Make a brakes list.</strong> Ten minutes, honestly. Everything that shuts you
+        down. Noise, lighting, the unspoken argument, his breath, your bra, the thought that
+        he'll want it again tomorrow. Then pick one and deal with it. One brake lifted beats a
+        year of trying harder.</li>
+      <li><strong>Agree on a twenty minute experiment with him.</strong> You start, with no
+        obligation to continue, and either of you can stop at any point with nothing owed. Most
+        couples are stunned by this. It takes the pressure off, and pressure is the biggest
+        brake of all.</li>
+      <li><strong>Warm the whole day, not the last four minutes.</strong> A text at eleven. A
+        hand on your back while you're cooking. Responsive desire needs a runway.</li>
+      <li><strong>Ask your body, how are you doing, darling?</strong> Before you decide
+        anything. She has information.</li>
+    </ol>
+
+    <div class="refs">
+      <h4>The papers, if you want it from the source</h4>
+      <ul>
+        <li>Rosemary Basson, <span class="work">"The Female Sexual Response: A Different
+          Model"</span>, Journal of Sex &amp; Marital Therapy, <span class="year">2000</span>,
+          volume 26, pages 51 to 65. The original. Short, readable, and it changed the field:
+          <a href="https://doi.org/10.1080/009262300278641">doi.org/10.1080/009262300278641</a></li>
+        <li>Rosemary Basson, <span class="work">"Using a Different Model for Female Sexual
+          Response to Address Women's Problematic Low Sexual Desire"</span>,
+          <span class="year">2001</span>. Where she turns the model into something you can
+          actually use in a clinic.</li>
+        <li>Rosemary Basson, <span class="work">"Human Sex Response Cycles"</span>,
+          <span class="year">2001</span>. Where she extends it to men as well.</li>
+        <li><span class="work">"The Circles of Sex: Basson's Sex Response Cycle"</span>, in the
+          Encyclopedia of Sexuality and Gender. A clear overview if the original is paywalled
+          for you:
+          <a href="https://link.springer.com/rwe/10.1007/978-3-319-59531-3_37-1">link.springer.com</a></li>
+      </ul>
+      <h4>Books</h4>
+      <ul>
+        <li>Masters and Johnson, <span class="work">Human Sexual Response</span>
+          <span class="year">(1966)</span>, and Helen Singer Kaplan, <span class="work">Disorders
+          of Sexual Desire</span> <span class="year">(1979)</span>, if you want to see the model
+          you've been held to.</li>
+        <li>Emily Nagoski's <span class="year">2015</span> book on women's sexuality, for brakes
+          and accelerators in everyday language. The dual control model underneath it came out of
+          the Kinsey Institute.</li>
+        <li>Lori Brotto, <span class="work">Better Sex Through Mindfulness: How Women Can
+          Cultivate Desire</span> <span class="year">(2018)</span>, and the workbook that
+          followed in <span class="year">2022</span>. She directs the sexual health laboratory at
+          the same university as Basson:
+          <a href="https://www.loribrotto.com/">loribrotto.com</a></li>
+      </ul>
+      <h4>Watch</h4>
+      <ul>
+        <li>Emily Nagoski, <span class="work">"The truth about unwanted arousal"</span>, TED,
+          <span class="year">2018</span>. Fifteen minutes on arousal nonconcordance, and the
+          clearest explanation of it anywhere:
+          <a href="https://www.ted.com/talks/emily_nagoski_the_truth_about_unwanted_arousal">ted.com</a></li>
+        <li><span class="work">"Mind Full: Better Sex Through Mindfulness with Dr Lori
+          Brotto"</span>:
+          <a href="https://www.youtube.com/watch?v=TF7NOGZJgtM">youtube.com</a></li>
+      </ul>
+      <h4>Blogs and articles worth your time</h4>
+      <ul>
+        <li>Dr Jason Winters, <span class="work">"The Sexual Response Cycle and Why It
+          Matters"</span>. A sex therapist walking through all three models in plain language:
+          <a href="https://www.drjasonwinters.com/blogs/therapy-blog/2015/4/29/the-sexual-response-cycle-and-why-it-matters">drjasonwinters.com</a></li>
+        <li><span class="work">"Why Does My Partner Want Sex Faster Than I Do?"</span>, The
+          Psychology Group. Useful if the mismatch in your house is the thing that hurts most:
+          <a href="https://thepsychologygroup.com/sexual-response-cycle/">thepsychologygroup.com</a></li>
+        <li><span class="work">"What Basson's Sexual Response Cycle Teaches Us About
+          Sexuality"</span>, KPACT. Short, and good on why the model matters beyond straight
+          couples: <a href="https://www.kpact.xyz/2017/05/19/bassons_model/">kpact.xyz</a></li>
+      </ul>
+    </div>
+
+    <h2>One last thing</h2>
+
+    <p>You are not a woman who lost her desire.</p>
+
+    <p>You're a woman who was handed the wrong instructions, tried to follow them for twenty
+      years, and concluded she was the faulty one.</p>
+
+    <p>Different sequence. Same body. She's still in there, and she's been waiting for somebody
+      to stop grading her.</p>
+
+    <p>Are you willing to find out?</p>
+
+    <p class="signoff">with a big warm hug,<br>Tarisha</p>
+</div>
