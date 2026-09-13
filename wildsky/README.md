@@ -16,6 +16,7 @@ says so.
 | `04-product-pages.md` | A product page template plus rewritten copy, SEO titles and URL fixes for all ten products, and an FAQ page. |
 | `05-seo-pack.md` | Title tags and meta descriptions for every page, keyword map, product types and tags, alt text, technical checklist, six content pieces. |
 | `06-offer-bundles-email.md` | Four bundles with pricing, the fix for the open-ended 20% offer, the gift-season timeline, and a five-email welcome sequence. |
+| `07-instagram-and-30-angles.md` | What's wrong in the Notion Content Hub, what performs in this niche, 30 promotion angles, and a profile fix list. |
 
 ## The short version
 
