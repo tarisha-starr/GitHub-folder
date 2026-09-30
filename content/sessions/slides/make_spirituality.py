@@ -11,7 +11,7 @@ NAVY =RGBColor(0x1D,0x28,0x3C); PLUM =RGBColor(0x74,0x23,0x4F)
 BLUSH=RGBColor(0xE4,0xBB,0xC2); PINK =RGBColor(0xFC,0xE8,0xEA)
 SAGE =RGBColor(0x7C,0xA1,0xA5); TEAL =RGBColor(0x22,0x46,0x52)
 GOLD =RGBColor(0xC9,0xA8,0x6D)
-HEAD_FONT="Marcellus"; BODY_FONT="Lora"
+HEAD_FONT="Belleza"; BODY_FONT="Lora"
 SCHEME={"pink":(PINK,NAVY,PLUM),"blush":(BLUSH,NAVY,PLUM),"plum":(PLUM,PINK,GOLD),
         "navy":(NAVY,PINK,GOLD),"teal":(TEAL,PINK,GOLD),"sage":(SAGE,NAVY,PLUM),
         "gold":(GOLD,NAVY,PLUM)}
@@ -70,24 +70,43 @@ add(d,"gold","The practice",
     body="Not getting rid of the contraction. Opening to something bigger, irrespective of the contraction. You feel yourself close, and you open anyway.")
 add(d,"navy","Not bypassing",
     body="We don't rise above our humanness. We let the scared, contracted parts stay, and open to something bigger while holding them with love.")
+add(d,"teal","Your body is your Blueprint",eyebrow="Your inner guidance system",
+    body=["Your body is always guiding you: contraction and opening, yes and no.",
+          "Contraction isn't a fault. It's information.",
+          "Coming home to your body means learning to read and trust it."])
+add(d,"plum","Safety is the sacred ground",
+    body="Nothing is pushed. You go at your own pace. Your yes is real because your no is allowed.")
 add(d,"blush","Reflect",eyebrow="Take a moment",
     body=["Where do I feel myself contract or close down?","What happens when I try to fix it?",
           "What could I open to, even while it's here?"])
 add(d,"teal","Breakout · The part that closes down",eyebrow="In pairs",
     body=["I feel myself contract when...","What happens when I try to fix it is...",
           "What I could open to, even while it's there, is...","Partner: witness. Then swap."])
-add(d,"pink","What's possible",eyebrow="The evidence",
-    body="This isn't wishful thinking. There's real science under it.",big=True)
-add(d,"sage","Presence changes everything",
-    body="In Dr Lori Brotto's studies, four sessions of present-moment mindfulness improved women's desire, arousal and satisfaction, held six months on.")
-add(d,"navy","You are not broken",
-    body="Dr Rosemary Basson: for about three in four women, desire comes after connection and touch, not before. That's normal, not a problem to fix.")
-add(d,"plum","Your body's chemistry of connection",
-    body="Touch and intimacy release oxytocin, dopamine and endorphins: calm, trust, bonding, afterglow. Eye gaze even syncs two brains.")
-add(d,"gold","The body is a temple",
-    body="Pleasure is a prayer. Your sexual energy is your life force. Sacred sexuality is turning toward your body with reverence, not judgement.")
-add(d,"navy","Safety is the sacred ground",
-    body="Nothing is pushed. You go at your own pace. Your yes is real because your no is allowed.")
+# --- What spirituality in sexuality means (research) ---
+add(d,"pink","What sacred sexuality means",eyebrow="What it means",
+    body=["Bringing intention, presence and reverence to sex, so it's more than a physical act.",
+          "A doorway to something larger than you: the divine, life force, oneness, love.",
+          "The act doesn't change. The awareness you bring does. Communion, not performance."])
+add(d,"navy","The same longing",eyebrow="How they connect",
+    body=["Both spring from the same root: desire and longing.",
+          "Sexuality: the longing to know and be known, to merge with another.",
+          "Spirituality: the same longing, pointed at the whole, to belong to something greater.",
+          "Two directions, one yearning, to end separateness."])
+add(d,"plum","The body is the doorway",
+    body=["Tantra never split them. Body-shameful, spirit-holy is the wound, not the truth.",
+          "Transcendence, like pleasure, moves through the body, not around it.",
+          "You reach the sacred by going in, not rising above."])
+add(d,"sage","Presence is the skill",eyebrow="The evidence · it's real, not woo",
+    body="Mindfulness measurably improves women's desire, arousal and satisfaction (Dr Lori Brotto). The spiritual muscle and the sexual one are the same: presence.")
+add(d,"navy","Union is literal",
+    body="In eye-gaze studies, two people's brains, even their blinking, begin to synchronise, and they feel closer. Becoming one isn't only poetry.")
+add(d,"gold","A chemistry of the sacred",
+    body="Touch and intimacy release oxytocin, dopamine and endorphins: bonding, trust, dissolved boundaries, the afterglow.")
+add(d,"blush","Vulnerability is the gateway",
+    body="Being truly seen is tied to the deepest connection, the same vulnerability the traditions call surrender.")
+add(d,"plum","Your body is a gift",
+    body="Received as a gift, and trusted as your guidance, your body isn't the obstacle to the sacred. It's the doorway.",big=True)
+# --- practice & close ---
 add(d,"sage","Practice · Sacred breath",
     body="Hand on heart, hand on belly. Breathe into your womb space. If you contract, let it be. Just open, breath by breath. I'm here. I love you. Thank you.")
 add(d,"blush","Breakout · From shame to sacred",eyebrow="In pairs",
