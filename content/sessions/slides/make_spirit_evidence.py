@@ -56,34 +56,29 @@ d=new_deck()
 add(d,"navy","Spirituality in Sexuality",eyebrow="Radiant Women's Circle",
     body="What it means, how they connect, and the evidence.",big=True)
 
-# What it actually means
-add(d,"pink","Sacred sexuality",eyebrow="What it actually means",
-    body="Bringing intention, presence and reverence to sex, so it becomes more than a physical act.")
-add(d,"plum","A doorway",
-    body="A way to connect with something larger than yourself: the divine, life force, oneness, love, spirit. Name it however you like.")
-add(d,"blush","The act doesn't change",
-    body="The awareness you bring to it does. Approached with presence, sex becomes communion, not performance or transaction.")
+# What it means - one slide
+add(d,"pink","What sacred sexuality means",eyebrow="What it means",
+    body=["Bringing intention, presence and reverence to sex, so it's more than a physical act.",
+          "A doorway to something larger than you: the divine, life force, oneness, love.",
+          "The act doesn't change. The awareness you bring does. Communion, not performance."])
 
-# How they're related
-add(d,"navy","The same root",eyebrow="How they connect",
-    body="Sexuality and spirituality spring from the same place: desire and longing.")
-add(d,"teal","Sexuality",
-    body="The longing to know and be known. To connect with, merge with, and be met by another, body, heart and soul.")
-add(d,"gold","Spirituality",
-    body="The same longing, pointed at the whole. To dissolve into, and belong to, something greater.")
-add(d,"plum","Two directions, one longing",
-    body="The yearning to end separateness. Tantra never split them. Body-shameful, spirit-holy is the wound, not the truth. Two sides of one coin.")
-add(d,"navy","The body is the doorway",
-    body="Transcendence, like pleasure, moves through the body, not around it. You reach the sacred by going in, not rising above.")
+# How they connect - two slides
+add(d,"teal","The same longing",eyebrow="How they connect",
+    body=["Both spring from the same root: desire and longing.",
+          "Sexuality: the longing to know and be known, to merge with another.",
+          "Spirituality: the same longing, pointed at the whole, to belong to something greater.",
+          "Two directions, one yearning, to end separateness."])
+add(d,"plum","The body is the doorway",
+    body=["Tantra never split them. Body-shameful, spirit-holy is the wound, not the truth.",
+          "Transcendence, like pleasure, moves through the body, not around it.",
+          "You reach the sacred by going in, not rising above. Bypassing can't get you there."])
 
 # The evidence
-add(d,"pink","It's real, not woo",eyebrow="The evidence",
-    body="Four things the research shows.")
-add(d,"sage","Presence is the skill",
+add(d,"sage","Presence is the skill",eyebrow="The evidence · it's real, not woo",
     body="Mindfulness measurably improves women's desire, arousal and satisfaction (Dr Lori Brotto). The spiritual muscle and the sexual one are the same: presence.")
 add(d,"navy","Union is literal",
     body="In eye-gaze studies, two people's brains, even their blinking, begin to synchronise, and they feel closer. Becoming one isn't only poetry.")
-add(d,"plum","A chemistry of the sacred",
+add(d,"gold","A chemistry of the sacred",
     body="Touch and intimacy release oxytocin, dopamine and endorphins: bonding, trust, dissolved boundaries, the afterglow.")
 add(d,"blush","Vulnerability is the gateway",
     body="Being truly seen is tied to the deepest connection, the same vulnerability the traditions call surrender.")
