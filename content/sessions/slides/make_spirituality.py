@@ -56,22 +56,40 @@ d=new_deck()
 # ---- Session 1: The Sacred Woman ----
 add(d,"navy","Spirituality & Sexuality",eyebrow="Radiant Women's Circle  ·  Session 1",
     body="The Sacred Woman: coming home to your body and desire.",big=True)
-add(d,"pink","Sacred, not shameful",
-    body="Your sexuality isn't the opposite of your spirituality. It's one of its deepest doorways.",big=True)
-add(d,"plum","The body is a temple",
-    body="Pleasure is a prayer. Your sexual energy is your life force, the same energy that creates life.")
+add(d,"pink","We begin with self-compassion",
+    body="You can't open to anything bigger while you're at war with yourself.")
+add(d,"blush","Self-compassion",eyebrow="Hands on heart",
+    body=["How are you, really? What's going on for you?","I hear you. I'm here.",
+          "Nothing to fix. Nothing to perform."])
+add(d,"navy","Two steps",
+    body=["Step 1: Awareness. Notice the closing, the contraction.","Step 2: Self-love. Meet it with kindness.",
+          "And you don't need to fix yourself."])
+add(d,"plum","You are not a problem to solve",
+    body="You can feel yourself contract, close, brace, and you don't have to make it go away.",big=True)
+add(d,"gold","The practice",
+    body="Not getting rid of the contraction. Opening to something bigger, irrespective of the contraction. You feel yourself close, and you open anyway.")
+add(d,"navy","Not bypassing",
+    body="We don't rise above our humanness. We let the scared, contracted parts stay, and open to something bigger while holding them with love.")
+add(d,"blush","Reflect",eyebrow="Take a moment",
+    body=["Where do I feel myself contract or close down?","What happens when I try to fix it?",
+          "What could I open to, even while it's here?"])
+add(d,"teal","Breakout · The part that closes down",eyebrow="In pairs",
+    body=["I feel myself contract when...","What happens when I try to fix it is...",
+          "What I could open to, even while it's there, is...","Partner: witness. Then swap."])
+add(d,"pink","What's possible",eyebrow="The evidence",
+    body="This isn't wishful thinking. There's real science under it.",big=True)
+add(d,"sage","Presence changes everything",
+    body="In Dr Lori Brotto's studies, four sessions of present-moment mindfulness improved women's desire, arousal and satisfaction, held six months on.")
+add(d,"navy","You are not broken",
+    body="Dr Rosemary Basson: for about three in four women, desire comes after connection and touch, not before. That's normal, not a problem to fix.")
+add(d,"plum","Your body's chemistry of connection",
+    body="Touch and intimacy release oxytocin, dopamine and endorphins: calm, trust, bonding, afterglow. Eye gaze even syncs two brains.")
+add(d,"gold","The body is a temple",
+    body="Pleasure is a prayer. Your sexual energy is your life force. Sacred sexuality is turning toward your body with reverence, not judgement.")
 add(d,"navy","Safety is the sacred ground",
     body="Nothing is pushed. You go at your own pace. Your yes is real because your no is allowed.")
-add(d,"blush","Reflect",eyebrow="Take a moment",
-    body=["What was I taught about my body and sexuality?","Where do I still carry shame? Whose voice is it?",
-          "What would it feel like to treat my body as sacred?"])
 add(d,"sage","Practice · Sacred breath",
-    body="Hand on heart, hand on belly. Breathe down into your womb space. I'm here. I love you. Thank you.")
-add(d,"teal","Breakout · The story I was told",eyebrow="In pairs",
-    body=["The story I was told about my body was...","The shame I carry is... in the voice of...",
-          "What I'd love to believe instead is...","Partner: witness. Then swap."])
-add(d,"gold","Your body is a temple",
-    body="Pleasure can't open in a body that's bracing for criticism. It opens in a body that feels adored.")
+    body="Hand on heart, hand on belly. Breathe into your womb space. If you contract, let it be. Just open, breath by breath. I'm here. I love you. Thank you.")
 add(d,"blush","Breakout · From shame to sacred",eyebrow="In pairs",
     body=["A pleasure I stopped letting myself feel is...","One sacred pleasure I'll give myself is...",
           "The part of my body I'm ready to make peace with is...","Then swap."])

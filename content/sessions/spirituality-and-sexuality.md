@@ -38,19 +38,22 @@ you choose.
 
 # SESSION 1 — The Sacred Woman (120 min)
 
-**Intention:** she reconnects to her body and her desire as sacred, begins to release
-shame, and learns breath and presence as the foundation of sacred sexuality.
+**Intention:** she begins with self-compassion, learns that self-love (step 2) follows
+awareness (step 1), meets the parts of her that still close down with love rather than
+shame, and sees the real evidence for what's possible when body and spirit come home to
+each other.
 
 | Time | Part | What happens |
 |---|---|---|
 | 0:00–0:12 | **Arrive & soften** | Land in the body |
-| 0:12–0:30 | **Sacred, not shameful** | What sacred sexuality is; safety as sacred ground |
-| 0:30–0:45 | **Practice: Sacred breath** | Guided breath and grounding into the body |
-| 0:45–1:03 | **Breakout 1** | The story I was told about my body and desire |
-| 1:03–1:10 | **Break** | |
-| 1:10–1:28 | **Your body is a temple** | Body appreciation, reclaiming pleasure |
-| 1:28–1:45 | **Breakout 2** | From shame to sacred |
-| 1:45–2:00 | **Take-home ritual & close** | A practice to carry |
+| 0:12–0:27 | **Self-compassion first** | The practice we always begin with |
+| 0:27–0:42 | **Awareness, then self-love** | Loving the reactive parts; not bypassing |
+| 0:42–0:58 | **Breakout 1** | The part of me that closes down |
+| 0:58–1:05 | **Break** | |
+| 1:05–1:22 | **What's possible: the evidence** | The science, and the sacred |
+| 1:22–1:34 | **Sacred breath & body as temple** | Guided practice |
+| 1:34–1:48 | **Breakout 2** | From shame to sacred |
+| 1:48–2:00 | **Take-home ritual & close** | A practice to carry |
 
 ## Part 1 — Arrive & soften (0:00–0:12)
 
@@ -62,78 +65,125 @@ Welcome, candle, sacred-space agreements.
 
 One-word go-round: "How are you arriving?"
 
-## Part 2 — Sacred, not shameful (0:12–0:30)
+## Part 2 — Self-compassion first (0:12–0:27)
 
-> Somewhere along the way we were taught that sex was dirty, dangerous, or something we do
-> for someone else. And that spirituality was up here, in the mind, in the light, far away
-> from the body. But the old traditions knew something we forgot. That the body is a
-> temple. That pleasure is a prayer. That your sexual energy is your life force, the same
-> energy that creates life, creates art, creates you.
+We always begin here. You can't open to anything bigger while you're at war with yourself.
+
+Guide the practice, hands on heart:
+> Both hands on your heart. Feel the warmth. Ask yourself, the way you'd ask your dearest
+> friend, "How are you, really? What's going on for you?"
 >
-> Sacred sexuality isn't a technique. It's a turning toward. Turning toward your body with
-> reverence instead of judgement. Turning toward pleasure as something holy, not something
-> to earn or be ashamed of. Turning toward another, when you choose to, with your whole
-> presence.
-
-**Safety as sacred ground:**
-> And none of it is sacred without safety. Sacred means you're never pushed, never
-> performing, never abandoning yourself. It means your yes is real because your no is
-> allowed. Consent, first with yourself, is the beginning of anything holy. So everything
-> tonight is an invitation. You take what's yours and leave the rest.
-
-**Reflection questions** (pose, then into the practice and breakout):
-- What was I taught about my body and my sexuality, and who taught me?
-- Where do I still carry shame, and whose voice is it in?
-- What would it feel like to treat my body as sacred?
-
-## Part 3 — Practice: Sacred breath & grounding (0:30–0:45)
-
-Guide this slowly. Cameras optional, eyes closed.
-
-> Both feet on the floor. One hand on your heart, one hand low on your belly. Breathe down,
-> long and slow, all the way into your pelvis, into your womb space. This is the seat of
-> your life force.
+> Listen. Then say, "I hear you. I'm here." If something tender rises, "I see this, and I'm
+> not going anywhere."
 >
-> With each breath in, imagine drawing warmth up through your body. With each breath out,
-> let a little more shame, a little more armouring, soften and melt.
+> Nothing to fix. Nothing to perform. Just meeting yourself with kindness.
+
+Sit in it a few minutes. This is the ground everything else stands on.
+
+## Part 3 — Awareness, then self-love (0:27–0:42)
+
+Teach the two steps, in order:
+> Step one is awareness. Noticing. Catching the moment you close down, contract, go
+> reactive, the old story that says "not enough." Most of the work so far has built this.
+> You can feel it now.
 >
-> Silently, say to your body: "I'm here. I love you. Thank you." Notice what softens.
-> Notice what wakes up. Nothing to make happen. Just breath, and presence, and coming home.
+> But awareness alone can curdle into self-criticism: "I can feel it and I still do it,
+> what's wrong with me?" So step one isn't enough.
+>
+> Step two is self-love. And here's the part that changes everything: **you don't need to
+> fix yourself.** You are not a problem to be solved. You can feel yourself contracting,
+> closing, bracing, and you don't have to make it go away.
 
-Sit in it for several minutes. This is the foundational sacred practice, everything builds
-on breath and presence.
+Name the real practice, this is the heart of it:
+> The practice is not getting rid of the contraction. The practice is opening to something
+> bigger than you, irrespective of the contraction. You feel yourself close, and you open
+> anyway. Not by forcing yourself open, and not by fixing the closing first, but by turning
+> toward something larger while the contraction is still here: love, life, breath, the
+> sacred. Over time the contraction stops running the show. Not because you defeated it.
+> Because you stopped making it the centre.
 
-## Part 4 — Breakout 1: The story I was told (0:45–1:03)
+Name the bypassing trap:
+> This is why spirituality is not bypassing. Bypassing uses "love and light" to rise above
+> your humanness and pretend the hurt or the fear isn't there. That buries it. Real
+> practice does the opposite: it lets the contracted, scared, reactive parts stay exactly
+> as they are, and opens to something bigger while holding them with love. The parts that
+> contract are usually young and protective. You don't shame them and you don't fix them.
+> You let them be held.
+
+Land it:
+> So it's both, at once: loving exactly who we are, all of her, contraction and all, and
+> opening to something bigger than us. You don't choose between them. Loving your own
+> humanness is the doorway to the sacred.
+
+**Reflection questions:**
+- Where do I feel myself contract or close down?
+- What happens when I try to fix it or force it open?
+- What could I open to, even while the contraction is still here?
+
+## Part 4 — Breakout 1: The part of me that closes down (0:42–0:58)
 
 **Broadcast to the rooms:**
 > In pairs. Partner A, 6 minutes:
-> - "The story I was told about my body and my sexuality was..."
-> - "The shame I still carry is... and I think it's in the voice of..."
-> - "What I'd love to believe instead is..."
-> Partner B, just witness. No fixing. Then swap.
+> - "I feel myself contract or close down when..."
+> - "What happens when I try to fix it is..."
+> - "What I could open to, even while it's there, is..."
+> Partner B, just witness. No fixing, for them or for yourself. Then swap.
 
-**Main-room go-round (3 min):** one sentence each, "What I'd love to believe about my body
-is..."
+**Main-room go-round (3 min):** one sentence each, "What I can open to, even while I'm
+contracted, is..."
 
-## Break (1:03–1:10)
+## Break (0:58–1:05)
 
-## Part 5 — Your body is a temple (1:10–1:28)
+## Part 5 — What's possible: the evidence (1:05–1:22)
 
-Teach and guide a short body-appreciation practice.
+Show them it's real, not wishful. Share the evidence in plain language:
 
-> Your body deserves your love and attention. I think of mine like a beloved. If I condemn
-> her, she shuts down. If I love her, care for her, she opens all her miracles to me.
+> This isn't just pretty language. There's real science under it.
 >
-> Let's honour her now. Bring your hands to your own heart, then your belly, then wherever
-> feels right. As you touch each part, silently thank her. What do your hands do for you?
-> Your hips? Your belly, that can hold and grow life? Send each part gratitude. Send it
-> love.
->
-> This is the foundation of reclaiming your pleasure: a body that feels adored instead of
-> judged. Pleasure can't open in a body that's bracing for criticism. It opens in a body
-> that feels safe and cherished.
+> - **Presence changes everything.** Dr Lori Brotto's studies at UBC had women practise
+>   mindfulness, simply being present in their bodies instead of stuck in their heads. Just
+>   four sessions significantly improved their desire, arousal and satisfaction, and it held
+>   six months later. Presence is trainable, and it works.
+> - **You are not broken if desire comes later.** Dr Rosemary Basson showed that for most
+>   women, desire is responsive: it arrives after connection and touch begin, not before.
+>   Around three in four women work this way. It's normal, not a problem to fix. So many
+>   women think something's wrong with them. Nothing is.
+> - **Your body has its own chemistry of connection.** Intimacy and touch release oxytocin,
+>   dopamine and endorphins, which calm anxiety, build trust, and create that afterglow of
+>   closeness. Connection literally soothes your nervous system.
+> - **Being truly seen bonds us.** In studies of mutual eye gaze, two people's brains and
+>   even their blinking begin to synchronise, and they feel measurably closer. Eye gazing
+>   isn't woo. It's biology. And vulnerability, letting yourself be seen, is what research
+>   ties to the deepest connection.
 
-## Part 6 — Breakout 2: From shame to sacred (1:28–1:45)
+Then bridge to the sacred:
+> So here's what's possible. Not just better sex, though that too. Coming home to a body
+> you've been at war with. Feeling safe enough to be truly seen. Turning lovemaking into a
+> place of communion instead of performance. Your sexuality as a doorway, not a shame.
+
+**Sacred, not shameful:**
+> Most of us were taught sex was dirty, or something we do for someone else, and that
+> spirituality was up in the mind, far from the body. The old traditions knew better: the
+> body is a temple, pleasure is a prayer, your sexual energy is your life force. Sacred
+> sexuality is simply turning toward your body with reverence instead of judgement. And none
+> of it is sacred without safety: you're never pushed, never performing, never abandoning
+> yourself. Your yes is real because your no is allowed.
+
+## Part 6 — Practice: Sacred breath & your body as temple (1:22–1:34)
+
+Guide slowly, cameras optional:
+> Both feet on the floor. One hand on your heart, one hand low on your belly. Breathe down,
+> long and slow, into your womb space, the seat of your life force. Breathe in warmth.
+> Breathe out, and if you feel yourself contract, let it be there. You're not making it
+> leave. You're just opening, breath by breath, to something bigger.
+>
+> Now move your hands slowly, honouring your body. As you touch each part, thank her. What
+> do your hands do for you? Your hips? Your belly? Send each part gratitude and love.
+>
+> Silently: "I'm here. I love you. Thank you." Pleasure can't open in a body braced for
+> criticism. It opens in a body that feels adored.
+
+## Part 7 — Breakout 2: From shame to sacred (1:34–1:48)
 
 **Reflection question first:** "What pleasure did I stop letting myself feel, and what
 would it mean to give it back to myself?"
@@ -147,7 +197,7 @@ would it mean to give it back to myself?"
 
 **Main-room (2 min):** "Name the one sacred pleasure you're claiming this week."
 
-## Part 7 — Take-home ritual & close (1:45–2:00)
+## Part 8 — Take-home ritual & close (1:48–2:00)
 
 **Take-home (for yourself, or with a partner you choose):**
 > Each day this week, ten minutes. Light a candle. Hand on your heart, hand on your belly.
@@ -289,11 +339,22 @@ answers: "Sacred." Blow out the candle together.
 
 ## Sources & further study
 
+- Self-compassion first; awareness (step 1) then self-love (step 2); the practice of
+  opening to something bigger irrespective of contraction, without fixing yourself
+  (Tarisha's framing, and a participant's insight on contraction)
+- Spirituality is not bypassing: meeting the reactive, contracted parts rather than rising
+  above them
+- Dr Lori Brotto (UBC Sexual Health Lab): mindfulness / present-moment awareness improves
+  women's desire, arousal and satisfaction
+- Dr Rosemary Basson: the responsive-desire model, desire follows connection and arousal
+  for most women
+- Oxytocin, dopamine and endorphins in intimacy: bonding, trust, calm, afterglow
+- Mutual eye gaze and interpersonal synchrony research; vulnerability and connection
 - Sacred sexuality / tantric principles: slowness, presence, breath, eye gaze, the body as
   temple, pleasure as life force
-- Drawn from the course practices: The Dance of Love, Conscious Sensual Touch, Breathe Into
-  Your Yoni, Eye Gaze, Body Appreciation, Speak Your Desire, Receive Like a Queen
-- Safety, consent and self-connection as the ground of sacred intimacy (Tarisha's framing)
+- Course practices: The Dance of Love, Conscious Sensual Touch, Breathe Into Your Yoni, Eye
+  Gaze, Body Appreciation, Speak Your Desire, Receive Like a Queen
+- Safety, consent and self-connection as the ground of sacred intimacy
 
 *Delivered in the voice of the "Become a Sexually Empowered Radiant Woman" course.
 sexualempowermentforwomen.com*
