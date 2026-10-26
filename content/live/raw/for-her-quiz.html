@@ -1,0 +1,153 @@
+
+<style>
+.tla-quiz, .tla-quiz * { box-sizing: border-box; }
+.tla-quiz { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-quiz img { max-width: 100%; display: block; }
+.tla-quiz a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-quiz .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-quiz .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-quiz section { padding: 96px 0; }
+.tla-quiz h1, .tla-quiz h2, .tla-quiz h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-quiz .h1 { font-size: clamp(48px, 7vw, 80px); line-height: 1.04; letter-spacing: -0.015em; }
+.tla-quiz .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-quiz .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-quiz .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: block; margin-bottom: 24px; }
+.tla-quiz .eyebrow.is-light { color: #C9A07C; }
+.tla-quiz .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-quiz .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+.tla-quiz .btn-ghost { display: inline-block; border: 1px solid #C9A07C; color: #FBF7EE; padding: 14px 28px; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; transition: background 0.3s ease, color 0.3s ease; }
+.tla-quiz .btn-ghost:hover { background: #C9A07C; color: #15110D; }
+
+.tla-quiz .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-quiz .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-quiz .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-quiz .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-quiz .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-quiz .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-quiz .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-quiz .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden; }
+.tla-quiz .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-quiz .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-quiz .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-quiz .footer-col li { margin-bottom: 12px; }
+.tla-quiz .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-quiz .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-quiz .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-quiz .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-quiz .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-quiz .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-quiz .socials { display: flex; gap: 16px; }
+.tla-quiz .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-quiz .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-quiz .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-quiz .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-quiz .footer-bottom a:hover { color: #B8945A; }
+.tla-quiz .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 768px) {
+	.tla-quiz { font-size: 16px; }
+	.tla-quiz section { padding: 72px 0; }
+	.tla-quiz .container, .tla-quiz .container-narrow { padding: 0 24px; }
+	.tla-quiz .nav-menu { display: none; }
+	.tla-quiz .nav .btn { padding: 10px 18px; }
+	.tla-quiz .footer { padding: 64px 0 32px; }
+	.tla-quiz .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-quiz .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-quiz .footer-grid { grid-template-columns: 1fr; }
+	.tla-quiz .nav-inner { gap: 12px; }
+	.tla-quiz .logo { font-size: 18px; }
+}
+
+.tla-quiz .hero { position: relative; min-height: 700px; display: flex; align-items: center; padding: 160px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.40) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/05/06-couple-back-sunset-contemplative.jpg'); background-size: cover; background-position: center; color: #FBF7EE; }
+.tla-quiz .hero-content { max-width: 1180px; } @media (max-width: 900px) { .tla-quiz .hero-content { grid-template-columns: 1fr !important; gap: 40px !important; } .tla-quiz .hero-content img { max-width: 280px !important; } }
+.tla-quiz .hero .eyebrow { color: #B8945A; }
+.tla-quiz .hero h1 { color: #FBF7EE; margin-bottom: 24px; }
+.tla-quiz .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin-bottom: 44px; max-width: 640px; line-height: 1.4; }
+.tla-quiz .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.tla-quiz .hero-link { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: #F5EFE3; text-decoration: underline; text-underline-offset: 6px; }
+.tla-quiz .hero-link:hover { color: #B8945A; }
+@media (max-width: 768px) { .tla-quiz .hero { padding: 130px 0 70px; min-height: 580px; } .tla-quiz .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; } }
+.tla-quiz .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-quiz .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-quiz .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }.tla-quiz .body { background: #F5EFE3; text-align: center; }
+.tla-quiz .body h2 { color: #15110D; max-width: 800px; margin: 0 auto 24px; }
+.tla-quiz .body p { max-width: 640px; margin: 0 auto 22px; color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.75; }
+.tla-quiz .placeholder-card { max-width: 640px; margin: 40px auto 0; background: #FBF7EE; border: 1px dashed #B8945A; border-radius: 6px; padding: 56px 40px; }
+.tla-quiz .placeholder-card .label { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #B8945A; margin-bottom: 16px; }
+</style>
+<div class="tla-quiz">
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content" style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:center;max-width:1180px;">
+		<div>
+			<span class="eyebrow">Free 60-second quiz</span>
+			<h1 class="h1" style="margin-bottom:24px;">What is your Light Sexual Desire Blueprint?</h1>
+			<p class="hero-tagline" style="margin-bottom:36px;">Discover the secret sauce to your desire. Understand why certain things turn you on, and why others turn you off.</p>
+			<a href="https://sexualempowermentforwomen.com/quiz/sexual-desire/" class="btn">Start the quiz</a>
+			<p style="font-family:'Lora',serif;font-style:italic;font-size:14px;color:#F5EFE3;opacity:0.7;margin-top:24px;">Takes about a minute. No login required.</p>
+		</div>
+		<div style="text-align:center;">
+			<img decoding="async" src="https://theloveadventure.com/wp-content/uploads/2026/05/quiz-hero.png" alt="Light Sexual Desire Blueprint quiz" style="max-width:380px;width:100%;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 24px 48px rgba(0,0,0,0.4));">
+		</div>
+	</div>
+</section>
+
+<section class="body" style="background:#F5EFE3;text-align:center;">
+	<div class="container-narrow">
+		<span class="eyebrow">Why take it</span>
+		<h2 class="h2" style="color:#15110D;margin-bottom:24px;">Four blueprints. One is yours</h2>
+		<p style="max-width:680px;margin:0 auto 22px;color:#2A2520;opacity:0.88;font-size:18px;line-height:1.75;">Most desire frameworks lump women into two categories: high-desire and low-desire. That binary doesn&#8217;t fit how desire actually works in coupled women over 40. The blueprint quiz reads four dimensions of your erotic profile and tells you which one is dominant.</p>
+		<p style="max-width:680px;margin:0 auto 32px;color:#2A2520;opacity:0.88;font-size:18px;line-height:1.75;">You get a personalised report, an honest read, and a clear next step (the mini-course, the membership, the course, or therapy) based on what your blueprint actually needs.</p>
+		<a href="https://sexualempowermentforwomen.com/quiz/sexual-desire/" class="btn">Take the quiz</a>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+</div>

@@ -1,0 +1,455 @@
+
+<style>
+.tla-cp, .tla-cp * { box-sizing: border-box; }
+.tla-cp { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.7; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-cp img { max-width: 100%; display: block; }
+.tla-cp a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-cp .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-cp .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-cp section { padding: 120px 0; }
+.tla-cp h1, .tla-cp h2, .tla-cp h3, .tla-cp h4 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-cp .h1 { font-size: clamp(56px, 9vw, 110px); line-height: 1.0; letter-spacing: -0.018em; }
+.tla-cp .h2 { font-size: clamp(36px, 5vw, 56px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-cp .eyebrow { font-family: 'Lora', serif; font-weight: 700; font-size: 14px; letter-spacing: 0.32em; text-transform: uppercase; color: #9E4A2A; display: inline-block; margin-bottom: 28px; }
+.tla-cp .eyebrow.is-light { color: #C9A07C; }
+.tla-cp .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-cp .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+
+.tla-cp .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-cp .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-cp .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-cp .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-cp .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; }
+.tla-cp .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-cp .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-cp .cp-img { filter: sepia(0.16) contrast(1.06) saturate(0.92) brightness(1.04); }
+
+/* HERO */
+.tla-cp .hero { position: relative; min-height: 720px; display: flex; align-items: center; padding: 180px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.50) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.30) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-05-large-indoor-group.jpg'); background-size: cover; background-position: center; color: #FBF7EE; text-align: center; }
+.tla-cp .hero-content { max-width: 1080px; margin: 0 auto; text-align: center; }
+.tla-cp .hero .eyebrow { color: #B8945A; font-size: 16px; letter-spacing: 0.34em; margin-bottom: 32px; font-weight: 700; }
+.tla-cp .hero h1 { color: #FBF7EE; margin-bottom: 28px; }
+.tla-cp .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin: 0 auto 36px; max-width: 720px; line-height: 1.4; }
+.tla-cp .hero-meta { display: inline-flex; gap: 36px; flex-wrap: wrap; justify-content: center; margin-bottom: 44px; font-family: 'Lora', serif; font-size: 14px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A07C; font-weight: 600; }
+
+/* WELCOME (light, intro copy from Tarisha) */
+.tla-cp .welcome { background: #F5EFE3; }
+.tla-cp .welcome-head { text-align: center; margin-bottom: 48px; }
+.tla-cp .welcome h2 { color: #15110D; max-width: 880px; margin: 0 auto; }
+.tla-cp .welcome-body { max-width: 720px; margin: 0 auto; }
+.tla-cp .welcome-body p { color: #2A2520; opacity: 0.9; font-size: 18px; line-height: 1.8; margin-bottom: 24px; }
+.tla-cp .welcome-body p.italic { font-family: 'Lora', serif; font-style: italic; color: #5D6B3F; font-size: 19px; }
+
+/* NEXT EVENT (dark, currently May 13 Breathwork) */
+.tla-cp .next-event { background: radial-gradient(ellipse at 30% 30%, rgba(199, 93, 61, 0.18) 0%, transparent 55%), radial-gradient(ellipse at 70% 70%, rgba(184, 148, 90, 0.14) 0%, transparent 55%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); color: #F5EFE3; padding: 140px 0; }
+.tla-cp .next-event-head { text-align: center; margin-bottom: 56px; }
+.tla-cp .next-event h2 { color: #FBF7EE; max-width: 800px; margin: 0 auto 16px; }
+.tla-cp .next-event .date-line { font-family: 'Marcellus', serif; font-style: italic; font-size: clamp(22px, 2.6vw, 28px); color: #C9A07C; }
+.tla-cp .next-event-body { max-width: 720px; margin: 0 auto; }
+.tla-cp .next-event-body p { color: #F5EFE3; opacity: 0.92; font-size: 18px; line-height: 1.8; margin-bottom: 22px; }
+.tla-cp .next-event-body p.italic { font-style: italic; color: #C9A07C; font-size: 19px; opacity: 1; }
+.tla-cp .next-event-body ul { list-style: none; padding: 0; margin: 28px 0; }
+.tla-cp .next-event-body li { padding-left: 28px; position: relative; margin-bottom: 14px; line-height: 1.65; color: #F5EFE3; opacity: 0.92; font-size: 17px; }
+.tla-cp .next-event-body li::before { content: '·'; position: absolute; left: 8px; top: -8px; font-size: 32px; line-height: 1; color: #B8945A; }
+.tla-cp .event-meta { background: rgba(184,148,90,0.08); border: 1px solid rgba(184,148,90,0.25); border-radius: 4px; padding: 28px 32px; margin: 40px 0; }
+.tla-cp .event-meta dl { display: grid; grid-template-columns: 140px 1fr; gap: 12px 24px; margin: 0; }
+.tla-cp .event-meta dt { font-family: 'Lora', serif; font-weight: 700; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #C9A07C; padding-top: 4px; }
+.tla-cp .event-meta dd { margin: 0; color: #F5EFE3; font-size: 16px; line-height: 1.6; }
+.tla-cp .event-meta dd a { color: #C9A07C; border-bottom: 1px solid rgba(184,148,90,0.4); padding-bottom: 1px; }
+.tla-cp .event-cta { text-align: center; margin-top: 32px; }
+
+
+
+/* HOST */
+.tla-cp .host { background: #F5EFE3; padding: 0; }
+.tla-cp .host-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: stretch; min-height: 600px; }
+.tla-cp .host-photo { background-size: cover; background-position: center top; min-height: 440px; }
+.tla-cp .host-text { padding: 120px 80px; display: flex; flex-direction: column; justify-content: center; background: #FBF7EE; }
+.tla-cp .host-text h2 { color: #15110D; margin-bottom: 24px; font-size: clamp(36px, 4.5vw, 52px); }
+.tla-cp .host-text .lede { font-family: 'Lora', serif; font-style: italic; font-size: 19px; color: #5D6B3F; margin-bottom: 22px; line-height: 1.55; }
+.tla-cp .host-text p { color: #2A2520; opacity: 0.9; margin-bottom: 18px; font-size: 17px; line-height: 1.75; }
+@media (max-width: 1024px) { .tla-cp .host-inner { grid-template-columns: 1fr; } .tla-cp .host-text { padding: 80px 40px; } }
+
+/* PRICING */
+.tla-cp .pricing { background: #FBF7EE; }
+.tla-cp .pricing-head { text-align: center; margin-bottom: 48px; }
+.tla-cp .pricing h2 { color: #15110D; }
+.tla-cp .price-row { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; max-width: 800px; margin: 0 auto; padding: 40px 32px; background: #F5EFE3; border-radius: 6px; border: 1px solid #B8945A; }
+.tla-cp .price-row > div { font-family: 'Lora', serif; font-size: 14px; color: #2A2520; text-align: center; padding: 12px 24px; }
+.tla-cp .price-row strong { font-family: 'Marcellus', serif; font-size: 36px; color: #15110D; display: block; margin-bottom: 4px; line-height: 1; }
+.tla-cp .pricing-cta { text-align: center; margin-top: 40px; }
+.tla-cp .bonus-note { text-align: center; font-style: italic; font-size: 14px; color: #5D6B3F; margin-top: 32px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+/* FINAL CTA — light, so bottom of page doesn't have 3 stacked dark blocks */
+.tla-cp .final-cta { background: linear-gradient(180deg, #FBF7EE 0%, #F5EFE3 100%); text-align: center; color: #2A2520; padding: 130px 0; }
+.tla-cp .final-cta h2 { color: #15110D; margin-bottom: 24px; max-width: 800px; margin-left: auto; margin-right: auto; }
+.tla-cp .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #5D6B3F; opacity: 1; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }
+
+/* FOOTER */
+.tla-cp .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); }
+.tla-cp .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-cp .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-cp .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-cp .footer-col li { margin-bottom: 12px; }
+.tla-cp .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-cp .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-cp .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-cp .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-cp .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-cp .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-cp .socials { display: flex; gap: 16px; }
+.tla-cp .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; }
+.tla-cp .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-cp .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-cp .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-cp .footer-bottom a:hover { color: #B8945A; }
+.tla-cp .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 768px) {
+	.tla-cp { font-size: 16px; }
+	.tla-cp section { padding: 80px 0; }
+	.tla-cp .container, .tla-cp .container-narrow { padding: 0 24px; }
+	.tla-cp .nav-menu { display: none; }
+	.tla-cp .nav .btn { padding: 10px 18px; }
+	.tla-cp .hero { padding: 140px 0 80px; min-height: 600px; }
+	.tla-cp .hero h1 { font-size: clamp(40px, 12vw, 60px); }
+	.tla-cp .hero-meta { gap: 18px; font-size: 12px; letter-spacing: 0.18em; }
+	.tla-cp .next-event { padding: 90px 0; }
+	
+	.tla-cp .event-meta dl { grid-template-columns: 1fr; gap: 4px; }
+	.tla-cp .event-meta dt { padding-top: 12px; }
+	.tla-cp .footer { padding: 64px 0 32px; }
+	.tla-cp .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-cp .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) { .tla-cp .footer-grid { grid-template-columns: 1fr; } }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {  }
+@media (max-width: 600px)  {   }
+
+
+.tla-cp .upcoming-events { max-width: 1080px; margin: 56px auto 0; }
+.tla-cp .upcoming-head { font-family: 'Marcellus', serif; font-weight: 400; font-size: 28px; color: #15110D; text-align: center; margin: 0 0 32px; }
+.tla-cp .upcoming-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.tla-cp .upcoming-card { background: #FBF7EE; padding: 32px 28px; border-radius: 4px; border-left: 3px solid #B8945A; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.tla-cp .upcoming-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px -20px rgba(31,44,31,0.25); border-left-color: #C75D3D; }
+.tla-cp .upcoming-date { font-family: 'Marcellus', serif; font-size: 22px; color: #B8945A; line-height: 1.1; margin-bottom: 16px; }
+.tla-cp .upcoming-date span { display: block; font-size: 14px; font-style: italic; color: #5D6B3F; margin-top: 2px; letter-spacing: 0.04em; }
+.tla-cp .upcoming-card h4 { font-family: 'Marcellus', serif; font-weight: 400; font-size: 20px; color: #15110D; margin: 0 0 12px; line-height: 1.25; }
+.tla-cp .upcoming-card p { font-size: 15px; color: #2A2520; opacity: 0.85; line-height: 1.6; margin: 0; }
+@media (max-width: 1024px) { .tla-cp .upcoming-grid { grid-template-columns: 1fr; } }
+
+/* WELCOME — split: text-left, photo-right */
+.tla-cp .welcome { background: #F5EFE3; }
+.tla-cp .welcome .container { max-width: 1180px; }
+.tla-cp .welcome-grid { display: grid; grid-template-columns: 1fr 0.85fr; gap: 80px; align-items: center; }
+.tla-cp .welcome-text .eyebrow { display: inline-block; }
+.tla-cp .welcome-text h2 { color: #15110D; margin: 0 0 28px; max-width: 480px; }
+.tla-cp .welcome-text p { color: #2A2520; opacity: 0.9; font-size: 17px; line-height: 1.8; margin-bottom: 22px; max-width: 520px; }
+.tla-cp .welcome-text p.italic { font-family: 'Lora', serif; font-style: italic; color: #5D6B3F; font-size: 18px; }
+.tla-cp .welcome-text p.note { font-size: 15px; color: #5D6B3F; font-style: italic; margin-top: 24px; }
+.tla-cp .welcome-photo { aspect-ratio: 4/5; background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 24px 60px -28px rgba(31,44,31,0.35); }
+@media (max-width: 1024px) { .tla-cp .welcome-grid { grid-template-columns: 1fr; gap: 48px; } .tla-cp .welcome-text h2, .tla-cp .welcome-text p { max-width: none; } .tla-cp .welcome-photo { aspect-ratio: 16/10; max-width: 560px; margin: 0 auto; } }
+
+/* NEXT-EVENT — split (dark): photo-left, text-right */
+.tla-cp .next-event .container { max-width: 1180px; }
+.tla-cp .next-event-grid { display: grid; grid-template-columns: 0.85fr 1fr; gap: 80px; align-items: center; }
+.tla-cp .next-event-photo { aspect-ratio: 4/5; background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 24px 60px -28px rgba(0,0,0,0.6); filter: sepia(0.16) contrast(1.06) saturate(0.92) brightness(1.04); }
+.tla-cp .next-event-head { text-align: left; margin: 0 0 24px; }
+.tla-cp .next-event-head h2 { max-width: none; margin: 0 0 12px; }
+.tla-cp .next-event-head .date-line { text-align: left; }
+.tla-cp .next-event-body { max-width: none; }
+.tla-cp .next-event-body p { font-size: 17px; }
+.tla-cp .next-event-body .event-meta dl { grid-template-columns: 100px 1fr; }
+@media (max-width: 1024px) { .tla-cp .next-event-grid { grid-template-columns: 1fr; gap: 48px; } .tla-cp .next-event-photo { aspect-ratio: 16/10; max-width: 560px; margin: 0 auto; } }
+
+
+/* ===== GALLERY v3: dark, full-bleed, dramatic ===== */
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {  }
+@media (max-width: 600px)  {   }
+
+.tla-cp .event-details { background: #FBF7EE; padding: 96px 0; }
+.tla-cp .event-details .container { max-width: 760px; margin: 0 auto; padding: 0 32px; text-align: center; }
+.tla-cp .event-details .event-meta { background: #F5EFE3; border: 1px solid rgba(184,148,90,0.4); border-radius: 4px; padding: 36px 40px; text-align: left; }
+.tla-cp .event-details .event-meta dl { display: grid; grid-template-columns: 110px 1fr; gap: 14px 28px; margin: 0; }
+.tla-cp .event-details .event-meta dt { font-family: 'Lora', serif; font-weight: 700; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #B8945A; padding-top: 4px; }
+.tla-cp .event-details .event-meta dd { margin: 0; color: #2A2520; font-size: 16px; line-height: 1.6; }
+.tla-cp .event-details .event-meta dd a { color: #C75D3D; border-bottom: 1px solid #C75D3D; padding-bottom: 1px; }
+.tla-cp .event-details .event-cta { text-align: center; margin-top: 36px; }
+@media (max-width: 600px) { .tla-cp .event-details .event-meta dl { grid-template-columns: 1fr; gap: 4px 0; } .tla-cp .event-details .event-meta dt { padding-top: 14px; } }
+
+/* ===== CP Gallery v4 — unique classes + viewport-breakout ===== */
+.tla-cp .cpgal2-section {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	padding: 140px 0 160px;
+	background:
+		radial-gradient(ellipse at 30% 30%, rgba(199, 93, 61, 0.12) 0%, transparent 55%),
+		radial-gradient(ellipse at 70% 70%, rgba(184, 148, 90, 0.10) 0%, transparent 55%),
+		linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%);
+	color: #F5EFE3;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.tla-cp .cpgal2-inner { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; }
+.tla-cp .cpgal2-head { text-align: center; margin: 0 auto 64px; max-width: 800px; }
+.tla-cp .cpgal2-eyebrow { display: inline-block; font-family: 'Lora', serif; font-weight: 700; font-size: 16px; letter-spacing: 0.34em; text-transform: uppercase; color: #C9A07C; margin-bottom: 20px; }
+.tla-cp .cpgal2-h2 { color: #FBF7EE; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(40px, 5.5vw, 64px); line-height: 1.1; margin: 0 0 18px; letter-spacing: -0.012em; }
+.tla-cp .cpgal2-sub { font-family: 'Lora', serif; font-style: italic; font-size: 19px; color: rgba(245,239,227,0.78); margin: 0 auto; line-height: 1.55; max-width: 600px; }
+.tla-cp .cpgal2-grid {
+	display: grid !important;
+	grid-template-columns: repeat(3, 1fr) !important;
+	gap: 20px !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+.tla-cp .cpgal2-item {
+	width: 100% !important;
+	aspect-ratio: 1 / 1;
+	background-size: cover;
+	background-position: center;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0 28px 64px -24px rgba(0,0,0,0.6);
+	transition: transform 0.5s ease, box-shadow 0.5s ease;
+	filter: sepia(0.16) contrast(1.06) saturate(0.92) brightness(1.04);
+	display: block !important;
+}
+.tla-cp .cpgal2-item:hover { transform: translateY(-4px); box-shadow: 0 36px 80px -28px rgba(0,0,0,0.75); }
+@media (max-width: 1024px) {
+	.tla-cp .cpgal2-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
+}
+@media (max-width: 600px) {
+	.tla-cp .cpgal2-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+	.tla-cp .cpgal2-item { aspect-ratio: 4 / 3; }
+}
+
+
+.tla-cp .event-details .event-title { font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(32px, 4vw, 44px); color: #15110D; text-align: center; margin: 0 0 32px; line-height: 1.15; letter-spacing: -0.005em; }
+
+.tla-cp .next-event-grid { align-items: stretch !important; }
+.tla-cp .next-event-photos { display: grid; grid-template-rows: 1fr 1fr; gap: 16px; align-self: stretch; min-height: 600px; }
+.tla-cp .next-event-photos .next-event-photo { background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 24px 60px -28px rgba(0,0,0,0.6); filter: sepia(0.16) contrast(1.06) saturate(0.92) brightness(1.04); aspect-ratio: auto !important; min-height: 280px; }
+@media (max-width: 1024px) {
+	.tla-cp .next-event-photos { min-height: auto; grid-template-rows: 280px 280px; max-width: 560px; margin: 0 auto; }
+}
+
+/* tight-heading-tla-cp */
+.tla-cp .eyebrow { margin-bottom: 10px !important; }
+.tla-cp section .eyebrow { margin-bottom: 10px !important; }
+.tla-cp .hero h1, .tla-cp .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-cp section h2 { margin-bottom: 16px !important; }
+</style>
+
+<div class="tla-cp">
+
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a><ul class="sub"><li><a href="/together/therapy">Couples therapy</a></li><li><a href="/together/intensives">The New Chapter of Us</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a><ul class="sub"><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></li>
+				<li class="has-sub"><a href="/events">Events</a><ul class="sub"><li><a href="/connection-playground">Connection Playground</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">Auckland &middot; monthly</span>
+		<h1 class="h1">Connection Playground</h1>
+		<p class="hero-tagline">A space to connect and dive deep into the art of authentic connection.</p>
+		<div class="hero-meta">
+			<span>Wednesday 13 May 2026</span>
+			<span>7.00pm to 9.30pm</span>
+			<span>2 Abbey Street, Auckland Central</span>
+		</div>
+		<div style="display:block;margin-top:8px"><a href="https://tarishatourok.thrivecart.com/playground/" class="btn">Join us</a></div>
+	</div>
+</section>
+
+<section class="welcome">
+	<div class="container">
+		<div class="welcome-grid">
+			<div class="welcome-text">
+				<span class="eyebrow">Welcome to Connection Playground</span>
+				<h2 class="h2">An invitation to drop the masks</h2>
+		
+			<p>This is an invitation to drop the masks and facades, to see and be seen in your true essence. Here, we explore what opens our hearts and what closes them, peeling away the layers to find out who we truly are.</p>
+			<p>With this openness comes a beautiful freedom, a sense of relaxation and ease that allows us to live with our hearts full and open.</p>
+			<p>Through interactive exercises and guided practices, you&#8217;ll experience how vulnerability and presence can unlock richer, more meaningful relationships, whether you&#8217;re single or partnered.</p>
+			<p class="italic">This is open to all genders and orientations. Come as you are, and together, let&#8217;s discover the beauty of real intimacy.</p>
+			<p class="note">The event happens on Wednesdays once a month and the content each month is completely different.</p>
+				<div style="text-align:center;margin-top:32px"><a href="https://tarishatourok.thrivecart.com/playground/" class="btn">Join us</a></div>
+			</div>
+			<div class="welcome-photo" role="img" aria-label="Connection Playground community" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.20) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-02-indoor-group-2025.jpg');"></div>
+		</div>
+	</div>
+</section>
+
+<section class="next-event">
+	<div class="container">
+		<div class="next-event-grid">
+			<div class="next-event-photos">
+			<div class="next-event-photo" role="img" aria-label="Breathwork at Connection Playground" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-02-purple-evening-circle.jpg');"></div>
+			<div class="next-event-photo" role="img" aria-label="Tarisha hosting" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/13-tarisha-mic-coral.jpg');"></div>
+		</div>
+			<div>
+				<div class="next-event-head">
+			<span class="eyebrow is-light">The next event</span>
+			<h2 class="h2">Breathwork to Open Your Heart</h2>
+			<p class="date-line">Wednesday, 13 May 2026</p>
+		</div>
+		<div class="next-event-body">
+			<p>On Wednesday, 13th May, we&#8217;re going on a deep, powerful breathwork journey to explore the blocks that keep us from love.</p>
+			<p>And begin creating new patterns where it feels safe to open our hearts again.</p>
+			<p class="italic">If you long for connection but find yourself pulling away when things get close…</p>
+			<p class="italic">If you want love but your body shuts down…</p>
+			<p class="italic">If you&#8217;re tired of feeling stuck behind old protective walls…</p>
+			<p style="font-weight:600;color:#FBF7EE;opacity:1">This evening is for you.</p>
+			<p>Through conscious breath and embodied presence, you&#8217;ll explore:</p>
+			<ul>
+				<li>What gets in the way of intimacy for you</li>
+				<li>How to stay present with others without abandoning yourself</li>
+				<li>How to open without feeling overwhelmed or exposed</li>
+				<li>What it feels like when connection feels safe</li>
+			</ul>
+			<p>This is a full-body journey into intimacy with self and others. You&#8217;ll be in control of how deep you want to go.</p>
+			<p>This is a safe, fully clothed space where you always have a choice and everything is an invitation.</p>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="event-details">
+	<div class="container">
+		<h2 class="event-title">Breathwork to Open Your Heart</h2>
+		<div class="event-meta">
+			<dl>
+				<dt>When</dt><dd>Wednesday, 13 May 2026 &middot; doors open at 6.45pm, start 7.00pm</dd>
+				<dt>Where</dt><dd>The Button Factory, 2 Abbey Street, Auckland Central</dd>
+				<dt>Bring</dt><dd>A blanket, yoga mat, and a water bottle.</dd>
+			</dl>
+		</div>
+		<div class="event-cta">
+			<a href="https://tarishatourok.thrivecart.com/playground/" class="btn">Join us</a>
+		</div>
+	</div>
+</section>
+<section class="cpgal2-section">
+	<div class="cpgal2-inner">
+		<div class="cpgal2-head">
+			<span class="cpgal2-eyebrow">Inside the room</span>
+		</div>
+		<div class="cpgal2-grid">
+			<div class="cpgal2-item" role="img" aria-label="Indoor group at venue" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-02-indoor-group-2025.jpg');"></div>
+			<div class="cpgal2-item" role="img" aria-label="Indoor evening circle" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-02-purple-evening-circle.jpg');"></div>
+			<div class="cpgal2-item" role="img" aria-label="Indoor venue group" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-08-img9391-tarawera-group.jpg');"></div>
+			<div class="cpgal2-item" role="img" aria-label="Audience seated outdoor" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-04-audience-outdoor.jpg');"></div>
+			<div class="cpgal2-item" role="img" aria-label="Connection Playground community" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-05-large-indoor-group.jpg');"></div>
+			<div class="cpgal2-item" role="img" aria-label="Group at venue" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-07-group-shape-purple.jpg');"></div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="host">
+	<div class="host-inner">
+		<div class="host-photo cp-img" role="img" aria-label="Tarisha Tourok" style="background-image: url('https://theloveadventure.com/wp-content/uploads/2026/05/15-tarisha-portrait.jpg');"></div>
+		<div class="host-text">
+			<span class="eyebrow">Meet your host</span>
+			<h2>Tarisha Tourok</h2>
+			<p class="lede">I&#8217;m a trauma-informed relationship and sacred sexuality therapist.</p>
+			<p>With a couple of postgraduate degrees in counselling and psychotherapy, I&#8217;ve had the privilege of guiding hundreds of incredible humans on their journey towards rediscovering their confidence, creating deep intimacy, and feeling whole. I&#8217;m trained in women-centred coaching, which means I truly understand the unique challenges and complexities that women face when it comes to their bodies and sexuality.</p>
+			<p style="font-size:15px;color:#5D6B3F;font-style:italic;margin-top:8px">Master&#8217;s in Counselling. Member of the New Zealand Association of Counsellors. Trained in Emotionally Focused Therapy for couples and Hakomi somatic psychotherapy. Biodynamic breathwork facilitator.</p>
+			<p>I&#8217;ve designed a holistic approach known as the Sexually Empowered Radiant Woman method. This method doesn&#8217;t just enhance your sex life; it also boosts your confidence, helps you feel radiant no matter your age, shape or size, and lets you shine in your everyday life.</p>
+			<p>My passion is to empower humans to live their absolute best, joyful and self-expressed lives. I firmly believe in cherishing and celebrating our bodies, and I practice it through activities like hot yoga, mountain biking, swimming, and salsa dancing.</p>
+		</div>
+	</div>
+</section>
+
+<section class="pricing">
+	<div class="container">
+		<div class="pricing-head">
+			<span class="eyebrow">Tickets</span>
+			<h2 class="h2">Per evening, or as a bundle</h2>
+		</div>
+		<div class="price-row">
+			<div><strong>NZ$35</strong>Single event</div>
+			<div><strong>NZ$59</strong>Any 2 events</div>
+			<div><strong>NZ$85</strong>All 3 events</div>
+		</div>
+<div class="upcoming-events">
+	<h3 class="upcoming-head">Upcoming evenings</h3>
+	<div class="upcoming-grid">
+		<div class="upcoming-card">
+			<div class="upcoming-date">Wed 13 May<span>2026</span></div>
+			<h4>Breathwork to Open Your Heart</h4>
+			<p>A deep, powerful breathwork journey to explore the blocks that keep us from love, and create new patterns where it feels safe to open our hearts again.</p>
+		</div>
+		<div class="upcoming-card">
+			<div class="upcoming-date">Wed 3 June<span>2026</span></div>
+			<h4>3 Keys to Loving Relationships</h4>
+			<p>What keeps love alive, in any relationship that matters to you. Three things rooted in practice, not theory. Works whether you&#8217;re twenty years in, just beginning, or learning to love yourself first.</p>
+		</div>
+		<div class="upcoming-card">
+			<div class="upcoming-date">Wed 1 July<span>2026</span></div>
+			<h4>Fierce &amp; Loving</h4>
+			<p>Learn how to love without fear while respecting your boundaries and honouring yourself and others.</p>
+		</div>
+	</div>
+</div>
+
+		<div class="pricing-cta">
+			<a href="https://tarishatourok.thrivecart.com/playground/" class="btn">Join us</a>
+		</div>
+		<p class="bonus-note">Bonus available on the booking page: Your Soulful Love Life 1-1 Zoom session with Tarisha for NZ$97 (usually NZ$250). Not available to current clients.</p>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+
+</div>

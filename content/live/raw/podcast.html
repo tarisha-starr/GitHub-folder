@@ -1,0 +1,166 @@
+
+<style>
+.tla-pod, .tla-pod * { box-sizing: border-box; }
+.tla-pod { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-pod img { max-width: 100%; display: block; }
+.tla-pod a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-pod .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-pod section { padding: 96px 0; }
+.tla-pod h1, .tla-pod h2, .tla-pod h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-pod .h1 { font-size: clamp(56px, 9vw, 110px); line-height: 1.0; letter-spacing: -0.018em; }
+.tla-pod .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-pod .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: inline-block; margin-bottom: 24px; }
+.tla-pod .eyebrow.is-light { color: #C9A07C; }
+.tla-pod .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-pod .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+.tla-pod .btn-ghost { display: inline-block; border: 1px solid #C9A07C; color: #FBF7EE; padding: 14px 28px; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; transition: background 0.3s ease, color 0.3s ease; }
+.tla-pod .btn-ghost:hover { background: #C9A07C; color: #15110D; }
+
+.tla-pod .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-pod .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-pod .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-pod .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-pod .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-pod .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-pod .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-pod .hero { position: relative; min-height: 720px; display: flex; align-items: center; padding: 180px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.42) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/06/podcast-header-scaled.jpg'); background-size: cover; background-position: center; color: #FBF7EE; text-align: center; }
+.tla-pod .hero-content { max-width: 1080px; margin: 0 auto; text-align: center; }
+.tla-pod .hero .eyebrow { color: #B8945A; }
+.tla-pod .hero h1 { color: #FBF7EE; margin-bottom: 28px; }
+.tla-pod .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 30px); color: #F5EFE3; opacity: 0.92; margin: 0 auto 36px; max-width: 720px; line-height: 1.4; }
+.tla-pod .platforms { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+
+.tla-pod .episodes { background: #F5EFE3; padding: 96px 0; }
+.tla-pod .episodes-head { text-align: center; margin-bottom: 64px; }
+.tla-pod .episodes h2 { color: #15110D; }
+.tla-pod .episodes-sub { font-style: italic; font-size: 18px; color: #5D6B3F; max-width: 600px; margin: 16px auto 0; }
+.tla-pod .ep-grid { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 920px; margin: 0 auto; }
+.tla-pod .ep-card { background: #FBF7EE; padding: 32px 36px; border-radius: 4px; border-left: 3px solid #B8945A; transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
+.tla-pod .ep-card:hover { transform: translateX(2px); border-color: #C75D3D; box-shadow: 0 16px 40px -20px rgba(31,44,31,0.2); }
+.tla-pod .ep-meta { display: flex; gap: 18px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+.tla-pod .ep-num { font-family: 'Marcellus', serif; font-style: italic; font-size: 18px; color: #B8945A; min-width: 36px; }
+.tla-pod .ep-date, .tla-pod .ep-duration { font-family: 'Lora', serif; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #5D6B3F; opacity: 0.85; }
+.tla-pod .ep-card h3 { font-family: 'Marcellus', serif; font-size: 22px; color: #15110D; margin-bottom: 10px; line-height: 1.25; }
+.tla-pod .ep-card p { font-size: 15px; color: #2A2520; opacity: 0.85; line-height: 1.6; margin-bottom: 18px; }
+.tla-pod .ep-card a { font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; color: #C75D3D; border-bottom: 1px solid #C75D3D; padding-bottom: 2px; }
+.tla-pod .ep-card a:hover { color: #9E4A2A; }
+.tla-pod .ep-foot { text-align: center; margin-top: 56px; }
+.tla-pod .ep-foot a { font-family: 'Lora', serif; font-style: italic; font-size: 16px; color: #5D6B3F; border-bottom: 1px solid rgba(184,148,90,0.4); padding-bottom: 2px; }
+
+.tla-pod .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-pod .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-pod .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }
+
+.tla-pod .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden; }
+.tla-pod .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-pod .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-pod .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-pod .footer-col li { margin-bottom: 12px; }
+.tla-pod .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-pod .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-pod .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-pod .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-pod .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-pod .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-pod .socials { display: flex; gap: 16px; }
+.tla-pod .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-pod .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-pod .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-pod .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-pod .footer-bottom a:hover { color: #B8945A; }
+.tla-pod .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 768px) {
+	.tla-pod { font-size: 16px; }
+	.tla-pod section { padding: 72px 0; }
+	.tla-pod .container { padding: 0 24px; }
+	.tla-pod .nav-menu { display: none; }
+	.tla-pod .nav .btn { padding: 10px 18px; }
+	.tla-pod .hero { padding: 140px 0 80px; min-height: 600px; }
+	.tla-pod .hero h1 { font-size: clamp(40px, 12vw, 60px); }
+	.tla-pod .ep-card { padding: 28px 24px; }
+	.tla-pod .footer { padding: 64px 0 32px; }
+	.tla-pod .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-pod .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-pod .footer-grid { grid-template-columns: 1fr; }
+}
+
+.tla-pod .ep-card { display: grid; grid-template-columns: 130px 1fr; gap: 28px; align-items: center; }
+.tla-pod .ep-thumb { width: 130px; height: 130px; background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 8px 24px -10px rgba(31,44,31,0.25); }
+.tla-pod .ep-body { display: flex; flex-direction: column; }
+@media (max-width: 600px) { .tla-pod .ep-card { grid-template-columns: 1fr; } .tla-pod .ep-thumb { width: 100%; height: 200px; } }
+
+/* tight-heading-tla-pod */
+.tla-pod .eyebrow { margin-bottom: 10px !important; }
+.tla-pod section .eyebrow { margin-bottom: 10px !important; }
+.tla-pod .hero h1, .tla-pod .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-pod section h2 { margin-bottom: 16px !important; }
+</style>
+
+<div class="tla-pod">
+
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a><ul class="sub"><li><a href="/together/therapy">Couples therapy</a></li><li><a href="/together/intensives">The New Chapter of Us</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a><ul class="sub"><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></li>
+				<li class="has-sub"><a href="/events">Events</a><ul class="sub"><li><a href="/connection-playground">Connection Playground</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">The podcast</span>
+		<h1 class="h1">Sexual Empowerment for Women</h1>
+		<p class="hero-tagline">Honest conversations about long-term love, desire, and what gets in the way. New every other week.</p>
+		<div class="platforms">
+			<a href="https://podcasts.apple.com/us/podcast/sexual-empowerment-for-women/id1596544913" target="_blank" rel="noopener" class="btn-ghost">Apple Podcasts</a>
+			<a href="https://open.spotify.com/show/0Hd4cFCOzAU14uhYvZZnoG" target="_blank" rel="noopener" class="btn-ghost">Spotify</a>
+			<a href="https://www.youtube.com/@sexualempowermentforwomen/podcasts" target="_blank" rel="noopener" class="btn-ghost">YouTube</a>
+		</div>
+	</div>
+</section>
+
+<section class="episodes">
+	<div class="container">
+		<div class="ep-grid">
+<article class="ep-card"><div class="ep-thumb" role="img" aria-label="Why Most Women Feel Shut Down in the Bedroom (and How to Come Alive Again) with Lauren Rogers" style="background-image: url('https://www.buzzsprout.com/images/artworks_large.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#54</span><span class="ep-date">19 Apr 2026</span><span class="ep-duration">49 min</span></div><h3>Why Most Women Feel Shut Down in the Bedroom (and How to Come Alive Again) with Lauren Rogers</h3><p>Send us Fan MailMost of us grew up with sex ed that was clinical, fear-based, or missing entirely. No one taught us about pleasure, desire, communication, or how to actually feel alive in our bodies. So when women hit th…</p><a href="https://www.buzzsprout.com/1885094/episodes/19041726-why-most-women-feel-shut-down-in-the-bedroom-and-how-to-come-alive-again-with-lauren-rogers" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="Why Women Binge Drink: The Hidden Survival Pattern No One Talks About | with Colleen Clifford" style="background-image: url('https://storage.buzzsprout.com/s9y30petr6xy2ie0jon2l9x2c5xz?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#53</span><span class="ep-date">15 Apr 2026</span><span class="ep-duration">25 min</span></div><h3>Why Women Binge Drink: The Hidden Survival Pattern No One Talks About | with Colleen Clifford</h3><p>Send us Fan MailHave you ever used alcohol to numb the pain, to cope with life, to survive? You&amp;apos;re not alone — and there&amp;apos;s a way home.In this episode, I sit down with Colleen Clifford — author, coach, commercia…</p><a href="https://www.buzzsprout.com/1885094/episodes/19018473-why-women-binge-drink-the-hidden-survival-pattern-no-one-talks-about-with-colleen-clifford" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="Libido &amp; Menopause and How CBT Can Help to Feel in Control with Simona Stokes " style="background-image: url('https://storage.buzzsprout.com/do1jqgncfqq599hbtqsy9qnezbtx?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#53</span><span class="ep-date">25 Mar 2026</span><span class="ep-duration">44 min</span></div><h3>Libido &amp; Menopause and How CBT Can Help to Feel in Control with Simona Stokes </h3><p>Send us Fan MailIs your sex life feeling like a &quot;dried prune&quot;? Do you feel like you &quot;couldn’t care less&quot; about intimacy, even if you still love your partner? You are not alone.In this video, we dive d…</p><a href="https://www.buzzsprout.com/1885094/episodes/18904243-libido-menopause-and-how-cbt-can-help-to-feel-in-control-with-simona-stokes" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="When Love Turns Into Roommates: Reconnecting Intimacy in Long-Term Relationships with Dr Jessica Higgins" style="background-image: url('https://storage.buzzsprout.com/2uz2muerqdjf0966632b7ri5360m?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#52</span><span class="ep-date">21 Jan 2026</span><span class="ep-duration">40 min</span></div><h3>When Love Turns Into Roommates: Reconnecting Intimacy in Long-Term Relationships with Dr Jessica Higgins</h3><p>Send us Fan MailCouples often wait years before getting support, then wonder why it feels so hard. In this episode, I’m joined by Dr Jessica Higgins to talk about the patterns that quietly take over long-term love, and h…</p><a href="https://www.buzzsprout.com/1885094/episodes/18544708-when-love-turns-into-roommates-reconnecting-intimacy-in-long-term-relationships-with-dr-jessica-higgins" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="Beyond Hormones: A Whole-Person Approach to Menopause and Libido with Dr Ivana Matic-Stancin" style="background-image: url('https://storage.buzzsprout.com/9wxggwe4jbrp713lypjopdtwjzit?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#51</span><span class="ep-date">27 Sep 2025</span><span class="ep-duration">42 min</span></div><h3>Beyond Hormones: A Whole-Person Approach to Menopause and Libido with Dr Ivana Matic-Stancin</h3><p>Send us Fan MailIn this episode of the Sexually Empowered Radiant Woman Podcast, host Tarisha Tourok welcomes Dr. Ivana Matic-Stancin, a Melbourne-based GP with over 25 years of experience in women’s health and holistic …</p><a href="https://www.buzzsprout.com/1885094/episodes/17914379-beyond-hormones-a-whole-person-approach-to-menopause-and-libido-with-dr-ivana-matic-stancin" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="5 Steps to Melt Distance in Your Relationship Even After Years of Disconnection" style="background-image: url('https://storage.buzzsprout.com/6ecqzjfrlptsgc3svvht9o52x9fu?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-date">15 Sep 2025</span><span class="ep-duration">60 min</span></div><h3>5 Steps to Melt Distance in Your Relationship Even After Years of Disconnection</h3><p>Send us Fan MailIn this episode I’m going to show you the 5 steps to go from roommates to lovers — so you can reignite passion, melt the distance, and feel cherished again.This is part 4 of the Melt the Distance in Your …</p><a href="https://www.buzzsprout.com/1885094/episodes/17845110-5-steps-to-melt-distance-in-your-relationship-even-after-years-of-disconnection" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="#49 Lying next to him but feeling lonely? How to get the spark back training 1" style="background-image: url('https://storage.buzzsprout.com/uucbfr9rnwcb9oa01l2mmhyiifrm?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#49</span><span class="ep-date">8 Sep 2025</span><span class="ep-duration">41 min</span></div><h3>#49 Lying next to him but feeling lonely? How to get the spark back training 1</h3><p>Send us Fan Mailhttps://www.sexualempowermentforwomen.com/lovers/** In this training you’ll discover:**Why midlife desire doesn’t vanish—it’s just shifting.The two systems of connection—emotional and sexual—and why they …</p><a href="https://www.buzzsprout.com/1885094/episodes/17811619-49-lying-next-to-him-but-feeling-lonely-how-to-get-the-spark-back-training-1" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="#48 Brakes and Accelerators of Your Sexual Desire" style="background-image: url('https://storage.buzzsprout.com/6ecqzjfrlptsgc3svvht9o52x9fu?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-num">#48</span><span class="ep-date">26 Aug 2025</span><span class="ep-duration">50 min</span></div><h3>#48 Brakes and Accelerators of Your Sexual Desire</h3><p>Send us Fan MailIf your desire feels unpredictable—or just flat—it might not be about your hormones or your partner.Register for the 5-Day Unlock Your Desire Challenge to access all sessions and replays:👉 https://radiant…</p><a href="https://www.buzzsprout.com/1885094/episodes/17739585-48-brakes-and-accelerators-of-your-sexual-desire" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="The real reason women lose libido" style="background-image: url('https://storage.buzzsprout.com/6ecqzjfrlptsgc3svvht9o52x9fu?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-date">24 Jul 2025</span><span class="ep-duration">4 min</span></div><h3>The real reason women lose libido</h3><p>Send us Fan MailI spoke with a GP yesterday, Dr Ivana Matic-Stancin, who shared something that stopped me in my tracks.She said:💬 “So many women come in to talk about menopause. And when I ask about their se.xual desire,…</p><a href="https://www.buzzsprout.com/1885094/episodes/17555481-the-real-reason-women-lose-libido" target="_blank" rel="noopener">Listen now →</a></div></article><article class="ep-card"><div class="ep-thumb" role="img" aria-label="How to make sex hot again without changing partners with Dr Diane Mueller" style="background-image: url('https://storage.buzzsprout.com/pohzix2y7dptsld7q0zskf2foeqj?.jpg');"></div><div class="ep-body"><div class="ep-meta"><span class="ep-date">15 Jul 2025</span><span class="ep-duration">37 min</span></div><h3>How to make sex hot again without changing partners with Dr Diane Mueller</h3><p>Send us Fan MailIn this powerful episode of the Sexual Empowerment for Women podcast, host Tarisha Tourok is joined by Dr. Diana Mueller. Together, they challenge the common belief that sex inevitably declines in both qu…</p><a href="https://www.buzzsprout.com/1885094/episodes/17511894-how-to-make-sex-hot-again-without-changing-partners-with-dr-diane-mueller" target="_blank" rel="noopener">Listen now →</a></div></article>
+</div>
+		<div class="ep-foot">
+			<a href="https://www.buzzsprout.com/1885094" target="_blank" rel="noopener">See the full archive on Buzzsprout →</a>
+		</div>
+	</div>
+</section>
+
+<section class="final-cta">
+	<div class="container">
+		<h2 class="h2">Subscribe so the next episode finds you</h2>
+		<p>New episodes every other week. Apple, Spotify, wherever you listen.</p>
+		<a href="https://podcasts.apple.com/us/podcast/sexual-empowerment-for-women/id1596544913" target="_blank" rel="noopener" class="btn">Subscribe on Apple Podcasts</a>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+
+</div>

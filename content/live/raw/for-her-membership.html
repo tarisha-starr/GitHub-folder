@@ -1,0 +1,269 @@
+
+<style>
+.tla-mem, .tla-mem * { box-sizing: border-box; }
+.tla-mem { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-mem img { max-width: 100%; display: block; }
+.tla-mem a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-mem .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-mem .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-mem section { padding: 96px 0; }
+.tla-mem h1, .tla-mem h2, .tla-mem h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-mem .h1 { font-size: clamp(48px, 7vw, 80px); line-height: 1.04; letter-spacing: -0.015em; }
+.tla-mem .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-mem .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-mem .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: block; margin-bottom: 24px; }
+.tla-mem .eyebrow.is-light { color: #C9A07C; }
+.tla-mem .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-mem .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+.tla-mem .btn-ghost { display: inline-block; border: 1px solid #C9A07C; color: #FBF7EE; padding: 14px 28px; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; transition: background 0.3s ease, color 0.3s ease; }
+.tla-mem .btn-ghost:hover { background: #C9A07C; color: #15110D; }
+
+.tla-mem .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-mem .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-mem .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-mem .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-mem .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-mem .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-mem .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-mem .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden; }
+.tla-mem .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-mem .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-mem .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-mem .footer-col li { margin-bottom: 12px; }
+.tla-mem .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-mem .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-mem .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-mem .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-mem .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-mem .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-mem .socials { display: flex; gap: 16px; }
+.tla-mem .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-mem .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-mem .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-mem .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-mem .footer-bottom a:hover { color: #B8945A; }
+.tla-mem .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 768px) {
+	.tla-mem { font-size: 16px; }
+	.tla-mem section { padding: 72px 0; }
+	.tla-mem .container, .tla-mem .container-narrow { padding: 0 24px; }
+	.tla-mem .nav-menu { display: none; }
+	.tla-mem .nav .btn { padding: 10px 18px; }
+	.tla-mem .footer { padding: 64px 0 32px; }
+	.tla-mem .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-mem .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-mem .footer-grid { grid-template-columns: 1fr; }
+	.tla-mem .nav-inner { gap: 12px; }
+	.tla-mem .logo { font-size: 18px; }
+}
+
+.tla-mem .hero { position: relative; min-height: 700px; display: flex; align-items: center; padding: 160px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.40) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/05/04-close-up-smile-sunset.jpg'); background-size: cover; background-position: center; color: #FBF7EE; }
+.tla-mem .hero-content { max-width: 880px; }
+.tla-mem .hero .eyebrow { color: #B8945A; }
+.tla-mem .hero h1 { color: #FBF7EE; margin-bottom: 24px; }
+.tla-mem .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin-bottom: 44px; max-width: 640px; line-height: 1.4; }
+.tla-mem .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.tla-mem .hero-link { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: #F5EFE3; text-decoration: underline; text-underline-offset: 6px; }
+.tla-mem .hero-link:hover { color: #B8945A; }
+@media (max-width: 768px) { .tla-mem .hero { padding: 130px 0 70px; min-height: 580px; } .tla-mem .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; } }
+.tla-mem .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-mem .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-mem .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }
+.tla-mem .what { background: #F5EFE3; text-align: center; }
+.tla-mem .what h2 { color: #15110D; max-width: 880px; margin: 0 auto 24px; }
+.tla-mem .what p { max-width: 720px; margin: 0 auto 18px; color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.75; }
+.tla-mem .who { background: #FBF7EE; }
+.tla-mem .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; max-width: 1080px; margin: 0 auto; }
+.tla-mem .who h3 { color: #15110D; font-size: 24px; margin-bottom: 16px; }
+.tla-mem .who ul { list-style: none; padding: 0; }
+.tla-mem .who li { padding-left: 26px; position: relative; margin-bottom: 12px; line-height: 1.6; color: #2A2520; }
+.tla-mem .who li::before { content: '·'; position: absolute; left: 8px; top: -8px; font-size: 32px; color: #B8945A; }
+.tla-mem .pricing { background: #F5EFE3; }
+.tla-mem .pricing-head { text-align: center; margin-bottom: 56px; }
+.tla-mem .pricing h2 { color: #15110D; }
+.tla-mem .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 980px; margin: 0 auto; }
+.tla-mem .tier { background: #FBF7EE; border: 1px solid #B8945A; border-radius: 6px; padding: 56px 40px; text-align: center; transition: transform 0.3s ease; }
+.tla-mem .tier:hover { transform: translateY(-3px); }
+.tla-mem .tier.is-feature { border: 2px solid #C75D3D; box-shadow: 0 24px 60px -28px rgba(199,93,61,0.4); }
+.tla-mem .tier .tier-eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: block; margin-bottom: 16px; }
+.tla-mem .tier h3 { font-family: 'Marcellus', serif; font-size: 26px; color: #15110D; margin-bottom: 8px; }
+.tla-mem .tier .price { font-family: 'Marcellus', serif; font-size: 48px; color: #15110D; line-height: 1; margin: 20px 0 4px; }
+.tla-mem .tier .price-sub { font-family: 'Lora', serif; font-style: italic; font-size: 16px; color: #5D6B3F; margin-bottom: 28px; }
+.tla-mem .tier ul { list-style: none; padding: 0; text-align: left; max-width: 320px; margin: 24px auto 32px; }
+.tla-mem .tier li { padding-left: 22px; position: relative; margin-bottom: 10px; line-height: 1.5; font-size: 15px; }
+.tla-mem .tier li::before { content: '▸'; position: absolute; left: 0; color: #C75D3D; }
+.tla-mem .tier .commit { font-family: 'Lora', serif; font-style: italic; font-size: 13px; color: #5D6B3F; margin-top: 16px; opacity: 0.85; }
+@media (max-width: 1024px) { .tla-mem .who-grid, .tla-mem .tiers { grid-template-columns: 1fr; } }
+
+.tla-mem .mem-gallery { background: #FBF7EE; padding: 96px 0; }
+.tla-mem .mem-gallery-head { text-align: center; margin-bottom: 48px; }
+.tla-mem .mem-gallery-head h2 { color: #15110D; }
+.tla-mem .mem-gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1080px; margin: 0 auto; }
+.tla-mem .mem-gallery-item { aspect-ratio: 4/3; background-size: cover; background-position: center; border-radius: 4px; transition: transform 0.4s ease; }
+.tla-mem .mem-gallery-item:hover { transform: translateY(-3px); box-shadow: 0 24px 60px -28px rgba(31,44,31,0.25); }
+@media (max-width: 1024px) { .tla-mem .mem-gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .tla-mem .mem-gallery-grid { grid-template-columns: 1fr; } }
+
+/* tight-heading-tla-mem */
+.tla-mem .eyebrow { margin-bottom: 10px !important; }
+.tla-mem section .eyebrow { margin-bottom: 10px !important; }
+.tla-mem .hero h1, .tla-mem .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-mem section h2 { margin-bottom: 16px !important; }
+</style>
+<div class="tla-mem">
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">A membership for women over 40</span>
+		<h1 class="h1">From Roommates<br>to Lovers Again.</h1>
+		<p class="hero-tagline">A monthly circle for women in long love who want more connection, more intimacy, more pulse.</p>
+		<div class="hero-ctas">
+			<a href="#tiers" class="btn">Join the membership</a>
+		</div>
+	</div>
+</section><section class="what">
+	<div class="container">
+		<span class="eyebrow">Why this exists</span>
+		<h2 class="h2">&#8220;I love him. I just don&#8217;t want him.&#8221;</h2>
+		<p>The most common thing women over 40 say to me, in almost the same words. Love is fine. Sex feels like a chore. You&#8217;re more flatmates than lovers. You don&#8217;t want to leave him. You want to <em>find</em> him again.</p>
+		<p>This is the membership for that. Not a course on how to be sexier for your partner. A monthly circle for the woman who&#8217;s ready to come back to herself, so she can come back to her relationship.</p>
+	</div>
+</section>
+
+<section class="who">
+	<div class="container">
+		<div class="who-grid">
+			<div>
+				<h3>This is for you if:</h3>
+				<ul>
+					<li>You&#8217;re over 40 and in a long relationship you don&#8217;t want to leave</li>
+					<li>You love him but the spark has gone flat</li>
+					<li>Sex has become one more thing on the list</li>
+					<li>You want to feel like a woman again, not just a manager</li>
+					<li>You want to communicate your needs without it becoming a fight</li>
+					<li>You&#8217;re ready to do the work, even if your partner isn&#8217;t</li>
+				</ul>
+			</div>
+			<div>
+				<h3>What you get every month:</h3>
+				<ul>
+					<li>Two live group sessions with Tarisha (1.5–2 hours each)</li>
+					<li>A monthly theme: intimacy, desire, communication, body, polarity, voice</li>
+					<li>A private community of women doing the same work</li>
+					<li>Practices and homework you can use immediately</li>
+					<li>Recordings of every session, available to you for life of membership</li>
+					<li>(Premium tier) Invitation to book private therapy time with Tarisha</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="pricing" id="tiers">
+	<div class="container">
+		<div class="pricing-head">
+			<span class="eyebrow">Membership</span>
+			<h2 class="h2">Two ways in. Three-month minimum, then monthly</h2>
+		</div>
+		<div class="tiers">
+			<div class="tier">
+				<span class="tier-eyebrow">Circle</span>
+				<h3>Monthly Circle</h3>
+				<div class="price">$97</div>
+				<div class="price-sub">USD per month &middot; 3-month minimum</div>
+				<ul>
+					<li>2 live group sessions per month</li>
+					<li>Monthly themes + practices</li>
+					<li>Private community</li>
+					<li>Lifetime access to recordings</li>
+				</ul>
+				<a href="https://tarishatourok.thrivecart.com/rwcircle/" class="btn">Join the Circle</a>
+				<p class="commit">Cancel any time after the first three months.</p>
+			</div>
+			<div class="tier is-feature">
+				<span class="tier-eyebrow">Circle + Private</span>
+				<h3>Monthly Circle + Private invitation</h3>
+				<div class="price">$197</div>
+				<div class="price-sub">USD per month &middot; 3-month minimum</div>
+				<ul>
+					<li>Everything in the Monthly Circle</li>
+					<li>Plus an invitation to book private therapy time with Tarisha</li>
+					<li>Sessions arranged separately when you need them</li>
+					<li>Priority access to retreat early-bird pricing</li>
+				</ul>
+				<a href="https://tarishatourok.thrivecart.com/rwcircle/" class="btn">Join Circle + Private</a>
+				<p class="commit">Let&#8217;s talk first to see if the fit is right.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="mem-gallery">
+	<div class="container">
+		<div class="mem-gallery-head">
+			<span class="eyebrow">The circle</span>
+			<h2 class="h2">Inside the room</h2>
+		</div>
+		<div class="mem-gallery-grid">
+			<div class="mem-gallery-item" role="img" aria-label="Community gathering" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/07-friends-on-nz-beach.jpg');"></div>
+			<div class="mem-gallery-item" role="img" aria-label="Indoor evening circle" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-02-indoor-group-2025.jpg');"></div>
+			<div class="mem-gallery-item" role="img" aria-label="Group community" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.04) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/cp-05-large-indoor-group.jpg');"></div>
+		</div>
+	</div>
+</section>
+
+<section class="final-cta">
+	<div class="container">
+		<h2 class="h2">From roommates to lovers again</h2>
+		<p>Three-month minimum. Cancel any time after that. Less than a couples therapy session.</p>
+		<a href="https://tarishatourok.thrivecart.com/rwcircle/" class="btn">Join the membership</a>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+</div>

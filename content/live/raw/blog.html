@@ -1,0 +1,334 @@
+
+<style>
+.tla-blog, .tla-blog * { box-sizing: border-box; }
+.tla-blog { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-blog img { max-width: 100%; display: block; }
+.tla-blog a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-blog .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-blog .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-blog section { padding: 96px 0; }
+.tla-blog h1, .tla-blog h2, .tla-blog h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-blog .h1 { font-size: clamp(48px, 7vw, 80px); line-height: 1.04; letter-spacing: -0.015em; }
+.tla-blog .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-blog .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-blog .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C75D3D; display: block; margin-bottom: 24px; }
+.tla-blog .eyebrow.is-light { color: #C9A579; }
+.tla-blog .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-blog .btn:hover { background: #C75D3D; transform: translateY(-1px); }
+.tla-blog .btn-ghost { display: inline-block; border: 1px solid #C9A579; color: #FBF7EE; padding: 14px 28px; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; transition: background 0.3s ease, color 0.3s ease; }
+.tla-blog .btn-ghost:hover { background: #C9A579; color: #1F2C1F; }
+
+.tla-blog .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-blog .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-blog .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-blog .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-blog .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-blog .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-blog .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-blog .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199,93,61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184,148,90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #1F2C1F 0%, #1F2C1F 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184,148,90, 0.15); position: relative; overflow: hidden; }
+.tla-blog .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-blog .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A579; margin-bottom: 22px; }
+.tla-blog .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-blog .footer-col li { margin-bottom: 12px; }
+.tla-blog .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-blog .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-blog .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-blog .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-blog .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-blog .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-blog .socials { display: flex; gap: 16px; }
+.tla-blog .socials a { width: 36px; height: 36px; border: 1px solid rgba(184,148,90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A579; transition: background 0.3s ease, color 0.3s ease; }
+.tla-blog .socials a:hover { background: #B8945A; color: #1F2C1F; }
+.tla-blog .footer-bottom { border-top: 1px solid rgba(184,148,90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-blog .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-blog .footer-bottom a:hover { color: #B8945A; }
+.tla-blog .footer-bottom-links { display: flex; gap: 24px; }
+
+
+/* Blog index post cards */
+.tla-blog .blog-list { display: flex; flex-direction: column; gap: 96px; max-width: 880px; margin: 0 auto; }
+.tla-blog .post-card { display: flex; flex-direction: column; gap: 32px; }
+.tla-blog .card-image { display: block; border-radius: 4px; overflow: hidden; aspect-ratio: 16 / 10; background: #2A2520; }
+.tla-blog .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.tla-blog .card-image:hover img { transform: scale(1.03); }
+.tla-blog .card-placeholder { width: 100%; height: 100%; }
+.tla-blog .card-body { display: flex; flex-direction: column; align-items: flex-start; }
+.tla-blog .card-body .eyebrow { color: #C75D3D; margin-bottom: 16px; }
+.tla-blog .card-body .h2 { font-size: clamp(28px, 3.6vw, 42px); margin: 0 0 18px 0; }
+.tla-blog .card-body .h2 a { color: #2A2520; transition: color 0.3s ease; }
+.tla-blog .card-body .h2 a:hover { color: #C75D3D; }
+.tla-blog .card-excerpt { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #4A3A28; margin: 0 0 24px 0; }
+.tla-blog .card-cta { font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #C75D3D; border-bottom: 1px solid #C9A579; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease; }
+.tla-blog .card-cta:hover { color: #C75D3D; border-color: #C75D3D; }
+@media (max-width: 600px) {
+    .tla-blog .blog-list { gap: 72px; }
+    .tla-blog .post-card { gap: 24px; }
+    .tla-blog .card-body .h2 { font-size: 28px; }
+}
+
+
+/* Blog index post cards: image left, text right (nicoletalkslove style) */
+.tla-blog .blog-list { display: flex; flex-direction: column; gap: 80px; max-width: 1100px; margin: 0 auto; }
+.tla-blog .post-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+.tla-blog .card-image { display: block; border-radius: 6px; overflow: hidden; aspect-ratio: 4 / 3; background: #2A2520; }
+.tla-blog .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.tla-blog .card-image:hover img { transform: scale(1.03); }
+.tla-blog .card-placeholder { width: 100%; height: 100%; }
+.tla-blog .card-body { display: flex; flex-direction: column; align-items: flex-start; }
+.tla-blog .card-body .eyebrow { color: #C75D3D; margin-bottom: 14px; font-size: 11px; }
+.tla-blog .card-body .h2 { font-size: clamp(24px, 2.4vw, 32px); line-height: 1.2; margin: 0 0 16px 0; }
+.tla-blog .card-body .h2 a { color: #2A2520; transition: color 0.3s ease; }
+.tla-blog .card-body .h2 a:hover { color: #C75D3D; }
+.tla-blog .card-excerpt { font-family: 'Lora', Georgia, serif; font-size: 16px; line-height: 1.6; color: #4A3A28; margin: 0 0 22px 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.tla-blog .card-cta { font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #C75D3D; border-bottom: 1px solid #C9A579; padding-bottom: 4px; transition: color 0.3s ease, border-color 0.3s ease; }
+.tla-blog .card-cta:hover { color: #C75D3D; border-color: #C75D3D; }
+
+/* Force left alignment on blog index */
+.tla-blog section.body, .tla-blog section.body * { text-align: left !important; }
+.tla-blog .blog-list, .tla-blog .post-card, .tla-blog .card-body, .tla-blog .card-body * { text-align: left !important; }
+
+@media (max-width: 768px) {
+    .tla-blog .blog-list { gap: 64px; }
+    .tla-blog .post-card { grid-template-columns: 1fr; gap: 24px; }
+    .tla-blog .card-body .h2 { font-size: 24px; }
+}
+
+@media (max-width: 768px) {
+	.tla-blog { font-size: 16px; }
+	.tla-blog section { padding: 72px 0; }
+	.tla-blog .container, .tla-blog .container-narrow { padding: 0 24px; }
+	.tla-blog .nav-menu { display: none; }
+	.tla-blog .nav .btn { padding: 10px 18px; }
+	.tla-blog .footer { padding: 64px 0 32px; }
+	.tla-blog .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-blog .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-blog .footer-grid { grid-template-columns: 1fr; }
+	.tla-blog .nav-inner { gap: 12px; }
+	.tla-blog .logo { font-size: 18px; }
+}
+
+.tla-blog .hero { position: relative; min-height: 700px; display: flex; align-items: center; padding: 160px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.40) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199,93,61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184,148,90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/06/blog-header.jpg'); background-size: cover; background-position: center; color: #FBF7EE; }
+.tla-blog .hero-content { max-width: 880px; }
+.tla-blog .hero .eyebrow { color: #B8945A; }
+.tla-blog .hero h1 { color: #FBF7EE; margin-bottom: 24px; }
+.tla-blog .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin-bottom: 44px; max-width: 640px; line-height: 1.4; }
+.tla-blog .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.tla-blog .hero-link { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: #F5EFE3; text-decoration: underline; text-underline-offset: 6px; }
+.tla-blog .hero-link:hover { color: #B8945A; }
+@media (max-width: 768px) { .tla-blog .hero { padding: 130px 0 70px; min-height: 580px; } .tla-blog .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; } }
+.tla-blog .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184,148,90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199,93,61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2D3E2C 0%, #1F2C1F 60%, #1F2C1F 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-blog .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-blog .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }.tla-blog .body { background: #F5EFE3; text-align: center; }
+.tla-blog .body h2 { color: #1F2C1F; max-width: 720px; margin: 0 auto 24px; }
+.tla-blog .body p { max-width: 640px; margin: 0 auto 22px; color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.75; }
+.tla-blog .placeholder-card { max-width: 640px; margin: 40px auto 0; background: #FBF7EE; border: 1px dashed #B8945A; border-radius: 6px; padding: 56px 40px; }
+.tla-blog .placeholder-card .label { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #B8945A; margin-bottom: 16px; }
+
+/* === Soro embed: make new cards visually match our .post-card === */
+.tla-blog #soro-blog .soro-blog { max-width: 1100px; margin: 0 auto; padding: 0; color: #2A2520; font-family: 'Lora', Georgia, serif; }
+.tla-blog #soro-blog .soro-blog-header { display: none !important; }
+.tla-blog #soro-blog .soro-blog-list { display: flex !important; flex-direction: column !important; gap: 80px !important; max-width: 1100px; margin: 0 auto 80px; }
+.tla-blog #soro-blog .soro-blog-card { display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; gap: 56px !important; align-items: center !important; padding: 0 !important; background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; color: inherit !important; text-decoration: none !important; }
+.tla-blog #soro-blog .soro-blog-card:hover { box-shadow: none !important; border: 0 !important; }
+.tla-blog #soro-blog .soro-blog-card-image { width: 100% !important; height: auto !important; aspect-ratio: 4 / 3 !important; object-fit: cover !important; border-radius: 6px !important; background: #2A2520; transition: transform 0.6s ease; display: block; }
+.tla-blog #soro-blog .soro-blog-card:hover .soro-blog-card-image { transform: scale(1.03); }
+.tla-blog #soro-blog .soro-blog-card-content { flex: none !important; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.tla-blog #soro-blog .soro-blog-card-title,
+.tla-blog #soro-blog h2.soro-blog-card-title { font-family: 'Marcellus', serif !important; font-weight: 400 !important; font-size: clamp(24px, 2.4vw, 32px) !important; line-height: 1.2 !important; letter-spacing: -0.01em; color: #2A2520 !important; margin: 0 0 16px 0 !important; transition: color 0.3s ease; }
+.tla-blog #soro-blog .soro-blog-card:hover .soro-blog-card-title { color: #C75D3D !important; }
+.tla-blog #soro-blog .soro-blog-card-excerpt { font-family: 'Lora', Georgia, serif !important; font-size: 16px !important; line-height: 1.6 !important; color: #4A3A28 !important; margin: 0 0 22px 0 !important; display: -webkit-box !important; -webkit-line-clamp: 3 !important; -webkit-box-orient: vertical !important; overflow: hidden !important; }
+.tla-blog #soro-blog .soro-blog-card-date { font-family: 'Lora', serif !important; font-weight: 600 !important; font-size: 11px !important; letter-spacing: 0.3em !important; text-transform: uppercase !important; color: #C75D3D !important; opacity: 0.85; margin-bottom: 14px; order: -1; }
+.tla-blog #soro-blog .soro-blog-card-content::after { content: 'Read the post →'; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #C75D3D; border-bottom: 1px solid #C9A579; padding-bottom: 4px; margin-top: 4px; transition: color 0.3s ease, border-color 0.3s ease; }
+.tla-blog #soro-blog .soro-blog-card:hover .soro-blog-card-content::after { border-color: #C75D3D; }
+.tla-blog #soro-blog .soro-blog-article { color: #2A2520; }
+.tla-blog #soro-blog .soro-blog-article-title { font-family: 'Marcellus', serif !important; font-weight: 400 !important; color: #2A2520 !important; }
+.tla-blog #soro-blog .soro-blog-back { font-family: 'Lora', serif !important; color: #C75D3D !important; border-color: #C9A579 !important; }
+@media (max-width: 768px) {
+	.tla-blog #soro-blog .soro-blog-list { gap: 64px !important; }
+	.tla-blog #soro-blog .soro-blog-card { grid-template-columns: 1fr !important; gap: 24px !important; }
+	.tla-blog #soro-blog .soro-blog-card-title { font-size: 24px !important; }
+}
+
+/* tight-heading-tla-blog */
+.tla-blog .eyebrow { margin-bottom: 10px !important; }
+.tla-blog section .eyebrow { margin-bottom: 10px !important; }
+.tla-blog .hero h1, .tla-blog .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-blog section h2 { margin-bottom: 16px !important; }
+</style>
+<div class="tla-blog">
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">The blog</span>
+		<h1 class="h1">Long love, still on fire</h1>
+		<p class="hero-tagline">Learn how to enhance desire, intimacy and communication in your relationship.</p>
+		<div class="hero-ctas">
+			<a href="#subscribe" class="btn">Receive in your inbox</a>
+		</div>
+	</div>
+</section><section class="body" id="subscribe">
+	<div class="container">
+		<span class="eyebrow" style="margin-bottom:32px">The blog</span>
+		<div id="soro-blog" style="margin-bottom:64px"></div>
+		<script src="https://app.trysoro.com/api/embed/a43c616c-c4c0-4d48-9673-58530bea4c80" defer></script>
+		<div class="blog-list">
+    <article class="post-card">
+        <a href="/david-deida-3-stages-intimate-relationships/" class="card-image" aria-label="Read: David Deida’s 3 Stages of Intimate Relationships"><div class="card-placeholder" style="background:linear-gradient(135deg, #2D3E2C 0%, #1F2C1F 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Relationship Stages</span>
+            <h2 class="h2"><a href="/david-deida-3-stages-intimate-relationships/">David Deida’s 3 Stages of Intimate Relationships</a></h2>
+            <p class="card-excerpt">I love David Deida’s style. His writing awakens all the romantic feelings in me and my admiration of men. I become all dreamy and want to know how else my relating can be enhanced. According to David Deida, an international teacher and author, there are 3 stages of relating. He…</p>
+            <a href="/david-deida-3-stages-intimate-relationships/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/why-couples-argue/" class="card-image" aria-label="Read: Why Couples Argue (And the Hidden Mirror in Every Fight)"><div class="card-placeholder" style="background:linear-gradient(135deg, #C75D3D 0%, #C75D3D 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Communication</span>
+            <h2 class="h2"><a href="/why-couples-argue/">Why Couples Argue (And the Hidden Mirror in Every Fight)</a></h2>
+            <p class="card-excerpt">A couple said this to me this week, and it stayed with me. “It’s so simple, but it’s not easy. When I come to my partner with vulnerability, they meet me with vulnerability. When I come to them with anger, they meet me with anger.” Right? Read that again. The way I show up is…</p>
+            <a href="/why-couples-argue/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/remember-the-love-rekindle-the-fire/" class="card-image" aria-label="Read: Remember the Love: How to Rekindle the Fire You Think You’ve Lost"><div class="card-placeholder" style="background:linear-gradient(135deg, #5D6B3F 0%, #2D3E2C 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Intimacy &amp; Desire</span>
+            <h2 class="h2"><a href="/remember-the-love-rekindle-the-fire/">Remember the Love: How to Rekindle the Fire You Think You’ve Lost</a></h2>
+            <p class="card-excerpt">Perhaps in your mind you can remember that unique feeling of being in love with your partner, but in your heart the spark now somehow seems lost. Yet something deep down tells you the fire isn’t completely out; there are embers that can be fanned into flames. I want you to try…</p>
+            <a href="/remember-the-love-rekindle-the-fire/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/boring-sex-life-heres-why/" class="card-image" aria-label="Read: Is Your Sex Life Boring? Here’s Why"><div class="card-placeholder" style="background:linear-gradient(135deg, #B8945A 0%, #C75D3D 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Intimacy &amp; Desire</span>
+            <h2 class="h2"><a href="/boring-sex-life-heres-why/">Is Your Sex Life Boring? Here’s Why</a></h2>
+            <p class="card-excerpt">Is your sex life boring? Sex… Enjoyable or frustrating? Supposed to be lots of fun, right? If sex isn’t as fulfilling as you want it to be… …you might have a nun/monk archetype as part of your psyche. An archetype is an energy that represents universal patterns of human nature…</p>
+            <a href="/boring-sex-life-heres-why/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/seduce-your-partner-into-love/" class="card-image" aria-label="Read: Seduce Your Partner Into Love: The Power of Feminine Essence"><div class="card-placeholder" style="background:linear-gradient(135deg, #C9A579 0%, #5D6B3F 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Intimacy &amp; Desire</span>
+            <h2 class="h2"><a href="/seduce-your-partner-into-love/">Seduce Your Partner Into Love: The Power of Feminine Essence</a></h2>
+            <p class="card-excerpt">Boredom… Do you feel more like mates than lovers with your partner? Maybe craving affection and romance. Remembering the old days… Why does passion die? Read on to learn how to seduce your partner into love… What creates the attraction? I believe a large part of it’s about our…</p>
+            <a href="/seduce-your-partner-into-love/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/self-compassion-challenging-relationship/" class="card-image" aria-label="Read: Self-Compassion: When Your Relationship Is Challenging"><div class="card-placeholder" style="background:linear-gradient(135deg, #2D3E2C 0%, #1F2C1F 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Inner Work</span>
+            <h2 class="h2"><a href="/self-compassion-challenging-relationship/">Self-Compassion: When Your Relationship Is Challenging</a></h2>
+            <p class="card-excerpt">If your relationship is challenging or you’re tired of judging yourself and feel like you’re not enough, then this video is for you. We’ll practise self-compassion. This practice is so important when our partner isn’t quite there for us. Maybe you had an argument or just feel a…</p>
+            <a href="/self-compassion-challenging-relationship/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/how-to-stop-arguing-about-money/" class="card-image" aria-label="Read: How to Stop Arguing About Money"><div class="card-placeholder" style="background:linear-gradient(135deg, #C75D3D 0%, #C75D3D 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Communication</span>
+            <h2 class="h2"><a href="/how-to-stop-arguing-about-money/">How to Stop Arguing About Money</a></h2>
+            <p class="card-excerpt">Part One Money issues… (Do you want to know how to stop arguing about money?) Do you argue about money with your partner? Do you blame your partner for having a different way of dealing with money? Let’s stop the unnecessary arguments! All the conflict comes down to having…</p>
+            <a href="/how-to-stop-arguing-about-money/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/attentive-listening-know-your-partner/" class="card-image" aria-label="Read: Do You Really Know Your Partner? The Power of Attentive Listening"><div class="card-placeholder" style="background:linear-gradient(135deg, #5D6B3F 0%, #2D3E2C 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Communication</span>
+            <h2 class="h2"><a href="/attentive-listening-know-your-partner/">Do You Really Know Your Partner? The Power of Attentive Listening</a></h2>
+            <p class="card-excerpt">Do you want to be understood by your partner? Well, there’s a saying, first seek to understand before trying to be understood. So let’s practice attentive listening this week. Attentive listening makes our partner feel safe and open up to us emotionally. Truly listen, be on his…</p>
+            <a href="/attentive-listening-know-your-partner/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/conversations-that-matter/" class="card-image" aria-label="Read: Conversations That Matter"><div class="card-placeholder" style="background:linear-gradient(135deg, #B8945A 0%, #C75D3D 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Communication</span>
+            <h2 class="h2"><a href="/conversations-that-matter/">Conversations That Matter</a></h2>
+            <p class="card-excerpt">I’ve recently came back from the Feminine Power retreat in San Francisco with over one hundred gorgeous women. Wow! It was so profound! In the morning, during in-sessions, at lunch, at dinner and on our walks we were having conversations that matter. I never felt so heard…</p>
+            <a href="/conversations-that-matter/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/should-i-stay-or-should-i-leave/" class="card-image" aria-label="Read: Should I Stay or Should I Leave My Relationship?"><div class="card-placeholder" style="background:linear-gradient(135deg, #C9A579 0%, #5D6B3F 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Stay or Go</span>
+            <h2 class="h2"><a href="/should-i-stay-or-should-i-leave/">Should I Stay or Should I Leave My Relationship?</a></h2>
+            <p class="card-excerpt">Should I stay or should I leave? Tough question… And painful. Painful to stay feeling unfulfilled and unloved. Painful to leave not knowing if it’s the right decision. Especially if you have children. There’s a reason why you want to figure out if your current relationship is…</p>
+            <a href="/should-i-stay-or-should-i-leave/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+
+    <article class="post-card">
+        <a href="/are-you-in-the-right-relationship/" class="card-image" aria-label="Read: Are You in the Right Relationship?"><div class="card-placeholder" style="background:linear-gradient(135deg, #2D3E2C 0%, #1F2C1F 100%)"></div></a>
+        <div class="card-body">
+            <span class="eyebrow">Stay or Go</span>
+            <h2 class="h2"><a href="/are-you-in-the-right-relationship/">Are You in the Right Relationship?</a></h2>
+            <p class="card-excerpt">The relationship road could be hellish… It seems that the story of ‘happily ever after’ doesn’t stand the test of reality… Relationships are a fast track to personal growth. And somehow humans grow through discomfort and tension. Good news: if you’re having problems in your…</p>
+            <a href="/are-you-in-the-right-relationship/" class="card-cta">Read the post →</a>
+        </div>
+    </article>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+</div>

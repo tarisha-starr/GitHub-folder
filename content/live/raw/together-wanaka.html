@@ -1,0 +1,618 @@
+
+<style>
+/* ===== /together/retreats/wanaka — scoped to .tla-wanaka ===== */
+.tla-wanaka, .tla-wanaka * { box-sizing: border-box; }
+.tla-wanaka {
+	font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65;
+	color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased;
+}
+.tla-wanaka img { max-width: 100%; display: block; }
+.tla-wanaka a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-wanaka .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-wanaka .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-wanaka section { padding: 96px 0; }
+.tla-wanaka h1, .tla-wanaka h2, .tla-wanaka h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-wanaka .h1 { font-size: clamp(48px, 7vw, 84px); line-height: 1.02; letter-spacing: -0.015em; }
+.tla-wanaka .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-wanaka .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-wanaka .eyebrow {
+	font-family: 'Lora', serif; font-weight: 600; font-size: 11px;
+	letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A;
+	display: block; margin-bottom: 24px;
+}
+.tla-wanaka .eyebrow.is-light { color: #C9A07C; }
+.tla-wanaka .italic { font-style: italic; }
+.tla-wanaka .btn {
+	display: inline-block; background: #C75D3D; color: #FBF7EE;
+	font-family: 'Lora', serif; font-weight: 600; font-size: 13px;
+	letter-spacing: 0.18em; text-transform: uppercase;
+	padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer;
+	transition: background 0.3s ease, transform 0.3s ease;
+}
+.tla-wanaka .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+
+/* NAV (same as homepage) */
+.tla-wanaka .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-wanaka .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-wanaka .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-wanaka .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-wanaka .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-wanaka .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-wanaka .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+/* HERO */
+.tla-wanaka .hero {
+	position: relative; min-height: 760px; display: flex; align-items: center;
+	padding: 160px 0 100px; overflow: hidden;
+	background-image:
+		linear-gradient(180deg, rgba(15,17,13,0.40) 0%, rgba(15,17,13,0.85) 100%),
+		radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%),
+		radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%),
+		url('https://theloveadventure.com/wp-content/uploads/2026/05/05-tekapo-lake-landscape.jpg');
+	background-size: cover; background-position: center; color: #FBF7EE;
+}
+.tla-wanaka .hero-content { max-width: 880px; }
+.tla-wanaka .hero .eyebrow { color: #B8945A; }
+.tla-wanaka .hero h1 { color: #FBF7EE; margin-bottom: 24px; }
+.tla-wanaka .hero-tagline {
+	font-family: 'Lora', serif; font-style: italic; font-weight: 400;
+	font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92;
+	margin-bottom: 44px; max-width: 640px; line-height: 1.4;
+}
+
+/* PROBLEM (light, large statement) */
+.tla-wanaka .problem { background: #F5EFE3; }
+.tla-wanaka .problem h2 { color: #15110D; max-width: 880px; margin: 0 auto 32px; text-align: center; }
+.tla-wanaka .problem-body { max-width: 720px; margin: 0 auto; color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.75; }
+.tla-wanaka .problem-body p + p { margin-top: 22px; }
+.tla-wanaka .problem .eyebrow { text-align: center; }
+
+/* WHO THIS IS FOR / NOT FOR (dark, two-column lists) */
+.tla-wanaka .who {
+	background:
+		radial-gradient(ellipse at 15% 20%, rgba(199, 93, 61, 0.14) 0%, transparent 50%),
+		radial-gradient(ellipse at 85% 80%, rgba(184, 148, 90, 0.12) 0%, transparent 55%),
+		linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%);
+	color: #FBF7EE; position: relative; overflow: hidden;
+}
+.tla-wanaka .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+.tla-wanaka .who-col h3 { font-family: 'Marcellus', serif; font-size: 28px; color: #C9A07C; margin-bottom: 28px; }
+.tla-wanaka .who-col ul { list-style: none; padding: 0; }
+.tla-wanaka .who-col li { padding-left: 28px; position: relative; margin-bottom: 14px; color: #F5EFE3; opacity: 0.92; line-height: 1.6; }
+.tla-wanaka .who-col li::before { content: '·'; position: absolute; left: 8px; top: -6px; font-size: 32px; line-height: 1; color: #B8945A; }
+.tla-wanaka .who-col.is-not li::before { content: '×'; left: 8px; top: 0; font-size: 16px; line-height: 1.6; color: #9E4A2A; opacity: 0.7; }
+.tla-wanaka .who-note { text-align: center; font-style: italic; font-size: 15px; color: rgba(245,239,227,0.7); margin-top: 56px; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+/* SIX PILLARS (dark) */
+.tla-wanaka .pillars {
+	background-image:
+		linear-gradient(180deg, rgba(10,8,7,0.86) 0%, rgba(10,8,7,0.92) 100%),
+		radial-gradient(ellipse at 20% 15%, rgba(199, 93, 61, 0.30) 0%, transparent 55%),
+		radial-gradient(ellipse at 80% 85%, rgba(184, 148, 90, 0.22) 0%, transparent 60%),
+		url('https://theloveadventure.com/wp-content/uploads/2026/05/08-hike-mountain-reflection.jpg');
+	background-size: cover; background-position: center; background-attachment: fixed;
+	color: #FBF7EE; position: relative; overflow: hidden;
+}
+.tla-wanaka .pillars-head { text-align: center; margin-bottom: 72px; max-width: 760px; margin-left: auto; margin-right: auto; }
+.tla-wanaka .pillars h2 { color: #FBF7EE; }
+.tla-wanaka .pillars-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 36px 32px; }
+.tla-wanaka .pillars-grid > .pillar-card { grid-column: span 2; }
+.tla-wanaka .pillars-grid > .pillar-card:nth-child(4) { grid-column: 2 / span 2; }
+.tla-wanaka .pillars-grid > .pillar-card:nth-child(5) { grid-column: 4 / span 2; }
+.tla-wanaka .pillar-card { display: flex; flex-direction: column; background: rgba(255,250,240,0.04); border: 1px solid rgba(201,160,124,0.18); border-radius: 6px; overflow: hidden; transition: transform 0.55s cubic-bezier(.2,.8,.2,1), box-shadow 0.55s cubic-bezier(.2,.8,.2,1), border-color 0.4s ease; will-change: transform; }
+.tla-wanaka .pillar-card:hover { transform: translateY(-6px); box-shadow: 0 36px 70px -28px rgba(0,0,0,0.55); border-color: rgba(201,160,124,0.4); }
+.tla-wanaka .pillar-photo { width: 100%; aspect-ratio: 4 / 3; background-size: cover; background-position: center; }
+.tla-wanaka .pillar-body { padding: 28px 28px 32px; }
+.tla-wanaka .pillar-num { font-family: 'Marcellus', serif; font-style: italic; font-size: 22px; color: #C9A07C; opacity: 0.9; display: block; margin-bottom: 10px; line-height: 1; }
+.tla-wanaka .pillar h3 { color: #FBF7EE; margin: 0 0 10px; font-size: 22px; }
+.tla-wanaka .pillar p { color: #F5EFE3; opacity: 0.82; font-size: 15px; line-height: 1.65; margin: 0; }
+
+/* ITINERARY (light, vertical timeline) */
+.tla-wanaka .itinerary { background: #F5EFE3; }
+.tla-wanaka .itinerary-head { text-align: center; margin-bottom: 64px; }
+.tla-wanaka .itinerary h2 { color: #15110D; }
+.tla-wanaka .itinerary-list { max-width: 800px; margin: 0 auto; position: relative; }
+.tla-wanaka .itinerary-list::before { content: ''; position: absolute; left: 32px; top: 16px; bottom: 16px; width: 1px; background: rgba(184, 148, 90, 0.4); }
+.tla-wanaka .day { display: grid; grid-template-columns: 80px 1fr; gap: 32px; padding: 24px 0 32px; }
+.tla-wanaka .day-num { font-family: 'Marcellus', serif; font-size: 24px; color: #B8945A; line-height: 1; padding-top: 4px; position: relative; }
+.tla-wanaka .day-num::before { content: ''; position: absolute; left: 24px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: #C75D3D; border: 4px solid #F5EFE3; box-shadow: 0 0 0 1px rgba(184,148,90,0.4); }
+.tla-wanaka .day-body h3 { font-size: 22px; color: #15110D; margin-bottom: 8px; }
+.tla-wanaka .day-body p { color: #2A2520; opacity: 0.85; font-size: 16px; line-height: 1.65; }
+
+/* PRICING (light, card with hairline gold border) */
+.tla-wanaka .pricing { background: #FBF7EE; }
+.tla-wanaka .pricing-head { text-align: center; margin-bottom: 56px; }
+.tla-wanaka .pricing h2 { color: #15110D; }
+.tla-wanaka .pricing-card {
+	max-width: 720px; margin: 0 auto;
+	background: #F5EFE3; border: 1px solid #B8945A; border-radius: 6px;
+	padding: 64px 56px;
+}
+.tla-wanaka .pricing-card .eyebrow { text-align: center; }
+.tla-wanaka .pricing-card h3 { font-family: 'Marcellus', serif; font-size: 32px; color: #15110D; text-align: center; margin-bottom: 8px; }
+.tla-wanaka .pricing-card .sub { text-align: center; font-style: italic; font-size: 17px; color: #5D6B3F; margin-bottom: 40px; }
+.tla-wanaka .pricing-card .price-large { font-family: 'Marcellus', serif; font-size: clamp(48px, 6vw, 64px); color: #15110D; text-align: center; line-height: 1; }
+.tla-wanaka .pricing-card .price-secondary { font-family: 'Lora', serif; font-style: italic; font-size: 22px; color: #5D6B3F; text-align: center; margin-top: 8px; }
+.tla-wanaka .pricing-card .price-note { font-style: italic; font-size: 15px; text-align: center; margin-top: 16px; color: #2A2520; opacity: 0.78; }
+.tla-wanaka .pricing-card .rule { border: 0; height: 1px; background: #B8945A; opacity: 0.5; margin: 36px 0; }
+.tla-wanaka .pricing-card ul { list-style: none; padding: 0; }
+.tla-wanaka .pricing-card li { padding-left: 24px; position: relative; margin-bottom: 12px; line-height: 1.55; font-size: 16px; color: #2A2520; }
+.tla-wanaka .pricing-card li::before { content: '▸'; position: absolute; left: 0; top: 0; color: #C75D3D; font-size: 12px; line-height: 1.6; }
+.tla-wanaka .pricing-card .not-incl { font-family: 'Lora', serif; font-weight: 600; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #9E4A2A; margin-top: 28px; margin-bottom: 12px; display: block; }
+.tla-wanaka .pricing-card .cta-wrap { text-align: center; margin-top: 40px; }
+
+/* FOUNDERS (light, split) */
+.tla-wanaka .founders { background: #F5EFE3; padding: 0; }
+.tla-wanaka .founders-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 560px; }
+.tla-wanaka .founders-photo { background-size: cover; background-position: center; background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/10-founders-beach-warm.jpg'); min-height: 420px; }
+.tla-wanaka .founders-text { padding: 96px 64px; display: flex; flex-direction: column; justify-content: center; background: #FBF7EE; }
+.tla-wanaka .founders-text h2 { color: #15110D; margin-bottom: 24px; font-size: clamp(28px, 3.2vw, 38px); }
+.tla-wanaka .founders-text p { color: #2A2520; opacity: 0.88; margin-bottom: 18px; font-size: 16px; line-height: 1.7; }
+.tla-wanaka .founders-text .arrow-link { font-family: 'Lora', serif; font-weight: 600; font-size: 14px; color: #C75D3D; margin-top: 12px; display: inline-block; border-bottom: 1px solid #C75D3D; padding-bottom: 2px; }
+
+/* TESTIMONIALS (dark, three quotes) */
+.tla-wanaka .testimonials {
+	background:
+		radial-gradient(ellipse at 30% 30%, rgba(199, 93, 61, 0.16) 0%, transparent 55%),
+		radial-gradient(ellipse at 70% 70%, rgba(184, 148, 90, 0.12) 0%, transparent 55%),
+		linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%);
+	color: #FBF7EE; position: relative; overflow: hidden;
+}
+.tla-wanaka .testimonials-head { text-align: center; margin-bottom: 56px; }
+.tla-wanaka .testimonials h2 { color: #FBF7EE; }
+.tla-wanaka .testimonials-note { font-style: italic; font-size: 14px; color: #C9A07C; opacity: 0.85; margin-top: 12px; }
+.tla-wanaka .quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.tla-wanaka .quote {
+	background: rgba(245, 239, 227, 0.04); border: 1px solid rgba(184, 148, 90, 0.22);
+	border-top: 2px solid #B8945A; padding: 36px 32px; border-radius: 4px;
+}
+.tla-wanaka .quote blockquote { font-family: 'Lora', serif; font-style: italic; font-size: 17px; line-height: 1.6; color: #F5EFE3; margin-bottom: 20px; }
+.tla-wanaka .quote .attr { font-family: 'Lora', serif; font-weight: 600; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A07C; }
+
+/* FAQ (light, hairline-only accordion) */
+.tla-wanaka .faq { background: #F5EFE3; }
+.tla-wanaka .faq-head { text-align: center; margin-bottom: 56px; }
+.tla-wanaka .faq h2 { color: #15110D; }
+.tla-wanaka .faq-list { max-width: 800px; margin: 0 auto; }
+.tla-wanaka .faq details { border-top: 1px solid #C9A579; padding: 24px 0; }
+.tla-wanaka .faq details:last-child { border-bottom: 1px solid #C9A579; }
+.tla-wanaka .faq summary { font-family: 'Lora', serif; font-weight: 600; font-size: 18px; color: #15110D; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 24px; transition: color 0.2s ease; }
+.tla-wanaka .faq summary::-webkit-details-marker { display: none; }
+.tla-wanaka .faq summary::after { content: '+'; font-family: 'Marcellus', serif; font-size: 24px; color: #B8945A; line-height: 1; transition: transform 0.3s ease; }
+.tla-wanaka .faq details[open] summary::after { transform: rotate(45deg); }
+.tla-wanaka .faq summary:hover { color: #C75D3D; }
+.tla-wanaka .faq details p { margin-top: 14px; max-width: 720px; color: #2A2520; opacity: 0.88; line-height: 1.65; }
+
+/* FINAL CTA (dark gradient) */
+.tla-wanaka .final-cta {
+	background:
+		radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%),
+		radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%),
+		linear-gradient(180deg, rgba(15,17,13,0.55) 0%, rgba(15,17,13,0.85) 100%),
+		linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%);
+	text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden;
+}
+.tla-wanaka .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-wanaka .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }
+
+/* FOOTER (same near-black + gold as homepage) */
+.tla-wanaka .footer {
+	background:
+		radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%),
+		radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%),
+		linear-gradient(180deg, #15110D 0%, #0A0807 100%);
+	color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden;
+}
+.tla-wanaka .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-wanaka .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-wanaka .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-wanaka .footer-col li { margin-bottom: 12px; }
+.tla-wanaka .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-wanaka .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-wanaka .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-wanaka .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-wanaka .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-wanaka .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-wanaka .socials { display: flex; gap: 16px; }
+.tla-wanaka .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-wanaka .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-wanaka .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-wanaka .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-wanaka .footer-bottom a:hover { color: #B8945A; }
+.tla-wanaka .footer-bottom-links { display: flex; gap: 24px; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+	.tla-wanaka .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+	.tla-wanaka .pillars-grid > .pillar-card,
+	.tla-wanaka .pillars-grid > .pillar-card:nth-child(4),
+	.tla-wanaka .pillars-grid > .pillar-card:nth-child(5) { grid-column: auto; }
+	.tla-wanaka .quotes { grid-template-columns: 1fr; }
+	.tla-wanaka .who-grid { grid-template-columns: 1fr; gap: 48px; }
+	.tla-wanaka .founders-inner { grid-template-columns: 1fr; }
+	.tla-wanaka .founders-text { padding: 64px 40px; }
+}
+@media (max-width: 768px) {
+	.tla-wanaka { font-size: 16px; }
+	.tla-wanaka section { padding: 72px 0; }
+	.tla-wanaka .container, .tla-wanaka .container-narrow { padding: 0 24px; }
+	.tla-wanaka .nav-menu { display: none; }
+	.tla-wanaka .nav .btn { padding: 10px 18px; }
+	.tla-wanaka .hero { min-height: 600px; padding: 130px 0 70px; }
+	.tla-wanaka .pricing-card { padding: 48px 32px; }
+	.tla-wanaka .day { grid-template-columns: 60px 1fr; gap: 20px; }
+	.tla-wanaka .footer { padding: 64px 0 32px; }
+	.tla-wanaka .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-wanaka .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-wanaka .pillars-grid { grid-template-columns: 1fr; }
+	.tla-wanaka .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* Image-break in Problem section */
+.tla-wanaka .problem-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center; max-width: 1180px; margin: 0 auto; }
+.tla-wanaka .problem-text { max-width: 560px; }
+.tla-wanaka .problem-text .eyebrow { text-align: left; }
+.tla-wanaka .problem-text h2 { text-align: left; max-width: none; margin-left: 0; }
+.tla-wanaka .problem-img { aspect-ratio: 4/5; background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 24px 60px -28px rgba(31,44,31,0.3); }
+.tla-wanaka .problem-img.is-placeholder { background: linear-gradient(135deg, #C9A579 0%, #B8945A 50%, #9E4A2A 100%); display: flex; align-items: flex-end; padding: 28px; color: #FBF7EE; font-family: 'Lora', serif; font-style: italic; font-size: 13px; line-height: 1.4; }
+@media (max-width: 1024px) {
+	.tla-wanaka .problem-grid { grid-template-columns: 1fr; gap: 48px; }
+	.tla-wanaka .problem-text { max-width: none; }
+}
+
+/* Itinerary day thumbs */
+.tla-wanaka .day { grid-template-columns: 80px 140px 1fr; gap: 32px; }
+.tla-wanaka .day-thumb { aspect-ratio: 4/3; background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 12px 32px -16px rgba(31,44,31,0.25); }
+.tla-wanaka .day-thumb.is-placeholder { background: linear-gradient(135deg, #C9A579 0%, #B8945A 100%); display: flex; align-items: flex-end; padding: 12px; color: #FBF7EE; font-family: 'Lora', serif; font-style: italic; font-size: 11px; line-height: 1.3; }
+@media (max-width: 768px) {
+	.tla-wanaka .day { grid-template-columns: 60px 1fr; gap: 16px; }
+	.tla-wanaka .day-thumb { display: none; }
+}
+
+/* The Place gallery section */
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+	
+	
+	
+}
+@media (max-width: 600px) {
+	
+	
+}
+
+/* Final CTA — background image */
+.tla-wanaka .final-cta { background-image: linear-gradient(180deg, rgba(15,17,13,0.55) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), url('https://theloveadventure.com/wp-content/uploads/2026/05/05-tekapo-lake-landscape.jpg'); background-size: cover; background-position: center; }
+
+/* ===== Wanaka Gallery v2 — viewport-breakout, unique classes ===== */
+.tla-wanaka .wkgal2-section {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	padding: 140px 0 160px;
+	background:
+		radial-gradient(ellipse at 30% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 55%),
+		radial-gradient(ellipse at 70% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%),
+		linear-gradient(180deg, #FBF7EE 0%, #F5EFE3 100%);
+	color: #2A2520;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.tla-wanaka .wkgal2-inner { width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; }
+.tla-wanaka .wkgal2-head { text-align: center; margin: 0 auto 64px; max-width: 800px; }
+.tla-wanaka .wkgal2-eyebrow { display: inline-block; font-family: 'Lora', serif; font-weight: 700; font-size: 16px; letter-spacing: 0.34em; text-transform: uppercase; color: #9E4A2A; margin-bottom: 20px; }
+.tla-wanaka .wkgal2-h2 { color: #15110D; font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(40px, 5.5vw, 64px); line-height: 1.05; margin: 0 0 18px; letter-spacing: -0.012em; }
+.tla-wanaka .wkgal2-sub { font-family: 'Lora', serif; font-style: italic; font-size: 19px; color: #5D6B3F; max-width: 600px; margin: 0 auto; line-height: 1.55; }
+.tla-wanaka .wkgal2-grid {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr) !important;
+	grid-template-rows: 280px 280px !important;
+	gap: 18px !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+.tla-wanaka .wkgal2-item {
+	width: 100% !important;
+	background-size: cover;
+	background-position: center;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0 24px 60px -28px rgba(31,44,31,0.30);
+	transition: transform 0.5s ease, box-shadow 0.5s ease;
+	display: block !important;
+}
+.tla-wanaka .wkgal2-item.span-2x2 { grid-column: span 2 !important; grid-row: span 2 !important; }
+.tla-wanaka .wkgal2-item.span-2x1 { grid-column: span 2 !important; grid-row: span 1 !important; }
+.tla-wanaka .wkgal2-item:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 36px 80px -28px rgba(31,44,31,0.4); }
+@media (max-width: 1024px) {
+	.tla-wanaka .wkgal2-grid { grid-template-columns: repeat(2, 1fr) !important; grid-template-rows: 240px 240px 240px 240px !important; gap: 14px !important; }
+	.tla-wanaka .wkgal2-item.span-2x2 { grid-column: span 2 !important; grid-row: span 2 !important; }
+	.tla-wanaka .wkgal2-item.span-2x1 { grid-column: span 2 !important; grid-row: span 1 !important; }
+}
+@media (max-width: 600px) {
+	.tla-wanaka .wkgal2-grid { grid-template-columns: 1fr !important; grid-template-rows: repeat(6, 220px) !important; gap: 12px !important; }
+	.tla-wanaka .wkgal2-item, .tla-wanaka .wkgal2-item.span-2x2, .tla-wanaka .wkgal2-item.span-2x1 { grid-column: span 1 !important; grid-row: span 1 !important; }
+}
+
+
+/* tight-heading-tla-wanaka */
+.tla-wanaka .eyebrow { margin-bottom: 10px !important; }
+.tla-wanaka section .eyebrow { margin-bottom: 10px !important; }
+.tla-wanaka .hero h1, .tla-wanaka .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-wanaka section h2 { margin-bottom: 16px !important; }
+</style>
+
+<div class="tla-wanaka">
+
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">A 6 day adventure for couples in long-term love</span>
+		<h1 class="h1">Six days in Wanaka<br>to fall back in love</h1>
+		<p class="hero-tagline">Not as you were. As what you&#8217;re still becoming.</p>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Apply for the next retreat</a>
+	</div>
+</section>
+
+<section class="problem">
+	<div class="container">
+		<div class="problem-grid">
+			<div class="problem-text">
+				
+				<h2 class="h2">You can love each other and still feel lonely</h2>
+				<div class="problem-body">
+					<p>You can share a life and still feel like flatmates. You can be in the same bed and feel a kilometre apart. You can do everything right (the marriage counselling, the date nights, the weekly check-ins) and still wonder where the spark went. Where the laughter went. Where the bodies went.</p>
+					<p>We&#8217;re not going to fix you with one more communication tool.</p>
+					<p>We&#8217;re going to take you to the bottom of the world, out into the mountains, and remind you both of something you forgot: long-term love isn&#8217;t a slow fade. The deepest love is still ahead of you. You haven&#8217;t missed it. You&#8217;re just at the entrance to it.</p>
+				</div>
+			</div>
+			<div class="problem-img" role="img" aria-label="Couple at sunset on an empty road, looking forward together" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.20) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/06-couple-back-sunset-contemplative.jpg');"></div>
+		</div>
+	</div>
+</section>
+
+<section class="who">
+	<div class="container">
+		<div class="who-grid">
+			<div class="who-col">
+				<h3>This is for couples who:</h3>
+				<ul>
+					<li>Have been together 10+ years</li>
+					<li>Still love each other but feel disconnected</li>
+					<li>Want more than couples counselling has given them</li>
+					<li>Are willing to do honest, embodied work</li>
+					<li>Are open to adventure and movement as part of the work</li>
+				</ul>
+			</div>
+			<div class="who-col is-not">
+				<h3>This is not for couples who:</h3>
+				<ul>
+					<li>Are in active crisis (an affair just discovered, abuse, separation already in motion)</li>
+					<li>Need traditional weekly therapy (we offer that separately)</li>
+					<li>Aren&#8217;t both ready to engage</li>
+					<li>Want a holiday with light coaching on the side</li>
+				</ul>
+			</div>
+		</div>
+		<p class="who-note">If you&#8217;re in crisis, please book a couples therapy intake instead. The retreat is for couples who are ready to go deeper, not for couples in survival mode.</p>
+	</div>
+</section>
+
+<section class="pillars">
+	<div class="container">
+		<div class="pillars-head">
+			<h2 class="h2">What you&#8217;ll learn</h2>
+		</div>
+		<div class="pillars-grid">
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: couple in close conversation, soft window light]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.22) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/09-warm-intimate-portrait.jpg');"></div><div class="pillar-body"><span class="pillar-num">1</span><h3>EFT (Emotionally Focused Therapy)</h3><p>The gold standard of couples therapy, based on attachment science. We teach you to find the emotional cycle you keep getting stuck in, and how to step out of it together.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: couple from behind at sunset, intimate]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.22) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/06-couple-back-sunset-contemplative.jpg');"></div><div class="pillar-body"><span class="pillar-num">2</span><h3>Sex Therapy</h3><p>Tarisha is a trained sex therapist. We teach you that sex isn&#8217;t a bonus, it&#8217;s a barometer. The work happens in the bedroom too.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: couple standing close, sunset, polarity]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.22) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/06/sup-paddleboard-couple.jpg');"></div><div class="pillar-body"><span class="pillar-num">3</span><h3>Polarity</h3><p>The masculine and feminine charge between you isn&#8217;t outdated, it&#8217;s the engine of desire. When polarity dies, sex dies. When it returns, everything returns.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: warm intimate moment, hands or embrace]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.22) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/10-founders-beach-warm.jpg');"></div><div class="pillar-body"><span class="pillar-num">4</span><h3>Erotic Embodiment &#038; Tantra</h3><p>Bodies matter. Pleasure is medicine. The body knows things conversation can&#8217;t reach. We work somatically, not just verbally.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: alpine hike, mountain reflection]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.22) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/08-hike-mountain-reflection.jpg');"></div><div class="pillar-body"><span class="pillar-num">5</span><h3>Adventure</h3><p>Long-term love stays alive when you keep choosing each other into the unknown. We use NZ landscape, hiking, and shared challenge as part of the work, not the reward.</p></div></div>
+		</div>
+	</div>
+</section>
+
+<section class="itinerary">
+	<div class="container">
+		<div class="itinerary-head"><h2 class="h2">What six days in Wanaka actually look like</h2>
+		</div>
+		<div class="itinerary-list">
+			<div class="day"><div class="day-num">i.</div><div class="day-thumb" role="img" aria-label="Lake Tekapo, evening light" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/05-tekapo-lake-landscape.jpg');"></div><div class="day-body"><h3>Arrival</h3><p>Arrive Wanaka by mid-afternoon. Settle into the lodge. Welcome circle at 5pm with all six couples. Opening dinner. Early night.</p></div></div>
+			<div class="day"><div class="day-num">ii.</div><div class="day-thumb" role="img" aria-label="Alpine hike, mountain reflection" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/08-hike-mountain-reflection.jpg');"></div><div class="day-body"><h3>Coming Home</h3><p>Morning: somatic group work, attachment cycle mapping. Afternoon: moderate alpine hike (3 hours), couple integration walk. Evening: erotic embodiment introduction (clothed, somatic, safe).</p></div></div>
+			<div class="day"><div class="day-num">iii.</div><div class="day-thumb" role="img" aria-label="[PLACEHOLDER: lodge interior or therapy room shot]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/09-warm-intimate-portrait.jpg');"></div><div class="day-body"><h3>The Pattern</h3><p>Morning: deep dive into your specific relational dynamic, EFT-based. Afternoon: free time or private couples session with Tarisha. Evening: sex therapy group session, candid and held.</p></div></div>
+			<div class="day"><div class="day-num">iv.</div><div class="day-thumb" role="img" aria-label="[PLACEHOLDER: helicopter or remote-valley aerial]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/01-mtb-queenstown.jpg');"></div><div class="day-body"><h3>The Adventure</h3><p>Optional helicopter flight to Mount Aspiring National Park (weather dependent), or alpine hike with packed lunch. Afternoon: rest. Evening: polarity practice, shared meal at a new venue.</p></div></div>
+			<div class="day"><div class="day-num">v.</div><div class="day-thumb" role="img" aria-label="[PLACEHOLDER: somatic close-up, hands and breath]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/06-couple-back-sunset-contemplative.jpg');"></div><div class="day-body"><h3>Embodiment</h3><p>Morning: erotic embodiment and tantric practice (somatic, clothed, in couples). Afternoon: free time, optional private session with Tarisha. Evening: fireside circle, the stories you don&#8217;t tell anyone else.</p></div></div>
+			<div class="day"><div class="day-num">vi.</div><div class="day-thumb" role="img" aria-label="[PLACEHOLDER: closing circle or lodge breakfast]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/10-founders-beach-warm.jpg');"></div><div class="day-body"><h3>Integration and Closing</h3><p>Morning: integration circle, what&#039;s coming home with you. Closing ceremony. Lunch together. Departures from 2pm.</p></div></div>
+		</div>
+	</div>
+</section>
+<section class="wkgal2-section">
+	<div class="wkgal2-inner">
+		<div class="wkgal2-head">
+			<span class="wkgal2-eyebrow">The place</span>
+			<h2 class="wkgal2-h2">Wanaka. The lodge. The mountains. The table</h2>
+			<p class="wkgal2-sub">A few frames from where six days actually happens.</p>
+		</div>
+		<div class="wkgal2-grid">
+			<div class="wkgal2-item span-2x2" role="img" aria-label="[PLACEHOLDER: hero lodge exterior at golden hour, with the mountains behind]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/05-tekapo-lake-landscape.jpg');"></div>
+			<div class="wkgal2-item" role="img" aria-label="[PLACEHOLDER: lodge fireplace, warm interior]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/08-hike-mountain-reflection.jpg');"></div>
+			<div class="wkgal2-item" role="img" aria-label="[PLACEHOLDER: dinner table laid for six couples, candles]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/09-warm-intimate-portrait.jpg');"></div>
+			<div class="wkgal2-item span-2x1" role="img" aria-label="[PLACEHOLDER: alpine trail, two figures small in frame]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/01-mtb-queenstown.jpg');"></div>
+			<div class="wkgal2-item" role="img" aria-label="[PLACEHOLDER: helicopter on remote alpine landing pad]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/06-couple-back-sunset-contemplative.jpg');"></div>
+			<div class="wkgal2-item" role="img" aria-label="[PLACEHOLDER: private couples session, soft window light]" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.05) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/06/sup-paddleboard-couple.jpg');"></div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<section class="pricing">
+	<div class="container">
+		<div class="pricing-head">
+			<span class="eyebrow">What&#8217;s included</span>
+			<h2 class="h2">Everything in one investment</h2>
+		</div>
+		<div class="pricing-card">
+			<span class="eyebrow">Investment</span>
+			<h3>The Wanaka Adventure</h3>
+			<p class="sub">Six days. Six couples maximum. Wanaka, New Zealand.</p>
+			<div class="price-large">NZD $16,000</div>
+			<div class="price-secondary">USD $9,500 &middot; per couple</div>
+			<p class="price-note">Let&#8217;s talk first to make sure it&#8217;s the right fit.</p>
+			<hr class="rule"/>
+			<ul>
+				<li>5 nights luxury lodge accommodation (private room with ensuite)</li>
+				<li>All meals, prepared by chef from local NZ produce; dietary requirements catered for</li>
+				<li>Full retreat curriculum led by Tarisha and Mark</li>
+				<li>Two private 90 minute couples sessions during the retreat (with Tarisha)</li>
+				<li>Daily group work, somatic practice, and partner exercises</li>
+				<li>Two guided alpine hikes (full safety briefing, all gear provided if needed)</li>
+				<li>One half-day adventure outing (helicopter flight to remote location, weather dependent)</li>
+				<li>Closing ceremony and integration session</li>
+				<li>Post-retreat 30 day group voice channel for ongoing integration</li>
+				<li>One private follow-up couples session within 60 days (online)</li>
+			</ul>
+			<span class="not-incl">Not included</span>
+			<ul>
+				<li>Flights to Queenstown (closest airport)</li>
+				<li>Travel insurance (required, please arrange separately)</li>
+				<li>Optional individual add-ons (massage, individual sessions)</li>
+			</ul>
+			<div class="cta-wrap"><a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Apply for the next retreat</a></div>
+		</div>
+	</div>
+</section>
+
+<section class="founders">
+	<div class="founders-inner">
+		<div class="founders-photo" role="img" aria-label="Tarisha and Mark"></div>
+		<div class="founders-text">
+			<span class="eyebrow">Tarisha and Mark</span>
+			<h2>Couples therapy and adventure retreats</h2>
+			<p>Tarisha is a trained relationship and sex therapist with over a decade of clinical practice. Her training includes Emotionally Focused Therapy for Couples (EFT), Hakomi somatic psychotherapy, Gottman couples therapy, somatic trauma work, sex therapy, tantra, and biodynamic breathwork facilitation. She has a Master&#8217;s in Counselling and a postgraduate degree in psychotherapy, and is registered with the New Zealand Association of Counsellors. In a past life she was a chartered accountant, before she found her real work.</p>
+			<p>Mark co-leads retreats and brings the embodied, masculine grounding to the work. Twenty years as an IT project manager gives him the operational mind that keeps the behind-the-scenes machine well oiled. He&#8217;s also the founder of Wild Sky Coffee, designing coffee gear for the outdoors. His own deep work runs through men&#8217;s work, polarity, breathwork, and tantric training. On retreat, he holds the men in the room. The harder parts. The places that need a man to look another man in the eye and say <em>I see you. Keep going.</em></p><p>They live and work together in Auckland, NZ. Together they love mountain biking, swimming through the winter, and dancing salsa and bachata.</p>
+			<a href="/about" class="arrow-link">Read more about us &nbsp;→</a>
+		</div>
+	</div>
+</section>
+
+<section class="testimonials">
+	<div class="container">
+		<div class="testimonials-head">
+			<span class="eyebrow is-light">What couples say</span>
+			<h2 class="h2">From couples who&#8217;ve done this work</h2>
+			<p class="testimonials-note">From couples I&#8217;ve worked with in private practice. The retreat launches in 2026.</p>
+		</div>
+		<div class="quotes">
+			<div class="quote"><blockquote>&#8220;We came in flatmates after 22 years. We left lovers. Not because of one breakthrough conversation, but because they showed us how to keep choosing each other every day.&#8221;</blockquote><div class="attr">K + S &middot; Auckland</div></div>
+			<div class="quote"><blockquote>&#8220;I didn&#8217;t know how much I&#8217;d been bracing. The work moved through my body, not just my head. Something in me let go that hadn&#8217;t let go in a decade.&#8221;</blockquote><div class="attr">M + J &middot; Wellington</div></div>
+			<div class="quote"><blockquote>&#8220;What sold us was that nothing about it felt soft. Tarisha is clinical, direct, and warm. We got real work done. We also laughed more than we have in years.&#8221;</blockquote><div class="attr">A + D &middot; Sydney</div></div>
+		</div>
+	</div>
+</section>
+
+<section class="faq">
+	<div class="container">
+		<div class="faq-head">
+			<span class="eyebrow">Questions</span>
+			<h2 class="h2">Frequently asked</h2>
+		</div>
+		<div class="faq-list">
+			<details><summary>How is this different from a regular couples retreat?</summary><p>Most couples retreats either do therapy in a hotel ballroom, or they take you on adventure trips with light &#8220;communication&#8221; thrown in. The Love Adventure puts the two together on purpose. The trail is part of the work. The therapy room is part of the adventure. They are not separate.</p></details>
+			<details><summary>Is this only for couples who are struggling?</summary><p>No. We work with couples in crisis (referred to therapy first), couples who feel disconnected, and couples who are loving life and want to go deeper. The retreat is for the second and third categories.</p></details>
+			<details><summary>Do we have to be physically fit?</summary><p>The hikes are moderate, around 3 hours, with elevation gain but nothing technical. If you can walk for 90 minutes on undulating terrain, you can do this. We adjust pace to the group.</p></details>
+			<details><summary>What if my partner isn&#8217;t ready?</summary><p>This retreat needs both partners 80%+ in. If one of you is being dragged, please don&#8217;t book yet. Tarisha offers a women&#8217;s solo course (SERW) for the partner who&#8217;s ready to do the work first.</p></details>
+			<details><summary>What if I&#8217;m not into &#8220;spiritual&#8221; stuff?</summary><p>This isn&#8217;t a spiritual retreat. There&#8217;s no chanting, no plant medicine, no woo. It&#8217;s clinical therapy + somatic practice + adventure, in beautiful surroundings. If you&#8217;re allergic to wellness culture, you&#8217;re our person.</p></details>
+			<details><summary>What about food and dietary requirements?</summary><p>All meals included. All dietary requirements catered for. Tell us when you book.</p></details>
+			<details><summary>What if we get there and it&#8217;s not for us?</summary><p>Refund policy: cancellation more than four months before the retreat: full refund less a NZ$500 administration fee. Two to four months out: 50% refund. Less than two months out: no refund, but we&#8217;ll work with you in good faith on a credit toward another retreat.</p></details>
+			<details><summary>Is travel insurance required?</summary><p>Yes. We require travel insurance for all participants, including cancellation cover, medical, and adventure activity coverage.</p></details>
+		</div>
+	</div>
+</section>
+
+<section class="final-cta">
+	<div class="container">
+		<h2 class="h2">The deepest love is still ahead of you</h2>
+		<p>Six couples per retreat. Three retreats per year. Apply now to be considered for the next intake.</p>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Apply for the next retreat</a>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col">
+				<h4>Stay close</h4>
+				<form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" placeholder="your@email.com" aria-label="Email">
+					<button type="submit" aria-label="Subscribe">→</button>
+				</form>
+				<div class="socials">
+					<a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+					<a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a>
+					<a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<span>© 2026 The Love Adventure</span>
+			<div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+		</div>
+	</div>
+</footer>
+
+</div>

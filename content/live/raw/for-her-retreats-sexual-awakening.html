@@ -1,0 +1,232 @@
+
+<style>
+.tla-saw, .tla-saw * { box-sizing: border-box; }
+.tla-saw { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.65; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-saw img { max-width: 100%; display: block; }
+.tla-saw a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-saw .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-saw .container-narrow { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.tla-saw section { padding: 96px 0; }
+.tla-saw h1, .tla-saw h2, .tla-saw h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-saw .h1 { font-size: clamp(48px, 7vw, 80px); line-height: 1.04; letter-spacing: -0.015em; }
+.tla-saw .h2 { font-size: clamp(32px, 4.5vw, 50px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-saw .h3 { font-size: clamp(22px, 2.8vw, 28px); line-height: 1.2; }
+.tla-saw .eyebrow { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #9E4A2A; display: block; margin-bottom: 24px; }
+.tla-saw .eyebrow.is-light { color: #C9A07C; }
+.tla-saw .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-saw .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+.tla-saw .btn-ghost { display: inline-block; border: 1px solid #C9A07C; color: #FBF7EE; padding: 14px 28px; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; transition: background 0.3s ease, color 0.3s ease; }
+.tla-saw .btn-ghost:hover { background: #C9A07C; color: #15110D; }
+
+.tla-saw .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-saw .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-saw .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-saw .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-saw .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-saw .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-saw .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-saw .footer { background: radial-gradient(ellipse at 15% 30%, rgba(199, 93, 61, 0.10) 0%, transparent 50%), radial-gradient(ellipse at 85% 70%, rgba(184, 148, 90, 0.08) 0%, transparent 55%), linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184, 148, 90, 0.15); position: relative; overflow: hidden; }
+.tla-saw .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; margin-bottom: 64px; }
+.tla-saw .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A07C; margin-bottom: 22px; }
+.tla-saw .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-saw .footer-col li { margin-bottom: 12px; }
+.tla-saw .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-saw .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-saw .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-saw .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-saw .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-saw .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-saw .socials { display: flex; gap: 16px; }
+.tla-saw .socials a { width: 36px; height: 36px; border: 1px solid rgba(184, 148, 90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #C9A07C; transition: background 0.3s ease, color 0.3s ease; }
+.tla-saw .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-saw .footer-bottom { border-top: 1px solid rgba(184, 148, 90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-saw .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-saw .footer-bottom a:hover { color: #B8945A; }
+.tla-saw .footer-bottom-links { display: flex; gap: 24px; }
+
+@media (max-width: 768px) {
+	.tla-saw { font-size: 16px; }
+	.tla-saw section { padding: 72px 0; }
+	.tla-saw .container, .tla-saw .container-narrow { padding: 0 24px; }
+	.tla-saw .nav-menu { display: none; }
+	.tla-saw .nav .btn { padding: 10px 18px; }
+	.tla-saw .footer { padding: 64px 0 32px; }
+	.tla-saw .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-saw .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-saw .footer-grid { grid-template-columns: 1fr; }
+	.tla-saw .nav-inner { gap: 12px; }
+	.tla-saw .logo { font-size: 18px; }
+}
+
+.tla-saw .hero { position: relative; min-height: 700px; display: flex; align-items: center; padding: 160px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.40) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.32) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/05/08-hike-mountain-reflection.jpg'); background-size: cover; background-position: center; color: #FBF7EE; }
+.tla-saw .hero-content { max-width: 880px; }
+.tla-saw .hero .eyebrow { color: #B8945A; }
+.tla-saw .hero h1 { color: #FBF7EE; margin-bottom: 24px; }
+.tla-saw .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin-bottom: 44px; max-width: 640px; line-height: 1.4; }
+.tla-saw .hero-ctas { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.tla-saw .hero-link { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: #F5EFE3; text-decoration: underline; text-underline-offset: 6px; }
+.tla-saw .hero-link:hover { color: #B8945A; }
+@media (max-width: 768px) { .tla-saw .hero { padding: 130px 0 70px; min-height: 580px; } .tla-saw .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; } }
+.tla-saw .final-cta { background: radial-gradient(ellipse at 30% 25%, rgba(184, 148, 90, 0.32) 0%, transparent 55%), radial-gradient(ellipse at 75% 75%, rgba(199, 93, 61, 0.20) 0%, transparent 60%), linear-gradient(135deg, #2A211A 0%, #15110D 60%, #0A0807 100%); text-align: center; color: #FBF7EE; padding: 130px 0; position: relative; overflow: hidden; }
+.tla-saw .final-cta h2 { color: #FBF7EE; margin-bottom: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-saw .final-cta p { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 22px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 36px; line-height: 1.5; }.tla-saw .body { background: #F5EFE3; }
+.tla-saw .body h2 { color: #15110D; margin-bottom: 24px; text-align: center; max-width: 720px; margin-left: auto; margin-right: auto; }
+.tla-saw .body .eyebrow { text-align: center; }
+.tla-saw .body p { color: #2A2520; opacity: 0.88; font-size: 18px; line-height: 1.75; margin-bottom: 22px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.tla-saw .pricing { background: #FBF7EE; }
+.tla-saw .pricing-card { max-width: 640px; margin: 0 auto; background: #F5EFE3; border: 1px solid #B8945A; border-radius: 6px; padding: 56px 40px; text-align: center; }
+.tla-saw .pricing-card .price { font-family: 'Marcellus', serif; font-size: 48px; color: #15110D; line-height: 1; margin: 16px 0 4px; }
+.tla-saw .pricing-card .price-sub { font-family: 'Lora', serif; font-style: italic; font-size: 16px; color: #5D6B3F; margin-bottom: 28px; }
+.tla-saw .pricing-card ul { list-style: none; padding: 0; text-align: left; max-width: 460px; margin: 24px auto 32px; }
+.tla-saw .pricing-card li { padding-left: 22px; position: relative; margin-bottom: 10px; line-height: 1.55; }
+.tla-saw .pricing-card li::before { content: '▸'; position: absolute; left: 0; color: #C75D3D; }
+
+/* tight-heading-tla-saw */
+.tla-saw .eyebrow { margin-bottom: 10px !important; }
+.tla-saw section .eyebrow { margin-bottom: 10px !important; }
+.tla-saw .hero h1, .tla-saw .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-saw section h2 { margin-bottom: 16px !important; }
+</style>
+<div class="tla-saw">
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/retreats/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">Women&#8217;s retreat &middot; 30 Oct – 1 Nov 2026</span>
+		<h1 class="h1">Sexual Awakening for Women</h1>
+		<p class="hero-tagline">Expand your erotic feminine power. Three days at Aio Wira Centre, Auckland.</p>
+		<div class="hero-ctas">
+			<a href="https://tarishatourok.thrivecart.com/retreat2026/" class="btn">Book your spot</a>
+		</div>
+	</div>
+</section><section class="body">
+	<div class="container">
+		<span class="eyebrow">What it is</span>
+		<h2 class="h2">Three days. Sixteen women. A held container for the work</h2>
+		<p>Friday 12pm to Sunday 5pm. At Aio Wira Centre, near Bethells Beach, Auckland. Communal meals, shared accommodation, spa and sauna access.</p>
+		<p>Across the three days we move through seven embodied practices, the five erotic flavours of feminine expression, releasing shame and good-girl conditioning, and developing the magnetic feminine presence that brings desire back online.</p>
+		<p>Open to both partnered women (who want to bring more home to their relationship) and single women (who want to come home to themselves first).</p>
+	</div>
+</section>
+
+
+<section class="body">
+	<div class="container">
+		<span class="eyebrow">Who it&#8217;s for</span>
+		<h2 class="h2">For the woman who knows there&#8217;s more</h2>
+		<p>You&#8217;ve built the life. The kids, the career, the home, the long-term relationship. And somewhere in the middle of it all, your desire faded. Sex became a task on the list, or it stopped happening at all. Your body feels far away. You catch yourself wondering if this is just what midlife looks like.</p>
+		<p>It isn&#8217;t. This retreat is for you if you loved sex once and you want to find your way back to her. If you&#8217;re in a long-term relationship that&#8217;s gone roommate, and you want to bring the heat back without forcing it. If you&#8217;re single after a long marriage, and you want to meet your sexuality on your own terms before anyone else gets close. If you&#8217;ve never really felt at home in your body, and you&#8217;re ready to stop waiting. If you&#8217;ve done the therapy, read the books, and you know it&#8217;s time to drop out of your head and into your body.</p>
+	</div>
+</section>
+
+<section class="body" style="background:#FBF7EE">
+	<div class="container">
+		<span class="eyebrow">What we&#8217;ll do</span>
+		<h2 class="h2">Three days, mapped</h2>
+		<p style="text-align:center;font-style:italic;margin-bottom:48px">This isn&#8217;t a workshop where you sit in a circle and process for three days. This is embodied work. You&#8217;ll move, breathe, dance, lie down, get curious, get uncomfortable, get free.</p>
+		<h3 class="h3" style="color:#9E4A2A;margin-top:32px;margin-bottom:12px;text-align:center">Friday — Arrival and the Sexual Desire Matrix</h3>
+		<p>You&#8217;ll arrive midday. Settle into your room at Aio Wira, walk the bush track, breathe in eucalyptus and stillness. We open the circle in the afternoon with a slow welcome.</p>
+		<p>Friday evening, we map the Sexual Desire Matrix together. This is my original framework for what shapes female desire. We look at the ten factors that switch your aliveness on or off: environment, life stage, body love, self-intimacy, erotic voice, intimate resonance, playful exploration, and more. By the end of the night, you&#8217;ll know exactly which two are the high-leverage ones for you to work with this weekend.</p>
+		<h3 class="h3" style="color:#9E4A2A;margin-top:48px;margin-bottom:12px;text-align:center">Saturday — Seven embodied practices</h3>
+		<p>Saturday is the deep day. We move through seven embodied practices drawn from my book Deeply In Love Again. Body appreciation. Erotic voice. Conscious sensual touch with yourself. Breathing into your yoni. Receiving like a queen. Moving like you mean it. The gratitude whisper.</p>
+		<p>Each practice is taught, then practiced, then integrated. We pause to share. We laugh. Some moments will be tender, some electric. All of it is yours.</p>
+		<p>In the afternoon, we work with the five erotic flavours, the different temperaments of female desire and what your particular body is asking for. Most women have never named theirs. You&#8217;ll leave the day knowing yours.</p>
+		<h3 class="h3" style="color:#9E4A2A;margin-top:48px;margin-bottom:12px;text-align:center">Sunday — Your Personal Desire Map</h3>
+		<p>Sunday morning, you&#8217;ll build your Personal Desire Map. A practical, written, takeable-home plan for what changes when you go back to your life. Which practices to keep, which conversations to have with your partner, which permissions to give yourself.</p>
+		<p>We close at 5pm with hugs and a clear next step.</p>
+	</div>
+</section>
+
+<section class="body">
+	<div class="container">
+		<span class="eyebrow">About your teacher</span>
+		<h2 class="h2">Tarisha Tourok</h2>
+		<p>I&#8217;m a Sexual Empowerment Educator and the author of <em>Deeply In Love Again</em>. I trained with John Gottman, Sue Johnson, Tony Robbins, Alison Armstrong and Cloe Madanes. I hold two postgraduate degrees in psychotherapy and counselling, with master&#8217;s research on the power of group work for women&#8217;s sexual empowerment. My work sits at the intersection of Emotionally Focused Therapy, sex therapy and tantric practice.</p>
+		<p>I host the <a href="/podcast" style="color:#9E4A2A;text-decoration:underline">Sexual Empowerment for Women podcast</a>. I help women come home to their bodies, reclaim eros, and build relationships they actually want. This retreat is the work I most love to do, in the small group format where it lands deepest.</p>
+	</div>
+</section>
+
+<section class="body" style="background:#FBF7EE">
+	<div class="container">
+		<span class="eyebrow">Questions</span>
+		<h2 class="h2">Frequently asked</h2>
+		<h3 class="h3" style="color:#15110D;margin-top:32px;margin-bottom:8px;font-size:22px;text-align:center">Do I need a partner for this?</h3>
+		<p>No. This is a women-only retreat and all the practices are with yourself. Many women come single, separated, or while their partner stays home. What you build here is yours.</p>
+		<h3 class="h3" style="color:#15110D;margin-top:32px;margin-bottom:8px;font-size:22px;text-align:center">Is there nudity?</h3>
+		<p>No. Everything is fully clothed. Some practices invite you to place a hand on your belly or yoni through your clothes, but you&#8217;re never asked to undress.</p>
+		<h3 class="h3" style="color:#15110D;margin-top:32px;margin-bottom:8px;font-size:22px;text-align:center">I&#8217;ve never done anything like this. Will I fit in?</h3>
+		<p>Yes. Every retreat has women who&#8217;ve done years of this work and women who&#8217;ve never sat in a circle before. The room equalises fast. Your willingness to show up is the only qualification.</p>
+		<h3 class="h3" style="color:#15110D;margin-top:32px;margin-bottom:8px;font-size:22px;text-align:center">What about food?</h3>
+		<p>All meals are included and beautiful. Tell us your dietary needs when you book.</p>
+		<h3 class="h3" style="color:#15110D;margin-top:32px;margin-bottom:8px;font-size:22px;text-align:center">What if I can&#8217;t pay it all at once?</h3>
+		<p>The six-payment plan is for you. NZD $197 a month for six months, starting at booking.</p>
+		<h3 class="h3" style="color:#15110D;margin-top:32px;margin-bottom:8px;font-size:22px;text-align:center">Room arrangements?</h3>
+		<p>Aio Wira has shared accommodation. If you need a private room, contact us. Limited availability, additional cost.</p>
+	</div>
+</section>
+
+<section class="pricing">
+	<div class="container">
+		<div class="pricing-card">
+			<span class="eyebrow">Investment</span>
+			<h3 style="font-family:Marcellus,serif;font-size:28px;color:#15110D;margin-bottom:8px">Sexual Awakening for Women</h3>
+			<div class="price">NZD $997</div>
+			<div class="price-sub">Or 6 monthly payments of NZD $197 &middot; NZ$197 deposit non-refundable</div>
+			<ul>
+				<li>3-day retreat at Aio Wira Centre</li>
+				<li>All meals (breakfast, lunch, dinner, communal)</li>
+				<li>Shared accommodation</li>
+				<li>Spa and sauna access</li>
+				<li>Limited to 16 women per intake</li>
+			</ul>
+			<a href="https://tarishatourok.thrivecart.com/retreat2026/" class="btn">Book your spot</a>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+			<div class="footer-col"><h4>Together</h4><ul><li><a href="/together/therapy">Therapy</a></li><li><a href="/together/intensives">Intensives</a></li><li><a href="/together/retreats/wanaka">Wanaka retreat</a></li></ul></div>
+			<div class="footer-col"><h4>For Her</h4><ul><li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li><li><a href="/for-her/therapy">1:1 therapy</a></li></ul></div>
+			<div class="footer-col"><h4>About</h4><ul><li><a href="/about">About us</a></li><li><a href="/podcast">Podcast</a></li><li><a href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div>
+			<div class="footer-col"><h4>Stay close</h4><form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" name="email" placeholder="your@email.com" aria-label="Email" required><button type="submit" aria-label="Subscribe">→</button></form><div class="socials"><a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a><a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a></div></div>
+		</div>
+		<div class="footer-bottom"><span>© 2026 The Love Adventure</span><div class="footer-bottom-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div>
+	</div>
+</footer>
+</div>

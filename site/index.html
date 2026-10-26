@@ -332,8 +332,14 @@ em{font-style:italic}
   border-bottom:1px solid var(--rule);
   padding-block:clamp(2.75rem,6vw,4.25rem);
 }
-.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s6) var(--s4)}
-@media (min-width:840px){.stats-grid{grid-template-columns:repeat(4,1fr);gap:var(--s4)}}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5) var(--s4)}
+/* Three stats, so the last one spans the two mobile columns rather than
+   sitting orphaned in the left one. */
+.stats-grid .stat:last-child{grid-column:1 / -1}
+@media (min-width:840px){
+  .stats-grid{grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+  .stats-grid .stat:last-child{grid-column:auto}
+}
 .stat{display:flex;flex-direction:column;gap:.35rem;text-align:center;padding-inline:var(--s3)}
 @media (min-width:840px){
   .stat + .stat{border-left:1px solid var(--rule)}
@@ -634,11 +640,6 @@ em{font-style:italic}
     <div class="stat">
       <span class="stat-num">2</span>
       <span class="stat-label">Therapists in the room</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">4.9<svg viewBox="0 0 20 19" fill="currentColor" aria-hidden="true"
-        ><path d="M10 0l2.9 6.1 6.6.9-4.8 4.7 1.2 6.7L10 15.2 4.1 18.4l1.2-6.7L.5 7l6.6-.9L10 0Z"/></svg></span>
-      <span class="stat-label">Average retreat rating</span>
     </div>
   </div>
 </section>
@@ -1070,7 +1071,7 @@ em{font-style:italic}
           <li>Letters on love, desire and the long haul. Once a fortnight.</li>
         </ul>
         <div class="socials" style="margin-top:1rem">
-          <a href="#" aria-label="Instagram">
+          <a href="https://instagram.com/tarishatourok" aria-label="Instagram">
             <svg width="17" height="17" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <rect x="1.4" y="1.4" width="15.2" height="15.2" rx="4.6"
                     stroke="currentColor" stroke-width="1.3"/>
@@ -1078,7 +1079,7 @@ em{font-style:italic}
               <circle cx="13.5" cy="4.5" r="1" fill="currentColor"/>
             </svg>
           </a>
-          <a href="#" aria-label="TikTok">
+          <a href="https://tiktok.com/@tarishatourok" aria-label="TikTok">
             <svg width="17" height="17" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path d="M10.6 1.5v9.6a2.9 2.9 0 1 1-2.4-2.85" stroke="currentColor"
                     stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1086,7 +1087,7 @@ em{font-style:italic}
                     stroke-width="1.3" stroke-linecap="round"/>
             </svg>
           </a>
-          <a href="#" aria-label="YouTube">
+          <a href="https://youtube.com/@tarishatourok" aria-label="YouTube">
             <svg width="17" height="17" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <rect x="1" y="3.8" width="16" height="10.4" rx="3.2"
                     stroke="currentColor" stroke-width="1.3"/>
@@ -1099,7 +1100,7 @@ em{font-style:italic}
 
     <div class="footer-note">
       <span>&copy; 2026 The Love Adventure. Auckland, Aotearoa New Zealand.</span>
-      <span><a href="#">Privacy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span>
+      <span><a href="/privacy">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms">Terms</a></span>
     </div>
   </div>
 </footer>

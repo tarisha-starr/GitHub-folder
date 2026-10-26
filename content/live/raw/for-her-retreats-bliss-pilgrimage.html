@@ -1,0 +1,100 @@
+
+<style>
+.tla-bp, .tla-bp * { box-sizing: border-box; }
+.tla-bp { font-family: 'Lora', Georgia, serif; font-size: 17px; line-height: 1.7; color: #2A2520; background: #F5EFE3; -webkit-font-smoothing: antialiased; }
+.tla-bp a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-bp .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-bp .container-narrow { max-width: 720px; margin: 0 auto; padding: 0 32px; }
+.tla-bp h1, .tla-bp h2 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-bp .h1 { font-size: clamp(56px, 9vw, 110px); line-height: 1.0; letter-spacing: -0.018em; }
+.tla-bp .eyebrow { font-family: 'Lora', serif; font-weight: 700; font-size: 14px; letter-spacing: 0.32em; text-transform: uppercase; color: #9E4A2A; display: inline-block; margin-bottom: 28px; }
+.tla-bp .eyebrow.is-light { color: #C9A07C; }
+.tla-bp .btn { display: inline-block; background: #C75D3D; color: #FBF7EE; font-family: 'Lora', serif; font-weight: 600; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer; transition: background 0.3s ease, transform 0.3s ease; }
+.tla-bp .btn:hover { background: #9E4A2A; transform: translateY(-1px); }
+
+.tla-bp .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-bp .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-bp .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-bp .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-bp .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; }
+.tla-bp .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-bp .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+.tla-bp .hero { position: relative; min-height: 720px; display: flex; align-items: center; padding: 180px 0 100px; overflow: hidden; background-image: linear-gradient(180deg, rgba(15,17,13,0.50) 0%, rgba(15,17,13,0.85) 100%), radial-gradient(ellipse at 30% 20%, rgba(199, 93, 61, 0.30) 0%, transparent 50%), radial-gradient(ellipse at 75% 70%, rgba(184, 148, 90, 0.22) 0%, transparent 55%), url('https://theloveadventure.com/wp-content/uploads/2026/05/05-tekapo-lake-landscape.jpg'); background-size: cover; background-position: center; color: #FBF7EE; text-align: center; }
+.tla-bp .hero-content { max-width: 880px; margin: 0 auto; text-align: center; }
+.tla-bp .hero .eyebrow { color: #B8945A; font-size: 16px; letter-spacing: 0.34em; }
+.tla-bp .hero h1 { color: #FBF7EE; margin-bottom: 28px; }
+.tla-bp .hero-tagline { font-family: 'Lora', serif; font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92; margin: 0 auto 36px; max-width: 640px; line-height: 1.5; }
+
+.tla-bp .body { background: #F5EFE3; padding: 120px 0; text-align: center; }
+.tla-bp .body p { color: #2A2520; opacity: 0.9; font-size: 19px; line-height: 1.8; margin-bottom: 24px; max-width: 620px; margin-left: auto; margin-right: auto; }
+.tla-bp .body p.italic { font-family: 'Lora', serif; font-style: italic; color: #5D6B3F; }
+.tla-bp .body .cta-wrap { margin-top: 40px; }
+
+.tla-bp .footer { background: linear-gradient(180deg, #15110D 0%, #0A0807 100%); color: #F5EFE3; padding: 72px 0 32px; }
+.tla-bp .footer-bottom { text-align: center; font-size: 13px; color: rgba(245,239,227,0.55); }
+.tla-bp .footer-bottom a { color: rgba(245,239,227,0.6); margin: 0 12px; }
+.tla-bp .footer-bottom a:hover { color: #B8945A; }
+
+@media (max-width: 768px) {
+	.tla-bp { font-size: 16px; }
+	.tla-bp .container, .tla-bp .container-narrow { padding: 0 24px; }
+	.tla-bp .nav-menu { display: none; }
+	.tla-bp .hero { padding: 140px 0 80px; min-height: 600px; }
+	.tla-bp .hero h1 { font-size: clamp(40px, 12vw, 60px); }
+	.tla-bp .body { padding: 80px 0; }
+}
+</style>
+
+<div class="tla-bp">
+
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<nav>
+			<ul class="nav-menu">
+				<li><a href="/together">Together</a></li>
+				<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">Women&#8217;s retreat &middot; 12-15 March 2026</span>
+		<h1 class="h1">The Bliss Pilgrimage</h1>
+		<p class="hero-tagline">Four days on Lake Tarawera. The deepest and most pleasure-led retreat in the calendar.</p>
+		<a href="https://sexualempowermentforwomen.com/pilgrimage" target="_blank" rel="noopener" class="btn">See full details &amp; book</a>
+	</div>
+</section>
+
+<section class="body">
+	<div class="container-narrow">
+		<span class="eyebrow">About the pilgrimage</span>
+		<p>The Bliss Pilgrimage is a four-day women-only retreat at Lake Tarawera, Rotorua. The lake itself is medicine. The pilgrimage is a yearly commitment to slowing down, going inwards, and remembering pleasure as a direct route to wisdom.</p>
+		<p class="italic">Full details, dates, pricing, and booking on the original event page.</p>
+		<div class="cta-wrap">
+			<a href="https://sexualempowermentforwomen.com/pilgrimage" target="_blank" rel="noopener" class="btn">Open the Bliss Pilgrimage page</a>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-bottom">
+			<span>© 2026 The Love Adventure</span>
+			&nbsp;&middot;&nbsp;
+			<a href="/for-her/retreats">All women&#8217;s retreats</a>
+			&nbsp;&middot;&nbsp;
+			<a href="/privacy">Privacy</a>
+			<a href="/terms">Terms</a>
+		</div>
+	</div>
+</footer>
+
+</div>

@@ -1,0 +1,471 @@
+
+<style>
+/* ===== The Love Adventure homepage (mockup) — scoped to .tla-home ===== */
+.tla-home, .tla-home * { box-sizing: border-box; }
+.tla-home {
+	font-family: 'Lora', Georgia, serif;
+	font-size: 17px; line-height: 1.65;
+	color: #2A2520;
+	background: #F5EFE3;
+	-webkit-font-smoothing: antialiased;
+}
+.tla-home img { max-width: 100%; display: block; }
+.tla-home a { color: inherit; text-decoration: none; transition: color 0.3s ease; }
+.tla-home .container { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+.tla-home section { padding: 96px 0; }
+.tla-home h1, .tla-home h2, .tla-home h3 { font-family: 'Marcellus', serif; font-weight: 400; }
+.tla-home .h1 { font-size: clamp(48px, 7vw, 84px); line-height: 1; letter-spacing: -0.015em; }
+.tla-home .h2 { font-size: clamp(32px, 4.5vw, 48px); line-height: 1.1; letter-spacing: -0.01em; }
+.tla-home .h3 { font-size: clamp(24px, 3.5vw, 32px); line-height: 1.2; }
+.tla-home .eyebrow {
+	font-family: 'Lora', serif; font-weight: 600; font-size: 11px;
+	letter-spacing: 0.3em; text-transform: uppercase; color: #C75D3D;
+	display: block; margin-bottom: 24px;
+}
+.tla-home .italic-accent { font-family: 'Lora', Georgia, serif; font-style: italic; font-weight: 400; }
+.tla-home .btn {
+	display: inline-block; background: #C75D3D; color: #FBF7EE;
+	font-family: 'Lora', serif; font-weight: 600; font-size: 13px;
+	letter-spacing: 0.18em; text-transform: uppercase;
+	padding: 16px 32px; border-radius: 2px; border: none; cursor: pointer;
+	transition: background 0.3s ease, transform 0.3s ease;
+}
+.tla-home .btn:hover { background: #C75D3D; }
+.tla-home .link-arrow {
+	font-family: 'Lora', serif; font-weight: 600; font-size: 14px;
+	letter-spacing: 0.05em; color: #C75D3D;
+	display: inline-flex; align-items: center; gap: 8px;
+	transition: gap 0.3s ease, color 0.3s ease;
+}
+.tla-home .link-arrow:hover { gap: 14px; color: #C75D3D; }
+
+/* NAV */
+.tla-home .nav { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 28px 0; }
+.tla-home .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.tla-home .logo { font-family: 'Marcellus', serif; font-size: 22px; color: #F5EFE3; letter-spacing: 0.02em; }
+.tla-home .nav-menu { display: flex; gap: 36px; list-style: none; padding: 0; margin: 0; }
+.tla-home .nav-menu a { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; color: #F5EFE3; opacity: 0.88; letter-spacing: 0.04em; transition: opacity 0.3s ease; }
+.tla-home .nav-menu a:hover { opacity: 1; color: #B8945A; }
+.tla-home .nav .btn { padding: 12px 24px; font-size: 12px; }
+
+/* HERO */
+.tla-home .hero {
+	position: relative; min-height: 720px;
+	display: flex; align-items: center; padding: 140px 0 80px;
+	background:
+		linear-gradient(90deg, rgba(10,8,7,0.78) 0%, rgba(10,8,7,0.55) 45%, rgba(10,8,7,0.20) 100%),
+		linear-gradient(180deg, rgba(15,17,13,0.30) 0%, rgba(15,17,13,0.55) 100%),
+		url('https://theloveadventure.com/wp-content/uploads/2026/06/homepage-headline-wide-final.png'),
+		linear-gradient(135deg, #15110D 0%, #15110D 60%, #15110D 100%);
+	background-size: cover, cover, cover, cover;
+	background-position: center, center, center 30%, center;
+	background-repeat: no-repeat;
+	color: #FBF7EE; overflow: hidden;
+}
+.tla-home .hero-content { max-width: 880px; }
+.tla-home .hero .eyebrow { color: #B8945A; margin-bottom: 32px; }
+.tla-home .hero h1 { color: #FBF7EE; margin-bottom: 28px; }
+.tla-home .hero-tagline { font-style: normal !important;
+	font-family: 'Lora', Georgia, serif; font-style: italic;
+	font-size: clamp(20px, 2.4vw, 28px); color: #F5EFE3; opacity: 0.92;
+	margin-bottom: 48px; max-width: 640px; line-height: 1.4;
+}
+.tla-home .hero-ctas { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+.tla-home .hero-link { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; color: #F5EFE3; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.tla-home .hero-link:hover { color: #B8945A; }
+
+/* INTRO */
+.tla-home .intro { background: #F5EFE3; text-align: center; }
+.tla-home .intro h2 { color: #15110D; max-width: 900px; margin: 0 auto 48px; }
+.tla-home .intro-body { max-width: 720px; margin: 0 auto; color: #2A2520; opacity: 0.85; }
+.tla-home .intro-body p + p { margin-top: 22px; }
+
+/* PILLARS */
+.tla-home .pillars {
+		background-image:
+			linear-gradient(180deg, rgba(10,8,7,0.86) 0%, rgba(10,8,7,0.92) 100%),
+			radial-gradient(ellipse at 20% 15%, rgba(199,93,61, 0.30) 0%, transparent 55%),
+			radial-gradient(ellipse at 80% 85%, rgba(184,148,90, 0.22) 0%, transparent 60%),
+			url('https://theloveadventure.com/wp-content/uploads/2026/05/08-hike-mountain-reflection.jpg');
+		background-size: cover; background-position: center; background-attachment: fixed;
+		color: #FBF7EE; position: relative; overflow: hidden;
+	}
+.tla-home .pillars-head { text-align: center; margin-bottom: 72px; max-width: 760px; margin-left: auto; margin-right: auto; }
+.tla-home .pillars h2 { color: #FBF7EE; }
+.tla-home .pillars-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 36px 32px; }
+.tla-home .pillars-grid > .pillar-card { grid-column: span 2; }
+.tla-home .pillars-grid > .pillar-card:nth-child(4) { grid-column: 2 / span 2; }
+.tla-home .pillars-grid > .pillar-card:nth-child(5) { grid-column: 4 / span 2; }
+.tla-home .pillar-card { display: flex; flex-direction: column; background: rgba(255,250,240,0.04); border: 1px solid rgba(184,148,90,0.18); border-radius: 6px; overflow: hidden; transition: transform 0.55s cubic-bezier(.2,.8,.2,1), box-shadow 0.55s cubic-bezier(.2,.8,.2,1), border-color 0.4s ease; will-change: transform; }
+.tla-home .pillar-card:hover { transform: translateY(-6px); box-shadow: 0 36px 70px -28px rgba(0,0,0,0.55); border-color: rgba(184,148,90,0.4); }
+.tla-home .pillar-photo { width: 100%; aspect-ratio: 4 / 3; background-size: cover; background-position: center; }
+.tla-home .pillar-body { padding: 28px 28px 32px; }
+.tla-home .pillar-num { font-family: 'Marcellus', serif; font-style: italic; font-size: 22px; color: #B8945A; opacity: 0.9; display: block; margin-bottom: 10px; line-height: 1; }
+.tla-home .pillar h3 { color: #FBF7EE; margin: 0 0 10px; font-size: 22px; }
+.tla-home .pillar p { color: #F5EFE3; opacity: 0.82; font-size: 15px; line-height: 1.65; margin: 0; }
+
+/* DOORS — alternating image + text rows (zig-zag) */
+.tla-home .doors { background: #F5EFE3; padding: 96px 0; }
+.tla-home .doors-head { text-align: center; margin-bottom: 80px; }
+.tla-home .doors h2 { color: #15110D; }
+.tla-home .doors-list { display: flex; flex-direction: column; gap: 96px; }
+.tla-home .door-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 80px; }
+.tla-home .door-row:nth-child(even) { direction: rtl; }
+.tla-home .door-row:nth-child(even) > * { direction: ltr; }
+.tla-home .door-photo { aspect-ratio: 4/3; background-size: cover; background-position: center; border-radius: 4px; box-shadow: 0 24px 60px -28px rgba(31,44,31,0.35); transition: transform 0.5s ease; }
+.tla-home .door-row:hover .door-photo { transform: scale(1.02); }
+.tla-home .door-text { padding: 16px 0; }
+.tla-home .door-text .eyebrow { color: #C75D3D; }
+.tla-home .door-text h3 { font-family: 'Marcellus', serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 44px); color: #15110D; line-height: 1.1; letter-spacing: -0.005em; margin-bottom: 16px; }
+.tla-home .door-text .door-italic { font-family: 'Lora', serif; font-style: italic; font-size: clamp(18px, 2vw, 22px); color: #5D6B3F; line-height: 1.5; margin-bottom: 20px; max-width: 480px; }
+.tla-home .door-text p { color: #2A2520; opacity: 0.88; font-size: 17px; line-height: 1.7; margin-bottom: 28px; max-width: 520px; }
+.tla-home .door-text .arrow-link { font-family: 'Lora', serif; font-weight: 600; font-size: 14px; letter-spacing: 0.05em; color: #C75D3D; display: inline-flex; align-items: center; gap: 8px; transition: gap 0.3s ease, color 0.3s ease; border-bottom: 1px solid #C75D3D; padding-bottom: 3px; }
+.tla-home .door-text .arrow-link:hover { gap: 14px; color: #C75D3D; }
+@media (max-width: 1024px) {
+	.tla-home .doors { padding: 72px 0; }
+	.tla-home .doors-list { gap: 64px; }
+	.tla-home .door-row { grid-template-columns: 1fr; gap: 32px; }
+	.tla-home .door-row:nth-child(even) { direction: ltr; }
+}
+
+/* ABOUT */
+.tla-home .about { background: #F5EFE3; padding: 0; }
+.tla-home .about-inner { display: grid; grid-template-columns: 60% 40%; align-items: stretch; min-height: 640px; }
+.tla-home .about-photo {
+	background-image:
+		linear-gradient(135deg, rgba(31,44,31,0.20) 0%, rgba(31,44,31,0.50) 100%),
+		url('https://theloveadventure.com/wp-content/uploads/2026/05/01-mtb-queenstown-1.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative; display: flex; align-items: flex-end; justify-content: flex-start; padding: 48px;
+}
+.tla-home .about-caption { font-family: 'Lora', Georgia, serif; font-style: italic; font-size: 16px; color: #F5EFE3; opacity: 0.95; }
+.tla-home .about-text { background: #FBF7EE; padding: 96px 72px; display: flex; flex-direction: column; justify-content: center; }
+.tla-home .about-text h2 { color: #15110D; margin-bottom: 28px; font-size: clamp(28px, 3.2vw, 38px); }
+.tla-home .about-text p { color: #2A2520; opacity: 0.85; margin-bottom: 32px; }
+
+/* TESTIMONIAL */
+.tla-home .testimonial { background:
+		radial-gradient(ellipse at 30% 30%, rgba(199,93,61, 0.18) 0%, transparent 55%),
+		radial-gradient(ellipse at 70% 70%, rgba(184,148,90, 0.12) 0%, transparent 55%),
+		linear-gradient(135deg, #15110D 0%, #15110D 60%, #15110D 100%);
+		text-align: center; padding: 120px 0; position: relative; overflow: hidden; }
+.tla-home .testimonial .eyebrow { color: #B8945A; }
+.tla-home .testimonial blockquote {
+	font-family: 'Lora', Georgia, serif; font-style: italic;
+	font-size: clamp(26px, 3.4vw, 40px); line-height: 1.35; color: #FBF7EE;
+	max-width: 800px; margin: 0 auto 36px;
+}
+.tla-home .testimonial-attr { font-family: 'Lora', serif; font-weight: 500; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #B8945A; }
+
+/* FINAL CTA */
+.tla-home .final-cta {
+	background:
+		linear-gradient(90deg, rgba(10,8,7,0.78) 0%, rgba(10,8,7,0.55) 45%, rgba(10,8,7,0.20) 100%),
+		linear-gradient(180deg, rgba(15,17,13,0.30) 0%, rgba(15,17,13,0.55) 100%),
+		url('https://theloveadventure.com/wp-content/uploads/2026/06/homepage-headline-wide-final.png'),
+		linear-gradient(135deg, #15110D 0%, #15110D 60%, #15110D 100%);
+	background-size: cover, cover, cover, cover;
+	background-position: center, center, center 30%, center;
+	background-repeat: no-repeat;
+	text-align: center; color: #FBF7EE; padding: 140px 0;
+}
+.tla-home .final-cta h2 { color: #FBF7EE; margin-bottom: 28px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.tla-home .final-cta-sub { font-family: 'Lora', Georgia, serif; font-style: italic; font-size: clamp(20px, 2.2vw, 26px); color: #F5EFE3; opacity: 0.92; max-width: 640px; margin: 0 auto 44px; line-height: 1.45; }
+
+/* FOOTER */
+.tla-home .footer { background:
+		radial-gradient(ellipse at 15% 30%, rgba(199,93,61, 0.10) 0%, transparent 50%),
+		radial-gradient(ellipse at 85% 70%, rgba(184,148,90, 0.08) 0%, transparent 55%),
+		linear-gradient(180deg, #15110D 0%, #15110D 100%);
+		color: #F5EFE3; padding: 96px 0 40px; border-top: 1px solid rgba(184,148,90, 0.15); position: relative; overflow: hidden; }
+.tla-home .footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 40px; margin-bottom: 64px; }
+.tla-home .footer-col h4 { font-family: 'Lora', serif; font-weight: 600; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #B8945A; margin-bottom: 22px; }
+.tla-home .footer-col ul { list-style: none; padding: 0; margin: 0; }
+.tla-home .footer-col li { margin-bottom: 12px; }
+.tla-home .footer-col a { color: #F5EFE3; opacity: 0.78; font-size: 15px; }
+.tla-home .footer-col a:hover { opacity: 1; color: #B8945A; }
+.tla-home .newsletter-form { display: flex; border-bottom: 1px solid rgba(245, 239, 227, 0.3); padding-bottom: 8px; margin-bottom: 24px; }
+.tla-home .newsletter-form input { flex: 1; background: transparent; border: none; outline: none; color: #FBF7EE; font-family: 'Lora', serif; font-size: 15px; padding: 8px 0; }
+.tla-home .newsletter-form input::placeholder { color: rgba(245, 239, 227, 0.5); }
+.tla-home .newsletter-form button { background: transparent; border: none; color: #B8945A; cursor: pointer; font-size: 18px; padding: 8px; }
+.tla-home .socials { display: flex; gap: 16px; }
+.tla-home .socials a { width: 36px; height: 36px; border: 1px solid rgba(184,148,90, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #B8945A; transition: background 0.3s ease, color 0.3s ease; }
+.tla-home .socials a:hover { background: #B8945A; color: #15110D; }
+.tla-home .footer-bottom { border-top: 1px solid rgba(184,148,90, 0.18); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(245, 239, 227, 0.5); }
+.tla-home .footer-bottom a { color: rgba(245, 239, 227, 0.5); }
+.tla-home .footer-bottom a:hover { color: #B8945A; }
+.tla-home .footer-bottom-links { display: flex; gap: 24px; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+	.tla-home .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+	.tla-home .pillars-grid > .pillar-card,
+	.tla-home .pillars-grid > .pillar-card:nth-child(4),
+	.tla-home .pillars-grid > .pillar-card:nth-child(5) { grid-column: auto; }
+	.tla-home .about-inner { grid-template-columns: 1fr; }
+	.tla-home .about-photo { min-height: 420px; }
+	.tla-home .about-text { padding: 72px 48px; }
+}
+@media (max-width: 768px) {
+	.tla-home { font-size: 16px; }
+	.tla-home section { padding: 64px 0; }
+	.tla-home .container { padding: 0 24px; }
+	.tla-home .nav-menu { display: none; }
+	.tla-home .nav .btn { padding: 10px 18px; }
+	.tla-home .hero { min-height: 540px; padding: 110px 0 60px; }
+	.tla-home .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
+	.tla-home .doors-grid { grid-template-columns: 1fr; }
+	.tla-home .door { padding: 36px 32px; }
+	.tla-home .about-text { padding: 56px 28px; }
+	.tla-home .testimonial { padding: 80px 0; }
+	.tla-home .final-cta { padding: 90px 0; }
+	.tla-home .footer { padding: 64px 0 32px; }
+	.tla-home .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+	.tla-home .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
+@media (max-width: 480px) {
+	.tla-home .pillars-grid { grid-template-columns: 1fr; gap: 44px; }
+	.tla-home .footer-grid { grid-template-columns: 1fr; }
+	.tla-home .nav-inner { gap: 12px; }
+	.tla-home .logo { font-size: 18px; }
+}
+.tla-home .tla-newsletter form { display: grid !important; grid-template-columns: 1fr 1fr auto !important; gap: 12px !important; align-items: stretch !important; max-width: 640px !important; } @media (max-width: 600px) { .tla-home .tla-newsletter form { grid-template-columns: 1fr !important; } }
+
+/* ---- Mobile hamburger nav ---- */
+.tla-nav-toggle { display: none; }
+.tla-nav-burger { display: none; cursor: pointer; width: 28px; height: 22px; flex-direction: column; justify-content: space-between; z-index: 100; position: relative; }
+.tla-nav-burger span { display: block; height: 2px; width: 100%; background: #F5EFE3; transition: transform 0.3s ease, opacity 0.3s ease; transform-origin: center; }
+@media (max-width: 900px) {
+	.tla-home .nav-inner, [class^="tla-"] .nav-inner { flex-wrap: wrap; }
+	.tla-nav-burger { display: flex; order: 3; margin-left: auto; }
+	.tla-home .nav .btn, [class^="tla-"] .nav .btn { order: 4; display: none; }
+	.tla-nav-panel { order: 5; flex-basis: 100%; max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+	.tla-nav-panel .nav-menu { flex-direction: column; gap: 0; padding: 12px 0 24px; }
+	.tla-nav-panel .nav-menu > li { width: 100%; border-bottom: 1px solid rgba(184,148,90,0.15); }
+	.tla-nav-panel .nav-menu > li > a { display: block; padding: 16px 4px; font-size: 16px; }
+	.tla-nav-panel .nav-menu .sub { display: block !important; position: static; opacity: 1; visibility: visible; transform: none; background: transparent; border: 0; padding: 0 0 12px 16px; min-width: 0; box-shadow: none; }
+	.tla-nav-panel .nav-menu .sub a { padding: 8px 0; font-size: 14px; }
+	.tla-nav-panel .nav-menu .has-sub > a::after { display: none; }
+	.tla-nav-panel li > a::after { content: "" !important; display: none !important; }
+	.tla-nav-toggle:checked ~ .tla-nav-panel { max-height: 1200px; }
+	.tla-nav-toggle:checked ~ .tla-nav-burger span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+	.tla-nav-toggle:checked ~ .tla-nav-burger span:nth-child(2) { opacity: 0; }
+	.tla-nav-toggle:checked ~ .tla-nav-burger span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+}
+
+/* tight-heading-tla-home */
+.tla-home .eyebrow { margin-bottom: 10px !important; }
+.tla-home section .eyebrow { margin-bottom: 10px !important; }
+.tla-home .hero h1, .tla-home .hero h2 { margin-top: 0 !important; margin-bottom: 14px !important; }
+.tla-home section h2 { margin-bottom: 16px !important; }
+</style>
+
+<div class="tla-home">
+
+<header class="nav">
+	<div class="container nav-inner">
+		<a href="/" class="logo">The Love Adventure</a>
+		<input type="checkbox" id="tla-nav-toggle" class="tla-nav-toggle" aria-hidden="true">
+		<label for="tla-nav-toggle" class="tla-nav-burger" aria-label="Menu" role="button" tabindex="0"><span></span><span></span><span></span></label>
+		<nav class="tla-nav-panel">
+			<ul class="nav-menu">
+				<li class="has-sub"><a href="/together">Together</a>
+					<ul class="sub">
+						<li><a href="/together/therapy">Couples therapy</a></li>
+						<li><a href="/together/intensives">The New Chapter of Us</a></li>
+						<li><a href="/together/wanaka">Wanaka retreat</a></li>
+						
+					</ul>
+				</li>
+				<li class="has-sub"><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">For Her</a>
+					<ul class="sub">
+						<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+						<li><a href="/for-her/therapy">1:1 therapy</a></li>
+					</ul>
+				</li>
+				<li class="has-sub"><a href="/events">Events</a>
+					<ul class="sub">
+						<li><a href="/connection-playground">Connection Playground</a></li>
+						<li><a href="/together/wanaka">Wanaka retreat</a></li>
+					</ul>
+				</li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/podcast">Podcast</a></li>
+				<li><a href="/blog">Blog</a></li>
+			</ul>
+		</nav>
+		<a href="https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session" class="btn">Book a call</a>
+	</div>
+</header>
+
+<section class="hero">
+	<div class="container hero-content">
+		<span class="eyebrow">Couples therapy &middot; Intensives &middot; Adventure retreats</span>
+		<h1 class="h1">The deepest love is still ahead of you</h1>
+		<p class="hero-tagline">For long-term couples who refuse to settle for comfortable companionship.</p>
+		<div class="hero-ctas">
+			<a href="/together/wanaka" class="btn">Apply for the Wanaka retreat</a>
+			<a href="/together" class="hero-link">Explore the work</a>
+		</div>
+	</div>
+</section>
+
+<section class="intro">
+	<div class="container">
+		<span class="eyebrow">What we teach</span>
+		<h2 class="h2">Long-term love isn&#8217;t a slow fade. It&#8217;s the deepest love available to you</h2>
+		<div class="intro-body">
+			<p>Most couples therapy works on what&#8217;s broken. We work on what&#8217;s possible. After years of clinical practice and hundreds of couples, we&#8217;ve come to believe the love you can build at year 20 is richer than anything available at year 2.</p>
+			<p>But it doesn&#8217;t happen by accident. The default trajectory of long-term love is drift, not depth. The work is to keep choosing each other, in body, in bed, on the trail, on the hard nights.</p>
+		</div>
+	</div>
+</section>
+
+<section class="pillars">
+	<div class="container">
+		<div class="pillars-head">
+			<h2 class="h2">What you&#8217;ll learn</h2>
+		</div>
+		<div class="pillars-grid">
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: couple in close conversation, soft window light]" style="background-image: linear-gradient(180deg, rgba(15,17,13,0.18) 0%, rgba(15,17,13,0.48) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/pillar-1-eft.png');"></div><div class="pillar-body"><span class="pillar-num">1</span><h3>EFT (Emotionally Focused Therapy)</h3><p>The gold standard of couples therapy, based on attachment science. We teach you to find the emotional cycle you keep getting stuck in, and how to step out of it together.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: couple from behind at sunset, intimate]" style="background-image: linear-gradient(180deg, rgba(15,17,13,0.18) 0%, rgba(15,17,13,0.48) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/pillar-2-sex-therapy.png');"></div><div class="pillar-body"><span class="pillar-num">2</span><h3>Sex Therapy</h3><p>Tarisha is a trained sex therapist. We teach you that sex isn&#8217;t a bonus, it&#8217;s a barometer. The work happens in the bedroom too.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: couple standing close, sunset, polarity]" style="background-image: linear-gradient(180deg, rgba(15,17,13,0.18) 0%, rgba(15,17,13,0.48) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/pillar-3-polarity.png');"></div><div class="pillar-body"><span class="pillar-num">3</span><h3>Polarity</h3><p>The masculine and feminine charge between you isn&#8217;t outdated, it&#8217;s the engine of desire. When polarity dies, sex dies. When it returns, everything returns.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: warm intimate moment, hands or embrace]" style="background-image: linear-gradient(180deg, rgba(15,17,13,0.18) 0%, rgba(15,17,13,0.48) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/pillar-4-tantra.png');"></div><div class="pillar-body"><span class="pillar-num">4</span><h3>Erotic Embodiment &#038; Tantra</h3><p>Bodies matter. Pleasure is medicine. The body knows things conversation can&#8217;t reach. We work somatically, not just verbally.</p></div></div>
+			<div class="pillar pillar-card"><div class="pillar-photo" role="img" aria-label="[PLACEHOLDER: alpine hike, mountain reflection]" style="background-image: linear-gradient(180deg, rgba(15,17,13,0.18) 0%, rgba(15,17,13,0.48) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/05/pillar-5-adventure.png');"></div><div class="pillar-body"><span class="pillar-num">5</span><h3>Adventure</h3><p>Long-term love stays alive when you keep choosing each other into the unknown. We use NZ landscape, hiking, and shared challenge as part of the work, not the reward.</p></div></div>
+		</div>
+	</div>
+</section>
+
+<section class="doors">
+	<div class="container">
+		<div class="doors-head">
+			<span class="eyebrow">Where to start</span>
+			<h2 class="h2">Three doors. Take the one that fits</h2>
+		</div>
+		<div class="doors-list">
+
+			<div class="door-row">
+				<div class="door-photo" role="img" aria-label="Couples therapy: warm intimate portrait" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/06/where-auckland-v2.png');"></div>
+				<div class="door-text">
+					<span class="eyebrow">Door one</span>
+					<h3>Couples therapy</h3>
+					<p class="door-italic">For when you want to start in the room, weekly or fortnightly.</p>
+					<p>EFT and sex therapy in our Auckland practice or online globally. Tarisha is registered with the New Zealand Association of Counsellors. Most couples come with a recurring fight or a specific block they want to move through.</p>
+					<a href="/together/therapy" class="arrow-link">Book a session →</a>
+				</div>
+			</div>
+
+			<div class="door-row">
+				<div class="door-photo" role="img" aria-label="The New Chapter of Us: sunset standing portrait" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/06/new-chapter-of-us.png');"></div>
+				<div class="door-text">
+					<span class="eyebrow">Door two</span>
+					<h3>The New Chapter of Us</h3>
+					<p class="door-italic">A 2-day private intensive, just the two of you.</p>
+					<p>Two full days of private work with Tarisha. Equivalent of six months of private therapy, in one concentrated block. At Castaways Resort, Auckland west coast.</p>
+					<a href="/together/intensives" class="arrow-link">See dates →</a>
+				</div>
+			</div>
+
+			<div class="door-row">
+				<div class="door-photo" role="img" aria-label="The Wanaka Adventure: alpine landscape" style="background-image: linear-gradient(135deg, rgba(15,17,13,0.06) 0%, rgba(15,17,13,0.18) 100%), url('https://theloveadventure.com/wp-content/uploads/2026/06/where-retreat-v2.png');"></div>
+				<div class="door-text">
+					<span class="eyebrow">Door three</span>
+					<h3>The Wanaka Adventure</h3>
+					<p class="door-italic">Six days. Six couples. The full braid in the Southern Alps.</p>
+					<p>The flagship retreat. Six days at Lake Wanaka, two private couples sessions, helicopter to a remote valley (weather permitting), six couples per intake, three intakes per year.</p>
+					<a href="/together/wanaka" class="arrow-link">Apply for the next retreat →</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="about">
+	<div class="about-inner">
+		<div class="about-photo">
+			<span class="about-caption">Tarisha and Mark, Queenstown</span>
+		</div>
+		<div class="about-text">
+			<span class="eyebrow">About us</span>
+			<h2>Couples therapy and adventure retreats</h2>
+			<p>Tarisha is a trained relationship and sex therapist with over a decade of clinical practice. Her training includes Emotionally Focused Therapy for Couples (EFT), Hakomi somatic psychotherapy, Gottman couples therapy, somatic trauma work, sex therapy, tantra, and biodynamic breathwork facilitation. She has a Master&#8217;s in Counselling and a postgraduate degree in psychotherapy, and is registered with the New Zealand Association of Counsellors. In a past life she was a chartered accountant, before she found her real work.</p>
+			
+			
+			<a href="/about" class="link-arrow">Read more about us →</a>
+		</div>
+	</div>
+</section>
+
+<section class="testimonial">
+	<div class="container">
+		<span class="eyebrow">What couples say</span>
+		<blockquote>&#8220;We came in flatmates after 22 years. We left lovers. Not because of one breakthrough conversation, but because they showed us how to keep choosing each other every day. Still doing the work. Still amazed.&#8221;</blockquote>
+		<div class="testimonial-attr">K + S, Auckland &middot; 2026 retreat</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-grid">
+
+			<div class="footer-col">
+				<h4>Together</h4>
+				<ul>
+					<li><a href="/together/therapy">Therapy</a></li>
+					<li><a href="/together/intensives">Intensives</a></li>
+					<li><a href="/together/wanaka">Wanaka retreat</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Events</h4>
+				<ul>
+					<li><a href="/connection-playground">Connection Playground</a></li>
+					<li><a href="/together/wanaka">Wanaka retreat</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>For Her</h4>
+				<ul>
+					<li><a href="https://sexualempowermentforwomen.com" target="_blank" rel="noopener">Sexual Empowerment for Women</a></li>
+					<li><a href="/for-her/therapy">1:1 therapy</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>About</h4>
+				<ul>
+					<li><a href="/about">About us</a></li>
+					<li><a href="/podcast">Podcast</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Stay close</h4><p style="color:#F5EFE3;opacity:0.7;font-size:14px;line-height:1.55;margin:0 0 18px;">Field notes from the practice. Monthly. No spam.</p>
+				<form class="newsletter-form" onsubmit="return false;"><input type="text" name="first_name" placeholder="First name" aria-label="First name" required><input type="email" placeholder="your@email.com" aria-label="Email">
+					<button type="submit" aria-label="Subscribe">→</button>
+				</form>
+				<div class="socials">
+					<a href="https://instagram.com/tarishatourok" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+					<a href="https://tiktok.com/@tarishatourok" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg></a>
+					<a href="https://youtube.com/@tarishatourok" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer-bottom">
+			<span>© 2026 The Love Adventure</span>
+			<div class="footer-bottom-links">
+				<a href="/privacy">Privacy</a>
+				<a href="/terms">Terms</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</div>
