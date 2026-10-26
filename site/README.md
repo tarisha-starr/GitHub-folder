@@ -59,6 +59,11 @@ New copy that Tarisha has not written or approved, safe to delete:
 the five FAQ answers, the three How It Works step descriptions, and the
 stats band labels.
 
+Known gap: all three testimonials are women speaking about husbands. The page
+now addresses both partners structurally, but a man reading it still sees
+nobody like himself. One testimonial from a male partner, or from a couple
+jointly, would fix that better than any copy change.
+
 Needs doing before publication: embed the Fluent Forms block in the `#form`
 slot, supply `images/therapy-hero.jpg` and `images/tarisha.jpg`, and decide
 nothing else. The contact address is now tarisha@theloveadventure.com,
