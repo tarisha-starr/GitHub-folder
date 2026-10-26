@@ -16,7 +16,7 @@ scroll. The hook makes her feel caught.
 | 9 | Woman over 40 laughing in her kitchen, natural light, relaxed and alive | "There is nothing wrong with wanting more." |
 | 10 | Woman over 40 in a bathrobe drinking tea by a window, rainy morning, reflective mood | "Maybe you're not tired of sex. Maybe you're tired of performing." |
 | 11 | Couple over 40 holding hands on a sofa, soft evening light, tender but unsure mood | "The love is still there. The closeness got buried." |
-| 12 | Woman over 40 touching her belly gently, bedroom mirror, self-accepting mood | "Your body was never the enemy." |
+| 12 | Woman over 40 with a hand on her belly, bedroom mirror, self-accepting mood | "Your body was never the enemy." |
 | 13 | Woman over 40 walking barefoot outside, sunrise light, peaceful mood | "Desire doesn't come back through pressure." |
 | 14 | Two coffee cups on a kitchen table, morning light, quiet distant mood | "When did love become logistics?" |
 | 15 | Woman over 40 sitting in a car outside her house, dusk light, overwhelmed mood | "You've been holding everyone together. But who's holding you?" |

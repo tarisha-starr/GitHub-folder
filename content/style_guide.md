@@ -35,8 +35,9 @@ that goes out as her voice must follow these rules.
   "I had a client say...", "I hear this every week."
 - Address the reader directly: "you've", "your body", "her" (for body).
 - Personify the body as "she" — "she's been calling you home,"
-  "ask her how she's doing, darling."
-- Pet names are welcome: "darling," "my love."
+  "ask her how she's doing, beautiful."
+- Pet names are welcome: "beautiful," "my love."
+- **Never use "darling".** Use "beautiful" instead. This is a hard rule.
 - Multiple short questions in a row are GOOD when they build rhythm:
   > "Are you ready? Are you willing to take the first step?"
 - Use ALL CAPS sparingly for emotional emphasis on one word:
@@ -53,10 +54,98 @@ that goes out as her voice must follow these rules.
 - "Say with me..." prompts for embodiment:
   `Say with me "I choose me"`
 - Body-conversation prompts:
-  `Ask your body "how are you doing, darling?"`
+  `Ask your body "how are you doing, beautiful?"`
+
+## The rule above all the others
+
+**Normal, human, conversational language. Her language.**
+
+Not clever. Not short and punchy. Not quotable. She talks the way a woman
+talks to another woman across a table, and that means hedges, run-ons and
+thinking out loud.
+
+Her actual speech, from a recorded session:
+
+> "Quite often the no comes way easier for us somehow."
+> "It's not because they don't love us enough. They don't have a clue, it
+> doesn't register."
+> "And that's when we ask for less what we want."
+
+Look at what's in there: "quite often", "somehow", "kind of", "I think it's
+because". Those hedges are the voice. Stripping them out to make the line
+land harder is exactly the mistake.
+
+- ❌ "The no comes easy. It's the yes that's terrifying."
+- ✅ "It's so much easier to know what you don't want. Quite often the no
+  comes way easier for us somehow."
+
+The first is an epigram. It's tighter, and it's wrong, because she'd never
+say it. Length is not the enemy. Trying to be smart is.
+
+**When her own words exist, use them.** Transcripts beat invention every
+time. A line lifted from how she actually said it will always sound more
+like her than a better line written from scratch.
+
+### But edit them
+
+Raw transcript isn't the target either. Speech has filler that reads as
+mush on the page. Trim the tics, keep the register, finish the thought.
+
+> Raw: "quite often the no comes way easier for us somehow"
+> Edited: "often the no comes easier, the yes can be scary"
+
+What happened there: "quite" went, "way" went, "somehow" went, "for us" went.
+What stayed: the plain words, the comma splice, the conversational rhythm.
+What got added: the second half, which says the thing the original was
+circling.
+
+So the target sits between the two failure modes:
+
+| Too raw | Right | Too clever |
+|---|---|---|
+| "quite often the no comes way easier for us somehow" | "often the no comes easier, the yes can be scary" | "The no comes easy. It's the yes that's terrifying." |
+
+Cut the filler. Don't cut the warmth. Never trade either for a line that
+sounds quotable.
+
+## Teach with "we", don't pronounce
+
+**Don't write aphorisms.** Neat, quotable, self-contained declarations sound
+like a poster, not like her in a room with women.
+
+- ❌ "A real ask has room for a no inside it."
+- ✅ "When we ask, we need to be able to receive a no. Otherwise it's a demand."
+
+The second one teaches. It puts her inside the problem with the reader
+("when we ask"), names the condition, then names the consequence. The first
+one just announces a truth and leaves the reader outside it.
+
+Use "we" for the pattern, "you" for the reader's experience of it. She's not
+above the thing she's describing.
+
+## Invitations, not instructions
+
+**Don't end on a clipped command.** Staccato three-beat imperatives sound like
+an ad, not like her.
+
+- ❌ "One thing. Out loud. Today."
+- ✅ "What is one thing you can appreciate about your partner today?"
+
+- ❌ "Say what you want. Then say what it would give you."
+- ✅ "What would it give you if you asked for the whole thing?"
+
+The close should open something, not order it. A question invites her to
+answer. A command tells her she's behind.
+
+Same for the body copy, not just the CTA. If a line can be a question without
+losing its meaning, make it a question.
 
 ## What to avoid (sounds wrong in her voice)
 
+- ❌ **"gently" and "quietly".** Never. Softening adverbs weaken the line and
+  they don't sound like her. "She's been carrying it quietly" becomes "she's
+  been carrying it". Cut the adverb, the sentence gets stronger.
+- ❌ **"darling".** Use "beautiful".
 - ❌ Em-dashes
 - ❌ Stiff transitions: "Furthermore," "However," "Moreover"
 - ❌ Therapist-speak: "Research shows," "Studies suggest"

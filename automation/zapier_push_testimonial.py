@@ -30,10 +30,10 @@ def build_payload(entry: dict, raw_base: str) -> dict:
     hashtags_list = entry.get("hashtags", [])
     hashtags = " ".join(hashtags_list)
 
-    caption_parts = [f"“{text}”"]
+    caption_parts = [f'"{text}"']
     if attribution:
         caption_parts.append("")
-        caption_parts.append(f"— {attribution}")
+        caption_parts.append(f"{attribution}")
     if hashtags:
         caption_parts.append("")
         caption_parts.append(hashtags)
@@ -41,6 +41,7 @@ def build_payload(entry: dict, raw_base: str) -> dict:
 
     return {
         "post_type": "testimonial",
+        "post_text": caption,
         "post_id": entry["id"],
         "caption": caption,
         "text": text,

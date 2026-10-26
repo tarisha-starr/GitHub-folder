@@ -34,6 +34,8 @@ from pathlib import Path
 from scheduler import launch_date
 
 ROOT = Path(__file__).resolve().parent.parent
+from post_text import build_post_text
+
 INFOGRAPHICS_PATH = ROOT / "content" / "infographics.json"
 
 DEFAULT_HASHTAGS = [
@@ -104,6 +106,7 @@ def build_payload(entry: dict, raw_base: str) -> dict:
     hashtags = " ".join(DEFAULT_HASHTAGS)
     return {
         "post_type": "infographic",
+        "post_text": build_post_text(entry["caption"], "", hashtags),
         "post_id": entry["id"],
         "title": entry.get("title", ""),
         "caption": entry["caption"],

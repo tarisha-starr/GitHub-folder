@@ -2,7 +2,7 @@
 
 **Pain hook + emotional truth**
 
-The hook names the pain she's been carrying quietly. The emotional truth
+The hook names the pain she's been carrying. The emotional truth
 reframes it so she feels seen, not diagnosed.
 
 ## Examples
