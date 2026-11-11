@@ -54,7 +54,7 @@ function html(card) {
   .label{font-style:italic;font-size:34px;color:${t.label};letter-spacing:.02em}
   .rule{width:84px;height:3px;background:${t.rule};margin:30px 0 54px}
   .q{font-family:"Marcellus",Georgia,serif;font-weight:400;line-height:1.2;
-    letter-spacing:-.005em;font-size:84px}
+    letter-spacing:-.005em;font-size:84px;text-wrap:balance}
   .foot{position:absolute;left:120px;right:120px;bottom:110px;display:flex;
     justify-content:space-between;align-items:baseline;font-size:26px;color:${t.label}}
   .name{font-family:"Marcellus",Georgia,serif;letter-spacing:.22em;text-transform:uppercase;font-size:24px}
