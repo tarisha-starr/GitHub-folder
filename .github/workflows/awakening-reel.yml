@@ -1,4 +1,4 @@
-name: The Second Awakening weekly reel to Zapier (Sunday)
+name: Weekly reels to Zapier, SERW and couples (Sunday)
 
 on:
   schedule:
@@ -20,10 +20,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Send this week's reel to Zapier webhook
+      - name: Send this week's reels to Zapier webhook
         working-directory: automation
         env:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           QUESTIONS_LAUNCH_DATE: ${{ vars.QUESTIONS_LAUNCH_DATE }}
+          QUESTION_BRANDS: ${{ vars.QUESTION_BRANDS }}
         run: python zapier_push_reel.py

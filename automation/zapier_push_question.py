@@ -123,7 +123,7 @@ def send(webhook_url: str, payload: dict) -> bool:
         body = e.read().decode("utf-8", errors="replace")
         print(f"Zapier webhook error {e.code}: {body}", file=sys.stderr)
         return False
-    print(f"Sent {payload['brand']} question card #{payload['post_id']} to Zapier; response: {result}")
+    print(f"Sent {payload['brand']} {payload['post_type']} #{payload['post_id']} to Zapier; response: {result}")
     return True
 
 
