@@ -1,0 +1,31 @@
+name: Brave question card to Zapier (Mon, Wed, Fri)
+
+on:
+  schedule:
+    # 18:37 UTC Sun, Tue, Thu = 7:37am NZDT Mon, Wed, Fri (6:37am in NZST).
+    # The script checks the NZ weekday itself, so a delayed run still
+    # posts the right card.
+    - cron: "37 18 * * 0,2,4"
+  workflow_dispatch:
+
+jobs:
+  push-question:
+    runs-on: ubuntu-latest
+    if: ${{ vars.ZAPIER_ENABLED == 'true' && vars.QUESTIONS_ENABLED == 'true' }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send today's question card to Zapier webhook
+        working-directory: automation
+        env:
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+          QUESTIONS_LAUNCH_DATE: ${{ vars.QUESTIONS_LAUNCH_DATE }}
+          QUESTION_BRANDS: ${{ vars.QUESTION_BRANDS }}
+        run: python zapier_push_question.py

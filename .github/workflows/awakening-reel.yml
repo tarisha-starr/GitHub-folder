@@ -1,0 +1,29 @@
+name: The Second Awakening weekly reel to Zapier (Sunday)
+
+on:
+  schedule:
+    # 22:23 UTC Saturday = 11:23am NZDT Sunday (10:23am in NZST).
+    # The script checks the NZ weekday itself.
+    - cron: "23 22 * * 6"
+  workflow_dispatch:
+
+jobs:
+  push-reel:
+    runs-on: ubuntu-latest
+    if: ${{ vars.ZAPIER_ENABLED == 'true' && vars.QUESTIONS_ENABLED == 'true' }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send this week's reel to Zapier webhook
+        working-directory: automation
+        env:
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+          IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
+          QUESTIONS_LAUNCH_DATE: ${{ vars.QUESTIONS_LAUNCH_DATE }}
+        run: python zapier_push_reel.py
