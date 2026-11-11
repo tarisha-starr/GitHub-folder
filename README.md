@@ -99,19 +99,28 @@ To switch it on, set `QUESTIONS_ENABLED=true` (alongside the existing
 `brand`: `serw` to the Sexual Empowerment for Women accounts, `couples`
 to The Love Adventure accounts.
 
-### Weekly reel: The Second Awakening (Sunday, SERW only)
+### Weekly reels (Sunday), one per brand
 
-Every Sunday a 9:16 reel recaps that week's three SERW questions: a title
-card, the three questions (question and website only, each scene a different colour: navy, burgundy, cream, deep wine), then an end card
-asking "Which one got you? Comment 1, 2 or 3." 14 reels in all (the last is a
-single-question finale), posting from the Sunday after `QUESTIONS_LAUNCH_DATE`.
+Every Sunday each brand gets a 9:16 reel recapping that week's three
+question cards: a title card, the three questions (question and website
+only, each scene a different colour), then an end card asking people to
+comment 1, 2 or 3. 14 reels per brand (the last is a single-question
+finale), posting from the Sunday after `QUESTIONS_LAUNCH_DATE`.
 
-- `content/second_awakening_reels.json`: which questions each reel uses, plus its caption
-- `videos/awakening/reel-<id>.mp4`: the reels (about 23 seconds, silent audio
-  track, so add music in the app if you want it)
-- `automation/render_awakening_reels.js`: re-render after editing questions
+| brand | series | reels | colours |
+|---|---|---|---|
+| `serw` | The Second Awakening: rewild your sexuality after 40 | `videos/awakening/` | navy, burgundy, cream, deep wine |
+| `couples` | Three questions to ask each other | `videos/couples/` | Pine Deep, Cream, Moss, Camel |
+
+- `content/second_awakening_reels.json` and `content/couples_reels.json`:
+  which questions each reel uses, plus its caption
+- `automation/render_weekly_reels.js`: re-render after editing questions
+  (`SERIES=couples node automation/render_weekly_reels.js` for one series).
+  Reels are about 23 seconds with a silent audio track, so add music in
+  the app if you want it.
 - `automation/zapier_push_reel.py` + `.github/workflows/awakening-reel.yml`:
-  sends `post_type: "reel"`, `brand: "serw"` with `video_url` at about
-  11:23am NZ on Sundays
+  one webhook call per brand with `post_type: "reel"`, `brand` and
+  `video_url`, at about 11:23am NZ on Sundays
 
-It uses the same `QUESTIONS_ENABLED` switch as the cards.
+They use the same `QUESTIONS_ENABLED` switch and `QUESTION_BRANDS` setting
+as the cards.
