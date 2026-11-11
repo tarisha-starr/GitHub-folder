@@ -35,7 +35,12 @@ const THEMES = {
   single:   { bg: "#F4D9D6", glow: "#F9E9E6", ink: "#6E1A2E", accent: "#C2A46D", bar: "#1F2A44" },
   self:     { bg: "#4A1220", glow: "#5E1A2C", ink: "#F4EFE6", accent: "#C2A46D", bar: "#1F2A44" },
 };
-const BRAND = THEMES.desire;
+// Reel scenes take their colour from their position, not the theme, so
+// every cut is a clear change: navy title, then burgundy, cream and deep
+// wine for the questions, then navy again for the end card.
+const NAVY = THEMES.marriage;
+const QUESTION_COLOURS = [THEMES.desire, THEMES.body,
+  { bg: "#4A1220", glow: "#5E1A2C", ink: "#F4EFE6", accent: "#C2A46D", bar: "#1F2A44" }];
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const typeset = (s) => s.replace(/(^|[\s(])"/g, "$1“").replace(/"/g, "”").replace(/'/g, "’");
@@ -64,15 +69,15 @@ function scenes(reel) {
   const qs = reel.question_ids.map((id) => QUESTIONS.find((q) => q.id === id));
   const n = qs.length;
   const out = [];
-  out.push({ dur: DUR.intro, html: page(BRAND, `<div class="wrap">
+  out.push({ dur: DUR.intro, html: page(NAVY, `<div class="wrap">
     <div class="title">The Second Awakening</div>
     <div class="sub">Rewild your sexuality after 40</div></div>`) });
-  qs.forEach((q) => {
-    out.push({ dur: DUR.question, fit: true, html: page(THEMES[q.theme],
+  qs.forEach((q, i) => {
+    out.push({ dur: DUR.question, fit: true, html: page(QUESTION_COLOURS[i % QUESTION_COLOURS.length],
       `<div class="wrap"><div class="q" id="q">${esc(typeset(q.question))}</div></div>`) });
   });
   const ask = n > 1 ? `Which one got you?<br>Comment ${n === 3 ? "1, 2 or 3" : "1 or 2"}.` : "Tell me in the comments.";
-  out.push({ dur: DUR.end, html: page(BRAND, `<div class="wrap">
+  out.push({ dur: DUR.end, html: page(NAVY, `<div class="wrap">
     <div class="title">The Second Awakening</div>
     <div class="sub">Rewild your sexuality after 40</div>
     <div class="small">${ask}</div></div>`) });

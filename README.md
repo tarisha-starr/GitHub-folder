@@ -102,7 +102,7 @@ to The Love Adventure accounts.
 ### Weekly reel: The Second Awakening (Sunday, SERW only)
 
 Every Sunday a 9:16 reel recaps that week's three SERW questions: a title
-card, the three questions (question and website only), then an end card
+card, the three questions (question and website only, each scene a different colour: navy, burgundy, cream, deep wine), then an end card
 asking "Which one got you? Comment 1, 2 or 3." 14 reels in all (the last is a
 single-question finale), posting from the Sunday after `QUESTIONS_LAUNCH_DATE`.
 
