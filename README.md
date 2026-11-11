@@ -73,3 +73,23 @@ images must be committed to `main` for Buffer to find them.
 The same content is mirrored to Notion under
 **Social Media → Daily Image Posts + Email Automation** as a content
 calendar so you can plan, edit, and check off posts as they go live.
+
+## Brave question cards (Mon, Wed, Fri)
+
+40 question cards across five themes (your desire, you and him, your body,
+starting again, the woman underneath), posted three times a week through
+the same Zapier webhook as the other posts.
+
+- `content/brave_questions.json` holds each question, its caption and hashtags,
+  in posting order (themes rotate).
+- `images/questions/question-<id>.jpg` are the cards (1080x1350). Re-render
+  after editing the JSON with `node automation/render_question_cards.js`.
+- `automation/zapier_push_question.py` picks the card for today in NZ time.
+  It posts only on Monday, Wednesday and Friday, starting on
+  `QUESTIONS_LAUNCH_DATE` (default 2026-11-16), and stops after card 40.
+- `.github/workflows/question-cards.yml` runs it at about 7:37am NZ.
+
+To switch it on, set the repository variables `QUESTIONS_ENABLED=true`
+(alongside the existing `ZAPIER_ENABLED=true`) and optionally
+`QUESTIONS_LAUNCH_DATE`. The payload has `post_type: "question"`, so check
+your Zap posts it as an image post (`image_url` plus `caption`).
