@@ -1,10 +1,10 @@
-// Render the weekly "The Second Awakening" reels.
+// Render the weekly "The Second Awakening" reels (SERW brand).
 //
 // Each reel in content/second_awakening_reels.json becomes
 // videos/awakening/reel-<id>.mp4 (1080x1920, about 22 seconds):
-//   intro card, then each question of that week, then an end card,
-// joined with soft fades, plus a silent audio track (TikTok needs one;
-// add music in the app if you like).
+//   title card, then each question of that week (question and website
+//   only), then an end card, joined with soft fades, plus a silent audio
+//   track (TikTok needs one; add music in the app if you like).
 //
 //   node automation/render_awakening_reels.js
 //   ONLY_ID=3 node automation/render_awakening_reels.js
@@ -24,13 +24,16 @@ const OUT = path.join(ROOT, "videos", "awakening");
 
 const W = 1080, H = 1920, FADE = 0.6;
 const DUR = { intro: 3.2, question: 5.8, end: 4.5 };
+const SITE = "SEXUALEMPOWERMENTFORWOMEN.COM";
+const FONTS = "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=block";
 
+// Same colourways as the SERW question cards.
 const THEMES = {
-  desire:   { bg: "#1F2C1F", glow: "#2D3E2C", ink: "#F5EFE3", label: "#C9A579", rule: "#C75D3D" },
-  marriage: { bg: "#2D3E2C", glow: "#5D6B3F", ink: "#FBF7EE", label: "#C9A579", rule: "#C75D3D" },
-  body:     { bg: "#F5EFE3", glow: "#FDFBF5", ink: "#1F2C1F", label: "#9E4A2A", rule: "#C75D3D" },
-  single:   { bg: "#5D6B3F", glow: "#6E7C4E", ink: "#FBF7EE", label: "#F5EFE3", rule: "#B8945A" },
-  self:     { bg: "#2A2520", glow: "#3A332C", ink: "#F5EFE3", label: "#B8945A", rule: "#C75D3D" },
+  desire:   { bg: "#6E1A2E", glow: "#82263C", ink: "#F4EFE6", accent: "#C2A46D", bar: "#1F2A44" },
+  marriage: { bg: "#1F2A44", glow: "#2C3A5A", ink: "#F4EFE6", accent: "#C2A46D", bar: "#6E1A2E" },
+  body:     { bg: "#F4EFE6", glow: "#FBF8F2", ink: "#6E1A2E", accent: "#C2A46D", bar: "#1F2A44" },
+  single:   { bg: "#F4D9D6", glow: "#F9E9E6", ink: "#6E1A2E", accent: "#C2A46D", bar: "#1F2A44" },
+  self:     { bg: "#4A1220", glow: "#5E1A2C", ink: "#F4EFE6", accent: "#C2A46D", bar: "#1F2A44" },
 };
 const BRAND = THEMES.desire;
 
@@ -39,25 +42,22 @@ const typeset = (s) => s.replace(/(^|[\s(])"/g, "$1“").replace(/"/g, "”").re
 
 function page(t, inner) {
   return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Lora:ital,wght@0,400;1,400&display=block" rel="stylesheet">
+<link href="${FONTS}" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{width:${W}px;height:${H}px}
   body{background:${t.bg};background-image:radial-gradient(120% 70% at 85% 8%, ${t.glow} 0%, ${t.bg} 60%);
-    color:${t.ink};font-family:"Lora",Georgia,serif;position:relative;overflow:hidden}
-  .frame{position:absolute;inset:48px;border:1px solid ${t.label};opacity:.35}
+    color:${t.ink};font-family:"Cormorant Garamond",Georgia,serif;position:relative;overflow:hidden}
   /* Text lives in the middle: Instagram covers the top and bottom of a reel. */
-  .wrap{position:absolute;left:120px;right:120px;top:330px;bottom:520px;
+  .wrap{position:absolute;left:120px;right:120px;top:330px;bottom:560px;
     display:flex;flex-direction:column;justify-content:center}
-  .label{font-style:italic;font-size:40px;color:${t.label}}
-  .rule{width:96px;height:3px;background:${t.rule};margin:34px 0 60px}
-  .q{font-family:"Marcellus",Georgia,serif;font-weight:400;line-height:1.2;font-size:92px;text-wrap:balance}
-  .title{font-family:"Marcellus",Georgia,serif;font-size:118px;line-height:1.08}
-  .sub{font-style:italic;font-size:50px;color:${t.label};margin-top:40px;line-height:1.3}
-  .small{font-size:44px;line-height:1.4;margin-top:70px}
-  .name{position:absolute;left:0;right:0;bottom:420px;text-align:center;font-family:"Marcellus",Georgia,serif;
-    letter-spacing:.22em;text-transform:uppercase;font-size:30px;color:${t.label}}
-</style></head><body><div class="frame"></div>${inner}</body></html>`;
+  .q{font-weight:600;line-height:1.16;font-size:104px;text-wrap:balance}
+  .title{font-weight:600;font-size:132px;line-height:1.02}
+  .sub{font-style:italic;font-weight:500;font-size:60px;color:${t.accent};margin-top:36px;line-height:1.2}
+  .small{font-weight:500;font-size:56px;line-height:1.3;margin-top:80px}
+  .bar{position:absolute;left:0;right:0;bottom:400px;height:120px;background:${t.bar};color:${t.accent};
+    display:flex;align-items:center;justify-content:center;font-weight:600;font-size:40px;letter-spacing:.12em}
+</style></head><body>${inner}<div class="bar">${SITE}</div></body></html>`;
 }
 
 function scenes(reel) {
@@ -65,22 +65,17 @@ function scenes(reel) {
   const n = qs.length;
   const out = [];
   out.push({ dur: DUR.intro, html: page(BRAND, `<div class="wrap">
-    <div class="label">The Second Awakening</div><div class="rule"></div>
-    <div class="title">${n > 1 ? "Three questions you might not want to answer" : "One last question"}</div>
+    <div class="title">The Second Awakening</div>
     <div class="sub">Rewild your sexuality after 40</div></div>`) });
-  qs.forEach((q, i) => {
-    const t = THEMES[q.theme];
-    const tag = n > 1 ? `${i + 1} of ${n}. ${q.theme_label}` : q.theme_label;
-    out.push({ dur: DUR.question, fit: true, html: page(t, `<div class="wrap">
-      <div class="label">${esc(tag)}</div><div class="rule"></div>
-      <div class="q" id="q">${esc(typeset(q.question))}</div></div>`) });
+  qs.forEach((q) => {
+    out.push({ dur: DUR.question, fit: true, html: page(THEMES[q.theme],
+      `<div class="wrap"><div class="q" id="q">${esc(typeset(q.question))}</div></div>`) });
   });
   const ask = n > 1 ? `Which one got you?<br>Comment ${n === 3 ? "1, 2 or 3" : "1 or 2"}.` : "Tell me in the comments.";
   out.push({ dur: DUR.end, html: page(BRAND, `<div class="wrap">
     <div class="title">The Second Awakening</div>
-    <div class="sub">Rewild your sexuality after 40</div><div class="rule"></div>
-    <div class="small">${ask}<br><em>Save this for a quiet moment.</em></div></div>
-    <div class="name">Tarisha Tourok</div>`) });
+    <div class="sub">Rewild your sexuality after 40</div>
+    <div class="small">${ask}</div></div>`) });
   return out;
 }
 
@@ -119,8 +114,8 @@ function stitch(files, durs, outFile) {
       if (list[i].fit) {
         await pg.evaluate(() => {
           const wrap = document.querySelector(".wrap"), q = document.getElementById("q");
-          let size = 92;
-          while (wrap.scrollHeight > wrap.clientHeight && size > 50) { size -= 2; q.style.fontSize = size + "px"; }
+          let size = 104;
+          while (wrap.scrollHeight > wrap.clientHeight && size > 56) { size -= 2; q.style.fontSize = size + "px"; }
         });
       }
       const f = path.join(tmp, `scene-${i}.png`);

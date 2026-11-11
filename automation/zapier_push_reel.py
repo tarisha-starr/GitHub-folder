@@ -45,13 +45,14 @@ def build_payload(reel: dict, raw_base: str) -> dict:
     tags = reel.get("hashtags") or []
     return {
         "post_type": "reel",
+        "brand": "serw",
         "post_id": reel["id"],
         "caption": reel["caption"],
         "question": reel["caption"].split("\n\n")[1] if "\n\n" in reel["caption"] else "",
         "hashtags": " ".join(tags),
         "hashtags_list": tags,
         "video_url": f"{base}/videos/awakening/reel-{reel['id']}.mp4",
-        "image_url": f"{base}/images/questions/question-{reel['question_ids'][0]}.jpg",
+        "image_url": f"{base}/images/questions/serw/question-{reel['question_ids'][0]}.jpg",
         "themes": ["the second awakening"],
     }
 

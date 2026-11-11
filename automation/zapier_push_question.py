@@ -6,14 +6,19 @@ used once. QUESTIONS_LAUNCH_DATE is the first posting day (a Monday,
 Wednesday or Friday). On any other weekday, or once all 40 cards have
 gone out, the script exits quietly without posting.
 
-The payload has the same shape as the journal push, with
-post_type "question", so the existing Zap can post it as an image
-post (image_url plus caption).
+Two versions go out each posting day, one per brand, each as its own
+webhook call with a "brand" field so the Zap can send it to the right
+account:
+  serw     content/brave_questions.json    images/questions/serw/
+  couples  content/couples_questions.json  images/questions/couples/
+The payload otherwise has the same shape as the journal push, with
+post_type "question" (image_url plus caption).
 
 Required env vars:
   ZAPIER_WEBHOOK_URL      same Catch Hook URL as the other pushes
   IMAGE_RAW_BASE          public raw URL base of the repo
   QUESTIONS_LAUNCH_DATE   optional, YYYY-MM-DD; defaults to DEFAULT_LAUNCH
+  QUESTION_BRANDS         optional, comma list; default "serw,couples"
   FORCE_DATE              optional, YYYY-MM-DD; pretend today is this date
                           (for testing)
 """
@@ -30,7 +35,6 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
-QUESTIONS_PATH = ROOT / "content" / "brave_questions.json"
 
 NZ = ZoneInfo("Pacific/Auckland")
 POST_DAYS = {0, 2, 4}  # Monday, Wednesday, Friday
@@ -69,18 +73,31 @@ def post_index(day: date, launch: date) -> int | None:
     return n
 
 
-def load_questions() -> list[dict]:
-    with QUESTIONS_PATH.open(encoding="utf-8") as f:
+BRANDS = {
+    # brand key: (questions file, image folder)
+    "serw": ("brave_questions.json", "serw"),
+    "couples": ("couples_questions.json", "couples"),
+}
+
+
+def enabled_brands() -> list[str]:
+    raw = os.environ.get("QUESTION_BRANDS") or "serw,couples"
+    return [b.strip() for b in raw.split(",") if b.strip() in BRANDS]
+
+
+def load_questions(brand: str) -> list[dict]:
+    with (ROOT / "content" / BRANDS[brand][0]).open(encoding="utf-8") as f:
         return json.load(f)
 
 
-def build_payload(entry: dict, raw_base: str) -> dict:
+def build_payload(brand: str, entry: dict, raw_base: str) -> dict:
     base = raw_base.rstrip("/")
-    image_url = f"{base}/images/questions/question-{entry['id']}.jpg"
+    image_url = f"{base}/images/questions/{BRANDS[brand][1]}/question-{entry['id']}.jpg"
     caption = f"{entry['question']}\n\n{entry['caption_tail']}"
     tags = entry.get("hashtags") or []
     return {
         "post_type": "question",
+        "brand": brand,
         "post_id": entry["id"],
         "prompt": entry["question"],
         "caption": caption,
@@ -93,26 +110,7 @@ def build_payload(entry: dict, raw_base: str) -> dict:
     }
 
 
-def main() -> int:
-    questions = load_questions()
-    day = today_nz()
-    n = post_index(day, launch_date())
-    if n is None:
-        print(f"{day} is not a question day. Skipping.")
-        return 0
-    if n >= len(questions):
-        print(f"All {len(questions)} question cards have been posted. Skipping.")
-        return 0
-    entry = questions[n]
-
-    webhook_url = os.environ.get("ZAPIER_WEBHOOK_URL")
-    raw_base = os.environ.get("IMAGE_RAW_BASE", "").rstrip("/")
-    payload = build_payload(entry, raw_base or "https://example.invalid")
-    if not webhook_url or not raw_base:
-        print("ZAPIER_WEBHOOK_URL and IMAGE_RAW_BASE must be set. Payload would be:")
-        print(json.dumps(payload, ensure_ascii=False, indent=2))
-        return 1
-
+def send(webhook_url: str, payload: dict) -> bool:
     req = urllib.request.Request(
         webhook_url,
         data=json.dumps(payload).encode("utf-8"),
@@ -124,11 +122,34 @@ def main() -> int:
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
         print(f"Zapier webhook error {e.code}: {body}", file=sys.stderr)
-        return 1
+        return False
+    print(f"Sent {payload['brand']} question card #{payload['post_id']} to Zapier; response: {result}")
+    return True
 
-    left = len(questions) - n - 1
-    print(f"Sent question card #{entry['id']} to Zapier ({left} left); response: {result}")
-    return 0
+
+def main() -> int:
+    day = today_nz()
+    n = post_index(day, launch_date())
+    if n is None:
+        print(f"{day} is not a question day. Skipping.")
+        return 0
+
+    webhook_url = os.environ.get("ZAPIER_WEBHOOK_URL")
+    raw_base = os.environ.get("IMAGE_RAW_BASE", "").rstrip("/")
+    ok = True
+    for brand in enabled_brands():
+        questions = load_questions(brand)
+        if n >= len(questions):
+            print(f"All {len(questions)} {brand} question cards have been posted. Skipping.")
+            continue
+        payload = build_payload(brand, questions[n], raw_base or "https://example.invalid")
+        if not webhook_url or not raw_base:
+            print("ZAPIER_WEBHOOK_URL and IMAGE_RAW_BASE must be set. Payload would be:")
+            print(json.dumps(payload, ensure_ascii=False, indent=2))
+            ok = False
+            continue
+        ok = send(webhook_url, payload) and ok
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":

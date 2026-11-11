@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "theme": "connection",
+    "question": "When did you last feel like a team, not flatmates?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 2,
+    "theme": "conflict",
+    "question": "What's the fight you two keep having, and what's it about underneath?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 3,
+    "theme": "sex",
+    "question": "When did sex start to feel like another job on the list?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 4,
+    "theme": "life",
+    "question": "When did your relationship become the thing you'll get to after everything else?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 5,
+    "theme": "repair",
+    "question": "What hurt from years ago are you both still tiptoeing around?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 6,
+    "theme": "connection",
+    "question": "What do you miss most about how you two used to be?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 7,
+    "theme": "conflict",
+    "question": "When you criticise, what are you hoping your partner will finally hear?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 8,
+    "theme": "sex",
+    "question": "What if one of you wants sex first and the other wants it once you get going, and neither of you is wrong?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 9,
+    "theme": "life",
+    "question": "Do your kids see two people who love each other, or two people who run a house?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 10,
+    "theme": "repair",
+    "question": "What would you need to forgive, to feel close again?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 11,
+    "theme": "connection",
+    "question": "When your partner talks, are you listening, or getting ready to defend yourself?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 12,
+    "theme": "conflict",
+    "question": "What if your partner goes quiet because they're overwhelmed, not because they don't care?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 13,
+    "theme": "sex",
+    "question": "What would you love more of in bed, if you could say it without it turning into a fight?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 14,
+    "theme": "life",
+    "question": "What would one evening a week, just for the two of you, change?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 15,
+    "theme": "repair",
+    "question": "What if saying sorry first is strength, not losing?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 16,
+    "theme": "connection",
+    "question": "What would you say to your partner if you knew they wouldn't get defensive?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 17,
+    "theme": "conflict",
+    "question": "In your arguments, who usually chases and who usually shuts down?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 18,
+    "theme": "sex",
+    "question": "Is it that you don't want sex, or that you don't want the sex you're having?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 19,
+    "theme": "life",
+    "question": "Who carries the mental load in your house, and have you ever talked about it?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 20,
+    "theme": "repair",
+    "question": "What does your partner do right that you've stopped noticing?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 21,
+    "theme": "connection",
+    "question": "When did you last turn towards each other instead of towards your phones?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 22,
+    "theme": "conflict",
+    "question": "What if neither of you is the problem, and the pattern is?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 23,
+    "theme": "sex",
+    "question": "What turns your partner off that they've never told you?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 24,
+    "theme": "life",
+    "question": "What if your partner's grumpiness is exhaustion, not rejection?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 25,
+    "theme": "repair",
+    "question": "What do you each want the next ten years to feel like?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 26,
+    "theme": "connection",
+    "question": "Do you know what your partner is most worried about right now?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 27,
+    "theme": "conflict",
+    "question": "What would change if you said \"I'm hurt\" instead of \"You always\"?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 28,
+    "theme": "sex",
+    "question": "When did you last touch each other with no expectation of sex?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 29,
+    "theme": "life",
+    "question": "When the kids leave home, what will you two talk about?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 30,
+    "theme": "repair",
+    "question": "If you started dating each other again, where would you begin?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 31,
+    "theme": "connection",
+    "question": "What if the distance between you isn't a lack of love, just a lack of time together?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 32,
+    "theme": "conflict",
+    "question": "Are you trying to win the argument, or trying to feel close again?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 33,
+    "theme": "sex",
+    "question": "What if a \"no\" to sex isn't a \"no\" to you?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 34,
+    "theme": "life",
+    "question": "What do you need from your partner that you're too tired to ask for?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 35,
+    "theme": "repair",
+    "question": "What do you still love about your partner that you haven't said out loud in a while?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 36,
+    "theme": "connection",
+    "question": "When did you stop asking each other how you're doing, and meaning it?",
+    "caption_tail": "Feeling far apart doesn't mean the love has gone. It usually means you've both been too busy to reach for each other.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 37,
+    "theme": "conflict",
+    "question": "What do you need to hear after a fight that you never ask for?",
+    "caption_tail": "Most couples aren't fighting about the dishes. Underneath, it's: do I matter to you? Are you there for me?\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 38,
+    "theme": "sex",
+    "question": "What's one thing you've been too embarrassed to ask your partner for?",
+    "caption_tail": "Desire works differently for different people. When you understand each other's, sex stops being a battleground.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 39,
+    "theme": "life",
+    "question": "When did you last laugh together, properly?",
+    "caption_tail": "Busy seasons are normal. Letting your relationship run on empty for years is where couples get into trouble.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  },
+  {
+    "id": 40,
+    "theme": "repair",
+    "question": "What's one small thing you could do this week to turn towards each other?",
+    "caption_tail": "Repair doesn't need a grand gesture. It starts with one honest conversation.\n\nTalk about it tonight, or send it to your partner.\n\ntheloveadventure.com",
+    "hashtags": [
+      "#couplestherapy",
+      "#marriageadvice",
+      "#relationshiptips",
+      "#emotionallyfocusedtherapy",
+      "#loveafter40",
+      "#intimacy",
+      "#reconnect"
+    ]
+  }
+]

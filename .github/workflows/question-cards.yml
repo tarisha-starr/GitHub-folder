@@ -27,4 +27,5 @@ jobs:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
           IMAGE_RAW_BASE: ${{ vars.IMAGE_RAW_BASE }}
           QUESTIONS_LAUNCH_DATE: ${{ vars.QUESTIONS_LAUNCH_DATE }}
+          QUESTION_BRANDS: ${{ vars.QUESTION_BRANDS }}
         run: python zapier_push_question.py

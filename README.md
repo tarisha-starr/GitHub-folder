@@ -74,38 +74,44 @@ The same content is mirrored to Notion under
 **Social Media → Daily Image Posts + Email Automation** as a content
 calendar so you can plan, edit, and check off posts as they go live.
 
-## Brave question cards (Mon, Wed, Fri)
+## Brave question cards (Mon, Wed, Fri), two versions
 
-40 question cards across five themes (your desire, you and him, your body,
-starting again, the woman underneath), posted three times a week through
-the same Zapier webhook as the other posts.
+Each card shows only the question and the website. Two versions post on
+the same days, each as its own webhook call with a `brand` field so the
+Zap can send it to the right account:
 
-- `content/brave_questions.json` holds each question, its caption and hashtags,
-  in posting order (themes rotate).
-- `images/questions/question-<id>.jpg` are the cards (1080x1350). Re-render
-  after editing the JSON with `node automation/render_question_cards.js`.
+| brand | questions | cards | look |
+|---|---|---|---|
+| `serw` | `content/brave_questions.json` (40, for women) | `images/questions/serw/` | burgundy, navy, gold; SEXUALEMPOWERMENTFORWOMEN.COM footer bar |
+| `couples` | `content/couples_questions.json` (40, for couples) | `images/questions/couples/` | Soft Autumn pine palette; theloveadventure.com |
+
+- Re-render after editing either JSON: `node automation/render_question_cards.js`
+  (or `BRAND=couples node ...` for one version).
 - `automation/zapier_push_question.py` picks the card for today in NZ time.
   It posts only on Monday, Wednesday and Friday, starting on
   `QUESTIONS_LAUNCH_DATE` (default 2026-11-16), and stops after card 40.
 - `.github/workflows/question-cards.yml` runs it at about 7:37am NZ.
+- Optional repo variable `QUESTION_BRANDS` (default `serw,couples`) limits
+  which versions post.
 
-To switch it on, set the repository variables `QUESTIONS_ENABLED=true`
-(alongside the existing `ZAPIER_ENABLED=true`) and optionally
-`QUESTIONS_LAUNCH_DATE`. The payload has `post_type: "question"`, so check
-your Zap posts it as an image post (`image_url` plus `caption`).
+To switch it on, set `QUESTIONS_ENABLED=true` (alongside the existing
+`ZAPIER_ENABLED=true`). In the Zap, route `post_type: "question"` by
+`brand`: `serw` to the Sexual Empowerment for Women accounts, `couples`
+to The Love Adventure accounts.
 
-### Weekly reel: The Second Awakening (Sunday)
+### Weekly reel: The Second Awakening (Sunday, SERW only)
 
-Every Sunday a 9:16 reel recaps that week's three question cards:
-an intro card, the three questions, then an end card asking "Which one
-got you? Comment 1, 2 or 3." 14 reels in all (the last is a single-question
-finale), posting from the Sunday after `QUESTIONS_LAUNCH_DATE`.
+Every Sunday a 9:16 reel recaps that week's three SERW questions: a title
+card, the three questions (question and website only), then an end card
+asking "Which one got you? Comment 1, 2 or 3." 14 reels in all (the last is a
+single-question finale), posting from the Sunday after `QUESTIONS_LAUNCH_DATE`.
 
 - `content/second_awakening_reels.json`: which questions each reel uses, plus its caption
 - `videos/awakening/reel-<id>.mp4`: the reels (about 23 seconds, silent audio
   track, so add music in the app if you want it)
 - `automation/render_awakening_reels.js`: re-render after editing questions
 - `automation/zapier_push_reel.py` + `.github/workflows/awakening-reel.yml`:
-  sends `post_type: "reel"` with `video_url` at about 11:23am NZ on Sundays
+  sends `post_type: "reel"`, `brand: "serw"` with `video_url` at about
+  11:23am NZ on Sundays
 
 It uses the same `QUESTIONS_ENABLED` switch as the cards.
