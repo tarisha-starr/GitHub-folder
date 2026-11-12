@@ -87,6 +87,13 @@ add(d,"pink","Open to love, in the whole body",
     body="Love isn't only in the heart. We can open the heart and the whole body, more and more. There's no limit to how much you can let in.")
 add(d,"sage","Group practice · Open your heart & body",eyebrow="As a group",
     body="Together: hand on heart, hand on belly. Breathe. Feel love in your chest, let it spread through your whole body. Open a little more with each breath.")
+add(d,"plum","Devotion",eyebrow="The heart of the practice",
+    body="The feminine's deepest practice: opening your heart and offering your love, again and again, as a gift. Not love you earn or withhold. Love you give, to your partner, to life, to the divine.")
+add(d,"blush","The practice of devotion",
+    body=["Open your heart as an offering, every day.","Give your love freely, radiate it, don't ration it.",
+          "Let your relationship be a doorway to something greater.","When you want to close, choose to open to love instead."])
+add(d,"pink","Reflect",eyebrow="Devotion",
+    body="When, and how, are you withholding your love?")
 add(d,"navy","This week",eyebrow="Take home",
     body=["When anger rises, keep one hand on your heart.","Feel it, speak it, stay connected.",
           "Each day, open your whole body to love a little more."])
@@ -96,7 +103,7 @@ add(d,"navy","The Art of Polarity & Attraction",
     eyebrow="November Training  ·  Session 2",
     body="Amplifying expression and polarity.",big=True)
 add(d,"plum","Amplify your expression",eyebrow="Art two",
-    body="Your inner world only reaches him when it's shown. Not hinted. Shown, through the body.",big=True)
+    body="He can't feel what you only hint at. When you let your feeling move through your body, he finally gets you.",big=True)
 add(d,"pink","Show, don't hint",
     body="Face, voice, movement, energy. Let him see and feel what you feel, so he can actually understand you.")
 add(d,"gold","How to encourage her",eyebrow="The witness's role",

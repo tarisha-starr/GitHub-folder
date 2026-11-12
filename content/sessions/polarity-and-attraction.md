@@ -42,8 +42,9 @@ heart, then to open her whole body to love.
 | 0:40-1:05 | **★ Group exercise: Anger from the heart** | Demo + whole-group practice |
 | 1:05-1:12 | **Break** | |
 | 1:12-1:17 | **Open to love in the whole body** | Teaching |
-| 1:17-1:40 | **★ Group practice: Open your heart & whole body** | Guided, together |
-| 1:40-2:00 | **Integration & take-home** | |
+| 1:17-1:35 | **★ Group practice: Open your heart & whole body** | Guided, together |
+| 1:35-1:50 | **Devotion** | Define it; the practice of devotion |
+| 1:50-2:00 | **Integration & take-home** | |
 
 ## Part 1: Arrive & ground (0:00-0:12)
 
@@ -112,7 +113,7 @@ that you can be angry *and* loving at once.
 > Love isn't only in the heart. We can open the heart and the whole body, more and more.
 > There's no limit to how much love you can let in, and let move through you.
 
-## Part 6: ★ Group practice: Open your heart & whole body (1:17-1:40)
+## Part 6: ★ Group practice: Open your heart & whole body (1:17-1:35)
 
 Guide the whole group, slowly, eyes closed:
 
@@ -125,12 +126,33 @@ Guide the whole group, slowly, eyes closed:
 Let them stay in it for several minutes. Then a gentle return and a word or two on what
 they noticed.
 
-## Part 7: Integration & take-home (1:40-2:00)
+## Part 7: Devotion (1:35-1:50)
+
+The deepest layer of staying with love.
+
+> **What devotion is:** devotion is the feminine's deepest practice. It's opening your
+> heart and offering your love, again and again, as a gift. Not love you earn, and not love
+> you hold back to stay safe. Love you give, freely, to your partner, to life, to the
+> divine. The open heart from Art 1 becomes a way of living when you make it devotional.
+
+**The practice of devotion:**
+- Open your heart as an offering, every day, not only when you feel like it.
+- Give your love freely. Radiate it. Don't ration it or make him earn it.
+- Let your relationship be a doorway to something greater than the two of you.
+- When you feel yourself wanting to close or protect, choose to open to love instead. That
+  choice, made again and again, is devotion.
+
+Close with a minute of practice: hand on heart, and silently, "I choose to stay open. I
+offer my love." Invite a word on what they felt.
+
+**Reflect:** When, and how, are you withholding your love?
+
+## Part 8: Integration & take-home (1:50-2:00)
 
 **Take-home:**
 > This week: when anger rises, keep one hand on your heart. Feel it, speak it, stay
-> connected. And each day, take a few minutes to open your whole body to love a little
-> more.
+> connected. Each day, open your whole body to love a little more. And practise devotion,
+> choosing to open and offer your love, especially when you'd rather close.
 
 Closing round, one line each: "The way I'll keep my heart open this week is..."
 
@@ -163,9 +185,9 @@ emotional. Go-round: one way I kept my heart open this week.
 
 ## Part 2: Art 2: Amplify your expression (0:12-0:27)
 
-> Your inner world, your feeling, your wanting, your delight, only reaches him when it's
-> shown. Not hinted. Shown, through the body. Your face, your voice, your movement, your
-> energy. Let him see and feel what you feel, so he can actually understand you.
+> Your inner world, your feeling, your wanting, your delight, only reaches him when you
+> show it. He can't feel what you keep hidden or only hint at. So let it move through your
+> body, your face, your voice, your movement, so he can actually feel you and understand you.
 >
 > Most of us learned to hold it in, to be contained, to hint and hope he'll notice. Tonight
 > we practise the opposite: letting it out, big, through the body.
