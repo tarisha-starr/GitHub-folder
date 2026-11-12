@@ -105,26 +105,31 @@ add(d,"teal","Breakout · Amplify your expression",eyebrow="In pairs · with fee
           "B encourages: 'relax here more,' 'give me more,' and affirms 'yes, I can really feel you.'",
           "Let A grow bigger with the encouragement. Swap."])
 add(d,"navy","Amplify polarity",eyebrow="Art three",
-    body="Stay in the heart, and bring presence. This is how you keep the charge alive.",big=True)
-add(d,"gold","Bring your partner present",
-    body=["When he goes flat or emotional, don't shrink, and don't fix.",
-          "Meet the same emotion. Channel it. Amplify it with your presence.",
-          "Full presence restores the polarity."])
+    body="Not by becoming the strong one. By amplifying the feminine, more emotion, more expression, so he is drawn into his presence.",big=True)
+add(d,"gold","Draw him into his presence",
+    body=["Presence is his masculine gift, not yours to supply.",
+          "When he drops, go further in, not away. If he's helpless, become even more helpless.",
+          "Bring more emotion, more expression, through your body, from an open heart.",
+          "Your amplified feminine calls him into his presence."])
+add(d,"sage","Be the river",
+    body=["A river needs banks. If you hold the banks, structured, controlled, strong, he has nothing to hold.",
+          "Become the river: softer, more flowing, less structured.",
+          "Then he has to become the banks, the structure and the presence for you."])
 add(d,"pink","Reflect",eyebrow="Before the breakout",
-    body=["How do I usually respond when he's emotional, shrink, fix, or go flat too?",
-          "What would it be like to meet and amplify instead?"])
+    body=["How do I usually respond when he drops, shrink, fix, or go strong myself?",
+          "What would it be like to amplify the feeling through my body instead?"])
 add(d,"teal","Breakout · Amplifying polarity",eyebrow="In pairs",
-    body=["One of you drops into a low, flat, emotional state.",
-          "The other: don't shrink or fix. Meet it, channel the same emotion, amplify it with presence.",
-          "Notice how the charge shifts. Swap roles."])
+    body=["One of you drops: sad, flat, giving up.",
+          "The other: don't shrink, fix, or go strong. Amplify the SAME feeling, more emotion, more expression through your body.",
+          "Feel how it calls the other into presence. Swap roles."])
 add(d,"blush","The three arts, together",
     body=["Stay with love, with an open heart.","Amplify your expression, through the body.",
-          "Amplify polarity, bring presence."])
+          "Amplify polarity: more feeling, more expression, so he rises into presence."])
 add(d,"navy","This week",eyebrow="Take home",
-    body=["Show one feeling fully through your body each day.","When he drops, bring presence instead of shrinking.",
-          "Stay open. Show up. Bring the charge."])
+    body=["Show one feeling fully through your body each day.","When he drops, don't shrink, amplify the feeling through your body.",
+          "Open heart. Full expression. Let him rise."])
 add(d,"plum","Polarity is love, expressed.",
-    body="Stay open. Show up. Bring presence.",big=True)
+    body="Open heart. Full expression. He rises into presence.",big=True)
 
 os.makedirs("content/sessions/slides",exist_ok=True)
 out="content/sessions/slides/Polarity-and-Attraction.pptx"
