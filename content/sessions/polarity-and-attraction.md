@@ -282,8 +282,8 @@ that's the habit we're unwinding. Encourage softening and amplifying, gently.
 
 **Take-home:**
 > Show one feeling fully through your body each day. When he drops, don't shrink, amplify
-> the feeling and soften like the river. Keep your heart open, let yourself be seen, and
-> let him rise to meet you.
+> the feeling and soften like the river. And practise opening your heart and sharing your
+> love, especially when you want to close down.
 
 Closing round, one line each: "The art I'm taking home is..."
 

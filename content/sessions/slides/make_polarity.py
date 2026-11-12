@@ -138,7 +138,7 @@ add(d,"blush","The three arts, together",
           "Amplify polarity: more feeling, more expression, so he rises into presence."])
 add(d,"navy","This week",eyebrow="Take home",
     body=["Show one feeling fully through your body each day.","When he drops, don't shrink, amplify the feeling through your body.",
-          "Keep your heart open, let yourself be seen, and let him rise to meet you."])
+          "Practise opening your heart and sharing your love, especially when you want to close down."])
 add(d,"plum","Love meeting presence",
     body="Polarity is the attraction between love and presence, the feminine and the masculine. Keep your heart open, let your love be seen, and he rises to meet you.",big=True)
 
