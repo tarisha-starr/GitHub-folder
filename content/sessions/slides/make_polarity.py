@@ -58,15 +58,19 @@ add(d,"navy","The Art of Polarity & Attraction",
     eyebrow="November Training  ·  Session 1",
     body="The Open Heart: staying with love.",big=True)
 add(d,"pink","What is polarity?",
-    body="The spark of attraction between masculine and feminine energy. Love is openness. Fear is contraction.")
+    body="The charge between two opposite poles. Attraction is born from difference: masculine and feminine. The greater the difference, the stronger the spark. Sameness goes flat.")
+add(d,"navy","Masculine energy",
+    body="Presence, direction, structure, stillness, focus. The one who holds, grounds, and gives the banks. It lives in all of us. Here, it's his gift.")
+add(d,"blush","Feminine energy",
+    body="Radiance, flow, feeling, movement, life itself. The river, ever-changing, full of love and light. It lives in all of us. Here, it's her gift.")
 add(d,"plum","The three arts",eyebrow="Our map",
     body=["Stay with love, with an open heart.","Amplify your expression.","Amplify and express polarity."])
-add(d,"blush","David Deida",eyebrow="Our source",
-    body=["Dear Lover, his guide for women.","The Way of the Superior Man, his primary book for men.",
-          "[ drop the Dear Lover cover image here ]"])
+add(d,"blush","David Deida",eyebrow="Teachings we weave",
+    body=["We weave my work with David Deida's teachings on polarity.",
+          "Dear Lover, his guide for women.","The Way of the Superior Man, his book for men."])
 add(d,"navy","Stay with love",eyebrow="Art one",
     body="With an open heart. Love is openness; fear is contraction. When you open, you magnetise. When you close, the charge dies.",big=True)
-add(d,"gold","Vulnerable, or emotional?",
+add(d,"gold","Vulnerable vs emotional",
     body=["Connected to your heart: vulnerable, and still loving, even in anger.",
           "Disconnected from your heart: emotional, and it lands as an attack.",
           "And he has every right to protect himself from an attack."])
