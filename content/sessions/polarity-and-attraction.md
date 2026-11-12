@@ -54,17 +54,18 @@ belly, three slow breaths. One-word go-round: how are you arriving?
 
 ## Part 2: Polarity, the three arts, the teachings (0:12-0:27)
 
-> Attraction isn't random. It lives in polarity, the charge between two opposite poles.
+> Attraction isn't random. It lives in polarity, the attraction between love and presence.
 
-**What is polarity?** The charge between two opposite poles. Attraction is born from
-difference, masculine and feminine. The greater the difference, the stronger the spark.
-Sameness goes flat.
+**What is polarity?** Polarity is the attraction between love and presence, between the
+feminine and the masculine. The pull comes from their difference, and the greater the
+difference, the stronger the charge.
 
-**Masculine energy:** presence, direction, structure, stillness, focus. The one who holds,
-grounds, and gives the banks. It lives in all of us. Here, it's his gift.
+**Masculine energy:** the masculine is presence, a steady, grounded, focused energy that
+holds and gives structure, the banks of the river. It lives in all of us, and here it is
+his gift.
 
-**Feminine energy:** radiance, flow, feeling, movement, life itself. The river,
-ever-changing, full of love and light. It lives in all of us. Here, it's her gift.
+**Feminine energy:** the feminine is love in motion, radiant and flowing and alive with
+feeling. She is the river. This energy lives in all of us too, and here it is her gift.
 
 Lay out the three arts (the map for both sessions):
 1. **Stay with love**, with an open heart.
@@ -275,13 +276,14 @@ that's the habit we're unwinding. Encourage softening and amplifying, gently.
 
 ## Part 9: The three arts together & close (1:55-2:00)
 
-> Three arts. Stay with love, with an open heart. Amplify your expression, through the body.
-> And amplify polarity, more feeling, more expression, soften like the river, and he rises
-> into his presence.
+> Three arts together. Stay with love and keep your heart open. Let your expression move
+> through your body so he can feel you. And amplify polarity by softening into more feeling
+> and more expression, like the river, so he rises into his presence.
 
 **Take-home:**
 > Show one feeling fully through your body each day. When he drops, don't shrink, amplify
-> the feeling and soften like the river. Open heart. Full expression. Let him rise.
+> the feeling and soften like the river. Keep your heart open, let yourself be seen, and
+> let him rise to meet you.
 
 Closing round, one line each: "The art I'm taking home is..."
 

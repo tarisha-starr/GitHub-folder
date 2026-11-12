@@ -58,11 +58,11 @@ add(d,"navy","The Art of Polarity & Attraction",
     eyebrow="November Training  ·  Session 1",
     body="The Open Heart: staying with love.",big=True)
 add(d,"pink","What is polarity?",
-    body="The charge between two opposite poles. Attraction is born from difference: masculine and feminine. The greater the difference, the stronger the spark. Sameness goes flat.")
+    body="Polarity is the attraction between love and presence, between the feminine and the masculine. The pull comes from their difference, and the greater the difference, the stronger the charge.")
 add(d,"navy","Masculine energy",
-    body="Presence, direction, structure, stillness, focus. The one who holds, grounds, and gives the banks. It lives in all of us. Here, it's his gift.")
+    body="The masculine is presence: a steady, grounded, focused energy that holds and gives structure, the banks of the river. It lives in all of us, and here it is his gift.")
 add(d,"blush","Feminine energy",
-    body="Radiance, flow, feeling, movement, life itself. The river, ever-changing, full of love and light. It lives in all of us. Here, it's her gift.")
+    body="The feminine is love in motion, radiant and flowing and alive with feeling. She is the river. This energy lives in all of us too, and here it is her gift.")
 add(d,"plum","The three arts",eyebrow="Our map",
     body=["Stay with love, with an open heart.","Amplify your expression.","Amplify and express polarity."])
 add(d,"blush","David Deida",eyebrow="Teachings we weave",
@@ -138,9 +138,9 @@ add(d,"blush","The three arts, together",
           "Amplify polarity: more feeling, more expression, so he rises into presence."])
 add(d,"navy","This week",eyebrow="Take home",
     body=["Show one feeling fully through your body each day.","When he drops, don't shrink, amplify the feeling through your body.",
-          "Open heart. Full expression. Let him rise."])
-add(d,"plum","Polarity is love, expressed.",
-    body="Open heart. Full expression. He rises into presence.",big=True)
+          "Keep your heart open, let yourself be seen, and let him rise to meet you."])
+add(d,"plum","Love meeting presence",
+    body="Polarity is the attraction between love and presence, the feminine and the masculine. Keep your heart open, let your love be seen, and he rises to meet you.",big=True)
 
 os.makedirs("content/sessions/slides",exist_ok=True)
 out="content/sessions/slides/Polarity-and-Attraction.pptx"
