@@ -49,6 +49,7 @@ Several posts ended on a question with no next step, and Reel 3 asked for a diff
   - Email 4 said you'd lain in the lonely bed yourself. I don't know that, so it now talks about the women you kept meeting. Put your own story back in if it's true.
   - Email 5 ("most couples feel relief in the first few sessions") and Email 8 ("I've watched it happen over and over") made claims about results. Both are softened.
   - "Most therapists do one or the other" became "Lots of therapists..."
+  - EFT 1 (an invented client quote), Reel 5 ("I used to hand couples tools"), POLARITY 7 ("this idea changed my marriage"), POLARITY 6 ("most couples I see") and AVOID 10 ("I'm working with 10 couples right now", which isn't true yet) are all reworded so they don't claim things about you or your practice.
 - **Clean already:** no dashes, UK spelling, contractions, no "research shows", no "I see you", no hype. The word "real" doesn't appear anywhere.
 
 ## Pieces that passed first time (no change beyond the CTA)

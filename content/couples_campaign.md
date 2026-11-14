@@ -132,9 +132,9 @@ You two aren't flatmates. Not yet. Let's get you back.
 ## 2. Ten posts: why EFT is great
 
 **EFT 1**
-I had a couple tell me, "We've done three counsellors. They all gave us homework. We did none of it."
+"We've done three counsellors. They all gave us homework. We did none of it."
 
-Of course you didn't.
+Sound familiar? Of course you didn't do it.
 
 You don't need another communication worksheet. You need to feel safe enough to stop fighting like enemies.
 
@@ -359,7 +359,7 @@ You fell into a pattern.
 
 And patterns can be unlearned.
 
-I'm working with 10 couples right now on exactly this. EFT for the heart stuff, sex therapy for the body stuff.
+I've opened 10 spots for couples who want to work on exactly this. EFT for the heart stuff, sex therapy for the body stuff.
 
 Comment COUPLES and I'll send you the link to book a free discovery session.
 
@@ -394,9 +394,9 @@ Script:
 Caption: Watch it together. Then tell me what you noticed. Comment COUPLES to book a free discovery session.
 
 **REEL 5: Authority (Why EFT)**
-On-screen hook: *Why I stopped giving couples homework*
+On-screen hook: *Why I don't give couples homework*
 Script:
-"I used to hand couples communication tools. They'd nod. Then go home and fight the exact same fight. EFT changed everything for me. We don't fix the words. We fix the fear underneath. When you feel safe with each other, the words take care of themselves."
+"Communication tools sound great. Couples nod along. Then go home and fight the exact same fight. EFT works differently. We don't fix the words. We fix the fear underneath. When you feel safe with each other, the words take care of themselves."
 Caption: You don't need a script. You need to feel safe. Comment COUPLES to book a free discovery session.
 
 **REEL 6: Proof (Story)**
@@ -510,7 +510,7 @@ Stage one: old school roles. "You need me."
 Stage two: 50/50. Fair. Independent. Often lonely in bed.
 Stage three: two whole people, choosing to play with energy, open hearted, on purpose.
 
-Most couples I see are stuck in stage two. And they think that's as good as it gets.
+So many couples I see are stuck in stage two. And they think that's as good as it gets.
 
 It isn't.
 
@@ -521,7 +521,7 @@ I'll be honest with you.
 
 I don't agree with everything Deida's written. Some of it is very "old man on a mountain."
 
-But this idea changed my marriage: presence is the sexiest thing you can offer. Full attention. No phone. No half listening.
+But this idea is gold: presence is the sexiest thing you can offer. Full attention. No phone. No half listening.
 
 Try it tonight. Five minutes. Just look at your partner like they're the only person in the room.
 
