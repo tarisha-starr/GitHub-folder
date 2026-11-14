@@ -66,7 +66,7 @@ P.S. Reply and tell me: which one are you? The reacher or the retreater? I read 
 
 ### Email 2 (Wednesday)
 
-**Subject:** The dance nobody chose
+**Subject:** Why you keep having the same fight
 **Preview:** One reaches. One retreats. Round and round.
 
 Hi [First name],
@@ -142,8 +142,8 @@ Tarisha
 
 ### Email 4 (Monday)
 
-**Subject:** Why I do this work
-**Preview:** I've been in the lonely bed too
+**Subject:** I used to be an accountant
+**Preview:** Then I got curious about why good couples drift apart
 
 Hi [First name],
 
@@ -151,15 +151,15 @@ I want to tell you why this matters so much to me.
 
 Before I was a therapist, I was an accountant. Spreadsheets. Deadlines. Holding everything together.
 
-And I know what it's like to be brilliant at running a life and lost in your own relationship. To lie next to someone you love and feel miles away.
+And I kept meeting women who were brilliant at running a life and lost in their own relationship. Lying next to someone they love and feeling miles away.
 
-I didn't want a quick fix. I wanted to understand why this happens to good couples. So I trained in Emotionally Focused Therapy, sex therapy, Hakomi, Gottman work and somatic trauma work.
+I didn't want to hand out quick fixes. I wanted to understand why this happens to good couples. So I trained in Emotionally Focused Therapy, sex therapy, Hakomi, Gottman work and somatic trauma work.
 
-What I learned is that the emotional stuff and the bedroom stuff aren't two problems. They're one problem wearing two outfits.
+What I learned is that the emotional stuff and the bedroom stuff aren't two problems. They're the same problem.
 
 When you feel disconnected during the day, your body doesn't want to open at night. And when sex keeps going wrong at night, you feel more disconnected during the day.
 
-Most therapists work on one or the other. I work on both, together, because that's how couples work.
+Lots of therapists work on one or the other. I work on both, together, because that's how couples work.
 
 If you'd like to find out what that could look like for you two, start with a discovery session. Free. No pressure. Just a conversation.
 
@@ -185,14 +185,14 @@ It's not like that with me. Here's the plan.
 We talk about what's happening, what you want, and whether I'm the right person to help. You don't need your partner on this first call if they're not ready.
 
 **Step 2: See your cycle.**
-Together we map your dance. The reaching, the retreating, the fear underneath. Most couples feel relief in the first few sessions just from being understood.
+Together we map your dance. The reaching, the retreating, the fear underneath. Just being understood can bring a lot of relief.
 
 **Step 3: Come back to each other.**
 We slow down the fights. We take the pressure off sex. We bring back touch that doesn't have to go anywhere. Pleasure becomes the goal, not performance.
 
 That's it. Three steps.
 
-And here's what couples tell me changes first. They fight shorter. They repair faster. They start turning toward each other in the kitchen again.
+Here's what we work towards first. Shorter fights. Faster repairs. Turning toward each other in the kitchen again.
 
 That's where good sex starts. Not in the bedroom. In the kitchen.
 
@@ -256,7 +256,7 @@ Not in a dramatic way. Just... another year of this. Another year of polite good
 
 Cycles don't usually fade on their own. They get quieter. More careful. Until one day you realise you haven't talked about it in so long, it feels too big to bring up.
 
-I don't say this to scare you. I say it because I see couples come in after ten years of waiting, and they always tell me the same thing:
+I don't say this to scare you. I say it because So many couples sit down with me after years of waiting and say the same thing:
 
 "I wish we'd done this sooner."
 
@@ -292,7 +292,7 @@ Here's what I tell people.
 
 **Nobody's in trouble.** In my room there's no picking sides. The cycle is the problem, not either of you.
 
-**You can start alone.** Book the discovery session yourself. Change one side of the dance, and the whole dance changes. I've watched it happen over and over.
+**You can start alone.** Book the discovery session yourself. When one person changes their steps, the whole dance has to change.
 
 Other things I hear:
 
