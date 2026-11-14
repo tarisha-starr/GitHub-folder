@@ -65,3 +65,61 @@ Several posts ended on a question with no next step, and Reel 3 asked for a diff
 3. AVOID 1: You don't hate sex. You hate pressure.
 4. EFT 10: Most couples therapists get awkward when you mention sex
 5. POLARITY 6: Fair. Equal. Not having sex?
+
+---
+
+## Round 2: Vex and Leo checks, plus an AI-pattern sweep
+
+### Vex (hooks): every opener must use at least one of four hooks
+- **Open loop:** a question or tension she has to stay to resolve.
+- **Pattern interrupt:** something unexpected or a bit cheeky.
+- **Identity:** she feels personally called out.
+- **Stakes:** what she loses if she scrolls past.
+
+| Piece | Hook type |
+|---|---|
+| Video script | Identity + open loop ("five minutes... and three things to try tonight") |
+| EFT 1 | Identity (the three counsellors quote) |
+| EFT 2 | Pattern interrupt (it's not the dishes) |
+| EFT 3 | Open loop + identity |
+| EFT 4 | Pattern interrupt |
+| EFT 5, 6 | Identity (the quiet one, the pusher) |
+| EFT 7 | Open loop (three things) |
+| EFT 8 | Identity (closed door, raised voice) |
+| EFT 9 | Identity |
+| EFT 10 | Pattern interrupt (therapists get awkward about sex) |
+| AVOID 1 | Pattern interrupt + identity |
+| AVOID 2 | Identity (the one who gets turned down) |
+| AVOID 3 | Pattern interrupt |
+| AVOID 4 | Stakes (waiting forever) |
+| AVOID 5 | **Failed, rewritten.** "Think of desire like a car" had no hook. Now opens: "Trying to turn them on harder? Check the brake first." |
+| AVOID 6 | Identity |
+| AVOID 7 | Pattern interrupt (stop trying to have sex) |
+| AVOID 8 | Pattern interrupt |
+| AVOID 9 | Identity |
+| AVOID 10 | Pattern interrupt |
+| POLARITY 1, 2, 3, 4, 6, 8, 9, 10 | Identity or open loop |
+| POLARITY 5 | **Failed, rewritten.** "One of my favourite Deida ideas" had no hook. Now opens: "Most couples are starving for the one thing they're not giving each other." |
+| POLARITY 7 | **Fixed.** The opener "I'll be honest with you" was an AI filler line, so it now starts on "I don't agree with everything Deida's written", which is a pattern interrupt. |
+| OPEN 1 to 5 | Identity ("He's on his phone again. So you close.") and pattern interrupt ("You can say no and still love him.") |
+| Reels 1 to 10 | All pass. Reel 1 now says "flatmates", not "roommates". |
+| Email subjects | All pass except Email 5. "3 steps back to each other" had no loop. It's now "Couples therapy doesn't have to take years", with the preview "3 steps, and the first one's free". |
+
+### Leo (long video): open loops and a re-hook every 60 to 90 seconds
+The 5 minute script had a strong open loop at the start, but it went nearly two minutes without a re-hook. Two were added:
+- At the start: "And at the end I'll give you three things you can try tonight." This plants a loop that pays off at 3:40.
+- At about 1:40: "Stay with me, because this is where it gets interesting." This comes just before the sexual cycle section.
+
+The existing beats at 2:50 ("These two cycles are married to each other") and 3:40 ("So what actually works?") already do the job.
+
+### AI-pattern sweep
+Removed or rewritten across everything:
+- "quietly" (twice)
+- "Here's the thing", "Here's what I want you to know", "Here's the bit that...", "Here's the plan"
+- "Not because X. Because Y." and "Not out of nowhere. In response to..."
+- Stacked "That's not X. That's Y." lines. One is kept in the video ("That's not a libido problem. That's a safety problem."), because that's your own formula and it's doing the heavy lifting there. The rest are rewritten.
+- "Nobody's the villain", "The good news?", "Big difference.", "Radical.", "Picture this.", "Sound familiar?", "That's it.", "No pressure. Just a conversation.", "I'll be honest with you.", "And honestly?"
+- "Let's talk about..." openers
+- "Journey" (in the notes)
+
+Voice checker result after the sweep: clean on both files.

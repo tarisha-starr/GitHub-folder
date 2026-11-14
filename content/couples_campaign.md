@@ -26,6 +26,8 @@ Couples together 10+ years. Kids, careers, a calendar that runs them. Still love
 | 11 to 13 | Reel 9, posts mixed in | Social proof, objections, how many spots are left |
 | 14 | Reel 10 | Close: "last spots, doors shut Sunday" |
 
+Slot the OPEN posts (section 6) into days 5 to 13. They're the deepest pieces, and they work well after people have watched the video.
+
 Only say how many spots are left if it's true. Scarcity works because it's honest.
 
 Every DM that says COUPLES gets a personal voice note from you within a few hours. That's the bit that converts.
@@ -35,7 +37,7 @@ Every DM that says COUPLES gets a personal voice note from you within a few hour
 ## 1. Five minute video script
 
 **Title options:**
-- The Cycle That's Quietly Killing Your Sex Life
+- The Cycle That's Killing Your Sex Life
 - Why One of You Wants Sex and the Other One Hides
 - It's Not Your Libido. It's Your Cycle.
 
@@ -49,9 +51,9 @@ If one of you wants sex and the other one keeps finding reasons not to...
 
 You're not broken. Your marriage isn't broken.
 
-You're stuck in a cycle. And the cycle is the problem. Not him. Not her. Not you.
+You're stuck in a cycle. The cycle is the problem, not either of you.
 
-Stay with me for five minutes and I'll show you exactly what it looks like. Because once you can see it, you can stop it.
+Stay with me for five minutes and I'll show you exactly what it looks like. Once you can see it, you can stop it. And at the end I'll give you three things you can try tonight.
 
 **[INTRO, 0:25]**
 
@@ -73,7 +75,9 @@ So the reacher reaches harder. And the withdrawer withdraws further.
 
 Round and round.
 
-Nobody's the villain here. You're both just trying to protect the connection, in completely opposite ways.
+Neither of you is the bad guy. You're both trying to protect the connection, in opposite ways.
+
+Stay with me, because this is where it gets interesting.
 
 **[THE SEXUAL CYCLE, 1:45]**
 
@@ -87,7 +91,7 @@ So they start avoiding. Going to bed early. Going to bed late. No more long hugs
 
 And the initiating partner feels rejected. Again. And again. So they either push harder... or they go cold and stop trying.
 
-And here's the bit that breaks my heart.
+And this breaks my heart.
 
 Both of them end up lonely. Both of them think the other one doesn't care.
 
@@ -113,7 +117,7 @@ Second. Get underneath. The reacher shares the fear, not the complaint. "I miss 
 
 Third. Take the pressure off sex. Completely. Touch that doesn't have to go anywhere. Pleasure that doesn't need a finish line. Orgasm is not the goal. Connection is.
 
-When the avoiding partner feels safe, their desire often comes back. Not out of nowhere. In response to feeling met.
+When the avoiding partner feels safe, their desire often comes back, because they feel met.
 
 **[THE INVITATION, 4:30]**
 
@@ -121,7 +125,7 @@ This is exactly the work I do with couples. EFT for the emotional cycle. Sex the
 
 I've opened 10 spots for couples right now. Auckland or online.
 
-If this sounded like your house, comment or DM me the word COUPLES and I'll send you the link to book a free discovery session. No pressure. Just a conversation about what you two want and whether I can help.
+If this sounded like your house, comment or DM me the word COUPLES and I'll send you the link to book a free discovery session. It's a chat about what you two want and whether I can help.
 
 You two aren't flatmates. Not yet. Let's get you back.
 
@@ -134,7 +138,7 @@ You two aren't flatmates. Not yet. Let's get you back.
 **EFT 1**
 "We've done three counsellors. They all gave us homework. We did none of it."
 
-Sound familiar? Of course you didn't do it.
+Of course you didn't do it.
 
 You don't need another communication worksheet. You need to feel safe enough to stop fighting like enemies.
 
@@ -169,11 +173,11 @@ DM me COUPLES and I'll send you the link to book a free discovery session.
 **EFT 4**
 Most couples therapy teaches you to talk better.
 
-EFT helps you feel safe with each other. Big difference.
+EFT helps you feel safe with each other first.
 
 It's one of the most tested forms of couples therapy in the world. Decades of it.
 
-Not because couples learn a trick. Because they finally feel held.
+Couples come back to each other when they finally feel held.
 
 Want to know if it'd work for you two? Comment COUPLES to book a free discovery session.
 
@@ -182,7 +186,7 @@ The partner who goes quiet isn't cold.
 
 They're flooded.
 
-In EFT we slow everything right down so the quiet one can find their words. And honestly? Watching a "withdrawer" say "I'm scared of losing you" for the first time is the most beautiful thing in my job.
+In EFT we slow everything right down so the quiet one can find their words. Watching a "withdrawer" say "I'm scared of losing you" for the first time is the most beautiful thing in my job.
 
 Is there a quiet one in your house? Tag them. Gently.
 
@@ -255,7 +259,7 @@ You hate pressure.
 
 And when every hug feels like a question, your body starts saying no before your brain even gets a vote.
 
-That's not frigid. That's protection.
+Your body's protecting you.
 
 Does this sound like you? Comment COUPLES to book a free discovery session.
 
@@ -266,7 +270,7 @@ It's not that they don't find you attractive.
 
 It's that sex has started to feel like a test they keep failing. So they stop sitting the exam.
 
-The good news? We can change the exam.
+We can change the exam.
 
 Send this to the one who keeps asking. Then comment COUPLES to book a free discovery session.
 
@@ -288,11 +292,13 @@ Some people have spontaneous desire. It just shows up.
 
 Most of us, especially after 40, especially after kids, have responsive desire. It shows up after things start. After we feel relaxed. After we feel wanted.
 
-So if the mood never just arrives... that's not broken. That's how most bodies work.
+So if the mood never just arrives... nothing's broken. Most bodies work this way.
 
 Comment COUPLES to book a free discovery session.
 
 **AVOID 5**
+Trying to turn them on harder? Check the brake first.
+
 Think of desire like a car.
 
 You've got accelerators. Things that turn you on.
@@ -335,8 +341,6 @@ Comment COUPLES to book a free discovery session.
 **AVOID 8**
 Orgasm isn't the goal.
 
-I know. Radical.
-
 But when sex has a finish line, someone's always worried about getting there. And worry is the fastest brake there is.
 
 When pleasure is the goal, there's no way to fail.
@@ -370,10 +374,10 @@ Comment COUPLES and I'll send you the link to book a free discovery session.
 Each one: hook on screen in the first second, you talking to camera, under 45 seconds. Caption underneath. Reels 1 to 3 seed, 4 to 7 build proof, 8 opens, 9 handles objections, 10 closes.
 
 **REEL 1: Seed (Pain)**
-On-screen hook: *You're not roommates. You're stuck in a cycle.*
+On-screen hook: *You're not flatmates. You're stuck in a cycle.*
 Script:
-"Do you two get along fine... until anyone mentions sex? Then the whole house goes cold? That's not a dead marriage. That's a cycle. One of you reaches, one of you retreats, and you both end up lonely. Follow along this week. I'm going to show you how to break it."
-Caption: Flatmates with a mortgage? Let's talk about the cycle. Follow so you don't miss this week. Or comment COUPLES to book a free discovery session now.
+"Do you two get along fine... until anyone mentions sex? Then the whole house goes cold? That doesn't mean your marriage is dead. It means you're in a cycle. One of you reaches, one of you retreats, and you both end up lonely. Follow along this week. I'm going to show you how to break it."
+Caption: Flatmates with a mortgage? This week I'm breaking down the cycle. Follow so you don't miss this week. Or comment COUPLES to book a free discovery session now.
 
 **REEL 2: Seed (Curiosity)**
 On-screen hook: *The partner who says no isn't the problem.*
@@ -402,7 +406,7 @@ Caption: You don't need a script. You need to feel safe. Comment COUPLES to book
 **REEL 6: Proof (Story)**
 On-screen hook: *Haven't had sex in years? Do this first.*
 Script:
-"Couples who haven't touched each other in years often think the answer is more sex. My first suggestion is usually the opposite. Take sex off the table. When one of you stops feeling like a vending machine and the other stops feeling like a beggar, something shifts. Curiosity comes back. Not because anyone has to. Because you want to."
+"Couples who haven't touched each other in years often think the answer is more sex. My first suggestion is usually the opposite. Take sex off the table. When one of you stops feeling like a vending machine and the other stops feeling like a beggar, something shifts. Curiosity comes back. You start wanting each other again."
 Caption: Desire comes back when pressure leaves. Comment COUPLES to book a free discovery session.
 *(A client story you've got written consent to share will beat this version. Change identifying details. Never make one up.)*
 
@@ -421,7 +425,7 @@ Caption: 10 spots. EFT plus sex therapy. Comment or DM COUPLES to book a free di
 **REEL 9: Objections**
 On-screen hook: *"My partner will never come to therapy"*
 Script:
-"I hear this every week. Here's what I tell people. Don't sell it as 'we need fixing.' Try 'I miss you and I want more of us.' Nobody's in trouble here. And if they're still not ready, come by yourself first. Change one side of the dance and the whole dance changes."
+"I hear this every week. I tell them this. Don't sell it as 'we need fixing.' Try 'I miss you and I want more of us.' Nobody's in trouble here. And if they're still not ready, come by yourself first. Change one side of the dance and the whole dance changes."
 Caption: Send this to the one you love. Or DM me COUPLES and book a free discovery session just for you.
 
 **REEL 10: Close**
@@ -489,13 +493,13 @@ What's your doorway?
 Comment COUPLES to book a free discovery session.
 
 **POLARITY 5**
-One of my favourite Deida ideas:
+Most couples are starving for the one thing they're not giving each other.
+
+One of my favourite David Deida ideas:
 
 The masculine grows through challenge. The feminine grows through praise.
 
-Which energy is louder in you? Then ask your partner which one's louder in them.
-
-Most couples are starving for the thing they're not giving each other.
+Which energy is louder in you? Then ask your partner which one's louder in them. Then give them more of it.
 
 Comment COUPLES to book a free discovery session.
 
@@ -517,8 +521,6 @@ It isn't.
 Comment COUPLES to book a free discovery session.
 
 **POLARITY 7**
-I'll be honest with you.
-
 I don't agree with everything Deida's written. Some of it is very "old man on a mountain."
 
 But this idea is gold: presence is the sexiest thing you can offer. Full attention. No phone. No half listening.
@@ -534,7 +536,7 @@ I hear this every week.
 
 Of course you take over. You've been holding everything together for years. Letting go feels dangerous.
 
-But here's the thing. You can't be ravished and in charge at the same time.
+But you can't be ravished and in charge at the same time.
 
 What would it feel like to let someone else hold the wheel for an evening?
 
@@ -563,3 +565,83 @@ Next week, swap.
 Notice what wakes up.
 
 And if you two want help bringing the charge back for good, I've got 10 couples spots open. Comment COUPLES to book a free discovery session.
+
+---
+
+## 6. Posts: an open heart and a clear no
+
+Theme: we blame their lack of presence and use it to excuse closing our own heart. We contract, and it hurts us and them. The work is learning to keep loving while staying connected to our no.
+
+**OPEN 1**\
+He's on his phone again.
+
+So you close.
+
+You tell yourself it's his fault. He's not present. He's not listening. Why would you open up to someone who isn't even in the room?
+
+And it makes sense. For about five minutes.
+
+But when you shut your heart, you're the one who goes cold. Your chest goes hard. You stop laughing at his jokes. You lie there with your back to him, and you're lonely in your own bed.
+
+His presence is his to work on.
+Your closed heart is yours.
+
+Comment COUPLES to book a free discovery session.
+
+**OPEN 2**\
+You can say no and still love him.
+
+Most of us were never taught that. We learned two options.
+
+Say yes and resent it.
+Or say no and shut everything. The door, the heart, the whole house.
+
+There's another way.
+
+"No, not tonight. And I love you. Come here, let me hold you."
+
+Your no looks after you. Your open heart keeps you two connected. You don't have to choose.
+
+So which one do you usually drop? Your no, or your heart?
+
+Comment COUPLES to book a free discovery session.
+
+**OPEN 3**\
+Notice what your body does when you feel let down.
+
+Jaw tight. Shoulders up. Breath shallow. Arms folded in bed.
+
+We call it protecting ourselves. Most of the time we're punishing ourselves. And the person next to us feels the chill, even if we never say a word.
+
+Contracting keeps you lonely, darling. It doesn't keep you safe.
+
+Next time, try this. Feel the hurt. Breathe into your belly. Say what you need. Keep your heart soft while you say it.
+
+You'll close a hundred times. Open again anyway.
+
+Comment COUPLES to book a free discovery session.
+
+**OPEN 4**\
+"I'd open up if he was more present."
+
+I hear this all the time. And I get it.
+
+But you could wait forever. Because he's waiting for the same thing from you.
+
+Two people at the bedroom door, arms folded, each one waiting for the other to go first.
+
+Someone has to soften. Why not you?
+
+Softening isn't giving in. You can stay open and keep your no.
+
+"It hurts when you're on your phone at dinner. I want you here with me."
+
+One sentence. Your boundary and your love, both in it.
+
+Send this to your partner. Then comment COUPLES to book a free discovery session.
+
+**OPEN 5 (Reel)**\
+On-screen hook: *They check out. So you shut down. Watch what it costs you.*\
+Script:\
+"When our partner checks out, we check out too. We tell ourselves it's their fault. But a closed heart hurts you first. Your body goes tight. Your pleasure goes. Your laugh goes. And they feel it, so they pull back even more, and round you both go. The way out is learning to keep your heart open and still say no. 'Not tonight, and I love you.' Both, in the same breath. If you want help learning that together, comment COUPLES and book a free discovery session."\
+Caption: Your no and your love can live in the same sentence. Comment COUPLES to book a free discovery session.

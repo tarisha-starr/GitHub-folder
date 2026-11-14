@@ -7,7 +7,7 @@ Swap **[BOOK YOUR DISCOVERY SESSION]** for your booking link, as a button and as
 
 ## How StoryBrand runs through these
 
-- **The hero is her (and her partner).** Not you. She's the one on the journey.
+- **The hero is her (and her partner).** Not you. It's her story.
 - **The problem has three layers:**
   - Outside: we hardly have sex, and when we do it's tense.
   - Inside: I feel lonely, unwanted, like I'm failing.
@@ -39,7 +39,7 @@ Can I tell you what I hear almost every week?
 
 "We get on fine. We run the house well. The kids are okay. We just... don't touch each other anymore."
 
-Then there's a pause. And then, quietly:
+Then there's a pause, and:
 
 "Is this just what happens?"
 
@@ -71,7 +71,7 @@ P.S. Reply and tell me: which one are you? The reacher or the retreater? I read 
 
 Hi [First name],
 
-Let's talk about the dance.
+I want to show you the dance so many couples get stuck in.
 
 In Emotionally Focused Therapy (the couples work I'm trained in) we call it the cycle. It goes like this.
 
@@ -81,14 +81,12 @@ The other one retreats. Goes quiet. Goes to their phone. Says "I'm tired". Hopes
 
 So the reacher reaches harder. And the retreater retreats further.
 
-Here's what I want you to know.
-
 Underneath the reaching is a question: "Do I matter to you?"
 Underneath the retreating is a fear: "I keep getting it wrong."
 
 Two people, both scared of losing each other, protecting the relationship in opposite ways.
 
-Nobody's the villain. The cycle is the villain.
+Neither of you is the bad guy. The cycle is.
 
 And when you stop fighting each other and start fighting the cycle together? Everything changes.
 
@@ -123,9 +121,9 @@ Sex has started to feel like a test I keep failing.
 
 So the body puts the brakes on. Before your brain even gets a vote.
 
-That's not frigid. That's not broken. That's your body protecting you from pressure.
+You're not frigid or broken. Your body is protecting you from pressure.
 
-And here's the bit that surprises most couples. When the pressure comes off, desire often comes back. Not out of nowhere. In response to feeling safe and wanted.
+This surprises a lot of couples. When the pressure comes off, desire often comes back, because you feel safe and wanted.
 
 This is where sex therapy and EFT work hand in hand. One helps your hearts feel safe. The other helps your bodies come back online.
 
@@ -161,7 +159,7 @@ When you feel disconnected during the day, your body doesn't want to open at nig
 
 Lots of therapists work on one or the other. I work on both, together, because that's how couples work.
 
-If you'd like to find out what that could look like for you two, start with a discovery session. Free. No pressure. Just a conversation.
+If you'd like to find out what that could look like for you two, start with a discovery session. It's free, and it's just a chat.
 
 [BOOK YOUR DISCOVERY SESSION]
 
@@ -172,14 +170,14 @@ Tarisha
 
 ### Email 5 (Wednesday)
 
-**Subject:** 3 steps back to each other
-**Preview:** It's simpler than you think
+**Subject:** Couples therapy doesn't have to take years
+**Preview:** 3 steps, and the first one's free
 
 Hi [First name],
 
 People often imagine couples therapy as years of rehashing old fights.
 
-It's not like that with me. Here's the plan.
+It's not like that with me. This is how it works.
 
 **Step 1: Book a discovery session.**
 We talk about what's happening, what you want, and whether I'm the right person to help. You don't need your partner on this first call if they're not ready.
@@ -190,9 +188,7 @@ Together we map your dance. The reaching, the retreating, the fear underneath. J
 **Step 3: Come back to each other.**
 We slow down the fights. We take the pressure off sex. We bring back touch that doesn't have to go anywhere. Pleasure becomes the goal, not performance.
 
-That's it. Three steps.
-
-Here's what we work towards first. Shorter fights. Faster repairs. Turning toward each other in the kitchen again.
+What we work towards first: Shorter fights. Faster repairs. Turning toward each other in the kitchen again.
 
 That's where good sex starts. Not in the bedroom. In the kitchen.
 
@@ -230,7 +226,7 @@ And when a hug no longer comes with a question attached, the partner who's been 
 
 Try it for a week. Then hit reply and tell me what happened.
 
-And if you notice how much you've been missing each other? That's your cue. Let's talk about getting you two back properly.
+And if you notice how much you've been missing each other? That's your cue. Come and have a chat with me.
 
 [BOOK YOUR DISCOVERY SESSION]
 
@@ -276,7 +272,7 @@ Tarisha
 ### Email 8 (Wednesday)
 
 **Subject:** "My partner will never do therapy"
-**Preview:** I hear this every week. Here's what I say.
+**Preview:** I hear this every week. This is what I say.
 
 Hi [First name],
 
@@ -286,7 +282,7 @@ The most common thing people tell me right before they don't book:
 
 I get it. Maybe they think it means "we're in trouble". Maybe they think they'll be blamed. Maybe they're scared it'll make things worse.
 
-Here's what I tell people.
+What I tell people:
 
 **Don't sell it as fixing.** Try: "I miss you. I want more of us. Would you come to one conversation with me?"
 
@@ -296,7 +292,7 @@ Here's what I tell people.
 
 Other things I hear:
 
-"We can't afford it." Let's talk about options in the session.
+"We can't afford it." We can talk about options in the session.
 "We're too far gone." If you're still reading this, you're not.
 "It's too awkward to talk about sex." Not with me. Nothing you say will shock me, I promise.
 
@@ -315,8 +311,6 @@ P.S. Forward this email to your partner with one line: "I'd love us to do this."
 **Preview:** Picture six months from now
 
 Hi [First name],
-
-Picture this.
 
 Six months from now. A Tuesday night. Nothing special.
 
