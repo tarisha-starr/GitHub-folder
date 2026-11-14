@@ -13,7 +13,7 @@ Couples together 10+ years. Kids, careers, a calendar that runs them. Still love
 
 **The offer:** 10 couples spots. EFT couples therapy plus sex therapy. Auckland or online.
 
-**The ask in every piece:** Comment or DM **COUPLES** and I'll send you the link for a free 20 minute fit call.
+**The ask in every piece:** Comment or DM **COUPLES** and I'll send you the link to book a free discovery session.
 
 **The sequence (about 14 days):**
 
@@ -121,7 +121,7 @@ This is exactly the work I do with couples. EFT for the emotional cycle. Sex the
 
 I've opened 10 spots for couples right now. Auckland or online.
 
-If this sounded like your house, comment or DM me the word COUPLES and I'll send you the link for a free 20 minute call. No pressure. Just a conversation about whether we're a fit.
+If this sounded like your house, comment or DM me the word COUPLES and I'll send you the link to book a free discovery session. No pressure. Just a conversation about what you two want and whether I can help.
 
 You two aren't flatmates. Not yet. Let's get you back.
 
@@ -220,7 +220,7 @@ What's missing at home is safety. And no script fixes that. Feeling met does.
 
 That's EFT.
 
-DM me COUPLES for a free 20 minute fit call.
+DM me COUPLES to book a free discovery session.
 
 **EFT 10**
 EFT and sex therapy belong together.
@@ -392,7 +392,7 @@ Caption: Still love each other? Still choosing each other? Then this is for you.
 **REEL 8: Open the doors**
 On-screen hook: *I've opened 10 spots for couples*
 Script:
-"I've opened 10 spots for couples who want to stop the cycle. EFT couples therapy plus sex therapy, because the heart stuff and the bedroom stuff are the same problem. Auckland or online. DM me COUPLES and I'll send you a link for a free 20 minute call to see if we're a fit."
+"I've opened 10 spots for couples who want to stop the cycle. EFT couples therapy plus sex therapy, because the heart stuff and the bedroom stuff are the same problem. Auckland or online. DM me COUPLES and I'll send you the link to book a free discovery session."
 Caption: 10 spots. EFT plus sex therapy. Comment or DM COUPLES.
 
 **REEL 9: Objections**
