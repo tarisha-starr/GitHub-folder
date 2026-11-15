@@ -3,7 +3,7 @@
 Three a week for three weeks: Monday, Wednesday, Friday.
 Every email has one job: get them to book a free discovery session.
 
-Swap **[BOOK YOUR DISCOVERY SESSION]** for your booking link, as a button and as a plain text link.
+Booking link for every button: https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session
 
 ## How StoryBrand runs through these
 
@@ -55,7 +55,7 @@ This week I'm going to show you exactly how it works. Because once you can see i
 
 And if you already know you want help with this, you don't have to wait for the next email. Book a free discovery session with me. We'll talk about what's happening for you two and what's possible.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -92,7 +92,7 @@ And when you stop fighting each other and start fighting the cycle together? Eve
 
 That's what we start mapping in a discovery session. You'll leave knowing exactly what your dance looks like and what to do about it.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -129,7 +129,7 @@ This is where sex therapy and EFT work hand in hand. One helps your hearts feel 
 
 If any of this made you go "oh... that's us", let's have a chat. The discovery session is free, it's private, and you don't have to have it all figured out.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -161,7 +161,7 @@ Lots of therapists work on one or the other. I work on both, together, because t
 
 If you'd like to find out what that could look like for you two, start with a discovery session. It's free, and it's just a chat.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -194,7 +194,7 @@ That's where good sex starts. Not in the bedroom. In the kitchen.
 
 Step one is right here:
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -228,7 +228,7 @@ Try it for a week. Then hit reply and tell me what happened.
 
 And if you notice how much you've been missing each other? That's your cue. Come and have a chat with me.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -258,11 +258,11 @@ I don't say this to scare you. I say it because So many couples sit down with me
 
 You don't have to wait for it to get worse. You can start while there's still so much love between you.
 
-I've opened 10 spots for couples this month. Auckland or online.
+I've only got 3 couples spots left. Auckland or online.
 
 The first step is a free discovery session.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -296,7 +296,7 @@ Other things I hear:
 "We're too far gone." If you're still reading this, you're not.
 "It's too awkward to talk about sex." Not with me. Nothing you say will shock me, I promise.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -322,13 +322,13 @@ You're not flatmates. You're lovers again.
 
 That's what this work is for.
 
-I've got [X] of my 10 couples spots left, and I'm closing bookings on Sunday night so I can give the couples I'm working with my full attention.
+I've got [X] couples spots left, and I'm closing bookings on Sunday night so I can give the couples I'm working with my full attention.
 
 If you've been reading these emails thinking "that's us"... this is your sign.
 
 Book your free discovery session. We'll talk about where you are, where you want to be, and whether I'm the right guide to get you there.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,
 Tarisha
@@ -370,7 +370,7 @@ You don't have to fix anything yet. Just notice.
 
 And if this is a pattern you two keep falling into, let's talk. A discovery session is free, and we'll look at what's going on for you both.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,\
 Tarisha
@@ -412,7 +412,7 @@ Try one this week. Just one. Say your no, and leave your heart in the room while
 
 If you two keep getting stuck between giving in and shutting down, that's exactly what I help couples with. Start with a free discovery session.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,\
 Tarisha
@@ -447,9 +447,9 @@ It's a lot easier when you're not the only one doing it.
 
 In couples sessions we practise this together, slowly, so neither of you is left holding the door open alone. You learn to catch the moment you both start closing, and to turn back towards each other instead.
 
-I've got spots open for couples right now, Auckland or online. If you've read this week's emails and thought "that's us", book a free discovery session. We'll talk about where you are and where you want to be.
+I've only got 3 couples spots left right now, Auckland or online. If you've read this week's emails and thought "that's us", book a free discovery session. We'll talk about where you are and where you want to be.
 
-[BOOK YOUR DISCOVERY SESSION]
+[Book your free discovery session](https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session)
 
 with a big warm hug,\
 Tarisha

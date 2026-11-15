@@ -1,6 +1,8 @@
-# 10 Couples Campaign: Script, Posts and Reels
+# Couples Campaign: Script, Posts and Reels
 
-Goal: fill 10 couples therapy spots, fast.
+Goal: fill the last 3 couples spots, fast.
+
+Booking link (the one you send everyone who comments COUPLES): https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session
 
 ---
 
@@ -11,7 +13,7 @@ This is a mini launch, not a pile of random posts. Jeff Walker would call it a s
 **Your smallest viable audience:**
 Couples together 10+ years. Kids, careers, a calendar that runs them. Still love each other. Haven't had good sex in ages. One of them wants more, one of them goes quiet. They're not on the edge of divorce. They're on the edge of becoming flatmates.
 
-**The offer:** 10 couples spots. EFT couples therapy plus sex therapy. Auckland or online.
+**The offer:** 3 couples spots left. EFT couples therapy plus sex therapy. Auckland or online.
 
 **The ask in every piece:** Comment or DM **COUPLES** and I'll send you the link to book a free discovery session.
 
@@ -22,7 +24,7 @@ Couples together 10+ years. Kids, careers, a calendar that runs them. Still love
 | 1 to 3 | Reels 1 to 3, EFT posts 1 to 3, avoidance posts 1 to 3 | Seed. Name the pain. Build curiosity. |
 | 4 | The 5 minute video | The big generous teaching. Gives value first. |
 | 5 to 9 | Reels 4 to 7, rest of the EFT, avoidance and polarity posts | Proof, authority, "people like us" |
-| 10 | Reel 8 | Open: "10 spots are open" |
+| 10 | Reel 8 | Open: "3 spots left" |
 | 11 to 13 | Reel 9, posts mixed in | Social proof, objections, how many spots are left |
 | 14 | Reel 10 | Close: "last spots, doors shut Sunday" |
 
@@ -123,7 +125,7 @@ When the avoiding partner feels safe, their desire often comes back, because the
 
 This is exactly the work I do with couples. EFT for the emotional cycle. Sex therapy for the bedroom one. Together, because they're the same problem.
 
-I've opened 10 spots for couples right now. Auckland or online.
+I've only got 3 couples spots left right now. Auckland or online.
 
 If this sounded like your house, comment or DM me the word COUPLES and I'll send you the link to book a free discovery session. It's a chat about what you two want and whether I can help.
 
@@ -246,7 +248,7 @@ When you feel closer, you want more.
 
 Lots of therapists do one or the other. I do both. Because your relationship doesn't come in two separate boxes.
 
-I've got 10 couples spots open. Comment COUPLES to book a free discovery session.
+I've got 3 couples spots left. Comment COUPLES to book a free discovery session.
 
 ---
 
@@ -363,13 +365,13 @@ You fell into a pattern.
 
 And patterns can be unlearned.
 
-I've opened 10 spots for couples who want to work on exactly this. EFT for the heart stuff, sex therapy for the body stuff.
+I've got 3 spots left for couples who want to work on exactly this. EFT for the heart stuff, sex therapy for the body stuff.
 
 Comment COUPLES and I'll send you the link to book a free discovery session.
 
 ---
 
-## 4. Ten reels to land 10 clients
+## 4. Ten reels to fill the last 3 spots
 
 Each one: hook on screen in the first second, you talking to camera, under 45 seconds. Caption underneath. Reels 1 to 3 seed, 4 to 7 build proof, 8 opens, 9 handles objections, 10 closes.
 
@@ -417,10 +419,10 @@ Script:
 Caption: Still love each other? Still choosing each other? Then this is for you. Comment COUPLES to book a free discovery session.
 
 **REEL 8: Open the doors**
-On-screen hook: *I've opened 10 spots for couples*
+On-screen hook: *Only 3 couples spots left*
 Script:
-"I've opened 10 spots for couples who want to stop the cycle. EFT couples therapy plus sex therapy, because the heart stuff and the bedroom stuff are the same problem. Auckland or online. DM me COUPLES and I'll send you the link to book a free discovery session."
-Caption: 10 spots. EFT plus sex therapy. Comment or DM COUPLES to book a free discovery session.
+"I've only got 3 spots left for couples who want to stop the cycle. EFT couples therapy plus sex therapy, because the heart stuff and the bedroom stuff are the same problem. Auckland or online. DM me COUPLES and I'll send you the link to book a free discovery session."
+Caption: 3 spots left. EFT plus sex therapy. Comment or DM COUPLES to book a free discovery session.
 
 **REEL 9: Objections**
 On-screen hook: *"My partner will never come to therapy"*
@@ -431,7 +433,7 @@ Caption: Send this to the one you love. Or DM me COUPLES and book a free discove
 **REEL 10: Close**
 On-screen hook: *Last couples spots this month*
 Script:
-"Quick one. I've only got [X] of my 10 couples spots left, and I'm closing them on Sunday. If you've been watching this week and thinking 'that's us'... that's your sign. DM me COUPLES to book your free discovery session. Let's get you two back."
+"Quick one. I've only got [X] couples spots left, and I'm closing them on Sunday. If you've been watching this week and thinking 'that's us'... that's your sign. DM me COUPLES to book your free discovery session. Let's get you two back."
 Caption: Doors close Sunday. DM COUPLES. You've waited long enough.
 *(Put the true number in for X.)*
 
@@ -564,7 +566,7 @@ Next week, swap.
 
 Notice what wakes up.
 
-And if you two want help bringing the charge back for good, I've got 10 couples spots open. Comment COUPLES to book a free discovery session.
+And if you two want help bringing the charge back for good, I've got 3 couples spots left. Comment COUPLES to book a free discovery session.
 
 ---
 
@@ -755,7 +757,7 @@ You'll close again. Probably tomorrow. That's okay. Staying open is something yo
 
 If you two keep getting stuck here, one of you checking out and the other shutting down, this is exactly what I help couples with.
 
-I've opened 10 spots for couples right now. Auckland or online.
+I've only got 3 couples spots left right now. Auckland or online.
 
 Comment or DM me the word COUPLES and I'll send you the link to book a free discovery session. We'll talk about what's happening for you two, and whether I can help.
 
