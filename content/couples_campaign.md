@@ -645,3 +645,120 @@ On-screen hook: *They check out. So you shut down. Watch what it costs you.*\
 Script:\
 "When our partner checks out, we check out too. We tell ourselves it's their fault. But a closed heart hurts you first. Your body goes tight. Your pleasure goes. Your laugh goes. And they feel it, so they pull back even more, and round you both go. The way out is learning to keep your heart open and still say no. 'Not tonight, and I love you.' Both, in the same breath. If you want help learning that together, comment COUPLES and book a free discovery session."\
 Caption: Your no and your love can live in the same sentence. Comment COUPLES to book a free discovery session.
+
+---
+
+## 7. Five minute video script: an open heart and a clear no
+
+**Title options:**
+- Why You Shut Down When They're Not Present
+- How to Say No Without Closing Your Heart
+- You Can Say No and Still Love Them
+
+**Length:** about 720 words, roughly 5 minutes at a relaxed pace.
+
+**[HOOK, straight to camera, 0:00]**
+
+Your partner's on their phone at dinner. Again.
+
+And something in you goes click. Shut.
+
+You tell yourself they did that. They checked out first, so you're allowed to close.
+
+I want to show you what that click is costing you. Because it's costing you more than it's costing them.
+
+And by the end of this video, you'll have one sentence you can use tonight that lets you say no and still stay open.
+
+**[INTRO, 0:30]**
+
+I'm Tarisha. I'm a relationship and sex therapist. I work with couples on the emotional stuff and the bedroom stuff, because the two are tangled together.
+
+And this is one of the patterns I see most.
+
+**[THE BLAME, 0:45]**
+
+It goes like this.
+
+They're not present. They're distracted, tired, half listening.
+
+You feel it. It hurts. So you pull your heart back in.
+
+And you've got a great reason. "Why would I open up to someone who isn't even here?"
+
+It feels fair. It feels like self-protection.
+
+But watch what happens next.
+
+You go cold. They feel the cold. So they check out even more. Which gives you even more reason to stay shut.
+
+Round and round.
+
+Their lack of presence becomes your excuse. And your closed heart becomes theirs.
+
+**[WHAT CLOSING DOES TO YOU, 1:45]**
+
+Stay with me, because this next part changes how you see it.
+
+When you close your heart, your body closes with it.
+
+Your jaw tightens. Your shoulders creep up. Your breath gets shallow. You lie in bed with your arms folded.
+
+You call it protecting yourself. Most of the time, you're the one getting hurt.
+
+Your pleasure goes. Your laugh goes. Your desire goes. You stop feeling much at all.
+
+And the person next to you feels it, even if you never say a word.
+
+So contracting hurts you. It hurts them. And it hurts what you two have built together.
+
+**[THE TRAP, 2:45]**
+
+Most of us only learned two options.
+
+Option one: say yes to everything, keep the peace, and resent it.
+
+Option two: say no and shut the whole house down. Door, heart, body, all of it.
+
+So we bounce between the two. Over-giving, then shutting down. Over-giving, then shutting down.
+
+There's a third option. And it's the one I want you to practise.
+
+**[THE THIRD WAY, 3:20]**
+
+Keep your no. And keep your heart open while you say it.
+
+Your no matters. It tells your partner where you end and they begin. It keeps you honest.
+
+But your no doesn't need a closed heart to be strong.
+
+It sounds like this.
+
+"It hurts when you're on your phone at dinner. I want you here with me."
+
+Or in the bedroom: "Not tonight. And I love you. Come here, let me hold you."
+
+That's your boundary and your love, in the same breath.
+
+**[HOW TO PRACTISE, 4:00]**
+
+So, tonight. When you feel that click, try three things.
+
+One. Notice it. Feel where your body tightens.
+
+Two. Breathe into your belly. Soften your chest, just a little.
+
+Three. Say what's going on for you, with your heart still open. What hurts, and what you want.
+
+You'll close again. Probably tomorrow. That's okay. Staying open is something you practise, and you get better at it. Every time you close, you can open again.
+
+**[THE INVITATION, 4:30]**
+
+If you two keep getting stuck here, one of you checking out and the other shutting down, this is exactly what I help couples with.
+
+I've opened 10 spots for couples right now. Auckland or online.
+
+Comment or DM me the word COUPLES and I'll send you the link to book a free discovery session. We'll talk about what's happening for you two, and whether I can help.
+
+You can say no and still love them. Let's get you both back.
+
+**[END, 5:00]**
