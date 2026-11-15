@@ -334,3 +334,124 @@ with a big warm hug,
 Tarisha
 
 P.S. If the timing's not right, no stress at all. Hit reply and say "next round" and I'll let you know first when spots open again.
+
+---
+
+## BONUS SERIES: An open heart and a clear no (3 emails)
+
+Send these Monday, Wednesday, Friday, either straight after the main 9 or in place of Week 2 if you want to go deeper sooner. Same job: book the discovery session.
+
+### Bonus Email 1 (Monday)
+
+**Subject:** When they check out, do you shut down?\
+**Preview:** Why it hurts you more than them
+
+Hi [First name],
+
+Your partner's half listening again. Phone out, eyes somewhere else, nodding in the wrong places.
+
+And you feel it. Something in you shuts.
+
+You've got a good reason, too. They checked out first. Why would you open up to someone who isn't even in the room?
+
+It makes sense. And it costs you.
+
+When you close your heart, your body closes with it. Your jaw gets tight. Your shoulders creep up. You go cold, and you stop laughing at their jokes.
+
+They feel that. Even if you never say a word. So they pull back further. Which gives you even more reason to stay shut.
+
+Their lack of presence becomes your excuse. Your closed heart becomes theirs.
+
+I'm not saying the phone at dinner is fine. It's worth talking about. But your heart is yours. And when you close it, you're the first one who gets hurt.
+
+This week, just notice the moment you close. Where does it happen in your body? Your chest? Your belly? Your jaw?
+
+You don't have to fix anything yet. Just notice.
+
+And if this is a pattern you two keep falling into, let's talk. A discovery session is free, and we'll look at what's going on for you both.
+
+[BOOK YOUR DISCOVERY SESSION]
+
+with a big warm hug,\
+Tarisha
+
+P.S. Hit reply and tell me where you feel it when you shut down. I read every reply.
+
+---
+
+### Bonus Email 2 (Wednesday)
+
+**Subject:** You can say no and still love him\
+**Preview:** The option nobody taught us
+
+Hi [First name],
+
+Most of us grew up with two ways to handle a no.
+
+One: say yes anyway. Keep the peace. Then resent it for a week.
+
+Two: say no and shut the whole house down. The door, the heart, the body, all of it.
+
+So we swing between them. Years of yes, yes, yes... and then one day we're so done that every no comes out like a slammed door.
+
+There's a third way. You keep your no, and you keep your heart open while you say it.
+
+It sounds like this.
+
+"Not tonight. And I love you. Come here, let me hold you."
+
+"I can't do dinner with your parents this weekend. I know it matters to you, so let's find another time."
+
+"It hurts when you're on your phone at dinner. I want you here with me."
+
+Your no matters. It tells your partner where you end and they begin. And a no that comes with warmth is so much easier to hear. They don't have to defend themselves. They can come closer instead.
+
+Your no looks after you. Your open heart looks after the two of you. You don't have to choose.
+
+Try one this week. Just one. Say your no, and leave your heart in the room while you do it.
+
+If you two keep getting stuck between giving in and shutting down, that's exactly what I help couples with. Start with a free discovery session.
+
+[BOOK YOUR DISCOVERY SESSION]
+
+with a big warm hug,\
+Tarisha
+
+P.S. Which one do you usually drop, your no or your heart? Reply with one word. I'm curious.
+
+---
+
+### Bonus Email 3 (Friday)
+
+**Subject:** How to stay open when you want to shut down\
+**Preview:** 3 steps for the moment you feel yourself go cold
+
+Hi [First name],
+
+This week we've talked about the moment you shut down, and about saying no without closing your heart.
+
+Today is about the moment itself. When you feel yourself going cold, try these three steps.
+
+**1. Notice it.**\
+Feel where your body tightens. Name it to yourself. "I'm closing."
+
+**2. Breathe and soften.**\
+One slow breath into your belly. Let your chest soften, just a little. You're not giving in. You're staying in the room.
+
+**3. Say what's going on, with your heart still open.**\
+What hurts, and what you want. "I miss you when you're on your phone. I want some time with you tonight."
+
+You'll close again. Probably tomorrow. That's okay. Staying open is something you practise, and every time you close, you can open again.
+
+It's a lot easier when you're not the only one doing it.
+
+In couples sessions we practise this together, slowly, so neither of you is left holding the door open alone. You learn to catch the moment you both start closing, and to turn back towards each other instead.
+
+I've got spots open for couples right now, Auckland or online. If you've read this week's emails and thought "that's us", book a free discovery session. We'll talk about where you are and where you want to be.
+
+[BOOK YOUR DISCOVERY SESSION]
+
+with a big warm hug,\
+Tarisha
+
+P.S. Forward this to your partner with one line: "Can we try this together?"
