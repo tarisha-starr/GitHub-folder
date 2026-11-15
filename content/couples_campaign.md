@@ -655,7 +655,7 @@ Caption: Your no and your love can live in the same sentence. Comment COUPLES to
 - How to Say No Without Closing Your Heart
 - You Can Say No and Still Love Them
 
-**Length:** about 720 words, roughly 5 minutes at a relaxed pace.
+**Length:** about 690 words, roughly 5 minutes at a relaxed pace.
 
 **[HOOK, straight to camera, 0:00]**
 
