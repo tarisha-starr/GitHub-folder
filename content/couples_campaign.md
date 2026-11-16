@@ -396,7 +396,7 @@ Caption: Your desire's not gone, darling. It's buried. Comment COUPLES and I'll 
 **REEL 4: Value (point to long video)**
 On-screen hook: *The 2 cycles killing your sex life*
 Script:
-"There's an emotional cycle during the day and a sexual cycle at night. And they feed each other. I made a full five minute video breaking it down. Link's in my bio. Watch it with your partner tonight. Then just ask each other: which bit was us?"
+"There's an emotional cycle during the day and a sexual cycle at night. And they feed each other. I made a full five minute video breaking it down. Comment VIDEO and I'll send it to you. Watch it with your partner tonight. Then just ask each other: which bit was us?"
 Caption: Watch it together. Then tell me what you noticed. Comment COUPLES to book a free discovery session.
 
 **REEL 5: Authority (Why EFT)**

@@ -14,7 +14,7 @@ I'm a relationship and sex therapist, trained in Emotionally Focused Therapy. I 
 
 I've got 3 couples spots left. Auckland or online.
 
-Comment LIFE or DM me and I'll send you the link to book a free discovery session. It's a chat about what you two want and whether I can help.
+Comment LIFE, DM me, or email tarisha@theloveadventure.com and I'll send you the link to book a free discovery session. It's a chat about what you two want and whether I can help.
 
 Love life matters. Let's figure this out together so you don't end up polite flatmates dying inside.
 
@@ -24,6 +24,6 @@ Love life matters. Let's figure this out together so you don't end up polite fla
 
 Use your full post text as the caption, with the same 8 slides.
 
-## Booking link (for DMs and your bio)
+## Booking link (to send people who comment, DM or email)
 
 https://tidycal.com/tarishatourok/get-the-love-you-desire-discovery-session
