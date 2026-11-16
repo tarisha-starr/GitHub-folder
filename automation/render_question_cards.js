@@ -37,11 +37,11 @@ const SERW = {
   },
 };
 
-// The Love Adventure (couples therapy): Soft Autumn palette, Marcellus 400.
+// Couples therapy (couplestherapy.co.nz): Soft Autumn palette, Marcellus 400.
 const COUPLES = {
   data: "couples_questions.json",
   out: "couples",
-  site: "theloveadventure.com",
+  site: "couplestherapy.co.nz",
   font: '"Marcellus",Georgia,serif',
   weight: 400,
   size: 86,

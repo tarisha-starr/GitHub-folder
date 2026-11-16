@@ -89,6 +89,7 @@ You two don't have to stay stuck.
 - Film in one spot, eye level, natural light. Psychology Today viewers are choosing a therapist, so calm and warm beats fancy.
 - Add captions. Most people watch with the sound off, and it helps people with hearing loss.
 - On screen at the start: your name, "Relationship and Sex Therapist, Auckland and online".
+- On screen at the end: couplestherapy.co.nz and tarisha@couplestherapy.co.nz.
 
 ---
 
