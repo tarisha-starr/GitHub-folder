@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-NZ"><head><meta charset="utf-8">
+<title>Cycle Carousel</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--pine:#1F2C1F;--forest:#2D3E2C;--moss:#5D6B3F;--terra:#C75D3D;--gold:#B8945A;--camel:#C9A579;--cream:#F5EFE3;--ivory:#FBF7EE;--char:#2A2520;
+--f-display:"Marcellus",'Marcellus Fallback',Georgia,serif;--f-body:"Lora",'Lora Fallback',Georgia,serif;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#888;}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;padding:120px 110px;display:flex;flex-direction:column;justify-content:center;font-family:var(--f-body);}
+.dark{background:var(--pine);color:var(--cream);}
+.forest{background:var(--forest);color:var(--cream);}
+.light{background:var(--cream);color:var(--char);}
+h1,h2{font-family:var(--f-display);font-weight:400;letter-spacing:-0.01em;line-height:1.08;text-wrap:balance}
+p,.step,.tip h3{text-wrap:pretty}
+h1{font-size:90px}
+h2{font-size:78px}
+p{font-size:42px;line-height:1.45}
+.lead{font-size:46px;line-height:1.45;margin-top:48px}
+em{font-style:italic}
+.ln{display:block;text-wrap:balance}
+.accent{color:var(--terra)}
+.goldt{color:var(--camel)}
+.rule{width:110px;height:3px;background:var(--terra);margin-bottom:56px}
+.foot{position:absolute;left:110px;right:110px;bottom:70px;display:flex;justify-content:space-between;font-size:26px;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.swipe{position:absolute;right:110px;top:70px;font-size:28px;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.cycle{margin-top:64px;display:grid;grid-template-columns:1fr;gap:22px}
+.step{font-size:40px;line-height:1.3;padding:26px 34px;border:2px solid rgba(245,239,227,.35);border-radius:18px}
+.arrow{font-family:var(--f-display);font-size:44px;text-align:center;color:var(--camel);line-height:.6}
+.tip{display:flex;gap:34px;margin-top:46px;align-items:flex-start}
+.num{font-family:var(--f-display);font-size:88px;line-height:.9;color:var(--terra);min-width:64px}
+.tip h3{font-family:var(--f-display);font-weight:400;font-size:50px;line-height:1.15}
+.tip p{font-size:36px;margin-top:10px;font-style:italic;color:#5a5048}
+.cta{margin-top:70px;display:inline-block;background:var(--terra);color:var(--ivory);font-size:40px;padding:30px 46px;border-radius:999px;align-self:flex-start}
+.small{font-size:34px;margin-top:40px;opacity:.85}
+</style></head><body>
+
+<!-- 1 PROBLEM -->
+<section class="s dark" id="s1">
+<div class="swipe">Swipe</div>
+<div class="rule"></div>
+<h1><span class="ln">One of you wants sex.</span><span class="ln goldt">The other one keeps finding reasons not to.</span></h1>
+<div class="foot"><span>Tarisha · Relationship &amp; Sex Therapist</span><span>1/8</span></div>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="s forest" id="s2">
+<div class="rule"></div>
+<h2>So you fight about the dishes. The phone. The in-laws.</h2>
+<p class="lead">Everything except <em>the thing that hurts.</em></p>
+<div class="foot"><span>Tarisha · Relationship &amp; Sex Therapist</span><span>2/8</span></div>
+</section>
+
+<!-- 3 REFRAME -->
+<section class="s dark" id="s3">
+<div class="rule"></div>
+<h1><span class="ln">You're not broken.</span><span class="ln">Your marriage isn't broken.</span></h1>
+<p class="lead goldt">You're stuck in a cycle.</p>
+<div class="foot"><span>Tarisha · Relationship &amp; Sex Therapist</span><span>3/8</span></div>
+</section>
+
+<!-- 4 EMOTIONAL CYCLE -->
+<section class="s forest" id="s4">
+<h2>During the day</h2>
+<div class="cycle">
+<div class="step">One of you reaches. <em>"Do I matter to you?"</em></div>
+<div class="arrow">↓</div>
+<div class="step">The other pulls back. <em>"I keep getting it wrong."</em></div>
+<div class="arrow">↓</div>
+<div class="step">So one reaches harder. And the other pulls back further.</div>
+</div>
+<div class="foot"><span>The emotional cycle</span><span>4/8</span></div>
+</section>
+
+<!-- 5 SEXUAL CYCLE -->
+<section class="s dark" id="s5">
+<h2>And at night</h2>
+<div class="cycle">
+<div class="step">One of you initiates.</div>
+<div class="arrow">↓</div>
+<div class="step">The other feels pressure. The brakes go on. <em>"I'm tired."</em></div>
+<div class="arrow">↓</div>
+<div class="step">One feels rejected. The other starts avoiding even a hug.</div>
+</div>
+<div class="foot"><span>The sexual cycle</span><span>5/8</span></div>
+</section>
+
+<!-- 6 CYCLE IS THE PROBLEM -->
+<section class="s forest" id="s6">
+<div class="rule"></div>
+<h1>The cycle is the problem.</h1>
+<p class="lead">Not you. Not your partner.</p>
+<p class="small">And the two cycles feed each other. Distant in the day, closed at night. Closed at night, more distant in the day.</p>
+<div class="foot"><span>Tarisha · Relationship &amp; Sex Therapist</span><span>6/8</span></div>
+</section>
+
+<!-- 7 TRY TONIGHT -->
+<section class="s light" id="s7">
+<h2>3 things to try tonight</h2>
+<div class="tip"><div class="num">1</div><div><h3>Name the cycle out loud.</h3><p>"Oh, we're doing the thing again."</p></div></div>
+<div class="tip"><div class="num">2</div><div><h3>Share the fear, not the complaint.</h3><p>"I miss you. I'm scared we're losing us."</p></div></div>
+<div class="tip"><div class="num">3</div><div><h3>Take the pressure off sex.</h3><p>Touch that doesn't have to go anywhere.</p></div></div>
+<div class="foot" style="color:var(--char)"><span>Save this for later</span><span>7/8</span></div>
+</section>
+
+<!-- 8 BOOK -->
+<section class="s dark" id="s8">
+<div class="rule"></div>
+<h2>I've got 3 couples spots left.</h2>
+<p class="lead">EFT and sex therapy, together. Auckland or online.</p>
+<div class="cta">Book a free discovery session</div>
+<p class="small goldt">Link in bio, or comment LIFE and I'll send it to you.</p>
+<div class="foot"><span>Tarisha · Relationship &amp; Sex Therapist</span><span>8/8</span></div>
+</section>
+</body></html>
