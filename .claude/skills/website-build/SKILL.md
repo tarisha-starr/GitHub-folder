@@ -1,11 +1,11 @@
 ---
 name: website-build
-description: Build, redesign, or improve web pages for Tarisha's sites, above all theloveadventure.com. Use this whenever the user asks for a website, landing page, sales page, homepage, hero section, or "make the site look better / more designed / higher converting", and also when they ask to clone a reference site, do a mobile pass, QA a page in a browser, or add conversion elements like sticky bars, guarantees, FAQs or urgency. Trigger it even when they only say "improve the site" or name a page like the services page, because the brand rules, the voice rules and the WordPress target all live here and a generic build will get them wrong.
+description: Build, redesign, or improve web pages for Tarisha's sites, above all couplestherapy.co.nz. Use this whenever the user asks for a website, landing page, sales page, homepage, hero section, or "make the site look better / more designed / higher converting", and also when they ask to clone a reference site, do a mobile pass, QA a page in a browser, or add conversion elements like sticky bars, guarantees, FAQs or urgency. Trigger it even when they only say "improve the site" or name a page like the services page, because the brand rules, the voice rules and the WordPress target all live here and a generic build will get them wrong.
 ---
 
 # Website build
 
-Pages for The Love Adventure and the older Radiant Woman properties. The point
+Pages for couplestherapy.co.nz (Tarisha's couples therapy practice) and the older Radiant Woman properties. The Love Adventure brand is retired: never use its name, domain or email on new work. The point
 of this skill is that a good-looking page is not enough: the brand has written
 rules, the voice has banned words, and the finished page has to survive being
 pasted into WordPress. Getting any of those wrong makes the work unusable even
@@ -16,14 +16,14 @@ when the design is strong.
 The source of truth is Notion, not the repo and not the logo files. Fetch it
 first, every time:
 
-**Assets & Ops → Website Build, theloveadventure.com**
+**Assets & Ops → Website Build** (the Notion pages still carry the old theloveadventure.com title; the live site is couplestherapy.co.nz)
 - `1. Brand Guidelines` — palette, typography, photography, voice
 - `2. Site Architecture` — sitemap, nav, footer, redirects
 - `3. Kadence Build Directions` — which starter template each page uses
 - `Build Progress Checklist` — what is already done, and the milestone gates
-- `The Love Adventure, Brand Story` — the three streams and the positioning
+- `The Love Adventure, Brand Story` — positioning notes (old name, use the content, never the name)
 
-Search Notion for "Website Build theloveadventure.com" to find them.
+Search Notion for "Website Build" to find them. Contact email for every page: tarisha@couplestherapy.co.nz.
 
 This matters more than it sounds. The logo files in `images/brand/` are plum
 and gold, left over from the old Sexual Empowerment for Women brand. The live
@@ -166,7 +166,7 @@ The site is WordPress on DreamHost behind Cloudflare, and the whole documented
 plan depends on WordPress: the blog migration from two old domains, Fluent
 Forms, the membership, Stripe, the quiz, Yoast, and Tarisha editing pages
 herself. A static deploy creates a second site at a different URL and does not
-touch theloveadventure.com. This environment's proxy blocks vercel.com anyway,
+touch couplestherapy.co.nz. This environment's proxy blocks vercel.com anyway,
 so it could not happen from here even if it were wanted.
 
 The way work reaches the web is: artifact preview, then the file committed to
@@ -177,7 +177,7 @@ the repo, then pasted into Kadence.
 Two things have to be true, and the first is usually the blocker:
 
 1. **Network.** This environment's egress proxy denies unknown hosts. If
-   `curl https://theloveadventure.com` returns `CONNECT tunnel failed, 403`,
+   `curl https://couplestherapy.co.nz` returns `CONNECT tunnel failed, 403`,
    the domain is not on the allowlist and no credential will help. The user
    adds it in the environment's settings in Claude Code on the web. Confirm
    with `curl -sS "$HTTPS_PROXY/__agentproxy/status"`, which lists recent

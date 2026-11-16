@@ -50,7 +50,7 @@ nobody re-adopts the original wording later and quietly builds the wrong thing.
     on it: blog migration from two old domains, Fluent Forms, the membership,
     Stripe, the quiz, Yoast, and Tarisha editing her own pages. A Vercel deploy
     creates a second site at a different URL and never touches
-    theloveadventure.com.
+    couplestherapy.co.nz.
 
     The pipeline that actually ships work here: build one self-contained file,
     preview it as an artifact with fonts inlined, commit it and open a draft

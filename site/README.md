@@ -1,6 +1,6 @@
-# site/ — The Love Adventure homepage
+# site/ — couplestherapy.co.nz homepage
 
-A single self-contained homepage design for theloveadventure.com, built to the
+A single self-contained homepage design for couplestherapy.co.nz, built to the
 brand guidelines held in Notion under **Assets & Ops → Website Build →
 1. Brand Guidelines**.
 
@@ -61,5 +61,4 @@ stats band labels.
 
 Needs doing before publication: embed the Fluent Forms block in the `#form`
 slot, supply `images/therapy-hero.jpg` and `images/tarisha.jpg`, and decide
-nothing else. The contact address is now tarisha@theloveadventure.com,
-which needs to exist before the page goes live.
+nothing else. The contact address is tarisha@couplestherapy.co.nz.
