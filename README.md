@@ -83,7 +83,7 @@ Zap can send it to the right account:
 | brand | questions | cards | look |
 |---|---|---|---|
 | `serw` | `content/brave_questions.json` (40, for women) | `images/questions/serw/` | burgundy, navy, gold; SEXUALEMPOWERMENTFORWOMEN.COM footer bar |
-| `couples` | `content/couples_questions.json` (40, for couples) | `images/questions/couples/` | Soft Autumn pine palette; theloveadventure.com |
+| `couples` | `content/couples_questions.json` (40, for couples) | `images/questions/couples/` | Soft Autumn pine palette; couplestherapy.co.nz |
 
 - Re-render after editing either JSON: `node automation/render_question_cards.js`
   (or `BRAND=couples node ...` for one version).
@@ -97,7 +97,7 @@ Zap can send it to the right account:
 To switch it on, set `QUESTIONS_ENABLED=true` (alongside the existing
 `ZAPIER_ENABLED=true`). In the Zap, route `post_type: "question"` by
 `brand`: `serw` to the Sexual Empowerment for Women accounts, `couples`
-to The Love Adventure accounts.
+to the couples therapy accounts.
 
 ### Weekly reel: The Second Awakening (Sunday, SERW only)
 

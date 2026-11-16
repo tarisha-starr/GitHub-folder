@@ -2,7 +2,7 @@
 
 These are for small sites that stand on their own: a personal homepage, a site
 for another business, a rebuild of a layout you admire. They are **not** for
-theloveadventure.com. That site is WordPress and its pages get pasted into
+couplestherapy.co.nz. That site is WordPress and its pages get pasted into
 Kadence, so the rules in `SKILL.md` apply there instead.
 
 What changes for these is the brand: a personal site or another business does
